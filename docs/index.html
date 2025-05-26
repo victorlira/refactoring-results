@@ -25,6 +25,7 @@
       overflow-y: auto;
       overflow-x: auto;
     }
+    .clickable-cell { cursor: pointer; }
   </style>
 </head>
 <body>
@@ -48,7 +49,7 @@
       <div class="col">
         <h2><i class="bi bi-table"></i> Scenario Results</h2>
         <div class="table-responsive">
-          <table class="table table-striped table-hover" id="results-table">
+          <table class="table table-hover" id="results-table">
             <thead class="table-dark">
               <tr>
                 <th>Status</th>
@@ -74,56 +75,47 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Initialize Bootstrap tooltips
-    document.addEventListener('DOMContentLoaded', function () {
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+    // Tooltips
+    document.addEventListener('DOMContentLoaded', () => {
+      const triggers = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      triggers.map(el => new bootstrap.Tooltip(el));
     });
     function truncate(text, max) {
       return text.length > max ? text.substring(0, max) + '…' : text;
     }
     Papa.parse('summary_experiment.csv', {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
+      download: true, header: true, skipEmptyLines: true,
       complete: function(results) {
         const data = results.data;
+        // discard rate
         const reported = data.filter(r => r.reportedInterferences === '1');
         const refactored = reported.filter(r => r.isRefactoring === '1');
-        const rate = reported.length
-          ? ((refactored.length / reported.length) * 100).toFixed(2) + '%'
-          : 'N/A';
+        const rate = reported.length ? ((refactored.length / reported.length)*100).toFixed(2)+'%' : 'N/A';
         document.getElementById('false-rate').textContent = rate;
-        const tbody = document.querySelector('#results-table tbody');
+        // fill table
+        const tbody = document.getElementById('results-table').querySelector('tbody');
         data.forEach(r => {
           const tr = document.createElement('tr');
-          let statusIcon = '', statusClass = '', statusLabel = '';
-          if (r.isRefactoring === '1') {
-            statusIcon = '<i class="bi bi-check-circle-fill text-success"></i>';
-            statusClass = 'status-refactor';
-            statusLabel = 'Refactoring';
-          } else if (r.reportedInterferences === '1') {
-            statusIcon = '<i class="bi bi-exclamation-triangle-fill text-warning"></i>';
-            statusClass = 'status-interference';
-            statusLabel = 'Interference';
-          } else {
-            statusIcon = '<i class="bi bi-x-circle-fill text-secondary"></i>';
-            statusClass = 'status-nointerference';
-            statusLabel = 'No Interference';
-          }
-          tr.classList.add(statusClass);
+          let icon='', cls='', label='';
+          if (r.isRefactoring==='1') { icon='<i class="bi bi-check-circle-fill text-success"></i>'; cls='status-refactor'; label='Refactoring'; }
+          else if (r.reportedInterferences==='1') { icon='<i class="bi bi-exclamation-triangle-fill text-warning"></i>'; cls='status-interference'; label='Interference'; }
+          else { icon='<i class="bi bi-x-circle-fill text-secondary"></i>'; cls='status-nointerference'; label='No Interference'; }
+          tr.classList.add(cls);
+          const href = `detail.html?scenario=${r.id}`;
           const cells = [
-            `<span data-bs-toggle="tooltip" title="${statusLabel}">${statusIcon}</span>`,
-            r.id, r.project, r['merge commit'], r.className,
-            r.method, truncate(r.leftChanges, 20), truncate(r.rightChanges, 20),
-            r.reportedInterferences, r['reported-interferences-count'], r.isRefactoring
+            `<span class="clickable-cell" data-bs-toggle="tooltip" title="${label}" onclick="location='${href}'">${icon}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r.id}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r.project}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r['merge commit']}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r.className}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r.method}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${truncate(r.leftChanges,20)}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${truncate(r.rightChanges,20)}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r.reportedInterferences}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r['reported-interferences-count']}</span>`,
+            `<span class="clickable-cell" onclick="location='${href}'">${r.isRefactoring}</span>`
           ];
-          cells.forEach(html => {
-            const td = document.createElement('td'); td.innerHTML = html; tr.appendChild(td);
-          });
-          tr.addEventListener('click', () => {
-            location.href = `detail.html?scenario=${r.id}`;
-          });
+          cells.forEach(html=>{ const td=document.createElement('td'); td.innerHTML=html; tr.appendChild(td); });
           tbody.appendChild(tr);
         });
       }
@@ -131,3 +123,53 @@
   </script>
 </body>
 </html>
+
+<!-- docs/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/refactoring-results/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scenario Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style> body { padding-top:1rem; } </style>
+</head>
+<body>
+  <div class="container py-4">
+    <a href="index.html" class="btn btn-secondary mb-3">
+      <i class="bi bi-arrow-left"></i> Back to Dashboard
+    </a>
+    <h1><i class="bi bi-file-earmark-code"></i> Scenario <span id="scen-id"></span> Details</h1>
+    <div class="accordion mt-4" id="accordionRefactors"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function getParam(n){return new URL(window.location).searchParams.get(n);} const scen=getParam('scenario'); document.getElementById('scen-id').textContent=scen;
+    fetch(`${scen}/refactoring_interferences.json`).then(r=>r.json()).then(data=>{
+      const acc=document.getElementById('accordionRefactors'); if(!data.length){acc.innerHTML='<p>No refactoring interferences.</p>';return;}
+      data.forEach((item,idx)=>{
+        const id=`ref${idx}`,hdr=`heading${id}`,col=`collapse${id}`,desc=item.description||{};
+        const div=document.createElement('div'); div.className='accordion-item';
+        div.innerHTML=
+          `<h2 class="accordion-header" id="${hdr}">`+
+          `<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${col}" aria-expanded="false" aria-controls="${col}">`+
+          `<i class="bi bi-tools me-2"></i>${item.refactoringInfo}</button></h2>`+
+          `<div id="${col}" class="accordion-collapse collapse" aria-labelledby="${hdr}" data-bs-parent="#accordionRefactors">`+
+          `<div class="accordion-body"><ul class="list-group mb-3">`+
+          `<li class="list-group-item"><strong>Branch:</strong> ${item.branch}</li>`+
+          `<li class="list-group-item"><strong>Class:</strong> ${item.class}</li>`+
+          `<li class="list-group-item"><strong>Tool:</strong> ${item.tool}</li>`+
+          `<li class="list-group-item"><strong>Line:</strong> ${item.line}</li></ul>`+
+          `<h5 class="mt-3"><i class="bi bi-card-text"></i> Description</h5>`+
+          `<table class="table table-bordered table-sm"><tbody>`+
+          `${Object.entries(desc).map(([k,v])=>`<tr><th>${k}</th><td>${v}</td></tr>`).join('')}`+
+          `</tbody></table></div></div>`;
+        acc.appendChild(div);
+      });
+    }).catch(e=>{console.error(e);document.getElementById('accordionRefactors').innerHTML='<p class="text-danger">Error loading details.</p>';});
+  </script>
+</body>
+</html>
+
