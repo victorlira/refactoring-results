@@ -14,11 +14,17 @@
     body { padding-top: 1rem; }
     .stat { font-size: 1.25rem; }
     table th, table td { white-space: nowrap; }
-    /* Status row coloring */
-    .status-refactor { background-color: #d4edda; }
-    .status-interference { background-color: #fff3cd; }
-    .status-nointerference { background-color: #e2e3e5; }
-    tr:hover { background-color: #f8f9fa; }
+    /* Status row coloring (lighter backgrounds) */
+    .status-refactor { background-color: #e9f7ef !important; }
+    .status-interference { background-color: #fff9e6 !important; }
+    .status-nointerference { background-color: #f5f5f5 !important; }
+    tr:hover { background-color: #f1f1f1 !important; }
+    /* Scrollable table container */
+    .table-responsive {
+      max-height: calc(100vh - 250px);
+      overflow-y: auto;
+      overflow-x: auto;
+    }
   </style>
 </head>
 <body>
@@ -71,7 +77,7 @@
     // Initialize Bootstrap tooltips
     document.addEventListener('DOMContentLoaded', function () {
       const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
+      tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
     });
     function truncate(text, max) {
       return text.length > max ? text.substring(0, max) + '…' : text;
@@ -82,18 +88,15 @@
       skipEmptyLines: true,
       complete: function(results) {
         const data = results.data;
-        // compute discard-rate
         const reported = data.filter(r => r.reportedInterferences === '1');
         const refactored = reported.filter(r => r.isRefactoring === '1');
         const rate = reported.length
           ? ((refactored.length / reported.length) * 100).toFixed(2) + '%'
           : 'N/A';
         document.getElementById('false-rate').textContent = rate;
-        // populate table
         const tbody = document.querySelector('#results-table tbody');
         data.forEach(r => {
           const tr = document.createElement('tr');
-          // Determine status
           let statusIcon = '', statusClass = '', statusLabel = '';
           if (r.isRefactoring === '1') {
             statusIcon = '<i class="bi bi-check-circle-fill text-success"></i>';
@@ -108,25 +111,15 @@
             statusClass = 'status-nointerference';
             statusLabel = 'No Interference';
           }
-          tr.classList.add('clickable', statusClass);
-          // cells
+          tr.classList.add(statusClass);
           const cells = [
             `<span data-bs-toggle="tooltip" title="${statusLabel}">${statusIcon}</span>`,
-            r.id,
-            r.project,
-            r['merge commit'],
-            r.className,
-            r.method,
-            truncate(r.leftChanges, 20),
-            truncate(r.rightChanges, 20),
-            r.reportedInterferences,
-            r['reported-interferences-count'],
-            r.isRefactoring
+            r.id, r.project, r['merge commit'], r.className,
+            r.method, truncate(r.leftChanges, 20), truncate(r.rightChanges, 20),
+            r.reportedInterferences, r['reported-interferences-count'], r.isRefactoring
           ];
           cells.forEach(html => {
-            const td = document.createElement('td');
-            td.innerHTML = html;
-            tr.appendChild(td);
+            const td = document.createElement('td'); td.innerHTML = html; tr.appendChild(td);
           });
           tr.addEventListener('click', () => {
             location.href = `detail.html?scenario=${r.id}`;
