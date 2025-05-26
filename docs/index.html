@@ -14,12 +14,15 @@
     body { padding-top: 1rem; }
     .stat { font-size: 1.25rem; }
     table th, table td { white-space: nowrap; }
-    .table-responsive { max-height: 70vh; overflow-y: auto; }
-    tr.clickable:hover { background-color: #f8f9fa; cursor: pointer; }
+    /* Status row coloring */
+    .status-refactor { background-color: #d4edda; }
+    .status-interference { background-color: #fff3cd; }
+    .status-nointerference { background-color: #e2e3e5; }
+    tr:hover { background-color: #f8f9fa; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <!-- Header -->
     <div class="text-center mb-4">
       <h1><i class="bi bi-kanban-fill"></i> Refactoring Results Dashboard</h1>
@@ -42,6 +45,7 @@
           <table class="table table-striped table-hover" id="results-table">
             <thead class="table-dark">
               <tr>
+                <th>Status</th>
                 <th>Scenario</th>
                 <th>Project</th>
                 <th>Merge</th>
@@ -64,6 +68,11 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+    // Initialize Bootstrap tooltips
+    document.addEventListener('DOMContentLoaded', function () {
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
+    });
     function truncate(text, max) {
       return text.length > max ? text.substring(0, max) + '…' : text;
     }
@@ -84,17 +93,43 @@
         const tbody = document.querySelector('#results-table tbody');
         data.forEach(r => {
           const tr = document.createElement('tr');
-          tr.classList.add('clickable');
+          // Determine status
+          let statusIcon = '', statusClass = '', statusLabel = '';
+          if (r.isRefactoring === '1') {
+            statusIcon = '<i class="bi bi-check-circle-fill text-success"></i>';
+            statusClass = 'status-refactor';
+            statusLabel = 'Refactoring';
+          } else if (r.reportedInterferences === '1') {
+            statusIcon = '<i class="bi bi-exclamation-triangle-fill text-warning"></i>';
+            statusClass = 'status-interference';
+            statusLabel = 'Interference';
+          } else {
+            statusIcon = '<i class="bi bi-x-circle-fill text-secondary"></i>';
+            statusClass = 'status-nointerference';
+            statusLabel = 'No Interference';
+          }
+          tr.classList.add('clickable', statusClass);
+          // cells
+          const cells = [
+            `<span data-bs-toggle="tooltip" title="${statusLabel}">${statusIcon}</span>`,
+            r.id,
+            r.project,
+            r['merge commit'],
+            r.className,
+            r.method,
+            truncate(r.leftChanges, 20),
+            truncate(r.rightChanges, 20),
+            r.reportedInterferences,
+            r['reported-interferences-count'],
+            r.isRefactoring
+          ];
+          cells.forEach(html => {
+            const td = document.createElement('td');
+            td.innerHTML = html;
+            tr.appendChild(td);
+          });
           tr.addEventListener('click', () => {
             location.href = `detail.html?scenario=${r.id}`;
-          });
-          const cells = [
-            r.id, r.project, r['merge commit'], r.className,
-            r.method, truncate(r.leftChanges, 20), truncate(r.rightChanges, 20),
-            r.reportedInterferences, r['reported-interferences-count'], r.isRefactoring
-          ];
-          cells.forEach(txt => {
-            const td = document.createElement('td'); td.textContent = txt; tr.appendChild(td);
           });
           tbody.appendChild(tr);
         });
@@ -103,3 +138,4 @@
   </script>
 </body>
 </html>
+
