@@ -20,16 +20,18 @@
   <style>
     body { padding-top: 1rem; }
     .stat { font-size: 1.25rem; }
+    table th, table td { white-space: nowrap; }
+    .table-responsive { max-height: 70vh; overflow-y: auto; }
   </style>
 </head>
 <body>
   <div class="container">
 
     <!-- Header -->
-    <div class="text-center mb-5">
+    <div class="text-center mb-4">
       <h1><i class="bi bi-kanban-fill"></i> Refactoring Results Dashboard</h1>
       <p class="lead">
-        Analysis of reported merge‐conflicts versus true interferences.
+        Analysis of reported vs. true merge interferences.
       </p>
     </div>
 
@@ -38,18 +40,17 @@
       <div class="col">
         <h2><i class="bi bi-info-circle-fill"></i> Experiment Summary</h2>
         <p>
-          This experiment measures, across <code>n</code> merge scenarios, how many
-          <em>initially reported</em> interferences (<code>reportedInterferences</code>)
-          were actually <strong>non-refactoring</strong> (i.e. genuine conflicts).
+          This dashboard visualizes <strong>reportedInterferences</strong> vs. <strong>isRefactoring</strong> outcomes
+          for multiple merge scenarios. <code>isRefactoring = 1</code> indicates a false-positive
+          interference discarded by the refactoring detector.
         </p>
         <p>
-          <strong>False‐positive discard rate</strong>:
-          among scenarios with <code>reportedInterferences = 1</code>, 
-          the percentage that ended up having
-          <code>noRefactoringInterference = 0</code>.
+          <strong>False-Positive Discard Rate</strong>:
+          Percentage of scenarios with <code>reportedInterferences=1</code>
+          that ended up being <code>isRefactoring=1</code>.
         </p>
         <div class="stat">
-          <strong>Discard rate:</strong>
+          <strong>Discard Rate:</strong>
           <span id="false-rate">Loading…</span>
         </div>
       </div>
@@ -58,12 +59,9 @@
     <!-- Detailed Table -->
     <div class="row">
       <div class="col">
-        <h2><i class="bi bi-table"></i> Detailed Scenario Results</h2>
+        <h2><i class="bi bi-table"></i> Scenario Results</h2>
         <div class="table-responsive">
-          <table
-            class="table table-striped table-hover"
-            id="results-table"
-          >
+          <table class="table table-striped table-hover table-sm" id="results-table">
             <thead class="table-dark">
               <tr>
                 <th>Scenario</th>
@@ -75,7 +73,7 @@
                 <th>Right Changes</th>
                 <th>Reported?</th>
                 <th>#Reported</th>
-                <th>No-Refactor?</th>
+                <th>isRefactoring?</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -86,35 +84,29 @@
 
   </div>
 
-  <!-- PapaParse (CSV loader) -->
+  <!-- PapaParse -->
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-
-  <!-- Bootstrap Bundle (JS + Popper) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Load CSV and populate both the discard-rate & the table
     Papa.parse('summary_experiment.csv', {
       download: true,
       header: true,
       skipEmptyLines: true,
       complete: function(results) {
         const data = results.data;
-        // compute discard‐rate
         const reported = data.filter(r => r.reportedInterferences === '1');
-        const discarded = reported.filter(r => r.noRefactoringInterference === '0');
+        const refactored = reported.filter(r => r.isRefactoring === '1');
         const rate = reported.length
-          ? ((discarded.length / reported.length) * 100).toFixed(2) + '%'
+          ? ((refactored.length / reported.length) * 100).toFixed(2) + '%'
           : 'N/A';
         document.getElementById('false-rate').textContent = rate;
 
-        // fill table
         const tbody = document.querySelector('#results-table tbody');
         data.forEach(r => {
           const tr = document.createElement('tr');
-          const cols = [
+          [
             r.id,
             r.project,
             r['merge commit'],
@@ -124,9 +116,8 @@
             r.rightChanges,
             r.reportedInterferences,
             r['reported-interferences-count'],
-            r.noRefactoringInterference
-          ];
-          cols.forEach(txt => {
+            r.isRefactoring
+          ].forEach(txt => {
             const td = document.createElement('td');
             td.textContent = txt;
             tr.appendChild(td);
@@ -138,4 +129,3 @@
   </script>
 </body>
 </html>
-
