@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <base href="/refactoring-results/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Refactoring Results Dashboard</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkz3dNu/mX0+FZn+yN1hpvnDnN/SfXlBx/6CkXbkq9V/mBlC9ZwTe74MkRUjF4cM" crossorigin="anonymous">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
@@ -61,7 +62,7 @@
   </div>
   <!-- Dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3A+Ziv+ZrS7AjY1/6V2vNh+lX6YsJhBKt3vnDnN/SfXlBx/6CkXbkq9V/mBlC9Zw" crossorigin="anonymous"></script>
   <script>
     function truncate(text, max) {
       return text.length > max ? text.substring(0, max) + '…' : text;
@@ -85,8 +86,7 @@
           const tr = document.createElement('tr');
           tr.classList.add('clickable');
           tr.addEventListener('click', () => {
-            location.href = `10/detail.html?scenario=${r.id}`.replace('10', r.id);
-            // or simply: `detail.html?scenario=${r.id}` if detail.html at root
+            location.href = `detail.html?scenario=${r.id}`;
           });
           const cells = [
             r.id, r.project, r['merge commit'], r.className,
