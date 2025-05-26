@@ -1,18 +1,171 @@
 [
   {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 25,
+      "endLine": 25,
+      "startColumn": 7,
+      "endColumn": 28,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "statement with the initializer of the inlined variable",
+      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
+    },
+    "line": "26"
+  },
+  {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 24,
+      "endLine": 62,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "FOR_STATEMENT",
+      "description": "statement with the initializer of the inlined variable",
+      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
+    },
+    "line": "26"
+  },
+  {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 77,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with inlined variable",
+      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
+    },
+    "line": "26"
+  },
+  {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 77,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
+    },
+    "line": "26"
+  },
+  {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 77,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
+    },
+    "line": "26"
+  },
+  {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 77,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
+    },
+    "line": "26"
+  },
+  {
+    "branch": "L",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 77,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
+    },
+    "line": "26"
+  },
+  {
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
+      "startLine": 39,
       "endLine": 67,
       "startColumn": 14,
       "endColumn": 8,
       "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
     },
     "line": "51"
   },
@@ -20,16 +173,152 @@
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
+      "startLine": 45,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 45,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "51"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 51,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "51"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "51"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
     },
     "line": "51"
   },
@@ -46,6 +335,91 @@
       "endColumn": 8,
       "codeElementType": "IF_STATEMENT",
       "description": "split conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "split conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "split conditional",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "51"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 39,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
       "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
     },
     "line": "51"
@@ -70,176 +444,6 @@
   {
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with split conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 51,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "ReExtractorPlus",
     "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
@@ -257,6 +461,108 @@
   {
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 45,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if(c == '.' && dottable && notLastChar)"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 45,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "new conditional",
+      "codeElement": "if(c == '.' && dottable && notLastChar)"
+    },
+    "line": "51"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 45,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "if(c == '.' && dottable && notLastChar)"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 45,
+      "endLine": 67,
+      "startColumn": 14,
+      "endColumn": 8,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "if(c == '.' && dottable && notLastChar)"
+    },
+    "line": "51"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with extracted variable",
+      "codeElement": "public convert(s String) : Object"
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with extracted variable",
+      "codeElement": "public convert(s String) : Object"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "ReExtractorPlus",
     "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
@@ -272,259 +578,21 @@
     "line": "51"
   },
   {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String) : Object"
     },
-    "line": "45"
+    "line": "39"
   },
   {
     "branch": "R",
@@ -541,109 +609,7 @@
       "description": "method declaration with merged conditional",
       "codeElement": "public convert(s String) : Object"
     },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "split conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with split conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "45"
+    "line": "39"
   },
   {
     "branch": "R",
@@ -652,13 +618,47 @@
     "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String) : Object"
+    },
+    "line": "39"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String) : Object"
+    },
+    "line": "45"
+  },
+  {
+    "branch": "R",
+    "class": "com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "description": {
+      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String) : Object"
     },
     "line": "45"
   },
@@ -682,42 +682,8 @@
   {
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
       "startLine": 15,
@@ -725,248 +691,10 @@
       "startColumn": 3,
       "endColumn": 4,
       "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
+      "description": "method declaration with merged conditional",
       "codeElement": "public convert(s String) : Object"
     },
-    "line": "45"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
+    "line": "51"
   },
   {
     "branch": "R",
@@ -983,24 +711,24 @@
       "description": "method declaration with merged conditional",
       "codeElement": "public convert(s String) : Object"
     },
-    "line": "39"
+    "line": "51"
   },
   {
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
+    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "split conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
+      "startLine": 15,
+      "endLine": 81,
+      "startColumn": 3,
+      "endColumn": 4,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with merged conditional",
+      "codeElement": "public convert(s String) : Object"
     },
-    "line": "39"
+    "line": "51"
   },
   {
     "branch": "R",
@@ -1023,295 +751,6 @@
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "split conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
     "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
@@ -1329,312 +768,6 @@
     "branch": "R",
     "class": "com.moandjiezana.toml.NumberConverter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "45"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "split conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
     "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
     "description": {
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
@@ -1644,516 +777,6 @@
       "endColumn": 4,
       "codeElementType": "METHOD_DECLARATION",
       "description": "method declaration with split conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "39"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 24,
-      "endLine": 62,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "FOR_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "for(int i=index.get(); i < s.length(); i=index.incrementAndGet())"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 25,
-      "endLine": 25,
-      "startColumn": 7,
-      "endColumn": 28,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the initializer of the inlined variable",
-      "codeElement": "char c=s.charAt(i);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "L",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 77,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "public convert(s String, index AtomicInteger, context Context) : Object"
-    },
-    "line": "26"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "split conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 51,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "split conditional",
-      "codeElement": "if((c == 'E' || c == 'e') && exponentable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with split conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 51,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "new conditional",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged conditional",
-      "codeElement": "public convert(s String) : Object"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 39,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == '+' || c == '-') && signable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 45,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if(c == '.' && dottable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 51,
-      "endLine": 67,
-      "startColumn": 14,
-      "endColumn": 8,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if((c == 'E' || c == 'e') && exponentable && notLastChar)"
-    },
-    "line": "51"
-  },
-  {
-    "branch": "R",
-    "class": "com.moandjiezana.toml.NumberConverter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-    "description": {
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "startLine": 15,
-      "endLine": 81,
-      "startColumn": 3,
-      "endColumn": 4,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
       "codeElement": "public convert(s String) : Object"
     },
     "line": "51"

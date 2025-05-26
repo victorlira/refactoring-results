@@ -2,7 +2,7 @@
   {
     "branch": "L",
     "class": "de.devland.esperandro.generation.CollectionActionGenerator",
-    "tool": "RefactoringMiner",
+    "tool": "ReExtractorPlus",
     "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
     "description": {
       "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
@@ -19,7 +19,7 @@
   {
     "branch": "L",
     "class": "de.devland.esperandro.generation.CollectionActionGenerator",
-    "tool": "ReExtractorPlus",
+    "tool": "RefactoringMiner",
     "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
     "description": {
       "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
@@ -57,83 +57,15 @@
     "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
     "description": {
       "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
-      "startLine": 46,
-      "endLine": 82,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void"
-    },
-    "line": "57"
-  },
-  {
-    "branch": "L",
-    "class": "de.devland.esperandro.generation.CollectionActionGenerator",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
-    "description": {
-      "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
-      "startLine": 41,
-      "endLine": 41,
-      "startColumn": 25,
-      "endColumn": 110,
+      "startLine": 63,
+      "endLine": 68,
+      "startColumn": 9,
+      "endColumn": 100,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "preferenceType : TypeInformation"
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "MethodSpec.Builder action=MethodSpec.methodBuilder(methodInformation.getMethodName()).addAnnotation(Override.class).addModifiers(Modifier.PUBLIC).returns(methodInformation.returnType.getType()).addParameter(methodInformation.parameterType.getType(),\"value\").addStatement(\"$T __pref = this.$L()\",preferenceType.getObjectType(),getterName);\n"
     },
-    "line": "57"
-  },
-  {
-    "branch": "L",
-    "class": "de.devland.esperandro.generation.CollectionActionGenerator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
-    "description": {
-      "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
-      "startLine": 41,
-      "endLine": 41,
-      "startColumn": 25,
-      "endColumn": 110,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "preferenceType : TypeInformation"
-    },
-    "line": "57"
-  },
-  {
-    "branch": "L",
-    "class": "de.devland.esperandro.generation.CollectionActionGenerator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
-    "description": {
-      "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
-      "startLine": 38,
-      "endLine": 57,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void"
-    },
-    "line": "57"
-  },
-  {
-    "branch": "R",
-    "class": "de.devland.esperandro.generation.CollectionActionGenerator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
-    "description": {
-      "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
-      "startLine": 46,
-      "endLine": 82,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void"
-    },
-    "line": "57"
+    "line": "63"
   },
   {
     "branch": "R",
@@ -159,15 +91,15 @@
     "refactoringInfo": "Extract Variable\tpreferenceType : TypeInformation in method public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void from class de.devland.esperandro.generation.CollectionActionGenerator",
     "description": {
       "filePath": "preference-processor/src/main/java/de/devland/esperandro/generation/CollectionActionGenerator.java",
-      "startLine": 63,
-      "endLine": 68,
-      "startColumn": 9,
-      "endColumn": 100,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "MethodSpec.Builder action=MethodSpec.methodBuilder(methodInformation.getMethodName()).addAnnotation(Override.class).addModifiers(Modifier.PUBLIC).returns(methodInformation.returnType.getType()).addParameter(methodInformation.parameterType.getType(),\"value\").addStatement(\"$T __pref = this.$L()\",preferenceType.getObjectType(),getterName);\n"
+      "startLine": 46,
+      "endLine": 82,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with extracted variable",
+      "codeElement": "public generateMethod(type TypeSpec.Builder, methodInformation MethodInformation, cacheAnnotation Cached) : void"
     },
-    "line": "63"
+    "line": "57"
   },
   {
     "branch": "R",
