@@ -1,0 +1,36 @@
+[
+  {
+    "branch": "L",
+    "class": "org.tomitribe.crest.cmds.processors.Help",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Replace Generic With Diamond\tArrayList<Item> with ArrayList<> in method public optionHelp(clazz Class<?>, commandName String, optionParams Collection<OptionParam>, out PrintStream) : void from class org.tomitribe.crest.cmds.processors.Help",
+    "description": {
+      "filePath": "tomitribe-crest/src/main/java/org/tomitribe/crest/cmds/processors/Help.java",
+      "startLine": 57,
+      "endLine": 57,
+      "startColumn": 34,
+      "endColumn": 70,
+      "codeElementType": "CLASS_INSTANCE_CREATION",
+      "description": "creation with diamond operator",
+      "codeElement": "new ArrayList<>(arg0)"
+    },
+    "line": "56"
+  },
+  {
+    "branch": "L",
+    "class": "org.tomitribe.crest.cmds.processors.Help",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Replace Generic With Diamond\tArrayList<String> with ArrayList<> in method public optionHelp(clazz Class<?>, commandName String, optionParams Collection<OptionParam>, out PrintStream) : void from class org.tomitribe.crest.cmds.processors.Help",
+    "description": {
+      "filePath": "tomitribe-crest/src/main/java/org/tomitribe/crest/cmds/processors/Help.java",
+      "startLine": 79,
+      "endLine": 79,
+      "startColumn": 40,
+      "endColumn": 57,
+      "codeElementType": "CLASS_INSTANCE_CREATION",
+      "description": "creation with diamond operator",
+      "codeElement": "new ArrayList<>()"
+    },
+    "line": "78"
+  }
+]

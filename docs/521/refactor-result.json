@@ -1,0 +1,87 @@
+[
+  {
+    "branch": "L",
+    "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Split Method\tprivate updateTagDescriptions() : void to [private updateTagDescriptions(discoveredTags Map<String,Tag>) : void, private scanClasspathForTags() : Map<String,Tag>] in class com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "description": {
+      "filePath": "src/main/java/com/github/kongchen/swagger/docgen/reader/JaxrsReader.java",
+      "startLine": 162,
+      "endLine": 171,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "split method declaration",
+      "codeElement": "private updateTagDescriptions(discoveredTags Map<String,Tag>) : void"
+    },
+    "line": "174"
+  },
+  {
+    "branch": "L",
+    "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Invert Condition\tif(apiOperation == null || apiOperation.hidden()) to if(apiOperation != null && apiOperation.hidden()) in method protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger from class com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "description": {
+      "filePath": "src/main/java/com/github/kongchen/swagger/docgen/reader/JaxrsReader.java",
+      "startLine": 117,
+      "endLine": 119,
+      "startColumn": 13,
+      "endColumn": 14,
+      "codeElementType": "IF_STATEMENT",
+      "description": "inverted conditional",
+      "codeElement": "if(apiOperation != null && apiOperation.hidden())"
+    },
+    "line": "117"
+  },
+  {
+    "branch": "L",
+    "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Invert Condition\tif(apiOperation == null || apiOperation.hidden()) to if(apiOperation != null && apiOperation.hidden()) in method protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger from class com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "description": {
+      "filePath": "src/main/java/com/github/kongchen/swagger/docgen/reader/JaxrsReader.java",
+      "startLine": 92,
+      "endLine": 160,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with inverted conditional",
+      "codeElement": "protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger"
+    },
+    "line": "106"
+  },
+  {
+    "branch": "L",
+    "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Invert Condition\tif(apiOperation == null || apiOperation.hidden()) to if(apiOperation != null && apiOperation.hidden()) in method protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger from class com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "description": {
+      "filePath": "src/main/java/com/github/kongchen/swagger/docgen/reader/JaxrsReader.java",
+      "startLine": 92,
+      "endLine": 160,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with inverted conditional",
+      "codeElement": "protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger"
+    },
+    "line": "117"
+  },
+  {
+    "branch": "L",
+    "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Invert Condition\tif(apiOperation == null || apiOperation.hidden()) to if(apiOperation != null && apiOperation.hidden()) in method protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger from class com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+    "description": {
+      "filePath": "src/main/java/com/github/kongchen/swagger/docgen/reader/JaxrsReader.java",
+      "startLine": 92,
+      "endLine": 160,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with inverted conditional",
+      "codeElement": "protected read(cls Class<?>, parentPath String, parentMethod String, readHidden boolean, parentConsumes String[], parentProduces String[], parentTags Map<String,Tag>, parentParameters List<Parameter>) : Swagger"
+    },
+    "line": "147"
+  }
+]

@@ -1,61 +1,38 @@
+<!-- docs/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Refactoring Experiment Dashboard</title>
-
+  <title>Refactoring Results Dashboard</title>
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    rel="stylesheet"
-  >
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body { padding-top: 1rem; }
     .stat { font-size: 1.25rem; }
     table th, table td { white-space: nowrap; }
     .table-responsive { max-height: 70vh; overflow-y: auto; }
+    tr.clickable:hover { background-color: #f8f9fa; cursor: pointer; }
   </style>
 </head>
 <body>
   <div class="container">
-
     <!-- Header -->
     <div class="text-center mb-4">
       <h1><i class="bi bi-kanban-fill"></i> Refactoring Results Dashboard</h1>
-      <p class="lead">
-        Analysis of reported vs. true merge interferences.
-      </p>
+      <p class="lead">Analysis of reported vs. true merge interferences.</p>
     </div>
-
-    <!-- Experiment Description -->
+    <!-- Experiment Summary -->
     <div class="row mb-4">
       <div class="col">
         <h2><i class="bi bi-info-circle-fill"></i> Experiment Summary</h2>
-        <p>
-          This dashboard visualizes <strong>reportedInterferences</strong> vs. <strong>isRefactoring</strong> outcomes
-          for multiple merge scenarios. <code>isRefactoring = 1</code> indicates a false-positive
-          interference discarded by the refactoring detector.
-        </p>
-        <p>
-          <strong>False-Positive Discard Rate</strong>:
-          Percentage of scenarios with <code>reportedInterferences=1</code>
-          that ended up being <code>isRefactoring=1</code>.
-        </p>
-        <div class="stat">
-          <strong>Discard Rate:</strong>
-          <span id="false-rate">Loading…</span>
-        </div>
+        <p>This dashboard visualizes <strong>reportedInterferences</strong> vs. <strong>isRefactoring</strong> outcomes for multiple merge scenarios. <code>isRefactoring = 1</code> indicates a false-positive interference discarded by the refactoring detector.</p>
+        <p><strong>False-Positive Discard Rate</strong>: Percentage of scenarios with <code>reportedInterferences=1</code> that ended up being <code>isRefactoring=1</code>.</p>
+        <div class="stat"><strong>Discard Rate:</strong> <span id="false-rate">Loading…</span></div>
       </div>
     </div>
-
     <!-- Detailed Table -->
     <div class="row">
       <div class="col">
@@ -81,54 +58,43 @@
         </div>
       </div>
     </div>
-
   </div>
-
-  <!-- PapaParse -->
+  <!-- Dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  <!-- Bootstrap Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <script>
-    // truncate helper
     function truncate(text, max) {
       return text.length > max ? text.substring(0, max) + '…' : text;
     }
-
     Papa.parse('summary_experiment.csv', {
       download: true,
       header: true,
       skipEmptyLines: true,
       complete: function(results) {
         const data = results.data;
-        // compute discard‐rate
+        // compute discard-rate
         const reported = data.filter(r => r.reportedInterferences === '1');
         const refactored = reported.filter(r => r.isRefactoring === '1');
         const rate = reported.length
           ? ((refactored.length / reported.length) * 100).toFixed(2) + '%'
           : 'N/A';
         document.getElementById('false-rate').textContent = rate;
-
-        // fill table
+        // populate table
         const tbody = document.querySelector('#results-table tbody');
         data.forEach(r => {
           const tr = document.createElement('tr');
+          tr.classList.add('clickable');
+          tr.addEventListener('click', () => {
+            location.href = `10/detail.html?scenario=${r.id}`.replace('10', r.id);
+            // or simply: `detail.html?scenario=${r.id}` if detail.html at root
+          });
           const cells = [
-            r.id,
-            r.project,
-            r['merge commit'],
-            r.className,
-            r.method,
-            truncate(r.leftChanges, 20),
-            truncate(r.rightChanges, 20),
-            r.reportedInterferences,
-            r['reported-interferences-count'],
-            r.isRefactoring
+            r.id, r.project, r['merge commit'], r.className,
+            r.method, truncate(r.leftChanges, 20), truncate(r.rightChanges, 20),
+            r.reportedInterferences, r['reported-interferences-count'], r.isRefactoring
           ];
           cells.forEach(txt => {
-            const td = document.createElement('td');
-            td.textContent = txt;
-            tr.appendChild(td);
+            const td = document.createElement('td'); td.textContent = txt; tr.appendChild(td);
           });
           tbody.appendChild(tr);
         });
@@ -137,4 +103,3 @@
   </script>
 </body>
 </html>
-
