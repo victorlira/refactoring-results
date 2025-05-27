@@ -45,6 +45,10 @@
 
     const scen = getParam('scenario');
     document.getElementById('scen-id').textContent = scen;
+    // Set validation form link dynamically
+    const formBase = 'https://docs.google.com/forms/d/e/1FAIpQLSfaDmzmj8MDvna2SVlqmF_cNwYR6lC7W49p4S17h4XTWav-aA/viewform?usp=pp_url&entry.1736434132=';
+    document.getElementById('validation-form-link').href = formBase + scen;
+    document.getElementById('scen-id').textContent = scen;
 
     // Load summary CSV to get project, commits
     Papa.parse('summary_experiment.csv', {
