@@ -14,7 +14,7 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": null
     },
-    "line": "147"
+    "line": "149"
   },
   {
     "branch": "R",
@@ -31,7 +31,7 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": "if(stream != null && stream.getDomain().equals(\\\\\\\\\\\\\\\"MIXED\\\\\\\\\\\\\\\"))"
     },
-    "line": "147"
+    "line": "149"
   },
   {
     "branch": "R",
@@ -48,24 +48,7 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": "newStatus.add(new Status(false,\\\\\\\\\\\\\\\"Stream \\\\\\\\\\\\\\\" + stream.toPrettyString() + \\\\\\\\\\\\\\\" (any language) is incompatible with analysis version \\\\\\\\\\\\\\\"+ analysisVersion));\\\\\\\\n"
     },
-    "line": "147"
-  },
-  {
-    "branch": "R",
-    "class": "jenkins.plugins.coverity.CheckConfig",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
-      "startLine": 97,
-      "endLine": 157,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public check() : void"
-    },
-    "line": "127"
+    "line": "149"
   },
   {
     "branch": "R",
@@ -99,6 +82,23 @@
       "description": "method declaration with extracted variable",
       "codeElement": "public check() : void"
     },
-    "line": "147"
+    "line": "130"
+  },
+  {
+    "branch": "R",
+    "class": "jenkins.plugins.coverity.CheckConfig",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
+    "description": {
+      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
+      "startLine": 97,
+      "endLine": 157,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "method declaration with extracted variable",
+      "codeElement": "public check() : void"
+    },
+    "line": "149"
   }
 ]
