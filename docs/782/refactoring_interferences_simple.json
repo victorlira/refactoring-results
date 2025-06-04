@@ -2,7 +2,19 @@
   [
     {
       "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      "refactoringInfo": [
+        "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Add Variable Modifier\tfinal in variable attributeNameValue : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
+      ],
       "line": "62",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
+    },
+    {
+      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
@@ -10,11 +22,12 @@
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
-    },
-    {
-      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      ],
       "line": "69",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
+    },
+    {
+      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
@@ -22,23 +35,25 @@
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
-    },
-    {
-      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      ],
       "line": "73",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
+    },
+    {
+      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeNameValue : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Extract Variable\tresolvedAttribute : ResolvedAttribute in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
-    },
-    {
-      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      ],
       "line": "79",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
+    },
+    {
+      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
@@ -46,11 +61,12 @@
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Extract Variable\tresolvedAttribute : ResolvedAttribute in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
-    },
-    {
-      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      ],
       "line": "80",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
+    },
+    {
+      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
@@ -58,35 +74,25 @@
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Extract Variable\tresolvedAttribute : ResolvedAttribute in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
-    },
-    {
-      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      ],
       "line": "81",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
+    },
+    {
+      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeNameValue : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Extract Variable\tresolvedAttribute : ResolvedAttribute in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+        "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
-    },
-    {
-      "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+      ],
       "line": "86",
-      "refactoringInfo": [
-        "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Add Variable Modifier\tfinal in variable attributeNameValue : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-        "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
     },
     {
       "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
-      "line": "89",
       "refactoringInfo": [
         "Add Variable Modifier\tfinal in variable argumentValues : Object[] in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Add Variable Modifier\tfinal in variable attributeName : String in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
@@ -94,7 +100,9 @@
         "Add Variable Modifier\tfinal in variable object : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
         "Merge Conditional\t[if(context.isStrictVariables()), if(object == null)] to if(object == null && context.isStrictVariables()) in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression"
-      ]
+      ],
+      "line": "89",
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java"
     }
   ]
 ]
