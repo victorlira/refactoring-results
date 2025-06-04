@@ -3,18 +3,27 @@
     {
       "class": "net.jodah.lyra.internal.RetryableResource",
       "refactoringInfo": [
-        "Add Parameter\trecoverable : boolean in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, retryStats RetryStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
         "Extract And Move Method\tpublic isPolicyExceeded() : boolean extracted from package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, recovery boolean, logFailures boolean) : T in class net.jodah.lyra.internal.RetryableResource & moved to class net.jodah.lyra.internal.RecurringStats",
+        "Inline Variable\tconnectionClosure : boolean in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, recovery boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
+        "Localize Parameter\trecovery : boolean to recovery : boolean in method package callWithRetries(callable Callable<T>, recurringPolicy RecurringPolicy<?>, retryStats RecurringStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
+        "Rename Parameter\trecovery : boolean to recoverable : boolean in method package callWithRetries(callable Callable<T>, recurringPolicy RecurringPolicy<?>, retryStats RecurringStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
+        "Rename Variable\tretryStats : RetryStats to recovery : boolean in method package callWithRetries(callable Callable<T>, recurringPolicy RecurringPolicy<?>, retryStats RecurringStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource"
+      ],
+      "line": "42",
+      "filePath": "src/main/java/net/jodah/lyra/internal/RetryableResource.java",
+      "branch": "R"
+    },
+    {
+      "class": "net.jodah.lyra.internal.RetryableResource",
+      "refactoringInfo": [
+        "Add Parameter\trecoverable : boolean in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, retryStats RetryStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
         "Extract And Move Method\tpublic isPolicyExceeded() : boolean extracted from package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, recovery boolean, logFailures boolean) : T in class net.jodah.lyra.internal.RetryableResource & moved to class net.jodah.lyra.internal.RetryStats",
         "Inline Variable\tconnectionClosure : boolean in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, recovery boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
         "Invert Condition\tif(retryPolicy == null || !retryPolicy.allowsRetries()) to boolean retryable=retryPolicy != null && retryPolicy.allowsRetries() && isRetryable(e,sse); in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, retryStats RetryStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
         "Invert Condition\tif(retryPolicy == null || !retryPolicy.allowsRetries()) to if(sse == null && logFailures && retryPolicy != null && retryPolicy.allowsRetries()) in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, retryStats RetryStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
-        "Localize Parameter\trecovery : boolean to recovery : boolean in method package callWithRetries(callable Callable<T>, recurringPolicy RecurringPolicy<?>, retryStats RecurringStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
-        "Rename Parameter\trecovery : boolean to recoverable : boolean in method package callWithRetries(callable Callable<T>, recurringPolicy RecurringPolicy<?>, retryStats RecurringStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
-        "Rename Parameter\trecovery : boolean to recoverable : boolean in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, retryStats RetryStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource",
-        "Rename Variable\tretryStats : RetryStats to recovery : boolean in method package callWithRetries(callable Callable<T>, recurringPolicy RecurringPolicy<?>, retryStats RecurringStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource"
+        "Rename Parameter\trecovery : boolean to recoverable : boolean in method package callWithRetries(callable Callable<T>, retryPolicy RetryPolicy, retryStats RetryStats, recoverable boolean, logFailures boolean) : T from class net.jodah.lyra.internal.RetryableResource"
       ],
-      "line": "42",
+      "line": "43",
       "filePath": "src/main/java/net/jodah/lyra/internal/RetryableResource.java",
       "branch": "L"
     },
