@@ -1,0 +1,27 @@
+[
+  [
+    {
+      "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+      "line": "76",
+      "refactoringInfo": [
+        "Change Parameter Type\tdata : DataModel<Long,Long> to data : DataModel<U,I> in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
+        "Change Variable Type\titem : Long to item : I in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
+        "Change Variable Type\titems : List<Long> to items : List<I> in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter"
+      ]
+    },
+    {
+      "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+      "line": "79",
+      "refactoringInfo": [
+        "Extract And Move Method\tpublic getDefaultModel() : DataModelIF<U,I> extracted from public split(data DataModel<Long,Long>) : DataModel<Long,Long>[] in class net.recommenders.rival.split.splitter.CrossValidationSplitter & moved to class net.recommenders.rival.core.DataModelFactory"
+      ]
+    },
+    {
+      "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+      "line": "80",
+      "refactoringInfo": [
+        "Extract And Move Method\tpublic getDefaultModel() : DataModelIF<U,I> extracted from public split(data DataModel<Long,Long>) : DataModel<Long,Long>[] in class net.recommenders.rival.split.splitter.CrossValidationSplitter & moved to class net.recommenders.rival.core.DataModelFactory"
+      ]
+    }
+  ]
+]
