@@ -1,0 +1,83 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,$stack36 = interfaceinvoke subcommand#14.<java.util.Iterator: java.lang.Object next()>(),151,SourceNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, $stack36 = interfaceinvoke subcommand#14.<java.util.Iterator: java.lang.Object next()>(), 151)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,diff#21 = (java.lang.String) $stack36,151,SourceNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, diff#21 = (java.lang.String) $stack36, 151)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,$stack40 = virtualinvoke $stack39.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(diff#21),153,SinkNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, $stack40 = virtualinvoke $stack39.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(diff#21), 153)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,$stack41 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" "),153,SinkNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, $stack41 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' '), 153)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,$stack42 = virtualinvoke $stack41.<java.lang.StringBuilder: java.lang.String toString()>(),153,SinkNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, $stack42 = virtualinvoke $stack41.<java.lang.StringBuilder: java.lang.String toString()>(), 153)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,interfaceinvoke results.<java.util.List: boolean add(java.lang.Object)>($stack42),153,SinkNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, interfaceinvoke results.<java.util.List: boolean add(java.lang.Object)>($stack42), 153)) SINK=>BASE: Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,$stack9 = new java.util.ArrayList,119,SourceNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 119)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,results = $stack9,119,SourceNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, results = $stack9, 119)) => Node(<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>,interfaceinvoke results.<java.util.List: boolean add(java.lang.Object)>($stack42),153,SinkNode, path: (<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>, interfaceinvoke results.<java.util.List: boolean add(java.lang.Object)>($stack42), 153))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack9 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.cmds.CmdGroup",
+					"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+					"line": 119
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 119
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 119
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 153
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack36 = interfaceinvoke subcommand#14.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.cmds.CmdGroup",
+					"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+					"line": 151
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 151
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 151
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 153
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 153
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 153
+},{
+	"class": "org.tomitribe.crest.cmds.CmdGroup",
+	"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+	"line": 153
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke results.<java.util.List: boolean add(java.lang.Object)>($stack42)",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.cmds.CmdGroup",
+					"method": "<org.tomitribe.crest.cmds.CmdGroup: java.util.Collection complete(java.lang.String,int)>",
+					"line": 153
+				}
+			}
+		]
+	}
+}
+
+]

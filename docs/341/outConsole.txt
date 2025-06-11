@@ -1,0 +1,116 @@
+Running soot scenario remoting-jmx;org.jboss.remotingjmx.protocol.v2.ClientConnection;addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object);de3218ef58ebd3293e2afbe472f5a90f5c33e0e0
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/remoting-jmx/de3218ef58ebd3293e2afbe472f5a90f5c33e0e0/original-without-dependencies/remoting-jmx-3.0.5.CR1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,61100
+Time to perform Confluence 1 Inter 0,54500
+Configure Soot Confluence 2 Inter 0,29300
+Time to perform Confluence 2 Inter 0,25800
+Visited methods: 60
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/remoting-jmx/de3218ef58ebd3293e2afbe472f5a90f5c33e0e0/original-without-dependencies/remoting-jmx-3.0.5.CR1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,73600
+Runtime: 0.01s
+Time to perform OA Inter 0,79400
+OA Inter Visited methods: 24
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/remoting-jmx/de3218ef58ebd3293e2afbe472f5a90f5c33e0e0/original-without-dependencies/remoting-jmx-3.0.5.CR1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,60200
+Time to perform DFP Inter 0,47600
+Depth limit: 5
+CONFLICTS: DF interference in <org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,$stack2 = e instanceof javax.management.JMRuntimeException,1573,SourceNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, specialinvoke this.<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>($stack34), 1195) => (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>, $stack2 = e instanceof javax.management.JMRuntimeException, 1573)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,if $stack2 == 0 goto return,1573,SinkNode, path: )), List(Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>,$stack34 = response.<org.jboss.remotingjmx.protocol.v2.ClientCommon$TypeExceptionHolder: java.lang.Exception e>,1195,SourceNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, $stack34 = response.<org.jboss.remotingjmx.protocol.v2.ClientCommon$TypeExceptionHolder: java.lang.Exception e>, 1195)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,e := @parameter0: java.lang.Exception,-1,SimpleNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, specialinvoke this.<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>($stack34), 1195)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,$stack2 = e instanceof javax.management.JMRuntimeException,1573,SourceNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, specialinvoke this.<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>($stack34), 1195) => (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>, $stack2 = e instanceof javax.management.JMRuntimeException, 1573)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,if $stack2 == 0 goto return,1573,SinkNode, path: ))]
+Visited methods: 30
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/remoting-jmx/de3218ef58ebd3293e2afbe472f5a90f5c33e0e0/original-without-dependencies/remoting-jmx-3.0.5.CR1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,59900
+Time to perform DFP Inter 0,50300
+Depth limit: 5
+CONFLICTS: DF interference in <org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,$stack2 = e instanceof javax.management.JMRuntimeException,1573,SourceNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, specialinvoke this.<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>($stack34), 1195) => (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>, $stack2 = e instanceof javax.management.JMRuntimeException, 1573)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,if $stack2 == 0 goto return,1573,SinkNode, path: )), List(Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>,$stack34 = response.<org.jboss.remotingjmx.protocol.v2.ClientCommon$TypeExceptionHolder: java.lang.Exception e>,1195,SourceNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, $stack34 = response.<org.jboss.remotingjmx.protocol.v2.ClientCommon$TypeExceptionHolder: java.lang.Exception e>, 1195)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,e := @parameter0: java.lang.Exception,-1,SimpleNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, specialinvoke this.<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>($stack34), 1195)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,$stack2 = e instanceof javax.management.JMRuntimeException,1573,SourceNode, path: (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)>, specialinvoke this.<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>($stack34), 1195) => (<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>, $stack2 = e instanceof javax.management.JMRuntimeException, 1573)) => Node(<org.jboss.remotingjmx.protocol.v2.ClientConnection$TheConnection: void jmRuntimeException(java.lang.Exception)>,if $stack2 == 0 goto return,1573,SinkNode, path: ))]
+Visited methods: 30
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/remoting-jmx/de3218ef58ebd3293e2afbe472f5a90f5c33e0e0/original-without-dependencies/remoting-jmx-3.0.5.CR1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,61100
+Time to perform PDG 0,44200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/remoting-jmx/de3218ef58ebd3293e2afbe472f5a90f5c33e0e0/original-without-dependencies/remoting-jmx-3.0.5.CR1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,90700
+Time to perform PDG 0,39800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

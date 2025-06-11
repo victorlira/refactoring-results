@@ -14,7 +14,8 @@
       "description": "statement with the initializer of the inlined variable",
       "codeElement": null
     },
-    "line": "351"
+    "line": "351",
+    "branchLine": "351"
   },
   {
     "branch": "R",
@@ -29,25 +30,9 @@
       "endColumn": 99,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
       "description": "statement with the initializer of the inlined variable",
-      "codeElement": "final HashMap<String,String> lineStatusMatches=channel.call(new LogParserStatusComputer(log,parsingRulesArray,compiledPatterns,signature));\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
+      "codeElement": "final HashMap<String,String> lineStatusMatches=channel.call(new LogParserStatusComputer(log,parsingRulesArray,compiledPatterns,signature));\n"
     },
-    "line": "351"
-  },
-  {
-    "branch": "R",
-    "class": "hudson.plugins.logparser.LogParserParser",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Inline Variable\tcomputer : LogParserStatusComputer in method private parseLogBody(build Run<?,?>, writer BufferedWriter, filePath FilePath, logFileLocation String, linesInLog int, logger Logger) : void from class hudson.plugins.logparser.LogParserParser",
-    "description": {
-      "filePath": "src/main/java/hudson/plugins/logparser/LogParserParser.java",
-      "startLine": 342,
-      "endLine": 381,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "private parseLogBody(build Run<?,?>, writer BufferedWriter, log InputStream, logger Logger) : void"
-    },
-    "line": "351"
+    "line": "351",
+    "branchLine": "351"
   }
 ]

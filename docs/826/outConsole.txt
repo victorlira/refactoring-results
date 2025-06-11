@@ -1,0 +1,114 @@
+Running soot scenario openpnp;org.openpnp.vision.pipeline.ui.CvPipelineEditor;static block;af31eaadef77310d8942dda126512ebbf3ce859d
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openpnp/af31eaadef77310d8942dda126512ebbf3ce859d/original-without-dependencies/openpnp-gui-0.0.1-alpha-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 1,24200
+Time to perform Confluence 1 Inter 0,49000
+Configure Soot Confluence 2 Inter 0,77200
+Time to perform Confluence 2 Inter 0,08200
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openpnp/af31eaadef77310d8942dda126512ebbf3ce859d/original-without-dependencies/openpnp-gui-0.0.1-alpha-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,94200
+Runtime: 0.028s
+Time to perform OA Inter 1,03500
+OA Inter Visited methods: 60
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openpnp/af31eaadef77310d8942dda126512ebbf3ce859d/original-without-dependencies/openpnp-gui-0.0.1-alpha-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,91400
+Time to perform DFP Inter 0,45800
+Depth limit: 5
+CONFLICTS: DF interference in <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>
+Data flows from execution of line 90 to 90, defined in $stack1 = <org.openpnp.vision.pipeline.ui.CvPipelineEditor: java.util.Set stageClasses> and propagated in interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls)
+Caused by line 90 flow: path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)
+Caused by line 90 flow: path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)
+[List(Node(<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>,$stack1 = <org.openpnp.vision.pipeline.ui.CvPipelineEditor: java.util.Set stageClasses>,204,SourceNode, path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)) => Node(<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>,interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls),204,SinkNode, path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)))]
+Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openpnp/af31eaadef77310d8942dda126512ebbf3ce859d/original-without-dependencies/openpnp-gui-0.0.1-alpha-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,87100
+Time to perform DFP Inter 0,42800
+Depth limit: 5
+CONFLICTS: DF interference in <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>
+Data flows from execution of line 90 to 90, defined in $stack1 = <org.openpnp.vision.pipeline.ui.CvPipelineEditor: java.util.Set stageClasses> and propagated in interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls)
+Caused by line 90 flow: path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)
+Caused by line 90 flow: path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)
+[List(Node(<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>,$stack1 = <org.openpnp.vision.pipeline.ui.CvPipelineEditor: java.util.Set stageClasses>,204,SourceNode, path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)) => Node(<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>,interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls),204,SinkNode, path: (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void <clinit>()>, staticinvoke <org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>(class 'Lorg/openpnp/vision/pipeline/stages/AdaptiveHistogramEqualize;'), 90) => (<org.openpnp.vision.pipeline.ui.CvPipelineEditor: void registerStageClass(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Set: boolean add(java.lang.Object)>(cls), 204)))]
+Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openpnp/af31eaadef77310d8942dda126512ebbf3ce859d/original-without-dependencies/openpnp-gui-0.0.1-alpha-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,00200
+Time to perform PDG 0,51300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openpnp/af31eaadef77310d8942dda126512ebbf3ce859d/original-without-dependencies/openpnp-gui-0.0.1-alpha-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,76100
+Time to perform PDG 0,50500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

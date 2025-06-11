@@ -1,0 +1,134 @@
+Running soot scenario azure-tables-hadoop;com.microsoft.hadoop.azure.AzureTableRecordReader;initialize(InputSplit, TaskAttemptContext);f5ae55a8d5024fba05bd9a188ae18116b624a69d
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/azure-tables-hadoop/f5ae55a8d5024fba05bd9a188ae18116b624a69d/original-without-dependencies/microsoft-hadoop-azure-0.0.2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,52400
+Time to perform Confluence 1 Inter 0,53000
+Configure Soot Confluence 2 Inter 0,14900
+Time to perform Confluence 2 Inter 0,11400
+Visited methods: 24
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/azure-tables-hadoop/f5ae55a8d5024fba05bd9a188ae18116b624a69d/original-without-dependencies/microsoft-hadoop-azure-0.0.2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,65100
+Runtime: 0.014s
+OA interference in class AzureTableRecordReader, method void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext), execution of line 43 overrides 43, assigning to variable e, 
+Caused by line 43 flow:
+at com.microsoft.hadoop.azure.AzureTableRecordReader.initialize(AzureTableRecordReader.java:43)
+And line 43 flow:
+at com.microsoft.hadoop.azure.AzureTableRecordReader.initialize(AzureTableRecordReader.java:43)
+ 
+OA interference in class AzureTableRecordReader, method void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext), execution of line 45 overrides 45, assigning to variable e, 
+Caused by line 45 flow:
+at com.microsoft.hadoop.azure.AzureTableRecordReader.initialize(AzureTableRecordReader.java:45)
+And line 45 flow:
+at com.microsoft.hadoop.azure.AzureTableRecordReader.initialize(AzureTableRecordReader.java:45)
+ 
+OA interference in class AzureTableRecordReader, method void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext), execution of line 42 overrides 42, assigning to variable this.<com.microsoft.hadoop.azure.AzureTableRecordReader: java.util.Iterator queryResults>, 
+Caused by line 42 flow:
+at com.microsoft.hadoop.azure.AzureTableRecordReader.initialize(AzureTableRecordReader.java:42)
+And line 42 flow:
+at com.microsoft.hadoop.azure.AzureTableRecordReader.initialize(AzureTableRecordReader.java:42)
+ 
+Time to perform OA Inter 0,72800
+OA Inter Visited methods: 10
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/azure-tables-hadoop/f5ae55a8d5024fba05bd9a188ae18116b624a69d/original-without-dependencies/microsoft-hadoop-azure-0.0.2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,49200
+Time to perform DFP Inter 0,52000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 12
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/azure-tables-hadoop/f5ae55a8d5024fba05bd9a188ae18116b624a69d/original-without-dependencies/microsoft-hadoop-azure-0.0.2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,35900
+Time to perform DFP Inter 0,48100
+Depth limit: 5
+CONFLICTS: DF interference in <com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>
+Data flows from execution of line 43 to 44, defined in e = $stack16 and propagated in specialinvoke $stack17.<java.io.IOException: void <init>(java.lang.Throwable)>(e)
+Caused by line 43 flow: path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack16, 43)
+Caused by line 44 flow: path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack17.<java.io.IOException: void <init>(java.lang.Throwable)>(e), 44)
+DF interference in <com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>
+Data flows from execution of line 45 to 46, defined in e = $stack18 and propagated in specialinvoke $stack19.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e)
+Caused by line 45 flow: path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack18, 45)
+Caused by line 46 flow: path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack19.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e), 46)
+[List(Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,e = $stack18,45,SourceNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack18, 45)) => Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,specialinvoke $stack19.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e),46,SinkNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack19.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e), 46))), List(Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,e = $stack16,43,SourceNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack16, 43)) => Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,specialinvoke $stack17.<java.io.IOException: void <init>(java.lang.Throwable)>(e),44,SinkNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack17.<java.io.IOException: void <init>(java.lang.Throwable)>(e), 44)))]
+Visited methods: 12
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/azure-tables-hadoop/f5ae55a8d5024fba05bd9a188ae18116b624a69d/original-without-dependencies/microsoft-hadoop-azure-0.0.2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,34800
+Time to perform PDG 0,29300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/azure-tables-hadoop/f5ae55a8d5024fba05bd9a188ae18116b624a69d/original-without-dependencies/microsoft-hadoop-azure-0.0.2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40700
+Time to perform PDG 0,40100
+CONFLICTS: [List(Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,e = $stack18,43,SourceNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack18, 43)) => Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,specialinvoke $stack19.<java.io.IOException: void <init>(java.lang.Throwable)>(e),44,SinkNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack19.<java.io.IOException: void <init>(java.lang.Throwable)>(e), 44))), List(Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,e = $stack16,45,SourceNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack16, 45)) => Node(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>,specialinvoke $stack17.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e),46,SinkNode, path: (<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack17.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e), 46)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

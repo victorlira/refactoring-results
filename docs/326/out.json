@@ -1,0 +1,677 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectoryPath = $stack15",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, lowDirectoryPath = $stack15, 51)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack35 = virtualinvoke lowDirectoryPath.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($stack34)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, $stack35 = virtualinvoke lowDirectoryPath.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($stack34), 55)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack36 = virtualinvoke $stack35.<org.apache.hadoop.fs.Path: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack42 = new org.apache.hadoop.fs.Path",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "45"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, specialinvoke $stack42.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>($stack49), 45)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectoryPath = $stack42",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "45"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, lowDirectoryPath = $stack42, 45)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack51 = interfaceinvoke fs.<org.apache.accumulo.server.fs.VolumeManager: org.apache.hadoop.fs.FileSystem getFileSystemByPath(org.apache.hadoop.fs.Path)>(lowDirectoryPath)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, $stack51 = interfaceinvoke fs.<org.apache.accumulo.server.fs.VolumeManager: org.apache.hadoop.fs.FileSystem getFileSystemByPath(org.apache.hadoop.fs.Path)>(lowDirectoryPath), 47)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack52 = virtualinvoke lowDirectoryPath.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($stack51)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, $stack52 = virtualinvoke lowDirectoryPath.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($stack51), 47)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack53 = virtualinvoke $stack52.<org.apache.hadoop.fs.Path: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack60 = virtualinvoke $stack58.<org.apache.accumulo.core.data.KeyExtent: org.apache.hadoop.io.Text getTableId()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, $stack60 = virtualinvoke $stack58.<org.apache.accumulo.core.data.KeyExtent: org.apache.hadoop.io.Text getTableId()>(), 3539)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack61 = virtualinvoke $stack60.<org.apache.hadoop.io.Text: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, $stack61 = virtualinvoke $stack60.<org.apache.hadoop.io.Text: java.lang.String toString()>(), 3539)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack36 = virtualinvoke $stack35.<org.apache.hadoop.fs.Path: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack52 = virtualinvoke lowDirectoryPath.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($stack51)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)","(<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>, $stack52 = virtualinvoke lowDirectoryPath.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($stack51), 47)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack53 = virtualinvoke $stack52.<org.apache.hadoop.fs.Path: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.util.TabletOperations",
+  "method": "<org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "highDatafileSizes = tmp$1231003942",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3543"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, highDatafileSizes = tmp$1231003942, 3543)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "dfv := @parameter1: java.util.SortedMap",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.util.SortedMap datafiles> = dfv",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3474"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.util.SortedMap datafiles> = dfv, 3474)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = new java.util.HashSet",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$DatafileManager",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>",
+  "line": "1068"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, virtualinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>(1, 0, 0), 3495)","(<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>, virtualinvoke mct.<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>(), 2673)","(<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>, $stack51 = virtualinvoke $stack50.<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>(), 2198)","(<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>, $stack5 = virtualinvoke $stack4.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>(), 3131)","(<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>, specialinvoke $stack5.<java.util.HashSet: void <init>(java.util.Collection)>($stack7), 1068)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "files = $stack5",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$DatafileManager",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>",
+  "line": "1068"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, virtualinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>(1, 0, 0), 3495)","(<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>, virtualinvoke mct.<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>(), 2673)","(<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>, $stack51 = virtualinvoke $stack50.<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>(), 2198)","(<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>, $stack5 = virtualinvoke $stack4.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>(), 3131)","(<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>, files = $stack5, 1068)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = staticinvoke <java.util.Collections: java.util.Set unmodifiableSet(java.util.Set)>(files)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$DatafileManager",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>",
+  "line": "1069"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, virtualinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>(1, 0, 0), 3495)","(<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>, virtualinvoke mct.<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>(), 2673)","(<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>, $stack51 = virtualinvoke $stack50.<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>(), 2198)","(<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>, $stack5 = virtualinvoke $stack4.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>(), 3131)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack141 = virtualinvoke $stack140.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3517"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, $stack141 = virtualinvoke $stack140.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>(), 3517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "splitPoint = specialinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec findSplitRow(java.util.Collection)>($stack141)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3517"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, splitPoint = specialinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec findSplitRow(java.util.Collection)>($stack141), 3517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack47 = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3527"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, $stack47 = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>, 3527)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tsp = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3533"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, tsp = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>, 3533)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = staticinvoke <java.util.Collections: java.util.Set unmodifiableSet(java.util.Set)>(files)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$DatafileManager",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>",
+  "line": "1069"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, virtualinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>(1, 0, 0), 3495)","(<org.apache.accumulo.server.tabletserver.Tablet: void initiateClose(boolean,boolean,boolean)>, virtualinvoke mct.<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>(), 2673)","(<org.apache.accumulo.server.tabletserver.Tablet$MinorCompactionTask: void run()>, $stack51 = virtualinvoke $stack50.<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>(), 2198)","(<org.apache.accumulo.server.tabletserver.Tablet: boolean needsSplit()>, $stack5 = virtualinvoke $stack4.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>(), 3131)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack141 = virtualinvoke $stack140.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3517"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, $stack141 = virtualinvoke $stack140.<org.apache.accumulo.server.tabletserver.Tablet$DatafileManager: java.util.Set getFiles()>(), 3517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "splitPoint = specialinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec findSplitRow(java.util.Collection)>($stack141)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3517"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, splitPoint = specialinvoke this.<org.apache.accumulo.server.tabletserver.Tablet: org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec findSplitRow(java.util.Collection)>($stack141), 3517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack47 = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3527"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, $stack47 = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>, 3527)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tsp = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3533"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, tsp = splitPoint.<org.apache.accumulo.server.tabletserver.Tablet$SplitRowSpec: org.apache.hadoop.io.Text row>, 3533)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3539"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDirectory = staticinvoke <org.apache.accumulo.server.util.TabletOperations: java.lang.String createTabletDirectory(org.apache.accumulo.server.fs.VolumeManager,java.lang.String,org.apache.hadoop.io.Text)>($stack59, $stack61, tsp), 3539)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "d := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3473"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.lang.String dir> = d, 3473)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "highDatafileSizes = tmp$1231003942",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3543"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, highDatafileSizes = tmp$1231003942, 3543)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3566"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "lowDatafileSizes = tmp$1774652258",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>",
+  "line": "3542"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, lowDatafileSizes = tmp$1774652258, 3542)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "dfv := @parameter1: java.util.SortedMap",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.util.SortedMap datafiles> = dfv",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.server.tabletserver.Tablet$SplitInfo",
+  "method": "<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>",
+  "line": "3474"
+},
+"stackTrace": ["(<org.apache.accumulo.server.tabletserver.Tablet: java.util.TreeMap split(byte[])>, specialinvoke tmp$1791657434.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>($stack119, highDatafileSizes, time, $stack118, $stack117), 3566)","(<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: void <init>(java.lang.String,java.util.SortedMap,java.lang.String,long,long)>, this.<org.apache.accumulo.server.tabletserver.Tablet$SplitInfo: java.util.SortedMap datafiles> = dfv, 3474)"]
+}]
+}
+}
+
+]

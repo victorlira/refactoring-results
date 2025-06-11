@@ -1,0 +1,350 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<net.named_data.jndn.ForwardingFlags: boolean advertise_> - this.<net.named_data.jndn.ForwardingFlags: boolean advertise_>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<net.named_data.jndn.ForwardingFlags: boolean advertise_> = 0",
+				"location": {
+					"file": "",
+					"class": "net.named_data.jndn.ForwardingFlags",
+					"method": "<init>",
+					"line": 255
+				},
+				"stackTrace": [{
+	"class": "net.named_data.jndn.Node",
+	"method": "nfdRegisterPrefix",
+	"line": 1379
+},{
+	"class": "net.named_data.jndn.ControlParameters",
+	"method": "setForwardingFlags",
+	"line": 249
+},{
+	"class": "net.named_data.jndn.ForwardingFlags",
+	"method": "<init>",
+	"line": 255
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<net.named_data.jndn.ForwardingFlags: boolean advertise_> = 0",
+				"location": {
+					"file": "",
+					"class": "net.named_data.jndn.ForwardingFlags",
+					"method": "<init>",
+					"line": 255
+				},
+				"stackTrace": [{
+	"class": "net.named_data.jndn.Node",
+	"method": "nfdRegisterPrefix",
+	"line": 1379
+},{
+	"class": "net.named_data.jndn.ControlParameters",
+	"method": "setForwardingFlags",
+	"line": 249
+},{
+	"class": "net.named_data.jndn.ForwardingFlags",
+	"method": "<init>",
+	"line": 255
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "247"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>",
+  "line": "40"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)","(<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>, specialinvoke this.<java.lang.Object: void <init>()>(), 40)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "247"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags)",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "247"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "249"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 249)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "249"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 249)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "249"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 249)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, specialinvoke $stack17.<net.named_data.jndn.ControlParameters: void <init>()>(), 1377)","(<net.named_data.jndn.ControlParameters: void <init>()>, specialinvoke $stack1.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 306)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>()>",
+  "line": "33"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, specialinvoke $stack17.<net.named_data.jndn.ControlParameters: void <init>()>(), 1377)","(<net.named_data.jndn.ControlParameters: void <init>()>, specialinvoke $stack1.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 306)","(<net.named_data.jndn.ForwardingFlags: void <init>()>, specialinvoke this.<java.lang.Object: void <init>()>(), 33)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "247"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>",
+  "line": "40"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)","(<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>, specialinvoke this.<java.lang.Object: void <init>()>(), 40)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "247"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags)",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "247"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>(net.named_data.jndn.ForwardingFlags)>(forwardingFlags), 247)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "249"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 249)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "249"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 249)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ControlParameters",
+  "method": "<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>",
+  "line": "249"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, virtualinvoke controlParameters.<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>(flags), 1379)","(<net.named_data.jndn.ControlParameters: net.named_data.jndn.ControlParameters setForwardingFlags(net.named_data.jndn.ForwardingFlags)>, specialinvoke $stack2.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 249)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.named_data.jndn.ForwardingFlags",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, specialinvoke $stack17.<net.named_data.jndn.ControlParameters: void <init>()>(), 1377)","(<net.named_data.jndn.ControlParameters: void <init>()>, specialinvoke $stack1.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 306)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "net.named_data.jndn.ForwardingFlags",
+  "method": "<net.named_data.jndn.ForwardingFlags: void <init>()>",
+  "line": "33"
+},
+"stackTrace": ["(<net.named_data.jndn.Node: void nfdRegisterPrefix(long,net.named_data.jndn.Name,net.named_data.jndn.OnInterestCallback,net.named_data.jndn.OnRegisterFailed,net.named_data.jndn.ForwardingFlags,net.named_data.jndn.security.KeyChain,net.named_data.jndn.Name,net.named_data.jndn.encoding.WireFormat,net.named_data.jndn.Face)>, specialinvoke $stack17.<net.named_data.jndn.ControlParameters: void <init>()>(), 1377)","(<net.named_data.jndn.ControlParameters: void <init>()>, specialinvoke $stack1.<net.named_data.jndn.ForwardingFlags: void <init>()>(), 306)","(<net.named_data.jndn.ForwardingFlags: void <init>()>, specialinvoke this.<java.lang.Object: void <init>()>(), 33)"]
+}]
+}
+}
+
+]

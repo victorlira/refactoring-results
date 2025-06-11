@@ -1,0 +1,112 @@
+Running soot scenario eventstore2;no.ks.eventstore2.eventstore.EventStore;onReceive(Object);5b3fce76f05ee1f9763890e187acd48d3ee86b6d
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/eventstore2/5b3fce76f05ee1f9763890e187acd48d3ee86b6d/original-without-dependencies/eventstore2-2.3-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,53600
+Time to perform Confluence 1 Inter 1,30600
+Configure Soot Confluence 2 Inter 0,23900
+Time to perform Confluence 2 Inter 0,75300
+Visited methods: 82
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack15 = "ping",140,SourceNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack16 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>(o), 140)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack14 = l4[l6],988,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack14 = l4[l6], 988))
+SINK=>BASE: Node(<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>,$stack1 = this.<no.ks.eventstore2.eventstore.Subscription: java.lang.String fromJournalId>,34,SourceNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack116 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(), 144)) => Node(<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>,$stack17 = virtualinvoke subscription.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(),221,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack17 = virtualinvoke subscription.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(), 221)) => Node(<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>,$stack18 = virtualinvoke $stack17.<java.lang.String: java.lang.String trim()>(),221,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack18 = virtualinvoke $stack17.<java.lang.String: java.lang.String trim()>(), 221)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack13 = l5[l6],988,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack13 = l5[l6], 988))]
+Confluence interference in <no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>
+Confluence flows from execution of lines 140 and 144 to line 145, defined in $stack16 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>(o) and $stack116 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>() and used in specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7)
+Caused by line 140 flow: path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack16 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>(o), 140)
+Caused by line 144 flow: path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack116 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(), 144)
+Caused by line 145 flow: path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack13 = l5[l6], 988)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/eventstore2/5b3fce76f05ee1f9763890e187acd48d3ee86b6d/original-without-dependencies/eventstore2-2.3-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,89300
+Runtime: 0.02s
+Time to perform OA Inter 0,96600
+OA Inter Visited methods: 5
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/eventstore2/5b3fce76f05ee1f9763890e187acd48d3ee86b6d/original-without-dependencies/eventstore2-2.3-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,76200
+Time to perform DFP Inter 0,99000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 41
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/eventstore2/5b3fce76f05ee1f9763890e187acd48d3ee86b6d/original-without-dependencies/eventstore2-2.3-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,77500
+Time to perform DFP Inter 0,95300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 41
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/eventstore2/5b3fce76f05ee1f9763890e187acd48d3ee86b6d/original-without-dependencies/eventstore2-2.3-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,76100
+Time to perform PDG 0,89800
+CONFLICTS: [List(Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,if $stack13 == 0 goto $stack14 = o instanceof no.ks.eventstore2.eventstore.SubscriptionRefresh,140,SourceNode, path: ) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack100 = this.<no.ks.eventstore2.eventstore.EventStore: no.ks.eventstore2.AkkaClusterInfo leaderInfo>,143,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack100 = this.<no.ks.eventstore2.eventstore.EventStore: no.ks.eventstore2.AkkaClusterInfo leaderInfo>, 143)) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack101 = virtualinvoke $stack100.<no.ks.eventstore2.AkkaClusterInfo: boolean isLeader()>(),143,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack101 = virtualinvoke $stack100.<no.ks.eventstore2.AkkaClusterInfo: boolean isLeader()>(), 143)) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,if $stack101 == 0 goto $stack103 = <no.ks.eventstore2.eventstore.EventStore: org.slf4j.Logger log>,143,SimpleNode, path: ) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack113 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getAggregateType()>(),144,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack113 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getAggregateType()>(), 144))), List(Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack12 = o instanceof no.ks.eventstore2.eventstore.RetreiveAggregateEvents,133,SourceNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack12 = o instanceof no.ks.eventstore2.eventstore.RetreiveAggregateEvents, 133)) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,if $stack12 == 0 goto $stack13 = o instanceof no.ks.eventstore2.eventstore.Subscription,133,SourceNode, path: ) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,if $stack13 == 0 goto $stack14 = o instanceof no.ks.eventstore2.eventstore.SubscriptionRefresh,140,SourceNode, path: ) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack100 = this.<no.ks.eventstore2.eventstore.EventStore: no.ks.eventstore2.AkkaClusterInfo leaderInfo>,143,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack100 = this.<no.ks.eventstore2.eventstore.EventStore: no.ks.eventstore2.AkkaClusterInfo leaderInfo>, 143)) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack101 = virtualinvoke $stack100.<no.ks.eventstore2.AkkaClusterInfo: boolean isLeader()>(),143,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack101 = virtualinvoke $stack100.<no.ks.eventstore2.AkkaClusterInfo: boolean isLeader()>(), 143)) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,if $stack101 == 0 goto $stack103 = <no.ks.eventstore2.eventstore.EventStore: org.slf4j.Logger log>,143,SimpleNode, path: ) => Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack113 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getAggregateType()>(),144,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack113 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getAggregateType()>(), 144)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/eventstore2/5b3fce76f05ee1f9763890e187acd48d3ee86b6d/original-without-dependencies/eventstore2-2.3-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,82800
+Time to perform PDG 1,02500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -1,0 +1,106 @@
+Running soot scenario maven-hpi-plugin;org.jenkinsci.maven.plugins.hpi.RunMojo;execute();7487ca2d90bff27b5e85f6bb1fd383504e8020c4
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/maven-hpi-plugin/7487ca2d90bff27b5e85f6bb1fd383504e8020c4/original-without-dependencies/maven-hpi-plugin-2.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,61900
+Time to perform Confluence 1 Inter 6,69800
+Configure Soot Confluence 2 Inter 0,15400
+Time to perform Confluence 2 Inter 6,89200
+Visited methods: 168
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/maven-hpi-plugin/7487ca2d90bff27b5e85f6bb1fd383504e8020c4/original-without-dependencies/maven-hpi-plugin-2.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,65400
+Runtime: 0.022s
+Time to perform OA Inter 0,74000
+OA Inter Visited methods: 23
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/maven-hpi-plugin/7487ca2d90bff27b5e85f6bb1fd383504e8020c4/original-without-dependencies/maven-hpi-plugin-2.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47300
+Time to perform DFP Inter 4,72400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 84
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/maven-hpi-plugin/7487ca2d90bff27b5e85f6bb1fd383504e8020c4/original-without-dependencies/maven-hpi-plugin-2.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,45300
+Time to perform DFP Inter 4,60900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 84
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/maven-hpi-plugin/7487ca2d90bff27b5e85f6bb1fd383504e8020c4/original-without-dependencies/maven-hpi-plugin-2.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62400
+Time to perform PDG 0,84400
+CONFLICTS: [List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack26 != null goto entry#87 = virtualinvoke e#80.<org.jenkinsci.maven.plugins.hpi.Artifacts: java.util.Iterator iterator()>(),286,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack118 = this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.io.File webAppFile>,294,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack118 = this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.io.File webAppFile>, 294)) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack118 == null goto tmp$943501193 = new org.apache.maven.plugin.MojoExecutionException,294,SinkNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack128 = virtualinvoke $stack127.<java.io.File: boolean isFile()>(),295,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack128 = virtualinvoke $stack127.<java.io.File: boolean isFile()>(), 295))), List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack26 != null goto entry#87 = virtualinvoke e#80.<org.jenkinsci.maven.plugins.hpi.Artifacts: java.util.Iterator iterator()>(),286,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.io.File webAppFile> = $stack117,293,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.io.File webAppFile> = $stack117, 293))), List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack26 != null goto entry#87 = virtualinvoke e#80.<org.jenkinsci.maven.plugins.hpi.Artifacts: java.util.Iterator iterator()>(),286,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack118 = this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.io.File webAppFile>,294,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack118 = this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.io.File webAppFile>, 294)) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack118 == null goto tmp$943501193 = new org.apache.maven.plugin.MojoExecutionException,294,SinkNode, path: )), List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack26 != null goto entry#87 = virtualinvoke e#80.<org.jenkinsci.maven.plugins.hpi.Artifacts: java.util.Iterator iterator()>(),286,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack115 = this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.util.List remoteRepos>,289,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack115 = this.<org.jenkinsci.maven.plugins.hpi.RunMojo: java.util.List remoteRepos>, 289))), List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack26 != null goto entry#87 = virtualinvoke e#80.<org.jenkinsci.maven.plugins.hpi.Artifacts: java.util.Iterator iterator()>(),286,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,entry#85 = virtualinvoke this.<org.jenkinsci.maven.plugins.hpi.RunMojo: org.apache.maven.artifact.Artifact getJenkinsWarArtifact()>(),287,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, entry#85 = virtualinvoke this.<org.jenkinsci.maven.plugins.hpi.RunMojo: org.apache.maven.artifact.Artifact getJenkinsWarArtifact()>(), 287)) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack198 = virtualinvoke tmp$1282100951.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Could not resolve "),291,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack198 = virtualinvoke tmp$1282100951.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Could not resolve '), 291))), List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack26 != null goto entry#87 = virtualinvoke e#80.<org.jenkinsci.maven.plugins.hpi.Artifacts: java.util.Iterator iterator()>(),286,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,entry#85 = virtualinvoke this.<org.jenkinsci.maven.plugins.hpi.RunMojo: org.apache.maven.artifact.Artifact getJenkinsWarArtifact()>(),287,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, entry#85 = virtualinvoke this.<org.jenkinsci.maven.plugins.hpi.RunMojo: org.apache.maven.artifact.Artifact getJenkinsWarArtifact()>(), 287)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 6
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/maven-hpi-plugin/7487ca2d90bff27b5e85f6bb1fd383504e8020c4/original-without-dependencies/maven-hpi-plugin-2.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,70500
+Time to perform PDG 0,82100
+CONFLICTS: [List(Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack135 != 0 goto $stack20 = virtualinvoke this.<org.jenkinsci.maven.plugins.hpi.RunMojo: org.apache.maven.project.MavenProject getProject()>(),295,SourceNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,e#45 = interfaceinvoke $stack147.<java.util.Set: java.util.Iterator iterator()>(),274,SimpleNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, e#45 = interfaceinvoke $stack147.<java.util.Set: java.util.Iterator iterator()>(), 274)) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack149 = interfaceinvoke e#45.<java.util.Iterator: boolean hasNext()>(),274,SimpleNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack149 = interfaceinvoke e#45.<java.util.Iterator: boolean hasNext()>(), 274)) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,if $stack149 == 0 goto $stack20 = virtualinvoke this.<org.jenkinsci.maven.plugins.hpi.RunMojo: org.apache.maven.project.MavenProject getProject()>(),274,SimpleNode, path: ) => Node(<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>,$stack150 = interfaceinvoke e#45.<java.util.Iterator: java.lang.Object next()>(),286,SinkNode, path: (<org.jenkinsci.maven.plugins.hpi.RunMojo: void execute()>, $stack150 = interfaceinvoke e#45.<java.util.Iterator: java.lang.Object next()>(), 286)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

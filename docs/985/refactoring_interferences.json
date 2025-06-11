@@ -2,8 +2,8 @@
   {
     "branch": "L",
     "class": "com.firefly.net.tcp.secure.AbstractSecureSession",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tapplicationBufferSize : int in method public read(receiveBuffer ByteBuffer) : ByteBuffer from class com.firefly.net.tcp.secure.AbstractSecureSession",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprotected resizeAppBuffer(applicationBufferSize int) : void extracted from public read(receiveBuffer ByteBuffer) : ByteBuffer in class com.firefly.net.tcp.secure.AbstractSecureSession",
     "description": {
       "filePath": "firefly-nettool/src/main/java/com/firefly/net/tcp/secure/AbstractSecureSession.java",
       "startLine": 384,
@@ -11,16 +11,17 @@
       "startColumn": 5,
       "endColumn": 6,
       "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
+      "description": "source method declaration after extraction",
       "codeElement": "public read(receiveBuffer ByteBuffer) : ByteBuffer"
     },
-    "line": "400"
+    "line": "401",
+    "branchLine": "400"
   },
   {
     "branch": "L",
     "class": "com.firefly.net.tcp.secure.AbstractSecureSession",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tapplicationBufferSize : int in method public read(receiveBuffer ByteBuffer) : ByteBuffer from class com.firefly.net.tcp.secure.AbstractSecureSession",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprotected resizeAppBuffer(applicationBufferSize int) : void extracted from public read(receiveBuffer ByteBuffer) : ByteBuffer in class com.firefly.net.tcp.secure.AbstractSecureSession",
     "description": {
       "filePath": "firefly-nettool/src/main/java/com/firefly/net/tcp/secure/AbstractSecureSession.java",
       "startLine": 384,
@@ -28,9 +29,64 @@
       "startColumn": 5,
       "endColumn": 6,
       "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
+      "description": "source method declaration after extraction",
       "codeElement": "public read(receiveBuffer ByteBuffer) : ByteBuffer"
     },
-    "line": "400"
+    "line": "402",
+    "branchLine": "401"
+  },
+  {
+    "branch": "R",
+    "class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprotected resizeAppBuffer() : void extracted from public read(receiveBuffer ByteBuffer) : ByteBuffer in class com.firefly.net.tcp.secure.AbstractSecureSession",
+    "description": {
+      "filePath": "firefly-nettool/src/main/java/com/firefly/net/tcp/secure/AbstractSecureSession.java",
+      "startLine": 385,
+      "endLine": 458,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "source method declaration after extraction",
+      "codeElement": "public read(receiveBuffer ByteBuffer) : ByteBuffer"
+    },
+    "line": "401",
+    "branchLine": "401"
+  },
+  {
+    "branch": "R",
+    "class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprotected resizeAppBuffer() : void extracted from public read(receiveBuffer ByteBuffer) : ByteBuffer in class com.firefly.net.tcp.secure.AbstractSecureSession",
+    "description": {
+      "filePath": "firefly-nettool/src/main/java/com/firefly/net/tcp/secure/AbstractSecureSession.java",
+      "startLine": 385,
+      "endLine": 458,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "source method declaration after extraction",
+      "codeElement": "public read(receiveBuffer ByteBuffer) : ByteBuffer"
+    },
+    "line": "402",
+    "branchLine": "402"
+  },
+  {
+    "branch": "R",
+    "class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprotected resizeAppBuffer() : void extracted from public read(receiveBuffer ByteBuffer) : ByteBuffer in class com.firefly.net.tcp.secure.AbstractSecureSession",
+    "description": {
+      "filePath": "firefly-nettool/src/main/java/com/firefly/net/tcp/secure/AbstractSecureSession.java",
+      "startLine": 385,
+      "endLine": 458,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "source method declaration after extraction",
+      "codeElement": "public read(receiveBuffer ByteBuffer) : ByteBuffer"
+    },
+    "line": "417",
+    "branchLine": "417"
   }
 ]

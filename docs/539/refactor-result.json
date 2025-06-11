@@ -14,7 +14,26 @@
       "description": "changed-type variable declaration",
       "codeElement": "geohash : char[]"
     },
-    "line": "384"
+    "line": "384",
+    "branchLine": "362"
+  },
+  {
+    "branch": "R",
+    "class": "com.github.davidmoten.geo.GeoHash",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Change Variable Type\tgeohash : StringBuilder to geohash : char[] in method public encodeHash(latitude double, longitude double, length int) : String from class com.github.davidmoten.geo.GeoHash",
+    "description": {
+      "filePath": "src/main/java/com/github/davidmoten/geo/GeoHash.java",
+      "startLine": 390,
+      "endLine": 390,
+      "startColumn": 9,
+      "endColumn": 36,
+      "codeElementType": "RETURN_STATEMENT",
+      "description": "statement referencing the variable with changed type",
+      "codeElement": null
+    },
+    "line": "412",
+    "branchLine": "390"
   },
   {
     "branch": "R",
@@ -31,6 +50,25 @@
       "description": "renamed variable declaration",
       "codeElement": "geohash : char[]"
     },
-    "line": "384"
+    "line": "384",
+    "branchLine": "362"
+  },
+  {
+    "branch": "R",
+    "class": "com.github.davidmoten.geo.GeoHash",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Change Variable Type\tlat : double[] to geohash : char[] in method public encodeHash(latitude double, longitude double, length int) : String from class com.github.davidmoten.geo.GeoHash",
+    "description": {
+      "filePath": "src/main/java/com/github/davidmoten/geo/GeoHash.java",
+      "startLine": 356,
+      "endLine": 356,
+      "startColumn": 18,
+      "endColumn": 37,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "changed-type variable declaration",
+      "codeElement": "geohash : char[]"
+    },
+    "line": "378",
+    "branchLine": "356"
   }
 ]

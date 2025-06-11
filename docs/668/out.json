@@ -1,0 +1,137 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(),68,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5),72,SinkNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72)) SINK=>BASE: Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(),68,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5),72,SinkNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>",
+				"location": {
+					"file": "",
+					"class": "com.github.oxo42.stateless4j.transitions.Transition",
+					"method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+					"line": 46
+				},
+				"stackTrace": [{
+	"class": "com.github.oxo42.stateless4j.transitions.Transition",
+	"method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+	"line": 46
+},{
+	"class": "com.github.oxo42.stateless4j.StateRepresentation$1",
+	"method": "<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>",
+	"line": 68
+},{
+	"class": "com.github.oxo42.stateless4j.StateRepresentation$1",
+	"method": "<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>",
+	"line": 72
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>",
+				"location": {
+					"file": "",
+					"class": "com.github.oxo42.stateless4j.transitions.Transition",
+					"method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+					"line": 46
+				},
+				"stackTrace": [{
+	"class": "com.github.oxo42.stateless4j.transitions.Transition",
+	"method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+	"line": 46
+},{
+	"class": "com.github.oxo42.stateless4j.StateRepresentation$1",
+	"method": "<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>",
+	"line": 68
+},{
+	"class": "com.github.oxo42.stateless4j.StateRepresentation$1",
+	"method": "<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>",
+	"line": 72
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5)",
+				"location": {
+					"file": "",
+					"class": "com.github.oxo42.stateless4j.StateRepresentation$1",
+					"method": "<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>",
+					"line": 72
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>",
+"location": {
+  "file": "",
+  "class": "com.github.oxo42.stateless4j.transitions.Transition",
+  "method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+  "line": "46"
+},
+"stackTrace": ["(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.github.oxo42.stateless4j.transitions.Transition",
+  "method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+  "line": "46"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>",
+"location": {
+  "file": "",
+  "class": "com.github.oxo42.stateless4j.transitions.Transition",
+  "method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+  "line": "46"
+},
+"stackTrace": ["(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.github.oxo42.stateless4j.transitions.Transition",
+  "method": "<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>",
+  "line": "46"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

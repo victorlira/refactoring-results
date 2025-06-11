@@ -1,0 +1,55 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack52 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.cloudbees.jenkins.plugins.BitbucketJobProbe",
+  "method": "<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>",
+  "line": "90"
+},
+"stackTrace": ["(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack52 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>(), 90)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "job = (hudson.model.Job) $stack52",
+"location": {
+  "file": "",
+  "class": "com.cloudbees.jenkins.plugins.BitbucketJobProbe",
+  "method": "<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>",
+  "line": "90"
+},
+"stackTrace": ["(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, job = (hudson.model.Job) $stack52, 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack92 = virtualinvoke job.<hudson.model.Job: java.lang.String getFullDisplayName()>()",
+"location": {
+  "file": "",
+  "class": "com.cloudbees.jenkins.plugins.BitbucketJobProbe",
+  "method": "<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>",
+  "line": "70"
+},
+"stackTrace": ["(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack92 = virtualinvoke job.<hudson.model.Job: java.lang.String getFullDisplayName()>(), 70)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, 'Triggering BitBucket job {0}', $stack92)",
+"location": {
+  "file": "",
+  "class": "com.cloudbees.jenkins.plugins.BitbucketJobProbe",
+  "method": "<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>",
+  "line": "70"
+},
+"stackTrace": ["(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, 'Triggering BitBucket job {0}', $stack92), 70)"]
+}]
+}
+}
+
+]

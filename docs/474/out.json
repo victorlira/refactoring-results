@@ -1,0 +1,1192 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) SINK=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,indexedChars = (int) $stack88,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars), 515)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "indexedChars = (int) $stack88",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 510
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 534
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 537
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78),524,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524)) SINK=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>,$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>,121,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(),510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack87 = $stack85 * $stack86,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87),510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,indexedChars = (int) $stack88,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars), 515)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78),524,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+					"line": 121
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+	"line": 121
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 524
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 534
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 524
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78)",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 524
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,fileMetadata = tmp$1744273262,514,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, fileMetadata = tmp$1744273262, 514)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1016156941, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1016156941, fileMetadata, indexedChars), 515)) SINK=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,indexedChars = (int) $stack88,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars), 515))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "indexedChars = (int) $stack88",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 510
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "fileMetadata = tmp$1744273262",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 514
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 514
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1016156941, fileMetadata, indexedChars)",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 515
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,fileMetadata = tmp$1744273262,514,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, fileMetadata = tmp$1744273262, 514)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1016156941, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1016156941, fileMetadata, indexedChars), 515)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,xb := @parameter3: org.elasticsearch.common.xcontent.XContentBuilder,-1,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,$stack25 = virtualinvoke xb.<org.elasticsearch.common.xcontent.XContentBuilder: java.lang.String string()>(),576,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524) => (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>, $stack25 = virtualinvoke xb.<org.elasticsearch.common.xcontent.XContentBuilder: java.lang.String string()>(), 576)) SINK=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>,$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>,121,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(),510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack87 = $stack85 * $stack86,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87),510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,indexedChars = (int) $stack88,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars), 515)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,xb := @parameter3: org.elasticsearch.common.xcontent.XContentBuilder,-1,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,$stack25 = virtualinvoke xb.<org.elasticsearch.common.xcontent.XContentBuilder: java.lang.String string()>(),576,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524) => (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>, $stack25 = virtualinvoke xb.<org.elasticsearch.common.xcontent.XContentBuilder: java.lang.String string()>(), 576))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+					"line": 121
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+	"line": 121
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": -1
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": 576
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "fileMetadata = tmp$1744273262",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 514
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 514
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": -1
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": 576
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack25 = virtualinvoke xb.<org.elasticsearch.common.xcontent.XContentBuilder: java.lang.String string()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+					"line": 576
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack57 = virtualinvoke summary.<com.amazonaws.services.s3.model.S3ObjectSummary: java.lang.String getKey()>(),530,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack57 = virtualinvoke summary.<com.amazonaws.services.s3.model.S3ObjectSummary: java.lang.String getKey()>(), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>,key := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>,$stack4 = virtualinvoke $stack3.<com.amazonaws.services.s3.AmazonS3Client: com.amazonaws.services.s3.model.ObjectMetadata getObjectMetadata(java.lang.String,java.lang.String)>($stack2, key),119,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530) => (<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>, $stack4 = virtualinvoke $stack3.<com.amazonaws.services.s3.AmazonS3Client: com.amazonaws.services.s3.model.ObjectMetadata getObjectMetadata(java.lang.String,java.lang.String)>($stack2, key), 119)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>,$stack5 = virtualinvoke $stack4.<com.amazonaws.services.s3.model.ObjectMetadata: java.util.Map getUserMetadata()>(),119,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530) => (<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>, $stack5 = virtualinvoke $stack4.<com.amazonaws.services.s3.model.ObjectMetadata: java.util.Map getUserMetadata()>(), 119)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>,$stack6 = staticinvoke <java.util.Collections: java.util.Map unmodifiableMap(java.util.Map)>($stack5),119,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57),530,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack59 = virtualinvoke $stack53.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", $stack58),530,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack59 = virtualinvoke $stack53.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', $stack58), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack60 = virtualinvoke $stack59.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder startObject(java.lang.String)>("file"),531,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack60 = virtualinvoke $stack59.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder startObject(java.lang.String)>('file'), 531)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack67 = virtualinvoke $stack60.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("_name", $stack66),532,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack67 = virtualinvoke $stack60.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('_name', $stack66), 532)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack74 = virtualinvoke $stack67.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("title", $stack73),533,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack74 = virtualinvoke $stack67.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('title', $stack73), 533)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,xb := @parameter3: org.elasticsearch.common.xcontent.XContentBuilder,-1,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,$stack16 = virtualinvoke $stack15.<org.elasticsearch.action.index.IndexRequestBuilder: org.elasticsearch.action.index.IndexRequestBuilder setSource(org.elasticsearch.common.xcontent.XContentBuilder)>(xb),578,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524) => (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>, $stack16 = virtualinvoke $stack15.<org.elasticsearch.action.index.IndexRequestBuilder: org.elasticsearch.action.index.IndexRequestBuilder setSource(org.elasticsearch.common.xcontent.XContentBuilder)>(xb), 578)) SINK=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,indexedChars = (int) $stack88,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars), 515)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),537,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack78 = virtualinvoke $stack77.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 537)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,xb := @parameter3: org.elasticsearch.common.xcontent.XContentBuilder,-1,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>,$stack16 = virtualinvoke $stack15.<org.elasticsearch.action.index.IndexRequestBuilder: org.elasticsearch.action.index.IndexRequestBuilder setSource(org.elasticsearch.common.xcontent.XContentBuilder)>(xb),578,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, specialinvoke this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>($stack32, $stack34, fileId, $stack78), 524) => (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>, $stack16 = virtualinvoke $stack15.<org.elasticsearch.action.index.IndexRequestBuilder: org.elasticsearch.action.index.IndexRequestBuilder setSource(org.elasticsearch.common.xcontent.XContentBuilder)>(xb), 578))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "indexedChars = (int) $stack88",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 510
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": -1
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": 578
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack57 = virtualinvoke summary.<com.amazonaws.services.s3.model.S3ObjectSummary: java.lang.String getKey()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 530
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 530
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>",
+	"line": -1
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>",
+	"line": 119
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>",
+	"line": 119
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>",
+	"line": 119
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 530
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 530
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 531
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 532
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 533
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 537
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": -1
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+	"line": 578
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack16 = virtualinvoke $stack15.<org.elasticsearch.action.index.IndexRequestBuilder: org.elasticsearch.action.index.IndexRequestBuilder setSource(org.elasticsearch.common.xcontent.XContentBuilder)>(xb)",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: void esIndex(java.lang.String,java.lang.String,java.lang.String,org.elasticsearch.common.xcontent.XContentBuilder)>",
+					"line": 578
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>,$stack6 = staticinvoke <java.util.Collections: java.util.Map unmodifiableMap(java.util.Map)>($stack5),119,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57),530,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack58 = virtualinvoke $stack56.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>($stack57), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack59 = virtualinvoke $stack53.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", $stack58),530,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack59 = virtualinvoke $stack53.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', $stack58), 530)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack60 = virtualinvoke $stack59.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder startObject(java.lang.String)>("file"),531,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack60 = virtualinvoke $stack59.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder startObject(java.lang.String)>('file'), 531)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack67 = virtualinvoke $stack60.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("_name", $stack66),532,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack67 = virtualinvoke $stack60.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('_name', $stack66), 532)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack74 = virtualinvoke $stack67.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("title", $stack73),533,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack74 = virtualinvoke $stack67.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('title', $stack73), 533)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536)) SINK=>BASE: Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>,$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>,121,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(),510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack87 = $stack85 * $stack86,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87),510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,indexedChars = (int) $stack88,510,SourceNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars),515,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$1827883912, fileMetadata, indexedChars), 515)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>("file", parsedContent),534,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>("metadata", fileMetadataMap),535,SimpleNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)) => Node(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>,$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(),536,SinkNode, path: (<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>(), 536))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+					"line": 121
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+	"line": 121
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 510
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 515
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack6 = staticinvoke <java.util.Collections: java.util.Map unmodifiableMap(java.util.Map)>($stack5)",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>",
+					"line": 119
+				},
+				"stackTrace": [{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: java.util.Map getS3UserMetadata(java.lang.String)>",
+	"line": 119
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 530
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 530
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 531
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 532
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 533
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 534
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 535
+},{
+	"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+	"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+	"line": 536
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack77 = virtualinvoke $stack76.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder endObject()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+					"method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+					"line": 536
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River: com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector s3>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River: com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector access$3700(com.github.lbroudoux.elasticsearch.river.s3.river.S3River)>",
+  "line": "59"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack103 = staticinvoke <com.github.lbroudoux.elasticsearch.river.s3.river.S3River: com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector access$3700(com.github.lbroudoux.elasticsearch.river.s3.river.S3River)>($stack102), 501)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack20 = staticinvoke <com.github.lbroudoux.elasticsearch.river.s3.river.S3River: com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector access$3700(com.github.lbroudoux.elasticsearch.river.s3.river.S3River)>($stack19)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "503"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack20 = staticinvoke <com.github.lbroudoux.elasticsearch.river.s3.river.S3River: com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector access$3700(com.github.lbroudoux.elasticsearch.river.s3.river.S3River)>($stack19), 503)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fileContent = virtualinvoke $stack20.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: byte[] getContent(com.amazonaws.services.s3.model.S3ObjectSummary)>(summary)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "503"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, fileContent = virtualinvoke $stack20.<com.github.lbroudoux.elasticsearch.river.s3.connector.S3Connector: byte[] getContent(com.amazonaws.services.s3.model.S3ObjectSummary)>(summary), 503)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack83 = lengthof fileContent",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack83 = lengthof fileContent, 510)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+  "line": "121"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>()",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack87 = $stack85 * $stack86",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "indexedChars = (int) $stack88",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "515"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "534"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "535"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "indexedChars = 100000",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "508"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "515"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "534"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "535"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack84 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition feedDefinition>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack84 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition feedDefinition>, 510)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+  "line": "121"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>()",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack87 = $stack85 * $stack86",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "indexedChars = (int) $stack88",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "515"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "534"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack84 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition feedDefinition>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack84 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition feedDefinition>, 510)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+  "line": "121"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>()",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack87 = $stack85 * $stack86",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "indexedChars = (int) $stack88",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "515"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "534"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "535"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack76 = virtualinvoke $stack75.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.util.Map)>('metadata', fileMetadataMap), 535)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "indexedChars = 100000",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "508"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "515"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "534"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double indexedCharsRatio>",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>",
+  "line": "121"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack23 = virtualinvoke $stack22.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 509)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>()",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack86 = virtualinvoke $stack84.<com.github.lbroudoux.elasticsearch.river.s3.river.S3RiverFeedDefinition: double getIndexedCharsRatio()>(), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack87 = $stack85 * $stack86",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack87 = $stack85 * $stack86, 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack88 = staticinvoke <java.lang.Math: long round(double)>($stack87), 510)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "indexedChars = (int) $stack88",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "510"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, indexedChars = (int) $stack88, 510)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "515"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, parsedContent = virtualinvoke $stack26.<org.apache.tika.Tika: java.lang.String parseToString(java.io.InputStream,org.apache.tika.metadata.Metadata,int)>(tmp$490766432, fileMetadata, indexedChars), 515)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent)",
+"location": {
+  "file": "",
+  "class": "com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner",
+  "method": "<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>",
+  "line": "534"
+},
+"stackTrace": ["(<com.github.lbroudoux.elasticsearch.river.s3.river.S3River$S3Scanner: java.lang.String indexFile(com.amazonaws.services.s3.model.S3ObjectSummary)>, $stack75 = virtualinvoke $stack74.<org.elasticsearch.common.xcontent.XContentBuilder: org.elasticsearch.common.xcontent.XContentBuilder field(java.lang.String,java.lang.String)>('file', parsedContent), 534)"]
+}]
+}
+}
+
+]

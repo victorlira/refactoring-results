@@ -1,0 +1,392 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>",
+  "line": "99"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack25 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>(), 121)","(<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider'), 143)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke $stack13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('User service class not found ')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "198"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack14 = virtualinvoke $stack13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('User service class not found '), 198)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(name)",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "198"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(name), 198)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>",
+  "line": "99"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack25 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>(), 121)","(<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider'), 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName)",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "147"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 147)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = (com.khs.sherpa.json.service.GsonJsonProvider) $stack4",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "147"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>()",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.servlet.SherpaServlet",
+  "method": "<com.khs.sherpa.servlet.SherpaServlet: void init()>",
+  "line": "125"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>",
+  "line": "99"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack25 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>(), 121)","(<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 143)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>",
+  "line": "99"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack25 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>(), 121)","(<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider'), 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName)",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "147"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 147)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>",
+  "line": "99"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack25 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>(), 121)","(<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider'), 143)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('User service class could not be accessed ')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "202"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('User service class could not be accessed '), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(name)",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "202"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(name), 202)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>",
+  "line": "99"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack25 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>(), 121)","(<com.khs.sherpa.util.SettingsLoader: boolean jsonpSupport()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, $stack2 = this.<com.khs.sherpa.util.SettingsLoader: java.util.Properties properties>, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>",
+  "line": "143"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, jsonProvider = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>(), 125)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.JsonProvider jsonProvider()>, userClazzName = virtualinvoke $stack2.<java.util.Properties: java.lang.String getProperty(java.lang.String)>('json.provider'), 143)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack20 = virtualinvoke $stack19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('User service class could be instantiated ')",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "200"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack20 = virtualinvoke $stack19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('User service class could be instantiated '), 200)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke $stack20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(name)",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "200"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack21 = virtualinvoke $stack20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(name), 200)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = virtualinvoke $stack21.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "com.khs.sherpa.util.SettingsLoader",
+  "method": "<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>",
+  "line": "200"
+},
+"stackTrace": ["(<com.khs.sherpa.servlet.SherpaServlet: void init()>, $stack12 = virtualinvoke loader.<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>(), 108)","(<com.khs.sherpa.util.SettingsLoader: com.khs.sherpa.json.service.UserService userService()>, $stack4 = virtualinvoke this.<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>(userClazzName), 170)","(<com.khs.sherpa.util.SettingsLoader: java.lang.Object createInstance(java.lang.String)>, $stack22 = virtualinvoke $stack21.<java.lang.StringBuilder: java.lang.String toString()>(), 200)"]
+}]
+}
+}
+
+]

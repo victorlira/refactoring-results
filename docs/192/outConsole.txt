@@ -1,0 +1,110 @@
+Running soot scenario bioformats;loci.formats.in.GelReader;initMetadata();610943fe9c1095e525a242533116e473616e16c6
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bioformats/610943fe9c1095e525a242533116e473616e16c6/original-without-dependencies/formats-gpl-5.9.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,66000
+Time to perform Confluence 1 Inter 0,50100
+Configure Soot Confluence 2 Inter 0,23700
+Time to perform Confluence 2 Inter 0,21600
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bioformats/610943fe9c1095e525a242533116e473616e16c6/original-without-dependencies/formats-gpl-5.9.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,80900
+Runtime: 0.011s
+OA interference in class GelReader, method void initMetadata(), execution of line 142 overrides 142, assigning to variable this.<loci.formats.in.GelReader: loci.formats.tiff.IFDList ifds>, 
+Caused by line 142 flow:
+at loci.formats.in.GelReader.initMetadata(GelReader.java:142)
+And line 142 flow:
+at loci.formats.in.GelReader.initMetadata(GelReader.java:142)
+ 
+Time to perform OA Inter 0,86600
+OA Inter Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bioformats/610943fe9c1095e525a242533116e473616e16c6/original-without-dependencies/formats-gpl-5.9.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,50800
+Time to perform DFP Inter 0,51100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bioformats/610943fe9c1095e525a242533116e473616e16c6/original-without-dependencies/formats-gpl-5.9.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,61700
+Time to perform DFP Inter 0,41900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bioformats/610943fe9c1095e525a242533116e473616e16c6/original-without-dependencies/formats-gpl-5.9.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,70000
+Time to perform PDG 0,49900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bioformats/610943fe9c1095e525a242533116e473616e16c6/original-without-dependencies/formats-gpl-5.9.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,59400
+Time to perform PDG 0,55900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

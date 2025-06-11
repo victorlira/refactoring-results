@@ -1,0 +1,294 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack24 = new java.util.TreeSet",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "197"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, specialinvoke $stack24.<java.util.TreeSet: void <init>(java.util.Collection)>($stack25), 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "workingGraph#6 = $stack24",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "197"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, workingGraph#6 = $stack24, 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack29 = virtualinvoke workingGraph#6.<java.util.TreeSet: java.lang.Object pollFirst()>()",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack29 = virtualinvoke workingGraph#6.<java.util.TreeSet: java.lang.Object pollFirst()>(), 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e#11 = (org.jgrapht.alg.vertexcover.util.RatioVertex) $stack29",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, e#11 = (org.jgrapht.alg.vertexcover.util.RatioVertex) $stack29, 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack37 = e#11.<org.jgrapht.alg.vertexcover.util.RatioVertex: java.lang.Object v>",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack37 = e#11.<org.jgrapht.alg.vertexcover.util.RatioVertex: java.lang.Object v>, 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack38 = interfaceinvoke vertexWeightMap.<java.util.Map: java.lang.Object get(java.lang.Object)>($stack37)",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack38 = interfaceinvoke vertexWeightMap.<java.util.Map: java.lang.Object get(java.lang.Object)>($stack37), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack39 = (java.lang.Double) $stack38",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack39 = (java.lang.Double) $stack38, 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.Double",
+"location": {
+  "file": "",
+  "class": "java.lang.Double",
+  "method": "<java.lang.Double: double doubleValue()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>(), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Double: double value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Double",
+  "method": "<java.lang.Double: double doubleValue()>",
+  "line": "716"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>(), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>()",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>(), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "weight = weight + $stack40",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, weight = weight + $stack40, 229)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack28.<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>(cover, weight)",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "234"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, specialinvoke $stack28.<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>(cover, weight), 234)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack24 = new java.util.TreeSet",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "197"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, specialinvoke $stack24.<java.util.TreeSet: void <init>(java.util.Collection)>($stack25), 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "workingGraph#6 = $stack24",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "197"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, workingGraph#6 = $stack24, 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack29 = virtualinvoke workingGraph#6.<java.util.TreeSet: java.lang.Object pollFirst()>()",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack29 = virtualinvoke workingGraph#6.<java.util.TreeSet: java.lang.Object pollFirst()>(), 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e#11 = (org.jgrapht.alg.vertexcover.util.RatioVertex) $stack29",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, e#11 = (org.jgrapht.alg.vertexcover.util.RatioVertex) $stack29, 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack37 = e#11.<org.jgrapht.alg.vertexcover.util.RatioVertex: java.lang.Object v>",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack37 = e#11.<org.jgrapht.alg.vertexcover.util.RatioVertex: java.lang.Object v>, 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack38 = interfaceinvoke vertexWeightMap.<java.util.Map: java.lang.Object get(java.lang.Object)>($stack37)",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack38 = interfaceinvoke vertexWeightMap.<java.util.Map: java.lang.Object get(java.lang.Object)>($stack37), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack39 = (java.lang.Double) $stack38",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack39 = (java.lang.Double) $stack38, 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.Double",
+"location": {
+  "file": "",
+  "class": "java.lang.Double",
+  "method": "<java.lang.Double: double doubleValue()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>(), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Double: double value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Double",
+  "method": "<java.lang.Double: double doubleValue()>",
+  "line": "716"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>(), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>()",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, $stack40 = virtualinvoke $stack39.<java.lang.Double: double doubleValue()>(), 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "weight = weight + $stack40",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.vertexcover.GreedyVCImpl",
+  "method": "<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, weight = weight + $stack40, 229)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "weight := @parameter1: double",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl",
+  "method": "<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, specialinvoke $stack28.<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>(cover, weight), 234)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: double weight> = weight",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl",
+  "method": "<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>",
+  "line": "104"
+},
+"stackTrace": ["(<org.jgrapht.alg.vertexcover.GreedyVCImpl: org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCover getVertexCover(org.jgrapht.Graph,java.util.Map)>, specialinvoke $stack28.<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>(cover, weight), 234)","(<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: void <init>(java.util.Set,double)>, this.<org.jgrapht.alg.interfaces.MinimumVertexCoverAlgorithm$VertexCoverImpl: double weight> = weight, 104)"]
+}]
+}
+}
+
+]

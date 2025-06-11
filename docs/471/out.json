@@ -1,0 +1,1109 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack17.<org.jdom.Element: void <init>(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "105"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke $stack17.<org.jdom.Element: void <init>(java.lang.String)>(childName), 105)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack17.<org.jdom.Element: void <init>(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "105"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke $stack17.<org.jdom.Element: void <init>(java.lang.String)>(childName), 105)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack17.<org.jdom.Element: void <init>(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "105"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke $stack17.<org.jdom.Element: void <init>(java.lang.String)>(childName), 105)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e := @parameter0: org.jdom.Element",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>(child)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>(child), 106)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "109"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value), 109)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.jdom.Element: void <init>(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "112"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke $stack9.<org.jdom.Element: void <init>(java.lang.String)>(key), 112)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if child != null goto specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "104"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "98"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "109"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value), 109)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if child != null goto specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "104"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "109"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value), 109)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if child != null goto specialinvoke this.<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>(child, newkey, value)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "104"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "98"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e := @parameter0: org.jdom.Element",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>($stack10)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "112"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>($stack10), 112)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e := @parameter0: org.jdom.Element",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>(child)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>(child), 106)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.jdom.Element: void <init>(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "112"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, specialinvoke $stack9.<org.jdom.Element: void <init>(java.lang.String)>(key), 112)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "99"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, i = virtualinvoke key.<java.lang.String: int indexOf(java.lang.String)>('/'), 99)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = i + 1",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack14 = i + 1, 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "101"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, newkey = virtualinvoke key.<java.lang.String: java.lang.String substring(int)>($stack14), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, $stack8 = virtualinvoke key.<java.lang.String: boolean contains(java.lang.CharSequence)>('/'), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "100"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, childName = virtualinvoke key.<java.lang.String: java.lang.String substring(int,int)>(0, i), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "103"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e := @parameter0: org.jdom.Element",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, child = virtualinvoke e.<org.jdom.Element: org.jdom.Element getChild(java.lang.String)>(childName), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>(child)",
+"location": {
+  "file": "",
+  "class": "it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder",
+  "method": "<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<it.geosolutions.geoserver.rest.encoder.utils.PropertyXMLEncoder: void add(org.jdom.Element,java.lang.String,java.lang.String)>, virtualinvoke e.<org.jdom.Element: org.jdom.Element addContent(org.jdom.Content)>(child), 106)"]
+}]
+}
+}
+
+]

@@ -3,18 +3,19 @@
     "branch": "L",
     "class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Change Variable Type\taesDec : AESFastEngine to aesDec : AESEngine in method public aesDecrypt(key byte[], ctr byte[], b byte[]) : byte[] from class net.java.otr4j.crypto.OtrCryptoEngineImpl",
+    "refactoringInfo": "Change Variable Type\taesEnc : AESFastEngine to aesEnc : AESEngine in method public aesEncrypt(key byte[], ctr byte[], b byte[]) : byte[] from class net.java.otr4j.crypto.OtrCryptoEngineImpl",
     "description": {
       "filePath": "src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java",
-      "startLine": 209,
-      "endLine": 209,
+      "startLine": 233,
+      "endLine": 233,
       "startColumn": 13,
       "endColumn": 37,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
       "description": "changed-type variable declaration",
-      "codeElement": "aesDec : AESEngine"
+      "codeElement": "aesEnc : AESEngine"
     },
-    "line": "209"
+    "line": "199",
+    "branchLine": "233"
   },
   {
     "branch": "R",
@@ -31,6 +32,7 @@
       "description": "changed-type variable declaration",
       "codeElement": "aesEnc : AESEngine"
     },
-    "line": "201"
+    "line": "199",
+    "branchLine": "201"
   }
 ]

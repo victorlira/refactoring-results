@@ -1,0 +1,118 @@
+Running soot scenario dependency-check-sonar-plugin;org.sonar.dependencycheck.base.DependencyCheckMetrics;REPORT;b3cbcd1d5b0a89d5651398bc0afd9bf04b204183
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/b3cbcd1d5b0a89d5651398bc0afd9bf04b204183/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,44400
+Time to perform Confluence 1 Inter 0,48900
+Configure Soot Confluence 2 Inter 0,14200
+Time to perform Confluence 2 Inter 0,11000
+Visited methods: 10
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack95 = <java.lang.Boolean: java.lang.Boolean FALSE>,114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95),114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>("OWASP-Dependency-Check"),115,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>('OWASP-Dependency-Check'), 115)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0),116,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0), 116)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1),117,SimpleNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(),118,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(), 118))
+SINK=>BASE: Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1),117,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(),118,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(), 118))]
+Confluence interference in <org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>
+Confluence flows from execution of lines 114 and 117 to line 118, defined in $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95) and $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1) and used in $stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>()
+Caused by line 114 flow: path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)
+Caused by line 117 flow: path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)
+Caused by line 118 flow: path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(), 118)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/b3cbcd1d5b0a89d5651398bc0afd9bf04b204183/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,50800
+Runtime: 0.017s
+Time to perform OA Inter 0,60300
+OA Inter Visited methods: 31
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/b3cbcd1d5b0a89d5651398bc0afd9bf04b204183/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,38800
+Time to perform DFP Inter 0,38100
+Depth limit: 5
+CONFLICTS: DF interference in <org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>
+Data flows from execution of line 114 to 117, defined in $stack95 = <java.lang.Boolean: java.lang.Boolean FALSE> and propagated in $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1)
+Caused by line 114 flow: path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)
+Caused by line 117 flow: path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)
+[List(Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack95 = <java.lang.Boolean: java.lang.Boolean FALSE>,114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95),114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>("OWASP-Dependency-Check"),115,SimpleNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>('OWASP-Dependency-Check'), 115)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0),116,SimpleNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0), 116)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1),117,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)))]
+Visited methods: 5
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/b3cbcd1d5b0a89d5651398bc0afd9bf04b204183/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,34400
+Time to perform DFP Inter 0,35500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 5
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/b3cbcd1d5b0a89d5651398bc0afd9bf04b204183/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,38400
+Time to perform PDG 0,56500
+CONFLICTS: [List(Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack95 = <java.lang.Boolean: java.lang.Boolean FALSE>,114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95),114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>("OWASP-Dependency-Check"),115,SimpleNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>('OWASP-Dependency-Check'), 115)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0),116,SimpleNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0), 116)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1),117,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/b3cbcd1d5b0a89d5651398bc0afd9bf04b204183/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,51800
+Time to perform PDG 0,58400
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -1,0 +1,130 @@
+Running soot scenario jcabi-github;com.jcabi.github.RtReleases;RtReleases(Request, Repo);b753098546c4fce159d88e863277216c3ec2e845
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jcabi-github/b753098546c4fce159d88e863277216c3ec2e845/original-without-dependencies/jcabi-github-1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,69300
+Time to perform Confluence 1 Inter 0,39400
+Configure Soot Confluence 2 Inter 0,34500
+Time to perform Confluence 2 Inter 0,11200
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jcabi-github/b753098546c4fce159d88e863277216c3ec2e845/original-without-dependencies/jcabi-github-1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,76400
+Runtime: 0.014s
+OA interference in class RtReleases, method void <init>(com.rexsl.test.Request,com.jcabi.github.Repo), execution of line 85 overrides 85, assigning to variable this.<com.jcabi.github.RtReleases: com.rexsl.test.Request request>, 
+Caused by line 85 flow:
+at com.jcabi.github.RtReleases.<init>(RtReleases.java:85)
+And line 85 flow:
+at com.jcabi.github.RtReleases.<init>(RtReleases.java:85)
+ 
+Time to perform OA Inter 0,84800
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jcabi-github/b753098546c4fce159d88e863277216c3ec2e845/original-without-dependencies/jcabi-github-1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,58500
+Time to perform DFP Inter 0,41600
+Depth limit: 5
+CONFLICTS: DF interference in <com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>
+Data flows from execution of line 81 to 83, defined in $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos") and propagated in $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21)
+Caused by line 81 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)
+Caused by line 83 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83)
+DF interference in <com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>
+Data flows from execution of line 81 to 82, defined in $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos") and propagated in $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18)
+Caused by line 81 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)
+Caused by line 82 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)
+DF interference in <com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>
+Data flows from execution of line 80 to 82, defined in $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>() and propagated in $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18)
+Caused by line 80 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)
+Caused by line 82 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)
+DF interference in <com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>
+Data flows from execution of line 80 to 83, defined in $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>() and propagated in $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21)
+Caused by line 80 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)
+Caused by line 83 flow: path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83)
+[List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82))), List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21),83,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83))), List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(),80,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82))), List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(),80,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21),83,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83)))]
+Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jcabi-github/b753098546c4fce159d88e863277216c3ec2e845/original-without-dependencies/jcabi-github-1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,76100
+Time to perform DFP Inter 0,28700
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jcabi-github/b753098546c4fce159d88e863277216c3ec2e845/original-without-dependencies/jcabi-github-1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,56800
+Time to perform PDG 0,45600
+CONFLICTS: [List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21),83,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83))), List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82))), List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack14 = this.<com.jcabi.github.RtReleases: com.rexsl.test.Request entry>,80,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack14 = this.<com.jcabi.github.RtReleases: com.rexsl.test.Request entry>, 80)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(),80,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21),83,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83))), List(Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack14 = this.<com.jcabi.github.RtReleases: com.rexsl.test.Request entry>,80,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack14 = this.<com.jcabi.github.RtReleases: com.rexsl.test.Request entry>, 80)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(),80,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>("/repos"),81,SourceNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)) => Node(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>,$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18),82,SinkNode, path: (<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jcabi-github/b753098546c4fce159d88e863277216c3ec2e845/original-without-dependencies/jcabi-github-1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,79800
+Time to perform PDG 0,36200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

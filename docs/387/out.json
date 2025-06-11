@@ -1,0 +1,44 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.processors.Help$Item",
+  "method": "<org.tomitribe.crest.cmds.processors.Help$Item: void <init>(org.tomitribe.crest.cmds.processors.OptionParam,java.lang.String)>",
+  "line": "139"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.processors.Help$Item: void <init>(org.tomitribe.crest.cmds.processors.OptionParam,java.lang.String)>, specialinvoke $stack16.<java.util.ArrayList: void <init>()>(), 139)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "alias = $stack16",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.processors.Help$Item",
+  "method": "<org.tomitribe.crest.cmds.processors.Help$Item: void <init>(org.tomitribe.crest.cmds.processors.OptionParam,java.lang.String)>",
+  "line": "139"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.processors.Help$Item: void <init>(org.tomitribe.crest.cmds.processors.OptionParam,java.lang.String)>, alias = $stack16, 139)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack20 = interfaceinvoke alias.<java.util.List: boolean isEmpty()>()",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.processors.Help$Item",
+  "method": "<org.tomitribe.crest.cmds.processors.Help$Item: void <init>(org.tomitribe.crest.cmds.processors.OptionParam,java.lang.String)>",
+  "line": "147"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.processors.Help$Item: void <init>(org.tomitribe.crest.cmds.processors.OptionParam,java.lang.String)>, $stack20 = interfaceinvoke alias.<java.util.List: boolean isEmpty()>(), 147)"]
+}]
+}
+}
+
+]

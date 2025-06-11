@@ -1,0 +1,206 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "prop#13 - prop#13",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "prop#13 = (java.lang.String) $stack114",
+				"location": {
+					"file": "",
+					"class": "io.swagger.v3.parser.util.ResolverFully",
+					"method": "aggregateSchemaCombinators",
+					"line": 523
+				},
+				"stackTrace": [{
+	"class": "io.swagger.v3.parser.util.ResolverFully",
+	"method": "aggregateSchemaCombinators",
+	"line": 523
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "prop#13 = (java.lang.String) $stack105",
+				"location": {
+					"file": "",
+					"class": "io.swagger.v3.parser.util.ResolverFully",
+					"method": "aggregateSchemaCombinators",
+					"line": 529
+				},
+				"stackTrace": [{
+	"class": "io.swagger.v3.parser.util.ResolverFully",
+	"method": "aggregateSchemaCombinators",
+	"line": 529
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "525"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(), 525)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "525"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(), 525)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "529"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "prop#13 = (java.lang.String) $stack105",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "529"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "524"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>(), 524)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "525"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(), 525)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "525"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(), 525)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "529"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "prop#13 = (java.lang.String) $stack105",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "529"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "529"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "prop#13 = (java.lang.String) $stack105",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "529"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13)",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.ResolverFully",
+  "method": "<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>",
+  "line": "526"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13), 526)"]
+}]
+}
+}
+
+]

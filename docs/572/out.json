@@ -1,0 +1,494 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>,$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>,45,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(),108,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack12 = virtualinvoke $stack11.<java.io.File: java.io.File getParentFile()>(),108,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.io.File: java.io.File getParentFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFileDirectory = $stack12,108,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileDirectory = $stack12, 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(),111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(), 111)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,tmp$1002410023 = new java.io.File,111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$1002410023.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack23, outputFileName), 111)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFile = tmp$1002410023,111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFile = tmp$1002410023, 111)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,staticinvoke <org.codehaus.plexus.util.FileUtils: void fileWrite(java.io.File,java.lang.String)>(outputFile, digest),112,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, staticinvoke <org.codehaus.plexus.util.FileUtils: void fileWrite(java.io.File,java.lang.String)>(outputFile, digest), 112)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack12 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: java.io.File outputDirectory>,116,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack12 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: java.io.File outputDirectory>, 116)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFileDirectory = $stack12,108,SimpleNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileDirectory = $stack12, 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(),111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(), 111)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,tmp$111768855 = new java.io.File,111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$111768855.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack23, outputFileName), 111)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFile = tmp$111768855,111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFile = tmp$111768855, 111)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,staticinvoke <org.codehaus.plexus.util.FileUtils: void fileWrite(java.io.File,java.lang.String)>(outputFile, digest),112,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, staticinvoke <org.codehaus.plexus.util.FileUtils: void fileWrite(java.io.File,java.lang.String)>(outputFile, digest), 112))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack12 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: java.io.File outputDirectory>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+					"line": 116
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 116
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 112
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+					"method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+	"line": 45
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 112
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "staticinvoke <org.codehaus.plexus.util.FileUtils: void fileWrite(java.io.File,java.lang.String)>(outputFile, digest)",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+					"line": 112
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>,$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>,45,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(),108,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack12 = virtualinvoke $stack11.<java.io.File: java.io.File getParentFile()>(),108,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.io.File: java.io.File getParentFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFileDirectory = $stack12,108,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileDirectory = $stack12, 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(),111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(), 111)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>,digester = tmp$1238173945,103,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm), 109)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm),109,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm), 109)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,fileExtension = interfaceinvoke $stack14.<net.nicoulaj.maven.plugins.checksum.digest.FileDigester: java.lang.String getFileExtension()>(),109,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, fileExtension = interfaceinvoke $stack14.<net.nicoulaj.maven.plugins.checksum.digest.FileDigester: java.lang.String getFileExtension()>(), 109)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack19 = virtualinvoke tmp$1804911104.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack18),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack19 = virtualinvoke tmp$1804911104.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack18), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack20 = virtualinvoke $stack19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(fileExtension),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack20 = virtualinvoke $stack19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(fileExtension), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFileName = virtualinvoke $stack20.<java.lang.StringBuilder: java.lang.String toString()>(),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileName = virtualinvoke $stack20.<java.lang.StringBuilder: java.lang.String toString()>(), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,specialinvoke tmp$111768855.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack23, outputFileName),111,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$111768855.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack23, outputFileName), 111))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "digester = tmp$1238173945",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+					"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>",
+					"line": 103
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+	"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>",
+	"line": 103
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 109
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 109
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+					"method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+	"line": 45
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 108
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 111
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+					"line": 111
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>,$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>,45,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack17 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack17 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack18 = virtualinvoke $stack17.<java.io.File: java.lang.String getName()>(),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack18 = virtualinvoke $stack17.<java.io.File: java.lang.String getName()>(), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,tmp$103394766 = new java.lang.StringBuilder,110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$103394766.<java.lang.StringBuilder: void <init>()>(), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,specialinvoke tmp$103394766.<java.lang.StringBuilder: void <init>()>(),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$103394766.<java.lang.StringBuilder: void <init>()>(), 110)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>,$stack3 = lengthof $stack2,45,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack13 = staticinvoke <net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory getInstance()>(), 109) => (<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory getInstance()>, specialinvoke $stack2.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>(), 66) => (<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>, $stack3 = lengthof $stack2, 45)) => Node(<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>,specialinvoke $stack1.<java.util.HashMap: void <init>(int)>($stack3),45,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack13 = staticinvoke <net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory getInstance()>(), 109) => (<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory getInstance()>, specialinvoke $stack2.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>(), 66) => (<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>, specialinvoke $stack1.<java.util.HashMap: void <init>(int)>($stack3), 45)) => Node(<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>,$stack4 = this.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: java.util.Map digesters>,82,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm), 109) => (<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>, $stack4 = this.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: java.util.Map digesters>, 82)) => Node(<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>,$stack5 = interfaceinvoke $stack4.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),82,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm), 109) => (<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>, $stack5 = interfaceinvoke $stack4.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 82)) => Node(<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>,digester = (net.nicoulaj.maven.plugins.checksum.digest.FileDigester) $stack5,82,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm), 109)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm),109,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke $stack13.<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>(algorithm), 109)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,fileExtension = interfaceinvoke $stack14.<net.nicoulaj.maven.plugins.checksum.digest.FileDigester: java.lang.String getFileExtension()>(),109,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, fileExtension = interfaceinvoke $stack14.<net.nicoulaj.maven.plugins.checksum.digest.FileDigester: java.lang.String getFileExtension()>(), 109)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack19 = virtualinvoke tmp$1804911104.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack18),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack19 = virtualinvoke tmp$1804911104.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack18), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,$stack20 = virtualinvoke $stack19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(fileExtension),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack20 = virtualinvoke $stack19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(fileExtension), 110)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>,outputFileName = virtualinvoke $stack20.<java.lang.StringBuilder: java.lang.String toString()>(),110,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileName = virtualinvoke $stack20.<java.lang.StringBuilder: java.lang.String toString()>(), 110))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack3 = lengthof $stack2",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+					"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+	"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>",
+	"line": 45
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+	"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: void <init>()>",
+	"line": 45
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+	"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>",
+	"line": 82
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+	"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>",
+	"line": 82
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory",
+	"method": "<net.nicoulaj.maven.plugins.checksum.digest.DigesterFactory: net.nicoulaj.maven.plugins.checksum.digest.FileDigester getFileDigester(java.lang.String)>",
+	"line": 82
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 109
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 109
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+					"method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+	"line": 45
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+	"line": 110
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke tmp$103394766.<java.lang.StringBuilder: void <init>()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+					"line": 110
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+  "line": "45"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack11 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 108)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.io.File: java.io.File getParentFile()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.io.File: java.io.File getParentFile()>(), 108)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "outputFileDirectory = $stack12",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileDirectory = $stack12, 108)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "111"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$1110148152 = new java.io.File",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "111"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$1110148152.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack23, outputFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "outputFile = tmp$1110148152",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "111"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFile = tmp$1110148152, 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke artifactListener.<net.nicoulaj.maven.plugins.checksum.artifacts.ArtifactListener: void artifactCreated(java.io.File,java.lang.String)>(outputFile, fileExtension)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "115"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, interfaceinvoke artifactListener.<net.nicoulaj.maven.plugins.checksum.artifacts.ArtifactListener: void artifactCreated(java.io.File,java.lang.String)>(outputFile, fileExtension), 115)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "outputFileDirectory = $stack12",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileDirectory = $stack12, 108)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "111"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack23 = virtualinvoke outputFileDirectory.<java.io.File: java.lang.String getPath()>(), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$1110148152 = new java.io.File",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "111"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, specialinvoke tmp$1110148152.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack23, outputFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "outputFile = tmp$1110148152",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "111"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFile = tmp$1110148152, 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke artifactListener.<net.nicoulaj.maven.plugins.checksum.artifacts.ArtifactListener: void artifactCreated(java.io.File,java.lang.String)>(outputFile, fileExtension)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "115"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, interfaceinvoke artifactListener.<net.nicoulaj.maven.plugins.checksum.artifacts.ArtifactListener: void artifactCreated(java.io.File,java.lang.String)>(outputFile, fileExtension), 115)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: java.io.File outputDirectory>",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "116"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack12 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: java.io.File outputDirectory>, 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "outputFileDirectory = $stack12",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.OneHashPerFileTarget: void write(java.lang.String,net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, outputFileDirectory = $stack12, 108)"]
+}]
+}
+}
+
+]

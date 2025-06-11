@@ -1,0 +1,542 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "String.<java.lang.String: int hash> - l0.<java.lang.String: int hash>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "String.<java.lang.String: int hash> = null",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.movsim.simulator.Simulator",
+	"method": "matchRoadSegmentsAndRoadInput",
+	"line": 203
+},{
+	"class": "org.slf4j.impl.Log4jLoggerAdapter",
+	"method": "info",
+	"line": 323
+},{
+	"class": "org.slf4j.helpers.MessageFormatter",
+	"method": "format",
+	"line": 124
+},{
+	"class": "org.slf4j.helpers.MessageFormatter",
+	"method": "arrayFormat",
+	"line": 208
+},{
+	"class": "java.lang.String",
+	"method": "substring",
+	"line": 1969
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l0.<java.lang.String: int hash> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "hashCode",
+					"line": 1473
+				},
+				"stackTrace": [{
+	"class": "org.movsim.simulator.Simulator",
+	"method": "matchRoadSegmentsAndRoadInput",
+	"line": 204
+},{
+	"class": "com.google.common.base.Preconditions",
+	"method": "checkNotNull",
+	"line": 208
+},{
+	"class": "java.lang.String",
+	"method": "valueOf",
+	"line": 2994
+},{
+	"class": "java.lang.Object",
+	"method": "toString",
+	"line": 236
+},{
+	"class": "java.lang.String",
+	"method": "hashCode",
+	"line": 1473
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "203"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('roadInput.getId()={}', $stack10)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "203"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, interfaceinvoke $stack8.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('roadInput.getId()={}', $stack10), 203)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(), 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "roadInput = (org.movsim.autogen.Road) $stack7",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, roadInput = (org.movsim.autogen.Road) $stack7, 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 205)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\'')",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "204"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\''), 204)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "204"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack12 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 204)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "userId := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.roadnetwork.RoadNetwork",
+  "method": "<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack13 = virtualinvoke $stack11.<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>($stack12), 204)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke $stack10.<java.lang.String: boolean equals(java.lang.Object)>(userId)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.roadnetwork.RoadNetwork",
+  "method": "<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>",
+  "line": "95"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack13 = virtualinvoke $stack11.<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>($stack12), 204)","(<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>, $stack11 = virtualinvoke $stack10.<java.lang.String: boolean equals(java.lang.Object)>(userId), 95)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 205)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\'')",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "204"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\''), 204)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(), 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "roadInput = (org.movsim.autogen.Road) $stack7",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, roadInput = (org.movsim.autogen.Road) $stack7, 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16), 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' in road network.')",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' in road network.'), 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack19 = virtualinvoke $stack18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "205"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack19 = virtualinvoke $stack18.<java.lang.StringBuilder: java.lang.String toString()>(), 205)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "errorMessage := @parameter1: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.google.common.base.Preconditions",
+  "method": "<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String valueOf(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204)","(<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = virtualinvoke l0.<java.lang.Object: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String valueOf(java.lang.Object)>",
+  "line": "2994"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204)","(<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage)",
+"location": {
+  "file": "",
+  "class": "com.google.common.base.Preconditions",
+  "method": "<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204)","(<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(), 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "roadInput = (org.movsim.autogen.Road) $stack7",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, roadInput = (org.movsim.autogen.Road) $stack7, 208)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.autogen.Road",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.movsim.autogen.Road",
+  "method": "<org.movsim.autogen.Road: java.lang.String getId()>",
+  "line": "287"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

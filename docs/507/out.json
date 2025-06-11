@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>",
+  "line": "470"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter), 470)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.JaxrsReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>",
+  "line": "471"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter), 471)"]
+}]
+}
+}
+
+]

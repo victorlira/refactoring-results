@@ -1,0 +1,67 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,57,SourceNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 57)) => Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,66,SinkNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 66)) => Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,if $stack9 != null goto return builder,66,SinkNode, path: ) SINK=>BASE: Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,57,SourceNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 57)) => Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,66,SinkNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 66))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>",
+				"location": {
+					"file": "",
+					"class": "org.kohsuke.github.GitHubBuilder",
+					"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+					"line": 57
+				},
+				"stackTrace": [{
+	"class": "org.kohsuke.github.GitHubBuilder",
+	"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+	"line": 57
+},{
+	"class": "org.kohsuke.github.GitHubBuilder",
+	"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+	"line": 66
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>",
+				"location": {
+					"file": "",
+					"class": "org.kohsuke.github.GitHubBuilder",
+					"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+					"line": 57
+				},
+				"stackTrace": [{
+	"class": "org.kohsuke.github.GitHubBuilder",
+	"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+	"line": 57
+},{
+	"class": "org.kohsuke.github.GitHubBuilder",
+	"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+	"line": 66
+},{
+	"class": "org.kohsuke.github.GitHubBuilder",
+	"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+	"line": 66
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "if $stack9 != null goto return builder",
+				"location": {
+					"file": "",
+					"class": "org.kohsuke.github.GitHubBuilder",
+					"method": "<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>",
+					"line": 66
+				}
+			}
+		]
+	}
+}
+
+]

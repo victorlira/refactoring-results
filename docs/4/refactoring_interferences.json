@@ -14,7 +14,8 @@
       "description": "changed loop declaration",
       "codeElement": "for(field: fields)"
     },
-    "line": "305"
+    "line": "306",
+    "branchLine": "305"
   },
   {
     "branch": "L",
@@ -31,40 +32,43 @@
       "description": "statement with the initializer of the inlined variable",
       "codeElement": "for(field: fields)"
     },
-    "line": "305"
+    "line": "306",
+    "branchLine": "305"
   },
   {
-    "branch": "L",
+    "branch": "R",
     "class": "net.helpscout.api.ApiClient",
     "tool": "ReExtractorPlus",
     "refactoringInfo": "Change Loop Type\tWhile Statement to Enhanced For Statement in method private setFields(url String, fields List<String>) : String from class net.helpscout.api.ApiClient",
     "description": {
       "filePath": "src/main/java/net/helpscout/api/ApiClient.java",
-      "startLine": 294,
-      "endLine": 312,
-      "startColumn": 2,
-      "endColumn": 3,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with changed loop type",
-      "codeElement": "private setFields(url String, fields List<String>) : String"
+      "startLine": 186,
+      "endLine": 189,
+      "startColumn": 4,
+      "endColumn": 5,
+      "codeElementType": "ENHANCED_FOR_STATEMENT",
+      "description": "changed loop declaration",
+      "codeElement": "for(field: fields)"
     },
-    "line": "305"
+    "line": "306",
+    "branchLine": "186"
   },
   {
-    "branch": "L",
+    "branch": "R",
     "class": "net.helpscout.api.ApiClient",
     "tool": "ReExtractorPlus",
     "refactoringInfo": "Inline Variable\titerator : Iterator<String> in method private setFields(url String, fields List<String>) : String from class net.helpscout.api.ApiClient",
     "description": {
       "filePath": "src/main/java/net/helpscout/api/ApiClient.java",
-      "startLine": 294,
-      "endLine": 312,
-      "startColumn": 2,
-      "endColumn": 3,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with inlined variable",
-      "codeElement": "private setFields(url String, fields List<String>) : String"
+      "startLine": 186,
+      "endLine": 189,
+      "startColumn": 4,
+      "endColumn": 5,
+      "codeElementType": "ENHANCED_FOR_STATEMENT",
+      "description": "statement with the initializer of the inlined variable",
+      "codeElement": "for(field: fields)"
     },
-    "line": "305"
+    "line": "306",
+    "branchLine": "186"
   }
 ]

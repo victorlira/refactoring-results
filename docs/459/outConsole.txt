@@ -1,0 +1,116 @@
+Running soot scenario datasift-java;org.datasift.tests.TestDefinition;testGetConsumer();63473e61923aeb786325b6edf3828aa7538be0e6
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/datasift-java/63473e61923aeb786325b6edf3828aa7538be0e6/original-without-dependencies/datasift-java-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,52000
+Time to perform Confluence 1 Inter 0,66000
+Configure Soot Confluence 2 Inter 0,34900
+Time to perform Confluence 2 Inter 0,23300
+Visited methods: 42
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,e1 = $stack30,331,SourceNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, e1 = $stack30, 331)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332))
+SINK=>BASE: Node(<org.datasift.Definition: java.lang.String get()>,$stack3 = new org.datasift.EInvalidData,100,SourceNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)) => Node(<org.datasift.EInvalidData: void <init>(java.lang.String)>,this := @this: org.datasift.EInvalidData,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l0 := @this: java.lang.Exception,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0.<java.lang.Throwable: java.lang.String detailMessage> = l1,266,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66) => (<java.lang.Throwable: void <init>(java.lang.String)>, l0.<java.lang.Throwable: java.lang.String detailMessage> = l1, 266)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack21 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332))]
+Confluence interference in <org.datasift.tests.TestDefinition: void testGetConsumer()>
+Confluence flows from execution of lines 331 and 330 to line 332, defined in e1 = $stack30 and $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>() and used in $stack21 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>()
+Caused by line 331 flow: path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, e1 = $stack30, 331)
+Caused by line 330 flow: path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)
+Caused by line 332 flow: path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack21 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/datasift-java/63473e61923aeb786325b6edf3828aa7538be0e6/original-without-dependencies/datasift-java-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,80500
+Runtime: 0.019s
+Time to perform OA Inter 0,94100
+OA Inter Visited methods: 18
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/datasift-java/63473e61923aeb786325b6edf3828aa7538be0e6/original-without-dependencies/datasift-java-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,70400
+Time to perform DFP Inter 0,64200
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 21
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/datasift-java/63473e61923aeb786325b6edf3828aa7538be0e6/original-without-dependencies/datasift-java-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,52800
+Time to perform DFP Inter 0,62600
+Depth limit: 5
+CONFLICTS: DF interference in <org.datasift.tests.TestDefinition: void testGetConsumer()>
+Data flows from execution of line 330 to 332, defined in $stack3 = new org.datasift.EInvalidData and propagated in staticinvoke <org.datasift.tests.TestDefinition: void fail(java.lang.String)>($stack35)
+Caused by line 330 flow: path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)
+Caused by line 332 flow: path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, staticinvoke <org.datasift.tests.TestDefinition: void fail(java.lang.String)>($stack35), 332)
+[List(Node(<org.datasift.Definition: java.lang.String get()>,$stack3 = new org.datasift.EInvalidData,100,SourceNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)) => Node(<org.datasift.EInvalidData: void <init>(java.lang.String)>,this := @this: org.datasift.EInvalidData,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l0 := @this: java.lang.Exception,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0.<java.lang.Throwable: java.lang.String detailMessage> = l1,266,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66) => (<java.lang.Throwable: void <init>(java.lang.String)>, l0.<java.lang.Throwable: java.lang.String detailMessage> = l1, 266)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)) => Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,$stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(),332,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)) => Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,$stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("EInvalidData: "),332,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('EInvalidData: '), 332)) => Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,$stack34 = virtualinvoke $stack32.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack33),332,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack34 = virtualinvoke $stack32.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack33), 332)) => Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,$stack35 = virtualinvoke $stack34.<java.lang.StringBuilder: java.lang.String toString()>(),332,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack35 = virtualinvoke $stack34.<java.lang.StringBuilder: java.lang.String toString()>(), 332)) => Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,staticinvoke <org.datasift.tests.TestDefinition: void fail(java.lang.String)>($stack35),332,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, staticinvoke <org.datasift.tests.TestDefinition: void fail(java.lang.String)>($stack35), 332)))]
+Visited methods: 21
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/datasift-java/63473e61923aeb786325b6edf3828aa7538be0e6/original-without-dependencies/datasift-java-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,66300
+Time to perform PDG 0,47500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/datasift-java/63473e61923aeb786325b6edf3828aa7538be0e6/original-without-dependencies/datasift-java-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62200
+Time to perform PDG 0,46900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

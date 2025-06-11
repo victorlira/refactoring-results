@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "enumType = virtualinvoke modelValue.<java.lang.Enum: java.lang.Class getDeclaringClass()>()",
+"location": {
+  "file": "",
+  "class": "org.omnifaces.converter.GenericEnumConverter",
+  "method": "<org.omnifaces.converter.GenericEnumConverter: java.lang.String getAsString(javax.faces.context.FacesContext,javax.faces.component.UIComponent,java.lang.Enum)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.omnifaces.converter.GenericEnumConverter: java.lang.String getAsString(javax.faces.context.FacesContext,javax.faces.component.UIComponent,java.lang.Enum)>, enumType = virtualinvoke modelValue.<java.lang.Enum: java.lang.Class getDeclaringClass()>(), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>('GenericEnumConverter.%s', enumType)",
+"location": {
+  "file": "",
+  "class": "org.omnifaces.converter.GenericEnumConverter",
+  "method": "<org.omnifaces.converter.GenericEnumConverter: java.lang.String getAsString(javax.faces.context.FacesContext,javax.faces.component.UIComponent,java.lang.Enum)>",
+  "line": "125"
+},
+"stackTrace": ["(<org.omnifaces.converter.GenericEnumConverter: java.lang.String getAsString(javax.faces.context.FacesContext,javax.faces.component.UIComponent,java.lang.Enum)>, interfaceinvoke $stack6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>('GenericEnumConverter.%s', enumType), 125)"]
+}]
+}
+}
+
+]

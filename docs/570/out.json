@@ -1,0 +1,571 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput vehiclesInput>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.InputData",
+  "method": "<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "66"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)","(<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>, $stack2 = virtualinvoke $stack1.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 149)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "149"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "218"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.input.model.VehiclesInput",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.model.VehiclesInput: java.util.Map vehicleInputMap>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "67"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>(), 222)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>(), 237)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vehicleTypeLabel = (java.lang.String) $stack18",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehicleTypeLabel = (java.lang.String) $stack18, 237)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel)",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "233"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel), 233)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = this.<org.movsim.viewer.graphics.TrafficCanvasScenarios: org.movsim.simulator.Simulator simulator>",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "218"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack12 = this.<org.movsim.viewer.graphics.TrafficCanvasScenarios: org.movsim.simulator.Simulator simulator>, 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.simulator.Simulator",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.simulator.Simulator: org.movsim.input.InputData inputData>",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "149"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)","(<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>, $stack1 = this.<org.movsim.simulator.Simulator: org.movsim.input.InputData inputData>, 149)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.input.InputData",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.InputData",
+  "method": "<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)","(<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>, $stack2 = virtualinvoke $stack1.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 149)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput vehiclesInput>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.InputData",
+  "method": "<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "66"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)","(<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>, $stack2 = virtualinvoke $stack1.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 149)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "149"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "218"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.input.model.VehiclesInput",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.model.VehiclesInput: java.util.Map vehicleInputMap>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "67"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>(), 222)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>(), 237)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vehicleTypeLabel = (java.lang.String) $stack18",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehicleTypeLabel = (java.lang.String) $stack18, 237)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel)",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "233"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel), 233)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>(), 222)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>(), 237)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vehicleTypeLabel = (java.lang.String) $stack18",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehicleTypeLabel = (java.lang.String) $stack18, 237)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel)",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "233"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel), 233)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.model.VehiclesInput: java.util.Map vehicleInputMap>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "67"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>(), 222)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>(), 237)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vehicleTypeLabel = (java.lang.String) $stack18",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehicleTypeLabel = (java.lang.String) $stack18, 237)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel)",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "233"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel), 233)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<org.movsim.input.InputData: org.movsim.input.model.VehiclesInput getVehiclesInput()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>",
+  "line": "149"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "218"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehiclesInput#3 = virtualinvoke $stack12.<org.movsim.simulator.Simulator: org.movsim.input.model.VehiclesInput getVehiclesInput()>(), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.input.model.VehiclesInput",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.model.VehiclesInput: java.util.Map vehicleInputMap>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.model.VehiclesInput",
+  "method": "<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>",
+  "line": "67"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack14 = virtualinvoke vehiclesInput#3.<org.movsim.input.model.VehiclesInput: java.util.Map getVehicleInputMap()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack15 = interfaceinvoke $stack14.<java.util.Map: java.util.Set keySet()>(), 222)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "222"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, segment#4 = interfaceinvoke $stack15.<java.util.Set: java.util.Iterator iterator()>(), 222)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, $stack18 = interfaceinvoke segment#4.<java.util.Iterator: java.lang.Object next()>(), 237)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vehicleTypeLabel = (java.lang.String) $stack18",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "237"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, vehicleTypeLabel = (java.lang.String) $stack18, 237)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel)",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvasScenarios",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>",
+  "line": "233"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvasScenarios: void initGraphicSettings()>, interfaceinvoke $stack26.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('set color for vehicle label={}', vehicleTypeLabel), 233)"]
+}]
+}
+}
+
+]

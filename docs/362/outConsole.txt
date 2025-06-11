@@ -1,0 +1,110 @@
+Running soot scenario discovery;com.nepxion.discovery.plugin.strategy.gateway.route.DefaultGatewayStrategyRoute;update(List<GatewayStrategyRouteEntity>);99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/discovery/99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6/original-without-dependencies/discovery-plugin-strategy-starter-gateway-6.11.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,53600
+Time to perform Confluence 1 Inter 0,45900
+Configure Soot Confluence 2 Inter 0,15100
+Time to perform Confluence 2 Inter 0,31800
+Visited methods: 32
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/discovery/99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6/original-without-dependencies/discovery-plugin-strategy-starter-gateway-6.11.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,54400
+Runtime: 0.02s
+OA interference in class DefaultGatewayStrategyRoute, method void update(java.util.List), execution of line 87 overrides 87, assigning to variable tmp$1098737173, 
+Caused by line 87 flow:
+at com.nepxion.discovery.plugin.strategy.gateway.route.DefaultGatewayStrategyRoute.update(DefaultGatewayStrategyRoute.java:87)
+And line 87 flow:
+at com.nepxion.discovery.plugin.strategy.gateway.route.DefaultGatewayStrategyRoute.update(DefaultGatewayStrategyRoute.java:87)
+ 
+Time to perform OA Inter 0,63100
+OA Inter Visited methods: 8
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/discovery/99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6/original-without-dependencies/discovery-plugin-strategy-starter-gateway-6.11.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,57000
+Time to perform DFP Inter 0,44300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 16
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/discovery/99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6/original-without-dependencies/discovery-plugin-strategy-starter-gateway-6.11.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,44100
+Time to perform DFP Inter 0,35900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 16
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/discovery/99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6/original-without-dependencies/discovery-plugin-strategy-starter-gateway-6.11.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,58000
+Time to perform PDG 0,47800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/discovery/99c2bc3a686bfaa15e56484c3828e1fb0e17cfd6/original-without-dependencies/discovery-plugin-strategy-starter-gateway-6.11.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,51200
+Time to perform PDG 0,35500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

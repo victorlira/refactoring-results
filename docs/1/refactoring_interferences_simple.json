@@ -1,3 +1,24 @@
 [
-  []
+  [
+    {
+      "class": "net.helpscout.api.ApiClient",
+      "refactoringInfo": [
+        "Extract Method\tprivate parseJson(url String, json String) : JsonElement extracted from private getPage(url String, params Map<String,String>, clazzType Class<?>, expectedCode int) : Page in class net.helpscout.api.ApiClient"
+      ],
+      "line": "1484",
+      "branchLine": "1267",
+      "filePath": "src/main/java/net/helpscout/api/ApiClient.java",
+      "branch": "R"
+    },
+    {
+      "class": "net.helpscout.api.ApiClient",
+      "refactoringInfo": [
+        "Extract Method\tprivate objectToPage(obj JsonObject, clazzType Class<?>) : Page extracted from private getPage(url String, params Map<String,String>, clazzType Class<?>, expectedCode int) : Page in class net.helpscout.api.ApiClient"
+      ],
+      "line": "1486",
+      "branchLine": "1195",
+      "filePath": "src/main/java/net/helpscout/api/ApiClient.java",
+      "branch": "L"
+    }
+  ]
 ]

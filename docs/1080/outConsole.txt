@@ -1,0 +1,120 @@
+Running soot scenario docker-java;com.kpelykh.docker.client.test.DockerClientTest;testDiff();4ac45cd93ef94037331fee091ec6f004cf56ead8
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/docker-java/4ac45cd93ef94037331fee091ec6f004cf56ead8/original-without-dependencies/docker-java-0.8.2-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,50800
+Time to perform Confluence 1 Inter 0,51500
+Configure Soot Confluence 2 Inter 0,22800
+Time to perform Confluence 2 Inter 0,11900
+Visited methods: 20
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832))
+SINK=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)), SOURCE=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850))
+SINK=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)), SOURCE=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831))
+SINK=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831))]
+Confluence interference in <com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>
+Confluence flows from execution of lines 346 and 343 to line 341, defined in $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>() and $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>() and used in $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode)
+Caused by line 346 flow: path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)
+Caused by line 343 flow: path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)
+Caused by line 341 flow: path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/docker-java/4ac45cd93ef94037331fee091ec6f004cf56ead8/original-without-dependencies/docker-java-0.8.2-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,68000
+Runtime: 0.018s
+Time to perform OA Inter 0,75500
+OA Inter Visited methods: 13
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/docker-java/4ac45cd93ef94037331fee091ec6f004cf56ead8/original-without-dependencies/docker-java-0.8.2-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,53900
+Time to perform DFP Inter 0,39000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 10
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/docker-java/4ac45cd93ef94037331fee091ec6f004cf56ead8/original-without-dependencies/docker-java-0.8.2-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,53500
+Time to perform DFP Inter 0,41900
+Depth limit: 5
+CONFLICTS: DF interference in <com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>
+Data flows from execution of line 343 to 346, defined in $stack30 = this.<com.kpelykh.docker.client.test.DockerClientTest: com.kpelykh.docker.client.DockerClient dockerClient> and propagated in $stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack36)
+Caused by line 343 flow: path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack30 = this.<com.kpelykh.docker.client.test.DockerClientTest: com.kpelykh.docker.client.DockerClient dockerClient>, 343)
+Caused by line 346 flow: path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack36), 346)
+[List(Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack30 = this.<com.kpelykh.docker.client.test.DockerClientTest: com.kpelykh.docker.client.DockerClient dockerClient>,343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack30 = this.<com.kpelykh.docker.client.test.DockerClientTest: com.kpelykh.docker.client.DockerClient dockerClient>, 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack36),346,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack36), 346)))]
+Visited methods: 10
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/docker-java/4ac45cd93ef94037331fee091ec6f004cf56ead8/original-without-dependencies/docker-java-0.8.2-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,63200
+Time to perform PDG 0,42100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/docker-java/4ac45cd93ef94037331fee091ec6f004cf56ead8/original-without-dependencies/docker-java-0.8.2-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,73400
+Time to perform PDG 0,46300
+CONFLICTS: [List(Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

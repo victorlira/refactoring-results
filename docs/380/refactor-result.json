@@ -14,7 +14,8 @@
       "description": "creation with diamond operator",
       "codeElement": "new LinkedHashSet<>()"
     },
-    "line": "168"
+    "line": "168",
+    "branchLine": "168"
   },
   {
     "branch": "R",
@@ -31,57 +32,7 @@
       "description": "try-with-resources block",
       "codeElement": "try(InputStream stream=url.openStream(); BufferedReader reader=new BufferedReader(new InputStreamReader(stream)))"
     },
-    "line": "184"
-  },
-  {
-    "branch": "R",
-    "class": "org.tomitribe.crest.cmds.processors.Commands",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Try With Resources\ttry(InputStream stream=url.openStream(); BufferedReader reader=new BufferedReader(new InputStreamReader(stream))) in method public load() : Iterable<Class<?>> from class org.tomitribe.crest.cmds.processors.Commands",
-    "description": {
-      "filePath": "tomitribe-crest/src/main/java/org/tomitribe/crest/cmds/processors/Commands.java",
-      "startLine": 183,
-      "endLine": 195,
-      "startColumn": 21,
-      "endColumn": 22,
-      "codeElementType": "TRY_STATEMENT",
-      "description": "try-with-resources block",
-      "codeElement": "try(InputStream stream=url.openStream(); BufferedReader reader=new BufferedReader(new InputStreamReader(stream)))"
-    },
-    "line": "183"
-  },
-  {
-    "branch": "R",
-    "class": "org.tomitribe.crest.cmds.processors.Commands",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Try With Resources\ttry(InputStream stream=url.openStream(); BufferedReader reader=new BufferedReader(new InputStreamReader(stream))) in method public load() : Iterable<Class<?>> from class org.tomitribe.crest.cmds.processors.Commands",
-    "description": {
-      "filePath": "tomitribe-crest/src/main/java/org/tomitribe/crest/cmds/processors/Commands.java",
-      "startLine": 160,
-      "endLine": 203,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with try-with-resources",
-      "codeElement": "public load() : Iterable<Class<?>>"
-    },
-    "line": "184"
-  },
-  {
-    "branch": "R",
-    "class": "org.tomitribe.crest.cmds.processors.Commands",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Try With Resources\ttry(InputStream stream=url.openStream(); BufferedReader reader=new BufferedReader(new InputStreamReader(stream))) in method public load() : Iterable<Class<?>> from class org.tomitribe.crest.cmds.processors.Commands",
-    "description": {
-      "filePath": "tomitribe-crest/src/main/java/org/tomitribe/crest/cmds/processors/Commands.java",
-      "startLine": 160,
-      "endLine": 203,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with try-with-resources",
-      "codeElement": "public load() : Iterable<Class<?>>"
-    },
-    "line": "183"
+    "line": "183",
+    "branchLine": "183"
   }
 ]

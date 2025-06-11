@@ -1,0 +1,44 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "i - i",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "i = i + -1",
+				"location": {
+					"file": "",
+					"class": "org.caffinitas.ohc.chunked.OHCacheChunkedImpl",
+					"method": "<init>",
+					"line": 104
+				},
+				"stackTrace": [{
+	"class": "org.caffinitas.ohc.chunked.OHCacheChunkedImpl",
+	"method": "<init>",
+	"line": 104
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "i = i + -1",
+				"location": {
+					"file": "",
+					"class": "org.caffinitas.ohc.chunked.OHCacheChunkedImpl",
+					"method": "<init>",
+					"line": 104
+				},
+				"stackTrace": [{
+	"class": "org.caffinitas.ohc.chunked.OHCacheChunkedImpl",
+	"method": "<init>",
+	"line": 104
+}]
+			}
+		]
+	}
+}
+
+]

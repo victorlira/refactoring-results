@@ -1,0 +1,349 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: org.apache.tools.ant.Project getProject()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>",
+  "line": "330"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack45 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: boolean isActive()>(), 573)","(<com.github.maven_nar.cpptasks.ProcessorDef: boolean isActive()>, defaultProviders = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>(null), 459)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>, extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>(), 296)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>, $stack4 = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: org.apache.tools.ant.Project getProject()>(), 330)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "obj = virtualinvoke $stack3.<org.apache.tools.ant.types.Reference: java.lang.Object getReferencedObject(org.apache.tools.ant.Project)>($stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>",
+  "line": "330"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack45 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: boolean isActive()>(), 573)","(<com.github.maven_nar.cpptasks.ProcessorDef: boolean isActive()>, defaultProviders = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>(null), 459)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>, extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>(), 296)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>, obj = virtualinvoke $stack3.<org.apache.tools.ant.types.Reference: java.lang.Object getReferencedObject(org.apache.tools.ant.Project)>($stack4), 330)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = (com.github.maven_nar.cpptasks.ProcessorDef) obj",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>",
+  "line": "335"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack45 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: boolean isActive()>(), 573)","(<com.github.maven_nar.cpptasks.ProcessorDef: boolean isActive()>, defaultProviders = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>(null), 459)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>, extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>(), 296)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>",
+  "line": "378"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack48 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 575)","(<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>, $stack3 = specialinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 290)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>, extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>(), 378)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke extendsDef.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>",
+  "line": "380"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack48 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 575)","(<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>, $stack3 = specialinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 290)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>",
+  "line": "394"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>, proc = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>(linkType), 206)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "proc = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>(linkType)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "206"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>, proc = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>(linkType), 206)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = interfaceinvoke proc.<com.github.maven_nar.cpptasks.compiler.Processor: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef[],com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(task, linkType, defaultProviders, this, targetPlatform, versionInfo)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "580"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack21 = (com.github.maven_nar.cpptasks.compiler.LinkerConfiguration) linkerConfig",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "639"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "727"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targets = specialinvoke this.<com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargets(com.github.maven_nar.cpptasks.compiler.LinkerConfiguration,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo,java.io.File)>(linkerConfig, objectFiles, versionInfo, $stack30)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "733"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, targets = specialinvoke this.<com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargets(com.github.maven_nar.cpptasks.compiler.LinkerConfiguration,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo,java.io.File)>(linkerConfig, objectFiles, versionInfo, $stack30), 733)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "currentCompilerDef#19 = staticinvoke <com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargetsToBuildByConfiguration(java.util.Map)>(targets)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "782"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, currentCompilerDef#19 = staticinvoke <com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargetsToBuildByConfiguration(java.util.Map)>(targets), 782)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack73 = interfaceinvoke currentCompilerDef#19.<java.util.Map: java.util.Set entrySet()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "791"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, $stack73 = interfaceinvoke currentCompilerDef#19.<java.util.Map: java.util.Set entrySet()>(), 791)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "progress = interfaceinvoke $stack73.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "791"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, progress = interfaceinvoke $stack73.<java.util.Set: java.util.Iterator iterator()>(), 791)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = interfaceinvoke progress.<java.util.Iterator: boolean hasNext()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "791"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, $stack75 = interfaceinvoke progress.<java.util.Iterator: boolean hasNext()>(), 791)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = (com.github.maven_nar.cpptasks.ProcessorDef) obj",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>",
+  "line": "335"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack45 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: boolean isActive()>(), 573)","(<com.github.maven_nar.cpptasks.ProcessorDef: boolean isActive()>, defaultProviders = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>(null), 459)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef[] getDefaultProviders(com.github.maven_nar.cpptasks.ProcessorDef)>, extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>(), 296)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>",
+  "line": "378"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack48 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 575)","(<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>, $stack3 = specialinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 290)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>, extendsDef = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.ProcessorDef getExtends()>(), 378)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke extendsDef.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>",
+  "line": "380"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, $stack48 = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 575)","(<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>, $stack3 = specialinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>(), 290)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>",
+  "line": "394"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>, proc = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>(linkType), 206)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "proc = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>(linkType)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "206"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)","(<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>, proc = virtualinvoke this.<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.Processor getProcessor(com.github.maven_nar.cpptasks.compiler.LinkType)>(linkType), 206)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = interfaceinvoke proc.<com.github.maven_nar.cpptasks.compiler.Processor: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef[],com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(task, linkType, defaultProviders, this, targetPlatform, versionInfo)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.ProcessorDef",
+  "method": "<com.github.maven_nar.cpptasks.ProcessorDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "580"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)","(<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>, linkerConfig = virtualinvoke currentLinkerDef.<com.github.maven_nar.cpptasks.LinkerDef: com.github.maven_nar.cpptasks.compiler.ProcessorConfiguration createConfiguration(com.github.maven_nar.cpptasks.CCTask,com.github.maven_nar.cpptasks.compiler.LinkType,com.github.maven_nar.cpptasks.ProcessorDef,com.github.maven_nar.cpptasks.TargetDef,com.github.maven_nar.cpptasks.VersionInfo)>(this, $stack52, $stack51, targetPlatform, versionInfo), 580)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack21 = (com.github.maven_nar.cpptasks.compiler.LinkerConfiguration) linkerConfig",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>",
+  "line": "639"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "727"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, linkerConfig = virtualinvoke this.<com.github.maven_nar.cpptasks.CCTask: com.github.maven_nar.cpptasks.compiler.LinkerConfiguration collectExplicitObjectFiles(java.util.Vector,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo)>(objectFiles, sysObjectFiles, versionInfo), 727)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targets = specialinvoke this.<com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargets(com.github.maven_nar.cpptasks.compiler.LinkerConfiguration,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo,java.io.File)>(linkerConfig, objectFiles, versionInfo, $stack30)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "733"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, targets = specialinvoke this.<com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargets(com.github.maven_nar.cpptasks.compiler.LinkerConfiguration,java.util.Vector,com.github.maven_nar.cpptasks.VersionInfo,java.io.File)>(linkerConfig, objectFiles, versionInfo, $stack30), 733)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "currentCompilerDef#19 = staticinvoke <com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargetsToBuildByConfiguration(java.util.Map)>(targets)",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "782"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, currentCompilerDef#19 = staticinvoke <com.github.maven_nar.cpptasks.CCTask: java.util.Map getTargetsToBuildByConfiguration(java.util.Map)>(targets), 782)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack73 = interfaceinvoke currentCompilerDef#19.<java.util.Map: java.util.Set entrySet()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "791"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, $stack73 = interfaceinvoke currentCompilerDef#19.<java.util.Map: java.util.Set entrySet()>(), 791)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "progress = interfaceinvoke $stack73.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "791"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, progress = interfaceinvoke $stack73.<java.util.Set: java.util.Iterator iterator()>(), 791)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = interfaceinvoke progress.<java.util.Iterator: boolean hasNext()>()",
+"location": {
+  "file": "",
+  "class": "com.github.maven_nar.cpptasks.CCTask",
+  "method": "<com.github.maven_nar.cpptasks.CCTask: void execute()>",
+  "line": "791"
+},
+"stackTrace": ["(<com.github.maven_nar.cpptasks.CCTask: void execute()>, $stack75 = interfaceinvoke progress.<java.util.Iterator: boolean hasNext()>(), 791)"]
+}]
+}
+}
+
+]

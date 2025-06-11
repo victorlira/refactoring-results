@@ -1,0 +1,197 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "46"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request), 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "url = virtualinvoke $stack43.<org.hdiv.urlProcessor.LinkUrlProcessor: java.lang.String getProcessedUrl(org.hdiv.urlProcessor.UrlData)>(urlData)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "79"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, url = virtualinvoke $stack43.<org.hdiv.urlProcessor.LinkUrlProcessor: java.lang.String getProcessedUrl(org.hdiv.urlProcessor.UrlData)>(urlData), 79)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "46"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request), 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack31 = virtualinvoke urlData.<org.hdiv.urlProcessor.UrlData: java.lang.String getUrlWithoutContextPath()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "60"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, $stack31 = virtualinvoke urlData.<org.hdiv.urlProcessor.UrlData: java.lang.String getUrlWithoutContextPath()>(), 60)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "46"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request), 47)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "46"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request), 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "url = virtualinvoke $stack37.<org.hdiv.urlProcessor.LinkUrlProcessor: java.lang.String getProcessedUrlWithHdivState(java.lang.String,org.hdiv.urlProcessor.UrlData,java.lang.String)>(hdivParameter, urlData, stateParam#35)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "95"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, url = virtualinvoke $stack37.<org.hdiv.urlProcessor.LinkUrlProcessor: java.lang.String getProcessedUrlWithHdivState(java.lang.String,org.hdiv.urlProcessor.UrlData,java.lang.String)>(hdivParameter, urlData, stateParam#35), 95)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "46"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "47"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, urlData = virtualinvoke $stack22.<org.hdiv.urlProcessor.LinkUrlProcessor: org.hdiv.urlProcessor.UrlData createUrlData(java.lang.String,org.hdiv.util.Method,java.lang.String,javax.servlet.http.HttpServletRequest)>(url, $stack21, hdivParameter, request), 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack25 = virtualinvoke $stack24.<org.hdiv.urlProcessor.LinkUrlProcessor: boolean isHdivStateNecessary(org.hdiv.urlProcessor.UrlData)>(urlData)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.components.support.OutputLinkComponentProcessor",
+  "method": "<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>",
+  "line": "48"
+},
+"stackTrace": ["(<org.hdiv.components.support.OutputLinkComponentProcessor: void processOutputLink(javax.faces.context.FacesContext,javax.faces.component.html.HtmlOutputLink)>, $stack25 = virtualinvoke $stack24.<org.hdiv.urlProcessor.LinkUrlProcessor: boolean isHdivStateNecessary(org.hdiv.urlProcessor.UrlData)>(urlData), 48)"]
+}]
+}
+}
+
+]

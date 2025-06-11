@@ -1,0 +1,126 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "user = $stack7",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.Main",
+  "method": "<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>",
+  "line": "38"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "data := @parameter0: com.github.sviperll.staticmustache.examples.User",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.RenderableUserAdapter",
+  "method": "<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.RenderableUserAdapter",
+  "method": "<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>",
+  "line": "5"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)","(<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>, this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data, 5)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "user = $stack7",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.Main",
+  "method": "<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>",
+  "line": "38"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user)",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.Main",
+  "method": "<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>",
+  "line": "39"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = new com.github.sviperll.staticmustache.examples.User",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.Main",
+  "method": "<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>",
+  "line": "42"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack13.<com.github.sviperll.staticmustache.examples.User: void <init>(java.lang.String,int,com.github.sviperll.staticmustache.Renderable,java.lang.String[],int[],boolean)>('Victor', 29, null, $stack15, $stack14, 1), 42)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "user1 = $stack13",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.Main",
+  "method": "<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>",
+  "line": "42"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user1 = $stack13, 42)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "data := @parameter0: com.github.sviperll.staticmustache.examples.User",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.RenderableUserAdapter",
+  "method": "<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data",
+"location": {
+  "file": "",
+  "class": "com.github.sviperll.staticmustache.examples.RenderableUserAdapter",
+  "method": "<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>",
+  "line": "5"
+},
+"stackTrace": ["(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)","(<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>, this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data, 5)"]
+}]
+}
+}
+
+]

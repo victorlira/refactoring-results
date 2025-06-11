@@ -14,7 +14,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "bytesLeft : long"
     },
-    "line": "145"
+    "line": "145",
+    "branchLine": "130"
   },
   {
     "branch": "R",
@@ -31,7 +32,26 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "160"
+    "line": "160",
+    "branchLine": "145"
+  },
+  {
+    "branch": "R",
+    "class": "edu.tufts.eaftan.hprofparser.parser.HprofParser",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Change Variable Type\tbytesLeft : int to bytesLeft : long in method private parseRecord(in DataInput, idSize int) : boolean from class edu.tufts.eaftan.hprofparser.parser.HprofParser",
+    "description": {
+      "filePath": "src/main/java/edu/tufts/eaftan/hprofparser/parser/HprofParser.java",
+      "startLine": 182,
+      "endLine": 182,
+      "startColumn": 9,
+      "endColumn": 50,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement referencing the variable with changed type",
+      "codeElement": null
+    },
+    "line": "205",
+    "branchLine": "182"
   },
   {
     "branch": "R",
@@ -48,6 +68,7 @@
       "description": "changed-type variable declaration",
       "codeElement": "bytesLeft : long"
     },
-    "line": "145"
+    "line": "145",
+    "branchLine": "130"
   }
 ]

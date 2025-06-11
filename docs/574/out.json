@@ -1,0 +1,126 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>,$stack5 = new java.util.LinkedList,168,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, specialinvoke $stack5.<java.util.LinkedList: void <init>()>(), 168)) => Node(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>,files = $stack5,168,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, files = $stack5, 168)) => Node(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>,return files,181,SinkNode, path: ) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>,l3 = interfaceinvoke artifacts.<java.util.Set: java.util.Iterator iterator()>(),172,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, l3 = interfaceinvoke artifacts.<java.util.Set: java.util.Iterator iterator()>(), 172)) => Node(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>,$stack11 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(),181,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, $stack11 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(), 181)) => Node(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>,artifact = (org.apache.maven.artifact.Artifact) $stack11,181,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, artifact = (org.apache.maven.artifact.Artifact) $stack11, 181))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "l3 = interfaceinvoke artifacts.<java.util.Set: java.util.Iterator iterator()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+					"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+					"line": 172
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+	"line": 172
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+	"line": 181
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+	"line": 181
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack5 = new java.util.LinkedList",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+					"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+					"line": 168
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+	"line": 168
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+	"line": 168
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+	"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+	"line": 181
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "return files",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+					"method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+					"line": 181
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "l3 = interfaceinvoke artifacts.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+  "line": "172"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, l3 = interfaceinvoke artifacts.<java.util.Set: java.util.Iterator iterator()>(), 172)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+  "line": "181"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, $stack11 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(), 181)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "artifact = (org.apache.maven.artifact.Artifact) $stack11",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+  "line": "181"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, artifact = (org.apache.maven.artifact.Artifact) $stack11, 181)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = interfaceinvoke artifact.<org.apache.maven.artifact.Artifact: java.io.File getFile()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>",
+  "line": "177"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesMojo: java.util.List getFilesToProcess()>, $stack16 = interfaceinvoke artifact.<org.apache.maven.artifact.Artifact: java.io.File getFile()>(), 177)"]
+}]
+}
+}
+
+]

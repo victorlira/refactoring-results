@@ -1,0 +1,207 @@
+Running soot scenario movsim;org.movsim.simulator.Simulator;initialize();633cf8a7804a537c3b908eff2ec21dc4213d9b77
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 2,34100
+An error occurred in getInvokeExpr with args: specialinvoke $stack7.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke $stack5.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform Confluence 1 Inter 81,52400
+Configure Soot Confluence 2 Inter 0,91000
+An error occurred in getInvokeExpr with args: specialinvoke $stack7.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke $stack5.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.nodeToString(ConfluenceConflict.java:126)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.lambda$pathToString$0(ConfluenceConflict.java:118)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.pathToString(ConfluenceConflict.java:120)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.toString(ConfluenceConflict.java:40)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.hashCode(ConfluenceConflict.java:135)
+	at java.util.HashMap.hash(HashMap.java:339)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.intersectPathsByLastNode(DFPConfluenceAnalysis.java:232)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:157)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,73700
+Runtime: 0.38s
+Time to perform OA Inter 3,67300
+OA Inter Visited methods: 828
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 2,03900
+An error occurred in getInvokeExpr with args: specialinvoke $stack7.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke $stack5.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:367)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 2,00100
+An error occurred in getInvokeExpr with args: specialinvoke $stack7.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke $stack5.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,77800
+Time to perform PDG 2,17000
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,51600
+Time to perform PDG 2,26500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

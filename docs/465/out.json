@@ -1,0 +1,1255 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>",
+  "line": "196"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack44 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "96"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack44 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>(), 96)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack45 = interfaceinvoke $stack44.<org.apache.http.StatusLine: java.lang.String getReasonPhrase()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "96"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack45 = interfaceinvoke $stack44.<org.apache.http.StatusLine: java.lang.String getReasonPhrase()>(), 96)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "reason_phrase := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: java.lang.String _reason_phrase> = reason_phrase",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "33"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: java.lang.String _reason_phrase> = reason_phrase, 33)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>",
+  "line": "196"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "headers = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.Header[] getAllHeaders()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, headers = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.Header[] getAllHeaders()>(), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack58 = headers[i]",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "81"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack58 = headers[i], 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = interfaceinvoke $stack58.<org.apache.http.Header: java.lang.String getValue()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "81"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack59 = interfaceinvoke $stack58.<org.apache.http.Header: java.lang.String getValue()>(), 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int parseInt(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, rate_limit = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack62), 78)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>(l0, 10)",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int parseInt(java.lang.String)>",
+  "line": "615"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, rate_limit = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack62), 78)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "rate_limit_remaining = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack59)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "80"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, rate_limit_remaining = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack59), 80)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "rate_limit_remaining := @parameter4: int",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: int _rate_limit_remaining> = rate_limit_remaining",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "36"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: int _rate_limit_remaining> = rate_limit_remaining, 36)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>",
+  "line": "196"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "entity = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, entity = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>(), 69)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "i#10 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>(entity)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, i#10 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>(entity), 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "body := @parameter2: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: java.lang.String _body> = body",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "34"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: java.lang.String _body> = body, 34)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack42 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "95"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack42 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack43 = interfaceinvoke $stack42.<org.apache.http.StatusLine: int getStatusCode()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "95"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack43 = interfaceinvoke $stack42.<org.apache.http.StatusLine: int getStatusCode()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "status_code := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: int _status_code> = status_code",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "32"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: int _status_code> = status_code, 32)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "entity = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, entity = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>(), 69)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "i#10 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>(entity)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, i#10 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>(entity), 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "body := @parameter2: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: java.lang.String _body> = body",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "34"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: java.lang.String _body> = body, 34)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "headers = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.Header[] getAllHeaders()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, headers = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.Header[] getAllHeaders()>(), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack58 = headers[i]",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "81"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack58 = headers[i], 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = interfaceinvoke $stack58.<org.apache.http.Header: java.lang.String getValue()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "81"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack59 = interfaceinvoke $stack58.<org.apache.http.Header: java.lang.String getValue()>(), 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int parseInt(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, rate_limit = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack62), 78)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>(l0, 10)",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int parseInt(java.lang.String)>",
+  "line": "615"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, rate_limit = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack62), 78)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "rate_limit_remaining = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack59)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "80"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, rate_limit_remaining = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack59), 80)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "rate_limit_remaining := @parameter4: int",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: int _rate_limit_remaining> = rate_limit_remaining",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "36"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: int _rate_limit_remaining> = rate_limit_remaining, 36)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>",
+  "line": "196"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack42 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "95"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack42 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack43 = interfaceinvoke $stack42.<org.apache.http.StatusLine: int getStatusCode()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "95"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack43 = interfaceinvoke $stack42.<org.apache.http.StatusLine: int getStatusCode()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "status_code := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: int _status_code> = status_code",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "32"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: int _status_code> = status_code, 32)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestUser",
+  "method": "<org.datasift.tests.TestUser: void testRateLimits()>",
+  "line": "74"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, def = virtualinvoke $stack4.<org.datasift.User: org.datasift.Definition createDefinition(java.lang.String)>($stack3), 74)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.Definition",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = this.<org.datasift.Definition: org.datasift.User _user>",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: void validate()>",
+  "line": "230"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, $stack10 = this.<org.datasift.Definition: org.datasift.User _user>, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.User",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.User",
+  "method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+  "line": "660"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.ApiClient",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack36 = this.<org.datasift.ApiClient: org.apache.http.client.HttpClient _http_client>, 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5)",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "67"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, key#6 = interfaceinvoke $stack36.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>(post#5), 67)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack44 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "96"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack44 = interfaceinvoke key#6.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>(), 96)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack45 = interfaceinvoke $stack44.<org.apache.http.StatusLine: java.lang.String getReasonPhrase()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiClient",
+  "method": "<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>",
+  "line": "96"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke def.<org.datasift.Definition: void validate()>(), 79)","(<org.datasift.Definition: void validate()>, res = virtualinvoke $stack10.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('validate', params), 230)","(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)","(<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>, $stack45 = interfaceinvoke $stack44.<org.apache.http.StatusLine: java.lang.String getReasonPhrase()>(), 96)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "reason_phrase := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.datasift.ApiResponse: java.lang.String _reason_phrase> = reason_phrase",
+"location": {
+  "file": "",
+  "class": "org.datasift.ApiResponse",
+  "method": "<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>",
+  "line": "33"
+},
+"stackTrace": ["(<org.datasift.tests.TestUser: void testRateLimits()>, virtualinvoke $stack6.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>('{\'hash\':\'947b690ec9dca525fb8724645e088d79\',\'created_at\':\'2011-05-16 17:20:02\',\'dpu\':\'10\'}', 200, 150, 100), 76)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int)>, virtualinvoke this.<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>(body, status_code, rate_limit, rate_limit_remaining, 'OK'), 55)","(<org.datasift.MockApiClient: void setResponse(java.lang.String,int,int,int,java.lang.String)>, specialinvoke $stack6.<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>(status_code, reason_phrase, body, rate_limit, rate_limit_remaining), 69)","(<org.datasift.ApiResponse: void <init>(int,java.lang.String,java.lang.String,int,int)>, this.<org.datasift.ApiResponse: java.lang.String _reason_phrase> = reason_phrase, 33)"]
+}]
+}
+}
+
+]

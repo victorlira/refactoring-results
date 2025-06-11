@@ -1,0 +1,548 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)","(<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>, $stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>, 377)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack1 != 46 goto $stack2 = 0",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "instructions = $stack17",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "100"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, instructions = $stack17, 100)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "106"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>(), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23, 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack32 == 0 goto $stack33 = entry#12.<foodev.jsondiff.JsonPatch$Instruction: foodev.jsondiff.jsonwrap.JzonElement el>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)","(<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>, $stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>, 377)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack1 != 46 goto $stack2 = 0",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "106"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>(), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23, 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: foodev.jsondiff.JsonPatch$Instruction",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "-1"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)","(<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>, $stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>, 377)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack1 != 46 goto $stack2 = 0",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23, 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack32 == 0 goto $stack33 = entry#12.<foodev.jsondiff.JsonPatch$Instruction: foodev.jsondiff.jsonwrap.JzonElement el>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = 1",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack32 == 0 goto $stack33 = entry#12.<foodev.jsondiff.JsonPatch$Instruction: foodev.jsondiff.jsonwrap.JzonElement el>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack32 == 0 goto $stack33 = entry#12.<foodev.jsondiff.JsonPatch$Instruction: foodev.jsondiff.jsonwrap.JzonElement el>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "106"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>(), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23, 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack32 == 0 goto $stack33 = entry#12.<foodev.jsondiff.JsonPatch$Instruction: foodev.jsondiff.jsonwrap.JzonElement el>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23, 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: foodev.jsondiff.JsonPatch$Instruction",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "-1"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)","(<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>, $stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>, 377)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack1 != 46 goto $stack2 = 0",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "instructions = $stack17",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "100"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, instructions = $stack17, 100)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "106"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, l5 = virtualinvoke instructions.<java.util.TreeSet: java.util.Iterator iterator()>(), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack23 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 215)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch",
+  "method": "<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>",
+  "line": "215"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, entry#12 = (foodev.jsondiff.JsonPatch$Instruction) $stack23, 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: foodev.jsondiff.JsonPatch$Instruction",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "-1"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": ["(<foodev.jsondiff.JsonPatch: void apply(java.lang.Object,java.lang.Object)>, staticinvoke <foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>(origEl, patchEl), 83)","(<foodev.jsondiff.JsonPatch: void apply(foodev.jsondiff.jsonwrap.JzonElement,foodev.jsondiff.jsonwrap.JzonElement)>, $stack32 = virtualinvoke entry#12.<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>(), 196)","(<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>, $stack1 = this.<foodev.jsondiff.JsonPatch$Instruction: char oper>, 377)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack1 != 46 goto $stack2 = 0",
+"location": {
+  "file": "",
+  "class": "foodev.jsondiff.JsonPatch$Instruction",
+  "method": "<foodev.jsondiff.JsonPatch$Instruction: boolean isArrayInsert()>",
+  "line": "377"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

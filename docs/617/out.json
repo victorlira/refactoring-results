@@ -1,0 +1,1348 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = class 'Lorg/hdiv/filter/ValidationContextFactory;'",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = class 'Lorg/hdiv/filter/ValidationContextFactory;'",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 749)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = class 'Lorg/hdiv/filter/ValidationContextFactory;'",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack7.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack7.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 753)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack10, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validatorErrorHandlerRef> = $stack15",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validatorErrorHandlerRef> = $stack15, 229)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = class 'Lorg/hdiv/filter/ValidationContextFactory;'",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack6 = virtualinvoke $stack5.<java.lang.Class: java.lang.String getName()>(), 504)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "745"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName), 745)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if exist != 0 goto $stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "747"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack7",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "745"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName), 745)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if exist != 0 goto $stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "747"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "bean = $stack4",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "500"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, bean = $stack4, 500)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bean := @parameter0: org.springframework.beans.factory.support.RootBeanDefinition",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 749)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke parserContext.<org.springframework.beans.factory.xml.ParserContext: org.springframework.beans.factory.support.BeanDefinitionRegistry getRegistry()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, $stack8 = virtualinvoke parserContext.<org.springframework.beans.factory.xml.ParserContext: org.springframework.beans.factory.support.BeanDefinitionRegistry getRegistry()>(), 748)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack10, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack10, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validatorErrorHandlerRef> = $stack15",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "229"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validatorErrorHandlerRef> = $stack15, 229)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack8, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "666"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack9 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack8, parserContext), 666)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack10, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack8, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "666"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack9 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack8, parserContext), 666)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>(), 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack7.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack7.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 753)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "666"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>(), 666)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack7.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack7.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 753)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack6, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack7",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "745"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName), 745)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if exist != 0 goto $stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "747"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack6, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "240"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validationContextFactoryRef> = $stack26",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "240"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validationContextFactoryRef> = $stack26, 240)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "666"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>(), 666)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 749)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 749)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "666"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>(), 666)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>(), 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "749"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack9.<org.springframework.beans.factory.config.RuntimeBeanReference: void <init>(java.lang.String)>(beanName), 749)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = new org.springframework.beans.factory.support.RootBeanDefinition",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "329"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack6.<org.springframework.beans.factory.support.RootBeanDefinition: void <init>(java.lang.Class)>(errorHandlerClass), 329)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "bean = $stack6",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "329"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, bean = $stack6, 329)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bean := @parameter0: org.springframework.beans.factory.support.RootBeanDefinition",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = new org.springframework.beans.factory.support.RootBeanDefinition",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "661"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, specialinvoke $stack4.<org.springframework.beans.factory.support.RootBeanDefinition: void <init>(java.lang.Class)>(class 'Lorg/hdiv/validation/DefaultComponentTreeValidator;'), 661)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "bean = $stack4",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "661"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, bean = $stack4, 661)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bean := @parameter0: org.springframework.beans.factory.support.RootBeanDefinition",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>(), 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "745"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName), 745)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if exist != 0 goto $stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "747"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "666"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 270)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createComponentTreeValidator(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack8 = virtualinvoke $stack7.<java.lang.Class: java.lang.String getName()>(), 666)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "745"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, exist = interfaceinvoke $stack5.<org.springframework.beans.factory.support.BeanDefinitionRegistry: boolean containsBeanDefinition(java.lang.String)>(beanName), 745)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if exist != 0 goto $stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "747"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke parserContext.<org.springframework.beans.factory.xml.ParserContext: org.springframework.beans.factory.support.BeanDefinitionRegistry getRegistry()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, $stack8 = virtualinvoke parserContext.<org.springframework.beans.factory.xml.ParserContext: org.springframework.beans.factory.support.BeanDefinitionRegistry getRegistry()>(), 748)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "334"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack15 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 229)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidatorErrorHandler(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack10 = virtualinvoke $stack9.<java.lang.Class: java.lang.String getName()>(), 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beanName := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "748"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>, interfaceinvoke $stack8.<org.springframework.beans.factory.support.BeanDefinitionRegistry: void registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)>(beanName, bean), 748)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack6, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "240"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validationContextFactoryRef> = $stack26",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "240"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference validationContextFactoryRef> = $stack26, 240)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new org.springframework.beans.factory.config.RuntimeBeanReference",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "753"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack5 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 219)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createPatternMatcherFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>, $stack4 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>(source, parserContext, class 'Lorg/hdiv/regex/PatternMatcherFactory;', $stack3), 289)","(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createSimpleBean(java.lang.Object,org.springframework.beans.factory.xml.ParserContext,java.lang.Class,java.lang.String)>, $stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, beanName, parserContext), 773)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference registerBean(org.springframework.beans.factory.support.RootBeanDefinition,java.lang.String,org.springframework.beans.factory.xml.ParserContext)>(bean, $stack6, parserContext)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.config.xml.ConfigBeanDefinitionParser",
+  "method": "<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>",
+  "line": "504"
+},
+"stackTrace": ["(<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element,org.springframework.beans.factory.xml.ParserContext)>, $stack26 = virtualinvoke this.<org.hdiv.config.xml.ConfigBeanDefinitionParser: org.springframework.beans.factory.config.RuntimeBeanReference createValidationContextFactory(java.lang.Object,org.springframework.beans.factory.xml.ParserContext)>(source, parserContext), 240)"]
+}]
+}
+}
+
+]

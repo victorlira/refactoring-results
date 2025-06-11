@@ -4,9 +4,11 @@
       "class": "xdi2.core.features.signatures.KeyPairSignature",
       "refactoringInfo": [
         "Change Variable Type\tliteral : Literal to literalNode : LiteralNode in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature",
-        "Rename Variable\tliteral : Literal to literalNode : LiteralNode in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature"
+        "Rename Variable\tliteral : Literal to literalNode : LiteralNode in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature",
+        "Rename Variable\txdiValue : XdiValue to literalNode : LiteralNode in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature"
       ],
-      "line": "123",
+      "line": "124",
+      "branchLine": "123",
       "filePath": "core/src/main/java/xdi2/core/features/signatures/KeyPairSignature.java",
       "branch": "R"
     },
@@ -16,9 +18,30 @@
         "Change Variable Type\tliteral : Literal to literalNode : LiteralNode in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature",
         "Rename Variable\tliteral : Literal to literalNode : LiteralNode in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature"
       ],
-      "line": "126",
+      "line": "127",
+      "branchLine": "126",
       "filePath": "core/src/main/java/xdi2/core/features/signatures/KeyPairSignature.java",
       "branch": "R"
+    },
+    {
+      "class": "xdi2.core.features.signatures.KeyPairSignature",
+      "refactoringInfo": [
+        "Change Variable Type\tex : UnsupportedEncodingException to ex : Exception in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature"
+      ],
+      "line": "136",
+      "branchLine": "140",
+      "filePath": "core/src/main/java/xdi2/core/features/signatures/KeyPairSignature.java",
+      "branch": "L"
+    },
+    {
+      "class": "xdi2.core.features.signatures.KeyPairSignature",
+      "refactoringInfo": [
+        "Inline Variable\tverify : boolean in method public validate(publicKey PublicKey) : boolean from class xdi2.core.features.signatures.KeyPairSignature"
+      ],
+      "line": "148",
+      "branchLine": "152",
+      "filePath": "core/src/main/java/xdi2/core/features/signatures/KeyPairSignature.java",
+      "branch": "L"
     }
   ]
 ]

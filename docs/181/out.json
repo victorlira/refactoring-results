@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "insignificantBits = 64 - $stack2",
+"location": {
+  "file": "",
+  "class": "ch.hsr.geohash.GeoHash",
+  "method": "<ch.hsr.geohash.GeoHash: long ord()>",
+  "line": "203"
+},
+"stackTrace": ["(<ch.hsr.geohash.GeoHash: long ord()>, insignificantBits = 64 - $stack2, 203)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = $stack3 >>> insignificantBits",
+"location": {
+  "file": "",
+  "class": "ch.hsr.geohash.GeoHash",
+  "method": "<ch.hsr.geohash.GeoHash: long ord()>",
+  "line": "204"
+},
+"stackTrace": ["(<ch.hsr.geohash.GeoHash: long ord()>, $stack4 = $stack3 >>> insignificantBits, 204)"]
+}]
+}
+}
+
+]

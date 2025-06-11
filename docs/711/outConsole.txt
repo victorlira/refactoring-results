@@ -1,0 +1,110 @@
+Running soot scenario redpen;cc.redpen.formatter.XMLFormatter;convertError(ValidationError);9af5140829baa1e9dd5094879ad0681606574646
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/redpen/9af5140829baa1e9dd5094879ad0681606574646/original-without-dependencies/redpen-core-0.6.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,45300
+Time to perform Confluence 1 Inter 0,11500
+Configure Soot Confluence 2 Inter 0,18900
+Time to perform Confluence 2 Inter 0,01300
+Visited methods: 2
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/redpen/9af5140829baa1e9dd5094879ad0681606574646/original-without-dependencies/redpen-core-0.6.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,54400
+Runtime: 0.008s
+Time to perform OA Inter 0,61000
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/redpen/9af5140829baa1e9dd5094879ad0681606574646/original-without-dependencies/redpen-core-0.6.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,54000
+Time to perform DFP Inter 0,33400
+Depth limit: 5
+CONFLICTS: DF interference in <cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>
+Data flows from execution of line 92 to 94, defined in sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>("sentence") and propagated in interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7)
+Caused by line 92 flow: path: (<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>('sentence'), 92)
+Caused by line 94 flow: path: (<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7), 94)
+[List(Node(<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>,sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>("sentence"),92,SourceNode, path: (<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>('sentence'), 92)) => Node(<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>,interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7),94,SinkNode, path: (<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7), 94)))]
+Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/redpen/9af5140829baa1e9dd5094879ad0681606574646/original-without-dependencies/redpen-core-0.6.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47300
+Time to perform DFP Inter 0,50600
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 23
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/redpen/9af5140829baa1e9dd5094879ad0681606574646/original-without-dependencies/redpen-core-0.6.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40700
+Time to perform PDG 0,29800
+CONFLICTS: [List(Node(<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>,sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>("sentence"),92,SourceNode, path: (<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>('sentence'), 92)) => Node(<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>,interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7),94,SinkNode, path: (<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7), 94)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/redpen/9af5140829baa1e9dd5094879ad0681606574646/original-without-dependencies/redpen-core-0.6.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,48700
+Time to perform PDG 0,54100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

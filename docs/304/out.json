@@ -1,0 +1,916 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),76,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack10 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>(1, 110), 44) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 76)) SINK=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),76,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack10 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>(1, 110), 44) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 76))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>",
+	"line": 76
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>",
+	"line": 76
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry nationalCheckDigit(int,char)>",
+					"line": 76
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),91,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack299 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>(10, 110), 203) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 91)) SINK=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),91,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack299 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>(10, 110), 203) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 91)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>,specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length),91,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack299 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>(10, 110), 203) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 91))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>",
+	"line": 91
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>",
+	"line": 91
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>",
+	"line": 91
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry identificationNumber(int,char)>",
+					"line": 91
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),81,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack87 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>(1, 97), 87) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 81)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>,specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length),81,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack87 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>(1, 97), 87) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 81)) SINK=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),81,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack87 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>(1, 97), 87) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 81))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>",
+	"line": 81
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>",
+	"line": 81
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>",
+	"line": 81
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountType(int,char)>",
+					"line": 81
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>,$stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType),66,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, $stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType), 66)) => Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,name := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;", name),106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61) => (<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)) => Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),66,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 66)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>,specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length),66,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 66)) SINK=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),66,SimpleNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 66)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>,specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length),66,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 66))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+	"line": 66
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+					"line": 66
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+	"line": 66
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+	"line": 66
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+					"line": 66
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),71,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack12 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>(16, 99), 45) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 71)) SINK=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),71,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack12 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>(16, 99), 45) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 71))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>",
+	"line": 71
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>",
+	"line": 71
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry accountNumber(int,char)>",
+					"line": 71
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),86,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack89 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>(1, 99), 88) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 86)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>,specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length),86,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack89 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>(1, 99), 88) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 86)) SINK=>BASE: Node(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>,$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1,106,SourceNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>,$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4),86,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack89 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>(1, 99), 88) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 86)) => Node(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>,specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length),86,SinkNode, path: (<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack89 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>(1, 99), 88) => (<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 86))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>",
+	"line": 86
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>",
+	"line": 86
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+					"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+					"line": 106
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+	"method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+	"line": 106
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>",
+	"line": 86
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>",
+	"line": 86
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length)",
+				"location": {
+					"file": "",
+					"class": "org.iban4j.bban.BbanStructureEntry",
+					"method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry ownerAccountNumber(int,char)>",
+					"line": 86
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l0.<java.lang.String: char[] value> - l0.<java.lang.String: char[] value>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l0.<java.lang.String: char[] value> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<init>",
+					"line": 611
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructure",
+	"method": "<clinit>",
+	"line": 100
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "branchCode",
+	"line": 66
+},{
+	"class": "java.lang.String",
+	"method": "valueOf",
+	"line": 3085
+},{
+	"class": "java.lang.String",
+	"method": "<init>",
+	"line": 611
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l0.<java.lang.String: char[] value> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<init>",
+					"line": 611
+				},
+				"stackTrace": [{
+	"class": "org.iban4j.bban.BbanStructure",
+	"method": "<clinit>",
+	"line": 458
+},{
+	"class": "org.iban4j.bban.BbanStructureEntry",
+	"method": "bankCode",
+	"line": 61
+},{
+	"class": "java.lang.String",
+	"method": "valueOf",
+	"line": 3085
+},{
+	"class": "java.lang.String",
+	"method": "<init>",
+	"line": 611
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new org.iban4j.bban.BbanStructureEntry",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+  "line": "65"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.iban4j.bban.BbanStructureEntry",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "53"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)","(<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>, specialinvoke this.<java.lang.Object: void <init>()>(), 53)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = new java.util.Random",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "32"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)","(<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>, specialinvoke $stack4.<java.util.Random: void <init>()>(), 32)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack4.<java.util.Random: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "32"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)","(<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>, specialinvoke $stack4.<java.util.Random: void <init>()>(), 32)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)","(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>",
+  "line": "61"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+  "line": "66"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, $stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)","(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)","(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>",
+  "line": "61"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack4 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(characterType), 61)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)","(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)","(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+  "line": "66"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 66)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>",
+  "line": "66"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack8 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>(4, 110), 43)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry branchCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 66)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = new java.util.Random",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "32"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)","(<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>, specialinvoke $stack4.<java.util.Random: void <init>()>(), 32)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack4.<java.util.Random: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "32"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)","(<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>, specialinvoke $stack4.<java.util.Random: void <init>()>(), 32)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new org.iban4j.bban.BbanStructureEntry",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>",
+  "line": "60"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.iban4j.bban.BbanStructureEntry",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry",
+  "method": "<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>",
+  "line": "53"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, specialinvoke $stack2.<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>($stack3, $stack5, length), 61)","(<org.iban4j.bban.BbanStructureEntry: void <init>(org.iban4j.bban.BbanEntryType,org.iban4j.bban.BbanStructureEntry$EntryCharacterType,int)>, specialinvoke this.<java.lang.Object: void <init>()>(), 53)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name)",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)","(<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>, $stack1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class 'Lorg/iban4j/bban/BbanStructureEntry$EntryCharacterType;', name), 106)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (org.iban4j.bban.BbanStructureEntry$EntryCharacterType) $stack1",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": ["(<org.iban4j.bban.BbanStructure: void <clinit>()>, $stack6 = staticinvoke <org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>(3, 110), 42)","(<org.iban4j.bban.BbanStructureEntry: org.iban4j.bban.BbanStructureEntry bankCode(int,char)>, $stack5 = staticinvoke <org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>($stack4), 61)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "org.iban4j.bban.BbanStructureEntry$EntryCharacterType",
+  "method": "<org.iban4j.bban.BbanStructureEntry$EntryCharacterType: org.iban4j.bban.BbanStructureEntry$EntryCharacterType valueOf(java.lang.String)>",
+  "line": "106"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

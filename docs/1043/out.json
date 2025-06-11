@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>()",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.generate.HyperCubeGraphGenerator",
+  "method": "<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>",
+  "line": "60"
+},
+"stackTrace": ["(<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 60)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex)",
+"location": {
+  "file": "",
+  "class": "org.jgrapht.generate.HyperCubeGraphGenerator",
+  "method": "<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>",
+  "line": "68"
+},
+"stackTrace": ["(<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex), 68)"]
+}]
+}
+}
+
+]

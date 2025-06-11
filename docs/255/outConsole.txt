@@ -1,0 +1,126 @@
+Running soot scenario migration-tools;com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect;initJdbcTypes();de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/migration-tools/de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb/original-without-dependencies/nuodb-migrator-core-2.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,75300
+Time to perform Confluence 1 Inter 0,39100
+Configure Soot Confluence 2 Inter 0,49900
+Time to perform Confluence 2 Inter 0,03300
+Visited methods: 8
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/migration-tools/de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb/original-without-dependencies/nuodb-migrator-core-2.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,90500
+Runtime: 0.003s
+Time to perform OA Inter 0,94200
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/migration-tools/de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb/original-without-dependencies/nuodb-migrator-core-2.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,52000
+Time to perform DFP Inter 0,36700
+Depth limit: 5
+CONFLICTS: DF interference in <com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>
+Data flows from execution of line 59 to 59, defined in $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>() and propagated in interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)
+DF interference in <com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>
+Data flows from execution of line 59 to 59, defined in $stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry> and propagated in interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)
+DF interference in <com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>,$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>,308,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(),714,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias),714,SinkNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714))), List(Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>,$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>,308,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>,return $stack1,308,SinkNode, path: )), List(Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(),714,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias),714,SinkNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)))]
+Visited methods: 4
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/migration-tools/de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb/original-without-dependencies/nuodb-migrator-core-2.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,60200
+Time to perform DFP Inter 0,40100
+Depth limit: 5
+CONFLICTS: DF interference in <com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>
+Data flows from execution of line 59 to 59, defined in $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>() and propagated in interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)
+DF interference in <com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>
+Data flows from execution of line 59 to 59, defined in $stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry> and propagated in interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)
+Caused by line 59 flow: path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)
+DF interference in <com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>,$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>,308,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(),714,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias),714,SinkNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714))), List(Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>,$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>,308,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>,return $stack1,308,SinkNode, path: )), List(Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(),714,SourceNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)) => Node(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>,interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias),714,SinkNode, path: (<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59) => (<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)))]
+Visited methods: 4
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/migration-tools/de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb/original-without-dependencies/nuodb-migrator-core-2.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,83100
+Time to perform PDG 0,19200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/migration-tools/de0e2f210167f6fea3a5a9937dfe42e1dccb4ddb/original-without-dependencies/nuodb-migrator-core-2.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,70200
+Time to perform PDG 0,37800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

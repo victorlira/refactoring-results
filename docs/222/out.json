@@ -1,0 +1,109 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<com.sforce.async.AsyncApiException: boolean exceptionCode__is_set> - this.<com.sforce.async.AsyncApiException: boolean exceptionCode__is_set>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<com.sforce.async.AsyncApiException: boolean exceptionCode__is_set> = 0",
+				"location": {
+					"file": "",
+					"class": "com.sforce.async.AsyncApiException",
+					"method": "<init>",
+					"line": 70
+				},
+				"stackTrace": [{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "createBatchFromStreamImpl",
+	"line": 240
+},{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "parseAndThrowException",
+	"line": 181
+},{
+	"class": "com.sforce.async.AsyncApiException",
+	"method": "<init>",
+	"line": 70
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<com.sforce.async.AsyncApiException: boolean exceptionCode__is_set> = 0",
+				"location": {
+					"file": "",
+					"class": "com.sforce.async.AsyncApiException",
+					"method": "<init>",
+					"line": 70
+				},
+				"stackTrace": [{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "createBatchFromStreamImpl",
+	"line": 240
+},{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "parseAndThrowException",
+	"line": 181
+},{
+	"class": "com.sforce.async.AsyncApiException",
+	"method": "<init>",
+	"line": 70
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "TypeMapper.<com.sforce.ws.bind.TypeMapper: boolean generateInterfaces> - TypeMapper.<com.sforce.ws.bind.TypeMapper: boolean generateInterfaces>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "TypeMapper.<com.sforce.ws.bind.TypeMapper: boolean generateInterfaces> = null",
+				"location": {
+					"file": "",
+					"class": "com.sforce.ws.bind.TypeMapper",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "createBatchFromStreamImpl",
+	"line": 240
+},{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "<clinit>",
+	"line": 90
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "TypeMapper.<com.sforce.ws.bind.TypeMapper: boolean generateInterfaces> = null",
+				"location": {
+					"file": "",
+					"class": "com.sforce.ws.bind.TypeMapper",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "createBatchFromStreamImpl",
+	"line": 240
+},{
+	"class": "com.sforce.async.BulkConnection",
+	"method": "<clinit>",
+	"line": 90
+}]
+			}
+		]
+	}
+}
+
+]

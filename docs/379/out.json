@@ -1,0 +1,147 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,e#3 = tmp$419792179,73,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, e#3 = tmp$419792179, 73)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,virtualinvoke e#3.<java.io.FileWriter: void close()>(),79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, virtualinvoke e#3.<java.io.FileWriter: void close()>(), 79)) SINK=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,commands = tmp$355677068,62,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, commands = tmp$355677068, 62)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(),74,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(), 74)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(),79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(), 79)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,cmd = (java.lang.String) $stack29,79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, cmd = (java.lang.String) $stack29, 79))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "commands = tmp$355677068",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+					"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 62
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 74
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 79
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 79
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "e#3 = tmp$419792179",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+					"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+					"line": 73
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 73
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 79
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke e#3.<java.io.FileWriter: void close()>()",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+					"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+					"line": 79
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,e#3 = tmp$419792179,73,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, e#3 = tmp$419792179, 73)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,virtualinvoke e#3.<java.io.FileWriter: void write(java.lang.String)>($stack33),75,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, virtualinvoke e#3.<java.io.FileWriter: void write(java.lang.String)>($stack33), 75)) SINK=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,commands = tmp$355677068,62,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, commands = tmp$355677068, 62)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(),74,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(), 74)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(),79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(), 79)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,cmd = (java.lang.String) $stack29,79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, cmd = (java.lang.String) $stack29, 79)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack31 = virtualinvoke tmp$1652280702.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(cmd),75,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack31 = virtualinvoke tmp$1652280702.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(cmd), 75)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10),75,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 75))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "commands = tmp$355677068",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+					"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 62
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 74
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 79
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 79
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 75
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 75
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "e#3 = tmp$419792179",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+					"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+					"line": 73
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 73
+},{
+	"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+	"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+	"line": 75
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke e#3.<java.io.FileWriter: void write(java.lang.String)>($stack33)",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo",
+					"method": "<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>",
+					"line": 75
+				}
+			}
+		]
+	}
+}
+
+]

@@ -1,0 +1,110 @@
+Running soot scenario geohash-java;ch.hsr.geohash.GeoHash;ord();029fd4411871b99cef71407c432752c570fcfaa2
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/geohash-java/029fd4411871b99cef71407c432752c570fcfaa2/original-without-dependencies/geohash-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,43300
+Time to perform Confluence 1 Inter 0,11200
+Configure Soot Confluence 2 Inter 0,20800
+Time to perform Confluence 2 Inter 0,11000
+Visited methods: 2
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/geohash-java/029fd4411871b99cef71407c432752c570fcfaa2/original-without-dependencies/geohash-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,55300
+Runtime: 0.004s
+Time to perform OA Inter 0,58200
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/geohash-java/029fd4411871b99cef71407c432752c570fcfaa2/original-without-dependencies/geohash-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41800
+Time to perform DFP Inter 0,23100
+Depth limit: 5
+CONFLICTS: DF interference in <ch.hsr.geohash.GeoHash: long ord()>
+Data flows from execution of line 203 to 204, defined in insignificantBits = 64 - $stack2 and propagated in $stack4 = $stack3 >>> insignificantBits
+Caused by line 203 flow: path: (<ch.hsr.geohash.GeoHash: long ord()>, insignificantBits = 64 - $stack2, 203)
+Caused by line 204 flow: path: (<ch.hsr.geohash.GeoHash: long ord()>, $stack4 = $stack3 >>> insignificantBits, 204)
+[List(Node(<ch.hsr.geohash.GeoHash: long ord()>,insignificantBits = 64 - $stack2,203,SourceNode, path: (<ch.hsr.geohash.GeoHash: long ord()>, insignificantBits = 64 - $stack2, 203)) => Node(<ch.hsr.geohash.GeoHash: long ord()>,$stack4 = $stack3 >>> insignificantBits,204,SinkNode, path: (<ch.hsr.geohash.GeoHash: long ord()>, $stack4 = $stack3 >>> insignificantBits, 204)))]
+Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/geohash-java/029fd4411871b99cef71407c432752c570fcfaa2/original-without-dependencies/geohash-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41700
+Time to perform DFP Inter 0,22900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/geohash-java/029fd4411871b99cef71407c432752c570fcfaa2/original-without-dependencies/geohash-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,58000
+Time to perform PDG 0,26900
+CONFLICTS: [List(Node(<ch.hsr.geohash.GeoHash: long ord()>,insignificantBits = 64 - $stack2,203,SourceNode, path: (<ch.hsr.geohash.GeoHash: long ord()>, insignificantBits = 64 - $stack2, 203)) => Node(<ch.hsr.geohash.GeoHash: long ord()>,$stack4 = $stack3 >>> insignificantBits,204,SinkNode, path: (<ch.hsr.geohash.GeoHash: long ord()>, $stack4 = $stack3 >>> insignificantBits, 204)) => Node(<ch.hsr.geohash.GeoHash: long ord()>,return $stack4,204,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/geohash-java/029fd4411871b99cef71407c432752c570fcfaa2/original-without-dependencies/geohash-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,57700
+Time to perform PDG 0,31700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

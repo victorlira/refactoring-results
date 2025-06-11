@@ -1,0 +1,83 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,$stack37 = new java.io.BufferedReader,184,SourceNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, specialinvoke $stack37.<java.io.BufferedReader: void <init>(java.io.Reader)>($stack38), 184)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,reader = $stack37,184,SourceNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, reader = $stack37, 184)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,$stack39 = virtualinvoke reader.<java.io.BufferedReader: java.lang.String readLine()>(),186,SinkNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, $stack39 = virtualinvoke reader.<java.io.BufferedReader: java.lang.String readLine()>(), 186)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,line = $stack39,186,SinkNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, line = $stack39, 186)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,$stack42 = virtualinvoke loader.<java.lang.ClassLoader: java.lang.Class loadClass(java.lang.String)>(line),188,SinkNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, $stack42 = virtualinvoke loader.<java.lang.ClassLoader: java.lang.Class loadClass(java.lang.String)>(line), 188)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,virtualinvoke classes.<java.util.LinkedHashSet: boolean add(java.lang.Object)>($stack42),188,SinkNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, virtualinvoke classes.<java.util.LinkedHashSet: boolean add(java.lang.Object)>($stack42), 188)) SINK=>BASE: Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,$stack21 = new java.util.LinkedHashSet,168,SourceNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, specialinvoke $stack21.<java.util.LinkedHashSet: void <init>()>(), 168)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,classes = $stack21,168,SourceNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, classes = $stack21, 168)) => Node(<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>,virtualinvoke classes.<java.util.LinkedHashSet: boolean add(java.lang.Object)>($stack42),188,SinkNode, path: (<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>, virtualinvoke classes.<java.util.LinkedHashSet: boolean add(java.lang.Object)>($stack42), 188))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack21 = new java.util.LinkedHashSet",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.cmds.processors.Commands",
+					"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+					"line": 168
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 168
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 168
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 188
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack37 = new java.io.BufferedReader",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.cmds.processors.Commands",
+					"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+					"line": 184
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 184
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 184
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 186
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 186
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 188
+},{
+	"class": "org.tomitribe.crest.cmds.processors.Commands",
+	"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+	"line": 188
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke classes.<java.util.LinkedHashSet: boolean add(java.lang.Object)>($stack42)",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.cmds.processors.Commands",
+					"method": "<org.tomitribe.crest.cmds.processors.Commands: java.lang.Iterable load()>",
+					"line": 188
+				}
+			}
+		]
+	}
+}
+
+]

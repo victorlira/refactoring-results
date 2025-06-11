@@ -3,40 +3,6 @@
     "branch": "L",
     "class": "ninja.template.TemplateEngineFreemarker",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tresponseStreams : ResponseStreams in method public invoke(context Context, result Result) : void from class ninja.template.TemplateEngineFreemarker",
-    "description": {
-      "filePath": "ninja-core/src/main/java/ninja/template/TemplateEngineFreemarker.java",
-      "startLine": 83,
-      "endLine": 83,
-      "startColumn": 4,
-      "endColumn": 65,
-      "codeElementType": "EXPRESSION_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "83"
-  },
-  {
-    "branch": "L",
-    "class": "ninja.template.TemplateEngineFreemarker",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tresponseStreams : ResponseStreams in method public invoke(context Context, result Result) : void from class ninja.template.TemplateEngineFreemarker",
-    "description": {
-      "filePath": "ninja-core/src/main/java/ninja/template/TemplateEngineFreemarker.java",
-      "startLine": 83,
-      "endLine": 83,
-      "startColumn": 4,
-      "endColumn": 65,
-      "codeElementType": "EXPRESSION_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "freemarkerTemplate.process(map,responseStreams.getWriter());\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
-    },
-    "line": "83"
-  },
-  {
-    "branch": "L",
-    "class": "ninja.template.TemplateEngineFreemarker",
-    "tool": "RefactoringMiner",
     "refactoringInfo": "Localize Parameter\tobject : Object to object : Object in method public invoke(context Context, result Result) : void from class ninja.template.TemplateEngineFreemarker",
     "description": {
       "filePath": "ninja-core/src/main/java/ninja/template/TemplateEngineFreemarker.java",
@@ -48,7 +14,26 @@
       "description": "renamed variable declaration",
       "codeElement": "object : Object"
     },
-    "line": "42"
+    "line": "47",
+    "branchLine": "42"
+  },
+  {
+    "branch": "L",
+    "class": "ninja.template.TemplateEngineFreemarker",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tresponseStreams : ResponseStreams in method public invoke(context Context, result Result) : void from class ninja.template.TemplateEngineFreemarker",
+    "description": {
+      "filePath": "ninja-core/src/main/java/ninja/template/TemplateEngineFreemarker.java",
+      "startLine": 83,
+      "endLine": 83,
+      "startColumn": 4,
+      "endColumn": 65,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "82",
+    "branchLine": "83"
   },
   {
     "branch": "L",
@@ -57,32 +42,16 @@
     "refactoringInfo": "Extract Variable\tresponseStreams : ResponseStreams in method public invoke(context Context, result Result) : void from class ninja.template.TemplateEngineFreemarker",
     "description": {
       "filePath": "ninja-core/src/main/java/ninja/template/TemplateEngineFreemarker.java",
-      "startLine": 39,
-      "endLine": 93,
-      "startColumn": 2,
-      "endColumn": 3,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public invoke(context Context, result Result) : void"
+      "startLine": 83,
+      "endLine": 83,
+      "startColumn": 4,
+      "endColumn": 65,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "freemarkerTemplate.process(map,responseStreams.getWriter());\n"
     },
-    "line": "42"
-  },
-  {
-    "branch": "L",
-    "class": "ninja.template.TemplateEngineFreemarker",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tresponseStreams : ResponseStreams in method public invoke(context Context, result Result) : void from class ninja.template.TemplateEngineFreemarker",
-    "description": {
-      "filePath": "ninja-core/src/main/java/ninja/template/TemplateEngineFreemarker.java",
-      "startLine": 39,
-      "endLine": 93,
-      "startColumn": 2,
-      "endColumn": 3,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public invoke(context Context, result Result) : void"
-    },
-    "line": "83"
+    "line": "82",
+    "branchLine": "83"
   },
   {
     "branch": "R",
@@ -99,6 +68,7 @@
       "description": "renamed variable declaration",
       "codeElement": "object : Object"
     },
-    "line": "43"
+    "line": "47",
+    "branchLine": "43"
   }
 ]

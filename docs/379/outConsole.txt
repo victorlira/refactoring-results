@@ -1,0 +1,116 @@
+Running soot scenario crest;org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo;execute();debd617d636fa3bbd231ee31d499b5cbecd5a34a
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/debd617d636fa3bbd231ee31d499b5cbecd5a34a/original-without-dependencies/crest-maven-plugin-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,44400
+Time to perform Confluence 1 Inter 0,54600
+Configure Soot Confluence 2 Inter 0,17200
+Time to perform Confluence 2 Inter 0,07900
+Visited methods: 18
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,e#3 = tmp$419792179,73,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, e#3 = tmp$419792179, 73)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,virtualinvoke e#3.<java.io.FileWriter: void close()>(),79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, virtualinvoke e#3.<java.io.FileWriter: void close()>(), 79))
+SINK=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,commands = tmp$355677068,62,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, commands = tmp$355677068, 62)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(),74,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(), 74)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(),79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(), 79)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,cmd = (java.lang.String) $stack29,79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, cmd = (java.lang.String) $stack29, 79)), SOURCE=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,e#3 = tmp$419792179,73,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, e#3 = tmp$419792179, 73)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,virtualinvoke e#3.<java.io.FileWriter: void write(java.lang.String)>($stack33),75,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, virtualinvoke e#3.<java.io.FileWriter: void write(java.lang.String)>($stack33), 75))
+SINK=>BASE: Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,commands = tmp$355677068,62,SourceNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, commands = tmp$355677068, 62)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(),74,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, l4 = interfaceinvoke commands.<java.util.Collection: java.util.Iterator iterator()>(), 74)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(),79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack29 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(), 79)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,cmd = (java.lang.String) $stack29,79,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, cmd = (java.lang.String) $stack29, 79)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack31 = virtualinvoke tmp$1652280702.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(cmd),75,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack31 = virtualinvoke tmp$1652280702.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(cmd), 75)) => Node(<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>,$stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10),75,SinkNode, path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 75))]
+Confluence interference in <org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>
+Confluence flows from execution of lines 73 and 62 to line 79, defined in e#3 = tmp$419792179 and commands = tmp$355677068 and used in cmd = (java.lang.String) $stack29
+Caused by line 73 flow: path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, e#3 = tmp$419792179, 73)
+Caused by line 62 flow: path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, commands = tmp$355677068, 62)
+Caused by line 79 flow: path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, cmd = (java.lang.String) $stack29, 79)
+Confluence interference in <org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>
+Confluence flows from execution of lines 73 and 62 to line 75, defined in e#3 = tmp$419792179 and commands = tmp$355677068 and used in $stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)
+Caused by line 73 flow: path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, e#3 = tmp$419792179, 73)
+Caused by line 62 flow: path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, commands = tmp$355677068, 62)
+Caused by line 75 flow: path: (<org.tomitribe.crest.maven.CrestCommandLoaderDescriptorGeneratorMojo: void execute()>, $stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 75)
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/debd617d636fa3bbd231ee31d499b5cbecd5a34a/original-without-dependencies/crest-maven-plugin-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,61200
+Runtime: 0.01s
+Time to perform OA Inter 0,65400
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/debd617d636fa3bbd231ee31d499b5cbecd5a34a/original-without-dependencies/crest-maven-plugin-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,37400
+Time to perform DFP Inter 0,42600
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 9
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/debd617d636fa3bbd231ee31d499b5cbecd5a34a/original-without-dependencies/crest-maven-plugin-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,40200
+Time to perform DFP Inter 0,44800
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 9
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/debd617d636fa3bbd231ee31d499b5cbecd5a34a/original-without-dependencies/crest-maven-plugin-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,55800
+Time to perform PDG 0,51500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/debd617d636fa3bbd231ee31d499b5cbecd5a34a/original-without-dependencies/crest-maven-plugin-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40000
+Time to perform PDG 0,46100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

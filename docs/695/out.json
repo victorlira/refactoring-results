@@ -1,0 +1,107 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack40 = 0",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuAppCreateCommand",
+  "method": "<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "success = $stack40",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuAppCreateCommand",
+  "method": "<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>",
+  "line": "47"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "success = $stack40",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuAppCreateCommand",
+  "method": "<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>",
+  "line": "47"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success)",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuAppCreateCommand",
+  "method": "<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "success = $stack40",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuAppCreateCommand",
+  "method": "<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>",
+  "line": "47"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "success := @parameter1: boolean",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuCommandJsonMapResponse",
+  "method": "<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.heroku.api.command.HerokuCommandJsonMapResponse: boolean success> = success",
+"location": {
+  "file": "",
+  "class": "com.heroku.api.command.HerokuCommandJsonMapResponse",
+  "method": "<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>",
+  "line": "23"
+},
+"stackTrace": ["(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49)","(<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>, this.<com.heroku.api.command.HerokuCommandJsonMapResponse: boolean success> = success, 23)"]
+}]
+}
+}
+
+]

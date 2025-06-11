@@ -1,0 +1,121 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "118"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke $stack12.<java.lang.String: int hashCode()>()",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "118"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, $stack14 = virtualinvoke $stack12.<java.lang.String: int hashCode()>(), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "result#3 = $stack13 + $stack14",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "118"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = 31 * result#3",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "119"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, $stack17 = 31 * result#3, 119)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "result#3 = $stack17 + $stack18",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "119"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack17 + $stack18, 119)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = 31 * result#3",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "120"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, $stack21 = 31 * result#3, 120)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "result#3 = $stack21 + $stack22",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "120"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack21 + $stack22, 120)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = 0",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "120"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "result#3 = $stack13 + $stack14",
+"location": {
+  "file": "",
+  "class": "hudson.plugins.ec2.UnixData",
+  "method": "<hudson.plugins.ec2.UnixData: int hashCode()>",
+  "line": "118"
+},
+"stackTrace": ["(<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,275 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,commandLine = null,70,SourceNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack40 = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: boolean hasOption(java.lang.String)>('h'), 85)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,e#3 = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>("f"),94,SinkNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, e#3 = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('f'), 94)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,document = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.store.Document generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,java.lang.String)>(inputFileNames, conf, e#3),114,SinkNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, document = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.store.Document generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,java.lang.String)>(inputFileNames, conf, e#3), 114)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,virtualinvoke validator.<org.unigram.docvalidator.validator.DocumentValidator: java.util.List check(org.unigram.docvalidator.store.Document)>(document),126,SinkNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.validator.DocumentValidator: java.util.List check(org.unigram.docvalidator.store.Document)>(document), 126)) SINK=>BASE: Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,$stack49 = new org.unigram.docvalidator.validator.DocumentValidator$Builder,121,SourceNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, specialinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: void <init>()>(), 121)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,$stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf),122,SourceNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf), 122)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,$stack53 = virtualinvoke $stack50.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>($stack51),123,SourceNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack53 = virtualinvoke $stack50.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>($stack51), 123)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,validator = virtualinvoke $stack53.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator build()>(),124,SourceNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, validator = virtualinvoke $stack53.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator build()>(), 124)) => Node(<org.unigram.docvalidator.Main: void main(java.lang.String[])>,virtualinvoke validator.<org.unigram.docvalidator.validator.DocumentValidator: java.util.List check(org.unigram.docvalidator.store.Document)>(document),126,SinkNode, path: (<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.validator.DocumentValidator: java.util.List check(org.unigram.docvalidator.store.Document)>(document), 126))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack49 = new org.unigram.docvalidator.validator.DocumentValidator$Builder",
+				"location": {
+					"file": "",
+					"class": "org.unigram.docvalidator.Main",
+					"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+					"line": 121
+				},
+				"stackTrace": [{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 121
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 122
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 123
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 124
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 126
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "commandLine = null",
+				"location": {
+					"file": "",
+					"class": "org.unigram.docvalidator.Main",
+					"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+					"line": 70
+				},
+				"stackTrace": [{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 70
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 94
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 114
+},{
+	"class": "org.unigram.docvalidator.Main",
+	"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+	"line": 126
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke validator.<org.unigram.docvalidator.validator.DocumentValidator: java.util.List check(org.unigram.docvalidator.store.Document)>(document)",
+				"location": {
+					"file": "",
+					"class": "org.unigram.docvalidator.Main",
+					"method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+					"line": 126
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "commandLine = null",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "70"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack40 = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: boolean hasOption(java.lang.String)>('h'), 85)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "configFileName = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('c')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "100"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, configFileName = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('c'), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "conf = virtualinvoke configLoader.<org.unigram.docvalidator.ConfigurationLoader: org.unigram.docvalidator.util.DVResource loadConfiguration(java.lang.String)>(configFileName)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "107"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, conf = virtualinvoke configLoader.<org.unigram.docvalidator.ConfigurationLoader: org.unigram.docvalidator.util.DVResource loadConfiguration(java.lang.String)>(configFileName), 107)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "122"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack53 = virtualinvoke $stack50.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>($stack51)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "123"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack53 = virtualinvoke $stack50.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>($stack51), 123)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "commandLine = null",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "70"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack40 = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: boolean hasOption(java.lang.String)>('h'), 85)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "configFileName = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('c')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "100"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, configFileName = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('c'), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "conf = virtualinvoke configLoader.<org.unigram.docvalidator.ConfigurationLoader: org.unigram.docvalidator.util.DVResource loadConfiguration(java.lang.String)>(configFileName)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "107"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, conf = virtualinvoke configLoader.<org.unigram.docvalidator.ConfigurationLoader: org.unigram.docvalidator.util.DVResource loadConfiguration(java.lang.String)>(configFileName), 107)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "122"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack53 = virtualinvoke $stack50.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>($stack51)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "123"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack53 = virtualinvoke $stack50.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>($stack51), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "validator = virtualinvoke $stack53.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator build()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "124"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, validator = virtualinvoke $stack53.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator build()>(), 124)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "commandLine = null",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "70"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack40 = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: boolean hasOption(java.lang.String)>('h'), 85)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "configFileName = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('c')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "100"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, configFileName = virtualinvoke commandLine.<org.apache.commons.cli.CommandLine: java.lang.String getOptionValue(java.lang.String)>('c'), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "conf = virtualinvoke configLoader.<org.unigram.docvalidator.ConfigurationLoader: org.unigram.docvalidator.util.DVResource loadConfiguration(java.lang.String)>(configFileName)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "107"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, conf = virtualinvoke configLoader.<org.unigram.docvalidator.ConfigurationLoader: org.unigram.docvalidator.util.DVResource loadConfiguration(java.lang.String)>(configFileName), 107)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "122"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack50 = virtualinvoke $stack49.<org.unigram.docvalidator.validator.DocumentValidator$Builder: org.unigram.docvalidator.validator.DocumentValidator$Builder setResource(org.unigram.docvalidator.util.DVResource)>(conf), 122)"]
+}]
+}
+}
+
+]

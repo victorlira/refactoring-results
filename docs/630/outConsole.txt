@@ -1,0 +1,109 @@
+Running soot scenario hdiv;org.hdiv.urlProcessor.AbstractUrlProcessor;getUrlParamsAsMap(HttpServletRequest, String);2f9993190a5d9e153c693e8060ef8050f2fe2baa
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-core-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,46900
+Time to perform Confluence 1 Inter 0,57400
+Configure Soot Confluence 2 Inter 0,25600
+Time to perform Confluence 2 Inter 0,22900
+Visited methods: 38
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>,$stack1 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.Object getAttribute(java.lang.String)>("HDIVParameter"),380,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 192) => (<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>, $stack1 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.Object getAttribute(java.lang.String)>('HDIVParameter'), 380)) => Node(<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>,$stack2 = (java.lang.String) $stack1,380,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 192)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request),192,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 192)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,$stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter),212,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212))
+SINK=>BASE: Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,index = virtualinvoke token.<java.lang.String: int indexOf(int)>(61),197,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, index = virtualinvoke token.<java.lang.String: int indexOf(int)>(61), 197)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,param = virtualinvoke token.<java.lang.String: java.lang.String substring(int,int)>(0, index),201,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, param = virtualinvoke token.<java.lang.String: java.lang.String substring(int,int)>(0, index), 201)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,$stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter),212,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,if $stack21 != 0 goto (branch),212,SinkNode, path: ), SOURCE=>BASE: Node(<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>,$stack1 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.Object getAttribute(java.lang.String)>("HDIVParameter"),380,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 192) => (<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>, $stack1 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.Object getAttribute(java.lang.String)>('HDIVParameter'), 380)) => Node(<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>,$stack2 = (java.lang.String) $stack1,380,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 192)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request),192,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, hdivParameter = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 192)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack13 = l5[l6],988,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack13 = l5[l6], 988))
+SINK=>BASE: Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,index = virtualinvoke token.<java.lang.String: int indexOf(int)>(61),197,SourceNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, index = virtualinvoke token.<java.lang.String: int indexOf(int)>(61), 197)) => Node(<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>,param = virtualinvoke token.<java.lang.String: java.lang.String substring(int,int)>(0, index),201,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, param = virtualinvoke token.<java.lang.String: java.lang.String substring(int,int)>(0, index), 201)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack14 = l4[l6],988,SinkNode, path: (<org.hdiv.urlProcessor.AbstractUrlProcessor: java.util.Map getUrlParamsAsMap(javax.servlet.http.HttpServletRequest,java.lang.String)>, $stack21 = virtualinvoke param.<java.lang.String: boolean equals(java.lang.Object)>(hdivParameter), 212) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack14 = l4[l6], 988))]
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at scala.collection.generic.TraversableForwarder.head(TraversableForwarder.scala:59)
+	at scala.collection.generic.TraversableForwarder.head$(TraversableForwarder.scala:59)
+	at scala.collection.mutable.ListBuffer.head(ListBuffer.scala:47)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.reportConflictsConfluence(DFPConfluenceAnalysis.java:181)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:566)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-core-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,59500
+Runtime: 0.026s
+Time to perform OA Inter 0,67600
+OA Inter Visited methods: 10
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-core-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,43000
+Time to perform DFP Inter 0,48600
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 19
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-core-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,53300
+Time to perform DFP Inter 0,51500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 19
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-core-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,48700
+Time to perform PDG 0,49600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-core-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,59000
+Time to perform PDG 0,38900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

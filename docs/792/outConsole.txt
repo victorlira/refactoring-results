@@ -1,0 +1,112 @@
+Running soot scenario jongo;org.jongo.bson.LazyBsonDocument;getSize();aa988ff7746f3ea0740acaa9fda47444e3fd7400
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/aa988ff7746f3ea0740acaa9fda47444e3fd7400/original-without-dependencies/jongo-1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,50300
+Time to perform Confluence 1 Inter 0,19900
+Configure Soot Confluence 2 Inter 0,24300
+Time to perform Confluence 2 Inter 0,01800
+Visited methods: 2
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/aa988ff7746f3ea0740acaa9fda47444e3fd7400/original-without-dependencies/jongo-1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,49400
+Runtime: 0.005s
+Time to perform OA Inter 0,53000
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/aa988ff7746f3ea0740acaa9fda47444e3fd7400/original-without-dependencies/jongo-1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,37400
+Time to perform DFP Inter 0,26700
+Depth limit: 5
+CONFLICTS: DF interference in <org.jongo.bson.LazyBsonDocument: int getSize()>
+Data flows from execution of line 33 to 34, defined in $stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes> and propagated in virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4)
+Caused by line 33 flow: path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, $stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>, 33)
+Caused by line 34 flow: path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4), 34)
+[List(Node(<org.jongo.bson.LazyBsonDocument: int getSize()>,$stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>,33,SourceNode, path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, $stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>, 33)) => Node(<org.jongo.bson.LazyBsonDocument: int getSize()>,buffer = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2),33,SourceNode, path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, buffer = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2), 33)) => Node(<org.jongo.bson.LazyBsonDocument: int getSize()>,virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4),34,SinkNode, path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4), 34)))]
+Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/aa988ff7746f3ea0740acaa9fda47444e3fd7400/original-without-dependencies/jongo-1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47300
+Time to perform DFP Inter 0,16000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/aa988ff7746f3ea0740acaa9fda47444e3fd7400/original-without-dependencies/jongo-1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,49300
+Time to perform PDG 0,36400
+CONFLICTS: [List(Node(<org.jongo.bson.LazyBsonDocument: int getSize()>,$stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>,33,SourceNode, path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, $stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>, 33)) => Node(<org.jongo.bson.LazyBsonDocument: int getSize()>,buffer = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2),33,SourceNode, path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, buffer = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2), 33)) => Node(<org.jongo.bson.LazyBsonDocument: int getSize()>,virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4),34,SinkNode, path: (<org.jongo.bson.LazyBsonDocument: int getSize()>, virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4), 34)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/aa988ff7746f3ea0740acaa9fda47444e3fd7400/original-without-dependencies/jongo-1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,43500
+Time to perform PDG 0,22100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

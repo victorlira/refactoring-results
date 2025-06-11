@@ -1,0 +1,661 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,out = $stack17,84,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, out = $stack17, 84)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,virtualinvoke out.<java.io.OutputStreamWriter: void write(java.lang.String)>(output),85,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, virtualinvoke out.<java.io.OutputStreamWriter: void write(java.lang.String)>(output), 85)) SINK=>BASE: Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1),77,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(),81,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(),95,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,jsFile = (java.io.File) $stack13,95,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,output = virtualinvoke $stack14.<net.tqh.plugins.UglifyMojo$JavascriptContext: java.lang.String executeCmdOnFile(java.lang.String,java.io.File)>("uglifyJavascript", jsFile),83,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, output = virtualinvoke $stack14.<net.tqh.plugins.UglifyMojo$JavascriptContext: java.lang.String executeCmdOnFile(java.lang.String,java.io.File)>('uglifyJavascript', jsFile), 83)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,virtualinvoke out.<java.io.OutputStreamWriter: void write(java.lang.String)>(output),85,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, virtualinvoke out.<java.io.OutputStreamWriter: void write(java.lang.String)>(output), 85))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 77
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 81
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 95
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 95
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 83
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 85
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "out = $stack17",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+					"line": 84
+				},
+				"stackTrace": [{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 84
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 85
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke out.<java.io.OutputStreamWriter: void write(java.lang.String)>(output)",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+					"line": 85
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>(),99,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>(), 99)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath),100,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath), 100)) SINK=>BASE: Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1),77,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(),81,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(),95,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,jsFile = (java.io.File) $stack13,95,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,inputFile := @parameter0: java.io.File,-1,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack6 = virtualinvoke inputFile.<java.io.File: java.io.File getParentFile()>(),99,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack6 = virtualinvoke inputFile.<java.io.File: java.io.File getParentFile()>(), 99)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack7 = virtualinvoke $stack6.<java.io.File: java.net.URI toURI()>(),99,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack7 = virtualinvoke $stack6.<java.io.File: java.net.URI toURI()>(), 99)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack8 = virtualinvoke $stack5.<java.net.URI: java.net.URI relativize(java.net.URI)>($stack7),99,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack8 = virtualinvoke $stack5.<java.net.URI: java.net.URI relativize(java.net.URI)>($stack7), 99)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>(),99,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>(), 99)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath),100,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath), 100))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 77
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 81
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 95
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 95
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": -1
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 99
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 99
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 99
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 99
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 100
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>()",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+					"line": 99
+				},
+				"stackTrace": [{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 99
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 100
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath)",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+					"line": 100
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack11 = this.<net.tqh.plugins.UglifyMojo: java.io.File outputDirectory>,100,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack11 = this.<net.tqh.plugins.UglifyMojo: java.io.File outputDirectory>, 100)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack10 = new java.io.File,100,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath), 100)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,outputBaseDir = $stack10,100,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, outputBaseDir = $stack10, 100)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack13 = new java.io.File,103,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14),103,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14), 103)) SINK=>BASE: Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1),77,SourceNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(),81,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(),95,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)) => Node(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>,jsFile = (java.io.File) $stack13,95,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,inputFile := @parameter0: java.io.File,-1,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,$stack14 = virtualinvoke inputFile.<java.io.File: java.lang.String getName()>(),103,SimpleNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack14 = virtualinvoke inputFile.<java.io.File: java.lang.String getName()>(), 103)) => Node(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>,specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14),103,SinkNode, path: (<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84) => (<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14), 103))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 77
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 81
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 95
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+	"line": 95
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": -1
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 103
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 103
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack11 = this.<net.tqh.plugins.UglifyMojo: java.io.File outputDirectory>",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+					"line": 100
+				},
+				"stackTrace": [{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 100
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 100
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 100
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 103
+},{
+	"class": "net.tqh.plugins.UglifyMojo",
+	"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+	"line": 103
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14)",
+				"location": {
+					"file": "",
+					"class": "net.tqh.plugins.UglifyMojo",
+					"method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+					"line": 103
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = <net.tqh.plugins.UglifyMojo: java.lang.String[] JS_EXTENSIONS>",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "81"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsFile = (java.io.File) $stack13",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "inputFile := @parameter0: java.io.File",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke inputFile.<java.io.File: java.io.File getParentFile()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "99"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack6 = virtualinvoke inputFile.<java.io.File: java.io.File getParentFile()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<java.io.File: java.net.URI toURI()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "99"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack7 = virtualinvoke $stack6.<java.io.File: java.net.URI toURI()>(), 99)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = <net.tqh.plugins.UglifyMojo: java.lang.String[] JS_EXTENSIONS>",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "81"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsFile = (java.io.File) $stack13",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "inputFile := @parameter0: java.io.File",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke inputFile.<java.io.File: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "103"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack14 = virtualinvoke inputFile.<java.io.File: java.lang.String getName()>(), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "103"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack13.<java.io.File: void <init>(java.io.File,java.lang.String)>(outputBaseDir, $stack14), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = <net.tqh.plugins.UglifyMojo: java.lang.String[] JS_EXTENSIONS>",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "81"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsFile = (java.io.File) $stack13",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "inputFile := @parameter0: java.io.File",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke inputFile.<java.io.File: java.io.File getParentFile()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "99"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack6 = virtualinvoke inputFile.<java.io.File: java.io.File getParentFile()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<java.io.File: java.net.URI toURI()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "99"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack7 = virtualinvoke $stack6.<java.io.File: java.net.URI toURI()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack5.<java.net.URI: java.net.URI relativize(java.net.URI)>($stack7)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "99"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, $stack8 = virtualinvoke $stack5.<java.net.URI: java.net.URI relativize(java.net.URI)>($stack7), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "99"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, relativePath = virtualinvoke $stack8.<java.net.URI: java.lang.String getPath()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>",
+  "line": "100"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)","(<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>, specialinvoke $stack10.<java.io.File: void <init>(java.io.File,java.lang.String)>($stack11, relativePath), 100)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = <net.tqh.plugins.UglifyMojo: java.lang.String[] JS_EXTENSIONS>",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "77"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFiles = staticinvoke <org.apache.commons.io.FileUtils: java.util.Collection listFiles(java.io.File,java.lang.String[],boolean)>(directory, $stack9, 1), 77)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "81"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, i$ = interfaceinvoke jsFiles.<java.util.Collection: java.util.Iterator iterator()>(), 81)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack13 = interfaceinvoke i$.<java.util.Iterator: java.lang.Object next()>(), 95)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsFile = (java.io.File) $stack13",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "95"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, jsFile = (java.io.File) $stack13, 95)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile)",
+"location": {
+  "file": "",
+  "class": "net.tqh.plugins.UglifyMojo",
+  "method": "<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>",
+  "line": "84"
+},
+"stackTrace": ["(<net.tqh.plugins.UglifyMojo: int uglify(java.io.File)>, $stack19 = specialinvoke this.<net.tqh.plugins.UglifyMojo: java.io.File getOutputFile(java.io.File)>(jsFile), 84)"]
+}]
+}
+}
+
+]

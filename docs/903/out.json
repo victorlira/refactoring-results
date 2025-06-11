@@ -1,0 +1,99 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "datagrams - datagrams",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "datagrams = newarray (java.nio.ByteBuffer)[$stack7]",
+				"location": {
+					"file": "",
+					"class": "org.graylog2.GelfMessage",
+					"method": "toDatagrams",
+					"line": 83
+				},
+				"stackTrace": [{
+	"class": "org.graylog2.GelfMessage",
+	"method": "toDatagrams",
+	"line": 83
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "datagrams = newarray (java.nio.ByteBuffer)[$stack7]",
+				"location": {
+					"file": "",
+					"class": "org.graylog2.GelfMessage",
+					"method": "toDatagrams",
+					"line": 83
+				},
+				"stackTrace": [{
+	"class": "org.graylog2.GelfMessage",
+	"method": "toDatagrams",
+	"line": 83
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = $stack6 + 1",
+"location": {
+  "file": "",
+  "class": "org.graylog2.GelfMessage",
+  "method": "<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>",
+  "line": "83"
+},
+"stackTrace": ["(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "datagrams = newarray (java.nio.ByteBuffer)[$stack7]",
+"location": {
+  "file": "",
+  "class": "org.graylog2.GelfMessage",
+  "method": "<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>",
+  "line": "83"
+},
+"stackTrace": ["(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = datagrams[0]",
+"location": {
+  "file": "",
+  "class": "org.graylog2.GelfMessage",
+  "method": "<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>",
+  "line": "88"
+},
+"stackTrace": ["(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack12 = datagrams[0], 88)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes)",
+"location": {
+  "file": "",
+  "class": "org.graylog2.GelfMessage",
+  "method": "<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>",
+  "line": "88"
+},
+"stackTrace": ["(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes), 88)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,129 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke contentTypeElements#8.<java.io.BufferedReader: java.lang.String readLine()>()",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "157"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, $stack32 = virtualinvoke contentTypeElements#8.<java.io.BufferedReader: java.lang.String readLine()>(), 157)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "line#15 = $stack32",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "157"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, line#15 = $stack32, 157)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "result = $stack17",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "132"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, result = $stack17, 132)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = virtualinvoke result.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "171"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, $stack26 = virtualinvoke result.<java.lang.StringBuilder: java.lang.String toString()>(), 171)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke contentTypeElements#8.<java.io.BufferedReader: java.lang.String readLine()>()",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "157"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, $stack32 = virtualinvoke contentTypeElements#8.<java.io.BufferedReader: java.lang.String readLine()>(), 157)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "line#15 = $stack32",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "157"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, line#15 = $stack32, 157)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "result = $stack17",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "132"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, result = $stack17, 132)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = virtualinvoke result.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestClient",
+  "method": "<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>",
+  "line": "171"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, $stack26 = virtualinvoke result.<java.lang.StringBuilder: java.lang.String toString()>(), 171)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "result := @parameter2: java.lang.String",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestException",
+  "method": "<net.rcarz.jiraclient.RestException: void <init>(java.lang.String,int,java.lang.String,org.apache.http.Header[])>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, specialinvoke $stack23.<net.rcarz.jiraclient.RestException: void <init>(java.lang.String,int,java.lang.String,org.apache.http.Header[])>($stack24, $stack25, $stack26, $stack27), 171)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<net.rcarz.jiraclient.RestException: java.lang.String result> = result",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.RestException",
+  "method": "<net.rcarz.jiraclient.RestException: void <init>(java.lang.String,int,java.lang.String,org.apache.http.Header[])>",
+  "line": "37"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.RestClient: net.sf.json.JSON request(org.apache.http.client.methods.HttpRequestBase)>, specialinvoke $stack23.<net.rcarz.jiraclient.RestException: void <init>(java.lang.String,int,java.lang.String,org.apache.http.Header[])>($stack24, $stack25, $stack26, $stack27), 171)","(<net.rcarz.jiraclient.RestException: void <init>(java.lang.String,int,java.lang.String,org.apache.http.Header[])>, this.<net.rcarz.jiraclient.RestException: java.lang.String result> = result, 37)"]
+}]
+}
+}
+
+]

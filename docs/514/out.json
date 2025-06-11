@@ -1,0 +1,159 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<org.fusesource.hawtjni.generator.JNIGenerator: java.io.PrintStream output>",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, $stack2 = this.<org.fusesource.hawtjni.generator.JNIGenerator: java.io.PrintStream output>, 208)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str)",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str), 208)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "accessor = interfaceinvoke field.<org.fusesource.hawtjni.generator.model.JNIField: org.fusesource.hawtjni.generator.model.JNIFieldAccessor getAccessor()>()",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.StructsGenerator",
+  "method": "<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>",
+  "line": "491"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, accessor = interfaceinvoke field.<org.fusesource.hawtjni.generator.model.JNIField: org.fusesource.hawtjni.generator.model.JNIFieldAccessor getAccessor()>(), 491)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack152 = interfaceinvoke accessor.<org.fusesource.hawtjni.generator.model.JNIFieldAccessor: java.lang.String getter()>()",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.StructsGenerator",
+  "method": "<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>",
+  "line": "536"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, $stack152 = interfaceinvoke accessor.<org.fusesource.hawtjni.generator.model.JNIFieldAccessor: java.lang.String getter()>(), 536)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str), 208)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str)",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str), 208)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack167 = interfaceinvoke accessor.<org.fusesource.hawtjni.generator.model.JNIFieldAccessor: java.lang.String getter()>()",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.StructsGenerator",
+  "method": "<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>",
+  "line": "523"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, $stack167 = interfaceinvoke accessor.<org.fusesource.hawtjni.generator.model.JNIFieldAccessor: java.lang.String getter()>(), 523)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str), 208)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str)",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str), 208)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<org.fusesource.hawtjni.generator.JNIGenerator: java.io.PrintStream output>",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, $stack2 = this.<org.fusesource.hawtjni.generator.JNIGenerator: java.io.PrintStream output>, 208)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str)",
+"location": {
+  "file": "",
+  "class": "org.fusesource.hawtjni.generator.JNIGenerator",
+  "method": "<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>",
+  "line": "208"
+},
+"stackTrace": ["(<org.fusesource.hawtjni.generator.StructsGenerator: void generateSetFields(org.fusesource.hawtjni.generator.model.JNIClass)>, virtualinvoke this.<org.fusesource.hawtjni.generator.StructsGenerator: void output(java.lang.String)>('\tset'), 470)","(<org.fusesource.hawtjni.generator.JNIGenerator: void output(java.lang.String)>, virtualinvoke $stack2.<java.io.PrintStream: void print(java.lang.String)>(str), 208)"]
+}]
+}
+}
+
+]

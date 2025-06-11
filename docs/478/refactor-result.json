@@ -6,15 +6,16 @@
     "refactoringInfo": "Extract Method\tpublic diff(fromEl JzonElement, toEl JzonElement) : JzonObject extracted from public diff(from String, to String) : String in class foodev.jsondiff.JsonDiff",
     "description": {
       "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 107,
-      "endLine": 107,
+      "startLine": 104,
+      "endLine": 104,
       "startColumn": 13,
-      "endColumn": 75,
+      "endColumn": 77,
       "codeElementType": "THROW_STATEMENT",
       "description": "extracted code to extracted method declaration",
       "codeElement": null
     },
-    "line": "113"
+    "line": "110",
+    "branchLine": "104"
   },
   {
     "branch": "L",
@@ -31,7 +32,8 @@
       "description": "extracted code to extracted method declaration",
       "codeElement": null
     },
-    "line": "110"
+    "line": "113",
+    "branchLine": "107"
   },
   {
     "branch": "L",
@@ -48,7 +50,26 @@
       "description": "extracted method invocation",
       "codeElement": "diff(fromEl,toEl)"
     },
-    "line": "101"
+    "line": "101",
+    "branchLine": "95"
+  },
+  {
+    "branch": "L",
+    "class": "foodev.jsondiff.JsonDiff",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tpublic diff(fromEl JzonElement, toEl JzonElement) : JzonObject extracted from public diff(from String, to String) : String in class foodev.jsondiff.JsonDiff",
+    "description": {
+      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
+      "startLine": 110,
+      "endLine": 110,
+      "startColumn": 9,
+      "endColumn": 47,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "added statement in extracted method declaration",
+      "codeElement": null
+    },
+    "line": "116",
+    "branchLine": "110"
   },
   {
     "branch": "L",
@@ -65,24 +86,8 @@
       "description": "added statement in extracted method declaration",
       "codeElement": null
     },
-    "line": "117"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Method\tpublic diff(fromEl JzonElement, toEl JzonElement) : JzonObject extracted from public diff(from String, to String) : String in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 111,
-      "endLine": 111,
-      "startColumn": 9,
-      "endColumn": 43,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "added statement in extracted method declaration",
-      "codeElement": null
-    },
-    "line": "116"
+    "line": "117",
+    "branchLine": "111"
   },
   {
     "branch": "L",
@@ -99,7 +104,26 @@
       "description": "added statement in extracted method declaration",
       "codeElement": null
     },
-    "line": "161"
+    "line": "161",
+    "branchLine": "129"
+  },
+  {
+    "branch": "L",
+    "class": "foodev.jsondiff.JsonDiff",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tpublic diff(from Object, to Object) : Object extracted from public diff(from String, to String) : String in class foodev.jsondiff.JsonDiff",
+    "description": {
+      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
+      "startLine": 92,
+      "endLine": 92,
+      "startColumn": 9,
+      "endColumn": 60,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "extracted code to extracted method declaration",
+      "codeElement": null
+    },
+    "line": "98",
+    "branchLine": "92"
   },
   {
     "branch": "L",
@@ -116,24 +140,8 @@
       "description": "extracted code to extracted method declaration",
       "codeElement": null
     },
-    "line": "99"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Method\tpublic diff(from Object, to Object) : Object extracted from public diff(from String, to String) : String in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 93,
-      "endLine": 93,
-      "startColumn": 9,
-      "endColumn": 56,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted code to extracted method declaration",
-      "codeElement": null
-    },
-    "line": "98"
+    "line": "99",
+    "branchLine": "93"
   },
   {
     "branch": "L",
@@ -150,7 +158,8 @@
       "description": "extracted code to extracted method declaration",
       "codeElement": null
     },
-    "line": "103"
+    "line": "103",
+    "branchLine": "97"
   },
   {
     "branch": "L",
@@ -167,7 +176,8 @@
       "description": "added statement in extracted method declaration",
       "codeElement": null
     },
-    "line": "101"
+    "line": "101",
+    "branchLine": "95"
   },
   {
     "branch": "L",
@@ -184,7 +194,8 @@
       "description": "extracted variable declaration",
       "codeElement": "diff : JzonObject"
     },
-    "line": "101"
+    "line": "101",
+    "branchLine": "95"
   },
   {
     "branch": "L",
@@ -201,7 +212,26 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": null
     },
-    "line": "103"
+    "line": "103",
+    "branchLine": "97"
+  },
+  {
+    "branch": "L",
+    "class": "foodev.jsondiff.JsonDiff",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Change Variable Type\tfromEl : JsonElement to fromEl : JzonElement in method public diff(from Object, to Object) : Object from class foodev.jsondiff.JsonDiff",
+    "description": {
+      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
+      "startLine": 92,
+      "endLine": 92,
+      "startColumn": 21,
+      "endColumn": 59,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "changed-type variable declaration",
+      "codeElement": "fromEl : JzonElement"
+    },
+    "line": "98",
+    "branchLine": "92"
   },
   {
     "branch": "L",
@@ -218,109 +248,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "toEl : JzonElement"
     },
-    "line": "99"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Change Variable Type\ttoEl : JsonElement to toEl : JzonElement in method public diff(from Object, to Object) : Object from class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 93,
-      "endLine": 93,
-      "startColumn": 21,
-      "endColumn": 55,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "changed-type variable declaration",
-      "codeElement": "toEl : JzonElement"
-    },
-    "line": "98"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Inline Method\tpublic diff(from JsonObject, to JsonObject) : JsonObject inlined to public diff(fromEl JzonElement, toEl JzonElement) : JzonObject in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 101,
-      "endLine": 135,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "target method declaration after inline",
-      "codeElement": "public diff(fromEl JzonElement, toEl JzonElement) : JzonObject"
-    },
-    "line": "113"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Inline Method\tpublic diff(from JsonObject, to JsonObject) : JsonObject inlined to public diff(fromEl JzonElement, toEl JzonElement) : JzonObject in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 101,
-      "endLine": 135,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "target method declaration after inline",
-      "codeElement": "public diff(fromEl JzonElement, toEl JzonElement) : JzonObject"
-    },
-    "line": "110"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Inline Method\tpublic diff(from JsonObject, to JsonObject) : JsonObject inlined to public diff(fromEl JzonElement, toEl JzonElement) : JzonObject in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 101,
-      "endLine": 135,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "target method declaration after inline",
-      "codeElement": "public diff(fromEl JzonElement, toEl JzonElement) : JzonObject"
-    },
-    "line": "117"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Inline Method\tpublic diff(from JsonObject, to JsonObject) : JsonObject inlined to public diff(fromEl JzonElement, toEl JzonElement) : JzonObject in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 101,
-      "endLine": 135,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "target method declaration after inline",
-      "codeElement": "public diff(fromEl JzonElement, toEl JzonElement) : JzonObject"
-    },
-    "line": "116"
-  },
-  {
-    "branch": "L",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Inline Method\tpublic diff(from JsonObject, to JsonObject) : JsonObject inlined to public diff(fromEl JzonElement, toEl JzonElement) : JzonObject in class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 101,
-      "endLine": 135,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "target method declaration after inline",
-      "codeElement": "public diff(fromEl JzonElement, toEl JzonElement) : JzonObject"
-    },
-    "line": "161"
+    "line": "99",
+    "branchLine": "93"
   },
   {
     "branch": "L",
@@ -337,23 +266,7 @@
       "description": "changed-type variable declaration",
       "codeElement": "patch : JzonObject"
     },
-    "line": "161"
-  },
-  {
-    "branch": "R",
-    "class": "foodev.jsondiff.JsonDiff",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Parameterize Variable\tadditions : HashSet<Integer> to additions : HashSet<Integer> in method private buildPatch(patch JsonObject, diff List<IncavaEntry>, from ArrayList<Leaf>, to ArrayList<Leaf>, additions HashSet<Integer>, deletions HashSet<Integer>) : void from class foodev.jsondiff.JsonDiff",
-    "description": {
-      "filePath": "src/main/java/foodev/jsondiff/JsonDiff.java",
-      "startLine": 179,
-      "endLine": 186,
-      "startColumn": 28,
-      "endColumn": 22,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement referencing the renamed variable",
-      "codeElement": null
-    },
-    "line": "144"
+    "line": "161",
+    "branchLine": "129"
   }
 ]

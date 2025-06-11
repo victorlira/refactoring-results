@@ -1,0 +1,483 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>,$stack12 = virtualinvoke $stack11.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(datetime),40,SourceNode, path: (<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)) => Node(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate),32,SourceNode, path: (<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)) => Node(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack9 = virtualinvoke annotationDate.<org.joda.time.DateTime: boolean isAfterNow()>(),34,SinkNode, path: (<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, $stack9 = virtualinvoke annotationDate.<org.joda.time.DateTime: boolean isAfterNow()>(), 34)) SINK=>BASE: Node(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate),32,SourceNode, path: (<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)) => Node(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack9 = virtualinvoke annotationDate.<org.joda.time.DateTime: boolean isAfterNow()>(),34,SinkNode, path: (<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, $stack9 = virtualinvoke annotationDate.<org.joda.time.DateTime: boolean isAfterNow()>(), 34))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate)",
+				"location": {
+					"file": "",
+					"class": "co.unruly.junit.IgnoreUntilRule",
+					"method": "<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>",
+					"line": 32
+				},
+				"stackTrace": [{
+	"class": "co.unruly.junit.IgnoreUntilRule",
+	"method": "<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>",
+	"line": 32
+},{
+	"class": "co.unruly.junit.IgnoreUntilRule",
+	"method": "<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>",
+	"line": 34
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack12 = virtualinvoke $stack11.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(datetime)",
+				"location": {
+					"file": "",
+					"class": "co.unruly.junit.IgnoreUntilRule",
+					"method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "co.unruly.junit.IgnoreUntilRule",
+	"method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+	"line": 40
+},{
+	"class": "co.unruly.junit.IgnoreUntilRule",
+	"method": "<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>",
+	"line": 32
+},{
+	"class": "co.unruly.junit.IgnoreUntilRule",
+	"method": "<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>",
+	"line": 34
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack9 = virtualinvoke annotationDate.<org.joda.time.DateTime: boolean isAfterNow()>()",
+				"location": {
+					"file": "",
+					"class": "co.unruly.junit.IgnoreUntilRule",
+					"method": "<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>",
+					"line": 34
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = new java.lang.IllegalArgumentException",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "44"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, specialinvoke $stack8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Please provide correct datetime pattern, one of: \nyyyy-MM-dd\nyyyy-MM-ddTHH:mm:ss'), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Please provide correct datetime pattern, one of: \nyyyy-MM-dd\nyyyy-MM-ddTHH:mm:ss')",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "44"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, specialinvoke $stack8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Please provide correct datetime pattern, one of: \nyyyy-MM-dd\nyyyy-MM-ddTHH:mm:ss'), 44)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "40"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack12",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "40"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = <co.unruly.junit.IgnoreUntilRule: java.util.regex.Pattern DATE_REGEX>",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack3 = virtualinvoke $stack2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack3 = virtualinvoke $stack2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.util.regex.Matcher: boolean matches()>()",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack4 = virtualinvoke $stack3.<java.util.regex.Matcher: boolean matches()>(), 39)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack4 == 0 goto $stack5 = <co.unruly.junit.IgnoreUntilRule: java.util.regex.Pattern DATETIME_REGEX>",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = <co.unruly.junit.IgnoreUntilRule: java.util.regex.Pattern DATETIME_REGEX>",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 41)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 41)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<java.util.regex.Matcher: boolean matches()>()",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack7 = virtualinvoke $stack6.<java.util.regex.Matcher: boolean matches()>(), 41)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack7 == 0 goto $stack8 = new java.lang.IllegalArgumentException",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>('yyyy-MM-dd\'T\'HH:mm:ss')",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack9 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>('yyyy-MM-dd\'T\'HH:mm:ss'), 42)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack10",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = new java.lang.IllegalArgumentException",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "44"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, specialinvoke $stack8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Please provide correct datetime pattern, one of: \nyyyy-MM-dd\nyyyy-MM-ddTHH:mm:ss'), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Please provide correct datetime pattern, one of: \nyyyy-MM-dd\nyyyy-MM-ddTHH:mm:ss')",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "44"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, specialinvoke $stack8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Please provide correct datetime pattern, one of: \nyyyy-MM-dd\nyyyy-MM-ddTHH:mm:ss'), 44)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "40"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack12",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "40"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = <co.unruly.junit.IgnoreUntilRule: java.util.regex.Pattern DATE_REGEX>",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack3 = virtualinvoke $stack2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack3 = virtualinvoke $stack2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.util.regex.Matcher: boolean matches()>()",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack4 = virtualinvoke $stack3.<java.util.regex.Matcher: boolean matches()>(), 39)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack4 == 0 goto $stack5 = <co.unruly.junit.IgnoreUntilRule: java.util.regex.Pattern DATETIME_REGEX>",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = <co.unruly.junit.IgnoreUntilRule: java.util.regex.Pattern DATETIME_REGEX>",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 41)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(datetime), 41)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<java.util.regex.Matcher: boolean matches()>()",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack7 = virtualinvoke $stack6.<java.util.regex.Matcher: boolean matches()>(), 41)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack7 == 0 goto $stack8 = new java.lang.IllegalArgumentException",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "41"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>('yyyy-MM-dd\'T\'HH:mm:ss')",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)","(<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>, $stack9 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>('yyyy-MM-dd\'T\'HH:mm:ss'), 42)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(datetime)",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": ["(<co.unruly.junit.IgnoreUntilRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, annotationDate = specialinvoke this.<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>(ignoreUntilDate), 32)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack10",
+"location": {
+  "file": "",
+  "class": "co.unruly.junit.IgnoreUntilRule",
+  "method": "<co.unruly.junit.IgnoreUntilRule: org.joda.time.DateTime parseDateTime(java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

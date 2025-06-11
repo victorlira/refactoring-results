@@ -1,0 +1,288 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "d#4 - d#4",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "d#4 = $stack90",
+				"location": {
+					"file": "",
+					"class": "net.rcarz.jiraclient.Field",
+					"method": "toJson",
+					"line": 562
+				},
+				"stackTrace": [{
+	"class": "net.rcarz.jiraclient.Field",
+	"method": "toJson",
+	"line": 562
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "d#4 = $stack90",
+				"location": {
+					"file": "",
+					"class": "net.rcarz.jiraclient.Field",
+					"method": "toJson",
+					"line": 562
+				},
+				"stackTrace": [{
+	"class": "net.rcarz.jiraclient.Field",
+	"method": "toJson",
+	"line": 562
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "SimpleDateFormat.<java.text.SimpleDateFormat: java.text.NumberFormat originalNumberFormat> - SimpleDateFormat.<java.text.SimpleDateFormat: java.text.NumberFormat originalNumberFormat>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "SimpleDateFormat.<java.text.SimpleDateFormat: java.text.NumberFormat originalNumberFormat> = null",
+				"location": {
+					"file": "",
+					"class": "java.text.SimpleDateFormat",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "net.rcarz.jiraclient.Field",
+	"method": "toJson",
+	"line": 562
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "SimpleDateFormat.<java.text.SimpleDateFormat: java.text.NumberFormat originalNumberFormat> = null",
+				"location": {
+					"file": "",
+					"class": "java.text.SimpleDateFormat",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "net.rcarz.jiraclient.Field",
+	"method": "toJson",
+	"line": 562
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack70 = new net.rcarz.jiraclient.JiraException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "611"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, specialinvoke $stack70.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>('Field expects a Numeric value'), 611)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.rcarz.jiraclient.JiraException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.JiraException",
+  "method": "<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, m = staticinvoke <net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>(name, editmeta), 535)","(<net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>, specialinvoke $stack6.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>($stack11), 432)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg)",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.JiraException",
+  "method": "<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>",
+  "line": "30"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, m = staticinvoke <net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>(name, editmeta), 535)","(<net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>, specialinvoke $stack6.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>($stack11), 432)","(<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 30)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack92 = new net.rcarz.jiraclient.JiraException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "560"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, specialinvoke $stack92.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>('Field expects a Timestamp value'), 560)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.rcarz.jiraclient.JiraException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.JiraException",
+  "method": "<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, m = staticinvoke <net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>(name, editmeta), 535)","(<net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>, specialinvoke $stack6.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>($stack11), 432)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg)",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.JiraException",
+  "method": "<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>",
+  "line": "30"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, m = staticinvoke <net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>(name, editmeta), 535)","(<net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>, specialinvoke $stack6.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>($stack11), 432)","(<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 30)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack92 = new net.rcarz.jiraclient.JiraException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "560"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, specialinvoke $stack92.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>('Field expects a Timestamp value'), 560)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.rcarz.jiraclient.JiraException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.JiraException",
+  "method": "<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, m = staticinvoke <net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>(name, editmeta), 535)","(<net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>, specialinvoke $stack6.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>($stack11), 432)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg)",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.JiraException",
+  "method": "<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>",
+  "line": "30"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, m = staticinvoke <net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>(name, editmeta), 535)","(<net.rcarz.jiraclient.Field: net.rcarz.jiraclient.Field$Meta getFieldMetadata(java.lang.String,net.sf.json.JSONObject)>, specialinvoke $stack6.<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>($stack11), 432)","(<net.rcarz.jiraclient.JiraException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 30)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "556"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack12 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>, 556)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "564"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack14 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>, 564)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack55 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "602"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack55 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>, 602)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack57 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "607"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack57 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>, 607)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack58 = virtualinvoke $stack57.<java.lang.String: boolean equals(java.lang.Object)>('number')",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "607"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack58 = virtualinvoke $stack57.<java.lang.String: boolean equals(java.lang.Object)>('number'), 607)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack58 == 0 goto $stack59 = new java.lang.UnsupportedOperationException",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "607"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

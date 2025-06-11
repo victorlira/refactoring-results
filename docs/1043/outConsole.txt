@@ -1,0 +1,110 @@
+Running soot scenario jgrapht;org.jgrapht.generate.HyperCubeGraphGenerator;generateGraph(Graph<V,E>, VertexFactory<V>, Map<String,V>);f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,92200
+Time to perform Confluence 1 Inter 0,69800
+Configure Soot Confluence 2 Inter 0,75300
+Time to perform Confluence 2 Inter 0,13500
+Visited methods: 14
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,21500
+Runtime: 0.046s
+Time to perform OA Inter 1,34100
+OA Inter Visited methods: 19
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,02700
+Time to perform DFP Inter 0,68100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 7
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,09000
+Time to perform DFP Inter 0,58500
+Depth limit: 5
+CONFLICTS: DF interference in <org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>
+Data flows from execution of line 60 to 68, defined in newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>() and propagated in interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex)
+Caused by line 60 flow: path: (<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 60)
+Caused by line 68 flow: path: (<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex), 68)
+[List(Node(<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(),60,SourceNode, path: (<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 60)) => Node(<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex),68,SinkNode, path: (<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex), 68)))]
+Visited methods: 7
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,70900
+Time to perform PDG 0,57900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/f1961d7d4809ba4ac3dc8ab59f88d269d1ebdec0/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,01100
+Time to perform PDG 0,63300
+CONFLICTS: [List(Node(<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(),60,SourceNode, path: (<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, newVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 60)) => Node(<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex),68,SinkNode, path: (<org.jgrapht.generate.HyperCubeGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, interfaceinvoke resultMap.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack32, newVertex), 68)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

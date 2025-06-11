@@ -1,0 +1,110 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l0.<com.allanbank.mongodb.connection.socket.SocketConnection: java.util.concurrent.Executor myExecutor> - l0.<com.allanbank.mongodb.connection.socket.SocketConnection: java.util.concurrent.Executor myExecutor>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l0.<com.allanbank.mongodb.connection.socket.SocketConnection: java.util.concurrent.Executor myExecutor> = $stack3",
+				"location": {
+					"file": "",
+					"class": "com.allanbank.mongodb.connection.socket.SocketConnection",
+					"method": "<init>",
+					"line": 125
+				},
+				"stackTrace": [{
+	"class": "com.allanbank.mongodb.connection.socket.SocketConnection",
+	"method": "<init>",
+	"line": 125
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l0.<com.allanbank.mongodb.connection.socket.SocketConnection: java.util.concurrent.Executor myExecutor> = $stack3",
+				"location": {
+					"file": "",
+					"class": "com.allanbank.mongodb.connection.socket.SocketConnection",
+					"method": "<init>",
+					"line": 125
+				},
+				"stackTrace": [{
+	"class": "com.allanbank.mongodb.connection.socket.SocketConnection",
+	"method": "<init>",
+	"line": 125
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = l0.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor myExecutor>",
+"location": {
+  "file": "",
+  "class": "com.allanbank.mongodb.MongoClientConfiguration",
+  "method": "<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>",
+  "line": "604"
+},
+"stackTrace": ["(<com.allanbank.mongodb.connection.socket.SocketConnection: void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration)>, $stack3 = virtualinvoke l2.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>(), 125)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.allanbank.mongodb.MongoClientConfiguration",
+  "method": "<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>",
+  "line": "604"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = l0.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor myExecutor>",
+"location": {
+  "file": "",
+  "class": "com.allanbank.mongodb.MongoClientConfiguration",
+  "method": "<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>",
+  "line": "604"
+},
+"stackTrace": ["(<com.allanbank.mongodb.connection.socket.SocketConnection: void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration)>, $stack3 = virtualinvoke l2.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>(), 125)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.allanbank.mongodb.MongoClientConfiguration",
+  "method": "<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>",
+  "line": "604"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

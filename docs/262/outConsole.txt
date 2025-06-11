@@ -1,0 +1,118 @@
+Running soot scenario static-mustache;com.github.sviperll.staticmustache.examples.Main;main(String[]);271693c779061cde2069af7507b5721c208da8e4
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/static-mustache/271693c779061cde2069af7507b5721c208da8e4/original-without-dependencies/static-mustache-examples-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,37100
+Time to perform Confluence 1 Inter 0,40100
+Configure Soot Confluence 2 Inter 0,12600
+Time to perform Confluence 2 Inter 0,06300
+Visited methods: 8
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/static-mustache/271693c779061cde2069af7507b5721c208da8e4/original-without-dependencies/static-mustache-examples-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,49100
+Runtime: 0.09s
+Time to perform OA Inter 0,68800
+OA Inter Visited methods: 121
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/static-mustache/271693c779061cde2069af7507b5721c208da8e4/original-without-dependencies/static-mustache-examples-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,32500
+Time to perform DFP Inter 0,41100
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>
+Data flows from execution of line 42 to 39, defined in $stack13 = new com.github.sviperll.staticmustache.examples.User and propagated in this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data
+Caused by line 42 flow: path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack13.<com.github.sviperll.staticmustache.examples.User: void <init>(java.lang.String,int,com.github.sviperll.staticmustache.Renderable,java.lang.String[],int[],boolean)>('Victor', 29, null, $stack15, $stack14, 1), 42)
+Caused by line 39 flow: path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39) => (<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>, this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data, 5)
+DF interference in <com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>
+Data flows from execution of line 38 to 39, defined in user = $stack7 and propagated in this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data
+Caused by line 38 flow: path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)
+Caused by line 39 flow: path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39) => (<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>, this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data, 5)
+DF interference in <com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>
+Data flows from execution of line 38 to 39, defined in user = $stack7 and propagated in specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user)
+Caused by line 38 flow: path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)
+Caused by line 39 flow: path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)
+[List(Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,user = $stack7,38,SourceNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)) => Node(<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>,data := @parameter0: com.github.sviperll.staticmustache.examples.User,-1,SimpleNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)) => Node(<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>,this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data,5,SinkNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39) => (<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>, this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data, 5))), List(Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,user = $stack7,38,SourceNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)) => Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user),39,SinkNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39))), List(Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,$stack13 = new com.github.sviperll.staticmustache.examples.User,42,SourceNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack13.<com.github.sviperll.staticmustache.examples.User: void <init>(java.lang.String,int,com.github.sviperll.staticmustache.Renderable,java.lang.String[],int[],boolean)>('Victor', 29, null, $stack15, $stack14, 1), 42)) => Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,user1 = $stack13,42,SourceNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user1 = $stack13, 42)) => Node(<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>,data := @parameter0: com.github.sviperll.staticmustache.examples.User,-1,SimpleNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)) => Node(<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>,this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data,5,SinkNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39) => (<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>, this.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: com.github.sviperll.staticmustache.examples.User data> = data, 5)))]
+Visited methods: 4
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/static-mustache/271693c779061cde2069af7507b5721c208da8e4/original-without-dependencies/static-mustache-examples-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41300
+Time to perform DFP Inter 0,44100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 4
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/static-mustache/271693c779061cde2069af7507b5721c208da8e4/original-without-dependencies/static-mustache-examples-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,34600
+Time to perform PDG 0,40800
+CONFLICTS: [List(Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,$stack7 = new com.github.sviperll.staticmustache.examples.User,38,SourceNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack7.<com.github.sviperll.staticmustache.examples.User: void <init>(java.lang.String,int,com.github.sviperll.staticmustache.Renderable,java.lang.String[],int[],boolean)>('Victor', 29, null, $stack8, $stack9, 1), 38)) => Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,user = $stack7,38,SourceNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, user = $stack7, 38)) => Node(<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>,specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user),39,SinkNode, path: (<com.github.sviperll.staticmustache.examples.Main: void main(java.lang.String[])>, specialinvoke $stack10.<com.github.sviperll.staticmustache.examples.RenderableUserAdapter: void <init>(com.github.sviperll.staticmustache.examples.User)>(user), 39)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/static-mustache/271693c779061cde2069af7507b5721c208da8e4/original-without-dependencies/static-mustache-examples-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,43900
+Time to perform PDG 0,47900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

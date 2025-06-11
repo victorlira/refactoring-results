@@ -1,0 +1,122 @@
+Running soot scenario jboss-modules;org.jboss.modules.MavenArtifactUtil;downloadFile(String, String, File);b2fe3c9d938f81405cf60e29685a1b634fe8257a
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jboss-modules/b2fe3c9d938f81405cf60e29685a1b634fe8257a/original-without-dependencies/jboss-modules-1.5.0.Beta1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,60700
+Time to perform Confluence 1 Inter 0,52900
+Configure Soot Confluence 2 Inter 0,40300
+Time to perform Confluence 2 Inter 0,10900
+Visited methods: 18
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,if bis == null goto return,348,SinkNode, path: )
+SINK=>BASE: Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(),341,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SimpleNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,if bis == null goto return,348,SinkNode, path: ), SOURCE=>BASE: Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,virtualinvoke bis.<java.io.InputStream: void close()>(),349,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, virtualinvoke bis.<java.io.InputStream: void close()>(), 349))
+SINK=>BASE: Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(),341,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SimpleNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,virtualinvoke bis.<java.io.InputStream: void close()>(),349,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, virtualinvoke bis.<java.io.InputStream: void close()>(), 349))]
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at scala.collection.generic.TraversableForwarder.head(TraversableForwarder.scala:59)
+	at scala.collection.generic.TraversableForwarder.head$(TraversableForwarder.scala:59)
+	at scala.collection.mutable.ListBuffer.head(ListBuffer.scala:47)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.reportConflictsConfluence(DFPConfluenceAnalysis.java:181)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:566)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jboss-modules/b2fe3c9d938f81405cf60e29685a1b634fe8257a/original-without-dependencies/jboss-modules-1.5.0.Beta1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,73400
+Runtime: 0.013s
+Time to perform OA Inter 0,79700
+OA Inter Visited methods: 17
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jboss-modules/b2fe3c9d938f81405cf60e29685a1b634fe8257a/original-without-dependencies/jboss-modules-1.5.0.Beta1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,76400
+Time to perform DFP Inter 0,38500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 9
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jboss-modules/b2fe3c9d938f81405cf60e29685a1b634fe8257a/original-without-dependencies/jboss-modules-1.5.0.Beta1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,45600
+Time to perform DFP Inter 0,52000
+Depth limit: 5
+CONFLICTS: DF interference in <org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>
+Data flows from execution of line 341 to 347, defined in connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>() and propagated in staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$378196591)
+Caused by line 341 flow: path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)
+Caused by line 347 flow: path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$378196591), 347)
+DF interference in <org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>
+Data flows from execution of line 341 to 344, defined in connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>() and propagated in bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Caused by line 341 flow: path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)
+Caused by line 344 flow: path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)
+[List(Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(),341,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344))), List(Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(),341,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$378196591),347,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$378196591), 347)))]
+Visited methods: 9
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jboss-modules/b2fe3c9d938f81405cf60e29685a1b634fe8257a/original-without-dependencies/jboss-modules-1.5.0.Beta1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,67900
+Time to perform PDG 0,34700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jboss-modules/b2fe3c9d938f81405cf60e29685a1b634fe8257a/original-without-dependencies/jboss-modules-1.5.0.Beta1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,48300
+Time to perform PDG 0,42600
+CONFLICTS: [List(Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(),341,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$1437396121),347,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$1437396121), 347))), List(Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(),341,SourceNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)) => Node(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>,bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(),344,SinkNode, path: (<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

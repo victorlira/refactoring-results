@@ -1,0 +1,589 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack17 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: java.util.Map filesHashcodes>",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "137"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack17 = this.<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: java.util.Map filesHashcodes>, 137)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke $stack17.<java.util.Map: java.util.Set keySet()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "137"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack18 = interfaceinvoke $stack17.<java.util.Map: java.util.Set keySet()>(), 137)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "e#6 = interfaceinvoke $stack18.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "137"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, e#6 = interfaceinvoke $stack18.<java.util.Set: java.util.Iterator iterator()>(), 137)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack27 = interfaceinvoke e#6.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack27 = interfaceinvoke e#6.<java.util.Iterator: java.lang.Object next()>(), 159)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack5 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 50)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+  "line": "45"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack5 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 50)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "60"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack14 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 60)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "72"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack9 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 72)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack7 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 53)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String basePath>",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>",
+  "line": "40"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack7 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 53)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "53"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack7 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 53)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack5 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 50)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File file>",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>",
+  "line": "45"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack5 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "basePath = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "55"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, basePath = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 55)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "50"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack5 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.io.File getFile()>(), 50)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "filePath = virtualinvoke $stack5.<java.io.File: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "50"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "140"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke e#5.<org.codehaus.plexus.util.xml.PrettyPrintXMLWriter: void addAttribute(java.lang.String,java.lang.String)>('name', $stack29)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "140"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, virtualinvoke e#5.<org.codehaus.plexus.util.xml.PrettyPrintXMLWriter: void addAttribute(java.lang.String,java.lang.String)>('name', $stack29), 140)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "basePath = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "55"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, basePath = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: boolean endsWith(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack13 = virtualinvoke basePath.<java.lang.String: boolean endsWith(java.lang.String)>($stack12), 57)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke l0.<java.lang.String: boolean startsWith(java.lang.String,int)>(l1, $stack6)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: boolean endsWith(java.lang.String)>",
+  "line": "1449"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack13 = virtualinvoke basePath.<java.lang.String: boolean endsWith(java.lang.String)>($stack12), 57)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke basePath.<java.lang.String: boolean endsWith(java.lang.String)>($stack12)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "57"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack13 = virtualinvoke basePath.<java.lang.String: boolean endsWith(java.lang.String)>($stack12), 57)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>",
+  "line": "159"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, file = (net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile) $stack27, 159)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "file := @parameter0: net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "basePath = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>()",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "55"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, basePath = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getBasePath()>(), 55)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack30 = virtualinvoke $stack29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(basePath)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "58"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack30 = virtualinvoke $stack29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(basePath), 58)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke $stack30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack31)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>",
+  "line": "58"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.XmlSummaryFileTarget: void close(java.lang.String)>, $stack29 = virtualinvoke file.<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>(file, subPath), 140)","(<net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile: java.lang.String getRelativePath(net.nicoulaj.maven.plugins.checksum.mojo.ChecksumFile,java.lang.String)>, $stack32 = virtualinvoke $stack30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack31), 58)"]
+}]
+}
+}
+
+]

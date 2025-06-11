@@ -1,0 +1,88 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tmp$1644529474 = new com.graphhopper.routing.Dijkstra",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "482"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, specialinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: void <init>(com.graphhopper.storage.Graph,com.graphhopper.routing.util.FlagEncoder,com.graphhopper.routing.util.Weighting,com.graphhopper.routing.util.TraversalMode)>($stack12, $stack13, tmp$1988265335, $stack14), 482)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "p = virtualinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: com.graphhopper.routing.Path calcPath(int,int)>(1, 8)",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "483"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, p = virtualinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: com.graphhopper.routing.Path calcPath(int,int)>(1, 8), 483)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "wayList = virtualinvoke p.<com.graphhopper.routing.Path: com.graphhopper.util.InstructionList calcInstructions(com.graphhopper.util.Translation)>($stack17)",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "485"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, wayList = virtualinvoke p.<com.graphhopper.routing.Path: com.graphhopper.util.InstructionList calcInstructions(com.graphhopper.util.Translation)>($stack17), 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack26 = virtualinvoke wayList.<com.graphhopper.util.InstructionList: com.graphhopper.util.Instruction get(int)>(1)",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "493"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, $stack26 = virtualinvoke wayList.<com.graphhopper.util.InstructionList: com.graphhopper.util.Instruction get(int)>(1), 493)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "instr = (com.graphhopper.util.RoundaboutInstruction) $stack26",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "493"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, instr = (com.graphhopper.util.RoundaboutInstruction) $stack26, 493)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke instr.<com.graphhopper.util.RoundaboutInstruction: double getTurnAngle()>()",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, $stack27 = virtualinvoke instr.<com.graphhopper.util.RoundaboutInstruction: double getTurnAngle()>(), 494)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "staticinvoke <org.junit.Assert: void assertEquals(double,double,double)>(delta, $stack27, 0.01)",
+"location": {
+  "file": "",
+  "class": "com.graphhopper.routing.PathTest",
+  "method": "<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, staticinvoke <org.junit.Assert: void assertEquals(double,double,double)>(delta, $stack27, 0.01), 494)"]
+}]
+}
+}
+
+]

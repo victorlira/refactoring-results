@@ -1,0 +1,108 @@
+Running soot scenario otr4j;net.java.otr4j.session.SessionImpl;transformSending(String, List<TLV>);554c21799595e39e67f1b9efdb636eb2314df784
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/554c21799595e39e67f1b9efdb636eb2314df784/original-without-dependencies/otr4j-0.10.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,75100
+Time to perform Confluence 1 Inter 1,96800
+Configure Soot Confluence 2 Inter 0,20300
+Time to perform Confluence 2 Inter 1,51900
+Visited methods: 140
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/554c21799595e39e67f1b9efdb636eb2314df784/original-without-dependencies/otr4j-0.10.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,85600
+Runtime: 0.274s
+Time to perform OA Inter 1,27600
+OA Inter Visited methods: 259
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/554c21799595e39e67f1b9efdb636eb2314df784/original-without-dependencies/otr4j-0.10.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,79000
+Time to perform DFP Inter 1,44400
+Depth limit: 5
+CONFLICTS: DF interference in <net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>,$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>,308,SourceNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796) => (<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>, $stack2 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 1005)) => Node(<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>,$stack2 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(),1005,SimpleNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796) => (<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>, $stack2 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 1005)) => Node(<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>,$stack3 = interfaceinvoke $stack1.<net.java.otr4j.OtrEngineHost: net.java.otr4j.OtrPolicy getSessionPolicy(net.java.otr4j.session.SessionID)>($stack2),1005,SimpleNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796)) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(),796,SimpleNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796)) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,$stack36 = interfaceinvoke otrPolicy.<net.java.otr4j.OtrPolicy: boolean getAllowV3()>(),810,SinkNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, $stack36 = interfaceinvoke otrPolicy.<net.java.otr4j.OtrPolicy: boolean getAllowV3()>(), 810)) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,if $stack36 == 0 goto $stack37 = interfaceinvoke versions.<java.util.List: boolean isEmpty()>(),810,SinkNode, path: ))]
+Visited methods: 70
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/554c21799595e39e67f1b9efdb636eb2314df784/original-without-dependencies/otr4j-0.10.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,73800
+Time to perform DFP Inter 1,53900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 70
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/554c21799595e39e67f1b9efdb636eb2314df784/original-without-dependencies/otr4j-0.10.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,73200
+Time to perform PDG 0,84700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/554c21799595e39e67f1b9efdb636eb2314df784/original-without-dependencies/otr4j-0.10.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,74200
+Time to perform PDG 0,69900
+CONFLICTS: [List(Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,if $stack21 == 0 goto $stack22 = <net.java.otr4j.session.SessionImpl$2: int[] $SwitchMap$net$java$otr4j$session$SessionStatus>,790,SourceNode, path: ) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,if $stack145 == this goto $stack22 = <net.java.otr4j.session.SessionImpl$2: int[] $SwitchMap$net$java$otr4j$session$SessionStatus>,915,SimpleNode, path: ) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,if $stack147 != 3 goto $stack22 = <net.java.otr4j.session.SessionImpl$2: int[] $SwitchMap$net$java$otr4j$session$SessionStatus>,794,SimpleNode, path: ) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,tableswitch($stack25) {     case 1: goto $stack57 = <net.java.otr4j.session.SessionImpl: java.util.logging.Logger logger>;     case 2: goto $stack54 = specialinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrEngineHost getHost()>();     case 3: goto otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>();     default: goto $stack144 = <net.java.otr4j.session.SessionImpl: java.util.logging.Logger logger>; },794,SimpleNode, path: ) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,$stack63 = virtualinvoke $stack62.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(),828,SinkNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, $stack63 = virtualinvoke $stack62.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(), 828)) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,$stack61 = virtualinvoke $stack60.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" sends an encrypted message to "),826,SimpleNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, $stack61 = virtualinvoke $stack60.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' sends an encrypted message to '), 826)) => Node(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>,$stack64 = virtualinvoke $stack61.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack63),828,SinkNode, path: (<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, $stack64 = virtualinvoke $stack61.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack63), 828)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

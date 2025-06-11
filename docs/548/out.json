@@ -1,0 +1,55 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "n = interfaceinvoke $stack47.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+  "method": "<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>",
+  "line": "79"
+},
+"stackTrace": ["(<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>, n = interfaceinvoke $stack47.<java.util.Set: java.util.Iterator iterator()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "user = interfaceinvoke n.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+  "method": "<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>",
+  "line": "120"
+},
+"stackTrace": ["(<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>, user = interfaceinvoke n.<java.util.Iterator: java.lang.Object next()>(), 120)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke $stack53.<java.util.Map: java.lang.Object get(java.lang.Object)>(user)",
+"location": {
+  "file": "",
+  "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+  "method": "<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>",
+  "line": "80"
+},
+"stackTrace": ["(<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>, $stack54 = interfaceinvoke $stack53.<java.util.Map: java.lang.Object get(java.lang.Object)>(user), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack55 = (java.util.Map) $stack54",
+"location": {
+  "file": "",
+  "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
+  "method": "<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>",
+  "line": "80"
+},
+"stackTrace": ["(<net.recommenders.rival.split.splitter.CrossValidationSplitter: net.recommenders.rival.core.DataModelIF[] split(net.recommenders.rival.core.DataModelIF)>, $stack55 = (java.util.Map) $stack54, 80)"]
+}]
+}
+}
+
+]

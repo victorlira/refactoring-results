@@ -1,0 +1,304 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock tabletServerLock>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>",
+  "line": "3097"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, $stack47 = virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>(), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack47 = virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1257"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, $stack47 = virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>(), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1257"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1268"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>, 1268)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1378"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1257"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1268"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>, 1268)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1378"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1268"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>, 1268)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1378"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock tabletServerLock>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>",
+  "line": "3097"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, $stack47 = virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>(), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack47 = virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>()",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1257"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, $stack47 = virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: org.apache.accumulo.server.zookeeper.ZooLock getLock()>(), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1257"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1268"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>, 1268)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "logEntries := @parameter3: java.util.List",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack16.<java.util.ArrayList: void <init>(java.util.Collection)>(logEntries)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>",
+  "line": "3681"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)","(<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>, specialinvoke $stack16.<java.util.ArrayList: void <init>(java.util.Collection)>(logEntries), 3681)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1257"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, tabletPaths = staticinvoke <org.apache.accumulo.server.fs.VolumeUtil: org.apache.accumulo.server.fs.VolumeUtil$TabletFiles updateTabletVolumes(org.apache.accumulo.server.zookeeper.ZooLock,org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.fs.VolumeUtil$TabletFiles)>($stack47, fs, extent, tmp$597399755), 1257)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1268"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>, 1268)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "logEntries := @parameter3: java.util.List",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack16.<java.util.ArrayList: void <init>(java.util.Collection)>(logEntries)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>",
+  "line": "3681"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)","(<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>, specialinvoke $stack16.<java.util.ArrayList: void <init>(java.util.Collection)>(logEntries), 3681)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.Tablet",
+  "method": "<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>",
+  "line": "1268"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, logEntries = tabletPaths.<org.apache.accumulo.server.fs.VolumeUtil$TabletFiles: java.util.List logEntries>, 1268)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "logEntries := @parameter3: java.util.List",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack16.<java.util.ArrayList: void <init>(java.util.Collection)>(logEntries)",
+"location": {
+  "file": "",
+  "class": "org.apache.accumulo.tserver.TabletServer",
+  "method": "<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>",
+  "line": "3681"
+},
+"stackTrace": ["(<org.apache.accumulo.tserver.Tablet: void <init>(org.apache.accumulo.tserver.TabletServer,org.apache.hadoop.io.Text,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.tserver.TabletServerResourceManager$TabletResourceManager,org.apache.hadoop.conf.Configuration,org.apache.accumulo.server.fs.VolumeManager,java.util.List,java.util.SortedMap,java.lang.String,org.apache.accumulo.server.master.state.TServerInstance,java.util.Set,long,long)>, virtualinvoke tabletServer.<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>($stack119, extent, $stack121, logEntries, absPaths#123, tmp$863313225), 1378)","(<org.apache.accumulo.tserver.TabletServer: void recover(org.apache.accumulo.server.fs.VolumeManager,org.apache.accumulo.core.data.KeyExtent,org.apache.accumulo.server.conf.TableConfiguration,java.util.List,java.util.Set,org.apache.accumulo.tserver.log.MutationReceiver)>, specialinvoke $stack16.<java.util.ArrayList: void <init>(java.util.Collection)>(logEntries), 3681)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,141 @@
+Running soot scenario designwizard;org.designwizard.extractor.asm.ASMExtractor;processDir(String);58fcd555cc6909bb7ca3df27d277600d8c871a81
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/designwizard/58fcd555cc6909bb7ca3df27d277600d8c871a81/original-without-dependencies/designwizard-1.5-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,39200
+Time to perform Confluence 1 Inter 0,53300
+Configure Soot Confluence 2 Inter 0,21700
+Time to perform Confluence 2 Inter 0,15600
+Visited methods: 20
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$564944564 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$564944564 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,specialinvoke tmp$1680147911.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$564944564),109,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, specialinvoke tmp$1680147911.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$564944564), 109))
+SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$815593047 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$815593047 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,specialinvoke tmp$861500069.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$815593047),109,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, specialinvoke tmp$861500069.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$815593047), 109)), SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$1901945192 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$1901945192 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,virtualinvoke tmp$1901945192.<java.io.InputStream: void close()>(),115,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, virtualinvoke tmp$1901945192.<java.io.InputStream: void close()>(), 115))
+SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$1234328865 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$1234328865 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,virtualinvoke tmp$1234328865.<java.io.InputStream: void close()>(),115,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, virtualinvoke tmp$1234328865.<java.io.InputStream: void close()>(), 115)), SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106))
+SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)), SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader),64,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64))
+SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader),64,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64))]
+Confluence interference in <org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>
+Confluence flows from execution of lines 60 and 60 to line 64, defined in classLoader = $stack10 and specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11) and used in specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader)
+Caused by line 60 flow: path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)
+Caused by line 60 flow: path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)
+Caused by line 64 flow: path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, specialinvoke tmp$861500069.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$815593047), 109)
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/designwizard/58fcd555cc6909bb7ca3df27d277600d8c871a81/original-without-dependencies/designwizard-1.5-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,55600
+Runtime: 0.014s
+OA interference in class ASMExtractor, method void processDir(java.lang.String), execution of line 60 overrides 60, assigning to variable URLClassLoader.<java.net.URLClassLoader: java.util.WeakHashMap closeables>, 
+Caused by line 60 flow:
+at org.designwizard.extractor.asm.ASMExtractor.processDir(ASMExtractor.java:60)
+And line 60 flow:
+at org.designwizard.extractor.asm.ASMExtractor.processDir(ASMExtractor.java:60)
+ 
+OA interference in class ASMExtractor, method void processDir(java.lang.String), execution of line 60 overrides 60, assigning to variable classLoader, 
+Caused by line 60 flow:
+at org.designwizard.extractor.asm.ASMExtractor.processDir(ASMExtractor.java:60)
+And line 60 flow:
+at org.designwizard.extractor.asm.ASMExtractor.processDir(ASMExtractor.java:60)
+ 
+OA interference in class ASMExtractor, method void processDir(java.lang.String), execution of line 60 overrides 60, assigning to variable File.<java.io.File: java.io.File$PathStatus status>, 
+Caused by line 60 flow:
+at org.designwizard.extractor.asm.ASMExtractor.processDir(ASMExtractor.java:60)
+And line 60 flow:
+at org.designwizard.extractor.asm.ASMExtractor.processDir(ASMExtractor.java:60)
+ 
+Time to perform OA Inter 0,62300
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 8
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/designwizard/58fcd555cc6909bb7ca3df27d277600d8c871a81/original-without-dependencies/designwizard-1.5-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,40000
+Time to perform DFP Inter 0,38400
+Depth limit: 5
+CONFLICTS: DF interference in <org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>
+Data flows from execution of line 60 to 77, defined in classLoader = $stack10 and propagated in virtualinvoke classLoader.<java.net.URLClassLoader: void close()>()
+Caused by line 60 flow: path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)
+Caused by line 77 flow: path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, virtualinvoke classLoader.<java.net.URLClassLoader: void close()>(), 77)
+[List(Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,virtualinvoke classLoader.<java.net.URLClassLoader: void close()>(),77,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, virtualinvoke classLoader.<java.net.URLClassLoader: void close()>(), 77)))]
+Visited methods: 10
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/designwizard/58fcd555cc6909bb7ca3df27d277600d8c871a81/original-without-dependencies/designwizard-1.5-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,55300
+Time to perform DFP Inter 0,37400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 10
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/designwizard/58fcd555cc6909bb7ca3df27d277600d8c871a81/original-without-dependencies/designwizard-1.5-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,56000
+Time to perform PDG 0,46900
+CONFLICTS: [List(Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,virtualinvoke classLoader.<java.net.URLClassLoader: void close()>(),77,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, virtualinvoke classLoader.<java.net.URLClassLoader: void close()>(), 77)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/designwizard/58fcd555cc6909bb7ca3df27d277600d8c871a81/original-without-dependencies/designwizard-1.5-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,43000
+Time to perform PDG 0,47200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

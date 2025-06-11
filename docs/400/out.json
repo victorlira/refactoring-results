@@ -1,0 +1,1007 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "valueMap = (java.util.Map) value",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "142"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, valueMap = (java.util.Map) value, 142)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry = (java.util.Map$Entry) $stack18",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, entry = (java.util.Map$Entry) $stack18, 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>(), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack20 = (java.lang.String) $stack19",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack20 = (java.lang.String) $stack19, 144)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new com.moandjiezana.toml.Container$Table",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>",
+  "line": "237"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)","(<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>, specialinvoke $stack3.<com.moandjiezana.toml.Container$Table: void <init>()>(), 237)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "newTable = $stack3",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>",
+  "line": "237"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)","(<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>, newTable = $stack3, 237)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack9 = value instanceof java.util.Map, 139)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "valueMap = (java.util.Map) value",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "142"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, valueMap = (java.util.Map) value, 142)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry = (java.util.Map$Entry) $stack18",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, entry = (java.util.Map$Entry) $stack18, 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>(), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack20 = (java.lang.String) $stack19",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack20 = (java.lang.String) $stack19, 144)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry = (java.util.Map$Entry) $stack18",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, entry = (java.util.Map$Entry) $stack18, 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>(), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack20 = (java.lang.String) $stack19",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack20 = (java.lang.String) $stack19, 144)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Results$Errors errors>",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "150"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack11 = this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Results$Errors errors>, 150)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.moandjiezana.toml.Results$Errors",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<com.moandjiezana.toml.Results$Errors: java.lang.StringBuilder sb>",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack3 = this.<com.moandjiezana.toml.Results$Errors: java.lang.StringBuilder sb>, 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack21 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getValue()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack21 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getValue()>(), 144)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack9 = value instanceof java.util.Map, 139)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "valueMap = (java.util.Map) value",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "142"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, valueMap = (java.util.Map) value, 142)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry = (java.util.Map$Entry) $stack18",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, entry = (java.util.Map$Entry) $stack18, 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>(), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack20 = (java.lang.String) $stack19",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack20 = (java.lang.String) $stack19, 144)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack13 = interfaceinvoke valueMap.<java.util.Map: java.util.Set entrySet()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, l5 = interfaceinvoke $stack13.<java.util.Set: java.util.Iterator iterator()>(), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack18 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "entry = (java.util.Map$Entry) $stack18",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "152"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, entry = (java.util.Map$Entry) $stack18, 152)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack19 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>(), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack20 = (java.lang.String) $stack19",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack20 = (java.lang.String) $stack19, 144)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, specialinvoke this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Container startTable(java.lang.String)>(key), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "key := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Results$Errors errors>",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results",
+  "method": "<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>",
+  "line": "150"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, $stack11 = this.<com.moandjiezana.toml.Results: com.moandjiezana.toml.Results$Errors errors>, 150)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.moandjiezana.toml.Results$Errors",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<com.moandjiezana.toml.Results$Errors: java.lang.StringBuilder sb>",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack3 = this.<com.moandjiezana.toml.Results$Errors: java.lang.StringBuilder sb>, 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: ')",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "48"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack4 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Duplicate key: '), 48)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "49"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(key), 49)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)",
+"location": {
+  "file": "",
+  "class": "com.moandjiezana.toml.Results$Errors",
+  "method": "<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>",
+  "line": "50"
+},
+"stackTrace": ["(<com.moandjiezana.toml.Results: void addValue(java.lang.String,java.lang.Object)>, virtualinvoke $stack11.<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>(key, -1), 150)","(<com.moandjiezana.toml.Results$Errors: void duplicateKey(java.lang.String,int)>, virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10), 50)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,132 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "JettyLifeCycleLogListener.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: org.teknux.jettybootstrap.handler.IJettyHandler iJettyHandler> - JettyLifeCycleLogListener.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: org.teknux.jettybootstrap.handler.IJettyHandler iJettyHandler>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "JettyLifeCycleLogListener.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: org.teknux.jettybootstrap.handler.IJettyHandler iJettyHandler> = null",
+				"location": {
+					"file": "",
+					"class": "org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractJettyHandler",
+	"method": "getHandler",
+	"line": 37
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "JettyLifeCycleLogListener.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: org.teknux.jettybootstrap.handler.IJettyHandler iJettyHandler> = null",
+				"location": {
+					"file": "",
+					"class": "org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractJettyHandler",
+	"method": "getHandler",
+	"line": 37
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+"location": {
+  "file": "",
+  "class": "org.teknux.jettybootstrap.handler.AbstractJettyHandler",
+  "method": "<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>",
+  "line": "37"
+},
+"stackTrace": ["(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+"location": {
+  "file": "",
+  "class": "org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+  "method": "<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+  "method": "<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>",
+  "line": "37"
+},
+"stackTrace": ["(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)","(<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>, specialinvoke this.<java.lang.Object: void <init>()>(), 37)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+"location": {
+  "file": "",
+  "class": "org.teknux.jettybootstrap.handler.AbstractJettyHandler",
+  "method": "<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>",
+  "line": "37"
+},
+"stackTrace": ["(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+"location": {
+  "file": "",
+  "class": "org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+  "method": "<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener",
+  "method": "<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>",
+  "line": "37"
+},
+"stackTrace": ["(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)","(<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>, specialinvoke this.<java.lang.Object: void <init>()>(), 37)"]
+}]
+}
+}
+
+]

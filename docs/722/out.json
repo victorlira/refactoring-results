@@ -1,0 +1,182 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack12 := @caughtexception,107,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)) SINK=>BASE: Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "e#3 = $stack12",
+				"location": {
+					"file": "",
+					"class": "net.masterthought.cucumber.util.Util",
+					"method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+					"line": 113
+				},
+				"stackTrace": [{
+	"class": "net.masterthought.cucumber.util.Util",
+	"method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+	"line": 113
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": 377
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack12 := @caughtexception",
+				"location": {
+					"file": "",
+					"class": "net.masterthought.cucumber.util.Util",
+					"method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+					"line": 107
+				},
+				"stackTrace": [{
+	"class": "net.masterthought.cucumber.util.Util",
+	"method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+	"line": 107
+},{
+	"class": "net.masterthought.cucumber.util.Util",
+	"method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+	"line": 113
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": 377
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Throwable",
+					"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+					"line": 377
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 := @caughtexception",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "107"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#3 = $stack12",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "113"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>()",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "114"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16)",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "114"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16), 114)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "114"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>(), 114)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack14.<java.io.PrintStream: void println(java.lang.String)>($stack18)",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "114"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, virtualinvoke $stack14.<java.io.PrintStream: void println(java.lang.String)>($stack18), 114)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack12 := @caughtexception",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "107"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#3 = $stack12",
+"location": {
+  "file": "",
+  "class": "net.masterthought.cucumber.util.Util",
+  "method": "<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>",
+  "line": "113"
+},
+"stackTrace": ["(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)"]
+}]
+}
+}
+
+]

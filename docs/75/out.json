@@ -1,0 +1,44 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "689"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack32 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>, 689)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack55 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "713"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack55 = m.<net.rcarz.jiraclient.Field$Meta: java.lang.String type>, 713)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack56 = virtualinvoke $stack55.<java.lang.String: boolean equals(java.lang.Object)>('string')",
+"location": {
+  "file": "",
+  "class": "net.rcarz.jiraclient.Field",
+  "method": "<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>",
+  "line": "713"
+},
+"stackTrace": ["(<net.rcarz.jiraclient.Field: java.lang.Object toJson(java.lang.String,java.lang.Object,net.sf.json.JSONObject)>, $stack56 = virtualinvoke $stack55.<java.lang.String: boolean equals(java.lang.Object)>('string'), 713)"]
+}]
+}
+}
+
+]

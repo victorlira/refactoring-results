@@ -1,0 +1,189 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "e - e",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "e = $stack18",
+				"location": {
+					"file": "",
+					"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+					"method": "initialize",
+					"line": 43
+				},
+				"stackTrace": [{
+	"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+	"method": "initialize",
+	"line": 43
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "e = $stack18",
+				"location": {
+					"file": "",
+					"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+					"method": "initialize",
+					"line": 43
+				},
+				"stackTrace": [{
+	"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+	"method": "initialize",
+	"line": 43
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "e - e",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "e = $stack16",
+				"location": {
+					"file": "",
+					"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+					"method": "initialize",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+	"method": "initialize",
+	"line": 45
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "e = $stack16",
+				"location": {
+					"file": "",
+					"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+					"method": "initialize",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+	"method": "initialize",
+	"line": 45
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<com.microsoft.hadoop.azure.AzureTableRecordReader: java.util.Iterator queryResults> - this.<com.microsoft.hadoop.azure.AzureTableRecordReader: java.util.Iterator queryResults>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<com.microsoft.hadoop.azure.AzureTableRecordReader: java.util.Iterator queryResults> = $stack15",
+				"location": {
+					"file": "",
+					"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+					"method": "initialize",
+					"line": 42
+				},
+				"stackTrace": [{
+	"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+	"method": "initialize",
+	"line": 42
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<com.microsoft.hadoop.azure.AzureTableRecordReader: java.util.Iterator queryResults> = $stack15",
+				"location": {
+					"file": "",
+					"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+					"method": "initialize",
+					"line": 42
+				},
+				"stackTrace": [{
+	"class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+	"method": "initialize",
+	"line": 42
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "e = $stack18",
+"location": {
+  "file": "",
+  "class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+  "method": "<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>",
+  "line": "45"
+},
+"stackTrace": ["(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack18, 45)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack19.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e)",
+"location": {
+  "file": "",
+  "class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+  "method": "<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>",
+  "line": "46"
+},
+"stackTrace": ["(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack19.<java.lang.IllegalArgumentException: void <init>(java.lang.Throwable)>(e), 46)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "e = $stack16",
+"location": {
+  "file": "",
+  "class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+  "method": "<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>",
+  "line": "43"
+},
+"stackTrace": ["(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, e = $stack16, 43)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack17.<java.io.IOException: void <init>(java.lang.Throwable)>(e)",
+"location": {
+  "file": "",
+  "class": "com.microsoft.hadoop.azure.AzureTableRecordReader",
+  "method": "<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.microsoft.hadoop.azure.AzureTableRecordReader: void initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)>, specialinvoke $stack17.<java.io.IOException: void <init>(java.lang.Throwable)>(e), 44)"]
+}]
+}
+}
+
+]

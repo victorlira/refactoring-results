@@ -1,0 +1,918 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "md#2 - md#2",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "md#2 = $stack7",
+				"location": {
+					"file": "",
+					"class": "de.slackspace.openkeepass.crypto.Sha256",
+					"method": "hash",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+	"method": "writeHashedBlock",
+	"line": 73
+},{
+	"class": "de.slackspace.openkeepass.crypto.Sha256",
+	"method": "hash",
+	"line": 40
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "md#2 = $stack7",
+				"location": {
+					"file": "",
+					"class": "de.slackspace.openkeepass.crypto.Sha256",
+					"method": "hash",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+	"method": "writeHashedBlock",
+	"line": 73
+},{
+	"class": "de.slackspace.openkeepass.crypto.Sha256",
+	"method": "hash",
+	"line": 40
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "buf = newarray (byte)[8]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "128"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "130"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0), 130)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "37"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256'), 37)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack5",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "37"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256'), 37)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack16.<java.io.OutputStream: void write(byte[])>(hash)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "74"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, virtualinvoke $stack16.<java.io.OutputStream: void write(byte[])>(hash), 74)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack5",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = new java.lang.UnsupportedOperationException",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "41"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2), 41)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "41"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2), 41)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack16.<java.io.OutputStream: void write(byte[])>(hash)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "74"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, virtualinvoke $stack16.<java.io.OutputStream: void write(byte[])>(hash), 74)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: int bufferPos>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, $stack13 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: int bufferPos>, 73)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack16.<java.io.OutputStream: void write(byte[])>(hash)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "74"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, virtualinvoke $stack16.<java.io.OutputStream: void write(byte[])>(hash), 74)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: java.io.OutputStream baseStream>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "131"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, $stack4 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: java.io.OutputStream baseStream>, 131)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "131"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf), 131)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md#2 = $stack7",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "40"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md#2 = $stack7, 40)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "41"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2), 41)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "buf = newarray (byte)[8]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "128"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "131"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf), 131)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, $stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>, 73)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bytes := @parameter0: byte[]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if bytes != null goto md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "32"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, $stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>, 73)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bytes := @parameter0: byte[]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "38"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length), 38)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "37"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256'), 37)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "38"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length), 38)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = new java.lang.IllegalArgumentException",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "33"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Bytes must not be null'), 33)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Bytes must not be null')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "33"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Bytes must not be null'), 33)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "buf = newarray (byte)[8]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "128"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "130"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0), 130)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "37"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256'), 37)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack5",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack5",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "39"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = new java.lang.UnsupportedOperationException",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "41"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2), 41)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "41"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2), 41)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: java.io.OutputStream baseStream>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "131"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, $stack4 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: java.io.OutputStream baseStream>, 131)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "131"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf), 131)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md#2 = $stack7",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "40"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md#2 = $stack7, 40)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "41"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack8.<java.lang.UnsupportedOperationException: void <init>(java.lang.String,java.lang.Throwable)>('The algorithm \'SHA-256\' is not supported', md#2), 41)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "buf = newarray (byte)[8]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "128"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long,byte[],int)>(val, buf, 0), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>",
+  "line": "131"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, specialinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>(), 77)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeZeroBits()>, virtualinvoke this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>(0L), 91)","(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeLong(long)>, virtualinvoke $stack4.<java.io.OutputStream: void write(byte[])>(buf), 131)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, $stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>, 73)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bytes := @parameter0: byte[]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if bytes != null goto md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "32"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.stream.HashedBlockOutputStream",
+  "method": "<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>",
+  "line": "73"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, $stack14 = this.<de.slackspace.openkeepass.stream.HashedBlockOutputStream: byte[] buffer>, 73)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "bytes := @parameter0: byte[]",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "38"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length), 38)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "37"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>('SHA-256'), 37)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "38"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, virtualinvoke md.<java.security.MessageDigest: void update(byte[],int,int)>(bytes, offset, length), 38)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = new java.lang.IllegalArgumentException",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "33"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Bytes must not be null'), 33)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Bytes must not be null')",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.crypto.Sha256",
+  "method": "<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>",
+  "line": "33"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.stream.HashedBlockOutputStream: void writeHashedBlock()>, hash = staticinvoke <de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>($stack14, 0, $stack13), 73)","(<de.slackspace.openkeepass.crypto.Sha256: byte[] hash(byte[],int,int)>, specialinvoke $stack6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>('Bytes must not be null'), 33)"]
+}]
+}
+}
+
+]

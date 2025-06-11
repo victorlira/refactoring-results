@@ -1,0 +1,91 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>,$stack15 = "ping",140,SourceNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack16 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>(o), 140)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack14 = l4[l6],988,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack14 = l4[l6], 988)) SINK=>BASE: Node(<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>,$stack1 = this.<no.ks.eventstore2.eventstore.Subscription: java.lang.String fromJournalId>,34,SourceNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, $stack116 = virtualinvoke removed#7.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(), 144)) => Node(<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>,$stack17 = virtualinvoke subscription.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(),221,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack17 = virtualinvoke subscription.<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>(), 221)) => Node(<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>,$stack18 = virtualinvoke $stack17.<java.lang.String: java.lang.String trim()>(),221,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack18 = virtualinvoke $stack17.<java.lang.String: java.lang.String trim()>(), 221)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack13 = l5[l6],988,SinkNode, path: (<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>, specialinvoke this.<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>($stack124, removed#7), 145) => (<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>, $stack19 = virtualinvoke $stack16.<java.lang.String: boolean equals(java.lang.Object)>($stack18), 221) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack13 = l5[l6], 988))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<no.ks.eventstore2.eventstore.Subscription: java.lang.String fromJournalId>",
+				"location": {
+					"file": "",
+					"class": "no.ks.eventstore2.eventstore.Subscription",
+					"method": "<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>",
+					"line": 34
+				},
+				"stackTrace": [{
+	"class": "no.ks.eventstore2.eventstore.Subscription",
+	"method": "<no.ks.eventstore2.eventstore.Subscription: java.lang.String getFromJournalId()>",
+	"line": 34
+},{
+	"class": "no.ks.eventstore2.eventstore.EventStore",
+	"method": "<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>",
+	"line": 221
+},{
+	"class": "no.ks.eventstore2.eventstore.EventStore",
+	"method": "<no.ks.eventstore2.eventstore.EventStore: void tryToFillSubscription(akka.actor.ActorRef,no.ks.eventstore2.eventstore.Subscription)>",
+	"line": 221
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 985
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 988
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack15 = 'ping'",
+				"location": {
+					"file": "",
+					"class": "no.ks.eventstore2.eventstore.EventStore",
+					"method": "<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>",
+					"line": 140
+				},
+				"stackTrace": [{
+	"class": "no.ks.eventstore2.eventstore.EventStore",
+	"method": "<no.ks.eventstore2.eventstore.EventStore: void onReceive(java.lang.Object)>",
+	"line": 140
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 984
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 988
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack14 = l4[l6]",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 988
+				}
+			}
+		]
+	}
+}
+
+]

@@ -1,0 +1,44 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.jboss.staxmapper.FormattingXMLStreamWriter: boolean indentEndElement> - this.<org.jboss.staxmapper.FormattingXMLStreamWriter: boolean indentEndElement>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.jboss.staxmapper.FormattingXMLStreamWriter: boolean indentEndElement> = 0",
+				"location": {
+					"file": "",
+					"class": "org.jboss.staxmapper.FormattingXMLStreamWriter",
+					"method": "writeEndElement",
+					"line": 199
+				},
+				"stackTrace": [{
+	"class": "org.jboss.staxmapper.FormattingXMLStreamWriter",
+	"method": "writeEndElement",
+	"line": 199
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.jboss.staxmapper.FormattingXMLStreamWriter: boolean indentEndElement> = 0",
+				"location": {
+					"file": "",
+					"class": "org.jboss.staxmapper.FormattingXMLStreamWriter",
+					"method": "writeEndElement",
+					"line": 199
+				},
+				"stackTrace": [{
+	"class": "org.jboss.staxmapper.FormattingXMLStreamWriter",
+	"method": "writeEndElement",
+	"line": 199
+}]
+			}
+		]
+	}
+}
+
+]

@@ -2,6 +2,7 @@
   {
     "branch": "L",
     "class": "com.mitchellbosecke.pebble.template.PebbleTemplateImpl",
+    "tool": "RefactoringMiner",
     "refactoringInfo": "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public includeTemplate(writer Writer, context EvaluationContextImpl, name String, additionalVariables Map<?,?>) : void from class com.mitchellbosecke.pebble.template.PebbleTemplateImpl",
     "description": {
       "filePath": "src/main/java/com/mitchellbosecke/pebble/template/PebbleTemplateImpl.java",
@@ -13,11 +14,31 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "174"
+    "line": "174",
+    "branchLine": "174"
   },
   {
     "branch": "L",
     "class": "com.mitchellbosecke.pebble.template.PebbleTemplateImpl",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Change Variable Type\tnewContext : EvaluationContext to newContext : EvaluationContextImpl in method public includeTemplate(writer Writer, context EvaluationContextImpl, name String, additionalVariables Map<?,?>) : void from class com.mitchellbosecke.pebble.template.PebbleTemplateImpl",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/template/PebbleTemplateImpl.java",
+      "startLine": 174,
+      "endLine": 174,
+      "startColumn": 27,
+      "endColumn": 92,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "changed-type variable declaration",
+      "codeElement": "newContext : EvaluationContextImpl"
+    },
+    "line": "174",
+    "branchLine": "174"
+  },
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.template.PebbleTemplateImpl",
+    "tool": "RefactoringMiner",
     "refactoringInfo": "Change Variable Type\tnewContext : EvaluationContext to newContext : EvaluationContextImpl in method public includeTemplate(writer Writer, context EvaluationContextImpl, name String, additionalVariables Map<?,?>) : void from class com.mitchellbosecke.pebble.template.PebbleTemplateImpl",
     "description": {
       "filePath": "src/main/java/com/mitchellbosecke/pebble/template/PebbleTemplateImpl.java",
@@ -29,6 +50,7 @@
       "description": "changed-type variable declaration",
       "codeElement": "newContext : EvaluationContextImpl"
     },
-    "line": "174"
+    "line": "174",
+    "branchLine": "174"
   }
 ]

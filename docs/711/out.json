@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>('sentence')",
+"location": {
+  "file": "",
+  "class": "cc.redpen.formatter.XMLFormatter",
+  "method": "<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>",
+  "line": "92"
+},
+"stackTrace": ["(<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, sentenceElement = interfaceinvoke doc.<org.w3c.dom.Document: org.w3c.dom.Element createElement(java.lang.String)>('sentence'), 92)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.formatter.XMLFormatter",
+  "method": "<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>",
+  "line": "94"
+},
+"stackTrace": ["(<cc.redpen.formatter.XMLFormatter: void lambda$convertError$1(org.w3c.dom.Document,org.w3c.dom.Element,cc.redpen.model.Sentence)>, interfaceinvoke sentenceElement.<org.w3c.dom.Element: org.w3c.dom.Node appendChild(org.w3c.dom.Node)>($stack7), 94)"]
+}]
+}
+}
+
+]

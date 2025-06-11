@@ -1,0 +1,292 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>,$stack41 = interfaceinvoke projects.<java.util.List: int size()>(),147,SourceNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack41 = interfaceinvoke projects.<java.util.List: int size()>(), 147)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) SINK=>BASE: Node(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>,$stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>,261,SourceNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, $stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>, 261)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>",
+				"location": {
+					"file": "",
+					"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+					"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>",
+					"line": 261
+				},
+				"stackTrace": [{
+	"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+	"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>",
+	"line": 261
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack41 = interfaceinvoke projects.<java.util.List: int size()>()",
+				"location": {
+					"file": "",
+					"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+					"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>",
+					"line": 147
+				},
+				"stackTrace": [{
+	"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+	"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>",
+	"line": 147
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 832
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>,$stack35 = interfaceinvoke projects.<java.util.List: int size()>(),153,SourceNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack35 = interfaceinvoke projects.<java.util.List: int size()>(), 153)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831)) SINK=>BASE: Node(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>,$stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>,261,SourceNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, $stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>, 261)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>",
+				"location": {
+					"file": "",
+					"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+					"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>",
+					"line": 261
+				},
+				"stackTrace": [{
+	"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+	"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>",
+	"line": 261
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack35 = interfaceinvoke projects.<java.util.List: int size()>()",
+				"location": {
+					"file": "",
+					"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+					"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>",
+					"line": 153
+				},
+				"stackTrace": [{
+	"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+	"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>",
+	"line": 153
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = l0 + 128",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 831
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>,$stack41 = interfaceinvoke projects.<java.util.List: int size()>(),147,SourceNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack41 = interfaceinvoke projects.<java.util.List: int size()>(), 147)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)) SINK=>BASE: Node(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>,$stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>,261,SourceNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, $stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>, 261)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109) => (<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, $stack42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack41), 147) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack69 = this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int retryDuration>",
+				"location": {
+					"file": "",
+					"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+					"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>",
+					"line": 261
+				},
+				"stackTrace": [{
+	"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+	"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>",
+	"line": 261
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack41 = interfaceinvoke projects.<java.util.List: int size()>()",
+				"location": {
+					"file": "",
+					"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+					"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>",
+					"line": 147
+				},
+				"stackTrace": [{
+	"class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+	"method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>",
+	"line": 147
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l0.<java.lang.Integer: int value> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: void <init>(int)>",
+					"line": 850
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.commonjava.maven.ext.io.rest.DefaultTranslator: int initialRestMinSize>",
+"location": {
+  "file": "",
+  "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
+  "method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator: int access$000(org.commonjava.maven.ext.io.rest.DefaultTranslator)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, $stack12 = virtualinvoke task.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: boolean canSplit()>(), 256)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: boolean canSplit()>, $stack4 = staticinvoke <org.commonjava.maven.ext.io.rest.DefaultTranslator: int access$000(org.commonjava.maven.ext.io.rest.DefaultTranslator)>($stack3), 415)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <org.commonjava.maven.ext.io.rest.DefaultTranslator: int access$000(org.commonjava.maven.ext.io.rest.DefaultTranslator)>($stack19)",
+"location": {
+  "file": "",
+  "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator$Task",
+  "method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>",
+  "line": "407"
+},
+"stackTrace": ["(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, tasks = virtualinvoke task.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>(), 266)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>, $stack22 = staticinvoke <org.commonjava.maven.ext.io.rest.DefaultTranslator: int access$000(org.commonjava.maven.ext.io.rest.DefaultTranslator)>($stack19), 407)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack23 = $stack21 * $stack22",
+"location": {
+  "file": "",
+  "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator$Task",
+  "method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>",
+  "line": "407"
+},
+"stackTrace": ["(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, tasks = virtualinvoke task.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>(), 266)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>, $stack23 = $stack21 * $stack22, 407)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack24 = interfaceinvoke $stack17.<java.util.List: java.util.List subList(int,int)>($stack20, $stack23)",
+"location": {
+  "file": "",
+  "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator$Task",
+  "method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>",
+  "line": "407"
+},
+"stackTrace": ["(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, tasks = virtualinvoke task.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>(), 266)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List split()>, $stack24 = interfaceinvoke $stack17.<java.util.List: java.util.List subList(int,int)>($stack20, $stack23), 407)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "chunk := @parameter2: java.util.List",
+"location": {
+  "file": "",
+  "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator$Task",
+  "method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: void <init>(org.commonjava.maven.ext.io.rest.DefaultTranslator,org.commonjava.maven.ext.io.rest.mapper.ReportGAVMapper,java.util.List,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, specialinvoke $stack17.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: void <init>(org.commonjava.maven.ext.io.rest.DefaultTranslator,org.commonjava.maven.ext.io.rest.mapper.ReportGAVMapper,java.util.List,java.lang.String)>(this, $stack19, p, $stack23), 165)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List chunk> = chunk",
+"location": {
+  "file": "",
+  "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator$Task",
+  "method": "<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: void <init>(org.commonjava.maven.ext.io.rest.DefaultTranslator,org.commonjava.maven.ext.io.rest.mapper.ReportGAVMapper,java.util.List,java.lang.String)>",
+  "line": "354"
+},
+"stackTrace": ["(<org.commonjava.maven.ext.io.rest.DefaultTranslator: java.util.Map translateVersions(java.util.List)>, virtualinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>(projects, queue), 244)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void partition(java.util.List,java.util.Queue)>, specialinvoke this.<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>(projects, queue), 109)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator: void autoPartition(java.util.List,java.util.Queue)>, specialinvoke $stack17.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: void <init>(org.commonjava.maven.ext.io.rest.DefaultTranslator,org.commonjava.maven.ext.io.rest.mapper.ReportGAVMapper,java.util.List,java.lang.String)>(this, $stack19, p, $stack23), 165)","(<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: void <init>(org.commonjava.maven.ext.io.rest.DefaultTranslator,org.commonjava.maven.ext.io.rest.mapper.ReportGAVMapper,java.util.List,java.lang.String)>, this.<org.commonjava.maven.ext.io.rest.DefaultTranslator$Task: java.util.List chunk> = chunk, 354)"]
+}]
+}
+}
+
+]

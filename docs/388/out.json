@@ -1,0 +1,44 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "item#33 = $stack26",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.processors.Help",
+  "method": "<org.tomitribe.crest.cmds.processors.Help: void optionHelp(java.lang.Class,java.lang.String,java.util.Collection,java.io.PrintStream)>",
+  "line": "78"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.processors.Help: void optionHelp(java.lang.Class,java.lang.String,java.util.Collection,java.io.PrintStream)>, item#33 = $stack26, 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack30 = interfaceinvoke item#33.<java.util.List: boolean isEmpty()>()",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.processors.Help",
+  "method": "<org.tomitribe.crest.cmds.processors.Help: void optionHelp(java.lang.Class,java.lang.String,java.util.Collection,java.io.PrintStream)>",
+  "line": "85"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.processors.Help: void optionHelp(java.lang.Class,java.lang.String,java.util.Collection,java.io.PrintStream)>, $stack30 = interfaceinvoke item#33.<java.util.List: boolean isEmpty()>(), 85)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack30 == 0 goto $stack31 = newarray (java.lang.Object)[2]",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.processors.Help",
+  "method": "<org.tomitribe.crest.cmds.processors.Help: void optionHelp(java.lang.Class,java.lang.String,java.util.Collection,java.io.PrintStream)>",
+  "line": "85"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

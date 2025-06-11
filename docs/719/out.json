@@ -1,0 +1,480 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable characterTable>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVResource",
+  "method": "<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack5 = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 50)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.unigram.docvalidator.util.CharacterTable",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>, 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = (org.unigram.docvalidator.util.DVCharacter) $stack3",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack39 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('EXCLAMATION_MARK')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "72"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack39 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('EXCLAMATION_MARK'), 72)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.unigram.docvalidator.util.DVCharacter",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVCharacter",
+  "method": "<org.unigram.docvalidator.util.DVCharacter: java.lang.String getValue()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack51 = virtualinvoke $stack50.<org.unigram.docvalidator.util.DVCharacter: java.lang.String getValue()>(), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVCharacter: java.lang.String value>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVCharacter",
+  "method": "<org.unigram.docvalidator.util.DVCharacter: java.lang.String getValue()>",
+  "line": "97"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack51 = virtualinvoke $stack50.<org.unigram.docvalidator.util.DVCharacter: java.lang.String getValue()>(), 59)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable characterTable>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVResource",
+  "method": "<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack5 = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 50)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.unigram.docvalidator.util.CharacterTable",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>, 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = (org.unigram.docvalidator.util.DVCharacter) $stack3",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack39 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('EXCLAMATION_MARK')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "72"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack39 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('EXCLAMATION_MARK'), 72)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack40 = virtualinvoke $stack39.<org.unigram.docvalidator.util.DVCharacter: java.lang.String getValue()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "72"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack40 = virtualinvoke $stack39.<org.unigram.docvalidator.util.DVCharacter: java.lang.String getValue()>(), 72)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack38.<java.util.List: boolean add(java.lang.Object)>($stack40)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "71"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, interfaceinvoke $stack38.<java.util.List: boolean add(java.lang.Object)>($stack40), 71)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable characterTable>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVResource",
+  "method": "<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack5 = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 50)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 55)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>('EXCLAMATION_MARK')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "70"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack19 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>('EXCLAMATION_MARK'), 70)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable characterTable>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVResource",
+  "method": "<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack5 = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 50)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.unigram.docvalidator.util.CharacterTable",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>, 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = (org.unigram.docvalidator.util.DVCharacter) $stack3",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable characterTable>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVResource",
+  "method": "<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack5 = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 50)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.unigram.docvalidator.util.CharacterTable",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>, 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)","(<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>, $stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 64)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = (org.unigram.docvalidator.util.DVCharacter) $stack3",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>",
+  "line": "64"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack50 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('FULL_STOP'), 59)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack39 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('EXCLAMATION_MARK')",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "72"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack39 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: org.unigram.docvalidator.util.DVCharacter getCharacter(java.lang.String)>('EXCLAMATION_MARK'), 72)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable characterTable>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.DVResource",
+  "method": "<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack5 = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 50)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.parser.BasicDocumentParser",
+  "method": "<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>",
+  "line": "55"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, characterTable = virtualinvoke resource.<org.unigram.docvalidator.util.DVResource: org.unigram.docvalidator.util.CharacterTable getCharacterTable()>(), 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.unigram.docvalidator.util.CharacterTable",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack7 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>('FULL_STOP'), 58)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack7 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>('FULL_STOP'), 58)","(<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>, $stack2 = this.<org.unigram.docvalidator.util.CharacterTable: java.util.Map characterDictionary>, 83)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.util.CharacterTable",
+  "method": "<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<org.unigram.docvalidator.parser.BasicDocumentParser: boolean initialize(org.unigram.docvalidator.util.DVResource)>, $stack7 = virtualinvoke characterTable.<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>('FULL_STOP'), 58)","(<org.unigram.docvalidator.util.CharacterTable: boolean isContainCharacter(java.lang.String)>, $stack3 = interfaceinvoke $stack2.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 83)"]
+}]
+}
+}
+
+]

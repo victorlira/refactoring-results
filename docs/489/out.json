@@ -1,0 +1,129 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.asteriskjava.manager.response.CommandResponse: java.util.List result>",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.response.CommandResponse",
+  "method": "<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, showVersionFilesResult = virtualinvoke $stack17.<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>(), 670)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "coreShowVersionResult = virtualinvoke $stack31.<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>()",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "695"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, coreShowVersionResult = virtualinvoke $stack31.<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>(), 695)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack34 = interfaceinvoke coreShowVersionResult.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "699"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, $stack34 = interfaceinvoke coreShowVersionResult.<java.util.List: java.lang.Object get(int)>(0), 699)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "coreLine = (java.lang.String) $stack34",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "699"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, coreLine = (java.lang.String) $stack34, 699)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack57 = virtualinvoke $stack56.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(coreLine)",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "729"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, $stack57 = virtualinvoke $stack56.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(coreLine), 729)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.asteriskjava.manager.response.CommandResponse: java.util.List result>",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.response.CommandResponse",
+  "method": "<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>",
+  "line": "63"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, showVersionFilesResult = virtualinvoke $stack17.<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>(), 670)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "coreShowVersionResult = virtualinvoke $stack31.<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>()",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "695"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, coreShowVersionResult = virtualinvoke $stack31.<org.asteriskjava.manager.response.CommandResponse: java.util.List getResult()>(), 695)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack34 = interfaceinvoke coreShowVersionResult.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "699"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, $stack34 = interfaceinvoke coreShowVersionResult.<java.util.List: java.lang.Object get(int)>(0), 699)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "coreLine = (java.lang.String) $stack34",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "699"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, coreLine = (java.lang.String) $stack34, 699)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke $stack47.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(coreLine)",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.ManagerConnectionImpl",
+  "method": "<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>",
+  "line": "717"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.ManagerConnectionImpl: org.asteriskjava.AsteriskVersion determineVersion()>, $stack48 = virtualinvoke $stack47.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(coreLine), 717)"]
+}]
+}
+}
+
+]

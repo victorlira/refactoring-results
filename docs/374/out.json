@@ -1,0 +1,811 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack14 = virtualinvoke augmented.<java.lang.StringBuilder: java.lang.String toString()>(),98,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack14 = virtualinvoke augmented.<java.lang.StringBuilder: java.lang.String toString()>(), 98)) => Node(<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', ''), 98)) => Node(<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>,$stack4 = virtualinvoke $stack3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0),2223,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', ''), 98) => (<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>, $stack4 = virtualinvoke $stack3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2223)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack14 = virtualinvoke augmented.<java.lang.StringBuilder: java.lang.String toString()>(),98,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack14 = virtualinvoke augmented.<java.lang.StringBuilder: java.lang.String toString()>(), 98)) => Node(<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', ''), 98)) => Node(<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>,$stack4 = virtualinvoke $stack3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0),2223,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', ''), 98) => (<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>, $stack4 = virtualinvoke $stack3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2223)) => Node(<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>,$stack5 = virtualinvoke $stack4.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>(l2),2223,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', ''), 98))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 98
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>",
+	"line": 2223
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>",
+	"line": 2223
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 98
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>",
+	"line": 2223
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = virtualinvoke $stack3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0)",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>",
+					"line": 2223
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack13 = virtualinvoke nextPiece.<java.lang.StringBuilder: int length()>(),86,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, $stack13 = virtualinvoke nextPiece.<java.lang.StringBuilder: int length()>(), 86)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack13 = virtualinvoke nextPiece.<java.lang.StringBuilder: int length()>(),86,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, $stack13 = virtualinvoke nextPiece.<java.lang.StringBuilder: int length()>(), 86))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 86
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 86
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack13 = virtualinvoke nextPiece.<java.lang.StringBuilder: int length()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 86
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces)",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 84
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "augmented = nextPiece",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+					"line": 94
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack14 = virtualinvoke augmented.<java.lang.StringBuilder: java.lang.String toString()>(),98,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack14 = virtualinvoke augmented.<java.lang.StringBuilder: java.lang.String toString()>(), 98)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>("\\s+$", ""),98,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', ''), 98)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,pieces := @parameter5: java.util.List,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,interfaceinvoke pieces.<java.util.List: boolean add(java.lang.Object)>($stack15),98,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, interfaceinvoke pieces.<java.util.List: boolean add(java.lang.Object)>($stack15), 98))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 98
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 98
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 98
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack15 = virtualinvoke $stack14.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\s+$', '')",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+					"line": 98
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack14 = virtualinvoke nextPiece.<java.lang.StringBuilder: java.lang.String toString()>(),87,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, $stack14 = virtualinvoke nextPiece.<java.lang.StringBuilder: java.lang.String toString()>(), 87)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,interfaceinvoke pieces.<java.util.List: boolean add(java.lang.Object)>($stack14),87,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, interfaceinvoke pieces.<java.util.List: boolean add(java.lang.Object)>($stack14), 87))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 87
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 87
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack14 = virtualinvoke nextPiece.<java.lang.StringBuilder: java.lang.String toString()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 87
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<java.lang.String: int length()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack11 = virtualinvoke word.<java.lang.String: int length()>(), 97)) => Node(<java.lang.String: int length()>,$stack1 = l0.<java.lang.String: char[] value>,623,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack11 = virtualinvoke word.<java.lang.String: int length()>(), 97) => (<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623)) => Node(<java.lang.String: int length()>,$stack2 = lengthof $stack1,623,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack11 = virtualinvoke word.<java.lang.String: int length()>(), 97)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack11 = virtualinvoke word.<java.lang.String: int length()>(),97,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack11 = virtualinvoke word.<java.lang.String: int length()>(), 97)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack12 = $stack10 + $stack11,97,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack12 = $stack10 + $stack11, 97)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack10 = virtualinvoke augmented.<java.lang.StringBuilder: int length()>(),97,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, $stack10 = virtualinvoke augmented.<java.lang.StringBuilder: int length()>(), 97))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 97
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": 623
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": 623
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 97
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 97
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack12 = $stack10 + $stack11",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+					"line": 97
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(),77,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>(), 77)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,start = virtualinvoke words.<java.text.BreakIterator: int first()>(),82,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, start = virtualinvoke words.<java.text.BreakIterator: int first()>(), 82)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,start := @parameter2: int,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end),96,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, word = virtualinvoke source.<java.lang.String: java.lang.String substring(int,int)>(start, end), 96)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,$stack17 = new java.lang.StringBuilder,99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, specialinvoke $stack17.<java.lang.StringBuilder: void <init>(java.lang.String)>($stack18), 99)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),99,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,virtualinvoke augmented.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),102,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, virtualinvoke augmented.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word), 102)) SINK=>BASE: Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,$stack8 = new java.util.ArrayList,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, specialinvoke $stack8.<java.util.ArrayList: void <init>()>(), 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,pieces = $stack8,75,SourceNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, pieces = $stack8, 75)) => Node(<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>,nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces),84,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,nextPiece := @parameter1: java.lang.StringBuilder,-1,SimpleNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,augmented = nextPiece,94,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84)) => Node(<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>,virtualinvoke augmented.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word),102,SinkNode, path: (<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>, nextPiece = specialinvoke this.<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>(line, nextPiece, start, end, width, pieces), 84) => (<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>, virtualinvoke augmented.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word), 102))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 75
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 102
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "words = staticinvoke <java.text.BreakIterator: java.text.BreakIterator getLineInstance()>()",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+					"line": 77
+				},
+				"stackTrace": [{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 77
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 82
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 96
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 99
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.util.List piecesOfEmbeddedLine(java.lang.String,int)>",
+	"line": 84
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": -1
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 94
+},{
+	"class": "joptsimple.internal.Columns",
+	"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+	"line": 102
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke augmented.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(word)",
+				"location": {
+					"file": "",
+					"class": "joptsimple.internal.Columns",
+					"method": "<joptsimple.internal.Columns: java.lang.StringBuilder processNextWord(java.lang.String,java.lang.StringBuilder,int,int,int,java.util.List)>",
+					"line": 102
+				}
+			}
+		]
+	}
+}
+
+]

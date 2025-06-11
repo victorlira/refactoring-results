@@ -1,0 +1,222 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: java.lang.String contentType> - MustacheContentType.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: java.lang.String contentType>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: java.lang.String contentType> = contentType",
+				"location": {
+					"file": "",
+					"class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+					"method": "<init>",
+					"line": 7
+				},
+				"stackTrace": [{
+	"class": "com.github.kongchen.swagger.docgen.mustache.OutputTemplate",
+	"method": "createMustacheDocument",
+	"line": 113
+},{
+	"class": "com.github.kongchen.swagger.docgen.mustache.MustacheOperation",
+	"method": "<init>",
+	"line": 100
+},{
+	"class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+	"method": "<init>",
+	"line": 7
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "MustacheContentType.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: java.lang.String contentType> = null",
+				"location": {
+					"file": "",
+					"class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "com.github.kongchen.swagger.docgen.mustache.OutputTemplate",
+	"method": "createMustacheDocument",
+	"line": 160
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack46 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheOperation",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>",
+  "line": "105"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack46.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(responseMessage#61), 105)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "6"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)","(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack51 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheOperation",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>",
+  "line": "100"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "6"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)","(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack39 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.OutputTemplate",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>",
+  "line": "165"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack39.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(op#25), 165)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "6"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)","(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack42 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.OutputTemplate",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>",
+  "line": "160"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack42.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(opIt#16), 160)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.mustache.MustacheContentType",
+  "method": "<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>",
+  "line": "6"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113)","(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)","(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)"]
+}]
+}
+}
+
+]

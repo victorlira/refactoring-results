@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "required = $stack10",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.CmdMethod$Arguments",
+  "method": "<org.tomitribe.crest.cmds.CmdMethod$Arguments: void checkRequired(java.util.Map)>",
+  "line": "891"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.CmdMethod$Arguments: void checkRequired(java.util.Map)>, required = $stack10, 891)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack17 = interfaceinvoke required.<java.util.List: boolean isEmpty()>()",
+"location": {
+  "file": "",
+  "class": "org.tomitribe.crest.cmds.CmdMethod$Arguments",
+  "method": "<org.tomitribe.crest.cmds.CmdMethod$Arguments: void checkRequired(java.util.Map)>",
+  "line": "906"
+},
+"stackTrace": ["(<org.tomitribe.crest.cmds.CmdMethod$Arguments: void checkRequired(java.util.Map)>, $stack17 = interfaceinvoke required.<java.util.List: boolean isEmpty()>(), 906)"]
+}]
+}
+}
+
+]

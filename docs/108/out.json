@@ -1,0 +1,118 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] protectedStreamKey>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.domain.KeePassHeader",
+  "method": "<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>",
+  "line": "354"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.KeePassDatabase",
+  "method": "<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>",
+  "line": "432"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.KeePassDatabase",
+  "method": "<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>",
+  "line": "432"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21), 432)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "crypto := @parameter0: de.slackspace.openkeepass.crypto.ProtectedStringCrypto",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.processor.EncryptionStrategy",
+  "method": "<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>",
+  "line": "-1"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<de.slackspace.openkeepass.processor.EncryptionStrategy: de.slackspace.openkeepass.crypto.ProtectedStringCrypto crypto> = crypto",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.processor.EncryptionStrategy",
+  "method": "<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>",
+  "line": "10"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433)","(<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>, this.<de.slackspace.openkeepass.processor.EncryptionStrategy: de.slackspace.openkeepass.crypto.ProtectedStringCrypto crypto> = crypto, 10)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] protectedStreamKey>",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.domain.KeePassHeader",
+  "method": "<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>",
+  "line": "354"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>()",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.KeePassDatabase",
+  "method": "<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>",
+  "line": "432"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.KeePassDatabase",
+  "method": "<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>",
+  "line": "432"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21), 432)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto)",
+"location": {
+  "file": "",
+  "class": "de.slackspace.openkeepass.KeePassDatabase",
+  "method": "<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>",
+  "line": "433"
+},
+"stackTrace": ["(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433)"]
+}]
+}
+}
+
+]

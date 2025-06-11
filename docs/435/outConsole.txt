@@ -1,0 +1,134 @@
+Running soot scenario dcm4che;org.dcm4che3.opencv.NativeJPEGImageWriter;write(IIOMetadata, IIOImage, ImageWriteParam);751257d4699542e73929367a83fe59d2989fafca
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dcm4che/751257d4699542e73929367a83fe59d2989fafca/original-without-dependencies/dcm4che-imageio-opencv-5.23.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,61400
+Time to perform Confluence 1 Inter 0,57700
+Configure Soot Confluence 2 Inter 0,24700
+Time to perform Confluence 2 Inter 0,10000
+Visited methods: 16
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,params[6] = bitCompressed,151,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params),159,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159))
+SINK=>BASE: Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,params[6] = bitCompressed,151,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params),159,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)), SOURCE=>BASE: Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,params[6] = bitCompressed,151,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params),159,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159))
+SINK=>BASE: Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,params = newarray (int)[16],144,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params),159,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159))]
+Confluence interference in <org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>
+Confluence flows from execution of lines 159 and 159 to line 159, defined in specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params) and specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params) and used in specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params)
+Caused by line 159 flow: path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)
+Caused by line 159 flow: path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)
+Caused by line 159 flow: path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dcm4che/751257d4699542e73929367a83fe59d2989fafca/original-without-dependencies/dcm4che-imageio-opencv-5.23.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,62000
+Runtime: 0.015s
+OA interference in class NativeJPEGImageWriter, method void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam), execution of line 137 overrides 141, assigning to variable bitCompressed, 
+Caused by line 137 flow:
+at org.dcm4che3.opencv.NativeJPEGImageWriter.write(NativeJPEGImageWriter.java:137)
+And line 141 flow:
+at org.dcm4che3.opencv.NativeJPEGImageWriter.write(NativeJPEGImageWriter.java:141)
+ 
+OA interference in class NativeJPEGImageWriter, method void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam), execution of line 151 overrides 151, assigning to variable params[6], 
+Caused by line 151 flow:
+at org.dcm4che3.opencv.NativeJPEGImageWriter.write(NativeJPEGImageWriter.java:151)
+And line 151 flow:
+at org.dcm4che3.opencv.NativeJPEGImageWriter.write(NativeJPEGImageWriter.java:151)
+ 
+Time to perform OA Inter 0,68300
+OA Inter Visited methods: 11
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dcm4che/751257d4699542e73929367a83fe59d2989fafca/original-without-dependencies/dcm4che-imageio-opencv-5.23.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,66900
+Time to perform DFP Inter 0,43900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 8
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dcm4che/751257d4699542e73929367a83fe59d2989fafca/original-without-dependencies/dcm4che-imageio-opencv-5.23.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,49500
+Time to perform DFP Inter 0,47000
+Depth limit: 5
+CONFLICTS: Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(),134,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(), 134)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if bitCompressed != 8 goto params = newarray (int)[16],140,SinkNode, path: )), List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 16,137,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if bitCompressed != 8 goto params = newarray (int)[16],140,SinkNode, path: ))]
+Visited methods: 8
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dcm4che/751257d4699542e73929367a83fe59d2989fafca/original-without-dependencies/dcm4che-imageio-opencv-5.23.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62400
+Time to perform PDG 0,63600
+CONFLICTS: [List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(),134,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(), 134)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 16,137,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dcm4che/751257d4699542e73929367a83fe59d2989fafca/original-without-dependencies/dcm4che-imageio-opencv-5.23.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,47200
+Time to perform PDG 0,76800
+CONFLICTS: [List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack126 = <org.dcm4che3.image.PhotometricInterpretation: org.dcm4che3.image.PhotometricInterpretation YBR_FULL_422>,135,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack126 == pi goto $stack127 = new java.lang.IllegalArgumentException,135,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack132 == pi goto $stack127 = new java.lang.IllegalArgumentException,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack135 = <org.dcm4che3.image.PhotometricInterpretation: org.dcm4che3.image.PhotometricInterpretation YBR_PARTIAL_420>,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack135 == pi goto $stack127 = new java.lang.IllegalArgumentException,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack136 = <org.dcm4che3.image.PhotometricInterpretation: org.dcm4che3.image.PhotometricInterpretation YBR_ICT>,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack136 == pi goto $stack127 = new java.lang.IllegalArgumentException,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack137 != pi goto epi = staticinvoke <org.dcm4che3.opencv.NativeJPEGImageWriter: int getCodecColorSpace(org.dcm4che3.image.PhotometricInterpretation)>(pi),115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,renderedImage = virtualinvoke image.<javax.imageio.IIOImage: java.awt.image.RenderedImage getRenderedImage()>(),120,SimpleNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, renderedImage = virtualinvoke image.<javax.imageio.IIOImage: java.awt.image.RenderedImage getRenderedImage()>(), 120)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack76 = interfaceinvoke renderedImage.<java.awt.image.RenderedImage: java.awt.image.SampleModel getSampleModel()>(),162,SimpleNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, $stack76 = interfaceinvoke renderedImage.<java.awt.image.RenderedImage: java.awt.image.SampleModel getSampleModel()>(), 162)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack77 = virtualinvoke $stack76.<java.awt.image.SampleModel: int getTransferType()>(),162,SimpleNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, $stack77 = virtualinvoke $stack76.<java.awt.image.SampleModel: int getTransferType()>(), 162)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack77 == 0 goto params = newarray (int)[16],162,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 12,141,SinkNode, path: )), List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(),134,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(), 134)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if bitCompressed != 8 goto params = newarray (int)[16],140,SinkNode, path: )), List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(),134,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(), 134)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if bitCompressed != 8 goto params = newarray (int)[16],140,SinkNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack77 = virtualinvoke $stack76.<java.awt.image.SampleModel: int getTransferType()>(),162,SimpleNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, $stack77 = virtualinvoke $stack76.<java.awt.image.SampleModel: int getTransferType()>(), 162)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack77 == 0 goto params = newarray (int)[16],162,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 12,141,SinkNode, path: )), List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 16,137,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if bitCompressed != 8 goto params = newarray (int)[16],140,SinkNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack77 = virtualinvoke $stack76.<java.awt.image.SampleModel: int getTransferType()>(),162,SimpleNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, $stack77 = virtualinvoke $stack76.<java.awt.image.SampleModel: int getTransferType()>(), 162)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack77 == 0 goto params = newarray (int)[16],162,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 12,141,SinkNode, path: )), List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,bitCompressed = 16,137,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if bitCompressed != 8 goto params = newarray (int)[16],140,SinkNode, path: )), List(Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack126 = <org.dcm4che3.image.PhotometricInterpretation: org.dcm4che3.image.PhotometricInterpretation YBR_FULL_422>,135,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack126 == pi goto $stack127 = new java.lang.IllegalArgumentException,135,SourceNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack132 == pi goto $stack127 = new java.lang.IllegalArgumentException,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack135 = <org.dcm4che3.image.PhotometricInterpretation: org.dcm4che3.image.PhotometricInterpretation YBR_PARTIAL_420>,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack135 == pi goto $stack127 = new java.lang.IllegalArgumentException,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack136 = <org.dcm4che3.image.PhotometricInterpretation: org.dcm4che3.image.PhotometricInterpretation YBR_ICT>,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack136 == pi goto $stack127 = new java.lang.IllegalArgumentException,115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if $stack137 != pi goto epi = staticinvoke <org.dcm4che3.opencv.NativeJPEGImageWriter: int getCodecColorSpace(org.dcm4che3.image.PhotometricInterpretation)>(pi),115,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,if signed == 0 goto $stack123 = 0,133,SimpleNode, path: ) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,$stack123 = 1,140,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, dcmFlags = $stack123, 133)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 6
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

@@ -1,0 +1,386 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25),266,SourceNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25), 266)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,specialinvoke tmp$1615668218.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30),298,SinkNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$1615668218.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30), 298)) SINK=>BASE: Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,storageEngine = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry),238,SourceNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, storageEngine = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry), 238)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,specialinvoke tmp$891612704.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30),298,SinkNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$891612704.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30), 298))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "storageEngine = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry)",
+				"location": {
+					"file": "",
+					"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+					"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+					"line": 238
+				},
+				"stackTrace": [{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 238
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 298
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25)",
+				"location": {
+					"file": "",
+					"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+					"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+					"line": 266
+				},
+				"stackTrace": [{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 266
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 298
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke tmp$1615668218.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30)",
+				"location": {
+					"file": "",
+					"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+					"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+					"line": 298
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25),266,SourceNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25), 266)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>,keys := @parameter8: java.util.List,-1,SimpleNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$1615668218.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30), 298)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>,this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: java.util.List keys> = keys,95,SinkNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$1615668218.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30), 298) => (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>, this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: java.util.List keys> = keys, 95)) SINK=>BASE: Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry),234,SourceNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry), 234)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,$stack25 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: int size()>(),266,SimpleNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, $stack25 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: int size()>(), 266)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>,key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25),266,SimpleNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25), 266)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>,keys := @parameter8: java.util.List,-1,SimpleNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$891612704.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30), 298)) => Node(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>,this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: java.util.List keys> = keys,95,SinkNode, path: (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$891612704.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>(version, name, db#35, entry#36, background, unique, sparse, expireAfterSeconds, key#38, storageEngine, $stack30), 298) => (<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>, this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: java.util.List keys> = keys, 95))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry)",
+				"location": {
+					"file": "",
+					"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+					"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+					"line": 234
+				},
+				"stackTrace": [{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 234
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 266
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 266
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": -1
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 95
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25)",
+				"location": {
+					"file": "",
+					"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+					"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+					"line": 266
+				},
+				"stackTrace": [{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 266
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": -1
+},{
+	"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+	"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>",
+	"line": 95
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: java.util.List keys> = keys",
+				"location": {
+					"file": "",
+					"class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+					"method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: void <init>(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexVersion,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,int,java.util.List,com.eightkdata.mongowp.bson.BsonDocument,com.eightkdata.mongowp.bson.BsonDocument)>",
+					"line": 95
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "234"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry), 234)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack25 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: int size()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "266"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, $stack25 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: int size()>(), 266)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "266"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, key#38 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayListWithExpectedSize(int)>($stack25), 266)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "234"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry), 234)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l14#39 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: com.google.common.collect.UnmodifiableIterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "267"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, l14#39 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: com.google.common.collect.UnmodifiableIterator iterator()>(), 267)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$1857063398 = (java.util.Iterator) l14#39",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, tmp$1857063398 = (java.util.Iterator) l14#39, -1)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack31 = interfaceinvoke tmp$1857063398.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "287"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, $stack31 = interfaceinvoke tmp$1857063398.<java.util.Iterator: java.lang.Object next()>(), 287)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "entry = (com.eightkdata.mongowp.bson.BsonDocument$Entry) $stack31",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "287"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, entry = (com.eightkdata.mongowp.bson.BsonDocument$Entry) $stack31, 287)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack33 = interfaceinvoke entry.<com.eightkdata.mongowp.bson.BsonDocument$Entry: java.lang.String getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "268"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, $stack33 = interfaceinvoke entry.<com.eightkdata.mongowp.bson.BsonDocument$Entry: java.lang.String getKey()>(), 268)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vInt#41 = virtualinvoke $stack32.<com.google.common.base.Splitter: java.util.List splitToList(java.lang.CharSequence)>($stack33)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "268"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, vInt#41 = virtualinvoke $stack32.<com.google.common.base.Splitter: java.util.List splitToList(java.lang.CharSequence)>($stack33), 268)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "keys := @parameter0: java.util.List",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$745835029.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>(vInt#41, ex#42), 284)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: java.util.List keys> = keys",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>",
+  "line": "388"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$745835029.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>(vInt#41, ex#42), 284)","(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>, this.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: java.util.List keys> = keys, 388)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "234"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, keyDoc = staticinvoke <com.eightkdata.mongowp.utils.BsonReaderTool: com.eightkdata.mongowp.bson.BsonDocument getDocument(com.eightkdata.mongowp.bson.BsonDocument$Entry)>(entry), 234)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l14#39 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: com.google.common.collect.UnmodifiableIterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "267"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, l14#39 = interfaceinvoke keyDoc.<com.eightkdata.mongowp.bson.BsonDocument: com.google.common.collect.UnmodifiableIterator iterator()>(), 267)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$1857063398 = (java.util.Iterator) l14#39",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, tmp$1857063398 = (java.util.Iterator) l14#39, -1)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack31 = interfaceinvoke tmp$1857063398.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "287"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, $stack31 = interfaceinvoke tmp$1857063398.<java.util.Iterator: java.lang.Object next()>(), 287)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "entry = (com.eightkdata.mongowp.bson.BsonDocument$Entry) $stack31",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "287"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, entry = (com.eightkdata.mongowp.bson.BsonDocument$Entry) $stack31, 287)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack33 = interfaceinvoke entry.<com.eightkdata.mongowp.bson.BsonDocument$Entry: java.lang.String getKey()>()",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "268"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, $stack33 = interfaceinvoke entry.<com.eightkdata.mongowp.bson.BsonDocument$Entry: java.lang.String getKey()>(), 268)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "vInt#41 = virtualinvoke $stack32.<com.google.common.base.Splitter: java.util.List splitToList(java.lang.CharSequence)>($stack33)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "268"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, vInt#41 = virtualinvoke $stack32.<com.google.common.base.Splitter: java.util.List splitToList(java.lang.CharSequence)>($stack33), 268)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke tmp$745835029.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>(vInt#41, ex#42)",
+"location": {
+  "file": "",
+  "class": "com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions",
+  "method": "<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>",
+  "line": "284"
+},
+"stackTrace": ["(<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions: com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions unmarshall(com.eightkdata.mongowp.bson.BsonDocument)>, specialinvoke tmp$745835029.<com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$Key: void <init>(java.util.List,com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.pojos.IndexOptions$IndexType)>(vInt#41, ex#42), 284)"]
+}]
+}
+}
+
+]

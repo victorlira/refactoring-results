@@ -1,0 +1,477 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>,$stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>(),332,SourceNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>(), 332)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)) => Node(<java.lang.Integer: int intValue()>,$stack1 = l0.<java.lang.Integer: int value>,893,SinkNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315)) SINK=>BASE: Node(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>,$stack74 = this.<com.github.stephenc.javaisotools.maven.PackageMojo: java.lang.Integer maxJolietFilenameLength>,341,SourceNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack74 = this.<com.github.stephenc.javaisotools.maven.PackageMojo: java.lang.Integer maxJolietFilenameLength>, 341)) => Node(<java.lang.Integer: int intValue()>,l0 := @this: java.lang.Integer,-1,SimpleNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315)) => Node(<java.lang.Integer: int intValue()>,$stack1 = l0.<java.lang.Integer: int value>,893,SinkNode, path: (<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack74 = this.<com.github.stephenc.javaisotools.maven.PackageMojo: java.lang.Integer maxJolietFilenameLength>",
+				"location": {
+					"file": "",
+					"class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+					"method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+					"line": 341
+				},
+				"stackTrace": [{
+	"class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+	"method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+	"line": 341
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": 893
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+					"method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+					"line": 332
+				},
+				"stackTrace": [{
+	"class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+	"method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+	"line": 332
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": 893
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack1 = l0.<java.lang.Integer: int value>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: int intValue()>",
+					"line": 893
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = this.<com.github.stephenc.javaisotools.maven.PackageMojo: java.util.List permissions>",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "288"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack13 = this.<com.github.stephenc.javaisotools.maven.PackageMojo: java.util.List permissions>, 288)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack17 = interfaceinvoke $stack13.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "288"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack17 = interfaceinvoke $stack13.<java.util.List: int size()>(), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0.<java.lang.Integer: int value> = l1",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "850"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)","(<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Integer: int value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "893"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>(), 341)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75)",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75), 341)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "jolietConfig = interfaceinvoke $stack86.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "330"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, jolietConfig = interfaceinvoke $stack86.<java.util.List: java.util.Iterator iterator()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack91 = interfaceinvoke jolietConfig.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "338"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack91 = interfaceinvoke jolietConfig.<java.util.Iterator: java.lang.Object next()>(), 338)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fp = (com.github.stephenc.javaisotools.maven.FilePermission) $stack91",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "338"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, fp = (com.github.stephenc.javaisotools.maven.FilePermission) $stack91, 338)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "332"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>(), 332)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0.<java.lang.Integer: int value> = l1",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "850"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)","(<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Integer: int value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "893"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>(), 341)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75)",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75), 341)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.FilePermission",
+  "method": "<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>",
+  "line": "46"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>(), 332)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "332"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>(), 332)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0.<java.lang.Integer: int value> = l1",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "850"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)","(<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Integer: int value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "893"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>(), 341)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75)",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75), 341)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "332"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack93 = virtualinvoke fp.<com.github.stephenc.javaisotools.maven.FilePermission: int getPermissionAsInt()>(), 332)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0.<java.lang.Integer: int value> = l1",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: void <init>(int)>",
+  "line": "850"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack17), 288)","(<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)","(<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Integer: int value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "893"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack39 = virtualinvoke $stack38.<java.lang.Integer: int intValue()>(), 315)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, $stack75 = virtualinvoke $stack74.<java.lang.Integer: int intValue()>(), 341)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75)",
+"location": {
+  "file": "",
+  "class": "com.github.stephenc.javaisotools.maven.PackageMojo",
+  "method": "<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>",
+  "line": "341"
+},
+"stackTrace": ["(<com.github.stephenc.javaisotools.maven.PackageMojo: void execute()>, virtualinvoke jolietConfig#11.<com.github.stephenc.javaisotools.joliet.impl.JolietConfig: void setMaxCharsInFilename(int)>($stack75), 341)"]
+}]
+}
+}
+
+]

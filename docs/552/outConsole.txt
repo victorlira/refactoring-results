@@ -1,0 +1,110 @@
+Running soot scenario camel-ironmq;org.apache.camel.component.ironmq.IronMQConsumer;processBatch(Queue<Object>);7b8e755aa410ddd2841a5471f78bf5256a647b76
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/camel-ironmq/7b8e755aa410ddd2841a5471f78bf5256a647b76/original-without-dependencies/camel-ironmq-2.15.3.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,47500
+Time to perform Confluence 1 Inter 0,29600
+Configure Soot Confluence 2 Inter 0,17900
+Time to perform Confluence 2 Inter 0,02400
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/camel-ironmq/7b8e755aa410ddd2841a5471f78bf5256a647b76/original-without-dependencies/camel-ironmq-2.15.3.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,54700
+Runtime: 0.006s
+OA interference in class IronMQConsumer$1, method void <init>(org.apache.camel.component.ironmq.IronMQConsumer,org.apache.camel.Exchange), execution of line 102 overrides 102, assigning to variable this.<org.apache.camel.component.ironmq.IronMQConsumer$1: java.lang.String messageid>, 
+Caused by line 102 flow:
+at org.apache.camel.component.ironmq.IronMQConsumer$1.<init>(IronMQConsumer$1.java:102)
+And line 102 flow:
+at org.apache.camel.component.ironmq.IronMQConsumer$1.<init>(IronMQConsumer$1.java:102)
+ 
+Time to perform OA Inter 0,58700
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/camel-ironmq/7b8e755aa410ddd2841a5471f78bf5256a647b76/original-without-dependencies/camel-ironmq-2.15.3.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,39100
+Time to perform DFP Inter 0,26200
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/camel-ironmq/7b8e755aa410ddd2841a5471f78bf5256a647b76/original-without-dependencies/camel-ironmq-2.15.3.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,42600
+Time to perform DFP Inter 0,38200
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 12
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/camel-ironmq/7b8e755aa410ddd2841a5471f78bf5256a647b76/original-without-dependencies/camel-ironmq-2.15.3.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,57600
+Time to perform PDG 0,41400
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/camel-ironmq/7b8e755aa410ddd2841a5471f78bf5256a647b76/original-without-dependencies/camel-ironmq-2.15.3.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,41100
+Time to perform PDG 0,42100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -1,0 +1,110 @@
+Running soot scenario crest;org.tomitribe.crest.cmds.CmdMethod;convert(Arguments, Needed, List<Param>);eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9/original-without-dependencies/toolz-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 1,69800
+Time to perform Confluence 1 Inter 1,73100
+Configure Soot Confluence 2 Inter 0,66600
+Time to perform Confluence 2 Inter 1,15600
+Visited methods: 96
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List access$800(org.tomitribe.crest.cmds.CmdMethod$Arguments)>,$stack1 = x0.<org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List list>,737,SourceNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, $stack27 = staticinvoke <org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List access$800(org.tomitribe.crest.cmds.CmdMethod$Arguments)>(args), 557)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,$stack8 = staticinvoke <org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List access$800(org.tomitribe.crest.cmds.CmdMethod$Arguments)>(args),592,SinkNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, $stack8 = staticinvoke <org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List access$800(org.tomitribe.crest.cmds.CmdMethod$Arguments)>(args), 592)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,$stack9 = interfaceinvoke $stack8.<java.util.List: java.lang.Object remove(int)>(0),592,SinkNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, $stack9 = interfaceinvoke $stack8.<java.util.List: java.lang.Object remove(int)>(0), 592)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,glob#3 = (java.lang.String) $stack9,592,SinkNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, glob#3 = (java.lang.String) $stack9, 592)) => Node(<org.tomitribe.util.editor.Converter: java.lang.Object convert(java.lang.Object,java.lang.Class,java.lang.String)>,value := @parameter0: java.lang.Object,-1,SimpleNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, $stack21 = staticinvoke <org.tomitribe.crest.cmds.CmdMethod: java.lang.Object convert(org.tomitribe.crest.cmds.processors.Param,java.util.List,java.lang.String)>(parameter, glob, null), 590) => (<org.tomitribe.crest.cmds.CmdMethod: java.lang.Object convert(org.tomitribe.crest.cmds.processors.Param,java.util.List,java.lang.String)>, $stack30 = staticinvoke <org.tomitribe.util.editor.Converter: java.lang.Object convert(java.lang.Object,java.lang.Class,java.lang.String)>(string#20, type, optionParam#3), 632)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,$stack13 = staticinvoke <org.tomitribe.util.editor.Converter: java.lang.Object convert(java.lang.Object,java.lang.Class,java.lang.String)>(glob#3, $stack10, $stack12),593,SinkNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, $stack13 = staticinvoke <org.tomitribe.util.editor.Converter: java.lang.Object convert(java.lang.Object,java.lang.Class,java.lang.String)>(glob#3, $stack10, $stack12), 593)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,interfaceinvoke converted.<java.util.List: boolean add(java.lang.Object)>($stack13),593,SinkNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, interfaceinvoke converted.<java.util.List: boolean add(java.lang.Object)>($stack13), 593))
+SINK=>BASE: Node(<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>,$stack9 = new java.util.ArrayList,537,SourceNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 537)) => Node(<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>,converted = $stack9,537,SourceNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, converted = $stack9, 537)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,converted := @parameter2: java.util.List,-1,SimpleNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559)) => Node(<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>,interfaceinvoke converted.<java.util.List: boolean add(java.lang.Object)>($stack13),593,SinkNode, path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, interfaceinvoke converted.<java.util.List: boolean add(java.lang.Object)>($stack13), 593))]
+Confluence interference in <org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>
+Confluence flows from execution of lines 557 and 537 to line 559, defined in $stack27 = staticinvoke <org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List access$800(org.tomitribe.crest.cmds.CmdMethod$Arguments)>(args) and specialinvoke $stack9.<java.util.ArrayList: void <init>()>() and used in specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter)
+Caused by line 557 flow: path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, $stack27 = staticinvoke <org.tomitribe.crest.cmds.CmdMethod$Arguments: java.util.List access$800(org.tomitribe.crest.cmds.CmdMethod$Arguments)>(args), 557)
+Caused by line 537 flow: path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 537)
+Caused by line 559 flow: path: (<org.tomitribe.crest.cmds.CmdMethod: java.util.List convert(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List)>, specialinvoke this.<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>(args, needed, converted, parameter), 559) => (<org.tomitribe.crest.cmds.CmdMethod: void fillPlainParameter(org.tomitribe.crest.cmds.CmdMethod$Arguments,org.tomitribe.crest.cmds.CmdMethod$Needed,java.util.List,org.tomitribe.crest.cmds.processors.Param)>, interfaceinvoke converted.<java.util.List: boolean add(java.lang.Object)>($stack13), 593)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9/original-without-dependencies/toolz-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,27100
+Runtime: 0.014s
+Time to perform OA Inter 1,36100
+OA Inter Visited methods: 10
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9/original-without-dependencies/toolz-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,74100
+Time to perform DFP Inter 1,15000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 48
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9/original-without-dependencies/toolz-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,72500
+Time to perform DFP Inter 1,34300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 48
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9/original-without-dependencies/toolz-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,44700
+Time to perform PDG 0,56300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crest/eaa8735a70f7f9a5fd6d805ebacc5bfaacc57ba9/original-without-dependencies/toolz-0.10-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,70700
+Time to perform PDG 0,56700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

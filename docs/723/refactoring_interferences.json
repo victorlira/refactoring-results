@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Change Parameter Type\tcontext : EvaluationContext to context : EvaluationContextImpl in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java",
+      "startLine": 62,
+      "endLine": 62,
+      "startColumn": 9,
+      "endColumn": 96,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "statement referencing the variable with changed type",
+      "codeElement": null
+    },
+    "line": "62",
+    "branchLine": "62"
+  },
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Add Variable Modifier\tfinal in variable attributeNameValue : Object in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java",
+      "startLine": 62,
+      "endLine": 62,
+      "startColumn": 22,
+      "endColumn": 95,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "variable declaration with added modifier",
+      "codeElement": "attributeNameValue : Object"
+    },
+    "line": "62",
+    "branchLine": "62"
+  },
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tresolvedAttribute : ResolvedAttribute in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java",
+      "startLine": 79,
+      "endLine": 79,
+      "startColumn": 31,
+      "endColumn": 172,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "extracted variable declaration",
+      "codeElement": "resolvedAttribute : ResolvedAttribute"
+    },
+    "line": "79",
+    "branchLine": "79"
+  },
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tresolvedAttribute : ResolvedAttribute in method public evaluate(self PebbleTemplateImpl, context EvaluationContextImpl) : Object from class com.mitchellbosecke.pebble.node.expression.GetAttributeExpression",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/node/expression/GetAttributeExpression.java",
+      "startLine": 80,
+      "endLine": 82,
+      "startColumn": 13,
+      "endColumn": 14,
+      "codeElementType": "IF_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "80",
+    "branchLine": "80"
+  }
+]

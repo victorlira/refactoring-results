@@ -1,0 +1,208 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>",
+  "line": "308"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>()",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>",
+  "line": "308"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>",
+  "line": "308"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>()",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>",
+  "line": "308"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>()",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry jdbcTypeRegistry>",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>",
+  "line": "308"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>",
+  "line": "308"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>()",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, $stack4 = virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.SimpleDialect: com.nuodb.migrator.jdbc.type.JdbcTypeRegistry getJdbcTypeRegistry()>(), 714)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias)",
+"location": {
+  "file": "",
+  "class": "com.nuodb.migrator.jdbc.dialect.SimpleDialect",
+  "method": "<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>",
+  "line": "714"
+},
+"stackTrace": ["(<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void initJdbcTypes()>, virtualinvoke this.<com.nuodb.migrator.jdbc.dialect.MSSQLServerDialect: void addJdbcTypeAlias(int,java.lang.String,int)>(-4, 'IMAGE', 2004), 59)","(<com.nuodb.migrator.jdbc.dialect.SimpleDialect: void addJdbcTypeAlias(int,java.lang.String,int)>, interfaceinvoke $stack4.<com.nuodb.migrator.jdbc.type.JdbcTypeRegistry: void addJdbcTypeAlias(int,java.lang.String,int)>(typeCode, typeName, typeCodeAlias), 714)"]
+}]
+}
+}
+
+]

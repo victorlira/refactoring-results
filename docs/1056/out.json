@@ -1,0 +1,68 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "<java.lang.Character: boolean $assertionsDisabled> - <java.lang.Character: boolean $assertionsDisabled>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "<java.lang.Character: boolean $assertionsDisabled> = $stack3",
+				"location": {
+					"file": "",
+					"class": "java.lang.Character",
+					"method": "<clinit>",
+					"line": 122
+				},
+				"stackTrace": [{
+	"class": "com.github.sd4324530.fastweixin.servlet.QYWeixinSupport",
+	"method": "processRequest",
+	"line": 140
+},{
+	"class": "java.lang.String",
+	"method": "equalsIgnoreCase",
+	"line": 1109
+},{
+	"class": "java.lang.String",
+	"method": "regionMatches",
+	"line": 1367
+},{
+	"class": "java.lang.Character",
+	"method": "<clinit>",
+	"line": 122
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "<java.lang.Character: boolean $assertionsDisabled> = $stack3",
+				"location": {
+					"file": "",
+					"class": "java.lang.Character",
+					"method": "<clinit>",
+					"line": 122
+				},
+				"stackTrace": [{
+	"class": "com.github.sd4324530.fastweixin.servlet.QYWeixinSupport",
+	"method": "processRequest",
+	"line": 274
+},{
+	"class": "java.lang.Integer",
+	"method": "parseInt",
+	"line": 615
+},{
+	"class": "java.lang.Integer",
+	"method": "parseInt",
+	"line": 578
+},{
+	"class": "java.lang.Character",
+	"method": "<clinit>",
+	"line": 122
+}]
+			}
+		]
+	}
+}
+
+]

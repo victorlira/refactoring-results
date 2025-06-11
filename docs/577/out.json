@@ -1,0 +1,683 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,fileHashcodes = (java.util.Map) $stack37,141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack47 = (java.lang.String) $stack46,147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack47 = (java.lang.String) $stack46, 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1728897841,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1728897841, 128)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "sb = tmp$1728897841",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 128
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack34 = virtualinvoke algorithm.<java.io.File: java.lang.String getName()>(),140,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack34 = virtualinvoke algorithm.<java.io.File: java.lang.String getName()>(), 140)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack33 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack32),140,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack33 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack32), 140)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,virtualinvoke $stack33.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack34),140,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke $stack33.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack34), 140)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack33 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack32),140,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack33 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack32), 140)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,virtualinvoke $stack33.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack34),140,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke $stack33.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack34), 140))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 140
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 140
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 140
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 140
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 140
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke $stack33.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack34)",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 140
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,fileHashcodes = (java.util.Map) $stack37,141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack47 = (java.lang.String) $stack46,147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack47 = (java.lang.String) $stack46, 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1728897841,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1728897841, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(","),144,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(','), 144)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(","),144,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(','), 144))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 144
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 144
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(',')",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 144
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,fileHashcodes = (java.util.Map) $stack37,141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack47 = (java.lang.String) $stack46,147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack47 = (java.lang.String) $stack46, 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1728897841,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1728897841, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack50 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(","),134,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack50 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(','), 134)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,virtualinvoke $stack50.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(algorithm),134,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke $stack50.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(algorithm), 134)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack50 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(","),134,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack50 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(','), 134))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 134
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 134
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 134
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke $stack50.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(algorithm)",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 134
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,fileHashcodes = (java.util.Map) $stack37,141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack47),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack47), 147))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm)",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 147
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,fileHashcodes = (java.util.Map) $stack37,141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack47 = (java.lang.String) $stack46,147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack47 = (java.lang.String) $stack46, 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1728897841,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1728897841, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack8 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("#"),131,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack8 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('#'), 131)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack8 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("#"),131,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack8 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('#'), 131))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 131
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 131
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack8 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('#')",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 131
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,algorithm = (java.io.File) $stack31,163,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,fileHashcodes = (java.util.Map) $stack37,141,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm),147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack47 = (java.lang.String) $stack46,147,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack47 = (java.lang.String) $stack46, 147)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1728897841,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1728897841, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack24 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(),160,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack24 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(), 160)) SINK=>BASE: Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>,152,SourceNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,sb = tmp$1401595967,128,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1401595967, 128)) => Node(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>,$stack24 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(),160,SinkNode, path: (<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack24 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(), 160))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack17 = <net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: java.lang.String LINE_SEPARATOR>",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 152
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 152
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 160
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack31 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 163
+				},
+				"stackTrace": [{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 163
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 141
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 147
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 128
+},{
+	"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+	"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+	"line": 160
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack24 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>()",
+				"location": {
+					"file": "",
+					"class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+					"method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+					"line": 160
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "algorithm = (java.io.File) $stack31",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "163"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, algorithm = (java.io.File) $stack31, 163)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "141"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack37 = interfaceinvoke $stack36.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 141)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fileHashcodes = (java.util.Map) $stack37",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "141"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, fileHashcodes = (java.util.Map) $stack37, 141)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "147"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack46 = interfaceinvoke fileHashcodes.<java.util.Map: java.lang.Object get(java.lang.Object)>(algorithm), 147)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack47 = (java.lang.String) $stack46",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "147"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, $stack47 = (java.lang.String) $stack46, 147)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "sb = tmp$1932303196",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "128"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, sb = tmp$1932303196, 128)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget",
+  "method": "<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>",
+  "line": "152"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.execution.target.CsvSummaryFileTarget: void close()>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack17), 152)"]
+}]
+}
+}
+
+]

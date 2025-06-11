@@ -1,0 +1,104 @@
+Running soot scenario auto-matter;io.norberg.automatter.processor.AutoMatterProcessor;isCollection(ExecutableElement);5739d194fb360dde65820538263efddba683785f
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/auto-matter/5739d194fb360dde65820538263efddba683785f/original-without-dependencies/auto-matter-0.15.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,59900
+Time to perform Confluence 1 Inter 0,24600
+Configure Soot Confluence 2 Inter 0,24200
+Time to perform Confluence 2 Inter 0,04800
+Visited methods: 6
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/auto-matter/5739d194fb360dde65820538263efddba683785f/original-without-dependencies/auto-matter-0.15.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,65600
+Runtime: 0.004s
+Time to perform OA Inter 0,68800
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/auto-matter/5739d194fb360dde65820538263efddba683785f/original-without-dependencies/auto-matter-0.15.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,54200
+Time to perform DFP Inter 0,28900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 3
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/auto-matter/5739d194fb360dde65820538263efddba683785f/original-without-dependencies/auto-matter-0.15.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,69100
+Time to perform DFP Inter 0,27100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 3
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/auto-matter/5739d194fb360dde65820538263efddba683785f/original-without-dependencies/auto-matter-0.15.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,55700
+Time to perform PDG 0,28400
+CONFLICTS: [List(Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack6 != 0 goto $stack10 = 1,1219,SourceNode, path: ) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack7 != 0 goto $stack10 = 1,1220,SinkNode, path: ) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack8 != 0 goto $stack10 = 1,1221,SinkNode, path: ) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,$stack9 = virtualinvoke returnType.<java.lang.String: boolean startsWith(java.lang.String)>("java.util.NavigableSet<"),1222,SinkNode, path: (<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>, $stack9 = virtualinvoke returnType.<java.lang.String: boolean startsWith(java.lang.String)>('java.util.NavigableSet<'), 1222)) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack9 == 0 goto $stack10 = 0,1222,SinkNode, path: )), List(Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack6 != 0 goto $stack10 = 1,1219,SourceNode, path: ) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack7 != 0 goto $stack10 = 1,1220,SinkNode, path: ) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,$stack8 = virtualinvoke returnType.<java.lang.String: boolean startsWith(java.lang.String)>("java.util.SortedSet<"),1221,SinkNode, path: (<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>, $stack8 = virtualinvoke returnType.<java.lang.String: boolean startsWith(java.lang.String)>('java.util.SortedSet<'), 1221))), List(Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,if $stack6 != 0 goto $stack10 = 1,1219,SourceNode, path: ) => Node(<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>,$stack7 = virtualinvoke returnType.<java.lang.String: boolean startsWith(java.lang.String)>("java.util.Set<"),1220,SinkNode, path: (<io.norberg.automatter.processor.AutoMatterProcessor: boolean isCollection(javax.lang.model.element.ExecutableElement)>, $stack7 = virtualinvoke returnType.<java.lang.String: boolean startsWith(java.lang.String)>('java.util.Set<'), 1220)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/auto-matter/5739d194fb360dde65820538263efddba683785f/original-without-dependencies/auto-matter-0.15.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,55500
+Time to perform PDG 0,29800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

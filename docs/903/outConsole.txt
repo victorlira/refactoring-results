@@ -1,0 +1,133 @@
+Running soot scenario gelfj;org.graylog2.GelfMessage;toDatagrams();f57a572d8c372b60afde1f1f300fdb93e3d1a194
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/gelfj/f57a572d8c372b60afde1f1f300fdb93e3d1a194/original-without-dependencies/gelfj-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,45000
+Time to perform Confluence 1 Inter 0,59100
+Configure Soot Confluence 2 Inter 0,23400
+Time to perform Confluence 2 Inter 0,12400
+Visited methods: 50
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack5 = lengthof messageBytes,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack5 = lengthof messageBytes, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack6 = $stack5 / 1420,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack6 = $stack5 / 1420, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack7 = $stack6 + 1,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams),85,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85))
+SINK=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams),85,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85)), SOURCE=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack5 = lengthof messageBytes,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack5 = lengthof messageBytes, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack6 = $stack5 / 1420,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack6 = $stack5 / 1420, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack7 = $stack6 + 1,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,return datagrams,91,SinkNode, path: )
+SINK=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,return datagrams,91,SinkNode, path: ), SOURCE=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack5 = lengthof messageBytes,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack5 = lengthof messageBytes, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack6 = $stack5 / 1420,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack6 = $stack5 / 1420, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack7 = $stack6 + 1,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,datagrams := @parameter1: java.nio.ByteBuffer[],-1,SimpleNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,$stack34 = datagrams[idx],114,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85) => (<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>, $stack34 = datagrams[idx], 114))
+SINK=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,datagrams := @parameter1: java.nio.ByteBuffer[],-1,SimpleNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,$stack34 = datagrams[idx],114,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85) => (<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>, $stack34 = datagrams[idx], 114)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,virtualinvoke $stack34.<java.nio.ByteBuffer: java.nio.Buffer flip()>(),114,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85) => (<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>, virtualinvoke $stack34.<java.nio.ByteBuffer: java.nio.Buffer flip()>(), 114)), SOURCE=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack5 = lengthof messageBytes,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack5 = lengthof messageBytes, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack6 = $stack5 / 1420,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack6 = $stack5 / 1420, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack7 = $stack6 + 1,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,datagrams := @parameter1: java.nio.ByteBuffer[],-1,SimpleNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,$stack32 = datagrams[idx],113,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85) => (<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>, $stack32 = datagrams[idx], 113))
+SINK=>BASE: Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,datagrams := @parameter1: java.nio.ByteBuffer[],-1,SimpleNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85)) => Node(<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>,$stack32 = datagrams[idx],113,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85) => (<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>, $stack32 = datagrams[idx], 113))]
+Confluence interference in <org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>
+Confluence flows from execution of lines 83 and 83 to line 85, defined in $stack5 = lengthof messageBytes and datagrams = newarray (java.nio.ByteBuffer)[$stack7] and used in specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams)
+Caused by line 83 flow: path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack5 = lengthof messageBytes, 83)
+Caused by line 83 flow: path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)
+Caused by line 85 flow: path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, specialinvoke this.<org.graylog2.GelfMessage: void sliceDatagrams(byte[],java.nio.ByteBuffer[])>(messageBytes, datagrams), 85)
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at scala.collection.generic.TraversableForwarder.head(TraversableForwarder.scala:59)
+	at scala.collection.generic.TraversableForwarder.head$(TraversableForwarder.scala:59)
+	at scala.collection.mutable.ListBuffer.head(ListBuffer.scala:47)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.reportConflictsConfluence(DFPConfluenceAnalysis.java:181)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:566)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/gelfj/f57a572d8c372b60afde1f1f300fdb93e3d1a194/original-without-dependencies/gelfj-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,61900
+Runtime: 0.006s
+OA interference in class GelfMessage, method java.nio.ByteBuffer[] toDatagrams(), execution of line 83 overrides 83, assigning to variable datagrams, 
+Caused by line 83 flow:
+at org.graylog2.GelfMessage.toDatagrams(GelfMessage.java:83)
+And line 83 flow:
+at org.graylog2.GelfMessage.toDatagrams(GelfMessage.java:83)
+ 
+Time to perform OA Inter 0,65900
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 5
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/gelfj/f57a572d8c372b60afde1f1f300fdb93e3d1a194/original-without-dependencies/gelfj-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,61500
+Time to perform DFP Inter 0,56400
+Depth limit: 5
+CONFLICTS: DF interference in <org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>
+Data flows from execution of line 83 to 88, defined in $stack7 = $stack6 + 1 and propagated in virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes)
+Caused by line 83 flow: path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)
+Caused by line 88 flow: path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes), 88)
+[List(Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack7 = $stack6 + 1,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack12 = datagrams[0],88,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack12 = datagrams[0], 88)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes),88,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes), 88)))]
+Visited methods: 25
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/gelfj/f57a572d8c372b60afde1f1f300fdb93e3d1a194/original-without-dependencies/gelfj-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,50400
+Time to perform DFP Inter 0,38100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 25
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/gelfj/f57a572d8c372b60afde1f1f300fdb93e3d1a194/original-without-dependencies/gelfj-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,42800
+Time to perform PDG 0,35800
+CONFLICTS: [List(Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack5 = lengthof messageBytes,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack5 = lengthof messageBytes, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack6 = $stack5 / 1420,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack6 = $stack5 / 1420, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack7 = $stack6 + 1,83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack7 = $stack6 + 1, 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,datagrams = newarray (java.nio.ByteBuffer)[$stack7],83,SourceNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, datagrams = newarray (java.nio.ByteBuffer)[$stack7], 83)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,$stack12 = datagrams[0],88,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, $stack12 = datagrams[0], 88)) => Node(<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>,virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes),88,SinkNode, path: (<org.graylog2.GelfMessage: java.nio.ByteBuffer[] toDatagrams()>, virtualinvoke $stack12.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>(messageBytes), 88)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/gelfj/f57a572d8c372b60afde1f1f300fdb93e3d1a194/original-without-dependencies/gelfj-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,42200
+Time to perform PDG 0,32000
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

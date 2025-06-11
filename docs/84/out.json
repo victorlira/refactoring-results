@@ -1,0 +1,1558 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,tmp$973777648 = new java.io.FileOutputStream,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName), 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$973777648,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$973777648, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,virtualinvoke out.<java.io.FileOutputStream: void close()>(),511,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, virtualinvoke out.<java.io.FileOutputStream: void close()>(), 511)) SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$44870879,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$44870879, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,virtualinvoke out.<java.io.FileOutputStream: void close()>(),511,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, virtualinvoke out.<java.io.FileOutputStream: void close()>(), 511))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "out = tmp$44870879",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 508
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 511
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "tmp$973777648 = new java.io.FileOutputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 508
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 508
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 511
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke out.<java.io.FileOutputStream: void close()>()",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 511
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1191372709,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener),490,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener), 490)) SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1866267052,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener),490,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener), 490))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "in = tmp$1866267052",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 485
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 490
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "in = tmp$1191372709",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 485
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 490
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener)",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 490
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,tmp$973777648 = new java.io.FileOutputStream,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName), 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$973777648,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$973777648, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener),510,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener), 510)) SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$44870879,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$44870879, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener),510,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener), 510))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "out = tmp$44870879",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 508
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 510
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "tmp$973777648 = new java.io.FileOutputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 508
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 508
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 510
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener)",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 510
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1191372709,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$1941639991, ci, listener),488,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$1941639991, ci, listener), 488)) SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1866267052,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$148612874, ci, listener),488,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$148612874, ci, listener), 488))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "in = tmp$1866267052",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 485
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 488
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "in = tmp$1191372709",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 485
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 488
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$1941639991, ci, listener)",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 488
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1191372709,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in),486,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in), 486)) SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1866267052,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in),486,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in), 486))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "in = tmp$1866267052",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 485
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 486
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "in = tmp$1191372709",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 485
+},{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+	"line": 486
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in)",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+					"line": 486
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "tmp$39959931 - tmp$39959931",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "tmp$39959931 = new org.rdfhdt.hdt.util.io.CountInputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "tmp$39959931 = new org.rdfhdt.hdt.util.io.CountInputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "tmp$530131514 - tmp$530131514",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "tmp$530131514 = new java.io.BufferedInputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "tmp$530131514 = new java.io.BufferedInputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "tmp$90628418 - tmp$90628418",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "tmp$90628418 = new java.io.FileInputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "tmp$90628418 = new java.io.FileInputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "in - in",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "in = tmp$39959931",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "in = tmp$39959931",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 485
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "CountInputStream.<org.rdfhdt.hdt.util.io.CountInputStream: long total> - CountInputStream.<org.rdfhdt.hdt.util.io.CountInputStream: long total>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "CountInputStream.<org.rdfhdt.hdt.util.io.CountInputStream: long total> = null",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.util.io.CountInputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "CountInputStream.<org.rdfhdt.hdt.util.io.CountInputStream: long total> = null",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.util.io.CountInputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "out - out",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "out = null",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 506
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 506
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "out = null",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 506
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 506
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "tmp$2024314762 - tmp$2024314762",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "tmp$2024314762 = new java.io.FileOutputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 508
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "tmp$2024314762 = new java.io.FileOutputStream",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 508
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "out - out",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "out = tmp$2024314762",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 508
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "out = tmp$2024314762",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 508
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 508
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "<java.io.BufferedInputStream: int DEFAULT_BUFFER_SIZE> - <java.io.BufferedInputStream: int DEFAULT_BUFFER_SIZE>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "<java.io.BufferedInputStream: int DEFAULT_BUFFER_SIZE> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.BufferedInputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "<java.io.BufferedInputStream: int DEFAULT_BUFFER_SIZE> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.BufferedInputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "FileOutputStream.<java.io.FileOutputStream: java.nio.channels.FileChannel channel> - FileOutputStream.<java.io.FileOutputStream: java.nio.channels.FileChannel channel>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "FileOutputStream.<java.io.FileOutputStream: java.nio.channels.FileChannel channel> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.FileOutputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 508
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "FileOutputStream.<java.io.FileOutputStream: java.nio.channels.FileChannel channel> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.FileOutputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 508
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l11 - l11",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l11 = $stack56",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 517
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 517
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l11 = $stack56",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 517
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 517
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l12 - l12",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l12 = $stack53",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 521
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 521
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l12 = $stack53",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+					"method": "loadOrCreateIndex",
+					"line": 521
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 521
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l1 - l1",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l1 = $stack2",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.util.io.IOUtil",
+					"method": "closeQuietly",
+					"line": 375
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 521
+},{
+	"class": "org.rdfhdt.hdt.util.io.IOUtil",
+	"method": "closeQuietly",
+	"line": 375
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l1 = $stack2",
+				"location": {
+					"file": "",
+					"class": "org.rdfhdt.hdt.util.io.IOUtil",
+					"method": "closeQuietly",
+					"line": 375
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 521
+},{
+	"class": "org.rdfhdt.hdt.util.io.IOUtil",
+	"method": "closeQuietly",
+	"line": 375
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "FileInputStream.<java.io.FileInputStream: java.nio.channels.FileChannel channel> - FileInputStream.<java.io.FileInputStream: java.nio.channels.FileChannel channel>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "FileInputStream.<java.io.FileInputStream: java.nio.channels.FileChannel channel> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.FileInputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "FileInputStream.<java.io.FileInputStream: java.nio.channels.FileChannel channel> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.FileInputStream",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+	"method": "loadOrCreateIndex",
+	"line": 485
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = null",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "506"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = null",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "506"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = tmp$1941639991",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "508"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = tmp$1941639991",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "508"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "in = tmp$48063459",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "485"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tmp$48063459 = new org.rdfhdt.hdt.util.io.CountInputStream",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "485"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.rdfhdt.hdt.util.io.CountInputStream",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.CountInputStream",
+  "method": "<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.io.InputStream: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.CountInputStream",
+  "method": "<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>",
+  "line": "48"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)","(<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>, specialinvoke this.<java.io.InputStream: void <init>()>(), 48)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "in = tmp$48063459",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "485"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = null",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "506"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = null",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "506"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = tmp$1941639991",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "508"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "in = null",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "483"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "out = tmp$1941639991",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "508"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "in = tmp$48063459",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "485"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "370"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "in = null",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "483"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tmp$48063459 = new org.rdfhdt.hdt.util.io.CountInputStream",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "485"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.rdfhdt.hdt.util.io.CountInputStream",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.CountInputStream",
+  "method": "<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.io.InputStream: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.CountInputStream",
+  "method": "<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>",
+  "line": "48"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)","(<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>, specialinvoke this.<java.io.InputStream: void <init>()>(), 48)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "in = tmp$48063459",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.hdt.impl.HDTImpl",
+  "method": "<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>",
+  "line": "485"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "output := @parameter0: java.io.Closeable",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke output.<java.io.Closeable: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.rdfhdt.hdt.util.io.IOUtil",
+  "method": "<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>",
+  "line": "374"
+},
+"stackTrace": ["(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)","(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)"]
+}]
+}
+}
+
+]

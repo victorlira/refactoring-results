@@ -1,0 +1,44 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "streamState - streamState",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "streamState = (org.apache.cassandra.streaming.StreamState) $stack16",
+				"location": {
+					"file": "",
+					"class": "com.spotify.hdfs2cass.cassandra.cql.CrunchCqlBulkRecordWriter",
+					"method": "close",
+					"line": 161
+				},
+				"stackTrace": [{
+	"class": "com.spotify.hdfs2cass.cassandra.cql.CrunchCqlBulkRecordWriter",
+	"method": "close",
+	"line": 161
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "streamState = (org.apache.cassandra.streaming.StreamState) $stack16",
+				"location": {
+					"file": "",
+					"class": "com.spotify.hdfs2cass.cassandra.cql.CrunchCqlBulkRecordWriter",
+					"method": "close",
+					"line": 161
+				},
+				"stackTrace": [{
+	"class": "com.spotify.hdfs2cass.cassandra.cql.CrunchCqlBulkRecordWriter",
+	"method": "close",
+	"line": 161
+}]
+			}
+		]
+	}
+}
+
+]

@@ -1,0 +1,122 @@
+Running soot scenario swagger-parser;io.swagger.v3.parser.converter.SwaggerConverter;convertOauth2SecurityScheme(SecuritySchemeDefinition);ab229821bf4d0e9ff33692ca8dd67794dbe95d88
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/ab229821bf4d0e9ff33692ca8dd67794dbe95d88/original-without-dependencies/swagger-parser-v2-converter-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,66100
+Time to perform Confluence 1 Inter 0,48700
+Configure Soot Confluence 2 Inter 0,23300
+Time to perform Confluence 2 Inter 0,08100
+Visited methods: 14
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/ab229821bf4d0e9ff33692ca8dd67794dbe95d88/original-without-dependencies/swagger-parser-v2-converter-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,82400
+Runtime: 0.009s
+OA interference in class SwaggerConverter, method io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition), execution of line 303 overrides 326, assigning to variable oAuth2Scopes, 
+Caused by line 303 flow:
+at io.swagger.v3.parser.converter.SwaggerConverter.convertOauth2SecurityScheme(SwaggerConverter.java:303)
+And line 326 flow:
+at io.swagger.v3.parser.converter.SwaggerConverter.convertOauth2SecurityScheme(SwaggerConverter.java:326)
+ 
+Time to perform OA Inter 0,87600
+OA Inter Visited methods: 5
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/ab229821bf4d0e9ff33692ca8dd67794dbe95d88/original-without-dependencies/swagger-parser-v2-converter-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,54000
+Time to perform DFP Inter 0,42700
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 7
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/ab229821bf4d0e9ff33692ca8dd67794dbe95d88/original-without-dependencies/swagger-parser-v2-converter-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,59100
+Time to perform DFP Inter 0,41200
+Depth limit: 5
+CONFLICTS: DF interference in <io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>
+Data flows from execution of line 300 to 326, defined in flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>() and propagated in $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("password")
+Caused by line 300 flow: path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>(), 300)
+Caused by line 326 flow: path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password'), 326)
+DF interference in <io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>
+Data flows from execution of line 303 to 326, defined in scopes = flow and propagated in $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("password")
+Caused by line 303 flow: path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)
+Caused by line 326 flow: path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password'), 326)
+[List(Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,scopes = flow,303,SourceNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,$stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("password"),326,SinkNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password'), 326))), List(Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>(),300,SourceNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>(), 300)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,scopes = flow,303,SourceNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,$stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("password"),326,SinkNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password'), 326)))]
+Visited methods: 6
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/ab229821bf4d0e9ff33692ca8dd67794dbe95d88/original-without-dependencies/swagger-parser-v2-converter-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,74400
+Time to perform PDG 0,42300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/ab229821bf4d0e9ff33692ca8dd67794dbe95d88/original-without-dependencies/swagger-parser-v2-converter-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,56600
+Time to perform PDG 0,52000
+CONFLICTS: [List(Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,if flow == null goto $stack14 = new io.swagger.v3.oas.models.security.Scopes,302,SourceNode, path: ) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,scopes = flow,303,SourceNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,$stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("accessCode"),326,SinkNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('accessCode'), 326)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,if $stack34 == 0 goto (branch),326,SinkNode, path: )), List(Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,lookupswitch($stack22) {     case -1142520463: goto $stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("accessCode");     case -425423387: goto $stack33 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("implicit");     case 1216985755: goto $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("password");     case 1554253136: goto $stack23 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("application");     default: goto tableswitch(oAuth2Scopes) {     case 0: goto $stack30 = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getAuthorizationUrl()>();     case 1: goto $stack29 = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getTokenUrl()>();     case 2: goto $stack28 = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getTokenUrl()>();     case 3: goto $stack24 = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getAuthorizationUrl()>();     default: goto $stack14 = new io.swagger.v3.oas.models.security.Scopes; }; },303,SourceNode, path: ) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,$stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("accessCode"),326,SinkNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('accessCode'), 326)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,if $stack34 == 0 goto (branch),326,SinkNode, path: )), List(Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>(),300,SourceNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>(), 300)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,scopes = flow,303,SourceNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,$stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>("accessCode"),326,SinkNode, path: (<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack34 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('accessCode'), 326)) => Node(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>,if $stack34 == 0 goto (branch),326,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

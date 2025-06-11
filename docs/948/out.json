@@ -1,0 +1,2418 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "unit = virtualinvoke resolvedTP.<com.sun.source.util.TreePath: com.sun.source.tree.CompilationUnitTree getCompilationUnit()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "418"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, unit = virtualinvoke resolvedTP.<com.sun.source.util.TreePath: com.sun.source.tree.CompilationUnitTree getCompilationUnit()>(), 418)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack88 = (javax.lang.model.element.ExecutableElement) resolvedElt",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "319"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, $stack88 = (javax.lang.model.element.ExecutableElement) resolvedElt, 319)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack89.<io.vertx.docgen.BaseProcessor: java.lang.String renderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack88, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "319"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack89.<io.vertx.docgen.BaseProcessor: java.lang.String renderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack88, includedElt#3), 319)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = 2147483647",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "435"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = statementStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "439"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = statementStart, 439)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = (java.lang.String) $stack46",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "448"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = (java.lang.String) $stack46, 448)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String substring(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack5 = l0",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String substring(int)>",
+  "line": "1933"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = lineStart + -1",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "441"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack60 = lineStart - 1, 440)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "422"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>(), 422)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "437"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>(), 437)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>(), 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statement = (com.sun.source.tree.StatementTree) $stack54",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement = (com.sun.source.tree.StatementTree) $stack54, 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "437"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>(), 437)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>(), 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statement = (com.sun.source.tree.StatementTree) $stack54",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement = (com.sun.source.tree.StatementTree) $stack54, 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>(), 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statement = (com.sun.source.tree.StatementTree) $stack54",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement = (com.sun.source.tree.StatementTree) $stack54, 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "methodTree = (com.sun.source.tree.MethodTree) $stack20",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "419"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, methodTree = (com.sun.source.tree.MethodTree) $stack20, 419)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockTree = interfaceinvoke methodTree.<com.sun.source.tree.MethodTree: com.sun.source.tree.BlockTree getBody()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "420"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockTree = interfaceinvoke methodTree.<com.sun.source.tree.MethodTree: com.sun.source.tree.BlockTree getBody()>(), 420)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "422"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>(), 422)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "437"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>(), 437)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>(), 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statement = (com.sun.source.tree.StatementTree) $stack54",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement = (com.sun.source.tree.StatementTree) $stack54, 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack17 = this.<io.vertx.docgen.BaseProcessor: com.sun.source.util.DocTrees docTrees>",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "417"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack17 = this.<io.vertx.docgen.BaseProcessor: com.sun.source.util.DocTrees docTrees>, 417)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "resolvedTP = virtualinvoke $stack17.<com.sun.source.util.DocTrees: com.sun.source.util.TreePath getPath(javax.lang.model.element.Element)>(elt)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "417"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, resolvedTP = virtualinvoke $stack17.<com.sun.source.util.DocTrees: com.sun.source.util.TreePath getPath(javax.lang.model.element.Element)>(elt), 417)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack20 = virtualinvoke resolvedTP.<com.sun.source.util.TreePath: com.sun.source.tree.Tree getLeaf()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "419"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack20 = virtualinvoke resolvedTP.<com.sun.source.util.TreePath: com.sun.source.tree.Tree getLeaf()>(), 419)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "methodTree = (com.sun.source.tree.MethodTree) $stack20",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "419"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, methodTree = (com.sun.source.tree.MethodTree) $stack20, 419)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockTree = interfaceinvoke methodTree.<com.sun.source.tree.MethodTree: com.sun.source.tree.BlockTree getBody()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "420"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockTree = interfaceinvoke methodTree.<com.sun.source.tree.MethodTree: com.sun.source.tree.BlockTree getBody()>(), 420)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "422"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>(), 422)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "437"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>(), 437)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>(), 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statement = (com.sun.source.tree.StatementTree) $stack54",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement = (com.sun.source.tree.StatementTree) $stack54, 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "statement#19 = virtualinvoke $stack42.<java.util.Scanner: java.util.Scanner useDelimiter(java.lang.String)>('\n')",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "447"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement#19 = virtualinvoke $stack42.<java.util.Scanner: java.util.Scanner useDelimiter(java.lang.String)>('\n'), 447)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack46 = interfaceinvoke statement#19.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "448"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack46 = interfaceinvoke statement#19.<java.util.Iterator: java.lang.Object next()>(), 448)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = (java.lang.String) $stack46",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "448"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = (java.lang.String) $stack46, 448)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String substring(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack5 = l0",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String substring(int)>",
+  "line": "1933"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "blockTree = interfaceinvoke methodTree.<com.sun.source.tree.MethodTree: com.sun.source.tree.BlockTree getBody()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "420"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockTree = interfaceinvoke methodTree.<com.sun.source.tree.MethodTree: com.sun.source.tree.BlockTree getBody()>(), 420)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "422"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statements = interfaceinvoke blockTree.<com.sun.source.tree.BlockTree: java.util.List getStatements()>(), 422)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "437"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment = interfaceinvoke statements.<java.util.List: java.util.Iterator iterator()>(), 437)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack54 = interfaceinvoke fragment.<java.util.Iterator: java.lang.Object next()>(), 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statement = (com.sun.source.tree.StatementTree) $stack54",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "455"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statement = (com.sun.source.tree.StatementTree) $stack54, 455)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack57 = interfaceinvoke $stack56.<com.sun.source.util.DocSourcePositions: long getStartPosition(com.sun.source.tree.CompilationUnitTree,com.sun.source.tree.Tree)>(unit, statement), 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart = (int) $stack57",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "438"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart = (int) $stack57, 438)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack41 = new java.lang.StringBuilder",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, specialinvoke $stack41.<java.lang.StringBuilder: void <init>()>(), 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack64 = statementStart - lineStart",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, $stack64 = statementStart - lineStart, 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "443"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, blockMargin = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack64), 443)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "449"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, lineStart = staticinvoke <java.lang.Math: int min(int,int)>(blockMargin, $stack47), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "450"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, statementStart#20 = virtualinvoke statementStart#20.<java.lang.String: java.lang.String substring(int)>(lineStart), 450)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fragment#18 = $stack41",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "446"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)","(<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>, fragment#18 = $stack41, 446)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack45 = virtualinvoke fragment#18.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor",
+  "method": "<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>",
+  "line": "456"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.BaseProcessor$2",
+  "method": "<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>",
+  "line": "322"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, link = virtualinvoke $stack81.<io.vertx.docgen.BaseProcessor: java.lang.String defaultRenderSource(javax.lang.model.element.ExecutableElement,java.lang.String)>($stack80, includedElt#3), 322)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "csq := @parameter0: java.lang.CharSequence",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq)",
+"location": {
+  "file": "",
+  "class": "io.vertx.docgen.DocWriter",
+  "method": "<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>",
+  "line": "82"
+},
+"stackTrace": ["(<io.vertx.docgen.BaseProcessor$2: java.lang.Void visitLink(com.sun.source.doctree.LinkTree,java.lang.Void)>, virtualinvoke $stack102.<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>(link), 307)","(<io.vertx.docgen.DocWriter: io.vertx.docgen.DocWriter append(java.lang.CharSequence)>, $stack3 = specialinvoke this.<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>(csq), 82)"]
+}]
+}
+}
+
+]

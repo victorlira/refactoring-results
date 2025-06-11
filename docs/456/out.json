@@ -1,0 +1,119 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.datasift.tests.TestDefinition: void testCompile_Failure()>,e1 = $stack25,225,SourceNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, e1 = $stack25, 225)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, $stack28 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 226)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, $stack28 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 226)) SINK=>BASE: Node(<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String,java.lang.String)>,this.<org.datasift.Definition: org.datasift.User _user> = null,31,SourceNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, specialinvoke $stack4.<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String)>($stack6, $stack5), 221) => (<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String)>, specialinvoke this.<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String,java.lang.String)>(user, csdl, ''), 72) => (<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String,java.lang.String)>, this.<org.datasift.Definition: org.datasift.User _user> = null, 31)) => Node(<org.datasift.Definition: void compile()>,$stack9 = this.<org.datasift.Definition: org.datasift.User _user>,285,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, $stack9 = this.<org.datasift.Definition: org.datasift.User _user>, 285)) => Node(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>,this := @this: org.datasift.User,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285)) => Node(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>,$stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>,660,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack8 = this.<org.datasift.User: org.datasift.ApiClient _api_client>, 660)) => Node(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>,res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params),660,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, res = virtualinvoke $stack8.<org.datasift.ApiClient: org.datasift.ApiResponse call(java.lang.String,java.util.HashMap)>(endpoint, params), 660)) => Node(<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>,this := @this: org.datasift.ApiResponse,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack84 = virtualinvoke res.<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>(), 674)) => Node(<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>,$stack1 = this.<org.datasift.ApiResponse: java.lang.String _reason_phrase>,50,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack84 = virtualinvoke res.<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>(), 674)) => Node(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>,$stack52 = virtualinvoke res.<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>(),720,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack52 = virtualinvoke res.<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>(), 720)) => Node(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>,$stack53 = virtualinvoke $stack51.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack52),720,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack53 = virtualinvoke $stack51.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack52), 720)) => Node(<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>,$stack54 = virtualinvoke $stack53.<java.lang.StringBuilder: java.lang.String toString()>(),720,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, $stack54 = virtualinvoke $stack53.<java.lang.StringBuilder: java.lang.String toString()>(), 720)) => Node(<org.datasift.EAPIError: void <init>(java.lang.String,int)>,arg0 := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, virtualinvoke def.<org.datasift.Definition: void compile()>(), 233) => (<org.datasift.Definition: void compile()>, res = virtualinvoke $stack9.<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>('compile', params), 285) => (<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>, specialinvoke $stack39.<org.datasift.EAPIError: void <init>(java.lang.String,int)>($stack40, $stack41), 687)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, $stack8 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 223) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, $stack8 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 223) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0.<java.lang.Throwable: java.lang.String detailMessage> = l1,266,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, $stack8 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 223) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66) => (<java.lang.Throwable: void <init>(java.lang.String)>, l0.<java.lang.Throwable: java.lang.String detailMessage> = l1, 266)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<org.datasift.tests.TestDefinition: void testCompile_Failure()>, $stack19 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 226))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "this.<org.datasift.Definition: org.datasift.User _user> = null",
+				"location": {
+					"file": "",
+					"class": "org.datasift.Definition",
+					"method": "<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String,java.lang.String)>",
+					"line": 31
+				},
+				"stackTrace": [{
+	"class": "org.datasift.Definition",
+	"method": "<org.datasift.Definition: void <init>(org.datasift.User,java.lang.String,java.lang.String)>",
+	"line": 31
+},{
+	"class": "org.datasift.Definition",
+	"method": "<org.datasift.Definition: void compile()>",
+	"line": 285
+},{
+	"class": "org.datasift.User",
+	"method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+	"line": -1
+},{
+	"class": "org.datasift.User",
+	"method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+	"line": 660
+},{
+	"class": "org.datasift.User",
+	"method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+	"line": 660
+},{
+	"class": "org.datasift.ApiResponse",
+	"method": "<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>",
+	"line": -1
+},{
+	"class": "org.datasift.ApiResponse",
+	"method": "<org.datasift.ApiResponse: java.lang.String getReasonPhrase()>",
+	"line": 50
+},{
+	"class": "org.datasift.User",
+	"method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+	"line": 720
+},{
+	"class": "org.datasift.User",
+	"method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+	"line": 720
+},{
+	"class": "org.datasift.User",
+	"method": "<org.datasift.User: org.json.JSONObject callAPI(java.lang.String,java.util.HashMap)>",
+	"line": 720
+},{
+	"class": "org.datasift.EAPIError",
+	"method": "<org.datasift.EAPIError: void <init>(java.lang.String,int)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: void <init>(java.lang.String)>",
+	"line": 266
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": 377
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "e1 = $stack25",
+				"location": {
+					"file": "",
+					"class": "org.datasift.tests.TestDefinition",
+					"method": "<org.datasift.tests.TestDefinition: void testCompile_Failure()>",
+					"line": 225
+				},
+				"stackTrace": [{
+	"class": "org.datasift.tests.TestDefinition",
+	"method": "<org.datasift.tests.TestDefinition: void testCompile_Failure()>",
+	"line": 225
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": 377
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Throwable",
+					"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+					"line": 377
+				}
+			}
+		]
+	}
+}
+
+]

@@ -1,0 +1,474 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$564944564 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$564944564 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,specialinvoke tmp$1680147911.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$564944564),109,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, specialinvoke tmp$1680147911.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$564944564), 109)) SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$815593047 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$815593047 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,specialinvoke tmp$861500069.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$815593047),109,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, specialinvoke tmp$861500069.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$815593047), 109))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack10 = new java.net.URLClassLoader",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 106
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 109
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "classLoader = $stack10",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 106
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 109
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke tmp$1680147911.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>(tmp$564944564)",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+					"line": 109
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$1901945192 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$1901945192 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,virtualinvoke tmp$1901945192.<java.io.InputStream: void close()>(),115,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, virtualinvoke tmp$1901945192.<java.io.InputStream: void close()>(), 115)) SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,tmp$1234328865 = (java.io.InputStream) in,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, tmp$1234328865 = (java.io.InputStream) in, -1)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,virtualinvoke tmp$1234328865.<java.io.InputStream: void close()>(),115,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, virtualinvoke tmp$1234328865.<java.io.InputStream: void close()>(), 115))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack10 = new java.net.URLClassLoader",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 106
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 115
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "classLoader = $stack10",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 106
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 115
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke tmp$1901945192.<java.io.InputStream: void close()>()",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+					"line": 115
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106)) SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,loader := @parameter1: java.net.URLClassLoader,-1,SimpleNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>,in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13),106,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64) => (<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>, in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13), 106))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack10 = new java.net.URLClassLoader",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 106
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "classLoader = $stack10",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": -1
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+	"line": 106
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "in = virtualinvoke loader.<java.net.URLClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>($stack13)",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>",
+					"line": 106
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader),64,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64)) SINK=>BASE: Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,$stack10 = new java.net.URLClassLoader,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke $stack10.<java.net.URLClassLoader: void <init>(java.net.URL[])>($stack11), 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,classLoader = $stack10,60,SourceNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)) => Node(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>,specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader),64,SinkNode, path: (<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader), 64))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack10 = new java.net.URLClassLoader",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 64
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "classLoader = $stack10",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 60
+},{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+	"line": 64
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke this.<org.designwizard.extractor.asm.ASMExtractor: void processClass(java.lang.String,java.net.URLClassLoader)>(fileName, classLoader)",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+					"line": 64
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "URLClassLoader.<java.net.URLClassLoader: java.util.WeakHashMap closeables> - URLClassLoader.<java.net.URLClassLoader: java.util.WeakHashMap closeables>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "URLClassLoader.<java.net.URLClassLoader: java.util.WeakHashMap closeables> = null",
+				"location": {
+					"file": "",
+					"class": "java.net.URLClassLoader",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "processDir",
+	"line": 60
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "URLClassLoader.<java.net.URLClassLoader: java.util.WeakHashMap closeables> = null",
+				"location": {
+					"file": "",
+					"class": "java.net.URLClassLoader",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "processDir",
+	"line": 60
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "classLoader - classLoader",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "classLoader = $stack10",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "processDir",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "processDir",
+	"line": 60
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "classLoader = $stack10",
+				"location": {
+					"file": "",
+					"class": "org.designwizard.extractor.asm.ASMExtractor",
+					"method": "processDir",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "processDir",
+	"line": 60
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "File.<java.io.File: java.io.File$PathStatus status> - File.<java.io.File: java.io.File$PathStatus status>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "File.<java.io.File: java.io.File$PathStatus status> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.File",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "processDir",
+	"line": 60
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "File.<java.io.File: java.io.File$PathStatus status> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.File",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.designwizard.extractor.asm.ASMExtractor",
+	"method": "processDir",
+	"line": 60
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "classLoader = $stack10",
+"location": {
+  "file": "",
+  "class": "org.designwizard.extractor.asm.ASMExtractor",
+  "method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+  "line": "60"
+},
+"stackTrace": ["(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, classLoader = $stack10, 60)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke classLoader.<java.net.URLClassLoader: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.designwizard.extractor.asm.ASMExtractor",
+  "method": "<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>",
+  "line": "77"
+},
+"stackTrace": ["(<org.designwizard.extractor.asm.ASMExtractor: void processDir(java.lang.String)>, virtualinvoke classLoader.<java.net.URLClassLoader: void close()>(), 77)"]
+}]
+}
+}
+
+]

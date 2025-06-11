@@ -1,0 +1,109 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "o - o",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "o = (org.overture.ast.node.INode) $stack5",
+				"location": {
+					"file": "",
+					"class": "org.overture.ast.node.NodeList",
+					"method": "clear",
+					"line": 123
+				},
+				"stackTrace": [{
+	"class": "org.overture.pog.obligation.POOperationDefinitionContext",
+	"method": "makeBinds",
+	"line": 120
+},{
+	"class": "org.overture.ast.patterns.PMultipleBindBase",
+	"method": "setPlist",
+	"line": 195
+},{
+	"class": "org.overture.ast.node.NodeList",
+	"method": "clear",
+	"line": 123
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "o = (org.overture.ast.node.INode) $stack5",
+				"location": {
+					"file": "",
+					"class": "org.overture.ast.node.NodeList",
+					"method": "clear",
+					"line": 123
+				},
+				"stackTrace": [{
+	"class": "org.overture.pog.obligation.POOperationDefinitionContext",
+	"method": "makeBinds",
+	"line": 120
+},{
+	"class": "org.overture.ast.patterns.PMultipleBindBase",
+	"method": "setPlist",
+	"line": 195
+},{
+	"class": "org.overture.ast.node.NodeList",
+	"method": "clear",
+	"line": 123
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.overture.ast.patterns.ATypeMultipleBind: org.overture.ast.types.PType _type> - this.<org.overture.ast.patterns.ATypeMultipleBind: org.overture.ast.types.PType _type>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.overture.ast.patterns.ATypeMultipleBind: org.overture.ast.types.PType _type> = value",
+				"location": {
+					"file": "",
+					"class": "org.overture.ast.patterns.ATypeMultipleBind",
+					"method": "setType",
+					"line": 209
+				},
+				"stackTrace": [{
+	"class": "org.overture.pog.obligation.POOperationDefinitionContext",
+	"method": "makeBinds",
+	"line": 121
+},{
+	"class": "org.overture.ast.patterns.ATypeMultipleBind",
+	"method": "setType",
+	"line": 209
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.overture.ast.patterns.ATypeMultipleBind: org.overture.ast.types.PType _type> = value",
+				"location": {
+					"file": "",
+					"class": "org.overture.ast.patterns.ATypeMultipleBind",
+					"method": "setType",
+					"line": 209
+				},
+				"stackTrace": [{
+	"class": "org.overture.pog.obligation.POOperationDefinitionContext",
+	"method": "makeBinds",
+	"line": 121
+},{
+	"class": "org.overture.ast.patterns.ATypeMultipleBind",
+	"method": "setType",
+	"line": 209
+}]
+			}
+		]
+	}
+}
+
+]

@@ -1,0 +1,88 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack28 = interfaceinvoke $stack27.<javax.'annotation'.processing.ProcessingEnvironment: javax.'annotation'.processing.Filer getFiler()>()",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "98"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack28 = interfaceinvoke $stack27.<javax.'annotation'.processing.ProcessingEnvironment: javax.'annotation'.processing.Filer getFiler()>(), 98)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, '', 'i18n_report.csv', $stack29)",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "98"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, '', 'i18n_report.csv', $stack29), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack41 = interfaceinvoke file#22.<javax.tools.FileObject: java.net.URI toUri()>()",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "116"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack41 = interfaceinvoke file#22.<javax.tools.FileObject: java.net.URI toUri()>(), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack40 = virtualinvoke tmp$1705281026.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('written ')",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "116"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack40 = virtualinvoke tmp$1705281026.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('written '), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack42 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack41)",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "116"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack42 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack41), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack43 = virtualinvoke $stack42.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "116"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack43 = virtualinvoke $stack42.<java.lang.StringBuilder: java.lang.String toString()>(), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack37.<javax.'annotation'.processing.Messager: void printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)>($stack39, $stack43)",
+"location": {
+  "file": "",
+  "class": "org.ez18n.apt.processor.CSVReportProcessor",
+  "method": "<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>",
+  "line": "116"
+},
+"stackTrace": ["(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, interfaceinvoke $stack37.<javax.'annotation'.processing.Messager: void printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)>($stack39, $stack43), 116)"]
+}]
+}
+}
+
+]

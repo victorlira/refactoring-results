@@ -1,0 +1,637 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<com.mercadopago.net.MPRequest$MPRequestBuilder: java.lang.String uri> - this.<com.mercadopago.net.MPRequest$MPRequestBuilder: java.lang.String uri>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<com.mercadopago.net.MPRequest$MPRequestBuilder: java.lang.String uri> = uri",
+				"location": {
+					"file": "",
+					"class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+					"method": "uri",
+					"line": 11
+				},
+				"stackTrace": [{
+	"class": "com.mercadopago.client.MercadoPagoClient",
+	"method": "buildRequest",
+	"line": 213
+},{
+	"class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+	"method": "uri",
+	"line": 11
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<com.mercadopago.net.MPRequest$MPRequestBuilder: java.lang.String uri> = uri",
+				"location": {
+					"file": "",
+					"class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+					"method": "uri",
+					"line": 11
+				},
+				"stackTrace": [{
+	"class": "com.mercadopago.client.MercadoPagoClient",
+	"method": "buildRequest",
+	"line": 213
+},{
+	"class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+	"method": "uri",
+	"line": 11
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "213"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path), 213)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "214"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "215"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "216"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method), 216)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "217"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "218"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "219"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke $stack16.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>($stack17)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack18 = virtualinvoke $stack16.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>($stack17), 220)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder socketTimeout(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack20 = virtualinvoke $stack18.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder socketTimeout(int)>($stack19), 221)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack20 = virtualinvoke $stack18.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder socketTimeout(int)>($stack19)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "221"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack20 = virtualinvoke $stack18.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder socketTimeout(int)>($stack19), 221)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "213"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path), 213)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "214"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "215"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "216"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method), 216)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "217"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "218"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "219"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack18 = virtualinvoke $stack16.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>($stack17), 220)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mercadopago.net.MPRequest$MPRequestBuilder: int connectionTimeout> = connectionTimeout",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>",
+  "line": "11"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack18 = virtualinvoke $stack16.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>($stack17), 220)","(<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>, this.<com.mercadopago.net.MPRequest$MPRequestBuilder: int connectionTimeout> = connectionTimeout, 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "213"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path), 213)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "214"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "215"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "216"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method), 216)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "217"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "218"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "219"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "213"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack7 = virtualinvoke $stack6.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder uri(java.lang.String)>(path), 213)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "214"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack9 = virtualinvoke $stack7.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder accessToken(java.lang.String)>($stack8), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "215"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack10 = virtualinvoke $stack9.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder payload(com.google.gson.JsonObject)>(payload), 215)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "216"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack11 = virtualinvoke $stack10.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder method(com.mercadopago.net.HttpMethod)>(method), 216)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "217"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack12 = virtualinvoke $stack11.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder queryParams(java.util.Map)>(queryParams), 217)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "218"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack14 = virtualinvoke $stack12.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder headers(java.util.Map)>($stack13), 218)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mercadopago.net.MPRequest$MPRequestBuilder",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.net.MPRequest$MPRequestBuilder",
+  "method": "<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "219"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack16 = virtualinvoke $stack14.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionRequestTimeout(int)>($stack15), 219)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke $stack16.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>($stack17)",
+"location": {
+  "file": "",
+  "class": "com.mercadopago.client.MercadoPagoClient",
+  "method": "<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mercadopago.client.MercadoPagoClient: com.mercadopago.net.MPRequest buildRequest(java.lang.String,com.mercadopago.net.HttpMethod,com.google.gson.JsonObject,java.util.Map,com.mercadopago.core.MPRequestOptions)>, $stack18 = virtualinvoke $stack16.<com.mercadopago.net.MPRequest$MPRequestBuilder: com.mercadopago.net.MPRequest$MPRequestBuilder connectionTimeout(int)>($stack17), 220)"]
+}]
+}
+}
+
+]

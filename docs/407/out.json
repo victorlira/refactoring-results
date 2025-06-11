@@ -1,0 +1,74 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.modules.MavenArtifactUtil",
+  "method": "<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>",
+  "line": "341"
+},
+"stackTrace": ["(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.modules.MavenArtifactUtil",
+  "method": "<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>",
+  "line": "344"
+},
+"stackTrace": ["(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.modules.MavenArtifactUtil",
+  "method": "<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>",
+  "line": "341"
+},
+"stackTrace": ["(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, connection = virtualinvoke url.<java.net.URL: java.net.URLConnection openConnection()>(), 341)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.modules.MavenArtifactUtil",
+  "method": "<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>",
+  "line": "344"
+},
+"stackTrace": ["(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, bis = virtualinvoke connection.<java.net.URLConnection: java.io.InputStream getInputStream()>(), 344)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$378196591)",
+"location": {
+  "file": "",
+  "class": "org.jboss.modules.MavenArtifactUtil",
+  "method": "<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>",
+  "line": "347"
+},
+"stackTrace": ["(<org.jboss.modules.MavenArtifactUtil: void downloadFile(java.lang.String,java.lang.String,java.io.File)>, staticinvoke <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>(bis, $stack18, tmp$378196591), 347)"]
+}]
+}
+}
+
+]

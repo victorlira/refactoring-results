@@ -1,0 +1,521 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(),848,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack9 = l2.<java.lang.String: char[] value>,983,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack9 = l2.<java.lang.String: char[] value>, 983)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack10 = lengthof $stack9,983,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack10 = lengthof $stack9, 983)) SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,artifact = (org.eclipse.aether.artifact.Artifact) $stack14,859,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)) => Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(),850,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(), 850)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack9 = l2.<java.lang.String: char[] value>,983,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack9 = l2.<java.lang.String: char[] value>, 983)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack10 = lengthof $stack9,983,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack10 = lengthof $stack9, 983))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 859
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 859
+},{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 850
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 983
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 983
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>()",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 848
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 848
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 983
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 983
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack10 = lengthof $stack9",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 983
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>(),849,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>(), 849)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack13 = l5[l6],988,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack13 = l5[l6], 988)) SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,artifact = (org.eclipse.aether.artifact.Artifact) $stack14,859,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)) => Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(),850,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(), 850)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack13 = l5[l6],988,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack13 = l5[l6], 988))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 859
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 859
+},{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 850
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 985
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 988
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>()",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 849
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 849
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 985
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 988
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack13 = l5[l6]",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 988
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>(),849,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>(), 849)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,artifact = (org.eclipse.aether.artifact.Artifact) $stack14,859,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)) => Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(),850,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(), 850)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 859
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 859
+},{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 850
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>()",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 849
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 849
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l2 = (java.lang.String) l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 981
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(),848,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack7 = l1 instanceof java.lang.String,980,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack7 = l1 instanceof java.lang.String, 980)) SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,artifact = (org.eclipse.aether.artifact.Artifact) $stack14,859,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)) => Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(),850,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(), 850)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack7 = l1 instanceof java.lang.String,980,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack7 = l1 instanceof java.lang.String, 980))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 859
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 859
+},{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 850
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 980
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>()",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 848
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 848
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 980
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack7 = l1 instanceof java.lang.String",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 980
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(),848,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985)) SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,artifact = (org.eclipse.aether.artifact.Artifact) $stack14,859,SourceNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)) => Node(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>,$stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(),850,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack23 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getClassifier()>(), 850)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l2 = (java.lang.String) l1,981,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l2 = (java.lang.String) l1, 981)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l5 = l2.<java.lang.String: char[] value>,985,SinkNode, path: (<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848) => (<java.lang.String: boolean equals(java.lang.Object)>, l5 = l2.<java.lang.String: char[] value>, 985))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 859
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 859
+},{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 850
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 985
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>()",
+				"location": {
+					"file": "",
+					"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+					"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+					"line": 848
+				},
+				"stackTrace": [{
+	"class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+	"method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+	"line": 848
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 981
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 985
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l5 = l2.<java.lang.String: char[] value>",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 985
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "859"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack14 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(), 859)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "859"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>()",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "848"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack16 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getGroupId()>(), 848)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16)",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "848"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack17 = virtualinvoke $stack15.<java.lang.String: boolean equals(java.lang.Object)>($stack16), 848)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "859"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack14 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(), 859)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "artifact = (org.eclipse.aether.artifact.Artifact) $stack14",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "859"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, artifact = (org.eclipse.aether.artifact.Artifact) $stack14, 859)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>()",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "849"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack20 = interfaceinvoke artifact.<org.eclipse.aether.artifact.Artifact: java.lang.String getArtifactId()>(), 849)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke $stack19.<java.lang.String: boolean equals(java.lang.Object)>($stack20)",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "849"
+},
+"stackTrace": ["(<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>, $stack21 = virtualinvoke $stack19.<java.lang.String: boolean equals(java.lang.Object)>($stack20), 849)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack21 == 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "com.akathist.maven.plugins.launch4j.Launch4jMojo",
+  "method": "<com.akathist.maven.plugins.launch4j.Launch4jMojo: java.lang.String getLaunch4jVersion()>",
+  "line": "849"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

@@ -1,0 +1,334 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Part: java.lang.String id>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Part",
+  "method": "<org.openpnp.model.Part: java.lang.String getId()>",
+  "line": "75"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, partSettings = virtualinvoke this.<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>(part), 70)","(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>, $stack4 = virtualinvoke part.<org.openpnp.model.Part: java.lang.String getId()>(), 300)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke part.<org.openpnp.model.Part: java.lang.String getId()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>",
+  "line": "300"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, partSettings = virtualinvoke this.<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>(part), 70)","(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>, $stack4 = virtualinvoke part.<org.openpnp.model.Part: java.lang.String getId()>(), 300)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack5 = interfaceinvoke $stack3.<java.util.Map: java.lang.Object get(java.lang.Object)>($stack4)",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>",
+  "line": "300"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, partSettings = virtualinvoke this.<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>(part), 70)","(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>, $stack5 = interfaceinvoke $stack3.<java.util.Map: java.lang.Object get(java.lang.Object)>($stack4), 300)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "partSettings = (org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings) $stack5",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>",
+  "line": "300"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, partSettings = virtualinvoke this.<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>(part), 70)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "partSettings = virtualinvoke this.<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>(part)",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "70"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, partSettings = virtualinvoke this.<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings getPartSettings(org.openpnp.model.Part)>(part), 70)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "156"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 156)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.vision.pipeline.CvPipeline",
+"location": {
+  "file": "",
+  "class": "org.openpnp.vision.pipeline.CvPipeline",
+  "method": "<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = this.<org.openpnp.vision.pipeline.CvPipeline: java.util.Map properties>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.vision.pipeline.CvPipeline",
+  "method": "<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>",
+  "line": "318"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)","(<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>, $stack3 = this.<org.openpnp.vision.pipeline.CvPipeline: java.util.Map properties>, 318)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "101"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.vision.pipeline.CvPipeline",
+"location": {
+  "file": "",
+  "class": "org.openpnp.vision.pipeline.CvPipeline",
+  "method": "<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = this.<org.openpnp.vision.pipeline.CvPipeline: java.util.Map properties>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.vision.pipeline.CvPipeline",
+  "method": "<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>",
+  "line": "318"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)","(<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>, $stack3 = this.<org.openpnp.vision.pipeline.CvPipeline: java.util.Map properties>, 318)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline pipeline>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>",
+  "line": "356"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "156"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 156)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.vision.pipeline.CvPipeline",
+"location": {
+  "file": "",
+  "class": "org.openpnp.vision.pipeline.CvPipeline",
+  "method": "<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = this.<org.openpnp.vision.pipeline.CvPipeline: java.util.Map properties>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.vision.pipeline.CvPipeline",
+  "method": "<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>",
+  "line": "318"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)","(<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>, $stack3 = this.<org.openpnp.vision.pipeline.CvPipeline: java.util.Map properties>, 318)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "101"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('nozzle', nozzle)",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "103"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('nozzle', nozzle), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "101"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera)",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "102"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline pipeline>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>",
+  "line": "356"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "101"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('nozzle', nozzle)",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "103"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('nozzle', nozzle), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline pipeline>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>",
+  "line": "356"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "101"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, pipeline = virtualinvoke partSettings.<org.openpnp.machine.reference.vision.ReferenceBottomVision$PartSettings: org.openpnp.vision.pipeline.CvPipeline getPipeline()>(), 101)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera)",
+"location": {
+  "file": "",
+  "class": "org.openpnp.machine.reference.vision.ReferenceBottomVision",
+  "method": "<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>",
+  "line": "102"
+},
+"stackTrace": ["(<org.openpnp.machine.reference.vision.ReferenceBottomVision: org.openpnp.spi.PartAlignment$PartAlignmentOffset findOffsets(org.openpnp.model.Part,org.openpnp.model.BoardLocation,org.openpnp.model.Location,org.openpnp.spi.Nozzle)>, virtualinvoke pipeline.<org.openpnp.vision.pipeline.CvPipeline: void setProperty(java.lang.String,java.lang.Object)>('camera', camera), 102)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,122 @@
+Running soot scenario cucumber-reporting;net.masterthought.cucumber.util.Util;collectSteps(Step[], Closure<String,Step>);78e3dc94e23908b6afcefd9725537bc3d674ff77
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/78e3dc94e23908b6afcefd9725537bc3d674ff77/original-without-dependencies/cucumber-reporting-0.0.19-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,49000
+Time to perform Confluence 1 Inter 0,33300
+Configure Soot Confluence 2 Inter 0,16900
+Time to perform Confluence 2 Inter 0,04800
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack12 := @caughtexception,107,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114))
+SINK=>BASE: Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114))]
+Confluence interference in <net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>
+Confluence flows from execution of lines 113 and 113 to line 114, defined in e#3 = $stack12 and e#3 = $stack12 and used in $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>()
+Caused by line 113 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)
+Caused by line 113 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)
+Caused by line 114 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/78e3dc94e23908b6afcefd9725537bc3d674ff77/original-without-dependencies/cucumber-reporting-0.0.19-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,54100
+Runtime: 0.008s
+Time to perform OA Inter 0,57800
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/78e3dc94e23908b6afcefd9725537bc3d674ff77/original-without-dependencies/cucumber-reporting-0.0.19-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41200
+Time to perform DFP Inter 0,32900
+Depth limit: 5
+CONFLICTS: DF interference in <net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>
+Data flows from execution of line 113 to 113, defined in $stack12 := @caughtexception and propagated in e#3 = $stack12
+Caused by line 113 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)
+Caused by line 113 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)
+DF interference in <net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>
+Data flows from execution of line 113 to 114, defined in $stack12 := @caughtexception and propagated in virtualinvoke $stack14.<java.io.PrintStream: void println(java.lang.String)>($stack18)
+Caused by line 113 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)
+Caused by line 114 flow: path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, virtualinvoke $stack14.<java.io.PrintStream: void println(java.lang.String)>($stack18), 114)
+[List(Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack12 := @caughtexception,107,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(),114,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16),114,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16), 114)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>(),114,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>(), 114)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,virtualinvoke $stack14.<java.io.PrintStream: void println(java.lang.String)>($stack18),114,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, virtualinvoke $stack14.<java.io.PrintStream: void println(java.lang.String)>($stack18), 114))), List(Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack12 := @caughtexception,107,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)))]
+Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/78e3dc94e23908b6afcefd9725537bc3d674ff77/original-without-dependencies/cucumber-reporting-0.0.19-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,59600
+Time to perform DFP Inter 0,33000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/78e3dc94e23908b6afcefd9725537bc3d674ff77/original-without-dependencies/cucumber-reporting-0.0.19-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62000
+Time to perform PDG 0,44100
+CONFLICTS: [List(Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,if list != null goto e = list,106,SourceNode, path: ) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,l5 = 0,110,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, l5 = l5 + 1, 110)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,l5 = l5 + 1,110,SimpleNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, l5 = l5 + 1, 110)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,if l5 >= l4 goto (branch),110,SimpleNode, path: ) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack8 = interfaceinvoke clo.<net.masterthought.cucumber.json.Closure: net.masterthought.cucumber.util.Util$Status call(java.lang.Object)>(t),111,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack8 = interfaceinvoke clo.<net.masterthought.cucumber.json.Closure: net.masterthought.cucumber.util.Util$Status call(java.lang.Object)>(t), 111))), List(Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack12 := @caughtexception,107,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113))), List(Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack12 := @caughtexception,107,SourceNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,e#3 = $stack12,113,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, e#3 = $stack12, 113)) => Node(<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>,$stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(),114,SinkNode, path: (<net.masterthought.cucumber.util.Util: java.util.List collectSteps(net.masterthought.cucumber.json.Step[],net.masterthought.cucumber.json.Closure)>, $stack16 = virtualinvoke e#3.<java.lang.Exception: java.lang.String getMessage()>(), 114)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/78e3dc94e23908b6afcefd9725537bc3d674ff77/original-without-dependencies/cucumber-reporting-0.0.19-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,53500
+Time to perform PDG 0,37900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

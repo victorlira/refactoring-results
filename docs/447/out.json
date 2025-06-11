@@ -1,0 +1,754 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack9 = new java.lang.String,68,SourceNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, specialinvoke $stack9.<java.lang.String: void <init>(byte[],java.lang.String)>(payload, 'UTF-8'), 68)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,payloadString = $stack9,68,SourceNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack9, 68)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(),76,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11),76,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(),76,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack31 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack30),88,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack31 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack30), 88)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,timestamp = virtualinvoke $stack31.<com.google.gson.JsonElement: long getAsLong()>(),88,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, timestamp = virtualinvoke $stack31.<com.google.gson.JsonElement: long getAsLong()>(), 88)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,timestamp = timestamp * 1000L,90,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, timestamp = timestamp * 1000L, 90)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,specialinvoke $stack17.<com.linkedin.camus.coders.CamusWrapper: void <init>(java.lang.Object,long)>(payloadString, timestamp),131,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, specialinvoke $stack17.<com.linkedin.camus.coders.CamusWrapper: void <init>(java.lang.Object,long)>(payloadString, timestamp), 131)) SINK=>BASE: Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,timestamp = virtualinvoke $stack50.<org.joda.time.DateTime: long getMillis()>(),101,SourceNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, timestamp = virtualinvoke $stack50.<org.joda.time.DateTime: long getMillis()>(), 101)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,specialinvoke $stack17.<com.linkedin.camus.coders.CamusWrapper: void <init>(java.lang.Object,long)>(payloadString, timestamp),131,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, specialinvoke $stack17.<com.linkedin.camus.coders.CamusWrapper: void <init>(java.lang.Object,long)>(payloadString, timestamp), 131))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "timestamp = virtualinvoke $stack50.<org.joda.time.DateTime: long getMillis()>()",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+					"line": 101
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 101
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 131
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack9 = new java.lang.String",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+					"line": 68
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 68
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 68
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 76
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 76
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 76
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 88
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 88
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 90
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 131
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack17.<com.linkedin.camus.coders.CamusWrapper: void <init>(java.lang.Object,long)>(payloadString, timestamp)",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+					"line": 131
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,payloadString = $stack96,71,SourceNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack96, 71)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(),76,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11),76,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(),76,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack31 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack30),88,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack31 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack30), 88)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,timestamp = virtualinvoke $stack31.<com.google.gson.JsonElement: long getAsLong()>(),88,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, timestamp = virtualinvoke $stack31.<com.google.gson.JsonElement: long getAsLong()>(), 88)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,timestamp = timestamp * 1000L,90,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, timestamp = timestamp * 1000L, 90)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack16 = timestamp cmp 0L,125,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack16 = timestamp cmp 0L, 125)) SINK=>BASE: Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,timestamp = virtualinvoke $stack50.<org.joda.time.DateTime: long getMillis()>(),101,SourceNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, timestamp = virtualinvoke $stack50.<org.joda.time.DateTime: long getMillis()>(), 101)) => Node(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>,$stack16 = timestamp cmp 0L,125,SinkNode, path: (<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack16 = timestamp cmp 0L, 125))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "timestamp = virtualinvoke $stack50.<org.joda.time.DateTime: long getMillis()>()",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+					"line": 101
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 101
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 125
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "payloadString = $stack96",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+					"line": 71
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 71
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 76
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 76
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 76
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 88
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 88
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 90
+},{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+	"line": 125
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack16 = timestamp cmp 0L",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+					"line": 125
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "e - e",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "e = $stack94",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "decode",
+					"line": 69
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "decode",
+	"line": 69
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "e = $stack72",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+					"method": "decode",
+					"line": 102
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+	"method": "decode",
+	"line": 102
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "payloadString = $stack9",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack9, 68)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack80 = virtualinvoke $stack78.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Could not parse timestamp \'')",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack80 = virtualinvoke $stack78.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Could not parse timestamp \''), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack81 = virtualinvoke $stack80.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(e#6)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack81 = virtualinvoke $stack80.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(e#6), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack82 = virtualinvoke $stack81.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' as ISO-8601 while decoding JSON message.')",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack82 = virtualinvoke $stack81.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' as ISO-8601 while decoding JSON message.'), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack83 = virtualinvoke $stack82.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack83 = virtualinvoke $stack82.<java.lang.StringBuilder: java.lang.String toString()>(), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "payloadString = $stack74",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "71"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack74, 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack50.<org.joda.time.DateTime: void <init>(java.lang.Object)>(e#6)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "101"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, specialinvoke $stack50.<org.joda.time.DateTime: void <init>(java.lang.Object)>(e#6), 101)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "payloadString = $stack9",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack9, 68)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47), 99)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "payloadString = $stack74",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "71"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack74, 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack80 = virtualinvoke $stack78.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Could not parse timestamp \'')",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack80 = virtualinvoke $stack78.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Could not parse timestamp \''), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack81 = virtualinvoke $stack80.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(e#6)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack81 = virtualinvoke $stack80.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(e#6), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack82 = virtualinvoke $stack81.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' as ISO-8601 while decoding JSON message.')",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack82 = virtualinvoke $stack81.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' as ISO-8601 while decoding JSON message.'), 103)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack83 = virtualinvoke $stack82.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack83 = virtualinvoke $stack82.<java.lang.StringBuilder: java.lang.String toString()>(), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "payloadString = $stack74",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "71"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack74, 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47), 99)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "payloadString = $stack9",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, payloadString = $stack9, 68)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack11 = virtualinvoke payloadString.<java.lang.String: java.lang.String trim()>(), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack12 = virtualinvoke $stack10.<com.google.gson.JsonParser: com.google.gson.JsonElement parse(java.lang.String)>($stack11), 76)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "76"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, jsonObject = virtualinvoke $stack12.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>(), 76)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, $stack48 = virtualinvoke jsonObject.<com.google.gson.JsonObject: com.google.gson.JsonElement get(java.lang.String)>($stack47), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, e#6 = virtualinvoke $stack48.<com.google.gson.JsonElement: java.lang.String getAsString()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack50.<org.joda.time.DateTime: void <init>(java.lang.Object)>(e#6)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder",
+  "method": "<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>",
+  "line": "101"
+},
+"stackTrace": ["(<com.linkedin.camus.etl.kafka.coders.JsonStringMessageDecoder: com.linkedin.camus.coders.CamusWrapper decode(byte[])>, specialinvoke $stack50.<org.joda.time.DateTime: void <init>(java.lang.Object)>(e#6), 101)"]
+}]
+}
+}
+
+]

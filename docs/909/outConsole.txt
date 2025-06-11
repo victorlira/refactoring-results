@@ -1,0 +1,126 @@
+Running soot scenario nailgun;com.martiansoftware.nailgun.NGSession;run();7f1e1bc712bec6ad375f7d0e6cdc46323126b448
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nailgun/7f1e1bc712bec6ad375f7d0e6cdc46323126b448/original-without-dependencies/nailgun-server-0.9.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,49700
+An error occurred in getInvokeExpr with args: specialinvoke $stack2.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$108049354.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$1590028899.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform Confluence 1 Inter 2,48100
+Configure Soot Confluence 2 Inter 0,28800
+An error occurred in getInvokeExpr with args: specialinvoke $stack2.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$1561240239.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$1013103333.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform Confluence 2 Inter 2,24100
+Visited methods: 172
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<com.martiansoftware.nailgun.NGSession: void run()>,tmp$1071245351 = new java.lang.String,206,SourceNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, specialinvoke tmp$1071245351.<java.lang.String: void <init>(byte[],java.lang.String)>(b, 'UTF-8'), 206)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,line = tmp$1071245351,206,SourceNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, line = tmp$1071245351, 206)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,command = line,228,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, command = line, 228)) => Node(<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>,l0 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114), 267)) => Node(<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>,$stack7 = staticinvoke <java.lang.Class: java.lang.Class forName0(java.lang.String,boolean,java.lang.ClassLoader,java.lang.Class)>(l0, l1, l2, l3),348,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114), 267)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114),267,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114), 267)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,virtualinvoke $stack88.<com.martiansoftware.nailgun.NGServer: void nailFinished(java.lang.Class)>(key),338,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, virtualinvoke $stack88.<com.martiansoftware.nailgun.NGServer: void nailFinished(java.lang.Class)>(key), 338))
+SINK=>BASE: Node(<com.martiansoftware.nailgun.NGSession: void run()>,$stack162 := @caughtexception,353,SourceNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, l20 = $stack162, 338)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,l20 = $stack162,338,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, l20 = $stack162, 338))]
+Confluence interference in <com.martiansoftware.nailgun.NGSession: void run()>
+Confluence flows from execution of lines 206 and 338 to line 338, defined in specialinvoke tmp$1071245351.<java.lang.String: void <init>(byte[],java.lang.String)>(b, "UTF-8") and l20 = $stack162 and used in l20 = $stack162
+Caused by line 206 flow: path: (<com.martiansoftware.nailgun.NGSession: void run()>, specialinvoke tmp$1071245351.<java.lang.String: void <init>(byte[],java.lang.String)>(b, 'UTF-8'), 206)
+Caused by line 338 flow: path: (<com.martiansoftware.nailgun.NGSession: void run()>, l20 = $stack162, 338)
+Caused by line 338 flow: path: (<com.martiansoftware.nailgun.NGSession: void run()>, l20 = $stack162, 338)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nailgun/7f1e1bc712bec6ad375f7d0e6cdc46323126b448/original-without-dependencies/nailgun-server-0.9.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,72900
+Runtime: 0.074s
+Time to perform OA Inter 1,05500
+OA Inter Visited methods: 148
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nailgun/7f1e1bc712bec6ad375f7d0e6cdc46323126b448/original-without-dependencies/nailgun-server-0.9.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,71600
+An error occurred in getInvokeExpr with args: specialinvoke $stack2.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$818010696.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$538721498.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform DFP Inter 2,03600
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 86
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nailgun/7f1e1bc712bec6ad375f7d0e6cdc46323126b448/original-without-dependencies/nailgun-server-0.9.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,65400
+An error occurred in getInvokeExpr with args: specialinvoke $stack2.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$818010696.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$538721498.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform DFP Inter 2,00900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 86
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nailgun/7f1e1bc712bec6ad375f7d0e6cdc46323126b448/original-without-dependencies/nailgun-server-0.9.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,45700
+An error occurred in getInvokeExpr with args: specialinvoke tmp$108049354.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$1590028899.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform PDG 0,87100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nailgun/7f1e1bc712bec6ad375f7d0e6cdc46323126b448/original-without-dependencies/nailgun-server-0.9.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,67300
+An error occurred in getInvokeExpr with args: specialinvoke tmp$108049354.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$1590028899.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform PDG 0,99300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

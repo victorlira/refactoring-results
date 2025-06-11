@@ -1,0 +1,175 @@
+Running soot scenario movsim;org.movsim.simulator.Simulator;matchRoadSegmentsAndRoadInput(List<Road>);633cf8a7804a537c3b908eff2ec21dc4213d9b77
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 2,09700
+Time to perform Confluence 1 Inter 6,33900
+Configure Soot Confluence 2 Inter 1,43600
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.nodeToString(ConfluenceConflict.java:126)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.lambda$pathToString$0(ConfluenceConflict.java:118)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.pathToString(ConfluenceConflict.java:120)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.toString(ConfluenceConflict.java:41)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.hashCode(ConfluenceConflict.java:135)
+	at java.util.HashMap.hash(HashMap.java:339)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.intersectPathsByLastNode(DFPConfluenceAnalysis.java:232)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:157)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 2,36900
+Runtime: 0.094s
+OA interference in class Simulator, method void matchRoadSegmentsAndRoadInput(java.util.List), execution of line 203 overrides 204, assigning to variable String.<java.lang.String: int hash>, 
+Caused by line 203 flow:
+at org.movsim.simulator.Simulator.matchRoadSegmentsAndRoadInput(Simulator.java:203)
+at org.slf4j.impl.Log4jLoggerAdapter.info(Log4jLoggerAdapter.java:323)
+at org.slf4j.helpers.MessageFormatter.format(MessageFormatter.java:124)
+at org.slf4j.helpers.MessageFormatter.arrayFormat(MessageFormatter.java:208)
+at java.lang.String.substring(String.java:1969)
+And line 204 flow:
+at org.movsim.simulator.Simulator.matchRoadSegmentsAndRoadInput(Simulator.java:204)
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:208)
+at java.lang.String.valueOf(String.java:2994)
+at java.lang.Object.toString(Object.java:236)
+at java.lang.String.hashCode(String.java:1473)
+ 
+Time to perform OA Inter 3,24100
+OA Inter Visited methods: 87
+ Analysis results
+----------------------------
+ Number of conflicts: 24
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 2,02700
+Time to perform DFP Inter 4,44700
+Depth limit: 5
+CONFLICTS: DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Data flows from execution of line 203 to 203, defined in $stack1 = this.<org.movsim.autogen.Road: java.lang.String id> and propagated in interfaceinvoke $stack8.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>("roadInput.getId()={}", $stack10)
+Caused by line 203 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)
+Caused by line 203 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, interfaceinvoke $stack8.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('roadInput.getId()={}', $stack10), 203)
+DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.movsim.autogen.Road: java.lang.String getId()>,$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>,287,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(),203,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,interfaceinvoke $stack8.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>("roadInput.getId()={}", $stack10),203,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, interfaceinvoke $stack8.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>('roadInput.getId()={}', $stack10), 203))), List(Node(<org.movsim.autogen.Road: java.lang.String getId()>,$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>,287,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.autogen.Road: java.lang.String getId()>,return $stack1,287,SinkNode, path: ))]
+Visited methods: 173
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 2,30600
+Time to perform DFP Inter 4,22200
+Depth limit: 5
+CONFLICTS: DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Data flows from execution of line 202 to 204, defined in l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>() and propagated in $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage)
+Caused by line 202 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)
+Caused by line 204 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204) => (<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208)
+DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Data flows from execution of line 203 to 204, defined in $stack1 = this.<org.movsim.autogen.Road: java.lang.String id> and propagated in $stack11 = virtualinvoke $stack10.<java.lang.String: boolean equals(java.lang.Object)>(userId)
+Caused by line 203 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)
+Caused by line 204 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack13 = virtualinvoke $stack11.<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>($stack12), 204) => (<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>, $stack11 = virtualinvoke $stack10.<java.lang.String: boolean equals(java.lang.Object)>(userId), 95)
+DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Data flows from execution of line 202 to 204, defined in l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>() and propagated in $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("cannot find roadId=\"")
+Caused by line 202 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)
+Caused by line 204 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\''), 204)
+DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Data flows from execution of line 203 to 204, defined in $stack1 = this.<org.movsim.autogen.Road: java.lang.String id> and propagated in $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("cannot find roadId=\"")
+Caused by line 203 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)
+Caused by line 204 flow: path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\''), 204)
+DF interference in <org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.movsim.autogen.Road: java.lang.String getId()>,$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>,287,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(),205,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 205)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("cannot find roadId=\""),204,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\''), 204))), List(Node(<org.movsim.autogen.Road: java.lang.String getId()>,$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>,287,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.autogen.Road: java.lang.String getId()>,return $stack1,287,SinkNode, path: )), List(Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(),202,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(),208,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(), 208)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,roadInput = (org.movsim.autogen.Road) $stack7,208,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, roadInput = (org.movsim.autogen.Road) $stack7, 208)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(),205,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 205)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16),205,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack17 = virtualinvoke $stack15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack16), 205)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\" in road network."),205,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack18 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('\' in road network.'), 205)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack19 = virtualinvoke $stack18.<java.lang.StringBuilder: java.lang.String toString()>(),205,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack19 = virtualinvoke $stack18.<java.lang.StringBuilder: java.lang.String toString()>(), 205)) => Node(<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>,errorMessage := @parameter1: java.lang.Object,-1,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204)) => Node(<java.lang.String: java.lang.String valueOf(java.lang.Object)>,l0 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204) => (<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208)) => Node(<java.lang.String: java.lang.String valueOf(java.lang.Object)>,$stack1 = virtualinvoke l0.<java.lang.Object: java.lang.String toString()>(),2994,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204) => (<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208)) => Node(<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>,$stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage),208,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack20 = staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>($stack13, $stack19), 204) => (<com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>, $stack3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(errorMessage), 208))), List(Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(),202,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(),208,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(), 208)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,roadInput = (org.movsim.autogen.Road) $stack7,208,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, roadInput = (org.movsim.autogen.Road) $stack7, 208)) => Node(<org.movsim.autogen.Road: java.lang.String getId()>,this := @this: org.movsim.autogen.Road,-1,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.autogen.Road: java.lang.String getId()>,$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>,287,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.autogen.Road: java.lang.String getId()>,return $stack1,287,SinkNode, path: )), List(Node(<org.movsim.autogen.Road: java.lang.String getId()>,$stack1 = this.<org.movsim.autogen.Road: java.lang.String id>,287,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack10 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 203)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack12 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(),204,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack12 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 204)) => Node(<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>,userId := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack13 = virtualinvoke $stack11.<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>($stack12), 204)) => Node(<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>,$stack11 = virtualinvoke $stack10.<java.lang.String: boolean equals(java.lang.Object)>(userId),95,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack13 = virtualinvoke $stack11.<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>($stack12), 204) => (<org.movsim.simulator.roadnetwork.RoadNetwork: org.movsim.simulator.roadnetwork.RoadSegment findByUserId(java.lang.String)>, $stack11 = virtualinvoke $stack10.<java.lang.String: boolean equals(java.lang.Object)>(userId), 95))), List(Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(),202,SourceNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, l2 = interfaceinvoke roads.<java.util.List: java.util.Iterator iterator()>(), 202)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(),208,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack7 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>(), 208)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,roadInput = (org.movsim.autogen.Road) $stack7,208,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, roadInput = (org.movsim.autogen.Road) $stack7, 208)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(),205,SimpleNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack16 = virtualinvoke roadInput.<org.movsim.autogen.Road: java.lang.String getId()>(), 205)) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,$stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("cannot find roadId=\""),204,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, $stack15 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('cannot find roadId=\''), 204)))]
+Visited methods: 173
+ Analysis results
+----------------------------
+ Number of conflicts: 6
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,91900
+Time to perform PDG 1,16800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/movsim/633cf8a7804a537c3b908eff2ec21dc4213d9b77/original-without-dependencies/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 2,02800
+Time to perform PDG 1,15200
+CONFLICTS: [List(Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,if $stack6 == 0 goto return,202,SourceNode, path: ) => Node(<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>,specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>(),204,SinkNode, path: (<org.movsim.simulator.Simulator: void matchRoadSegmentsAndRoadInput(java.util.List)>, specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>(), 204)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

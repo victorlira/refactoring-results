@@ -1,0 +1,1384 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "112"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack11 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 112)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "key = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.xnio.XnioExecutor$Key access$100(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>($stack11)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "112"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, key = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.xnio.XnioExecutor$Key access$100(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>($stack11), 112)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke key.<org.xnio.XnioExecutor$Key: boolean remove()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "114"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, interfaceinvoke key.<org.xnio.XnioExecutor$Key: boolean remove()>(), 114)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack14 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "117"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack14 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>, 117)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "tmp$1709199365 = (java.io.Closeable) $stack14",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, tmp$1709199365 = (java.io.Closeable) $stack14, -1)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack17 = this.<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: org.jboss.remoting3.remote.ClientConnectionOpenListener this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void lambda$handleEvent$1(javax.security.sasl.SaslClient,java.lang.String,int,org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication)>",
+  "line": "484"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void lambda$handleEvent$1(javax.security.sasl.SaslClient,java.lang.String,int,org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication)>, $stack17 = this.<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: org.jboss.remoting3.remote.ClientConnectionOpenListener this$0>, 484)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.ClientConnectionOpenListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "result#2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Result result>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "119"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, result#2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Result result>, 119)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "220"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)","(<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>, $stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 220)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: java.util.Queue access$000(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>($stack1)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "220"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "116"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "220"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)","(<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>, $stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 220)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Result result> = null",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "122"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Result result> = null, 122)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "result#2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Result result>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "119"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, result#2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Result result>, 119)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke result#2.<org.xnio.Result: boolean setException(java.io.IOException)>(e)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "121"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, interfaceinvoke result#2.<org.xnio.Result: boolean setException(java.io.IOException)>(e), 121)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>",
+  "line": "220"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)","(<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>, $stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 220)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: java.util.Queue access$000(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)","(<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>, $stack2 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: java.util.Queue access$000(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>($stack1), 220)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: java.util.Queue queue>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: java.util.Queue access$000(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>",
+  "line": "243"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack13 = virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>(), 116)","(<org.jboss.remoting3.remote.RemoteConnection: java.lang.Object getLock()>, $stack2 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: java.util.Queue access$000(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener)>($stack1), 220)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "112"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack11 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 112)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "104"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>",
+  "line": "644"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, $stack30 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack29), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack14 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>",
+  "line": "117"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication: void lambda$handleEvent$0(java.nio.ByteBuffer,org.jboss.remoting3.remote.MessageReader,org.xnio.Pooled)>, virtualinvoke $stack30.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>($stack31), 644)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>(e, 1), 104)","(<org.jboss.remoting3.remote.RemoteConnection: void handleException(java.io.IOException,boolean)>, $stack14 = this.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>, 117)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "386"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122), 386)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, $stack8 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>, 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.MessageReader",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void resumeReads()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack8.<org.jboss.remoting3.remote.MessageReader: void resumeReads()>(), 87)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = this.<org.jboss.remoting3.remote.MessageReader: java.lang.Object lock>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void resumeReads()>",
+  "line": "187"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack8.<org.jboss.remoting3.remote.MessageReader: void resumeReads()>(), 87)","(<org.jboss.remoting3.remote.MessageReader: void resumeReads()>, $stack3 = this.<org.jboss.remoting3.remote.MessageReader: java.lang.Object lock>, 187)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l1 = $stack3",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void resumeReads()>",
+  "line": "187"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack8.<org.jboss.remoting3.remote.MessageReader: void resumeReads()>(), 87)","(<org.jboss.remoting3.remote.MessageReader: void resumeReads()>, l1 = $stack3, 187)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "386"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122), 386)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "85"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, $stack7 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>, 85)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "386"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122), 386)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, $stack8 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>, 87)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack8.<org.jboss.remoting3.remote.MessageReader: void resumeReads()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack8.<org.jboss.remoting3.remote.MessageReader: void resumeReads()>(), 87)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "386"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122), 386)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "85"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, $stack7 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>, 85)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.MessageReader",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack7.<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>(listener), 85)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = this.<org.jboss.remoting3.remote.MessageReader: org.xnio.conduits.ConduitStreamSourceChannel sourceChannel>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>",
+  "line": "176"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack7.<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>(listener), 85)","(<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>, $stack5 = this.<org.jboss.remoting3.remote.MessageReader: org.xnio.conduits.ConduitStreamSourceChannel sourceChannel>, 176)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<org.xnio.conduits.ConduitStreamSourceChannel: void setReadListener(org.xnio.ChannelListener)>(readListener)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>",
+  "line": "176"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack7.<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>(listener), 85)","(<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>, virtualinvoke $stack5.<org.xnio.conduits.ConduitStreamSourceChannel: void setReadListener(org.xnio.ChannelListener)>(readListener), 176)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack209 = this.<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: org.jboss.remoting3.remote.ClientConnectionOpenListener this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "424"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack209 = this.<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: org.jboss.remoting3.remote.ClientConnectionOpenListener this$0>, 424)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.ClientConnectionOpenListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "386"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack123 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack122), 386)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>",
+  "line": "85"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, $stack7 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.MessageReader messageReader>, 85)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.MessageReader",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack7.<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>(listener), 85)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = this.<org.jboss.remoting3.remote.MessageReader: java.lang.Object lock>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.MessageReader",
+  "method": "<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>",
+  "line": "175"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack123.<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>(tmp$1576874484, 1), 386)","(<org.jboss.remoting3.remote.RemoteConnection: void setReadListener(org.xnio.ChannelListener,boolean)>, virtualinvoke $stack7.<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>(listener), 85)","(<org.jboss.remoting3.remote.MessageReader: void setReadListener(org.xnio.ChannelListener)>, $stack4 = this.<org.jboss.remoting3.remote.MessageReader: java.lang.Object lock>, 175)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack205 = this.<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: org.jboss.remoting3.remote.ClientConnectionOpenListener this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "426"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack205 = this.<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: org.jboss.remoting3.remote.ClientConnectionOpenListener this$0>, 426)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.ClientConnectionOpenListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.ClientConnectionOpenListener$Capabilities: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack26 = staticinvoke <org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>($stack25), 255)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.ClientConnectionOpenListener",
+  "method": "<org.jboss.remoting3.remote.ClientConnectionOpenListener: org.jboss.remoting3.remote.RemoteConnection access$000(org.jboss.remoting3.remote.ClientConnectionOpenListener)>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

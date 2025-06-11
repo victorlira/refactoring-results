@@ -1,0 +1,1420 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "ArrayList.<java.util.ArrayList: java.lang.Object[] elementData> - ArrayList.<java.util.ArrayList: java.lang.Object[] elementData>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "ArrayList.<java.util.ArrayList: java.lang.Object[] elementData> = null",
+				"location": {
+					"file": "",
+					"class": "java.util.ArrayList",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+	"method": "getSplits",
+	"line": 44
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "ArrayList.<java.util.ArrayList: java.lang.Object[] elementData> = null",
+				"location": {
+					"file": "",
+					"class": "java.util.ArrayList",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+	"method": "getSplits",
+	"line": 44
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "splits - splits",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "splits = $stack14",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+					"method": "getSplits",
+					"line": 44
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+	"method": "getSplits",
+	"line": 44
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "splits = $stack14",
+				"location": {
+					"file": "",
+					"class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+					"method": "getSplits",
+					"line": 44
+				},
+				"stackTrace": [{
+	"class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+	"method": "getSplits",
+	"line": 44
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "86"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 86)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "46"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "100"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack21 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>(), 100)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack16 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>(), 99)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke $stack16.<org.apache.hadoop.fs.Path: java.lang.String getName()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "99"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack17 = virtualinvoke $stack16.<org.apache.hadoop.fs.Path: java.lang.String getName()>(), 99)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "98"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack23 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>(), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack24 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>($stack23)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "98"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack24 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>($stack23), 98)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "dirs := @parameter1: java.util.List",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l4 = interfaceinvoke dirs.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "95"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l4 = interfaceinvoke dirs.<java.util.List: java.util.Iterator iterator()>(), 95)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "103"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack12 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>(), 103)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke $stack14.<java.util.ArrayList: void <init>()>(), 44)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "splits = $stack14",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, splits = $stack14, 44)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "splits := @parameter2: java.util.List",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke splits.<java.util.List: boolean addAll(java.util.Collection)>($stack25)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "90"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, interfaceinvoke splits.<java.util.List: boolean addAll(java.util.Collection)>($stack25), 90)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "98"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack23 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>(), 98)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "count = virtualinvoke $stack28.<org.apache.hadoop.fs.ContentSummary: long getFileCount()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, count = virtualinvoke $stack28.<org.apache.hadoop.fs.ContentSummary: long getFileCount()>(), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "fileCount = fileCount + count",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "71"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack31 = fileCount + count, 70)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack31 = fileCount + count",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "70"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack31 = fileCount + count, 70)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack32 = $stack31 cmp 5000L",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "70"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack32 = $stack31 cmp 5000L, 70)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "74"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "count = virtualinvoke $stack28.<org.apache.hadoop.fs.ContentSummary: long getFileCount()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, count = virtualinvoke $stack28.<org.apache.hadoop.fs.ContentSummary: long getFileCount()>(), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "fileCount = fileCount + count",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "71"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack31 = fileCount + count, 70)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "98"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack23 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: org.apache.hadoop.fs.Path getPath()>(), 98)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack24 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>($stack23)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "98"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack24 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>($stack23), 98)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "dirs := @parameter1: java.util.List",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l4 = interfaceinvoke dirs.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "95"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l4 = interfaceinvoke dirs.<java.util.List: java.util.Iterator iterator()>(), 95)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input), 68)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke $stack14.<java.util.ArrayList: void <init>()>(), 44)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "splits = $stack14",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, splits = $stack14, 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "46"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack28 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.ContentSummary getContentSummary(org.apache.hadoop.fs.Path)>(input), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "count = virtualinvoke $stack28.<org.apache.hadoop.fs.ContentSummary: long getFileCount()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "68"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, count = virtualinvoke $stack28.<org.apache.hadoop.fs.ContentSummary: long getFileCount()>(), 68)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "fileCount = fileCount + count",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "71"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack31 = fileCount + count, 70)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack17 = fileCount cmp 0L",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "84"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack17 = fileCount cmp 0L, 84)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke $stack14.<java.util.ArrayList: void <init>()>(), 44)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "splits = $stack14",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "44"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, splits = $stack14, 44)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "splits := @parameter2: java.util.List",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke splits.<java.util.List: boolean addAll(java.util.Collection)>($stack40)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "78"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, interfaceinvoke splits.<java.util.List: boolean addAll(java.util.Collection)>($stack40), 78)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, $stack8 = virtualinvoke arg0.<org.apache.hadoop.mapreduce.JobContext: org.apache.hadoop.conf.Configuration getConfiguration()>(), 39)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, fs = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)>($stack8), 39)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter3: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "fs := @parameter2: org.apache.hadoop.fs.FileSystem",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir)",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "96"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, l6 = virtualinvoke fs.<org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)>(dir), 96)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "f = l6[l8]",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "102"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, f = l6[l8], 102)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: boolean isDir()>()",
+"location": {
+  "file": "",
+  "class": "com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat",
+  "method": "<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>",
+  "line": "97"
+},
+"stackTrace": ["(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(arg0, $stack16, splits, fs), 46)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllSplits(org.apache.hadoop.mapreduce.JobContext,java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, specialinvoke this.<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>(files, subdirs, fs), 74)","(<com.linkedin.camus.sweeper.mapreduce.AvroKeyCombineFileInputFormat: void addAllAvro(java.util.List,java.util.List,org.apache.hadoop.fs.FileSystem)>, $stack15 = virtualinvoke f.<org.apache.hadoop.fs.FileStatus: boolean isDir()>(), 97)"]
+}]
+}
+}
+
+]

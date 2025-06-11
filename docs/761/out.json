@@ -1,0 +1,44 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>",
+"location": {
+  "file": "",
+  "class": "org.jongo.bson.LazyBsonDocument",
+  "method": "<org.jongo.bson.LazyBsonDocument: int getSize()>",
+  "line": "33"
+},
+"stackTrace": ["(<org.jongo.bson.LazyBsonDocument: int getSize()>, $stack2 = this.<org.jongo.bson.LazyBsonDocument: byte[] bytes>, 33)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "buffer = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2)",
+"location": {
+  "file": "",
+  "class": "org.jongo.bson.LazyBsonDocument",
+  "method": "<org.jongo.bson.LazyBsonDocument: int getSize()>",
+  "line": "33"
+},
+"stackTrace": ["(<org.jongo.bson.LazyBsonDocument: int getSize()>, buffer = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2), 33)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4)",
+"location": {
+  "file": "",
+  "class": "org.jongo.bson.LazyBsonDocument",
+  "method": "<org.jongo.bson.LazyBsonDocument: int getSize()>",
+  "line": "34"
+},
+"stackTrace": ["(<org.jongo.bson.LazyBsonDocument: int getSize()>, virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>($stack4), 34)"]
+}]
+}
+}
+
+]

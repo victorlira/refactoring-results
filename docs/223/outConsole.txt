@@ -1,0 +1,154 @@
+Running soot scenario launch4j-maven-plugin;com.akathist.maven.plugins.launch4j.ClassPath;toL4j(Set);fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/launch4j-maven-plugin/fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea/original-without-dependencies/launch4j-maven-plugin-1.7.9-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,33900
+Time to perform Confluence 1 Inter 0,50900
+Configure Soot Confluence 2 Inter 0,14000
+Time to perform Confluence 2 Inter 0,10400
+Visited methods: 22
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,interfaceinvoke cp.<java.util.List: boolean add(java.lang.Object)>($stack30),92,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, interfaceinvoke cp.<java.util.List: boolean add(java.lang.Object)>($stack30), 92))
+SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,$stack9 = new java.util.ArrayList,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,interfaceinvoke cp.<java.util.List: boolean add(java.lang.Object)>($stack30),92,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, interfaceinvoke cp.<java.util.List: boolean add(java.lang.Object)>($stack30), 92)), SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,virtualinvoke ret.<net.sf.launch4j.config.ClassPath: void setPaths(java.util.List)>(cp),97,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, virtualinvoke ret.<net.sf.launch4j.config.ClassPath: void setPaths(java.util.List)>(cp), 97))
+SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,$stack9 = new java.util.ArrayList,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,virtualinvoke ret.<net.sf.launch4j.config.ClassPath: void setPaths(java.util.List)>(cp),97,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, virtualinvoke ret.<net.sf.launch4j.config.ClassPath: void setPaths(java.util.List)>(cp), 97)), SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>,cp := @parameter0: java.util.List,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>,interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4),74,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88) => (<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>, interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4), 74))
+SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,$stack9 = new java.util.ArrayList,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>,cp := @parameter0: java.util.List,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>,interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4),74,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88) => (<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>, interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4), 74)), SOURCE=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack13),99,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack13), 99))
+SINK=>BASE: Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,$stack9 = new java.util.ArrayList,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack13),99,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack13), 99))]
+Confluence interference in <com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>
+Confluence flows from execution of lines 81 and 81 to line 92, defined in cp = $stack9 and specialinvoke $stack9.<java.util.ArrayList: void <init>()>() and used in interfaceinvoke cp.<java.util.List: boolean add(java.lang.Object)>($stack30)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)
+Caused by line 92 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, interfaceinvoke cp.<java.util.List: boolean add(java.lang.Object)>($stack30), 92)
+Confluence interference in <com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>
+Confluence flows from execution of lines 81 and 81 to line 97, defined in cp = $stack9 and specialinvoke $stack9.<java.util.ArrayList: void <init>()>() and used in virtualinvoke ret.<net.sf.launch4j.config.ClassPath: void setPaths(java.util.List)>(cp)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)
+Caused by line 97 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, virtualinvoke ret.<net.sf.launch4j.config.ClassPath: void setPaths(java.util.List)>(cp), 97)
+Confluence interference in <com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>
+Confluence flows from execution of lines 81 and 81 to line 88, defined in cp = $stack9 and specialinvoke $stack9.<java.util.ArrayList: void <init>()>() and used in specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)
+Caused by line 88 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88) => (<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>, interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4), 74)
+Confluence interference in <com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>
+Confluence flows from execution of lines 81 and 81 to line 99, defined in cp = $stack9 and specialinvoke $stack9.<java.util.ArrayList: void <init>()>() and used in specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack13)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke $stack9.<java.util.ArrayList: void <init>()>(), 81)
+Caused by line 99 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack13), 99)
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/launch4j-maven-plugin/fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea/original-without-dependencies/launch4j-maven-plugin-1.7.9-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,55000
+Runtime: 0.007s
+OA interference in class ClassPath, method net.sf.launch4j.config.ClassPath toL4j(java.util.Set), execution of line 81 overrides 81, assigning to variable ArrayList.<java.util.ArrayList: java.lang.Object[] elementData>, 
+Caused by line 81 flow:
+at com.akathist.maven.plugins.launch4j.ClassPath.toL4j(ClassPath.java:81)
+And line 81 flow:
+at com.akathist.maven.plugins.launch4j.ClassPath.toL4j(ClassPath.java:81)
+ 
+OA interference in class ClassPath, method net.sf.launch4j.config.ClassPath toL4j(java.util.Set), execution of line 81 overrides 81, assigning to variable cp, 
+Caused by line 81 flow:
+at com.akathist.maven.plugins.launch4j.ClassPath.toL4j(ClassPath.java:81)
+And line 81 flow:
+at com.akathist.maven.plugins.launch4j.ClassPath.toL4j(ClassPath.java:81)
+ 
+Time to perform OA Inter 0,58800
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/launch4j-maven-plugin/fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea/original-without-dependencies/launch4j-maven-plugin-1.7.9-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,44400
+Time to perform DFP Inter 0,43300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 11
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/launch4j-maven-plugin/fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea/original-without-dependencies/launch4j-maven-plugin-1.7.9-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,37700
+Time to perform DFP Inter 0,50300
+Depth limit: 5
+CONFLICTS: DF interference in <com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>
+Data flows from execution of line 81 to 88, defined in cp = $stack9 and propagated in interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)
+Caused by line 88 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88) => (<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>, interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4), 74)
+DF interference in <com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>
+Data flows from execution of line 81 to 88, defined in cp = $stack9 and propagated in specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39)
+Caused by line 81 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)
+Caused by line 88 flow: path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88)
+[List(Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>,cp := @parameter0: java.util.List,-1,SimpleNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>,interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4),74,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88) => (<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>, interfaceinvoke cp.<java.util.List: boolean addAll(java.util.Collection)>($stack4), 74))), List(Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39),88,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88)))]
+Visited methods: 11
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/launch4j-maven-plugin/fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea/original-without-dependencies/launch4j-maven-plugin-1.7.9-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,46100
+Time to perform PDG 0,34600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/launch4j-maven-plugin/fa32ac37750ca59daf0bc99d03ab1bf20c2f03ea/original-without-dependencies/launch4j-maven-plugin-1.7.9-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,34600
+Time to perform PDG 0,38200
+CONFLICTS: [List(Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,cp = $stack9,81,SourceNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, cp = $stack9, 81)) => Node(<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>,specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39),88,SinkNode, path: (<com.akathist.maven.plugins.launch4j.ClassPath: net.sf.launch4j.config.ClassPath toL4j(java.util.Set)>, specialinvoke this.<com.akathist.maven.plugins.launch4j.ClassPath: void addToCp(java.util.List,java.lang.String)>(cp, $stack39), 88)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

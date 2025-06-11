@@ -1,0 +1,110 @@
+Running soot scenario billy;com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl;findByReferencedDocument(UID, UID);bc9db3332320895636598425f8927fab20c59a09
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/billy/bc9db3332320895636598425f8927fab20c59a09/original-without-dependencies/billy-spain-7.1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,64700
+Time to perform Confluence 1 Inter 0,50800
+Configure Soot Confluence 2 Inter 0,21400
+Time to perform Confluence 2 Inter 0,11600
+Visited methods: 2
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/billy/bc9db3332320895636598425f8927fab20c59a09/original-without-dependencies/billy-spain-7.1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,73300
+Runtime: 0.008s
+Time to perform OA Inter 0,83500
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/billy/bc9db3332320895636598425f8927fab20c59a09/original-without-dependencies/billy-spain-7.1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,57800
+Time to perform DFP Inter 0,44500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/billy/bc9db3332320895636598425f8927fab20c59a09/original-without-dependencies/billy-spain-7.1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,55900
+Time to perform DFP Inter 0,59800
+Depth limit: 5
+CONFLICTS: DF interference in <com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>
+Data flows from execution of line 67 to 72, defined in invQ = (com.querydsl.jpa.JPQLQuery) $stack17 and propagated in $stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ)
+Caused by line 67 flow: path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, invQ = (com.querydsl.jpa.JPQLQuery) $stack17, 67)
+Caused by line 72 flow: path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, $stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ), 72)
+[List(Node(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>,invQ = (com.querydsl.jpa.JPQLQuery) $stack17,67,SourceNode, path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, invQ = (com.querydsl.jpa.JPQLQuery) $stack17, 67)) => Node(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>,$stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ),72,SinkNode, path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, $stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ), 72)))]
+Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/billy/bc9db3332320895636598425f8927fab20c59a09/original-without-dependencies/billy-spain-7.1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,61700
+Time to perform PDG 0,59300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/billy/bc9db3332320895636598425f8927fab20c59a09/original-without-dependencies/billy-spain-7.1.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,51100
+Time to perform PDG 0,60900
+CONFLICTS: [List(Node(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>,$stack17 = interfaceinvoke $stack11.<com.querydsl.jpa.JPQLQuery: com.querydsl.core.FilteredClause where(com.querydsl.core.types.Predicate[])>(tmp$345060426),67,SourceNode, path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, $stack17 = interfaceinvoke $stack11.<com.querydsl.jpa.JPQLQuery: com.querydsl.core.FilteredClause where(com.querydsl.core.types.Predicate[])>(tmp$345060426), 67)) => Node(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>,invQ = (com.querydsl.jpa.JPQLQuery) $stack17,67,SourceNode, path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, invQ = (com.querydsl.jpa.JPQLQuery) $stack17, 67)) => Node(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>,$stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ),72,SinkNode, path: (<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, $stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ), 72)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

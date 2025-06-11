@@ -1,0 +1,118 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "oAuth2Scopes - oAuth2Scopes",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "oAuth2Scopes = -1",
+				"location": {
+					"file": "",
+					"class": "io.swagger.v3.parser.converter.SwaggerConverter",
+					"method": "convertOauth2SecurityScheme",
+					"line": 303
+				},
+				"stackTrace": [{
+	"class": "io.swagger.v3.parser.converter.SwaggerConverter",
+	"method": "convertOauth2SecurityScheme",
+	"line": 303
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "oAuth2Scopes = 0",
+				"location": {
+					"file": "",
+					"class": "io.swagger.v3.parser.converter.SwaggerConverter",
+					"method": "convertOauth2SecurityScheme",
+					"line": 326
+				},
+				"stackTrace": [{
+	"class": "io.swagger.v3.parser.converter.SwaggerConverter",
+	"method": "convertOauth2SecurityScheme",
+	"line": 326
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "scopes = flow",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.converter.SwaggerConverter",
+  "method": "<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>",
+  "line": "303"
+},
+"stackTrace": ["(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password')",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.converter.SwaggerConverter",
+  "method": "<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>",
+  "line": "326"
+},
+"stackTrace": ["(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password'), 326)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.converter.SwaggerConverter",
+  "method": "<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>",
+  "line": "300"
+},
+"stackTrace": ["(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, flow = virtualinvoke oAuth2Definition.<io.swagger.models.auth.OAuth2Definition: java.lang.String getFlow()>(), 300)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "scopes = flow",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.converter.SwaggerConverter",
+  "method": "<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>",
+  "line": "303"
+},
+"stackTrace": ["(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, scopes = flow, 303)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password')",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.converter.SwaggerConverter",
+  "method": "<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>",
+  "line": "326"
+},
+"stackTrace": ["(<io.swagger.v3.parser.converter.SwaggerConverter: io.swagger.v3.oas.models.security.SecurityScheme convertOauth2SecurityScheme(io.swagger.models.auth.SecuritySchemeDefinition)>, $stack32 = virtualinvoke scopes.<java.lang.String: boolean equals(java.lang.Object)>('password'), 326)"]
+}]
+}
+}
+
+]

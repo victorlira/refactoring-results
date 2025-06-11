@@ -1,0 +1,116 @@
+Running soot scenario asterisk-java;org.asteriskjava.manager.internal.ActionBuilderImpl;buildAction(ManagerAction, String);289eb2ff84516b2cace9bdda532d4b0fa5a92575
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/289eb2ff84516b2cace9bdda532d4b0fa5a92575/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,94300
+Time to perform Confluence 1 Inter 1,84900
+Configure Soot Confluence 2 Inter 0,30400
+Time to perform Confluence 2 Inter 1,36600
+Visited methods: 108
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,$stack11 = new java.lang.StringBuilder,74,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>(), 74)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,sb = $stack11,74,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, sb = $stack11, 74)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, action, ignore),115,SinkNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, action, ignore), 115))
+SINK=>BASE: Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,$stack17 = new java.util.HashSet,96,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack17.<java.util.HashSet: void <init>()>(), 96)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,ignore = $stack17,96,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, ignore = $stack17, 96)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, action, ignore),115,SinkNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, action, ignore), 115)), SOURCE=>BASE: Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,$stack11 = new java.lang.StringBuilder,74,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>(), 74)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,sb = $stack11,74,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, sb = $stack11, 74)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, userEvent, ignore),111,SinkNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, userEvent, ignore), 111))
+SINK=>BASE: Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,$stack17 = new java.util.HashSet,96,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack17.<java.util.HashSet: void <init>()>(), 96)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,ignore = $stack17,96,SourceNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, ignore = $stack17, 96)) => Node(<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>,specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, userEvent, ignore),111,SinkNode, path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, userEvent, ignore), 111))]
+Confluence interference in <org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>
+Confluence flows from execution of lines 74 and 96 to line 115, defined in specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>() and specialinvoke $stack17.<java.util.HashSet: void <init>()>() and used in specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, action, ignore)
+Caused by line 74 flow: path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>(), 74)
+Caused by line 96 flow: path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack17.<java.util.HashSet: void <init>()>(), 96)
+Caused by line 115 flow: path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, action, ignore), 115)
+Confluence interference in <org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>
+Confluence flows from execution of lines 74 and 96 to line 111, defined in specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>() and specialinvoke $stack17.<java.util.HashSet: void <init>()>() and used in specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, userEvent, ignore)
+Caused by line 74 flow: path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>(), 74)
+Caused by line 96 flow: path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke $stack17.<java.util.HashSet: void <init>()>(), 96)
+Caused by line 111 flow: path: (<org.asteriskjava.manager.internal.ActionBuilderImpl: java.lang.String buildAction(org.asteriskjava.manager.action.ManagerAction,java.lang.String)>, specialinvoke this.<org.asteriskjava.manager.internal.ActionBuilderImpl: void appendGetters(java.lang.StringBuilder,java.lang.Object,java.util.Set)>(sb, userEvent, ignore), 111)
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/289eb2ff84516b2cace9bdda532d4b0fa5a92575/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,99100
+Runtime: 0.013s
+Time to perform OA Inter 1,05000
+OA Inter Visited methods: 6
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/289eb2ff84516b2cace9bdda532d4b0fa5a92575/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,89100
+Time to perform DFP Inter 1,40100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 54
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/289eb2ff84516b2cace9bdda532d4b0fa5a92575/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,57500
+Time to perform DFP Inter 1,49500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 54
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/289eb2ff84516b2cace9bdda532d4b0fa5a92575/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,82400
+Time to perform PDG 0,63400
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/289eb2ff84516b2cace9bdda532d4b0fa5a92575/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,88000
+Time to perform PDG 0,61500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

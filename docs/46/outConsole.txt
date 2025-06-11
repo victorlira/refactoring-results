@@ -1,0 +1,110 @@
+Running soot scenario bitbucket-plugin;com.cloudbees.jenkins.plugins.BitbucketJobProbe;triggerMatchingJobs(String, String, String, String);da518043f34583234ad250c82869d287b33ee483
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bitbucket-plugin/da518043f34583234ad250c82869d287b33ee483/original-without-dependencies/bitbucket.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,61700
+Time to perform Confluence 1 Inter 0,80800
+Configure Soot Confluence 2 Inter 0,18900
+Time to perform Confluence 2 Inter 0,52500
+Visited methods: 40
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bitbucket-plugin/da518043f34583234ad250c82869d287b33ee483/original-without-dependencies/bitbucket.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,64800
+Runtime: 0.024s
+Time to perform OA Inter 0,74300
+OA Inter Visited methods: 3
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bitbucket-plugin/da518043f34583234ad250c82869d287b33ee483/original-without-dependencies/bitbucket.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,59600
+Time to perform DFP Inter 0,67000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 20
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bitbucket-plugin/da518043f34583234ad250c82869d287b33ee483/original-without-dependencies/bitbucket.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47300
+Time to perform DFP Inter 0,66000
+Depth limit: 5
+CONFLICTS: DF interference in <com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+Data flows from execution of line 90 to 70, defined in $stack52 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>() and propagated in virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, "Triggering BitBucket job {0}", $stack92)
+Caused by line 90 flow: path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack52 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>(), 90)
+Caused by line 70 flow: path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, 'Triggering BitBucket job {0}', $stack92), 70)
+[List(Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack52 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>(),90,SourceNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack52 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>(), 90)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,job = (hudson.model.Job) $stack52,90,SourceNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, job = (hudson.model.Job) $stack52, 90)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack92 = virtualinvoke job.<hudson.model.Job: java.lang.String getFullDisplayName()>(),70,SinkNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack92 = virtualinvoke job.<hudson.model.Job: java.lang.String getFullDisplayName()>(), 70)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, "Triggering BitBucket job {0}", $stack92),70,SinkNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, 'Triggering BitBucket job {0}', $stack92), 70)))]
+Visited methods: 20
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bitbucket-plugin/da518043f34583234ad250c82869d287b33ee483/original-without-dependencies/bitbucket.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62600
+Time to perform PDG 0,55300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/bitbucket-plugin/da518043f34583234ad250c82869d287b33ee483/original-without-dependencies/bitbucket.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,50200
+Time to perform PDG 0,64200
+CONFLICTS: [List(Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,job = (hudson.model.Job) $stack52,90,SourceNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, job = (hudson.model.Job) $stack52, 90)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack57 = job instanceof jenkins.model.ParameterizedJobMixIn$ParameterizedJob,49,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack57 = job instanceof jenkins.model.ParameterizedJobMixIn$ParameterizedJob, 49)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,if $stack57 == 0 goto (branch),49,SimpleNode, path: ) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack102 = interfaceinvoke scmTriggered.<java.util.Iterator: boolean hasNext()>(),51,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack102 = interfaceinvoke scmTriggered.<java.util.Iterator: boolean hasNext()>(), 51)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,if $stack102 == 0 goto (branch),51,SimpleNode, path: ) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack105 = trigger instanceof com.cloudbees.jenkins.plugins.BitBucketTrigger,52,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack105 = trigger instanceof com.cloudbees.jenkins.plugins.BitBucketTrigger, 52)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,if $stack105 == 0 goto (branch),52,SimpleNode, path: ) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,bTrigger = (com.cloudbees.jenkins.plugins.BitBucketTrigger) trigger,53,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, bTrigger = (com.cloudbees.jenkins.plugins.BitBucketTrigger) trigger, 53)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,if bTrigger == null goto $stack58 = <com.cloudbees.jenkins.plugins.BitbucketJobProbe: java.util.logging.Logger LOGGER>,58,SimpleNode, path: ) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,if pJob#14 != null goto $stack68 = new java.util.ArrayList,61,SimpleNode, path: ) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack68 = new java.util.ArrayList,64,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, specialinvoke $stack68.<java.util.ArrayList: void <init>()>(), 64)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,scmTriggered#15 = $stack68,64,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, scmTriggered#15 = $stack68, 64)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack84 = specialinvoke this.<com.cloudbees.jenkins.plugins.BitbucketJobProbe: boolean hasBeenTriggered(java.util.List,hudson.scm.SCM)>(scmTriggered#15, scmTrigger),75,SimpleNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, $stack84 = specialinvoke this.<com.cloudbees.jenkins.plugins.BitbucketJobProbe: boolean hasBeenTriggered(java.util.List,hudson.scm.SCM)>(scmTriggered#15, scmTrigger), 75)) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,if $stack84 != 0 goto $stack78 = <com.cloudbees.jenkins.plugins.BitbucketJobProbe: java.util.logging.Logger LOGGER>,75,SimpleNode, path: ) => Node(<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>,$stack89 = <com.cloudbees.jenkins.plugins.BitbucketJobProbe: java.util.logging.Logger LOGGER>,70,SinkNode, path: (<com.cloudbees.jenkins.plugins.BitbucketJobProbe: void triggerMatchingJobs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>, virtualinvoke $stack89.<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Object)>($stack90, 'Triggering BitBucket job {0}', $stack92), 70)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

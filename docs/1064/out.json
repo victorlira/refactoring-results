@@ -1,0 +1,96 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "event = tmp$1672736386",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "55"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, event = tmp$1672736386, 55)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$724886412 = (java.util.Map) event",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, tmp$724886412 = (java.util.Map) event, -1)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke tmp$724886412.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>('time', $stack28)",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "61"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, interfaceinvoke tmp$724886412.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>('time', $stack28), 61)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack32 = this.<com.splunk.logging.serialization.HecJsonSerializer: com.splunk.logging.EventHeaderSerializer eventHeaderSerializer>",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "53"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, $stack32 = this.<com.splunk.logging.serialization.HecJsonSerializer: com.splunk.logging.EventHeaderSerializer eventHeaderSerializer>, 53)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "event = interfaceinvoke $stack32.<com.splunk.logging.EventHeaderSerializer: java.util.Map serializeEventHeader(com.splunk.logging.HttpEventCollectorEventInfo,java.util.Map)>(info, tmp$268490061)",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "53"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, event = interfaceinvoke $stack32.<com.splunk.logging.EventHeaderSerializer: java.util.Map serializeEventHeader(com.splunk.logging.HttpEventCollectorEventInfo,java.util.Map)>(info, tmp$268490061), 53)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$724886412 = (java.util.Map) event",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, tmp$724886412 = (java.util.Map) event, -1)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke tmp$724886412.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>('time', $stack28)",
+"location": {
+  "file": "",
+  "class": "com.splunk.logging.serialization.HecJsonSerializer",
+  "method": "<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>",
+  "line": "61"
+},
+"stackTrace": ["(<com.splunk.logging.serialization.HecJsonSerializer: java.lang.String serialize(com.splunk.logging.HttpEventCollectorEventInfo)>, interfaceinvoke tmp$724886412.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>('time', $stack28), 61)"]
+}]
+}
+}
+
+]

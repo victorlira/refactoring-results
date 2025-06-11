@@ -1,0 +1,114 @@
+Running soot scenario cucumber-reporting;net.masterthought.cucumber.generators.FeatureOverviewPage;generatePage();9fa019efbb3e9219643a69303c549bdb7b6515a2
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/9fa019efbb3e9219643a69303c549bdb7b6515a2/original-without-dependencies/cucumber-reporting-1.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,49200
+Time to perform Confluence 1 Inter 2,03400
+Configure Soot Confluence 2 Inter 0,12300
+Time to perform Confluence 2 Inter 1,66500
+Visited methods: 132
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/9fa019efbb3e9219643a69303c549bdb7b6515a2/original-without-dependencies/cucumber-reporting-1.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,60300
+Runtime: 0.039s
+Time to perform OA Inter 0,78800
+OA Inter Visited methods: 118
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/9fa019efbb3e9219643a69303c549bdb7b6515a2/original-without-dependencies/cucumber-reporting-1.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,49300
+Time to perform DFP Inter 1,47800
+Depth limit: 5
+CONFLICTS: DF interference in <net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value),54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value), 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,return $stack4,54,SinkNode, path: )), List(Node(<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>,$stack5 = this.<net.masterthought.cucumber.generators.FeatureOverviewPage: net.masterthought.cucumber.VelocityContextMap contextMap>,20,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, $stack5 = this.<net.masterthought.cucumber.generators.FeatureOverviewPage: net.masterthought.cucumber.VelocityContextMap contextMap>, 20)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,this := @this: net.masterthought.cucumber.VelocityContextMap,-1,SimpleNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack3 = this.<net.masterthought.cucumber.VelocityContextMap: org.apache.velocity.VelocityContext velocityContext>,54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack3 = this.<net.masterthought.cucumber.VelocityContextMap: org.apache.velocity.VelocityContext velocityContext>, 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value),54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value), 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,return $stack4,54,SinkNode, path: ))]
+Visited methods: 66
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/9fa019efbb3e9219643a69303c549bdb7b6515a2/original-without-dependencies/cucumber-reporting-1.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,35000
+Time to perform DFP Inter 1,49100
+Depth limit: 5
+CONFLICTS: DF interference in <net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack3 = this.<net.masterthought.cucumber.VelocityContextMap: org.apache.velocity.VelocityContext velocityContext>,54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack3 = this.<net.masterthought.cucumber.VelocityContextMap: org.apache.velocity.VelocityContext velocityContext>, 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value),54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value), 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,return $stack4,54,SinkNode, path: )), List(Node(<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>,$stack104 = this.<net.masterthought.cucumber.generators.FeatureOverviewPage: net.masterthought.cucumber.VelocityContextMap contextMap>,53,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, $stack104 = this.<net.masterthought.cucumber.generators.FeatureOverviewPage: net.masterthought.cucumber.VelocityContextMap contextMap>, 53)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,this := @this: net.masterthought.cucumber.VelocityContextMap,-1,SimpleNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack3 = this.<net.masterthought.cucumber.VelocityContextMap: org.apache.velocity.VelocityContext velocityContext>,54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack3 = this.<net.masterthought.cucumber.VelocityContextMap: org.apache.velocity.VelocityContext velocityContext>, 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,$stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value),54,SourceNode, path: (<net.masterthought.cucumber.generators.FeatureOverviewPage: void generatePage()>, specialinvoke this.<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>(), 18) => (<net.masterthought.cucumber.generators.AbstractPage: void generatePage()>, virtualinvoke $stack13.<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>('esc', $stack12), 50) => (<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>, $stack4 = virtualinvoke $stack3.<org.apache.velocity.VelocityContext: java.lang.Object put(java.lang.String,java.lang.Object)>(key, value), 54)) => Node(<net.masterthought.cucumber.VelocityContextMap: java.lang.Object put(java.lang.String,java.lang.Object)>,return $stack4,54,SinkNode, path: ))]
+Visited methods: 66
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/9fa019efbb3e9219643a69303c549bdb7b6515a2/original-without-dependencies/cucumber-reporting-1.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,50200
+Time to perform PDG 0,71200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/cucumber-reporting/9fa019efbb3e9219643a69303c549bdb7b6515a2/original-without-dependencies/cucumber-reporting-1.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,37100
+Time to perform PDG 0,65100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -1,0 +1,181 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>,$stack25 = virtualinvoke store.<java.lang.String: java.lang.String toUpperCase()>(),62,SourceNode, path: (<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, $stack25 = virtualinvoke store.<java.lang.String: java.lang.String toUpperCase()>(), 62)) => Node(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>,$stack10 = staticinvoke <org.apache.lucene.document.Field$Store: org.apache.lucene.document.Field$Store valueOf(java.lang.String)>($stack25),62,SourceNode, path: (<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, $stack10 = staticinvoke <org.apache.lucene.document.Field$Store: org.apache.lucene.document.Field$Store valueOf(java.lang.String)>($stack25), 62)) => Node(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>,this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: org.apache.lucene.document.Field$Store store> = $stack10,60,SinkNode, path: (<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: org.apache.lucene.document.Field$Store store> = $stack10, 60)) SINK=>BASE: Node(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>,$stack25 = virtualinvoke store.<java.lang.String: java.lang.String toUpperCase()>(),62,SourceNode, path: (<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, $stack25 = virtualinvoke store.<java.lang.String: java.lang.String toUpperCase()>(), 62)) => Node(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>,$stack10 = staticinvoke <org.apache.lucene.document.Field$Store: org.apache.lucene.document.Field$Store valueOf(java.lang.String)>($stack25),62,SourceNode, path: (<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, $stack10 = staticinvoke <org.apache.lucene.document.Field$Store: org.apache.lucene.document.Field$Store valueOf(java.lang.String)>($stack25), 62)) => Node(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>,this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: org.apache.lucene.document.Field$Store store> = $stack10,60,SinkNode, path: (<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: org.apache.lucene.document.Field$Store store> = $stack10, 60))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack25 = virtualinvoke store.<java.lang.String: java.lang.String toUpperCase()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+					"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+	"line": 62
+},{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+	"line": 62
+},{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+	"line": 60
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack25 = virtualinvoke store.<java.lang.String: java.lang.String toUpperCase()>()",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+					"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+	"line": 62
+},{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+	"line": 62
+},{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+	"line": 60
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: org.apache.lucene.document.Field$Store store> = $stack10",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+					"method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>",
+					"line": 60
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float boost> - this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float boost>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float boost> = $stack12",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+					"method": "<init>",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<init>",
+	"line": 62
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float boost> = $stack12",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+					"method": "<init>",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+	"method": "<init>",
+	"line": 62
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float boost>",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+  "method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float getBoost()>",
+  "line": "67"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, $stack12 = virtualinvoke defaults.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float getBoost()>(), 62)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+  "method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float getBoost()>",
+  "line": "67"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float boost>",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+  "method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float getBoost()>",
+  "line": "67"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.github.rnewson.couchdb.lucene.couchdb.ViewSettings)>, $stack12 = virtualinvoke defaults.<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float getBoost()>(), 62)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.couchdb.ViewSettings",
+  "method": "<com.github.rnewson.couchdb.lucene.couchdb.ViewSettings: float getBoost()>",
+  "line": "67"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

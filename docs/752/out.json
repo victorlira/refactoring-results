@@ -1,0 +1,2733 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack17.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack16)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "443"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack17.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack16), 443)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack133 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "447"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack133 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 447)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "amount := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack146.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>($stack147), 429)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = $stack6 + amount",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack146.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>($stack147), 429)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>, $stack7 = $stack6 + amount, 144)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>, 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: char[]",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "166"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)","(<java.lang.String: void <init>(char[])>, $stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2), 166)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: char charAt(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, quotationType = virtualinvoke str.<java.lang.String: char charAt(int)>(0), 523)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack5 = l0.<java.lang.String: char[] value>",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: char charAt(int)>",
+  "line": "660"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, quotationType = virtualinvoke str.<java.lang.String: char charAt(int)>(0), 523)","(<java.lang.String: char charAt(int)>, $stack5 = l0.<java.lang.String: char[] value>, 660)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack6 = $stack5[l1]",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: char charAt(int)>",
+  "line": "660"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, quotationType = virtualinvoke str.<java.lang.String: char charAt(int)>(0), 523)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "quotationType = virtualinvoke str.<java.lang.String: char charAt(int)>(0)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "523"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, quotationType = virtualinvoke str.<java.lang.String: char charAt(int)>(0), 523)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>, 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: char[]",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "166"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)","(<java.lang.String: void <init>(char[])>, $stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2), 166)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "532"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack17.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack16)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "443"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack17.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack16), 443)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack133 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "447"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack133 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 447)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack132.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>($stack133)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "447"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack132.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>($stack133), 447)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack17.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack16)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "443"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack17.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack16), 443)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack133 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "447"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack133 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 447)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "amount := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack146.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>($stack147), 429)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = $stack4 - amount",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>",
+  "line": "143"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack146.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>($stack147), 429)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advance(int)>, $stack5 = $stack4 - amount, 143)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack53 = virtualinvoke $stack50.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "506"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack53 = virtualinvoke $stack50.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 506)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack54 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack53)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "506"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack54 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack53), 506)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack7 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 623)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mitchellbosecke.pebble.lexer.TemplateSource",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack117 = virtualinvoke $stack115.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "466"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack117 = virtualinvoke $stack115.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 466)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack118 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack117)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "466"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack118 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack117), 466)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "right := @parameter1: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.utils.Pair",
+  "method": "<com.mitchellbosecke.pebble.utils.Pair: void <init>(java.lang.Object,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke $stack114.<com.mitchellbosecke.pebble.utils.Pair: void <init>(java.lang.Object,java.lang.Object)>(character, $stack118), 466)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.utils.Pair: java.lang.Object right> = right",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.utils.Pair",
+  "method": "<com.mitchellbosecke.pebble.utils.Pair: void <init>(java.lang.Object,java.lang.Object)>",
+  "line": "24"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke $stack114.<com.mitchellbosecke.pebble.utils.Pair: void <init>(java.lang.Object,java.lang.Object)>(character, $stack118), 466)","(<com.mitchellbosecke.pebble.utils.Pair: void <init>(java.lang.Object,java.lang.Object)>, this.<com.mitchellbosecke.pebble.utils.Pair: java.lang.Object right> = right, 24)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>, 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: char[]",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "166"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)","(<java.lang.String: void <init>(char[])>, $stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2), 166)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack117 = virtualinvoke $stack115.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "466"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack117 = virtualinvoke $stack115.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 466)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>, 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: char[]",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "166"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)","(<java.lang.String: void <init>(char[])>, $stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2), 166)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack5 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int offset>, 197)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l1 := @parameter0: char[]",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: void <init>(char[])>",
+  "line": "166"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)","(<java.lang.String: void <init>(char[])>, $stack3 = staticinvoke <java.util.Arrays: char[] copyOf(char[],int)>(l1, $stack2), 166)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "621"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value), 621)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "532"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "27"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value, 27)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char[] source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>(), 418)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>, $stack3 = virtualinvoke this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(index), 150)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>, $stack4 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char[] source>, 207)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = $stack4[$stack3]",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>(), 418)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>, $stack3 = virtualinvoke this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(index), 150)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack67 = virtualinvoke $stack66.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(0)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "462"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack67 = virtualinvoke $stack66.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(0), 462)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "character = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack67)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "462"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, character = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack67), 462)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "27"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value, 27)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 494)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28), 494)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.String: char[] value>",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)","(<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = lengthof $stack1",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "621"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value), 621)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char[] source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>(), 418)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>, $stack3 = virtualinvoke this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(index), 150)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>, $stack4 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char[] source>, 207)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = $stack4[$stack3]",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>(), 418)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>, $stack3 = virtualinvoke this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(index), 150)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack67 = virtualinvoke $stack66.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(0)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "462"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack67 = virtualinvoke $stack66.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(0), 462)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "character = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack67)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "462"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, character = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack67), 462)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "621"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value), 621)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "27"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value, 27)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack115 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "466"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack115 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 466)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mitchellbosecke.pebble.lexer.TemplateSource",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 494)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28), 494)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "end := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = $stack3 + end",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack4 = $stack3 + end, 197)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, $stack7 = staticinvoke <java.util.Arrays: char[] copyOfRange(char[],int,int)>($stack6, $stack5, $stack4), 197)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>",
+  "line": "197"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack141.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack142), 427)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>, specialinvoke $stack2.<java.lang.String: void <init>(char[])>($stack7), 197)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 494)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28), 494)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.String: char[] value>",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)","(<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = lengthof $stack1",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "532"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char[] source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>(), 418)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>, $stack3 = virtualinvoke this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(index), 150)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>, $stack4 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char[] source>, 207)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = $stack4[$stack3]",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>",
+  "line": "207"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>(), 418)","(<com.mitchellbosecke.pebble.lexer.TemplateSource: void advanceThroughWhitespace()>, $stack3 = virtualinvoke this.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(index), 150)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack67 = virtualinvoke $stack66.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(0)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "462"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack67 = virtualinvoke $stack66.<com.mitchellbosecke.pebble.lexer.TemplateSource: char charAt(int)>(0), 462)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "character = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack67)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "462"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, character = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack67), 462)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "27"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value, 27)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "621"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value), 621)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "532"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "621"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value), 621)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack50 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "506"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack50 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 506)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.mitchellbosecke.pebble.lexer.TemplateSource",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "621"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack12 = virtualinvoke $stack11.<java.lang.String: boolean equals(java.lang.Object)>(value), 621)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<com.mitchellbosecke.pebble.lexer.TemplateSource: int lineNumber>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.TemplateSource",
+  "method": "<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>",
+  "line": "220"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, $stack8 = virtualinvoke $stack7.<com.mitchellbosecke.pebble.lexer.TemplateSource: int getLineNumber()>(), 623)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "lineNumber := @parameter2: int",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: int lineNumber> = lineNumber",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "28"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: int lineNumber> = lineNumber, 28)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack28 = this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.TemplateSource source>, 494)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "494"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, matcher = virtualinvoke $stack29.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($stack28), 494)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, $stack59 = virtualinvoke matcher.<java.util.regex.Matcher: int end()>(), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "496"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = virtualinvoke $stack58.<com.mitchellbosecke.pebble.lexer.TemplateSource: java.lang.String substring(int)>($stack59), 496)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "str := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.String: char[] value>",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)","(<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = lengthof $stack1",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke str.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack5 = virtualinvoke str.<java.lang.String: int length()>(), 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = $stack5 - 1",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>, $stack6 = $stack5 - 1, 526)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(1, $stack6)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "526"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "str#2 = virtualinvoke str#2.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>('\\\\(\')', '$1')",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>",
+  "line": "530"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "27"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value, 27)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>",
+  "line": "498"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, token = specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: java.lang.String unquoteAndUnescape(java.lang.String)>(token), 498)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+  "method": "<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value",
+"location": {
+  "file": "",
+  "class": "com.mitchellbosecke.pebble.lexer.Token",
+  "method": "<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>",
+  "line": "27"
+},
+"stackTrace": ["(<com.mitchellbosecke.pebble.lexer.LexerImpl: void lexExpression()>, specialinvoke this.<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>($stack144, token), 428)","(<com.mitchellbosecke.pebble.lexer.LexerImpl: com.mitchellbosecke.pebble.lexer.Token pushToken(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String)>, specialinvoke $stack6.<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>(type, value, $stack8), 623)","(<com.mitchellbosecke.pebble.lexer.Token: void <init>(com.mitchellbosecke.pebble.lexer.Token$Type,java.lang.String,int)>, this.<com.mitchellbosecke.pebble.lexer.Token: java.lang.String value> = value, 27)"]
+}]
+}
+}
+
+]

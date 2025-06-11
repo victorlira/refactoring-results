@@ -1,0 +1,1889 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "88"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, $stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState), 88)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "123"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45), 123)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = interfaceinvoke e#5.<org.hdiv.state.scope.StateScope: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,int)>(context, e)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "151"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "90"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "state = virtualinvoke $stack28.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, hdivState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "142"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack28.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, hdivState), 142)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, $stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState), 88)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(value)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, $stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState), 88)","(<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>, $stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(value), 108)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "123"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = firstSeparator + 1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, $stack16 = firstSeparator + 1, 133)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "stateId := @parameter2: int",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>(context, pageId, e), 167)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sessionState = interfaceinvoke $stack5.<org.hdiv.session.ISession: org.hdiv.state.IState getState(org.hdiv.context.RequestContext,int,int)>(context, pageId, stateId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>",
+  "line": "181"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>(context, pageId, e), 167)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "90"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "123"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45), 123)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "123"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, firstSeparator = virtualinvoke requestState.<java.lang.String: int indexOf(int)>(45), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack16 = firstSeparator + 1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, $stack16 = firstSeparator + 1, 133)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>(context, pageId, e)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "167"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "88"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, $stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState), 88)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "value := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, $stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState), 88)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(value)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>",
+  "line": "108"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, $stack4 = virtualinvoke this.<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>(requestState), 88)","(<org.hdiv.state.StateUtil: boolean isMemoryStrategy(java.lang.String)>, $stack6 = virtualinvoke $stack5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(value), 108)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "90"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#5 = interfaceinvoke $stack19.<org.hdiv.state.scope.StateScopeManager: org.hdiv.state.scope.StateScope getStateScope(java.lang.String)>(requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "148"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e#5 = interfaceinvoke $stack19.<org.hdiv.state.scope.StateScopeManager: org.hdiv.state.scope.StateScope getStateScope(java.lang.String)>(requestState), 148)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "stateId := @parameter2: int",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>(context, pageId, e), 167)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sessionState = interfaceinvoke $stack5.<org.hdiv.session.ISession: org.hdiv.state.IState getState(org.hdiv.context.RequestContext,int,int)>(context, pageId, stateId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>",
+  "line": "181"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>(context, pageId, e), 167)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "90"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "state = virtualinvoke $stack28.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, hdivState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "142"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack28.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, hdivState), 142)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = interfaceinvoke e#5.<org.hdiv.state.scope.StateScope: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,int)>(context, e)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "151"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e#5 = interfaceinvoke $stack19.<org.hdiv.state.scope.StateScopeManager: org.hdiv.state.scope.StateScope getStateScope(java.lang.String)>(requestState)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "148"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e#5 = interfaceinvoke $stack19.<org.hdiv.state.scope.StateScopeManager: org.hdiv.state.scope.StateScope getStateScope(java.lang.String)>(requestState), 148)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = (java.lang.String) $stack1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.util.HDIVUtil",
+  "method": "<org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>",
+  "line": "380"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "118"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivStateParamName = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 118)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.DataComposerFactory",
+  "method": "<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>",
+  "line": "120"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, hdivState = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>(hdivStateParamName), 120)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "requestState := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, lastSeparator = virtualinvoke requestState.<java.lang.String: int lastIndexOf(int)>(45), 124)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "133"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, sId = virtualinvoke requestState.<java.lang.String: java.lang.String substring(int,int)>($stack16, lastSeparator), 133)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "141"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>, e = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(sId), 141)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState getStateFromSession(org.hdiv.context.RequestContext,int,int)>(context, pageId, e)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.state.StateUtil",
+  "method": "<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>",
+  "line": "167"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.DataComposerFactory: void initDataComposer(org.hdiv.dataComposer.IDataComposer,org.hdiv.context.RequestContext)>, state = virtualinvoke $stack37.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>(context, preState), 127)","(<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreState(org.hdiv.context.RequestContext,java.lang.String)>, restoredState = virtualinvoke this.<org.hdiv.state.StateUtil: org.hdiv.state.IState restoreMemoryState(org.hdiv.context.RequestContext,java.lang.String)>(context, requestState), 90)"]
+}]
+}
+}
+
+]

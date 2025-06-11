@@ -1,0 +1,104 @@
+Running soot scenario crowd2-plugin;de.theit.jenkins.crowd.CrowdConfigurationService;isGroupMember(String);d3fe5c539e80d79fd23a79d0d7266b8875acb239
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crowd2-plugin/d3fe5c539e80d79fd23a79d0d7266b8875acb239/original-without-dependencies/crowd2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,59100
+Time to perform Confluence 1 Inter 0,62600
+Configure Soot Confluence 2 Inter 0,19300
+Time to perform Confluence 2 Inter 0,32700
+Visited methods: 42
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crowd2-plugin/d3fe5c539e80d79fd23a79d0d7266b8875acb239/original-without-dependencies/crowd2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,85200
+Runtime: 0.017s
+Time to perform OA Inter 0,93000
+OA Inter Visited methods: 25
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crowd2-plugin/d3fe5c539e80d79fd23a79d0d7266b8875acb239/original-without-dependencies/crowd2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,54200
+Time to perform DFP Inter 0,57800
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 21
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crowd2-plugin/d3fe5c539e80d79fd23a79d0d7266b8875acb239/original-without-dependencies/crowd2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,67600
+Time to perform DFP Inter 0,46500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 21
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crowd2-plugin/d3fe5c539e80d79fd23a79d0d7266b8875acb239/original-without-dependencies/crowd2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,55500
+Time to perform PDG 0,51200
+CONFLICTS: [List(Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,if cachedRep != null goto $stack15 = <java.lang.Boolean: java.lang.Boolean TRUE>,293,SourceNode, path: ) => Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,if cached#6 == null goto $stack15 = <java.lang.Boolean: java.lang.Boolean TRUE>,293,SourceNode, path: ) => Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,if $stack19 != null goto $stack22 = this.<de.theit.jenkins.crowd.CrowdConfigurationService: java.util.Map isGroupMemberCache>,287,SimpleNode, path: ) => Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,$stack27 = this.<de.theit.jenkins.crowd.CrowdConfigurationService: java.lang.Integer cacheSize>,288,SinkNode, path: (<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>, $stack27 = this.<de.theit.jenkins.crowd.CrowdConfigurationService: java.lang.Integer cacheSize>, 288))), List(Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,if cachedRep != null goto $stack15 = <java.lang.Boolean: java.lang.Boolean TRUE>,293,SourceNode, path: ) => Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,if cached#6 == null goto $stack15 = <java.lang.Boolean: java.lang.Boolean TRUE>,293,SourceNode, path: ) => Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,$stack21 = this.<de.theit.jenkins.crowd.CrowdConfigurationService: java.lang.Integer cacheTTL>,290,SinkNode, path: (<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>, $stack21 = this.<de.theit.jenkins.crowd.CrowdConfigurationService: java.lang.Integer cacheTTL>, 290)) => Node(<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>,$stack23 = virtualinvoke $stack21.<java.lang.Integer: int intValue()>(),290,SinkNode, path: (<de.theit.jenkins.crowd.CrowdConfigurationService: boolean isGroupMember(java.lang.String)>, $stack23 = virtualinvoke $stack21.<java.lang.Integer: int intValue()>(), 290)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/crowd2-plugin/d3fe5c539e80d79fd23a79d0d7266b8875acb239/original-without-dependencies/crowd2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,54800
+Time to perform PDG 0,44800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

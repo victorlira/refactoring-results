@@ -1,0 +1,104 @@
+Running soot scenario esperandro;de.devland.esperandro.processor.EsperandroAnnotationProcessor;process(Set<?extendsTypeElement>, RoundEnvironment);a34767fddf8967ad70af5829bef6e564f38c16ec
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/esperandro/a34767fddf8967ad70af5829bef6e564f38c16ec/original-without-dependencies/esperandro-1.2-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,48300
+Time to perform Confluence 1 Inter 3,72100
+Configure Soot Confluence 2 Inter 0,16100
+Time to perform Confluence 2 Inter 4,44900
+Visited methods: 186
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/esperandro/a34767fddf8967ad70af5829bef6e564f38c16ec/original-without-dependencies/esperandro-1.2-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,51900
+Runtime: 0.018s
+Time to perform OA Inter 0,62500
+OA Inter Visited methods: 7
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/esperandro/a34767fddf8967ad70af5829bef6e564f38c16ec/original-without-dependencies/esperandro-1.2-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,44000
+Time to perform DFP Inter 2,78700
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 93
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/esperandro/a34767fddf8967ad70af5829bef6e564f38c16ec/original-without-dependencies/esperandro-1.2-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,45200
+Time to perform DFP Inter 5,29200
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 100
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/esperandro/a34767fddf8967ad70af5829bef6e564f38c16ec/original-without-dependencies/esperandro-1.2-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40200
+Time to perform PDG 0,37000
+CONFLICTS: [List(Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,if $stack26 != $stack27 goto (branch),71,SourceNode, path: ) => Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack29 = interfaceinvoke interfaze.<javax.lang.model.element.Element: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class "Lde/devland/esperandro/annotations/SharedPreferences;"),85,SimpleNode, path: (<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack29 = interfaceinvoke interfaze.<javax.lang.model.element.Element: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class 'Lde/devland/esperandro/annotations/SharedPreferences;'), 85)) => Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,if $stack29 == null goto (branch),85,SimpleNode, path: ) => Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack30 = this.<de.devland.esperandro.processor.EsperandroAnnotationProcessor: java.util.Set additionalImports>,75,SinkNode, path: (<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack30 = this.<de.devland.esperandro.processor.EsperandroAnnotationProcessor: java.util.Set additionalImports>, 75))), List(Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,if $stack26 != $stack27 goto (branch),71,SourceNode, path: ) => Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack29 = interfaceinvoke interfaze.<javax.lang.model.element.Element: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class "Lde/devland/esperandro/annotations/SharedPreferences;"),85,SimpleNode, path: (<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack29 = interfaceinvoke interfaze.<javax.lang.model.element.Element: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class 'Lde/devland/esperandro/annotations/SharedPreferences;'), 85)) => Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,if $stack29 == null goto (branch),85,SimpleNode, path: ) => Node(<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,specialinvoke this.<de.devland.esperandro.processor.EsperandroAnnotationProcessor: void determineAdditionalImports(javax.lang.model.element.Element)>(interfaze),74,SinkNode, path: (<de.devland.esperandro.processor.EsperandroAnnotationProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, specialinvoke this.<de.devland.esperandro.processor.EsperandroAnnotationProcessor: void determineAdditionalImports(javax.lang.model.element.Element)>(interfaze), 74)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/esperandro/a34767fddf8967ad70af5829bef6e564f38c16ec/original-without-dependencies/esperandro-1.2-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,46800
+Time to perform PDG 0,38900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -3,6 +3,24 @@
     "branch": "L",
     "class": "org.vafer.jdeb.maven.DebMojo",
     "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
+    "description": {
+      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
+      "startLine": 413,
+      "endLine": 413,
+      "startColumn": 37,
+      "endColumn": 78,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "extracted variable declaration",
+      "codeElement": "projectArtifacts : Set<Artifact>"
+    },
+    "line": "421",
+    "branchLine": "413"
+  },
+  {
+    "branch": "L",
+    "class": "org.vafer.jdeb.maven.DebMojo",
+    "tool": "RefactoringMiner",
     "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
     "description": {
       "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
@@ -14,7 +32,8 @@
       "description": "extracted variable declaration",
       "codeElement": "attachedArtifacts : List<Artifact>"
     },
-    "line": "421"
+    "line": "428",
+    "branchLine": "420"
   },
   {
     "branch": "L",
@@ -31,313 +50,44 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": null
     },
-    "line": "421"
+    "line": "420",
+    "branchLine": "419"
   },
   {
     "branch": "L",
     "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
     "description": {
       "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 419,
-      "endLine": 420,
-      "startColumn": 17,
-      "endColumn": 89,
+      "startLine": 413,
+      "endLine": 413,
+      "startColumn": 37,
+      "endColumn": 78,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "extracted variable declaration",
+      "codeElement": "projectArtifacts : Set<Artifact>"
+    },
+    "line": "421",
+    "branchLine": "413"
+  },
+  {
+    "branch": "L",
+    "class": "org.vafer.jdeb.maven.DebMojo",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
+    "description": {
+      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
+      "startLine": 415,
+      "endLine": 417,
+      "startColumn": 17,
+      "endColumn": 18,
+      "codeElementType": "ENHANCED_FOR_STATEMENT",
       "description": "statement with the name of the extracted variable",
-      "codeElement": null
+      "codeElement": "for(artifact: projectArtifacts)"
     },
-    "line": "420"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "375"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "374"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "421"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "420"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "398"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "388"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "481"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "386"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "430"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "428"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "474"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "473"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "472"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "377"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "471"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "376"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectArtifacts : Set<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "423"
+    "line": "423",
+    "branchLine": "415"
   },
   {
     "branch": "L",
@@ -354,7 +104,8 @@
       "description": "extracted variable declaration",
       "codeElement": "attachedArtifacts : List<Artifact>"
     },
-    "line": "421"
+    "line": "428",
+    "branchLine": "420"
   },
   {
     "branch": "L",
@@ -371,295 +122,7 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": "for(artifact: attachedArtifacts)"
     },
-    "line": "423"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "375"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "374"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "421"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "420"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "398"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "388"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "481"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "386"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "430"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "428"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "474"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "473"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "472"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "377"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "471"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "376"
-  },
-  {
-    "branch": "L",
-    "class": "org.vafer.jdeb.maven.DebMojo",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tattachedArtifacts : List<Artifact> in method public execute() : void from class org.vafer.jdeb.maven.DebMojo",
-    "description": {
-      "filePath": "src/main/java/org/vafer/jdeb/maven/DebMojo.java",
-      "startLine": 356,
-      "endLine": 481,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public execute() : void"
-    },
-    "line": "423"
+    "line": "430",
+    "branchLine": "422"
   }
 ]

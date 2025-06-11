@@ -1,0 +1,211 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,params[6] = bitCompressed,151,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params),159,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) SINK=>BASE: Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,params = newarray (int)[16],144,SourceNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159)) => Node(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>,specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params),159,SinkNode, path: (<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params), 159))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "params = newarray (int)[16]",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+					"line": 144
+				},
+				"stackTrace": [{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+	"line": 144
+},{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+	"line": 159
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "params[6] = bitCompressed",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+					"line": 151
+				},
+				"stackTrace": [{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+	"line": 151
+},{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+	"line": 159
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack53.<org.opencv.core.MatOfInt: void <init>(int[])>(params)",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+					"line": 159
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "bitCompressed - bitCompressed",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "bitCompressed = 16",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "write",
+					"line": 137
+				},
+				"stackTrace": [{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "write",
+	"line": 137
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "bitCompressed = 12",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "write",
+					"line": 141
+				},
+				"stackTrace": [{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "write",
+	"line": 141
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "params[6] - params[6]",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "params[6] = bitCompressed",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "write",
+					"line": 151
+				},
+				"stackTrace": [{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "write",
+	"line": 151
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "params[6] = bitCompressed",
+				"location": {
+					"file": "",
+					"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+					"method": "write",
+					"line": 151
+				},
+				"stackTrace": [{
+	"class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+	"method": "write",
+	"line": 151
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>()",
+"location": {
+  "file": "",
+  "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+  "method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+  "line": "134"
+},
+"stackTrace": ["(<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>, bitCompressed = virtualinvoke desc.<org.dcm4che3.imageio.codec.ImageDescriptor: int getBitsCompressed()>(), 134)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if bitCompressed != 8 goto params = newarray (int)[16]",
+"location": {
+  "file": "",
+  "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+  "method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+  "line": "140"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "bitCompressed = 16",
+"location": {
+  "file": "",
+  "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+  "method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+  "line": "137"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if bitCompressed != 8 goto params = newarray (int)[16]",
+"location": {
+  "file": "",
+  "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+  "method": "<org.dcm4che3.opencv.NativeJPEGImageWriter: void write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)>",
+  "line": "140"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

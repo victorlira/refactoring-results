@@ -1,0 +1,111 @@
+Running soot scenario k3po;org.kaazing.k3po.junit.rules.K3poRule;apply(Statement, Description);b147a61164f98a41ebf0ea384a568565d34295cb
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/k3po/b147a61164f98a41ebf0ea384a568565d34295cb/original-without-dependencies/k3po.junit-develop-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,57500
+Time to perform Confluence 1 Inter 0,59700
+Configure Soot Confluence 2 Inter 0,15900
+Time to perform Confluence 2 Inter 0,12300
+Visited methods: 32
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack43 = null,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, scripts = $stack43, 106)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,scripts = $stack43,106,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, scripts = $stack43, 106)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,packageName#7 = scripts,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, packageName#7 = scripts, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,script = packageName#7[l9],138,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, script = packageName#7[l9], 138))
+SINK=>BASE: Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,statement = this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement>,135,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, statement = this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement>, 135)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,tmp$109575534 = (org.junit.runners.model.Statement) statement,-1,SimpleNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, tmp$109575534 = (org.junit.runners.model.Statement) statement, -1)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack13 = specialinvoke this.<org.junit.rules.Verifier: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>(tmp$109575534, description),138,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, $stack13 = specialinvoke this.<org.junit.rules.Verifier: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>(tmp$109575534, description), 138)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,return $stack13,138,SinkNode, path: )]
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at scala.collection.generic.TraversableForwarder.head(TraversableForwarder.scala:59)
+	at scala.collection.generic.TraversableForwarder.head$(TraversableForwarder.scala:59)
+	at scala.collection.mutable.ListBuffer.head(ListBuffer.scala:47)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.reportConflictsConfluence(DFPConfluenceAnalysis.java:181)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:566)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/k3po/b147a61164f98a41ebf0ea384a568565d34295cb/original-without-dependencies/k3po.junit-develop-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,55900
+Runtime: 0.033s
+Time to perform OA Inter 0,72700
+OA Inter Visited methods: 34
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/k3po/b147a61164f98a41ebf0ea384a568565d34295cb/original-without-dependencies/k3po.junit-develop-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,53600
+Time to perform DFP Inter 0,58100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 16
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/k3po/b147a61164f98a41ebf0ea384a568565d34295cb/original-without-dependencies/k3po.junit-develop-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,42800
+Time to perform DFP Inter 0,50900
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 16
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/k3po/b147a61164f98a41ebf0ea384a568565d34295cb/original-without-dependencies/k3po.junit-develop-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40900
+Time to perform PDG 0,58000
+CONFLICTS: [List(Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack28 = virtualinvoke script.<java.lang.String: boolean startsWith(java.lang.String)>("/"),120,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, $stack28 = virtualinvoke script.<java.lang.String: boolean startsWith(java.lang.String)>('/'), 120)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if $stack28 == 0 goto $stack29 = newarray (java.lang.Object)[2],120,SourceNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,l9 = l9 + 1,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, l9 = l9 + 1, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if l9 >= l8 goto packageName#13 = this.<org.kaazing.k3po.junit.rules.K3poRule: java.net.URL controlURL>,118,SourceNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement> = tmp$1595472338,134,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement> = tmp$1595472338, 134))), List(Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack28 = virtualinvoke script.<java.lang.String: boolean startsWith(java.lang.String)>("/"),120,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, $stack28 = virtualinvoke script.<java.lang.String: boolean startsWith(java.lang.String)>('/'), 120)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if $stack28 == 0 goto $stack29 = newarray (java.lang.Object)[2],120,SourceNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,l9 = l9 + 1,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, l9 = l9 + 1, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if l9 >= l8 goto packageName#13 = this.<org.kaazing.k3po.junit.rules.K3poRule: java.net.URL controlURL>,118,SourceNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,statement = this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement>,135,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, statement = this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement>, 135))), List(Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack43 = null,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, scripts = $stack43, 106)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,scripts = $stack43,106,SimpleNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, scripts = $stack43, 106)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if scripts == null goto tmp$2048888303 = (org.junit.runners.model.Statement) statement,108,SimpleNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,l9 = 0,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, l9 = l9 + 1, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,l9 = l9 + 1,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, l9 = l9 + 1, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if l9 >= l8 goto packageName#13 = this.<org.kaazing.k3po.junit.rules.K3poRule: java.net.URL controlURL>,118,SourceNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement> = tmp$1595472338,134,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement> = tmp$1595472338, 134))), List(Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,$stack43 = null,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, scripts = $stack43, 106)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,scripts = $stack43,106,SimpleNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, scripts = $stack43, 106)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if scripts == null goto tmp$2048888303 = (org.junit.runners.model.Statement) statement,108,SimpleNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,l9 = 0,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, l9 = l9 + 1, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,l9 = l9 + 1,118,SourceNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, l9 = l9 + 1, 118)) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,if l9 >= l8 goto packageName#13 = this.<org.kaazing.k3po.junit.rules.K3poRule: java.net.URL controlURL>,118,SourceNode, path: ) => Node(<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>,statement = this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement>,135,SinkNode, path: (<org.kaazing.k3po.junit.rules.K3poRule: org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)>, statement = this.<org.kaazing.k3po.junit.rules.K3poRule: org.kaazing.k3po.junit.rules.SpecificationStatement statement>, 135)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/k3po/b147a61164f98a41ebf0ea384a568565d34295cb/original-without-dependencies/k3po.junit-develop-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,39400
+Time to perform PDG 0,47900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

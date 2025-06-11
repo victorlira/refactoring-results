@@ -1,0 +1,538 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>,240,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>, 240)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack30 = (com.cronutils.model.field.expression.On) $stack29,233,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack30 = (com.cronutils.model.field.expression.On) $stack29, 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,on := @parameter0: com.cronutils.model.field.expression.On,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack3 = virtualinvoke $stack2.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack3 = virtualinvoke $stack2.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 297)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack4 = virtualinvoke $stack3.<java.lang.Integer: int intValue()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack4 = virtualinvoke $stack3.<java.lang.Integer: int intValue()>(), 297)) SINK=>BASE: Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1),24,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack3 = virtualinvoke $stack2.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack3 = virtualinvoke $stack2.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 297))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1)",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.model.field.value.IntegerFieldValue",
+					"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+					"line": 24
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+					"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+					"line": 240
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 240
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 233
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": -1
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = virtualinvoke $stack3.<java.lang.Integer: int intValue()>()",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+					"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+					"line": 297
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>,240,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>, 240)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack30 = (com.cronutils.model.field.expression.On) $stack29,233,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack30 = (com.cronutils.model.field.expression.On) $stack29, 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,on := @parameter0: com.cronutils.model.field.expression.On,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)) => Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,this := @this: com.cronutils.model.field.value.IntegerFieldValue,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)) => Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>,24,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831)) SINK=>BASE: Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>,24,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.model.field.value.IntegerFieldValue",
+					"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+					"line": 24
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+					"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+					"line": 240
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 240
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 233
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": -1
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": -1
+},{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = l0 + 128",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 831
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>,240,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>, 240)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack30 = (com.cronutils.model.field.expression.On) $stack29,233,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack30 = (com.cronutils.model.field.expression.On) $stack29, 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,on := @parameter0: com.cronutils.model.field.expression.On,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)) => Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,this := @this: com.cronutils.model.field.value.IntegerFieldValue,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)) => Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>,24,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)) SINK=>BASE: Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>,24,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.model.field.value.IntegerFieldValue",
+					"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+					"line": 24
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+					"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+					"line": 240
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 240
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 233
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": -1
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": -1
+},{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l0.<java.lang.Integer: int value> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: void <init>(int)>",
+					"line": 850
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>,240,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>, 240)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack30 = (com.cronutils.model.field.expression.On) $stack29,233,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack30 = (com.cronutils.model.field.expression.On) $stack29, 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,on := @parameter0: com.cronutils.model.field.expression.On,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)) => Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,this := @this: com.cronutils.model.field.value.IntegerFieldValue,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)) => Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>,24,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) SINK=>BASE: Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>,24,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232) => (<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1), 24) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.model.field.value.IntegerFieldValue",
+					"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+					"line": 24
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+					"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+					"line": 240
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 240
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 233
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": -1
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": -1
+},{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 832
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>,240,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>, 240)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack30 = (com.cronutils.model.field.expression.On) $stack29,233,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack30 = (com.cronutils.model.field.expression.On) $stack29, 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,on := @parameter0: com.cronutils.model.field.expression.On,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>,$stack3 = virtualinvoke $stack2.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(),297,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233) => (<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack3 = virtualinvoke $stack2.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 297)) => Node(<java.lang.Integer: int intValue()>,l0 := @this: java.lang.Integer,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack14 = virtualinvoke $stack13.<java.lang.Integer: int intValue()>(), 232)) => Node(<java.lang.Integer: int intValue()>,$stack1 = l0.<java.lang.Integer: int value>,893,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack14 = virtualinvoke $stack13.<java.lang.Integer: int intValue()>(), 232)) SINK=>BASE: Node(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>,$stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1),24,SourceNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)) => Node(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>,$stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(),232,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)) => Node(<java.lang.Integer: int intValue()>,l0 := @this: java.lang.Integer,-1,SimpleNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack14 = virtualinvoke $stack13.<java.lang.Integer: int intValue()>(), 232)) => Node(<java.lang.Integer: int intValue()>,$stack1 = l0.<java.lang.Integer: int value>,893,SinkNode, path: (<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack14 = virtualinvoke $stack13.<java.lang.Integer: int intValue()>(), 232))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack1)",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.model.field.value.IntegerFieldValue",
+					"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+					"line": 24
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.model.field.value.IntegerFieldValue",
+	"method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+	"line": 24
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 232
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": 893
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>",
+				"location": {
+					"file": "",
+					"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+					"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+					"line": 240
+				},
+				"stackTrace": [{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 240
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+	"line": 233
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": -1
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+	"method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+	"line": 297
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: int intValue()>",
+	"line": 893
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack1 = l0.<java.lang.Integer: int value>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: int intValue()>",
+					"line": 893
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>",
+"location": {
+  "file": "",
+  "class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+  "method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+  "line": "240"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack29 = timeFields.<com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields: com.cronutils.model.field.expression.FieldExpression seconds>, 240)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = (com.cronutils.model.field.expression.On) $stack29",
+"location": {
+  "file": "",
+  "class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+  "method": "<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>",
+  "line": "233"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack30 = (com.cronutils.model.field.expression.On) $stack29, 233)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "on := @parameter0: com.cronutils.model.field.expression.On",
+"location": {
+  "file": "",
+  "class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+  "method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.cronutils.model.field.expression.On",
+"location": {
+  "file": "",
+  "class": "com.cronutils.model.field.expression.On",
+  "method": "<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)","(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = this.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue time>",
+"location": {
+  "file": "",
+  "class": "com.cronutils.model.field.expression.On",
+  "method": "<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>",
+  "line": "56"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)","(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>()",
+"location": {
+  "file": "",
+  "class": "com.cronutils.descriptor.TimeDescriptionStrategy",
+  "method": "<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>",
+  "line": "297"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack31 = specialinvoke this.<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>($stack30), 233)","(<com.cronutils.descriptor.TimeDescriptionStrategy: boolean isDefault(com.cronutils.model.field.expression.On)>, $stack2 = virtualinvoke on.<com.cronutils.model.field.expression.On: com.cronutils.model.field.value.IntegerFieldValue getTime()>(), 297)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.cronutils.model.field.value.IntegerFieldValue",
+"location": {
+  "file": "",
+  "class": "com.cronutils.model.field.value.IntegerFieldValue",
+  "method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>",
+"location": {
+  "file": "",
+  "class": "com.cronutils.model.field.value.IntegerFieldValue",
+  "method": "<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>",
+  "line": "24"
+},
+"stackTrace": ["(<com.cronutils.descriptor.TimeDescriptionStrategy: java.lang.String lambda$registerFunctions$6(com.cronutils.descriptor.TimeDescriptionStrategy,com.cronutils.descriptor.TimeDescriptionStrategy$TimeFields)>, $stack13 = virtualinvoke $stack12.<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>(), 232)","(<com.cronutils.model.field.value.IntegerFieldValue: java.lang.Integer getValue()>, $stack1 = this.<com.cronutils.model.field.value.IntegerFieldValue: int value>, 24)"]
+}]
+}
+}
+
+]

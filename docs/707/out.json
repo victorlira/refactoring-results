@@ -1,0 +1,492 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),464,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) SINK=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),464,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 464
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 464
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.NominatimConnector",
+					"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+					"line": 464
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack21 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),487,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack21 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 487)) SINK=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack21 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),487,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack21 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 487))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 487
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 487
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack21 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.NominatimConnector",
+					"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+					"line": 487
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack17 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),493,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack17 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 493)) SINK=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack17 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),493,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack17 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 493)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,interfaceinvoke $stack16.<java.util.Set: boolean add(java.lang.Object)>($stack17),493,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, interfaceinvoke $stack16.<java.util.Set: boolean add(java.lang.Object)>($stack17), 493))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 493
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 493
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 493
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack17 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.NominatimConnector",
+					"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+					"line": 493
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack30 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),472,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack30 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 472)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setStreet(java.util.Map)>($stack30),472,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setStreet(java.util.Map)>($stack30), 472)) SINK=>BASE: Node(<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>,$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>,17,SourceNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)) => Node(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>,$stack30 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(),472,SinkNode, path: (<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack30 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 472))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 472
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.model.AddressRow",
+					"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+					"line": 17
+				},
+				"stackTrace": [{
+	"class": "de.komoot.photon.nominatim.model.AddressRow",
+	"method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+	"line": 17
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 472
+},{
+	"class": "de.komoot.photon.nominatim.NominatimConnector",
+	"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+	"line": 472
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setStreet(java.util.Map)>($stack30)",
+				"location": {
+					"file": "",
+					"class": "de.komoot.photon.nominatim.NominatimConnector",
+					"method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+					"line": 472
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack33 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "466"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack33 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 466)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack32.<java.util.Set: boolean add(java.lang.Object)>($stack33)",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "466"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, interfaceinvoke $stack32.<java.util.Set: boolean add(java.lang.Object)>($stack33), 466)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack24 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "482"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack24 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 482)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setDistrict(java.util.Map)>($stack24)",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "482"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setDistrict(java.util.Map)>($stack24), 482)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "477"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack27 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 477)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>($stack27)",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "477"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>($stack27), 477)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>()",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.NominatimConnector",
+  "method": "<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>",
+  "line": "477"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack27 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 477)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "locality := @parameter0: java.util.Map",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.PhotonDoc",
+  "method": "<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>",
+  "line": "-1"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>($stack27), 477)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<de.komoot.photon.PhotonDoc: java.util.Map locality> = locality",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.PhotonDoc",
+  "method": "<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>",
+  "line": "19"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, virtualinvoke doc.<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>($stack27), 477)","(<de.komoot.photon.PhotonDoc: void setLocality(java.util.Map)>, this.<de.komoot.photon.PhotonDoc: java.util.Map locality> = locality, 19)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map name>",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": ["(<de.komoot.photon.nominatim.NominatimConnector: void completePlace(de.komoot.photon.PhotonDoc)>, $stack35 = virtualinvoke address.<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>(), 464)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "de.komoot.photon.nominatim.model.AddressRow",
+  "method": "<de.komoot.photon.nominatim.model.AddressRow: java.util.Map getName()>",
+  "line": "17"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

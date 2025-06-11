@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "allProjectModules = $stack7",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesCheckMojo",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesCheckMojo: java.util.List getArtifactsToProcess()>",
+  "line": "211"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesCheckMojo: java.util.List getArtifactsToProcess()>, allProjectModules = $stack7, 211)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke allProjectModules.<java.util.Set: boolean contains(java.lang.Object)>(artifact)",
+"location": {
+  "file": "",
+  "class": "net.nicoulaj.maven.plugins.checksum.mojo.DependenciesCheckMojo",
+  "method": "<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesCheckMojo: java.util.List getArtifactsToProcess()>",
+  "line": "217"
+},
+"stackTrace": ["(<net.nicoulaj.maven.plugins.checksum.mojo.DependenciesCheckMojo: java.util.List getArtifactsToProcess()>, $stack15 = interfaceinvoke allProjectModules.<java.util.Set: boolean contains(java.lang.Object)>(artifact), 217)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,137 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l3 - l3",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l3 = l3 + -1",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "equals",
+					"line": 987
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.manager.internal.AbstractBuilder",
+	"method": "setAttributes",
+	"line": 52
+},{
+	"class": "java.lang.String",
+	"method": "equals",
+	"line": 987
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l3 = lengthof $stack8",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "equals",
+					"line": 982
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.manager.internal.AbstractBuilder",
+	"method": "setAttributes",
+	"line": 60
+},{
+	"class": "java.lang.String",
+	"method": "equals",
+	"line": 982
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "setterName - setterName",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "setterName = 'clazz'",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.manager.internal.AbstractBuilder",
+					"method": "setAttributes",
+					"line": 54
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.manager.internal.AbstractBuilder",
+	"method": "setAttributes",
+	"line": 54
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "setterName = 'classname'",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.manager.internal.AbstractBuilder",
+					"method": "setAttributes",
+					"line": 62
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.manager.internal.AbstractBuilder",
+	"method": "setAttributes",
+	"line": 62
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "setterName = 'clazz'",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.AbstractBuilder",
+  "method": "<org.asteriskjava.manager.internal.AbstractBuilder: void setAttributes(java.lang.Object,java.util.Map,java.util.Set)>",
+  "line": "54"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.AbstractBuilder: void setAttributes(java.lang.Object,java.util.Map,java.util.Set)>, $stack26 = virtualinvoke $stack25.<java.lang.String: boolean equals(java.lang.Object)>(setterName), 60)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = virtualinvoke $stack25.<java.lang.String: boolean equals(java.lang.Object)>(setterName)",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.AbstractBuilder",
+  "method": "<org.asteriskjava.manager.internal.AbstractBuilder: void setAttributes(java.lang.Object,java.util.Map,java.util.Set)>",
+  "line": "60"
+},
+"stackTrace": ["(<org.asteriskjava.manager.internal.AbstractBuilder: void setAttributes(java.lang.Object,java.util.Map,java.util.Set)>, $stack26 = virtualinvoke $stack25.<java.lang.String: boolean equals(java.lang.Object)>(setterName), 60)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack26 == 0 goto $stack27 = interfaceinvoke setters.<java.util.Map: java.lang.Object get(java.lang.Object)>(setterName)",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.manager.internal.AbstractBuilder",
+  "method": "<org.asteriskjava.manager.internal.AbstractBuilder: void setAttributes(java.lang.Object,java.util.Map,java.util.Set)>",
+  "line": "60"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

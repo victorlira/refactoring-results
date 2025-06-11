@@ -1,0 +1,170 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack24 = (long) $stack23",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "180"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack24 = (long) $stack23, 180)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "delivery = virtualinvoke consumer.<com.rabbitmq.client.QueueingConsumer: com.rabbitmq.client.QueueingConsumer$Delivery nextDelivery(long)>($stack24)",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "180"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, delivery = virtualinvoke consumer.<com.rabbitmq.client.QueueingConsumer: com.rabbitmq.client.QueueingConsumer$Delivery nextDelivery(long)>($stack24), 180)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery)",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "203"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack30 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery), 203)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "deliveryTag := @parameter0: long",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void ackMessage(long)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: void ackMessage(long)>($stack40), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack4.<com.rabbitmq.client.Channel: void basicAck(long,boolean)>(deliveryTag, 0)",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void ackMessage(long)>",
+  "line": "229"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: void ackMessage(long)>($stack40), 202)","(<com.aweber.flume.source.rabbitmq.Consumer: void ackMessage(long)>, interfaceinvoke $stack4.<com.rabbitmq.client.Channel: void basicAck(long,boolean)>(deliveryTag, 0), 229)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack24 = (long) $stack23",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "180"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack24 = (long) $stack23, 180)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "delivery = virtualinvoke consumer.<com.rabbitmq.client.QueueingConsumer: com.rabbitmq.client.QueueingConsumer$Delivery nextDelivery(long)>($stack24)",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "180"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, delivery = virtualinvoke consumer.<com.rabbitmq.client.QueueingConsumer: com.rabbitmq.client.QueueingConsumer$Delivery nextDelivery(long)>($stack24), 180)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "delivery := @parameter0: com.rabbitmq.client.QueueingConsumer$Delivery",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack63 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery), 194)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke delivery.<com.rabbitmq.client.QueueingConsumer$Delivery: com.rabbitmq.client.Envelope getEnvelope()>()",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>",
+  "line": "215"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack63 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery), 194)","(<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>, $stack2 = virtualinvoke delivery.<com.rabbitmq.client.QueueingConsumer$Delivery: com.rabbitmq.client.Envelope getEnvelope()>(), 215)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<com.rabbitmq.client.Envelope: long getDeliveryTag()>()",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>",
+  "line": "215"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack63 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery), 194)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack24 = (long) $stack23",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "180"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack24 = (long) $stack23, 180)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "delivery = virtualinvoke consumer.<com.rabbitmq.client.QueueingConsumer: com.rabbitmq.client.QueueingConsumer$Delivery nextDelivery(long)>($stack24)",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "180"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, delivery = virtualinvoke consumer.<com.rabbitmq.client.QueueingConsumer: com.rabbitmq.client.QueueingConsumer$Delivery nextDelivery(long)>($stack24), 180)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack40 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery)",
+"location": {
+  "file": "",
+  "class": "com.aweber.flume.source.rabbitmq.Consumer",
+  "method": "<com.aweber.flume.source.rabbitmq.Consumer: void run()>",
+  "line": "202"
+},
+"stackTrace": ["(<com.aweber.flume.source.rabbitmq.Consumer: void run()>, $stack40 = specialinvoke this.<com.aweber.flume.source.rabbitmq.Consumer: long getDeliveryTag(com.rabbitmq.client.QueueingConsumer$Delivery)>(delivery), 202)"]
+}]
+}
+}
+
+]

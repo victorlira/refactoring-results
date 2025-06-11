@@ -2,6 +2,42 @@
   {
     "branch": "R",
     "class": "jenkins.plugins.coverity.CheckConfig",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
+    "description": {
+      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
+      "startLine": 129,
+      "endLine": 129,
+      "startColumn": 35,
+      "endColumn": 58,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "extracted variable declaration",
+      "codeElement": "stream : CIMStream"
+    },
+    "line": "127",
+    "branchLine": "129"
+  },
+  {
+    "branch": "R",
+    "class": "jenkins.plugins.coverity.CheckConfig",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
+    "description": {
+      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
+      "startLine": 129,
+      "endLine": 129,
+      "startColumn": 35,
+      "endColumn": 58,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "extracted variable declaration",
+      "codeElement": "stream : CIMStream"
+    },
+    "line": "127",
+    "branchLine": "129"
+  },
+  {
+    "branch": "R",
+    "class": "jenkins.plugins.coverity.CheckConfig",
     "tool": "RefactoringMiner",
     "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
     "description": {
@@ -14,24 +50,8 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": null
     },
-    "line": "149"
-  },
-  {
-    "branch": "R",
-    "class": "jenkins.plugins.coverity.CheckConfig",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
-      "startLine": 148,
-      "endLine": 150,
-      "startColumn": 29,
-      "endColumn": 30,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": "if(stream != null && stream.getDomain().equals(\\\\\\\\\\\\\\\"MIXED\\\\\\\\\\\\\\\"))"
-    },
-    "line": "149"
+    "line": "147",
+    "branchLine": "149"
   },
   {
     "branch": "R",
@@ -46,59 +66,9 @@
       "endColumn": 180,
       "codeElementType": "EXPRESSION_STATEMENT",
       "description": "statement with the name of the extracted variable",
-      "codeElement": "newStatus.add(new Status(false,\\\\\\\\\\\\\\\"Stream \\\\\\\\\\\\\\\" + stream.toPrettyString() + \\\\\\\\\\\\\\\" (any language) is incompatible with analysis version \\\\\\\\\\\\\\\"+ analysisVersion));\\\\\\\\n"
+      "codeElement": "newStatus.add(new Status(false,\"Stream \" + stream.toPrettyString() + \" (any language) is incompatible with analysis version \"+ analysisVersion));\n"
     },
-    "line": "149"
-  },
-  {
-    "branch": "R",
-    "class": "jenkins.plugins.coverity.CheckConfig",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
-      "startLine": 97,
-      "endLine": 157,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public check() : void"
-    },
-    "line": "130"
-  },
-  {
-    "branch": "R",
-    "class": "jenkins.plugins.coverity.CheckConfig",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
-      "startLine": 97,
-      "endLine": 157,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public check() : void"
-    },
-    "line": "130"
-  },
-  {
-    "branch": "R",
-    "class": "jenkins.plugins.coverity.CheckConfig",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tstream : CIMStream in method public check() : void from class jenkins.plugins.coverity.CheckConfig",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CheckConfig.java",
-      "startLine": 97,
-      "endLine": 157,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public check() : void"
-    },
-    "line": "149"
+    "line": "147",
+    "branchLine": "149"
   }
 ]

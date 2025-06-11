@@ -1,0 +1,67 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request),189,SourceNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 189)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4),191,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4), 191)) SINK=>BASE: Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request),172,SourceNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request), 172)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,innerExtras#4 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: java.lang.String endRequest()>(),186,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, innerExtras#4 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: java.lang.String endRequest()>(), 186)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4),191,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4), 191))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request)",
+				"location": {
+					"file": "",
+					"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+					"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+					"line": 172
+				},
+				"stackTrace": [{
+	"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+	"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+	"line": 172
+},{
+	"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+	"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+	"line": 186
+},{
+	"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+	"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+	"line": 191
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request)",
+				"location": {
+					"file": "",
+					"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+					"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+					"line": 189
+				},
+				"stackTrace": [{
+	"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+	"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+	"line": 189
+},{
+	"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+	"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+	"line": 191
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4)",
+				"location": {
+					"file": "",
+					"class": "org.hdiv.web.servlet.support.HdivRequestDataValueProcessor",
+					"method": "<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>",
+					"line": 191
+				}
+			}
+		]
+	}
+}
+
+]

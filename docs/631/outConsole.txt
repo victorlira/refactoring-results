@@ -1,0 +1,112 @@
+Running soot scenario hdiv;org.hdiv.web.servlet.support.HdivRequestDataValueProcessor;getExtraHiddenFields(HttpServletRequest);2f9993190a5d9e153c693e8060ef8050f2fe2baa
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-spring-mvc-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,49500
+Time to perform Confluence 1 Inter 0,33400
+Configure Soot Confluence 2 Inter 0,15400
+Time to perform Confluence 2 Inter 0,05600
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request),189,SourceNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 189)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4),191,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4), 191))
+SINK=>BASE: Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request),172,SourceNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request), 172)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,innerExtras#4 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: java.lang.String endRequest()>(),186,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, innerExtras#4 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: java.lang.String endRequest()>(), 186)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4),191,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4), 191))]
+Confluence interference in <org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>
+Confluence flows from execution of lines 189 and 172 to line 191, defined in hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request) and dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request) and used in interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4)
+Caused by line 189 flow: path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 189)
+Caused by line 172 flow: path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request), 172)
+Caused by line 191 flow: path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, interfaceinvoke extraFields.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(hdivStateParam, innerExtras#4), 191)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-spring-mvc-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,70400
+Runtime: 0.012s
+Time to perform OA Inter 0,77100
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-spring-mvc-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47500
+Time to perform DFP Inter 0,30500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-spring-mvc-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,37300
+Time to perform DFP Inter 0,33600
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-spring-mvc-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,38800
+Time to perform PDG 0,30500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdiv/2f9993190a5d9e153c693e8060ef8050f2fe2baa/original-without-dependencies/hdiv-spring-mvc-3.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,37800
+Time to perform PDG 0,33500
+CONFLICTS: [List(Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request),172,SourceNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request), 172)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,$stack9 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: boolean isRequestStarted()>(),183,SimpleNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, $stack9 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: boolean isRequestStarted()>(), 183)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if $stack9 != 0 goto innerExtras#4 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: java.lang.String endRequest()>(),183,SimpleNode, path: ) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if innerExtras#4 == null goto return extraFields,188,SimpleNode, path: ) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,$stack11 = virtualinvoke innerExtras#4.<java.lang.String: int length()>(),197,SimpleNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, $stack11 = virtualinvoke innerExtras#4.<java.lang.String: int length()>(), 197)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if $stack11 <= 0 goto return extraFields,197,SimpleNode, path: ) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request),189,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 189)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if hdivStateParam == null goto interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("hdivFormStateId", innerExtras#4),190,SinkNode, path: )), List(Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request),172,SourceNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, dataComposer = staticinvoke <org.hdiv.util.HDIVUtil: org.hdiv.dataComposer.IDataComposer getDataComposer(javax.servlet.ServletRequest)>(request), 172)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,$stack9 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: boolean isRequestStarted()>(),183,SimpleNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, $stack9 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: boolean isRequestStarted()>(), 183)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if $stack9 != 0 goto innerExtras#4 = interfaceinvoke dataComposer.<org.hdiv.dataComposer.IDataComposer: java.lang.String endRequest()>(),183,SimpleNode, path: ) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if innerExtras#4 == null goto return extraFields,188,SimpleNode, path: ) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,$stack11 = virtualinvoke innerExtras#4.<java.lang.String: int length()>(),197,SimpleNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, $stack11 = virtualinvoke innerExtras#4.<java.lang.String: int length()>(), 197)) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,if $stack11 <= 0 goto return extraFields,197,SimpleNode, path: ) => Node(<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>,hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request),189,SinkNode, path: (<org.hdiv.web.servlet.support.HdivRequestDataValueProcessor: java.util.Map getExtraHiddenFields(javax.servlet.http.HttpServletRequest)>, hdivStateParam = staticinvoke <org.hdiv.util.HDIVUtil: java.lang.String getHdivStateParameterName(javax.servlet.http.HttpServletRequest)>(request), 189)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

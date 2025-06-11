@@ -3,20 +3,22 @@
     {
       "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
       "refactoringInfo": [
-        "Extract Method\tprivate isRecoverable(httpErrorCode int) : boolean extracted from public translateVersions(projects List<ProjectVersionRef>) : Map<ProjectVersionRef,String> in class org.commonjava.maven.ext.io.rest.DefaultTranslator"
+        "Extract Method\tpublic partition(projects List<ProjectVersionRef>, queue Queue<Task>) : void extracted from public translateVersions(projects List<ProjectVersionRef>) : Map<ProjectVersionRef,String> in class org.commonjava.maven.ext.io.rest.DefaultTranslator"
       ],
-      "line": "204",
+      "line": "244",
+      "branchLine": "238",
       "filePath": "io/src/main/java/org/commonjava/maven/ext/io/rest/DefaultTranslator.java",
-      "branch": "L"
+      "branch": "R"
     },
     {
       "class": "org.commonjava.maven.ext.io.rest.DefaultTranslator",
       "refactoringInfo": [
-        "Extract Method\tpublic partition(projects List<ProjectVersionRef>, queue Queue<Task>) : void extracted from public translateVersions(projects List<ProjectVersionRef>) : Map<ProjectVersionRef,String> in class org.commonjava.maven.ext.io.rest.DefaultTranslator"
+        "Extract Method\tprivate isRecoverable(httpErrorCode int) : boolean extracted from public translateVersions(projects List<ProjectVersionRef>) : Map<ProjectVersionRef,String> in class org.commonjava.maven.ext.io.rest.DefaultTranslator"
       ],
-      "line": "238",
+      "line": "256",
+      "branchLine": "204",
       "filePath": "io/src/main/java/org/commonjava/maven/ext/io/rest/DefaultTranslator.java",
-      "branch": "R"
+      "branch": "L"
     }
   ]
 ]

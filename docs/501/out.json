@@ -1,0 +1,44 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing> - this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing> = 1",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.live.internal.AsteriskServerImpl",
+					"method": "initializeIfNeeded",
+					"line": 289
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.live.internal.AsteriskServerImpl",
+	"method": "initializeIfNeeded",
+	"line": 289
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing> = 1",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.live.internal.AsteriskServerImpl",
+					"method": "initializeIfNeeded",
+					"line": 289
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.live.internal.AsteriskServerImpl",
+	"method": "initializeIfNeeded",
+	"line": 289
+}]
+			}
+		]
+	}
+}
+
+]

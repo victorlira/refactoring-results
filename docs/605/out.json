@@ -1,0 +1,252 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack8 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 487)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>",
+  "line": "685"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, virtualinvoke this.<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>(dhCommit), 511)","(<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>, $stack11 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 685)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = interfaceinvoke $stack10.<net.java.otr4j.OtrEngineHost: java.lang.String getFallbackMessage(net.java.otr4j.session.SessionID)>($stack11)",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>",
+  "line": "685"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, virtualinvoke this.<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>(dhCommit), 511)","(<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>, $stack12 = interfaceinvoke $stack10.<net.java.otr4j.OtrEngineHost: java.lang.String getFallbackMessage(net.java.otr4j.session.SessionID)>($stack11), 685)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke tmp$1794607688.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(msg)",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>",
+  "line": "685"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, virtualinvoke this.<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>(dhCommit), 511)","(<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>, $stack9 = virtualinvoke tmp$1794607688.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(msg), 685)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack12)",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>",
+  "line": "685"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, virtualinvoke this.<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>(dhCommit), 511)","(<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>, $stack13 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack12), 685)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "msg = virtualinvoke $stack13.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>",
+  "line": "685"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, virtualinvoke this.<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>(dhCommit), 511)","(<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>, msg = virtualinvoke $stack13.<java.lang.StringBuilder: java.lang.String toString()>(), 685)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack8 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 487)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>",
+  "line": "686"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, virtualinvoke this.<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>(dhCommit), 511)","(<net.java.otr4j.session.SessionImpl: void injectMessage(net.java.otr4j.io.messages.AbstractMessage)>, $stack7 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 686)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack8 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 487)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack8 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 487)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>",
+  "line": "489"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack12 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 489)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack8 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 487)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>",
+  "line": "489"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack12 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 489)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.java.otr4j.session.SessionID",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionID",
+  "method": "<net.java.otr4j.session.SessionID: java.lang.String getUserID()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack13 = virtualinvoke $stack12.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(), 489)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionID: java.lang.String userID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionID",
+  "method": "<net.java.otr4j.session.SessionID: java.lang.String getUserID()>",
+  "line": "33"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack13 = virtualinvoke $stack12.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(), 489)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: void handleQueryMessage(net.java.otr4j.io.messages.QueryMessage)>, $stack8 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 487)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

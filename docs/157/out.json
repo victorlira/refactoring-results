@@ -1,0 +1,99 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>,$stack1 = this.<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper>,121,SourceNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, $stack25 = virtualinvoke context.<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>(), 52)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,$stack29 = virtualinvoke context.<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>(),59,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, $stack29 = virtualinvoke context.<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>(), 59)) SINK=>BASE: Node(<spark.http.matching.RouteContext: spark.route.Routes routeMatcher()>,$stack1 = this.<spark.http.matching.RouteContext: spark.route.Routes routeMatcher>,52,SourceNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, $stack10 = virtualinvoke context.<spark.http.matching.RouteContext: spark.route.Routes routeMatcher()>(), 36)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,$stack10 = virtualinvoke context.<spark.http.matching.RouteContext: spark.route.Routes routeMatcher()>(),36,SourceNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, $stack10 = virtualinvoke context.<spark.http.matching.RouteContext: spark.route.Routes routeMatcher()>(), 36)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,matchSet = virtualinvoke $stack10.<spark.route.Routes: java.util.List findMultiple(spark.route.HttpMethod,java.lang.String,java.lang.String)>($stack11, $stack12, $stack13),36,SourceNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, matchSet = virtualinvoke $stack10.<spark.route.Routes: java.util.List findMultiple(spark.route.HttpMethod,java.lang.String,java.lang.String)>($stack11, $stack12, $stack13), 36)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,l3 = interfaceinvoke matchSet.<java.util.List: java.util.Iterator iterator()>(),40,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, l3 = interfaceinvoke matchSet.<java.util.List: java.util.Iterator iterator()>(), 40)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,$stack18 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(),70,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, $stack18 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>(), 70)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,filterMatch = (spark.routematch.RouteMatch) $stack18,70,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, filterMatch = (spark.routematch.RouteMatch) $stack18, 70)) => Node(<spark.routematch.RouteMatch: java.lang.Object getTarget()>,this := @this: spark.routematch.RouteMatch,-1,SimpleNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, filterTarget = virtualinvoke filterMatch.<spark.routematch.RouteMatch: java.lang.Object getTarget()>(), 41)) => Node(<spark.routematch.RouteMatch: java.lang.Object getTarget()>,$stack1 = this.<spark.routematch.RouteMatch: java.lang.Object target>,48,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, filterTarget = virtualinvoke filterMatch.<spark.routematch.RouteMatch: java.lang.Object getTarget()>(), 41)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,filterTarget = virtualinvoke filterMatch.<spark.routematch.RouteMatch: java.lang.Object getTarget()>(),41,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, filterTarget = virtualinvoke filterMatch.<spark.routematch.RouteMatch: java.lang.Object getTarget()>(), 41)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,request#3 = (spark.FilterImpl) filterTarget,58,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, request#3 = (spark.FilterImpl) filterTarget, 58)) => Node(<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>,virtualinvoke request#3.<spark.FilterImpl: void handle(spark.Request,spark.Response)>($stack28, $stack29),59,SinkNode, path: (<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>, virtualinvoke request#3.<spark.FilterImpl: void handle(spark.Request,spark.Response)>($stack28, $stack29), 59))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<spark.http.matching.RouteContext: spark.route.Routes routeMatcher>",
+				"location": {
+					"file": "",
+					"class": "spark.http.matching.RouteContext",
+					"method": "<spark.http.matching.RouteContext: spark.route.Routes routeMatcher()>",
+					"line": 52
+				},
+				"stackTrace": [{
+	"class": "spark.http.matching.RouteContext",
+	"method": "<spark.http.matching.RouteContext: spark.route.Routes routeMatcher()>",
+	"line": 52
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 36
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 36
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 40
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 70
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 70
+},{
+	"class": "spark.routematch.RouteMatch",
+	"method": "<spark.routematch.RouteMatch: java.lang.Object getTarget()>",
+	"line": -1
+},{
+	"class": "spark.routematch.RouteMatch",
+	"method": "<spark.routematch.RouteMatch: java.lang.Object getTarget()>",
+	"line": 48
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 41
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 58
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 59
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper>",
+				"location": {
+					"file": "",
+					"class": "spark.http.matching.RouteContext",
+					"method": "<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>",
+					"line": 121
+				},
+				"stackTrace": [{
+	"class": "spark.http.matching.RouteContext",
+	"method": "<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>",
+	"line": 121
+},{
+	"class": "spark.http.matching.AfterFilters",
+	"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+	"line": 59
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack29 = virtualinvoke context.<spark.http.matching.RouteContext: spark.http.matching.ResponseWrapper responseWrapper()>()",
+				"location": {
+					"file": "",
+					"class": "spark.http.matching.AfterFilters",
+					"method": "<spark.http.matching.AfterFilters: void execute(spark.http.matching.RouteContext)>",
+					"line": 59
+				}
+			}
+		]
+	}
+}
+
+]

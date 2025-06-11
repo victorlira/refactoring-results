@@ -1,0 +1,314 @@
+Running soot scenario jetty-bootstrap;org.teknux.jettybootstrap.handler.AbstractAppJettyHandler;createHandler();17deab171882d57f5d02052ea6e631cb11aa0d55
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 4,41800
+Time to perform Confluence 1 Inter 17,61300
+Configure Soot Confluence 2 Inter 3,05900
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.nodeToString(ConfluenceConflict.java:126)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.lambda$pathToString$0(ConfluenceConflict.java:118)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.pathToString(ConfluenceConflict.java:120)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.toString(ConfluenceConflict.java:41)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.hashCode(ConfluenceConflict.java:135)
+	at java.util.HashMap.hash(HashMap.java:339)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.intersectPathsByLastNode(DFPConfluenceAnalysis.java:232)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:157)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 3,69700
+Runtime: 0.152s
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 64 overrides 64, assigning to variable this.<org.eclipse.jetty.server.session.HashSessionManager: org.eclipse.jetty.util.thread.Scheduler$Task _task>, 
+Caused by line 64 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:64)
+at org.eclipse.jetty.server.session.HashSessionManager.setMaxInactiveInterval(HashSessionManager.java:252)
+at org.eclipse.jetty.server.session.HashSessionManager.setScavengePeriod(HashSessionManager.java:320)
+And line 64 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:64)
+at org.eclipse.jetty.server.session.HashSessionManager.setMaxInactiveInterval(HashSessionManager.java:252)
+at org.eclipse.jetty.server.session.HashSessionManager.setScavengePeriod(HashSessionManager.java:320)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 68 overrides 68, assigning to variable role, 
+Caused by line 68 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:68)
+at org.teknux.jettybootstrap.handler.util.JettyConstraintUtil.getConstraintSecurityHandlerConfidential(JettyConstraintUtil.java:44)
+at org.eclipse.jetty.security.ConstraintSecurityHandler.addConstraintMapping(ConstraintSecurityHandler.java:400)
+And line 68 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:68)
+at org.teknux.jettybootstrap.handler.util.JettyConstraintUtil.getConstraintSecurityHandlerConfidential(JettyConstraintUtil.java:44)
+at org.eclipse.jetty.security.ConstraintSecurityHandler.addConstraintMapping(ConstraintSecurityHandler.java:400)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 77 overrides 77, assigning to variable arr$, 
+Caused by line 77 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:77)
+at org.eclipse.jetty.webapp.WebAppContext.setTempDirectory(WebAppContext.java:1205)
+at org.eclipse.jetty.util.log.StdErrLog.warn(StdErrLog.java:423)
+at org.eclipse.jetty.util.log.StdErrLog.format(StdErrLog.java:561)
+at org.eclipse.jetty.util.log.StdErrLog.format(StdErrLog.java:639)
+And line 77 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:77)
+at org.eclipse.jetty.webapp.WebAppContext.setTempDirectory(WebAppContext.java:1205)
+at org.eclipse.jetty.util.log.StdErrLog.warn(StdErrLog.java:423)
+at org.eclipse.jetty.util.log.StdErrLog.format(StdErrLog.java:561)
+at org.eclipse.jetty.util.log.StdErrLog.format(StdErrLog.java:639)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 72 overrides 72, assigning to variable appsTempDirectory, 
+Caused by line 72 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:72)
+And line 72 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:72)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 76 overrides 76, assigning to variable appTempDirectory, 
+Caused by line 76 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:76)
+And line 76 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:76)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 72 overrides 72, assigning to variable File.<java.io.File: java.io.File$PathStatus status>, 
+Caused by line 72 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:72)
+And line 72 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:72)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 76 overrides 76, assigning to variable File.<java.io.File: java.io.File$PathStatus status>, 
+Caused by line 76 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:76)
+And line 76 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:76)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 64 overrides 64, assigning to variable SessionHandler.<org.eclipse.jetty.server.session.SessionHandler: org.eclipse.jetty.server.SessionManager _sessionManager>, 
+Caused by line 64 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:64)
+at org.eclipse.jetty.servlet.ServletContextHandler.getSessionHandler(ServletContextHandler.java:336)
+at org.eclipse.jetty.servlet.ServletContextHandler.newSessionHandler(ServletContextHandler.java:243)
+And line 64 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:64)
+at org.eclipse.jetty.servlet.ServletContextHandler.getSessionHandler(ServletContextHandler.java:336)
+at org.eclipse.jetty.servlet.ServletContextHandler.newSessionHandler(ServletContextHandler.java:243)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 68 overrides 68, assigning to variable this.<org.eclipse.jetty.servlet.ServletContextHandler: org.eclipse.jetty.security.SecurityHandler _securityHandler>, 
+Caused by line 68 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:68)
+at org.eclipse.jetty.servlet.ServletContextHandler.setSecurityHandler(ServletContextHandler.java:489)
+And line 68 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:68)
+at org.eclipse.jetty.servlet.ServletContextHandler.setSecurityHandler(ServletContextHandler.java:489)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 83 overrides 83, assigning to variable String.<java.lang.String: int hash>, 
+Caused by line 83 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:83)
+at org.eclipse.jetty.server.handler.ContextHandler.setContextPath(ContextHandler.java:1325)
+at java.lang.String.substring(String.java:1969)
+And line 83 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:83)
+at org.eclipse.jetty.server.handler.ContextHandler.setContextPath(ContextHandler.java:1325)
+at java.lang.String.substring(String.java:1969)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 63 overrides 63, assigning to variable this.<org.eclipse.jetty.webapp.WebAppContext: boolean _throwUnavailableOnStartupException>, 
+Caused by line 63 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:63)
+at org.eclipse.jetty.webapp.WebAppContext.setThrowUnavailableOnStartupException(WebAppContext.java:1316)
+And line 63 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:63)
+at org.eclipse.jetty.webapp.WebAppContext.setThrowUnavailableOnStartupException(WebAppContext.java:1316)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 61 overrides 61, assigning to variable this.<org.eclipse.jetty.webapp.WebAppContext: boolean _parentLoaderPriority>, 
+Caused by line 61 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:61)
+at org.eclipse.jetty.webapp.WebAppContext.setParentLoaderPriority(WebAppContext.java:1130)
+And line 61 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:61)
+at org.eclipse.jetty.webapp.WebAppContext.setParentLoaderPriority(WebAppContext.java:1130)
+ 
+OA interference in class AbstractAppJettyHandler, method org.eclipse.jetty.webapp.WebAppContext createHandler(), execution of line 62 overrides 62, assigning to variable this.<org.eclipse.jetty.webapp.WebAppContext: boolean _persistTmpDir>, 
+Caused by line 62 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:62)
+at org.eclipse.jetty.webapp.WebAppContext.setPersistTempDirectory(WebAppContext.java:1233)
+And line 62 flow:
+at org.teknux.jettybootstrap.handler.AbstractAppJettyHandler.createHandler(AbstractAppJettyHandler.java:62)
+at org.eclipse.jetty.webapp.WebAppContext.setPersistTempDirectory(WebAppContext.java:1233)
+ 
+Time to perform OA Inter 5,78600
+OA Inter Visited methods: 242
+ Analysis results
+----------------------------
+ Number of conflicts: 523
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 3,86700
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 3,92100
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 3,85900
+Time to perform PDG 3,18800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 3,84700
+Time to perform PDG 2,86400
+CONFLICTS: [List(Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack23 = virtualinvoke $stack21.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack22),72,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack23 = virtualinvoke $stack21.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack22), 72)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack24 = virtualinvoke $stack23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("apps"),72,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack24 = virtualinvoke $stack23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('apps'), 72)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack25 = virtualinvoke $stack24.<java.lang.StringBuilder: java.lang.String toString()>(),72,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack25 = virtualinvoke $stack24.<java.lang.StringBuilder: java.lang.String toString()>(), 72)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack17 = new java.io.File,72,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, specialinvoke $stack17.<java.io.File: void <init>(java.lang.String)>($stack25), 72)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,appsTempDirectory = $stack17,72,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, appsTempDirectory = $stack17, 72)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack39 = virtualinvoke appsTempDirectory.<java.io.File: boolean mkdir()>(),85,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack39 = virtualinvoke appsTempDirectory.<java.io.File: boolean mkdir()>(), 85)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,if $stack39 != 0 goto $stack27 = new java.io.File,85,SourceNode, path: ) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack36 = staticinvoke <org.eclipse.jetty.webapp.WebAppContext: java.lang.String[] getDefaultConfigurationClasses()>(),80,SinkNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack36 = staticinvoke <org.eclipse.jetty.webapp.WebAppContext: java.lang.String[] getDefaultConfigurationClasses()>(), 80))), List(Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,if $stack26 != 0 goto $stack27 = new java.io.File,73,SourceNode, path: ) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack39 = virtualinvoke appsTempDirectory.<java.io.File: boolean mkdir()>(),85,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack39 = virtualinvoke appsTempDirectory.<java.io.File: boolean mkdir()>(), 85)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,if $stack39 != 0 goto $stack27 = new java.io.File,85,SourceNode, path: ) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack36 = staticinvoke <org.eclipse.jetty.webapp.WebAppContext: java.lang.String[] getDefaultConfigurationClasses()>(),80,SinkNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack36 = staticinvoke <org.eclipse.jetty.webapp.WebAppContext: java.lang.String[] getDefaultConfigurationClasses()>(), 80))), List(Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack39 = virtualinvoke appsTempDirectory.<java.io.File: boolean mkdir()>(),85,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack39 = virtualinvoke appsTempDirectory.<java.io.File: boolean mkdir()>(), 85)) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,if $stack39 != 0 goto $stack27 = new java.io.File,85,SourceNode, path: ) => Node(<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>,$stack36 = staticinvoke <org.eclipse.jetty.webapp.WebAppContext: java.lang.String[] getDefaultConfigurationClasses()>(),80,SinkNode, path: (<org.teknux.jettybootstrap.handler.AbstractAppJettyHandler: org.eclipse.jetty.webapp.WebAppContext createHandler()>, $stack36 = staticinvoke <org.eclipse.jetty.webapp.WebAppContext: java.lang.String[] getDefaultConfigurationClasses()>(), 80)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

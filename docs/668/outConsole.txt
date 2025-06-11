@@ -1,0 +1,119 @@
+Running soot scenario stateless4j;com.github.oxo42.stateless4j.StateRepresentation;addEntryAction(T, Action2<Transition<S,T>,Object[]>);c3e521ee3857f94babe0ffe5e8e18960dd2ac186
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/stateless4j/c3e521ee3857f94babe0ffe5e8e18960dd2ac186/original-without-dependencies/stateless4j-2.5.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,58600
+Time to perform Confluence 1 Inter 0,31300
+Configure Soot Confluence 2 Inter 0,18800
+Time to perform Confluence 2 Inter 0,03500
+Visited methods: 6
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(),68,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5),72,SinkNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72))
+SINK=>BASE: Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(),68,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5),72,SinkNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72)), SOURCE=>BASE: Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(),68,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5),72,SinkNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72))
+SINK=>BASE: Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(),68,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>,$stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5),72,SinkNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72))]
+Confluence interference in <com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>
+Confluence flows from execution of lines 68 and 68 to line 72, defined in trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>() and trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>() and used in $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5)
+Caused by line 68 flow: path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)
+Caused by line 68 flow: path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)
+Caused by line 72 flow: path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, $stack6 = virtualinvoke trans_trigger.<java.lang.Object: boolean equals(java.lang.Object)>($stack5), 72)
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/stateless4j/c3e521ee3857f94babe0ffe5e8e18960dd2ac186/original-without-dependencies/stateless4j-2.5.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,74200
+Runtime: 0.004s
+Time to perform OA Inter 0,77500
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/stateless4j/c3e521ee3857f94babe0ffe5e8e18960dd2ac186/original-without-dependencies/stateless4j-2.5.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41800
+Time to perform DFP Inter 0,30300
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,return $stack1,46,SinkNode, path: ))]
+Visited methods: 3
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/stateless4j/c3e521ee3857f94babe0ffe5e8e18960dd2ac186/original-without-dependencies/stateless4j-2.5.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,40000
+Time to perform DFP Inter 0,38200
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,$stack1 = this.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object trigger>,46,SourceNode, path: (<com.github.oxo42.stateless4j.StateRepresentation$1: void doIt(com.github.oxo42.stateless4j.transitions.Transition,java.lang.Object[])>, trans_trigger = virtualinvoke t.<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>(), 68)) => Node(<com.github.oxo42.stateless4j.transitions.Transition: java.lang.Object getTrigger()>,return $stack1,46,SinkNode, path: ))]
+Visited methods: 15
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/stateless4j/c3e521ee3857f94babe0ffe5e8e18960dd2ac186/original-without-dependencies/stateless4j-2.5.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,56300
+Time to perform PDG 0,32800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/stateless4j/c3e521ee3857f94babe0ffe5e8e18960dd2ac186/original-without-dependencies/stateless4j-2.5.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,42700
+Time to perform PDG 0,42300
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

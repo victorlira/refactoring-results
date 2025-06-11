@@ -1,0 +1,405 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "nextNum = $stack18 + $stack19",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, nextNum = $stack18 + $stack19, 873)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "currentNum := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: void setCurrentNum(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack37 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>(response), 801)","(<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: void setCurrentNum(int)>($stack9), 242)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum> = currentNum",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: void setCurrentNum(int)>",
+  "line": "111"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack37 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>(response), 801)","(<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: void setCurrentNum(int)>($stack9), 242)","(<org.eclipse.californium.core.network.stack.BlockwiseStatus: void setCurrentNum(int)>, this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum> = currentNum, 111)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "nextNum = $stack18 + $stack19",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, nextNum = $stack18 + $stack19, 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack44 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(nextNum)",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "913"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, $stack44 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(nextNum), 913)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "nextNum = $stack18 + $stack19",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, nextNum = $stack18 + $stack19, 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack32.<org.eclipse.californium.core.coap.OptionSet: org.eclipse.californium.core.coap.OptionSet setBlock2(int,boolean,int)>(newSzx, 0, nextNum)",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "895"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, virtualinvoke $stack32.<org.eclipse.californium.core.coap.OptionSet: org.eclipse.californium.core.coap.OptionSet setBlock2(int,boolean,int)>(newSzx, 0, nextNum), 895)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "nextNum = $stack18 + $stack19",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, nextNum = $stack18 + $stack19, 873)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: void setCurrentNum(int)>(nextNum)",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "911"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: void setCurrentNum(int)>(nextNum), 911)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.coap.BlockOption: int num>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.coap.BlockOption",
+  "method": "<org.eclipse.californium.core.coap.BlockOption: int getNum()>",
+  "line": "137"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack17 = virtualinvoke block2.<org.eclipse.californium.core.coap.BlockOption: int getNum()>(), 787)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke block2.<org.eclipse.californium.core.coap.BlockOption: int getNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.Block2BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>",
+  "line": "242"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack37 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>(response), 801)","(<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>, $stack9 = virtualinvoke block2.<org.eclipse.californium.core.coap.BlockOption: int getNum()>(), 242)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "currentNum := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: void setCurrentNum(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack37 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>(response), 801)","(<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: void setCurrentNum(int)>($stack9), 242)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum> = currentNum",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: void setCurrentNum(int)>",
+  "line": "111"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack37 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>(response), 801)","(<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: boolean addBlock(org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: void setCurrentNum(int)>($stack9), 242)","(<org.eclipse.californium.core.network.stack.BlockwiseStatus: void setCurrentNum(int)>, this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum> = currentNum, 111)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.coap.BlockOption: int num>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.coap.BlockOption",
+  "method": "<org.eclipse.californium.core.coap.BlockOption: int getNum()>",
+  "line": "137"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack17 = virtualinvoke block2.<org.eclipse.californium.core.coap.BlockOption: int getNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = virtualinvoke origin.<org.eclipse.californium.core.coap.BlockOption: int getNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.coap.BlockOption",
+  "method": "<org.eclipse.californium.core.coap.BlockOption: void <init>(org.eclipse.californium.core.coap.BlockOption)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, specialinvoke $stack29.<org.eclipse.californium.core.coap.OptionSet: void <init>(org.eclipse.californium.core.coap.OptionSet)>($stack30), 894)","(<org.eclipse.californium.core.coap.OptionSet: void <init>(org.eclipse.californium.core.coap.OptionSet)>, specialinvoke $stack34.<org.eclipse.californium.core.coap.BlockOption: void <init>(org.eclipse.californium.core.coap.BlockOption)>($stack35), 161)","(<org.eclipse.californium.core.coap.BlockOption: void <init>(org.eclipse.californium.core.coap.BlockOption)>, $stack4 = virtualinvoke origin.<org.eclipse.californium.core.coap.BlockOption: int getNum()>(), 69)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.eclipse.californium.core.coap.BlockOption: int num> = $stack4",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.coap.BlockOption",
+  "method": "<org.eclipse.californium.core.coap.BlockOption: void <init>(org.eclipse.californium.core.coap.BlockOption)>",
+  "line": "69"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, specialinvoke $stack29.<org.eclipse.californium.core.coap.OptionSet: void <init>(org.eclipse.californium.core.coap.OptionSet)>($stack30), 894)","(<org.eclipse.californium.core.coap.OptionSet: void <init>(org.eclipse.californium.core.coap.OptionSet)>, specialinvoke $stack34.<org.eclipse.californium.core.coap.BlockOption: void <init>(org.eclipse.californium.core.coap.BlockOption)>($stack35), 161)","(<org.eclipse.californium.core.coap.BlockOption: void <init>(org.eclipse.californium.core.coap.BlockOption)>, this.<org.eclipse.californium.core.coap.BlockOption: int num> = $stack4, 69)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>()",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseLayer",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>",
+  "line": "873"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, virtualinvoke this.<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>(exchange, response, key, status), 810)","(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void requestNextBlock(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response,org.eclipse.californium.core.network.stack.KeyUri,org.eclipse.californium.core.network.stack.Block2BlockwiseStatus)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 873)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.network.stack.BlockwiseStatus: int currentNum>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack18 = virtualinvoke status.<org.eclipse.californium.core.network.stack.Block2BlockwiseStatus: int getCurrentNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.network.stack.BlockwiseStatus",
+  "method": "<org.eclipse.californium.core.network.stack.BlockwiseStatus: int getCurrentNum()>",
+  "line": "102"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.eclipse.californium.core.coap.BlockOption: int num>",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.coap.BlockOption",
+  "method": "<org.eclipse.californium.core.coap.BlockOption: int getNum()>",
+  "line": "137"
+},
+"stackTrace": ["(<org.eclipse.californium.core.network.stack.BlockwiseLayer: void handleBlock2Response(org.eclipse.californium.core.network.Exchange,org.eclipse.californium.core.coap.Response)>, $stack17 = virtualinvoke block2.<org.eclipse.californium.core.coap.BlockOption: int getNum()>(), 787)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.eclipse.californium.core.coap.BlockOption",
+  "method": "<org.eclipse.californium.core.coap.BlockOption: int getNum()>",
+  "line": "137"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

@@ -1,0 +1,142 @@
+Running soot scenario ec2-plugin;hudson.plugins.ec2.UnixData;hashCode();54fff41fd8087801067cc7104e0d8ce7765de146
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ec2-plugin/54fff41fd8087801067cc7104e0d8ce7765de146/original-without-dependencies/ec2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,63800
+Time to perform Confluence 1 Inter 0,50000
+Configure Soot Confluence 2 Inter 0,19400
+Time to perform Confluence 2 Inter 0,09500
+Visited methods: 4
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack13 = 31 * result#3,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack13 = 31 * result#3, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack13 + $stack14,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack17 = 31 * result#3,119,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack17 = 31 * result#3, 119))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack14 = 0,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack13 + $stack14,118,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack17 = 31 * result#3,119,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack17 = 31 * result#3, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack17 + $stack18,119,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack17 + $stack18, 119)), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l0.<java.lang.String: int hash> = l1,1473,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l0.<java.lang.String: int hash> = l1, 1473))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l1 = l0.<java.lang.String: int hash>,1466,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l0.<java.lang.String: int hash> = l1,1473,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l0.<java.lang.String: int hash> = l1, 1473)), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l1 = l0.<java.lang.String: int hash>,1466,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l1 = l0.<java.lang.String: int hash>,1466,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack13 = 31 * result#3,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack13 = 31 * result#3, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack13 + $stack14,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack17 = 31 * result#3,119,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack17 = 31 * result#3, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack17 + $stack18,119,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack17 + $stack18, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack21 = 31 * result#3,120,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack21 = 31 * result#3, 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack21 + $stack22,120,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack21 + $stack22, 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,return result#3,121,SinkNode, path: )
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack22 = virtualinvoke $stack20.<java.lang.String: int hashCode()>(),120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack22 = virtualinvoke $stack20.<java.lang.String: int hashCode()>(), 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack21 + $stack22,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack21 + $stack22, 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,return result#3,121,SinkNode, path: ), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,$stack4 = l0.<java.lang.String: char[] value>,1475,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack4 = l0.<java.lang.String: char[] value>, 1475)) => Node(<java.lang.String: int hashCode()>,$stack5 = lengthof $stack4,1475,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack5 = lengthof $stack4, 1475))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,$stack4 = l0.<java.lang.String: char[] value>,1475,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack4 = l0.<java.lang.String: char[] value>, 1475)) => Node(<java.lang.String: int hashCode()>,$stack5 = lengthof $stack4,1475,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack5 = lengthof $stack4, 1475)), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l2 = l0.<java.lang.String: char[] value>,1468,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l2 = l0.<java.lang.String: char[] value>, 1468)) => Node(<java.lang.String: int hashCode()>,$stack9 = l2[l3],1471,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack9 = l2[l3], 1471)) => Node(<java.lang.String: int hashCode()>,l1 = $stack10 + $stack9,1471,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,$stack10 = 31 * l1,1471,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack10 = 31 * l1, 1471))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l2 = l0.<java.lang.String: char[] value>,1468,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l2 = l0.<java.lang.String: char[] value>, 1468)) => Node(<java.lang.String: int hashCode()>,$stack9 = l2[l3],1471,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack9 = l2[l3], 1471)), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l2 = l0.<java.lang.String: char[] value>,1468,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l2 = l0.<java.lang.String: char[] value>, 1468))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,l2 = l0.<java.lang.String: char[] value>,1468,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l2 = l0.<java.lang.String: char[] value>, 1468)), SOURCE=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,$stack7 = l0.<java.lang.String: char[] value>,1470,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack7 = l0.<java.lang.String: char[] value>, 1470))
+SINK=>BASE: Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)) => Node(<java.lang.String: int hashCode()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116)) => Node(<java.lang.String: int hashCode()>,$stack7 = l0.<java.lang.String: char[] value>,1470,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, $stack7 = l0.<java.lang.String: char[] value>, 1470))]
+Confluence interference in <hudson.plugins.ec2.UnixData: int hashCode()>
+Confluence flows from execution of lines 118 and 118 to line 119, defined in $stack13 = 31 * result#3 and result#3 = $stack13 + $stack14 and used in result#3 = $stack17 + $stack18
+Caused by line 118 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack13 = 31 * result#3, 118)
+Caused by line 118 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)
+Caused by line 119 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack17 + $stack18, 119)
+Confluence interference in <hudson.plugins.ec2.UnixData: int hashCode()>
+Confluence flows from execution of lines 118 and 120 to line 116, defined in $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix> and $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay> and used in $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>()
+Caused by line 118 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)
+Caused by line 120 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack20 = this.<hudson.plugins.ec2.UnixData: java.lang.String bootDelay>, 120)
+Caused by line 116 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack6 = virtualinvoke $stack4.<java.lang.String: int hashCode()>(), 116) => (<java.lang.String: int hashCode()>, l0.<java.lang.String: int hash> = l1, 1473)
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at scala.collection.generic.TraversableForwarder.head(TraversableForwarder.scala:59)
+	at scala.collection.generic.TraversableForwarder.head$(TraversableForwarder.scala:59)
+	at scala.collection.mutable.ListBuffer.head(ListBuffer.scala:47)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.reportConflictsConfluence(DFPConfluenceAnalysis.java:181)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:566)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ec2-plugin/54fff41fd8087801067cc7104e0d8ce7765de146/original-without-dependencies/ec2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,56200
+Runtime: 0.007s
+Time to perform OA Inter 0,60200
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ec2-plugin/54fff41fd8087801067cc7104e0d8ce7765de146/original-without-dependencies/ec2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,40300
+Time to perform DFP Inter 0,36100
+Depth limit: 5
+CONFLICTS: DF interference in <hudson.plugins.ec2.UnixData: int hashCode()>
+Data flows from execution of line 118 to 120, defined in $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix> and propagated in result#3 = $stack21 + $stack22
+Caused by line 118 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)
+Caused by line 120 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack21 + $stack22, 120)
+[List(Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack12 = this.<hudson.plugins.ec2.UnixData: java.lang.String slaveCommandSuffix>, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack14 = virtualinvoke $stack12.<java.lang.String: int hashCode()>(),118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack14 = virtualinvoke $stack12.<java.lang.String: int hashCode()>(), 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack13 + $stack14,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack17 = 31 * result#3,119,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack17 = 31 * result#3, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack17 + $stack18,119,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack17 + $stack18, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack21 = 31 * result#3,120,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack21 = 31 * result#3, 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack21 + $stack22,120,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack21 + $stack22, 120)))]
+Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ec2-plugin/54fff41fd8087801067cc7104e0d8ce7765de146/original-without-dependencies/ec2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,40300
+Time to perform DFP Inter 0,33200
+Depth limit: 5
+CONFLICTS: DF interference in <hudson.plugins.ec2.UnixData: int hashCode()>
+Data flows from execution of line 118 to 118, defined in $stack14 = 0 and propagated in result#3 = $stack13 + $stack14
+Caused by line 118 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)
+Caused by line 118 flow: path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)
+[List(Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack14 = 0,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack13 + $stack14,118,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)))]
+Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ec2-plugin/54fff41fd8087801067cc7104e0d8ce7765de146/original-without-dependencies/ec2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,48400
+Time to perform PDG 0,40000
+CONFLICTS: [List(Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack13 = 31 * result#3,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack13 = 31 * result#3, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack13 + $stack14,118,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack17 = 31 * result#3,119,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack17 = 31 * result#3, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack17 + $stack18,119,SimpleNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack17 + $stack18, 119)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack21 = 31 * result#3,120,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack21 = 31 * result#3, 120)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,result#3 = $stack21 + $stack22,120,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack21 + $stack22, 120)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ec2-plugin/54fff41fd8087801067cc7104e0d8ce7765de146/original-without-dependencies/ec2.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,49400
+Time to perform PDG 0,42900
+CONFLICTS: [List(Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack14 = 0,120,SourceNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, result#3 = $stack13 + $stack14, 118)) => Node(<hudson.plugins.ec2.UnixData: int hashCode()>,$stack14 = virtualinvoke $stack12.<java.lang.String: int hashCode()>(),118,SinkNode, path: (<hudson.plugins.ec2.UnixData: int hashCode()>, $stack14 = virtualinvoke $stack12.<java.lang.String: int hashCode()>(), 118)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

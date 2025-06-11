@@ -1,0 +1,378 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke result.<ninja.Result: java.lang.String getTemplate()>()",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineHelper",
+  "method": "<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>",
+  "line": "46"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "71"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "78"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "82"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<ninja.Result: java.lang.Object renderable>",
+"location": {
+  "file": "",
+  "class": "ninja.Result",
+  "method": "<ninja.Result: java.lang.Object getRenderable()>",
+  "line": "59"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>(), 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "ninja.Result",
+  "method": "<ninja.Result: java.lang.Object getRenderable()>",
+  "line": "59"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack18 = this.<ninja.template.TemplateEngineFreemarker: ninja.template.TemplateEngineHelper templateEngineHelper>",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "71"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, $stack18 = this.<ninja.template.TemplateEngineFreemarker: ninja.template.TemplateEngineHelper templateEngineHelper>, 71)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "71"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "78"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "82"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>('%sviews/%s/%s%s', $stack15)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineHelper",
+  "method": "<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>",
+  "line": "42"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "71"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "78"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "82"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<ninja.Result: java.lang.String template>",
+"location": {
+  "file": "",
+  "class": "ninja.Result",
+  "method": "<ninja.Result: java.lang.String getTemplate()>",
+  "line": "127"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)","(<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>, $stack8 = virtualinvoke result.<ninja.Result: java.lang.String getTemplate()>(), 15)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke result.<ninja.Result: java.lang.String getTemplate()>()",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineHelper",
+  "method": "<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>",
+  "line": "46"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "71"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, templateName = virtualinvoke $stack18.<ninja.template.TemplateEngineHelper: java.lang.String getTemplateForResult(ninja.Route,ninja.Result,java.lang.String)>($stack19, result, $stack20), 71)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "78"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, freemarkerTemplate = virtualinvoke $stack22.<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>(templateName), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "82"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<ninja.Result: java.lang.Object renderable>",
+"location": {
+  "file": "",
+  "class": "ninja.Result",
+  "method": "<ninja.Result: java.lang.Object getRenderable()>",
+  "line": "59"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>(), 47)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>()",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "47"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>(), 47)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "map = (java.util.Map) object",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "60"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, map = (java.util.Map) object, 60)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "82"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>()",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "47"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>(), 47)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "map = (java.util.Map) object",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "60"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, map = (java.util.Map) object, 60)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24)",
+"location": {
+  "file": "",
+  "class": "ninja.template.TemplateEngineFreemarker",
+  "method": "<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>",
+  "line": "82"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, virtualinvoke freemarkerTemplate.<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>(map, $stack24), 82)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<ninja.Result: java.lang.Object renderable>",
+"location": {
+  "file": "",
+  "class": "ninja.Result",
+  "method": "<ninja.Result: java.lang.Object getRenderable()>",
+  "line": "59"
+},
+"stackTrace": ["(<ninja.template.TemplateEngineFreemarker: void invoke(ninja.Context,ninja.Result)>, object = virtualinvoke result.<ninja.Result: java.lang.Object getRenderable()>(), 47)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "ninja.Result",
+  "method": "<ninja.Result: java.lang.Object getRenderable()>",
+  "line": "59"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

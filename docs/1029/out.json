@@ -1,0 +1,175 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>,result = <java.lang.Boolean: java.lang.Boolean FALSE>,42,SourceNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, l5 = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 42)) => Node(<java.lang.Boolean: boolean booleanValue()>,l0 := @this: java.lang.Boolean,-1,SimpleNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, i = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 40)) => Node(<java.lang.Boolean: boolean booleanValue()>,$stack1 = l0.<java.lang.Boolean: boolean value>,132,SinkNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, i = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 40)) SINK=>BASE: Node(<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>,result = <java.lang.Boolean: java.lang.Boolean FALSE>,40,SourceNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, i = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 40)) => Node(<java.lang.Boolean: boolean booleanValue()>,l0 := @this: java.lang.Boolean,-1,SimpleNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, i = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 40)) => Node(<java.lang.Boolean: boolean booleanValue()>,$stack1 = l0.<java.lang.Boolean: boolean value>,132,SinkNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, i = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 40))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+	"line": 40
+},{
+	"class": "java.lang.Boolean",
+	"method": "<java.lang.Boolean: boolean booleanValue()>",
+	"line": -1
+},{
+	"class": "java.lang.Boolean",
+	"method": "<java.lang.Boolean: boolean booleanValue()>",
+	"line": 132
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+					"line": 42
+				},
+				"stackTrace": [{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+	"line": 42
+},{
+	"class": "java.lang.Boolean",
+	"method": "<java.lang.Boolean: boolean booleanValue()>",
+	"line": -1
+},{
+	"class": "java.lang.Boolean",
+	"method": "<java.lang.Boolean: boolean booleanValue()>",
+	"line": 132
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack1 = l0.<java.lang.Boolean: boolean value>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Boolean",
+					"method": "<java.lang.Boolean: boolean booleanValue()>",
+					"line": 132
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>,result = <java.lang.Boolean: java.lang.Boolean FALSE>,42,SourceNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, l5 = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 42)) => Node(<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>,$stack153 = virtualinvoke $stack152.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(") --> "),55,SinkNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, $stack153 = virtualinvoke $stack152.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(') --> '), 55)) SINK=>BASE: Node(<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>,result = <java.lang.Boolean: java.lang.Boolean FALSE>,40,SourceNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, i = virtualinvoke result.<java.lang.Boolean: boolean booleanValue()>(), 40)) => Node(<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>,$stack154 = virtualinvoke $stack153.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(result),55,SinkNode, path: (<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>, $stack154 = virtualinvoke $stack153.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(result), 55))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+	"line": 40
+},{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+	"line": 55
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+					"line": 42
+				},
+				"stackTrace": [{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+	"line": 42
+},{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+	"line": 55
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack153 = virtualinvoke $stack152.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(') --> ')",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "<xdi2.core.syntax.CloudNumber: boolean isValid(xdi2.core.syntax.XDIAddress)>",
+					"line": 55
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "result - result",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "result = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "isValid",
+					"line": 42
+				},
+				"stackTrace": [{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "isValid",
+	"line": 42
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "result = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "xdi2.core.syntax.CloudNumber",
+					"method": "isValid",
+					"line": 45
+				},
+				"stackTrace": [{
+	"class": "xdi2.core.syntax.CloudNumber",
+	"method": "isValid",
+	"line": 45
+}]
+			}
+		]
+	}
+}
+
+]

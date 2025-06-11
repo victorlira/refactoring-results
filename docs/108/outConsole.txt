@@ -1,0 +1,112 @@
+Running soot scenario openkeepass;de.slackspace.openkeepass.KeePassDatabase;write(KeePassFile, String, OutputStream);6218ade3f2e50f22e5e263714197f176e856c5a2
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openkeepass/6218ade3f2e50f22e5e263714197f176e856c5a2/original-without-dependencies/openkeepass-0.5.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,62800
+Time to perform Confluence 1 Inter 1,97300
+Configure Soot Confluence 2 Inter 0,15500
+Time to perform Confluence 2 Inter 1,36100
+Visited methods: 212
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openkeepass/6218ade3f2e50f22e5e263714197f176e856c5a2/original-without-dependencies/openkeepass-0.5.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,70800
+Runtime: 0.107s
+Time to perform OA Inter 1,08300
+OA Inter Visited methods: 194
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openkeepass/6218ade3f2e50f22e5e263714197f176e856c5a2/original-without-dependencies/openkeepass-0.5.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,52200
+Time to perform DFP Inter 2,04600
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 106
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openkeepass/6218ade3f2e50f22e5e263714197f176e856c5a2/original-without-dependencies/openkeepass-0.5.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,46700
+Time to perform DFP Inter 1,83300
+Depth limit: 5
+CONFLICTS: DF interference in <de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>
+Data flows from execution of line 432 to 433, defined in $stack1 = this.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] protectedStreamKey> and propagated in specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto)
+Caused by line 432 flow: path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)
+Caused by line 433 flow: path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433)
+DF interference in <de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>
+Data flows from execution of line 432 to 433, defined in $stack1 = this.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] protectedStreamKey> and propagated in this.<de.slackspace.openkeepass.processor.EncryptionStrategy: de.slackspace.openkeepass.crypto.ProtectedStringCrypto crypto> = crypto
+Caused by line 432 flow: path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)
+Caused by line 433 flow: path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433) => (<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>, this.<de.slackspace.openkeepass.processor.EncryptionStrategy: de.slackspace.openkeepass.crypto.ProtectedStringCrypto crypto> = crypto, 10)
+[List(Node(<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>,$stack1 = this.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] protectedStreamKey>,354,SourceNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)) => Node(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>,$stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(),432,SimpleNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)) => Node(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>,protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21),432,SimpleNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21), 432)) => Node(<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>,crypto := @parameter0: de.slackspace.openkeepass.crypto.ProtectedStringCrypto,-1,SimpleNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433)) => Node(<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>,this.<de.slackspace.openkeepass.processor.EncryptionStrategy: de.slackspace.openkeepass.crypto.ProtectedStringCrypto crypto> = crypto,10,SinkNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433) => (<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>, this.<de.slackspace.openkeepass.processor.EncryptionStrategy: de.slackspace.openkeepass.crypto.ProtectedStringCrypto crypto> = crypto, 10))), List(Node(<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>,$stack1 = this.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] protectedStreamKey>,354,SourceNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)) => Node(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>,$stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(),432,SimpleNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, $stack21 = virtualinvoke header.<de.slackspace.openkeepass.domain.KeePassHeader: byte[] getProtectedStreamKey()>(), 432)) => Node(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>,protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21),432,SimpleNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, protectedStringCrypto = staticinvoke <de.slackspace.openkeepass.crypto.Salsa20: de.slackspace.openkeepass.crypto.Salsa20 createInstance(byte[])>($stack21), 432)) => Node(<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>,specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto),433,SinkNode, path: (<de.slackspace.openkeepass.KeePassDatabase: void write(de.slackspace.openkeepass.domain.KeePassFile,java.lang.String,java.io.OutputStream)>, specialinvoke $stack24.<de.slackspace.openkeepass.processor.EncryptionStrategy: void <init>(de.slackspace.openkeepass.crypto.ProtectedStringCrypto)>(protectedStringCrypto), 433)))]
+Visited methods: 103
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openkeepass/6218ade3f2e50f22e5e263714197f176e856c5a2/original-without-dependencies/openkeepass-0.5.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,56800
+Time to perform PDG 0,79800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/openkeepass/6218ade3f2e50f22e5e263714197f176e856c5a2/original-without-dependencies/openkeepass-0.5.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,41000
+Time to perform PDG 0,62900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

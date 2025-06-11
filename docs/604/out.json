@@ -1,0 +1,77 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID sessionID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>",
+  "line": "308"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796)","(<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>, $stack2 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 1005)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>",
+  "line": "1005"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796)","(<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>, $stack2 = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.session.SessionID getSessionID()>(), 1005)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack3 = interfaceinvoke $stack1.<net.java.otr4j.OtrEngineHost: net.java.otr4j.OtrPolicy getSessionPolicy(net.java.otr4j.session.SessionID)>($stack2)",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>",
+  "line": "1005"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>",
+  "line": "796"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, otrPolicy = virtualinvoke this.<net.java.otr4j.session.SessionImpl: net.java.otr4j.OtrPolicy getSessionPolicy()>(), 796)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack36 = interfaceinvoke otrPolicy.<net.java.otr4j.OtrPolicy: boolean getAllowV3()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>",
+  "line": "810"
+},
+"stackTrace": ["(<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>, $stack36 = interfaceinvoke otrPolicy.<net.java.otr4j.OtrPolicy: boolean getAllowV3()>(), 810)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack36 == 0 goto $stack37 = interfaceinvoke versions.<java.util.List: boolean isEmpty()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionImpl",
+  "method": "<net.java.otr4j.session.SessionImpl: java.lang.String transformSending(java.lang.String,java.util.List)>",
+  "line": "810"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

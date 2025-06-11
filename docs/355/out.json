@@ -1,0 +1,145 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack95 = <java.lang.Boolean: java.lang.Boolean FALSE>,114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95),114,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>("OWASP-Dependency-Check"),115,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>('OWASP-Dependency-Check'), 115)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0),116,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0), 116)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1),117,SimpleNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(),118,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(), 118)) SINK=>BASE: Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1),117,SourceNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)) => Node(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>,$stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(),118,SinkNode, path: (<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>(), 118))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1)",
+				"location": {
+					"file": "",
+					"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+					"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+					"line": 117
+				},
+				"stackTrace": [{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 117
+},{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 118
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack95 = <java.lang.Boolean: java.lang.Boolean FALSE>",
+				"location": {
+					"file": "",
+					"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+					"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+					"line": 114
+				},
+				"stackTrace": [{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 114
+},{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 114
+},{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 115
+},{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 116
+},{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 117
+},{
+	"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+	"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+	"line": 118
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack100 = virtualinvoke $stack99.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric create()>()",
+				"location": {
+					"file": "",
+					"class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+					"method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+					"line": 118
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack95 = <java.lang.Boolean: java.lang.Boolean FALSE>",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+  "method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+  "line": "114"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+  "method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+  "line": "114"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack96 = virtualinvoke $stack94.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setQualitative(java.lang.Boolean)>($stack95), 114)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>('OWASP-Dependency-Check')",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+  "method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack97 = virtualinvoke $stack96.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDomain(java.lang.String)>('OWASP-Dependency-Check'), 115)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+  "method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+  "line": "116"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack98 = virtualinvoke $stack97.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setHidden(boolean)>(0), 116)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.base.DependencyCheckMetrics",
+  "method": "<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>",
+  "line": "117"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.base.DependencyCheckMetrics: void <clinit>()>, $stack99 = virtualinvoke $stack98.<org.sonar.api.measures.Metric$Builder: org.sonar.api.measures.Metric$Builder setDeleteHistoricalData(boolean)>(1), 117)"]
+}]
+}
+}
+
+]

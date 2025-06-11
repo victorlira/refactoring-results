@@ -1,0 +1,627 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "244"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, $stack5 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>, 244)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "240"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, $stack10 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>, 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(key, $stack9)",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "240"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, interfaceinvoke $stack10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(key, $stack9), 240)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18)",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "80"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.LayoutFactory",
+  "method": "<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>",
+  "line": "45"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "234"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, $stack3 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>, 234)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack20, $stack21)",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "85"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack20, $stack21), 85)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.LayoutFactory",
+  "method": "<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>",
+  "line": "45"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "240"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, $stack10 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>, 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(key, $stack9)",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "240"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, interfaceinvoke $stack10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(key, $stack9), 240)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.LayoutFactory",
+  "method": "<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>",
+  "line": "45"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "244"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, $stack5 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>, 244)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.stuartwarren.logit.layout.Log: java.util.Map fields> = $stack12",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "235"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, this.<com.stuartwarren.logit.layout.Log: java.util.Map fields> = $stack12, 235)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.LayoutFactory",
+  "method": "<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>",
+  "line": "45"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<com.stuartwarren.logit.layout.Log: java.util.Map fields> = $stack12",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "235"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, this.<com.stuartwarren.logit.layout.Log: java.util.Map fields> = $stack12, 235)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void setFields(java.lang.String)>($stack26), 93)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.stuartwarren.logit.layout.Log",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.Log",
+  "method": "<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>",
+  "line": "234"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)","(<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>, $stack3 = this.<com.stuartwarren.logit.layout.Log: java.util.Map fields>, 234)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.LayoutFactory",
+  "method": "<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>",
+  "line": "45"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18)",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "80"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack17, $stack18), 80)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.layout.LayoutFactory",
+  "method": "<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>",
+  "line": "45"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>()",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "66"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, log = virtualinvoke $stack5.<com.stuartwarren.logit.layout.LayoutFactory: com.stuartwarren.logit.layout.Log getLog()>(), 66)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack20, $stack21)",
+"location": {
+  "file": "",
+  "class": "com.stuartwarren.logit.log4j1.Layout",
+  "method": "<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>",
+  "line": "85"
+},
+"stackTrace": ["(<com.stuartwarren.logit.log4j1.Layout: com.stuartwarren.logit.layout.Log doFormat(org.apache.log4j.spi.LoggingEvent)>, virtualinvoke log.<com.stuartwarren.logit.layout.Log: void addField(com.stuartwarren.logit.fields.IFieldName,java.lang.Object)>($stack20, $stack21), 85)"]
+}]
+}
+}
+
+]

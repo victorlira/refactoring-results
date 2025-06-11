@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "branch": "R",
+    "class": "de.cinovo.cloudconductor.server.impl.rest.AgentImpl",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprivate createNewHost(hname String, template ETemplate) : EHost extracted from public notifyPackageState(tname String, hname String, rpmState PackageState) : PackageStateChanges in class de.cinovo.cloudconductor.server.impl.rest.AgentImpl",
+    "description": {
+      "filePath": "cloudconductor/src/main/java/de/cinovo/cloudconductor/server/impl/rest/AgentImpl.java",
+      "startLine": 132,
+      "endLine": 190,
+      "startColumn": 2,
+      "endColumn": 3,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "source method declaration after extraction",
+      "codeElement": "public notifyPackageState(tname String, hname String, rpmState PackageState) : PackageStateChanges"
+    },
+    "line": "124",
+    "branchLine": "142"
+  },
+  {
+    "branch": "R",
+    "class": "de.cinovo.cloudconductor.server.impl.rest.AgentImpl",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprivate createNewHost(hname String, template ETemplate) : EHost extracted from public notifyPackageState(tname String, hname String, rpmState PackageState) : PackageStateChanges in class de.cinovo.cloudconductor.server.impl.rest.AgentImpl",
+    "description": {
+      "filePath": "cloudconductor/src/main/java/de/cinovo/cloudconductor/server/impl/rest/AgentImpl.java",
+      "startLine": 142,
+      "endLine": 142,
+      "startColumn": 11,
+      "endColumn": 46,
+      "codeElementType": "METHOD_INVOCATION",
+      "description": "extracted method invocation",
+      "codeElement": "this.createNewHost(hname,template)"
+    },
+    "line": "124",
+    "branchLine": "142"
+  }
+]

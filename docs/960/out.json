@@ -1,0 +1,107 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(refString)",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>",
+  "line": "71"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)","(<io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(refString), 71)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>",
+  "line": "71"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref)",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>",
+  "line": "52"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.')",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>",
+  "line": "57"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.'), 57)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack6 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat RELATIVE>",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>",
+  "line": "57"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref)",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>",
+  "line": "52"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.')",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>",
+  "line": "57"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.'), 57)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack6 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat RELATIVE>",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.RefUtils",
+  "method": "<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>",
+  "line": "57"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

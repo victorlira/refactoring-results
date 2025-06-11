@@ -1,0 +1,132 @@
+Running soot scenario swagger-maven-plugin;com.github.kongchen.swagger.docgen.mustache.OutputTemplate;createMustacheDocument(ApiListing);6709abca5c021468e26de8b69255cf583959377b
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/6709abca5c021468e26de8b69255cf583959377b/original-without-dependencies/swagger-maven-plugin-2.3.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,63100
+Time to perform Confluence 1 Inter 4,43300
+Configure Soot Confluence 2 Inter 0,14400
+Time to perform Confluence 2 Inter 2,21100
+Visited methods: 138
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/6709abca5c021468e26de8b69255cf583959377b/original-without-dependencies/swagger-maven-plugin-2.3.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,70600
+Runtime: 0.082s
+OA interference in class OutputTemplate, method com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing), execution of line 113 overrides 160, assigning to variable this.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: java.lang.String contentType>, 
+Caused by line 113 flow:
+at com.github.kongchen.swagger.docgen.mustache.OutputTemplate.createMustacheDocument(OutputTemplate.java:113)
+at com.github.kongchen.swagger.docgen.mustache.MustacheOperation.<init>(MustacheOperation.java:100)
+at com.github.kongchen.swagger.docgen.mustache.MustacheContentType.<init>(MustacheContentType.java:7)
+And line 160 flow:
+at com.github.kongchen.swagger.docgen.mustache.OutputTemplate.createMustacheDocument(OutputTemplate.java:160)
+ 
+Time to perform OA Inter 0,95700
+OA Inter Visited methods: 102
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/6709abca5c021468e26de8b69255cf583959377b/original-without-dependencies/swagger-maven-plugin-2.3.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47900
+Time to perform DFP Inter 2,28500
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>
+Data flows from execution of line 113 to 113, defined in $stack46 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 113 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack46.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(responseMessage#61), 105)
+Caused by line 113 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)
+DF interference in <com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>
+Data flows from execution of line 113 to 113, defined in $stack51 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 113 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)
+Caused by line 113 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)
+[List(Node(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>,$stack46 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType,105,SourceNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack46.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(responseMessage#61), 105)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType,-1,SimpleNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,specialinvoke this.<java.lang.Object: void <init>()>(),6,SinkNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6))), List(Node(<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>,$stack51 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType,100,SourceNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType,-1,SimpleNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,specialinvoke this.<java.lang.Object: void <init>()>(),6,SinkNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)))]
+Visited methods: 69
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/6709abca5c021468e26de8b69255cf583959377b/original-without-dependencies/swagger-maven-plugin-2.3.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,54300
+Time to perform DFP Inter 1,94000
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>
+Data flows from execution of line 165 to 113, defined in $stack39 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 165 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack39.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(op#25), 165)
+Caused by line 113 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)
+DF interference in <com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>
+Data flows from execution of line 160 to 113, defined in $stack42 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 160 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack42.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(opIt#16), 160)
+Caused by line 113 flow: path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)
+[List(Node(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>,$stack39 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType,165,SourceNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack39.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(op#25), 165)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType,-1,SimpleNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,specialinvoke this.<java.lang.Object: void <init>()>(),6,SinkNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6))), List(Node(<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>,$stack42 = new com.github.kongchen.swagger.docgen.mustache.MustacheContentType,160,SourceNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack42.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(opIt#16), 160)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,this := @this: com.github.kongchen.swagger.docgen.mustache.MustacheContentType,-1,SimpleNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100)) => Node(<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>,specialinvoke this.<java.lang.Object: void <init>()>(),6,SinkNode, path: (<com.github.kongchen.swagger.docgen.mustache.OutputTemplate: com.github.kongchen.swagger.docgen.mustache.MustacheDocument createMustacheDocument(com.wordnik.swagger.model.ApiListing)>, specialinvoke $stack69.<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>(mustacheDocument, op), 113) => (<com.github.kongchen.swagger.docgen.mustache.MustacheOperation: void <init>(com.github.kongchen.swagger.docgen.mustache.MustacheDocument,com.wordnik.swagger.model.Operation)>, specialinvoke $stack51.<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>(produce#58), 100) => (<com.github.kongchen.swagger.docgen.mustache.MustacheContentType: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 6)))]
+Visited methods: 62
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/6709abca5c021468e26de8b69255cf583959377b/original-without-dependencies/swagger-maven-plugin-2.3.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,47800
+Time to perform PDG 0,70800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/6709abca5c021468e26de8b69255cf583959377b/original-without-dependencies/swagger-maven-plugin-2.3.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,57500
+Time to perform PDG 0,70200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -1,0 +1,110 @@
+Running soot scenario ez18n;org.ez18n.apt.processor.CSVReportProcessor;process(Set<?extendsTypeElement>, RoundEnvironment);acee2a6039d3810a8424f77fb7b72017b31bd92d
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ez18n/acee2a6039d3810a8424f77fb7b72017b31bd92d/original-without-dependencies/ez18n-base-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,60500
+Time to perform Confluence 1 Inter 0,73500
+Configure Soot Confluence 2 Inter 0,13800
+Time to perform Confluence 2 Inter 0,33300
+Visited methods: 42
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ez18n/acee2a6039d3810a8424f77fb7b72017b31bd92d/original-without-dependencies/ez18n-base-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,68400
+Runtime: 0.018s
+Time to perform OA Inter 0,77700
+OA Inter Visited methods: 13
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ez18n/acee2a6039d3810a8424f77fb7b72017b31bd92d/original-without-dependencies/ez18n-base-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,58800
+Time to perform DFP Inter 0,57300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 21
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ez18n/acee2a6039d3810a8424f77fb7b72017b31bd92d/original-without-dependencies/ez18n-base-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,49100
+Time to perform DFP Inter 0,57800
+Depth limit: 5
+CONFLICTS: DF interference in <org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>
+Data flows from execution of line 98 to 116, defined in $stack28 = interfaceinvoke $stack27.<javax.'annotation'.processing.ProcessingEnvironment: javax.'annotation'.processing.Filer getFiler()>() and propagated in interfaceinvoke $stack37.<javax.'annotation'.processing.Messager: void printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)>($stack39, $stack43)
+Caused by line 98 flow: path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack28 = interfaceinvoke $stack27.<javax.'annotation'.processing.ProcessingEnvironment: javax.'annotation'.processing.Filer getFiler()>(), 98)
+Caused by line 116 flow: path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, interfaceinvoke $stack37.<javax.'annotation'.processing.Messager: void printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)>($stack39, $stack43), 116)
+[List(Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack28 = interfaceinvoke $stack27.<javax.'annotation'.processing.ProcessingEnvironment: javax.'annotation'.processing.Filer getFiler()>(),98,SourceNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack28 = interfaceinvoke $stack27.<javax.'annotation'.processing.ProcessingEnvironment: javax.'annotation'.processing.Filer getFiler()>(), 98)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, "", "i18n_report.csv", $stack29),98,SourceNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, '', 'i18n_report.csv', $stack29), 98)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack41 = interfaceinvoke file#22.<javax.tools.FileObject: java.net.URI toUri()>(),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack41 = interfaceinvoke file#22.<javax.tools.FileObject: java.net.URI toUri()>(), 116)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack40 = virtualinvoke tmp$1705281026.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("written "),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack40 = virtualinvoke tmp$1705281026.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('written '), 116)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack42 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack41),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack42 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack41), 116)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack43 = virtualinvoke $stack42.<java.lang.StringBuilder: java.lang.String toString()>(),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack43 = virtualinvoke $stack42.<java.lang.StringBuilder: java.lang.String toString()>(), 116)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,interfaceinvoke $stack37.<javax.'annotation'.processing.Messager: void printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)>($stack39, $stack43),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, interfaceinvoke $stack37.<javax.'annotation'.processing.Messager: void printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)>($stack39, $stack43), 116)))]
+Visited methods: 21
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ez18n/acee2a6039d3810a8424f77fb7b72017b31bd92d/original-without-dependencies/ez18n-base-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,58200
+Time to perform PDG 0,62500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/ez18n/acee2a6039d3810a8424f77fb7b72017b31bd92d/original-without-dependencies/ez18n-base-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,55400
+Time to perform PDG 0,63900
+CONFLICTS: [List(Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack30 = <javax.tools.StandardLocation: javax.tools.StandardLocation SOURCE_OUTPUT>,98,SourceNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, '', 'i18n_report.csv', $stack29), 98)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, "", "i18n_report.csv", $stack29),98,SourceNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, file#22 = interfaceinvoke $stack28.<javax.'annotation'.processing.Filer: javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])>($stack30, '', 'i18n_report.csv', $stack29), 98)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack41 = interfaceinvoke file#22.<javax.tools.FileObject: java.net.URI toUri()>(),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack41 = interfaceinvoke file#22.<javax.tools.FileObject: java.net.URI toUri()>(), 116)) => Node(<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>,$stack42 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack41),116,SinkNode, path: (<org.ez18n.apt.processor.CSVReportProcessor: boolean process(java.util.Set,javax.'annotation'.processing.RoundEnvironment)>, $stack42 = virtualinvoke $stack40.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack41), 116)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

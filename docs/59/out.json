@@ -1,0 +1,342 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,$stack8 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String streamId>,107,SourceNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, $stack8 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String streamId>, 107)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,$stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8),107,SourceNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, $stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8), 107)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),107,SourceNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,return $stack10,107,SinkNode, path: ) SINK=>BASE: Node(<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>,$stack3 = new java.util.ArrayList,241,SourceNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack68 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(), 136)) => Node(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,$stack127 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(),283,SinkNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack127 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(), 283)) => Node(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,$stack128 = interfaceinvoke $stack127.<java.util.List: java.lang.Object get(int)>(result),283,SinkNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack128 = interfaceinvoke $stack127.<java.util.List: java.lang.Object get(int)>(result), 283)) => Node(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,cimStream#85 = (jenkins.plugins.coverity.CIMStream) $stack128,283,SinkNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, cimStream#85 = (jenkins.plugins.coverity.CIMStream) $stack128, 283)) => Node(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,$stack157 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getInstance()>(),330,SinkNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack157 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getInstance()>(), 330)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>,cimInstance := @parameter3: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, specialinvoke $stack154.<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>(build, $stack155, $stack156, $stack157, matchingDefects#89), 330)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>,this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String cimInstance> = cimInstance,40,SinkNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, specialinvoke $stack154.<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>(build, $stack155, $stack156, $stack157, matchingDefects#89), 330) => (<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>, this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String cimInstance> = cimInstance, 40)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,$stack2 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String cimInstance>,107,SimpleNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, $stack2 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String cimInstance>, 107)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,$stack1 = new java.lang.StringBuilder,107,SimpleNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, specialinvoke $stack1.<java.lang.StringBuilder: void <init>()>(), 107)) => Node(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>,specialinvoke $stack1.<java.lang.StringBuilder: void <init>()>(),107,SinkNode, path: (<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90) => (<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, specialinvoke $stack1.<java.lang.StringBuilder: void <init>()>(), 107))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack3 = new java.util.ArrayList",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.CoverityPublisher",
+					"method": "<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>",
+					"line": 241
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.CoverityPublisher",
+	"method": "<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>",
+	"line": 241
+},{
+	"class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+	"method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 283
+},{
+	"class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+	"method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 283
+},{
+	"class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+	"method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 283
+},{
+	"class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+	"method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 330
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>",
+	"line": 40
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack8 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String streamId>",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.CoverityBuildAction",
+					"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+					"line": 107
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+},{
+	"class": "jenkins.plugins.coverity.CoverityBuildAction",
+	"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+	"line": 107
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "return $stack10",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.CoverityBuildAction",
+					"method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+					"line": 107
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityPublisher",
+  "method": "<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>",
+  "line": "241"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack68 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(), 136)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack127 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>()",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "283"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack127 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(), 283)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack128 = interfaceinvoke $stack127.<java.util.List: java.lang.Object get(int)>(result)",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "283"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack128 = interfaceinvoke $stack127.<java.util.List: java.lang.Object get(int)>(result), 283)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "cimStream#85 = (jenkins.plugins.coverity.CIMStream) $stack128",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "283"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, cimStream#85 = (jenkins.plugins.coverity.CIMStream) $stack128, 283)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: jenkins.plugins.coverity.CIMStream",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CIMStream",
+  "method": "<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>",
+  "line": "-1"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = this.<jenkins.plugins.coverity.CIMStream: java.lang.String project>",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CIMStream",
+  "method": "<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>",
+  "line": "62"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>()",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "330"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "projectId := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityBuildAction",
+  "method": "<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>",
+  "line": "-1"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, specialinvoke $stack154.<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>(build, $stack155, $stack156, $stack157, matchingDefects#89), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId> = projectId",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityBuildAction",
+  "method": "<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>",
+  "line": "38"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, specialinvoke $stack154.<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>(build, $stack155, $stack156, $stack157, matchingDefects#89), 330)","(<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>, this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId> = projectId, 38)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId>",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityBuildAction",
+  "method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+  "line": "107"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335)","(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90)","(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, $stack5 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId>, 107)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<jenkins.plugins.coverity.CoverityPublisher: java.util.List cimStreams>",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityPublisher",
+  "method": "<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>",
+  "line": "243"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack68 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(), 136)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack127 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>()",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "283"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack127 = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: java.util.List getCimStreams()>(), 283)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack128 = interfaceinvoke $stack127.<java.util.List: java.lang.Object get(int)>(result)",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "283"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack128 = interfaceinvoke $stack127.<java.util.List: java.lang.Object get(int)>(result), 283)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "cimStream#85 = (jenkins.plugins.coverity.CIMStream) $stack128",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "283"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, cimStream#85 = (jenkins.plugins.coverity.CIMStream) $stack128, 283)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: jenkins.plugins.coverity.CIMStream",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CIMStream",
+  "method": "<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>",
+  "line": "-1"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = this.<jenkins.plugins.coverity.CIMStream: java.lang.String project>",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CIMStream",
+  "method": "<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>",
+  "line": "62"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>()",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
+  "method": "<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+  "line": "330"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack155 = virtualinvoke cimStream#85.<jenkins.plugins.coverity.CIMStream: java.lang.String getProject()>(), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "projectId := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityBuildAction",
+  "method": "<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>",
+  "line": "-1"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, specialinvoke $stack154.<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>(build, $stack155, $stack156, $stack157, matchingDefects#89), 330)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId> = projectId",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityBuildAction",
+  "method": "<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>",
+  "line": "38"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, specialinvoke $stack154.<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>(build, $stack155, $stack156, $stack157, matchingDefects#89), 330)","(<jenkins.plugins.coverity.CoverityBuildAction: void <init>(hudson.model.AbstractBuild,java.lang.String,java.lang.String,java.lang.String,java.util.List)>, this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId> = projectId, 38)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack5 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId>",
+"location": {
+  "file": "",
+  "class": "jenkins.plugins.coverity.CoverityBuildAction",
+  "method": "<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>",
+  "line": "107"
+},
+"stackTrace": ["(<jenkins.plugins.coverity.CoverityTool.CoverityToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack170 = virtualinvoke action#115.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>(), 335)","(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getUrlName()>, $stack3 = virtualinvoke this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>(), 90)","(<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String getId()>, $stack5 = this.<jenkins.plugins.coverity.CoverityBuildAction: java.lang.String projectId>, 107)"]
+}]
+}
+}
+
+]

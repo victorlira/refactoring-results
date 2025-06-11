@@ -1,0 +1,1633 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "73"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack10 == 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "73"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack8.<java.lang.Class: java.net.URL getResource(java.lang.String)>($stack7)",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, url = virtualinvoke $stack8.<java.lang.Class: java.net.URL getResource(java.lang.String)>($stack7), 120)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if url == null goto $stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<spark.resource.ClassPathResource: java.lang.ClassLoader classLoader>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack4 = this.<spark.resource.ClassPathResource: java.lang.ClassLoader classLoader>, 122)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack4.<java.lang.ClassLoader: java.net.URL getResource(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, url = virtualinvoke $stack4.<java.lang.ClassLoader: java.net.URL getResource(java.lang.String)>($stack3), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if url == null goto $stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<spark.resource.ClassPathResource: java.lang.Class clazz>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "119"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack2 = this.<spark.resource.ClassPathResource: java.lang.Class clazz>, 119)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack2 == null goto $stack4 = this.<spark.resource.ClassPathResource: java.lang.ClassLoader classLoader>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "119"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "397"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)","(<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>, $stack2 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('/'), 397)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('/')",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "397"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)","(<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>, $stack2 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('/'), 397)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path)",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "11"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: boolean startsWith(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack5 = virtualinvoke path.<java.lang.String: boolean startsWith(java.lang.String)>('/'), 63)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke l0.<java.lang.String: boolean startsWith(java.lang.String,int)>(l1, 0)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: boolean startsWith(java.lang.String)>",
+  "line": "1434"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack5 = virtualinvoke path.<java.lang.String: boolean startsWith(java.lang.String)>('/'), 63)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack1.<java.lang.String: boolean startsWith(java.lang.String)>($stack2)",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "11"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack3 = virtualinvoke $stack1.<java.lang.String: boolean startsWith(java.lang.String)>($stack2), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path)",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "11"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: boolean startsWith(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack5 = virtualinvoke path.<java.lang.String: boolean startsWith(java.lang.String)>('/'), 63)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke l0.<java.lang.String: boolean startsWith(java.lang.String,int)>(l1, 0)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: boolean startsWith(java.lang.String)>",
+  "line": "1434"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack5 = virtualinvoke path.<java.lang.String: boolean startsWith(java.lang.String)>('/'), 63)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack1.<java.lang.String: boolean startsWith(java.lang.String)>($stack2)",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "11"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack3 = virtualinvoke $stack1.<java.lang.String: boolean startsWith(java.lang.String)>($stack2), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = virtualinvoke trimmed.<java.lang.String: java.lang.String substring(int,int)>(0, $stack5)",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "398"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = virtualinvoke trimmed.<java.lang.String: java.lang.String substring(int)>(1)",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "402"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('\\')",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "405"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)","(<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>, $stack10 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('\\'), 405)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<spark.resource.ClassPathResource: java.lang.ClassLoader classLoader>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack4 = this.<spark.resource.ClassPathResource: java.lang.ClassLoader classLoader>, 122)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack4.<java.lang.ClassLoader: java.net.URL getResource(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, url = virtualinvoke $stack4.<java.lang.ClassLoader: java.net.URL getResource(java.lang.String)>($stack3), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if url == null goto $stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack4.<java.lang.ClassLoader: java.net.URL getResource(java.lang.String)>($stack3)",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, url = virtualinvoke $stack4.<java.lang.ClassLoader: java.net.URL getResource(java.lang.String)>($stack3), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if url == null goto $stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('\\')",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "405"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)","(<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>, $stack10 = virtualinvoke trimmed.<java.lang.String: boolean endsWith(java.lang.String)>('\\'), 405)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = virtualinvoke trimmed.<java.lang.String: java.lang.String substring(int,int)>(0, $stack5)",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "398"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = virtualinvoke trimmed.<java.lang.String: java.lang.String substring(int)>(1)",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "402"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = virtualinvoke trimmed.<java.lang.String: java.lang.String substring(int,int)>(0, $stack5)",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "398"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<spark.resource.ClassPathResource: java.lang.Class clazz>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "119"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack2 = this.<spark.resource.ClassPathResource: java.lang.Class clazz>, 119)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack2 == null goto $stack4 = this.<spark.resource.ClassPathResource: java.lang.ClassLoader classLoader>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "119"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "120"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack7 = this.<spark.resource.ClassPathResource: java.lang.String path>, 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "122"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)","(<spark.resource.ClassPathResource: boolean exists()>, $stack3 = this.<spark.resource.ClassPathResource: java.lang.String path>, 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<spark.resource.ClassPathResource: java.lang.String path>",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: java.lang.String getPath()>",
+  "line": "105"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack18 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 75)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "83"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack13 = virtualinvoke resource.<spark.resource.ClassPathResource: java.lang.String getPath()>(), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "path := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.staticfiles.DirectoryTraversal",
+  "method": "<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "string := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = string",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "395"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "trimmed = virtualinvoke trimmed.<java.lang.String: java.lang.String substring(int,int)>(0, $stack5)",
+"location": {
+  "file": "",
+  "class": "spark.utils.StringUtils",
+  "method": "<spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>",
+  "line": "398"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, staticinvoke <spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>($stack13), 83)","(<spark.staticfiles.DirectoryTraversal: void protectAgainstInClassPath(java.lang.String)>, $stack1 = staticinvoke <spark.utils.StringUtils: java.lang.String removeLeadingAndTrailingSlashesFrom(java.lang.String)>(path), 11)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = 0",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResource",
+  "method": "<spark.resource.ClassPathResource: boolean exists()>",
+  "line": "124"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack10 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>()",
+"location": {
+  "file": "",
+  "class": "spark.resource.ClassPathResourceHandler",
+  "method": "<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>",
+  "line": "86"
+},
+"stackTrace": ["(<spark.resource.ClassPathResourceHandler: spark.resource.AbstractFileResolvingResource getResource(java.lang.String)>, $stack11 = virtualinvoke resource.<spark.resource.ClassPathResource: boolean exists()>(), 86)"]
+}]
+}
+}
+
+]

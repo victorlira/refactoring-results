@@ -1,0 +1,798 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "<cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE> - <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "<cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE> = $stack0",
+				"location": {
+					"file": "",
+					"class": "cz.startnet.utils.pgdiff.Resources",
+					"method": "<clinit>",
+					"line": 19
+				},
+				"stackTrace": [{
+	"class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+	"method": "loadDatabaseSchema",
+	"line": 152
+},{
+	"class": "cz.startnet.utils.pgdiff.Resources",
+	"method": "<clinit>",
+	"line": 19
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "<cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE> = $stack0",
+				"location": {
+					"file": "",
+					"class": "cz.startnet.utils.pgdiff.Resources",
+					"method": "<clinit>",
+					"line": 19
+				},
+				"stackTrace": [{
+	"class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+	"method": "loadDatabaseSchema",
+	"line": 202
+},{
+	"class": "cz.startnet.utils.pgdiff.parsers.CommentParser",
+	"method": "parse",
+	"line": 41
+},{
+	"class": "cz.startnet.utils.pgdiff.parsers.Parser",
+	"method": "expect",
+	"line": 46
+},{
+	"class": "cz.startnet.utils.pgdiff.parsers.Parser",
+	"method": "expect",
+	"line": 81
+},{
+	"class": "cz.startnet.utils.pgdiff.Resources",
+	"method": "<clinit>",
+	"line": 19
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedExpression')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>",
+  "line": "303"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>(parser, table), 58)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>, $stack6 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>(), 125)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>, $stack10 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedExpression'), 303)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedWord')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>",
+  "line": "81"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack80), 168)","(<cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>($stack6), 33)","(<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>, virtualinvoke this.<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>(word, 0), 46)","(<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>, $stack9 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedWord'), 81)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack9, $stack10)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>",
+  "line": "80"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack80), 168)","(<cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>($stack6), 33)","(<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>, virtualinvoke this.<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>(word, 0), 46)","(<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>, $stack22 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack9, $stack10), 80)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedExpression')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>",
+  "line": "303"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>(parser, table), 58)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>, $stack6 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>(), 125)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>, $stack10 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedExpression'), 303)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack23 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack10, $stack11)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>",
+  "line": "302"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>(parser, table), 58)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>, $stack6 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>(), 125)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>, $stack23 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack10, $stack11), 302)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>($stack23)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>",
+  "line": "302"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>(parser, table), 58)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parseConstraint(cz.startnet.utils.pgdiff.parsers.Parser,cz.startnet.utils.pgdiff.schema.PgTable)>, $stack6 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>(), 125)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String getExpression()>, specialinvoke $stack9.<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>($stack23), 302)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringUnsupportedCommand')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: void throwUnsupportedCommand()>",
+  "line": "375"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void throwUnsupportedCommand()>(), 87)","(<cz.startnet.utils.pgdiff.parsers.Parser: void throwUnsupportedCommand()>, $stack2 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringUnsupportedCommand'), 375)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack15 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack2, $stack3)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: void throwUnsupportedCommand()>",
+  "line": "374"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void throwUnsupportedCommand()>(), 87)","(<cz.startnet.utils.pgdiff.parsers.Parser: void throwUnsupportedCommand()>, $stack15 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack2, $stack3), 374)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "msg := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.ParserException",
+  "method": "<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack80), 168)","(<cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>($stack6), 33)","(<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>, virtualinvoke this.<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>(word, 0), 46)","(<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>, specialinvoke $stack8.<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>($stack22), 80)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.RuntimeException: void <init>(java.lang.String)>(msg)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.ParserException",
+  "method": "<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>",
+  "line": "34"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack80), 168)","(<cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>($stack6), 33)","(<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>, virtualinvoke this.<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>(word, 0), 46)","(<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>, specialinvoke $stack8.<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>($stack22), 80)","(<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.RuntimeException: void <init>(java.lang.String)>(msg), 34)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedString')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>",
+  "line": "279"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, $stack31 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>(), 85)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>, $stack15 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedString'), 279)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack15, $stack16)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>",
+  "line": "278"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, $stack31 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>(), 85)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>, $stack22 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack15, $stack16), 278)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack14.<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>($stack22)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>",
+  "line": "278"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, $stack31 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>(), 85)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>, specialinvoke $stack14.<cz.startnet.utils.pgdiff.parsers.ParserException: void <init>(java.lang.String)>($stack22), 278)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack62 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedDataType')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>",
+  "line": "440"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateFunctionParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack68), 199)","(<cz.startnet.utils.pgdiff.parsers.CreateFunctionParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, dataType = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>(), 63)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>, $stack62 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedDataType'), 440)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack75 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack62, $stack63)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>",
+  "line": "439"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateFunctionParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack68), 199)","(<cz.startnet.utils.pgdiff.parsers.CreateFunctionParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, dataType = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>(), 63)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>, $stack75 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($stack62, $stack63), 439)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack62 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedDataType')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>",
+  "line": "440"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateFunctionParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack68), 199)","(<cz.startnet.utils.pgdiff.parsers.CreateFunctionParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, dataType = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>(), 63)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseDataType()>, $stack62 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedDataType'), 440)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedWord')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>",
+  "line": "81"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack80), 168)","(<cz.startnet.utils.pgdiff.parsers.CreateSchemaParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>($stack6), 33)","(<cz.startnet.utils.pgdiff.parsers.Parser: void expect(java.lang.String[])>, virtualinvoke this.<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>(word, 0), 46)","(<cz.startnet.utils.pgdiff.parsers.Parser: boolean expect(java.lang.String,boolean)>, $stack9 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedWord'), 81)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedString')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.parsers.Parser",
+  "method": "<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>",
+  "line": "279"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, staticinvoke <cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>(database, $stack75), 176)","(<cz.startnet.utils.pgdiff.parsers.CreateTableParser: void parse(cz.startnet.utils.pgdiff.schema.PgDatabase,java.lang.String)>, $stack31 = virtualinvoke parser.<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>(), 85)","(<cz.startnet.utils.pgdiff.parsers.Parser: java.lang.String parseString()>, $stack15 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotParseStringExpectedString'), 279)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+  "method": "<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>",
+  "line": "152"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack87 = new java.lang.StringBuilder",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+  "method": "<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>",
+  "line": "151"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, specialinvoke $stack87.<java.lang.StringBuilder: void <init>()>(), 151)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack89 = virtualinvoke $stack87.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack88)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+  "method": "<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>",
+  "line": "152"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack89 = virtualinvoke $stack87.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack88), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack90 = virtualinvoke $stack89.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(': ')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+  "method": "<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>",
+  "line": "152"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack90 = virtualinvoke $stack89.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(': '), 152)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack84 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotReadFile')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+  "method": "<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>",
+  "line": "219"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack84 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotReadFile'), 219)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack84 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotReadFile')",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.PgDumpLoader",
+  "method": "<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>",
+  "line": "219"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack84 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('CannotReadFile'), 219)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "msg := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.FileException",
+  "method": "<cz.startnet.utils.pgdiff.loader.FileException: void <init>(java.lang.String,java.lang.Throwable)>",
+  "line": "-1"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack80 = staticinvoke <cz.startnet.utils.pgdiff.loader.PgDumpLoader: java.lang.String getWholeStatement(java.io.BufferedReader,java.lang.String)>(reader, ex#4), 169)","(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: java.lang.String getWholeStatement(java.io.BufferedReader,java.lang.String)>, specialinvoke $stack19.<cz.startnet.utils.pgdiff.loader.FileException: void <init>(java.lang.String,java.lang.Throwable)>($stack20, ex), 264)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.RuntimeException: void <init>(java.lang.String,java.lang.Throwable)>(msg, cause)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.loader.FileException",
+  "method": "<cz.startnet.utils.pgdiff.loader.FileException: void <init>(java.lang.String,java.lang.Throwable)>",
+  "line": "45"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack80 = staticinvoke <cz.startnet.utils.pgdiff.loader.PgDumpLoader: java.lang.String getWholeStatement(java.io.BufferedReader,java.lang.String)>(reader, ex#4), 169)","(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: java.lang.String getWholeStatement(java.io.BufferedReader,java.lang.String)>, specialinvoke $stack19.<cz.startnet.utils.pgdiff.loader.FileException: void <init>(java.lang.String,java.lang.Throwable)>($stack20, ex), 264)","(<cz.startnet.utils.pgdiff.loader.FileException: void <init>(java.lang.String,java.lang.Throwable)>, specialinvoke this.<java.lang.RuntimeException: void <init>(java.lang.String,java.lang.Throwable)>(msg, cause), 45)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <cz.startnet.utils.pgdiff.Resources: java.util.ResourceBundle RESOURCE_BUNDLE>",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)","(<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>, $stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key), 35)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke $stack1.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>(key)",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": ["(<cz.startnet.utils.pgdiff.loader.PgDumpLoader: cz.startnet.utils.pgdiff.schema.PgDatabase loadDatabaseSchema(java.io.InputStream,java.lang.String,boolean)>, $stack88 = staticinvoke <cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>('UnsupportedEncoding'), 152)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "cz.startnet.utils.pgdiff.Resources",
+  "method": "<cz.startnet.utils.pgdiff.Resources: java.lang.String getString(java.lang.String)>",
+  "line": "35"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

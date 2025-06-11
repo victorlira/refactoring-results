@@ -1,0 +1,74 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = this.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: java.util.Map invalidType>",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult",
+  "method": "<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>",
+  "line": "3226"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.OpenAPIDeserializer: io.swagger.v3.oas.models.parameters.Parameter getParameter(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult)>, virtualinvoke result.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>(location, '$ref', 'string', obj), 1579)","(<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>, $stack6 = this.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: java.util.Map invalidType>, 3226)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack5, expectedType)",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult",
+  "method": "<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>",
+  "line": "3226"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.OpenAPIDeserializer: io.swagger.v3.oas.models.parameters.Parameter getParameter(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult)>, virtualinvoke result.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>(location, '$ref', 'string', obj), 1579)","(<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>, interfaceinvoke $stack6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack5, expectedType), 3226)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = new io.swagger.v3.parser.util.OpenAPIDeserializer$Location",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult",
+  "method": "<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>",
+  "line": "3226"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.OpenAPIDeserializer: io.swagger.v3.oas.models.parameters.Parameter getParameter(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult)>, virtualinvoke result.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>(location, '$ref', 'string', obj), 1579)","(<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>, specialinvoke $stack5.<io.swagger.v3.parser.util.OpenAPIDeserializer$Location: void <init>(java.lang.String,java.lang.String)>(location, key), 3226)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: io.swagger.v3.parser.util.OpenAPIDeserializer$Location",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.OpenAPIDeserializer$Location",
+  "method": "<io.swagger.v3.parser.util.OpenAPIDeserializer$Location: void <init>(java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.OpenAPIDeserializer: io.swagger.v3.oas.models.parameters.Parameter getParameter(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult)>, virtualinvoke result.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>(location, '$ref', 'string', obj), 1579)","(<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>, specialinvoke $stack5.<io.swagger.v3.parser.util.OpenAPIDeserializer$Location: void <init>(java.lang.String,java.lang.String)>(location, key), 3226)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "io.swagger.v3.parser.util.OpenAPIDeserializer$Location",
+  "method": "<io.swagger.v3.parser.util.OpenAPIDeserializer$Location: void <init>(java.lang.String,java.lang.String)>",
+  "line": "3304"
+},
+"stackTrace": ["(<io.swagger.v3.parser.util.OpenAPIDeserializer: io.swagger.v3.oas.models.parameters.Parameter getParameter(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult)>, virtualinvoke result.<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>(location, '$ref', 'string', obj), 1579)","(<io.swagger.v3.parser.util.OpenAPIDeserializer$ParseResult: void invalidType(java.lang.String,java.lang.String,java.lang.String,com.fasterxml.jackson.databind.JsonNode)>, specialinvoke $stack5.<io.swagger.v3.parser.util.OpenAPIDeserializer$Location: void <init>(java.lang.String,java.lang.String)>(location, key), 3226)","(<io.swagger.v3.parser.util.OpenAPIDeserializer$Location: void <init>(java.lang.String,java.lang.String)>, specialinvoke this.<java.lang.Object: void <init>()>(), 3304)"]
+}]
+}
+}
+
+]

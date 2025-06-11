@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "branch": "L",
+    "class": "net.helpscout.api.ApiClient",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprivate objectToPage(obj JsonObject, clazzType Class<?>) : Page extracted from private getPage(url String, params Map<String,String>, clazzType Class<?>, expectedCode int) : Page in class net.helpscout.api.ApiClient",
+    "description": {
+      "filePath": "src/main/java/net/helpscout/api/ApiClient.java",
+      "startLine": 1195,
+      "endLine": 1195,
+      "startColumn": 16,
+      "endColumn": 62,
+      "codeElementType": "METHOD_INVOCATION",
+      "description": "extracted method invocation",
+      "codeElement": "objectToPage(obj.getAsJsonObject(),clazzType)"
+    },
+    "line": "1486",
+    "branchLine": "1195"
+  },
+  {
+    "branch": "R",
+    "class": "net.helpscout.api.ApiClient",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprivate parseJson(url String, json String) : JsonElement extracted from private getPage(url String, params Map<String,String>, clazzType Class<?>, expectedCode int) : Page in class net.helpscout.api.ApiClient",
+    "description": {
+      "filePath": "src/main/java/net/helpscout/api/ApiClient.java",
+      "startLine": 1267,
+      "endLine": 1267,
+      "startColumn": 21,
+      "endColumn": 41,
+      "codeElementType": "METHOD_INVOCATION",
+      "description": "extracted method invocation",
+      "codeElement": "parseJson(url,json)"
+    },
+    "line": "1484",
+    "branchLine": "1267"
+  }
+]

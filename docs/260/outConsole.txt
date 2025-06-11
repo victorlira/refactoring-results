@@ -1,0 +1,118 @@
+Running soot scenario mongodb-async-driver;com.allanbank.mongodb.connection.socket.SocketConnection;SocketConnection(ServerState, MongoDbConfiguration);2df4f3664dbf6f7217cd03ea369c9f7d28427892
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongodb-async-driver/2df4f3664dbf6f7217cd03ea369c9f7d28427892/original-without-dependencies/mongodb-async-driver-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,68300
+Time to perform Confluence 1 Inter 0,80000
+Configure Soot Confluence 2 Inter 0,20700
+Time to perform Confluence 2 Inter 0,33500
+Visited methods: 82
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongodb-async-driver/2df4f3664dbf6f7217cd03ea369c9f7d28427892/original-without-dependencies/mongodb-async-driver-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,86100
+Runtime: 0.019s
+OA interference in class SocketConnection, method void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration), execution of line 125 overrides 125, assigning to variable l0.<com.allanbank.mongodb.connection.socket.SocketConnection: java.util.concurrent.Executor myExecutor>, 
+Caused by line 125 flow:
+at com.allanbank.mongodb.connection.socket.SocketConnection.<init>(SocketConnection.java:125)
+And line 125 flow:
+at com.allanbank.mongodb.connection.socket.SocketConnection.<init>(SocketConnection.java:125)
+ 
+Time to perform OA Inter 0,95700
+OA Inter Visited methods: 35
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongodb-async-driver/2df4f3664dbf6f7217cd03ea369c9f7d28427892/original-without-dependencies/mongodb-async-driver-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,65500
+Time to perform DFP Inter 0,71400
+Depth limit: 5
+CONFLICTS: DF interference in <com.allanbank.mongodb.connection.socket.SocketConnection: void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>,$stack1 = l0.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor myExecutor>,604,SourceNode, path: (<com.allanbank.mongodb.connection.socket.SocketConnection: void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration)>, $stack3 = virtualinvoke l2.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>(), 125)) => Node(<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>,return $stack1,604,SinkNode, path: ))]
+Visited methods: 41
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongodb-async-driver/2df4f3664dbf6f7217cd03ea369c9f7d28427892/original-without-dependencies/mongodb-async-driver-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,50300
+Time to perform DFP Inter 0,68900
+Depth limit: 5
+CONFLICTS: DF interference in <com.allanbank.mongodb.connection.socket.SocketConnection: void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>,$stack1 = l0.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor myExecutor>,604,SourceNode, path: (<com.allanbank.mongodb.connection.socket.SocketConnection: void <init>(com.allanbank.mongodb.connection.state.ServerState,com.allanbank.mongodb.MongoClientConfiguration)>, $stack3 = virtualinvoke l2.<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>(), 125)) => Node(<com.allanbank.mongodb.MongoClientConfiguration: java.util.concurrent.Executor getExecutor()>,return $stack1,604,SinkNode, path: ))]
+Visited methods: 41
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongodb-async-driver/2df4f3664dbf6f7217cd03ea369c9f7d28427892/original-without-dependencies/mongodb-async-driver-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,73500
+Time to perform PDG 0,50000
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongodb-async-driver/2df4f3664dbf6f7217cd03ea369c9f7d28427892/original-without-dependencies/mongodb-async-driver-1.1.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,58400
+Time to perform PDG 0,54100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

@@ -1,0 +1,294 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) SINK=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>()",
+				"location": {
+					"file": "",
+					"class": "com.kpelykh.docker.client.test.DockerClientTest",
+					"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+					"line": 343
+				},
+				"stackTrace": [{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 343
+},{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 343
+},{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 346
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>()",
+				"location": {
+					"file": "",
+					"class": "com.kpelykh.docker.client.test.DockerClientTest",
+					"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+					"line": 346
+				},
+				"stackTrace": [{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 346
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 832
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)) SINK=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>()",
+				"location": {
+					"file": "",
+					"class": "com.kpelykh.docker.client.test.DockerClientTest",
+					"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+					"line": 343
+				},
+				"stackTrace": [{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 343
+},{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 343
+},{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 346
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>()",
+				"location": {
+					"file": "",
+					"class": "com.kpelykh.docker.client.test.DockerClientTest",
+					"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+					"line": 346
+				},
+				"stackTrace": [{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 346
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l0.<java.lang.Integer: int value> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: void <init>(int)>",
+					"line": 850
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831)) SINK=>BASE: Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>(), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31),343,SourceNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)) => Node(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>,$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(),346,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(exitCode), 341) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack31 = virtualinvoke container.<com.kpelykh.docker.client.model.ContainerCreateResponse: java.lang.String getId()>()",
+				"location": {
+					"file": "",
+					"class": "com.kpelykh.docker.client.test.DockerClientTest",
+					"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+					"line": 343
+				},
+				"stackTrace": [{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 343
+},{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 343
+},{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 346
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>()",
+				"location": {
+					"file": "",
+					"class": "com.kpelykh.docker.client.test.DockerClientTest",
+					"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+					"line": 346
+				},
+				"stackTrace": [{
+	"class": "com.kpelykh.docker.client.test.DockerClientTest",
+	"method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+	"line": 346
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = l0 + 128",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 831
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack30 = this.<com.kpelykh.docker.client.test.DockerClientTest: com.kpelykh.docker.client.DockerClient dockerClient>",
+"location": {
+  "file": "",
+  "class": "com.kpelykh.docker.client.test.DockerClientTest",
+  "method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+  "line": "343"
+},
+"stackTrace": ["(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack30 = this.<com.kpelykh.docker.client.test.DockerClientTest: com.kpelykh.docker.client.DockerClient dockerClient>, 343)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31)",
+"location": {
+  "file": "",
+  "class": "com.kpelykh.docker.client.test.DockerClientTest",
+  "method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+  "line": "343"
+},
+"stackTrace": ["(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, filesystemDiff = virtualinvoke $stack30.<com.kpelykh.docker.client.DockerClient: java.util.List containerDiff(java.lang.String)>($stack31), 343)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "com.kpelykh.docker.client.test.DockerClientTest",
+  "method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+  "line": "346"
+},
+"stackTrace": ["(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack36 = interfaceinvoke filesystemDiff.<java.util.List: int size()>(), 346)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack36)",
+"location": {
+  "file": "",
+  "class": "com.kpelykh.docker.client.test.DockerClientTest",
+  "method": "<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>",
+  "line": "346"
+},
+"stackTrace": ["(<com.kpelykh.docker.client.test.DockerClientTest: void testDiff()>, $stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack36), 346)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,215 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.datasift.tests.TestDefinition: void testGetConsumer()>,e1 = $stack30,331,SourceNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, e1 = $stack30, 331)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)) SINK=>BASE: Node(<org.datasift.Definition: java.lang.String get()>,$stack3 = new org.datasift.EInvalidData,100,SourceNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)) => Node(<org.datasift.EInvalidData: void <init>(java.lang.String)>,this := @this: org.datasift.EInvalidData,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l0 := @this: java.lang.Exception,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0 := @this: java.lang.Throwable,-1,SimpleNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) => Node(<java.lang.Throwable: void <init>(java.lang.String)>,l0.<java.lang.Throwable: java.lang.String detailMessage> = l1,266,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330) => (<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100) => (<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66) => (<java.lang.Throwable: void <init>(java.lang.String)>, l0.<java.lang.Throwable: java.lang.String detailMessage> = l1, 266)) => Node(<java.lang.Throwable: java.lang.String getMessage()>,$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>,377,SinkNode, path: (<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack21 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack3 = new org.datasift.EInvalidData",
+				"location": {
+					"file": "",
+					"class": "org.datasift.Definition",
+					"method": "<org.datasift.Definition: java.lang.String get()>",
+					"line": 100
+				},
+				"stackTrace": [{
+	"class": "org.datasift.Definition",
+	"method": "<org.datasift.Definition: java.lang.String get()>",
+	"line": 100
+},{
+	"class": "org.datasift.EInvalidData",
+	"method": "<org.datasift.EInvalidData: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: void <init>(java.lang.String)>",
+	"line": 266
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": 377
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "e1 = $stack30",
+				"location": {
+					"file": "",
+					"class": "org.datasift.tests.TestDefinition",
+					"method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+					"line": 331
+				},
+				"stackTrace": [{
+	"class": "org.datasift.tests.TestDefinition",
+	"method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+	"line": 331
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": -1
+},{
+	"class": "java.lang.Throwable",
+	"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+	"line": 377
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Throwable",
+					"method": "<java.lang.Throwable: java.lang.String getMessage()>",
+					"line": 377
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new org.datasift.EInvalidData",
+"location": {
+  "file": "",
+  "class": "org.datasift.Definition",
+  "method": "<org.datasift.Definition: java.lang.String get()>",
+  "line": "100"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330)","(<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.datasift.EInvalidData",
+"location": {
+  "file": "",
+  "class": "org.datasift.EInvalidData",
+  "method": "<org.datasift.EInvalidData: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330)","(<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.Exception",
+"location": {
+  "file": "",
+  "class": "java.lang.Exception",
+  "method": "<java.lang.Exception: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330)","(<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)","(<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.Throwable",
+"location": {
+  "file": "",
+  "class": "java.lang.Throwable",
+  "method": "<java.lang.Throwable: void <init>(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330)","(<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)","(<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)","(<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0.<java.lang.Throwable: java.lang.String detailMessage> = l1",
+"location": {
+  "file": "",
+  "class": "java.lang.Throwable",
+  "method": "<java.lang.Throwable: void <init>(java.lang.String)>",
+  "line": "266"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack6 = virtualinvoke def.<org.datasift.Definition: java.lang.String get()>(), 330)","(<org.datasift.Definition: java.lang.String get()>, specialinvoke $stack3.<org.datasift.EInvalidData: void <init>(java.lang.String)>('CSDL not available'), 100)","(<org.datasift.EInvalidData: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(arg0), 27)","(<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)","(<java.lang.Throwable: void <init>(java.lang.String)>, l0.<java.lang.Throwable: java.lang.String detailMessage> = l1, 266)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Throwable: java.lang.String detailMessage>",
+"location": {
+  "file": "",
+  "class": "java.lang.Throwable",
+  "method": "<java.lang.Throwable: java.lang.String getMessage()>",
+  "line": "377"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestDefinition",
+  "method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+  "line": "332"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack33 = virtualinvoke e1.<org.datasift.EInvalidData: java.lang.String getMessage()>(), 332)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('EInvalidData: ')",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestDefinition",
+  "method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+  "line": "332"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack32 = virtualinvoke $stack31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('EInvalidData: '), 332)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack34 = virtualinvoke $stack32.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack33)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestDefinition",
+  "method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+  "line": "332"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack34 = virtualinvoke $stack32.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack33), 332)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack35 = virtualinvoke $stack34.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestDefinition",
+  "method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+  "line": "332"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, $stack35 = virtualinvoke $stack34.<java.lang.StringBuilder: java.lang.String toString()>(), 332)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "staticinvoke <org.datasift.tests.TestDefinition: void fail(java.lang.String)>($stack35)",
+"location": {
+  "file": "",
+  "class": "org.datasift.tests.TestDefinition",
+  "method": "<org.datasift.tests.TestDefinition: void testGetConsumer()>",
+  "line": "332"
+},
+"stackTrace": ["(<org.datasift.tests.TestDefinition: void testGetConsumer()>, staticinvoke <org.datasift.tests.TestDefinition: void fail(java.lang.String)>($stack35), 332)"]
+}]
+}
+}
+
+]

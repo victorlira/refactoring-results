@@ -1,0 +1,104 @@
+Running soot scenario jgrapht;org.jgrapht.generate.GnmRandomGraphGenerator;generateGraph(Graph<V,E>, VertexFactory<V>, Map<String,V>);62628bcbc4bd44eed87539b6e804a189db3e299c
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/62628bcbc4bd44eed87539b6e804a189db3e299c/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,79300
+Time to perform Confluence 1 Inter 0,75300
+Configure Soot Confluence 2 Inter 0,56500
+Time to perform Confluence 2 Inter 0,17300
+Visited methods: 8
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/62628bcbc4bd44eed87539b6e804a189db3e299c/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,22200
+Runtime: 0.063s
+Time to perform OA Inter 1,36700
+OA Inter Visited methods: 30
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/62628bcbc4bd44eed87539b6e804a189db3e299c/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,86900
+Time to perform DFP Inter 0,60000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 4
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/62628bcbc4bd44eed87539b6e804a189db3e299c/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,11700
+Time to perform DFP Inter 0,55500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 4
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/62628bcbc4bd44eed87539b6e804a189db3e299c/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,76900
+Time to perform PDG 0,92700
+CONFLICTS: [List(Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack81 = interfaceinvoke target.<org.jgrapht.Graph: org.jgrapht.GraphType getType()>(),176,SourceNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack81 = interfaceinvoke target.<org.jgrapht.Graph: org.jgrapht.GraphType getType()>(), 176)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack82 = interfaceinvoke $stack81.<org.jgrapht.GraphType: boolean isAllowingMultipleEdges()>(),176,SourceNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack82 = interfaceinvoke $stack81.<org.jgrapht.GraphType: boolean isAllowingMultipleEdges()>(), 176)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack82 != 0 goto $stack15 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: int m>,176,SourceNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19),171,SimpleNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19), 171)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack15 <= $stack21 goto $stack22 = new java.util.HashMap,171,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if i >= $stack26 goto $stack27 = interfaceinvoke target.<org.jgrapht.Graph: java.util.Set vertexSet()>(),183,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(),184,SinkNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 184))), List(Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack17 = interfaceinvoke target.<org.jgrapht.Graph: org.jgrapht.GraphType getType()>(),172,SourceNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack17 = interfaceinvoke target.<org.jgrapht.Graph: org.jgrapht.GraphType getType()>(), 172)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack18 = interfaceinvoke $stack17.<org.jgrapht.GraphType: boolean isDirected()>(),172,SourceNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack18 = interfaceinvoke $stack17.<org.jgrapht.GraphType: boolean isDirected()>(), 172)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19),171,SimpleNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19), 171)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack15 <= $stack21 goto $stack22 = new java.util.HashMap,171,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if i >= $stack26 goto $stack27 = interfaceinvoke target.<org.jgrapht.Graph: java.util.Set vertexSet()>(),183,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(),184,SinkNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 184))), List(Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack14 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: boolean multipleEdges>,165,SourceNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack14 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: boolean multipleEdges>, 165)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack14 == 0 goto $stack15 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: int m>,165,SourceNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19),171,SimpleNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19), 171)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack15 <= $stack21 goto $stack22 = new java.util.HashMap,171,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if i >= $stack26 goto $stack27 = interfaceinvoke target.<org.jgrapht.Graph: java.util.Set vertexSet()>(),183,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(),184,SinkNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 184))), List(Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack13 == 0 goto $stack14 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: boolean multipleEdges>,160,SourceNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack14 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: boolean multipleEdges>,165,SourceNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack14 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: boolean multipleEdges>, 165)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack14 == 0 goto $stack15 = this.<org.jgrapht.generate.GnmRandomGraphGenerator: int m>,165,SourceNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,$stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19),171,SimpleNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, $stack21 = staticinvoke <org.jgrapht.generate.GnmRandomGraphGenerator: int computeMaximumAllowedEdges(int,boolean,boolean,boolean)>($stack16, $stack18, $stack20, $stack19), 171)) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if $stack15 <= $stack21 goto $stack22 = new java.util.HashMap,171,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,if i >= $stack26 goto $stack27 = interfaceinvoke target.<org.jgrapht.Graph: java.util.Set vertexSet()>(),183,SimpleNode, path: ) => Node(<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>,currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(),184,SinkNode, path: (<org.jgrapht.generate.GnmRandomGraphGenerator: void generateGraph(org.jgrapht.Graph,java.util.Map)>, currVertex = interfaceinvoke target.<org.jgrapht.Graph: java.lang.Object addVertex()>(), 184)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jgrapht/62628bcbc4bd44eed87539b6e804a189db3e299c/original-without-dependencies/jgrapht-ext-1.1.1-SNAPSHOT-uber.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,98100
+Time to perform PDG 0,70500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

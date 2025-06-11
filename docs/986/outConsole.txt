@@ -1,0 +1,110 @@
+Running soot scenario graphhopper;com.graphhopper.routing.PathTest;testCalcInstructionsRoundaboutClockwise();ef7551194a3e2b9239bee1b661a7fbf3835c523a
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/graphhopper/ef7551194a3e2b9239bee1b661a7fbf3835c523a/original-without-dependencies/graphhopper-0.5-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,71100
+Time to perform Confluence 1 Inter 0,57200
+Configure Soot Confluence 2 Inter 0,22300
+Time to perform Confluence 2 Inter 0,07300
+Visited methods: 22
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/graphhopper/ef7551194a3e2b9239bee1b661a7fbf3835c523a/original-without-dependencies/graphhopper-0.5-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,81000
+Runtime: 0.007s
+Time to perform OA Inter 0,85700
+OA Inter Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/graphhopper/ef7551194a3e2b9239bee1b661a7fbf3835c523a/original-without-dependencies/graphhopper-0.5-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,48700
+Time to perform DFP Inter 0,49400
+Depth limit: 5
+CONFLICTS: DF interference in <com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>
+Data flows from execution of line 482 to 494, defined in tmp$1644529474 = new com.graphhopper.routing.Dijkstra and propagated in staticinvoke <org.junit.Assert: void assertEquals(double,double,double)>(delta, $stack27, 0.01)
+Caused by line 482 flow: path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, specialinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: void <init>(com.graphhopper.storage.Graph,com.graphhopper.routing.util.FlagEncoder,com.graphhopper.routing.util.Weighting,com.graphhopper.routing.util.TraversalMode)>($stack12, $stack13, tmp$1988265335, $stack14), 482)
+Caused by line 494 flow: path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, staticinvoke <org.junit.Assert: void assertEquals(double,double,double)>(delta, $stack27, 0.01), 494)
+[List(Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,tmp$1644529474 = new com.graphhopper.routing.Dijkstra,482,SourceNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, specialinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: void <init>(com.graphhopper.storage.Graph,com.graphhopper.routing.util.FlagEncoder,com.graphhopper.routing.util.Weighting,com.graphhopper.routing.util.TraversalMode)>($stack12, $stack13, tmp$1988265335, $stack14), 482)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,p = virtualinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: com.graphhopper.routing.Path calcPath(int,int)>(1, 8),483,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, p = virtualinvoke tmp$1644529474.<com.graphhopper.routing.Dijkstra: com.graphhopper.routing.Path calcPath(int,int)>(1, 8), 483)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,wayList = virtualinvoke p.<com.graphhopper.routing.Path: com.graphhopper.util.InstructionList calcInstructions(com.graphhopper.util.Translation)>($stack17),485,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, wayList = virtualinvoke p.<com.graphhopper.routing.Path: com.graphhopper.util.InstructionList calcInstructions(com.graphhopper.util.Translation)>($stack17), 485)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,$stack26 = virtualinvoke wayList.<com.graphhopper.util.InstructionList: com.graphhopper.util.Instruction get(int)>(1),493,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, $stack26 = virtualinvoke wayList.<com.graphhopper.util.InstructionList: com.graphhopper.util.Instruction get(int)>(1), 493)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,instr = (com.graphhopper.util.RoundaboutInstruction) $stack26,493,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, instr = (com.graphhopper.util.RoundaboutInstruction) $stack26, 493)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,$stack27 = virtualinvoke instr.<com.graphhopper.util.RoundaboutInstruction: double getTurnAngle()>(),494,SinkNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, $stack27 = virtualinvoke instr.<com.graphhopper.util.RoundaboutInstruction: double getTurnAngle()>(), 494)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,staticinvoke <org.junit.Assert: void assertEquals(double,double,double)>(delta, $stack27, 0.01),494,SinkNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, staticinvoke <org.junit.Assert: void assertEquals(double,double,double)>(delta, $stack27, 0.01), 494)))]
+Visited methods: 11
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/graphhopper/ef7551194a3e2b9239bee1b661a7fbf3835c523a/original-without-dependencies/graphhopper-0.5-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,59800
+Time to perform DFP Inter 0,45400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 11
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/graphhopper/ef7551194a3e2b9239bee1b661a7fbf3835c523a/original-without-dependencies/graphhopper-0.5-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,70100
+Time to perform PDG 0,44800
+CONFLICTS: [List(Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,tmp$804153761 = new com.graphhopper.routing.Dijkstra,482,SourceNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, specialinvoke tmp$804153761.<com.graphhopper.routing.Dijkstra: void <init>(com.graphhopper.storage.Graph,com.graphhopper.routing.util.FlagEncoder,com.graphhopper.routing.util.Weighting,com.graphhopper.routing.util.TraversalMode)>($stack12, $stack13, tmp$1783296129, $stack14), 482)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,p = virtualinvoke tmp$804153761.<com.graphhopper.routing.Dijkstra: com.graphhopper.routing.Path calcPath(int,int)>(1, 8),483,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, p = virtualinvoke tmp$804153761.<com.graphhopper.routing.Dijkstra: com.graphhopper.routing.Path calcPath(int,int)>(1, 8), 483)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,wayList = virtualinvoke p.<com.graphhopper.routing.Path: com.graphhopper.util.InstructionList calcInstructions(com.graphhopper.util.Translation)>($stack17),485,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, wayList = virtualinvoke p.<com.graphhopper.routing.Path: com.graphhopper.util.InstructionList calcInstructions(com.graphhopper.util.Translation)>($stack17), 485)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,$stack26 = virtualinvoke wayList.<com.graphhopper.util.InstructionList: com.graphhopper.util.Instruction get(int)>(1),493,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, $stack26 = virtualinvoke wayList.<com.graphhopper.util.InstructionList: com.graphhopper.util.Instruction get(int)>(1), 493)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,instr = (com.graphhopper.util.RoundaboutInstruction) $stack26,493,SimpleNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, instr = (com.graphhopper.util.RoundaboutInstruction) $stack26, 493)) => Node(<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>,$stack27 = virtualinvoke instr.<com.graphhopper.util.RoundaboutInstruction: double getTurnAngle()>(),494,SinkNode, path: (<com.graphhopper.routing.PathTest: void testCalcInstructionsRoundaboutClockwise()>, $stack27 = virtualinvoke instr.<com.graphhopper.util.RoundaboutInstruction: double getTurnAngle()>(), 494)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/graphhopper/ef7551194a3e2b9239bee1b661a7fbf3835c523a/original-without-dependencies/graphhopper-0.5-SNAPSHOT-tests.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,68400
+Time to perform PDG 0,45800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

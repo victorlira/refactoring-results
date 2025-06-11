@@ -1,0 +1,110 @@
+Running soot scenario asterisk-java;org.asteriskjava.tools.HtmlEventTracer;getText(String, ManagerEvent);c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,59200
+Time to perform Confluence 1 Inter 0,71900
+Configure Soot Confluence 2 Inter 0,28400
+Time to perform Confluence 2 Inter 0,29000
+Visited methods: 20
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,84200
+Runtime: 0.014s
+Time to perform OA Inter 0,90600
+OA Inter Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,61800
+Time to perform DFP Inter 0,59800
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 10
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,89800
+Time to perform DFP Inter 0,62400
+Depth limit: 5
+CONFLICTS: DF interference in <org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "%s",259,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: )), List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "(%s) %s",264,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: ))]
+Visited methods: 10
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,89700
+Time to perform PDG 0,75800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,90100
+Time to perform PDG 0,73700
+CONFLICTS: [List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,$stack45 = event instanceof org.asteriskjava.manager.event.PausedEvent,262,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack45 = event instanceof org.asteriskjava.manager.event.PausedEvent, 262)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if $stack45 == 0 goto $stack46 = event instanceof org.asteriskjava.manager.event.UnpausedEvent,262,SourceNode, path: ) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "(%s) %s",264,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "From: %s",297,SimpleNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: )), List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "%s",259,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "From: %s",297,SimpleNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: )), List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if $stack46 == 0 goto $stack10 = event instanceof org.asteriskjava.manager.event.BridgeEvent,267,SourceNode, path: ) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "(%s) %s",269,SimpleNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "From: %s",297,SimpleNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: )), List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "(%s) %s",264,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "From: %s",297,SimpleNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: )), List(Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,$stack44 = event instanceof org.asteriskjava.manager.event.AntennaLevelEvent,257,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack44 = event instanceof org.asteriskjava.manager.event.AntennaLevelEvent, 257)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if $stack44 == 0 goto $stack45 = event instanceof org.asteriskjava.manager.event.PausedEvent,257,SourceNode, path: ) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "%s",259,SourceNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,format = "From: %s",297,SimpleNode, path: (<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)) => Node(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>,if format == null goto return null,302,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 5
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

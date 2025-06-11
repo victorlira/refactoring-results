@@ -1,56 +1,5 @@
 [
   {
-    "branch": "L",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Rename Variable\tindex : Index to sequence : Sequence in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 192,
-      "endLine": 192,
-      "startColumn": 22,
-      "endColumn": 39,
-      "codeElementType": "SINGLE_VARIABLE_DECLARATION",
-      "description": "renamed variable declaration",
-      "codeElement": "sequence : Sequence"
-    },
-    "line": "192"
-  },
-  {
-    "branch": "R",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Rename Variable\tgeneratedTables : Collection<Table> to primaryTables : Collection<Table> in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 198,
-      "endLine": 198,
-      "startColumn": 17,
-      "endColumn": 42,
-      "codeElementType": "EXPRESSION_STATEMENT",
-      "description": "statement referencing the renamed variable",
-      "codeElement": null
-    },
-    "line": "198"
-  },
-  {
-    "branch": "R",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Rename Variable\tgeneratedTables : Collection<Table> to primaryTables : Collection<Table> in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 263,
-      "endLine": 263,
-      "startColumn": 13,
-      "endColumn": 111,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement referencing the renamed variable",
-      "codeElement": null
-    },
-    "line": "263"
-  },
-  {
     "branch": "R",
     "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
     "tool": "RefactoringMiner",
@@ -65,7 +14,8 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": null
     },
-    "line": "170"
+    "line": "170",
+    "branchLine": "170"
   },
   {
     "branch": "R",
@@ -82,7 +32,44 @@
       "description": "extracted variable declaration",
       "codeElement": "createSequences : boolean"
     },
-    "line": "170"
+    "line": "170",
+    "branchLine": "170"
+  },
+  {
+    "branch": "R",
+    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Rename Variable\tgeneratedTables : Collection<Table> to primaryTables : Collection<Table> in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
+    "description": {
+      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
+      "startLine": 198,
+      "endLine": 198,
+      "startColumn": 17,
+      "endColumn": 42,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement referencing the renamed variable",
+      "codeElement": null
+    },
+    "line": "198",
+    "branchLine": "198"
+  },
+  {
+    "branch": "R",
+    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Rename Variable\tgeneratedTables : Collection<Table> to primaryTables : Collection<Table> in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
+    "description": {
+      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
+      "startLine": 263,
+      "endLine": 263,
+      "startColumn": 13,
+      "endColumn": 111,
+      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+      "description": "statement referencing the renamed variable",
+      "codeElement": null
+    },
+    "line": "263",
+    "branchLine": "263"
   },
   {
     "branch": "R",
@@ -99,6 +86,7 @@
       "description": "renamed variable declaration",
       "codeElement": "primaryTables : Collection<Table>"
     },
-    "line": "263"
+    "line": "263",
+    "branchLine": "263"
   }
 ]

@@ -1,0 +1,116 @@
+Running soot scenario jongo;org.jongo.marshall.jackson.bson4jackson.BsonDeserializers;BsonDeserializers();697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c/original-without-dependencies/jongo-1.5.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,48100
+Time to perform Confluence 1 Inter 0,33900
+Configure Soot Confluence 2 Inter 0,15800
+Time to perform Confluence 2 Inter 0,07300
+Visited methods: 38
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c/original-without-dependencies/jongo-1.5.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,53600
+Runtime: 0.01s
+Time to perform OA Inter 0,60000
+OA Inter Visited methods: 19
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c/original-without-dependencies/jongo-1.5.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,56500
+Time to perform DFP Inter 0,38000
+Depth limit: 5
+CONFLICTS: DF interference in <org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>
+Data flows from execution of line 52 to 52, defined in $stack17 = new org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer and propagated in specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>()
+Caused by line 52 flow: path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52)
+Caused by line 52 flow: path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>, specialinvoke this.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>(), 180) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>, specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>(), 180)
+[List(Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>,$stack17 = new org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer,52,SourceNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52)) => Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>,this := @this: org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer,-1,SimpleNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52)) => Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>,this := @this: org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer,-1,SimpleNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>, specialinvoke this.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>(), 180)) => Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>,specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>(),180,SinkNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>, specialinvoke this.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>(), 180) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>, specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>(), 180)))]
+Visited methods: 19
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c/original-without-dependencies/jongo-1.5.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,46100
+Time to perform DFP Inter 0,37800
+Depth limit: 5
+CONFLICTS: DF interference in <org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>
+Data flows from execution of line 52 to 52, defined in $stack17 = new org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer and propagated in specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>()
+Caused by line 52 flow: path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52)
+Caused by line 52 flow: path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>, specialinvoke this.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>(), 180) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>, specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>(), 180)
+[List(Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>,$stack17 = new org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer,52,SourceNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52)) => Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>,this := @this: org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer,-1,SimpleNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52)) => Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>,this := @this: org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer,-1,SimpleNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>, specialinvoke this.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>(), 180)) => Node(<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>,specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>(),180,SinkNode, path: (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers: void <init>()>, specialinvoke $stack17.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>(null), 52) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>(org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$1)>, specialinvoke this.<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>(), 180) => (<org.jongo.marshall.jackson.bson4jackson.BsonDeserializers$Decimal128Deserializer: void <init>()>, specialinvoke this.<com.fasterxml.jackson.databind.JsonDeserializer: void <init>()>(), 180)))]
+Visited methods: 19
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c/original-without-dependencies/jongo-1.5.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,41600
+Time to perform PDG 0,33700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jongo/697fc67ed565bbaf3b67d4ad5e8a19ca8c09e90c/original-without-dependencies/jongo-1.5.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,44300
+Time to perform PDG 0,31200
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

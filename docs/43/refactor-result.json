@@ -1,5 +1,23 @@
 [
   {
+    "branch": "L",
+    "class": "hudson.plugins.logparser.LogParserParser",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Replace Generic With Diamond\tHashMap<String,String> with HashMap<> in method public parseLog(build Run<?,?>) : LogParserResult from class hudson.plugins.logparser.LogParserParser",
+    "description": {
+      "filePath": "src/main/java/hudson/plugins/logparser/LogParserParser.java",
+      "startLine": 104,
+      "endLine": 104,
+      "startColumn": 62,
+      "endColumn": 77,
+      "codeElementType": "CLASS_INSTANCE_CREATION",
+      "description": "creation with diamond operator",
+      "codeElement": "new HashMap<>()"
+    },
+    "line": "101",
+    "branchLine": "104"
+  },
+  {
     "branch": "R",
     "class": "hudson.plugins.logparser.LogParserParser",
     "tool": "RefactoringMiner",
@@ -14,7 +32,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "log : InputStream"
     },
-    "line": "92"
+    "line": "92",
+    "branchLine": "92"
   },
   {
     "branch": "R",
@@ -31,7 +50,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "92"
+    "line": "92",
+    "branchLine": "92"
   },
   {
     "branch": "R",
@@ -48,7 +68,8 @@
       "description": "renamed variable declaration",
       "codeElement": "log : InputStream"
     },
-    "line": "92"
+    "line": "92",
+    "branchLine": "92"
   },
   {
     "branch": "R",
@@ -65,7 +86,8 @@
       "description": "statement referencing the renamed variable",
       "codeElement": null
     },
-    "line": "92"
+    "line": "92",
+    "branchLine": "92"
   },
   {
     "branch": "R",
@@ -82,58 +104,8 @@
       "description": "new variable declaration",
       "codeElement": "log : InputStream"
     },
-    "line": "92"
-  },
-  {
-    "branch": "R",
-    "class": "hudson.plugins.logparser.LogParserParser",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Variable\t[filePath : FilePath, logFileLocation : String, linesInLog : int] to log : InputStream in method public parseLog(build Run<?,?>) : LogParserResult from class hudson.plugins.logparser.LogParserParser",
-    "description": {
-      "filePath": "src/main/java/hudson/plugins/logparser/LogParserParser.java",
-      "startLine": 86,
-      "endLine": 219,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged variables",
-      "codeElement": "public parseLog(build Run<?,?>) : LogParserResult"
-    },
-    "line": "161"
-  },
-  {
-    "branch": "R",
-    "class": "hudson.plugins.logparser.LogParserParser",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Variable\t[filePath : FilePath, logFileLocation : String, linesInLog : int] to log : InputStream in method public parseLog(build Run<?,?>) : LogParserResult from class hudson.plugins.logparser.LogParserParser",
-    "description": {
-      "filePath": "src/main/java/hudson/plugins/logparser/LogParserParser.java",
-      "startLine": 86,
-      "endLine": 219,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged variables",
-      "codeElement": "public parseLog(build Run<?,?>) : LogParserResult"
-    },
-    "line": "93"
-  },
-  {
-    "branch": "R",
-    "class": "hudson.plugins.logparser.LogParserParser",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Merge Variable\t[filePath : FilePath, logFileLocation : String, linesInLog : int] to log : InputStream in method public parseLog(build Run<?,?>) : LogParserResult from class hudson.plugins.logparser.LogParserParser",
-    "description": {
-      "filePath": "src/main/java/hudson/plugins/logparser/LogParserParser.java",
-      "startLine": 86,
-      "endLine": 219,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with merged variables",
-      "codeElement": "public parseLog(build Run<?,?>) : LogParserResult"
-    },
-    "line": "92"
+    "line": "92",
+    "branchLine": "92"
   },
   {
     "branch": "R",
@@ -150,7 +122,8 @@
       "description": "renamed variable declaration",
       "codeElement": "log : InputStream"
     },
-    "line": "92"
+    "line": "92",
+    "branchLine": "92"
   },
   {
     "branch": "R",
@@ -167,6 +140,7 @@
       "description": "changed-type variable declaration",
       "codeElement": "log : InputStream"
     },
-    "line": "93"
+    "line": "93",
+    "branchLine": "93"
   }
 ]

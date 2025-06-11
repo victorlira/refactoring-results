@@ -1,0 +1,88 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "l6 - l6",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "l6 = (java.lang.String) $stack39",
+				"location": {
+					"file": "",
+					"class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+					"method": "assinarDocumento",
+					"line": 87
+				},
+				"stackTrace": [{
+	"class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+	"method": "assinarDocumento",
+	"line": 87
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "l6 = (java.lang.String) $stack39",
+				"location": {
+					"file": "",
+					"class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+					"method": "assinarDocumento",
+					"line": 87
+				},
+				"stackTrace": [{
+	"class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+	"method": "assinarDocumento",
+	"line": 87
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack39 = virtualinvoke $stack38.<java.util.Optional: java.lang.Object orElse(java.lang.Object)>('')",
+"location": {
+  "file": "",
+  "class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+  "method": "<com.fincatto.documentofiscal.utils.DFAssinaturaDigital: void assinarDocumento(java.io.Reader,java.io.Writer,java.lang.String[])>",
+  "line": "87"
+},
+"stackTrace": ["(<com.fincatto.documentofiscal.utils.DFAssinaturaDigital: void assinarDocumento(java.io.Reader,java.io.Writer,java.lang.String[])>, $stack39 = virtualinvoke $stack38.<java.util.Optional: java.lang.Object orElse(java.lang.Object)>(''), 87)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "l6 = (java.lang.String) $stack39",
+"location": {
+  "file": "",
+  "class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+  "method": "<com.fincatto.documentofiscal.utils.DFAssinaturaDigital: void assinarDocumento(java.io.Reader,java.io.Writer,java.lang.String[])>",
+  "line": "87"
+},
+"stackTrace": ["(<com.fincatto.documentofiscal.utils.DFAssinaturaDigital: void assinarDocumento(java.io.Reader,java.io.Writer,java.lang.String[])>, l6 = (java.lang.String) $stack39, 87)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack40.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object)>('CN: {}', l6)",
+"location": {
+  "file": "",
+  "class": "com.fincatto.documentofiscal.utils.DFAssinaturaDigital",
+  "method": "<com.fincatto.documentofiscal.utils.DFAssinaturaDigital: void assinarDocumento(java.io.Reader,java.io.Writer,java.lang.String[])>",
+  "line": "88"
+},
+"stackTrace": ["(<com.fincatto.documentofiscal.utils.DFAssinaturaDigital: void assinarDocumento(java.io.Reader,java.io.Writer,java.lang.String[])>, interfaceinvoke $stack40.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object)>('CN: {}', l6), 88)"]
+}]
+}
+}
+
+]

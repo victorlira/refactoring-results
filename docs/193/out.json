@@ -1,0 +1,134 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "ArrayList.<java.util.ArrayList: java.lang.Object[] elementData> - ArrayList.<java.util.ArrayList: java.lang.Object[] elementData>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "ArrayList.<java.util.ArrayList: java.lang.Object[] elementData> = null",
+				"location": {
+					"file": "",
+					"class": "java.util.ArrayList",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "loci.formats.in.MinimalTiffReader",
+	"method": "initFile",
+	"line": 456
+},{
+	"class": "loci.formats.tiff.IFDList",
+	"method": "<init>",
+	"line": 42
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "ArrayList.<java.util.ArrayList: java.lang.Object[] elementData> = null",
+				"location": {
+					"file": "",
+					"class": "java.util.ArrayList",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "loci.formats.in.MinimalTiffReader",
+	"method": "initFile",
+	"line": 456
+},{
+	"class": "loci.formats.tiff.IFDList",
+	"method": "<init>",
+	"line": 42
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "tmp$1920939741 - tmp$1920939741",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "tmp$1920939741 = new loci.formats.tiff.IFDList",
+				"location": {
+					"file": "",
+					"class": "loci.formats.in.MinimalTiffReader",
+					"method": "initFile",
+					"line": 456
+				},
+				"stackTrace": [{
+	"class": "loci.formats.in.MinimalTiffReader",
+	"method": "initFile",
+	"line": 456
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "tmp$1920939741 = new loci.formats.tiff.IFDList",
+				"location": {
+					"file": "",
+					"class": "loci.formats.in.MinimalTiffReader",
+					"method": "initFile",
+					"line": 456
+				},
+				"stackTrace": [{
+	"class": "loci.formats.in.MinimalTiffReader",
+	"method": "initFile",
+	"line": 456
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "allIFDs - allIFDs",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "allIFDs = tmp$1920939741",
+				"location": {
+					"file": "",
+					"class": "loci.formats.in.MinimalTiffReader",
+					"method": "initFile",
+					"line": 456
+				},
+				"stackTrace": [{
+	"class": "loci.formats.in.MinimalTiffReader",
+	"method": "initFile",
+	"line": 456
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "allIFDs = tmp$1920939741",
+				"location": {
+					"file": "",
+					"class": "loci.formats.in.MinimalTiffReader",
+					"method": "initFile",
+					"line": 456
+				},
+				"stackTrace": [{
+	"class": "loci.formats.in.MinimalTiffReader",
+	"method": "initFile",
+	"line": 456
+}]
+			}
+		]
+	}
+}
+
+]

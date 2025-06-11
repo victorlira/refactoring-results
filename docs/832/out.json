@@ -1,0 +1,755 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "Throwable.<java.lang.Throwable: java.lang.Object backtrace> - Throwable.<java.lang.Throwable: java.lang.Object backtrace>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "Throwable.<java.lang.Throwable: java.lang.Object backtrace> = null",
+				"location": {
+					"file": "",
+					"class": "java.lang.Throwable",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.openpnp.gui.PartsPanel$3",
+	"method": "valueChanged",
+	"line": 202
+},{
+	"class": "org.openpnp.model.Configuration",
+	"method": "get",
+	"line": 82
+},{
+	"class": "java.lang.Error",
+	"method": "<init>",
+	"line": 70
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "Throwable.<java.lang.Throwable: java.lang.Object backtrace> = null",
+				"location": {
+					"file": "",
+					"class": "java.lang.Throwable",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.openpnp.gui.PartsPanel$3",
+	"method": "valueChanged",
+	"line": 214
+},{
+	"class": "org.openpnp.model.Configuration",
+	"method": "get",
+	"line": 82
+},{
+	"class": "java.lang.Error",
+	"method": "<init>",
+	"line": 70
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.model.Configuration",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "214"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack28 = virtualinvoke $stack27.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 214)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack27 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "214"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack27 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 214)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.Error",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "82"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)","(<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>, specialinvoke $stack2.<java.lang.Error: void <init>(java.lang.String)>('Configuration instance not yet initialized.'), 82)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<java.lang.Error: void <init>(java.lang.String)>('Configuration instance not yet initialized.')",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "82"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)","(<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>, specialinvoke $stack2.<java.lang.Error: void <init>(java.lang.String)>('Configuration instance not yet initialized.'), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack27 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "214"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack27 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.model.Configuration",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack0 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "81"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack0 != null goto $stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "81"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.model.Configuration",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack24 = interfaceinvoke $stack23.<org.openpnp.spi.Machine: java.util.List getPartAlignments()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack24 = interfaceinvoke $stack23.<org.openpnp.spi.Machine: java.util.List getPartAlignments()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "fiducialLocator = interfaceinvoke $stack24.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, fiducialLocator = interfaceinvoke $stack24.<java.util.List: java.util.Iterator iterator()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = interfaceinvoke fiducialLocator.<java.util.Iterator: boolean hasNext()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack26 = interfaceinvoke fiducialLocator.<java.util.Iterator: boolean hasNext()>(), 202)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack24 = interfaceinvoke $stack23.<org.openpnp.spi.Machine: java.util.List getPartAlignments()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack24 = interfaceinvoke $stack23.<org.openpnp.spi.Machine: java.util.List getPartAlignments()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "fiducialLocator = interfaceinvoke $stack24.<java.util.List: java.util.Iterator iterator()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, fiducialLocator = interfaceinvoke $stack24.<java.util.List: java.util.Iterator iterator()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack26 = interfaceinvoke fiducialLocator.<java.util.Iterator: boolean hasNext()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack26 = interfaceinvoke fiducialLocator.<java.util.Iterator: boolean hasNext()>(), 202)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack27 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "214"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack27 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 214)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.model.Configuration",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = new java.lang.Error",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "82"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)","(<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>, specialinvoke $stack2.<java.lang.Error: void <init>(java.lang.String)>('Configuration instance not yet initialized.'), 82)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack2.<java.lang.Error: void <init>(java.lang.String)>('Configuration instance not yet initialized.')",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "82"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)","(<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>, specialinvoke $stack2.<java.lang.Error: void <init>(java.lang.String)>('Configuration instance not yet initialized.'), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack0 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "81"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack0 != null goto $stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "81"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = <org.openpnp.model.Configuration: org.openpnp.model.Configuration instance>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>",
+  "line": "84"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>()",
+"location": {
+  "file": "",
+  "class": "org.openpnp.gui.PartsPanel$3",
+  "method": "<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>",
+  "line": "202"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack22 = staticinvoke <org.openpnp.model.Configuration: org.openpnp.model.Configuration get()>(), 202)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.openpnp.model.Configuration",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.openpnp.model.Configuration: org.openpnp.spi.Machine machine>",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": ["(<org.openpnp.gui.PartsPanel$3: void valueChanged(javax.swing.event.ListSelectionEvent)>, $stack23 = virtualinvoke $stack22.<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>(), 202)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.openpnp.model.Configuration",
+  "method": "<org.openpnp.model.Configuration: org.openpnp.spi.Machine getMachine()>",
+  "line": "365"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

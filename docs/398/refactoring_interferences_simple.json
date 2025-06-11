@@ -3,26 +3,13 @@
     {
       "class": "com.moandjiezana.toml.NumberConverter",
       "refactoringInfo": [
-        "Inline Variable\tchars : char[] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == '+' || c == '-') && signable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if(whitespace && c == '#'), if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1)] to if((c == 'E' || c == 'e') && exponentable && s.length() > i + 1) in method public convert(s String, index AtomicInteger, context Context) : Object from class com.moandjiezana.toml.NumberConverter"
-      ],
-      "line": "25",
-      "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
-      "branch": "L"
-    },
-    {
-      "class": "com.moandjiezana.toml.NumberConverter",
-      "refactoringInfo": [
         "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
         "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
         "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
         "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter"
       ],
       "line": "39",
+      "branchLine": "39",
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
       "branch": "R"
     },
@@ -30,12 +17,10 @@
       "class": "com.moandjiezana.toml.NumberConverter",
       "refactoringInfo": [
         "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter"
+        "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter"
       ],
       "line": "45",
+      "branchLine": "45",
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
       "branch": "R"
     },
@@ -43,12 +28,10 @@
       "class": "com.moandjiezana.toml.NumberConverter",
       "refactoringInfo": [
         "Extract Variable\tnotLastChar : boolean in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if((c == 'E' || c == 'e') && exponentable && chars.length > i + 1), if(c == '.' && dottable && chars.length > i + 1)] to if(c == '.' && dottable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
-        "Merge Conditional\t[if(c == '.' && dottable && chars.length > i + 1), if((c == '+' || c == '-') && signable && chars.length > i + 1)] to if((c == '+' || c == '-') && signable && notLastChar) in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter",
         "Split Conditional\tif((c == 'E' || c == 'e') && exponentable && chars.length > i + 1) to [if((c == '+' || c == '-') && signable && notLastChar), if((c == 'E' || c == 'e') && exponentable && notLastChar)] in method public convert(s String) : Object from class com.moandjiezana.toml.NumberConverter"
       ],
       "line": "51",
+      "branchLine": "51",
       "filePath": "src/main/java/com/moandjiezana/toml/NumberConverter.java",
       "branch": "R"
     }

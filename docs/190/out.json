@@ -1,0 +1,468 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.SubResolutionFormatReader: boolean flattenedResolutions>",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>",
+  "line": "1326"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack16 = virtualinvoke this.<loci.formats.in.SVSReader: int getSeriesCount()>(), 413)","(<loci.formats.SubResolutionFormatReader: int getSeriesCount()>, $stack2 = virtualinvoke this.<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>(), 929)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>",
+  "line": "1326"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.MetadataList: java.util.List data>",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)","(<loci.formats.MetadataList: int size()>, $stack1 = this.<loci.formats.MetadataList: java.util.List data>, 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.MetadataList: java.util.List data>",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)","(<loci.formats.MetadataList: int size()>, $stack1 = this.<loci.formats.MetadataList: java.util.List data>, 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.in.SVSReader",
+  "method": "<loci.formats.in.SVSReader: void initMetadataStore()>",
+  "line": "412"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "lastImage = $stack15 - 1",
+"location": {
+  "file": "",
+  "class": "loci.formats.in.SVSReader",
+  "method": "<loci.formats.in.SVSReader: void initMetadataStore()>",
+  "line": "412"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, lastImage = $stack15 - 1, 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if lastImage != 1 goto interfaceinvoke store.<loci.formats.meta.MetadataStore: void setImageName(java.lang.String,int)>('label image', i)",
+"location": {
+  "file": "",
+  "class": "loci.formats.in.SVSReader",
+  "method": "<loci.formats.in.SVSReader: void initMetadataStore()>",
+  "line": "429"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = this.<loci.formats.SubResolutionFormatReader: loci.formats.CoreMetadataList core>",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: void setSeries(int)>",
+  "line": "945"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, virtualinvoke this.<loci.formats.in.SVSReader: void setSeries(int)>(i), 414)","(<loci.formats.SubResolutionFormatReader: void setSeries(int)>, $stack4 = this.<loci.formats.SubResolutionFormatReader: loci.formats.CoreMetadataList core>, 945)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: loci.formats.CoreMetadataList",
+"location": {
+  "file": "",
+  "class": "loci.formats.CoreMetadataList",
+  "method": "<loci.formats.CoreMetadataList: int[] flattenedIndexes(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, virtualinvoke this.<loci.formats.in.SVSReader: void setSeries(int)>(i), 414)","(<loci.formats.SubResolutionFormatReader: void setSeries(int)>, pos = virtualinvoke $stack4.<loci.formats.CoreMetadataList: int[] flattenedIndexes(int)>(no), 945)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: loci.formats.MetadataList",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "-1"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.MetadataList: java.util.List data>",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)","(<loci.formats.MetadataList: int size()>, $stack1 = this.<loci.formats.MetadataList: java.util.List data>, 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.SubResolutionFormatReader: boolean flattenedResolutions>",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>",
+  "line": "1326"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack16 = virtualinvoke this.<loci.formats.in.SVSReader: int getSeriesCount()>(), 413)","(<loci.formats.SubResolutionFormatReader: int getSeriesCount()>, $stack2 = virtualinvoke this.<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>(), 929)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke this.<loci.formats.in.SVSReader: boolean hasFlattenedResolutions()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.in.SVSReader",
+  "method": "<loci.formats.in.SVSReader: void initMetadataStore()>",
+  "line": "419"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack17 = virtualinvoke this.<loci.formats.in.SVSReader: boolean hasFlattenedResolutions()>(), 419)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.MetadataList: java.util.List data>",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)","(<loci.formats.MetadataList: int size()>, $stack1 = this.<loci.formats.MetadataList: java.util.List data>, 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.in.SVSReader",
+  "method": "<loci.formats.in.SVSReader: void initMetadataStore()>",
+  "line": "412"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.SubResolutionFormatReader: boolean flattenedResolutions>",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>",
+  "line": "1326"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack16 = virtualinvoke this.<loci.formats.in.SVSReader: int getSeriesCount()>(), 413)","(<loci.formats.SubResolutionFormatReader: int getSeriesCount()>, $stack2 = virtualinvoke this.<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>(), 929)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>",
+  "line": "1326"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke this.<loci.formats.CoreMetadataList: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.CoreMetadataList",
+  "method": "<loci.formats.CoreMetadataList: int[] flattenedIndexes(int)>",
+  "line": "195"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, virtualinvoke this.<loci.formats.in.SVSReader: void setSeries(int)>(i), 414)","(<loci.formats.SubResolutionFormatReader: void setSeries(int)>, pos = virtualinvoke $stack4.<loci.formats.CoreMetadataList: int[] flattenedIndexes(int)>(no), 945)","(<loci.formats.CoreMetadataList: int[] flattenedIndexes(int)>, $stack7 = virtualinvoke this.<loci.formats.CoreMetadataList: int size()>(), 195)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.SubResolutionFormatReader: boolean flattenedResolutions>",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>",
+  "line": "1326"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack16 = virtualinvoke this.<loci.formats.in.SVSReader: int getSeriesCount()>(), 413)","(<loci.formats.SubResolutionFormatReader: int getSeriesCount()>, $stack2 = virtualinvoke this.<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>(), 929)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke this.<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.SubResolutionFormatReader",
+  "method": "<loci.formats.SubResolutionFormatReader: void setSeries(int)>",
+  "line": "944"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, virtualinvoke this.<loci.formats.in.SVSReader: void setSeries(int)>(i), 414)","(<loci.formats.SubResolutionFormatReader: void setSeries(int)>, $stack3 = virtualinvoke this.<loci.formats.SubResolutionFormatReader: boolean hasFlattenedResolutions()>(), 944)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack14 = this.<loci.formats.in.SVSReader: loci.formats.CoreMetadataList core>",
+"location": {
+  "file": "",
+  "class": "loci.formats.in.SVSReader",
+  "method": "<loci.formats.in.SVSReader: void initMetadataStore()>",
+  "line": "412"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack14 = this.<loci.formats.in.SVSReader: loci.formats.CoreMetadataList core>, 412)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: loci.formats.MetadataList",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "-1"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<loci.formats.MetadataList: java.util.List data>",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)","(<loci.formats.MetadataList: int size()>, $stack1 = this.<loci.formats.MetadataList: java.util.List data>, 196)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": ["(<loci.formats.in.SVSReader: void initMetadataStore()>, $stack15 = virtualinvoke $stack14.<loci.formats.CoreMetadataList: int size()>(), 412)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack2",
+"location": {
+  "file": "",
+  "class": "loci.formats.MetadataList",
+  "method": "<loci.formats.MetadataList: int size()>",
+  "line": "196"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

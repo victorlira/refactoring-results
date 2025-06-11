@@ -1,0 +1,158 @@
+Running soot scenario oripa;oripa.resource.StringResource_en;strings;c7a747856cefa97fa45aa389c08f0eabb471efff
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/oripa/c7a747856cefa97fa45aa389c08f0eabb471efff/original-without-dependencies/oripa-1.40.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439)
+	at soot.asm.AsmClassSource.resolve(AsmClassSource.java:65)
+	at soot.SootResolver.bringToHierarchyUnchecked(SootResolver.java:240)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:214)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:279)
+	at soot.SootResolver.bringToBodies(SootResolver.java:319)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:164)
+	at soot.SootResolver.resolveClass(SootResolver.java:134)
+	at soot.Scene.loadClass(Scene.java:942)
+	at soot.Scene.loadClassAndSupport(Scene.java:927)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1753)
+	at br.unb.cic.soot.svfa.SootConfiguration.configureSoot(SootConfiguration.scala:63)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:129)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/oripa/c7a747856cefa97fa45aa389c08f0eabb471efff/original-without-dependencies/oripa-1.40.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439)
+	at soot.asm.AsmClassSource.resolve(AsmClassSource.java:65)
+	at soot.SootResolver.bringToHierarchyUnchecked(SootResolver.java:240)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:214)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:279)
+	at soot.SootResolver.bringToBodies(SootResolver.java:319)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:164)
+	at soot.SootResolver.resolveClass(SootResolver.java:134)
+	at soot.Scene.loadClass(Scene.java:942)
+	at soot.Scene.loadClassAndSupport(Scene.java:927)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1753)
+	at br.unb.cic.analysis.SootWrapper.configureSootOptionsToRunInterproceduralOverrideAssignmentAnalysis(SootWrapper.java:75)
+	at br.unb.cic.analysis.Main.runOverrideAssignmentAnalysis(Main.java:360)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:252)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/oripa/c7a747856cefa97fa45aa389c08f0eabb471efff/original-without-dependencies/oripa-1.40.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439)
+	at soot.asm.AsmClassSource.resolve(AsmClassSource.java:65)
+	at soot.SootResolver.bringToHierarchyUnchecked(SootResolver.java:240)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:214)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:279)
+	at soot.SootResolver.bringToBodies(SootResolver.java:319)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:164)
+	at soot.SootResolver.resolveClass(SootResolver.java:134)
+	at soot.Scene.loadClass(Scene.java:942)
+	at soot.Scene.loadClassAndSupport(Scene.java:927)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1753)
+	at br.unb.cic.soot.svfa.SootConfiguration.configureSoot(SootConfiguration.scala:63)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:450)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/oripa/c7a747856cefa97fa45aa389c08f0eabb471efff/original-without-dependencies/oripa-1.40.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439)
+	at soot.asm.AsmClassSource.resolve(AsmClassSource.java:65)
+	at soot.SootResolver.bringToHierarchyUnchecked(SootResolver.java:240)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:214)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:279)
+	at soot.SootResolver.bringToBodies(SootResolver.java:319)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:164)
+	at soot.SootResolver.resolveClass(SootResolver.java:134)
+	at soot.Scene.loadClass(Scene.java:942)
+	at soot.Scene.loadClassAndSupport(Scene.java:927)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1753)
+	at br.unb.cic.soot.svfa.SootConfiguration.configureSoot(SootConfiguration.scala:63)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:450)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/oripa/c7a747856cefa97fa45aa389c08f0eabb471efff/original-without-dependencies/oripa-1.40.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439)
+	at soot.asm.AsmClassSource.resolve(AsmClassSource.java:65)
+	at soot.SootResolver.bringToHierarchyUnchecked(SootResolver.java:240)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:214)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:279)
+	at soot.SootResolver.bringToBodies(SootResolver.java:319)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:164)
+	at soot.SootResolver.resolveClass(SootResolver.java:134)
+	at soot.Scene.loadClass(Scene.java:942)
+	at soot.Scene.loadClassAndSupport(Scene.java:927)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1753)
+	at br.unb.cic.soot.svfa.SootConfiguration.configureSoot(SootConfiguration.scala:63)
+	at br.unb.cic.analysis.Main.runPDGAnalysis(Main.java:417)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:264)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/oripa/c7a747856cefa97fa45aa389c08f0eabb471efff/original-without-dependencies/oripa-1.40.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439)
+	at soot.asm.AsmClassSource.resolve(AsmClassSource.java:65)
+	at soot.SootResolver.bringToHierarchyUnchecked(SootResolver.java:240)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:214)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:279)
+	at soot.SootResolver.bringToBodies(SootResolver.java:319)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:164)
+	at soot.SootResolver.resolveClass(SootResolver.java:134)
+	at soot.Scene.loadClass(Scene.java:942)
+	at soot.Scene.loadClassAndSupport(Scene.java:927)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1753)
+	at br.unb.cic.soot.svfa.SootConfiguration.configureSoot(SootConfiguration.scala:63)
+	at br.unb.cic.analysis.Main.runPDGAnalysis(Main.java:417)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:264)
+	at br.unb.cic.analysis.Main.main(Main.java:80)

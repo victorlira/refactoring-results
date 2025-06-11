@@ -1,0 +1,277 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String clientId>",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.subscriptions.Subscription",
+  "method": "<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>",
+  "line": "50"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, valid = virtualinvoke clientSession.<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>(newSubscription), 740)","(<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>, $stack9 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 99)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>()",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, $stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17)",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession := @parameter0: io.moquette.spi.ClientSession",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "clientID = targetSession.<io.moquette.spi.ClientSession: java.lang.String clientID>",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "328"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)","(<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>, clientID = targetSession.<io.moquette.spi.ClientSession: java.lang.String clientID>, 328)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String clientId>",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.subscriptions.Subscription",
+  "method": "<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>",
+  "line": "50"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, valid = virtualinvoke clientSession.<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>(newSubscription), 740)","(<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>, $stack9 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 99)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>()",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, $stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17)",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession := @parameter0: io.moquette.spi.ClientSession",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "clientID = targetSession.<io.moquette.spi.ClientSession: java.lang.String clientID>",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "328"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)","(<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>, clientID = targetSession.<io.moquette.spi.ClientSession: java.lang.String clientID>, 328)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.concurrent.ConcurrentMap: boolean containsKey(java.lang.Object)>(clientID)",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "329"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)","(<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>, $stack4 = interfaceinvoke $stack3.<java.util.concurrent.ConcurrentMap: boolean containsKey(java.lang.Object)>(clientID), 329)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String clientId>",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.subscriptions.Subscription",
+  "method": "<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>",
+  "line": "50"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, valid = virtualinvoke clientSession.<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>(newSubscription), 740)","(<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>, $stack9 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 99)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>()",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, $stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17)",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession := @parameter0: io.moquette.spi.ClientSession",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke targetSession.<io.moquette.spi.ClientSession: void activate()>()",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "330"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)","(<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>, virtualinvoke targetSession.<io.moquette.spi.ClientSession: void activate()>(), 330)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String clientId>",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.subscriptions.Subscription",
+  "method": "<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>",
+  "line": "50"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, valid = virtualinvoke clientSession.<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>(newSubscription), 740)","(<io.moquette.spi.ClientSession: boolean subscribe(io.moquette.spi.impl.subscriptions.Subscription)>, $stack9 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 99)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>()",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, $stack17 = virtualinvoke newSubscription.<io.moquette.spi.impl.subscriptions.Subscription: java.lang.String getClientId()>(), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17)",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>",
+  "line": "782"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>(req#13, username), 760)","(<io.moquette.spi.impl.ProtocolProcessor: void publishStoredMessagesInSession(io.moquette.spi.impl.subscriptions.Subscription,java.lang.String)>, targetSession = interfaceinvoke $stack16.<io.moquette.spi.ISessionsStore: io.moquette.spi.ClientSession sessionForClient(java.lang.String)>($stack17), 782)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "targetSession := @parameter0: io.moquette.spi.ClientSession",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.impl.ProtocolProcessor",
+  "method": "<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: io.moquette.spi.ClientSession",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.ClientSession",
+  "method": "<io.moquette.spi.ClientSession: void activate()>",
+  "line": "-1"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)","(<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>, virtualinvoke targetSession.<io.moquette.spi.ClientSession: void activate()>(), 330)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<io.moquette.spi.ClientSession: boolean active> = 1",
+"location": {
+  "file": "",
+  "class": "io.moquette.spi.ClientSession",
+  "method": "<io.moquette.spi.ClientSession: void activate()>",
+  "line": "158"
+},
+"stackTrace": ["(<io.moquette.spi.impl.ProtocolProcessor: void processSubscribe(io.netty.channel.Channel,io.moquette.parser.proto.messages.SubscribeMessage)>, specialinvoke this.<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>(clientSession), 723)","(<io.moquette.spi.impl.ProtocolProcessor: void verifyToActivate(io.moquette.spi.ClientSession)>, virtualinvoke targetSession.<io.moquette.spi.ClientSession: void activate()>(), 330)","(<io.moquette.spi.ClientSession: void activate()>, this.<io.moquette.spi.ClientSession: boolean active> = 1, 158)"]
+}]
+}
+}
+
+]

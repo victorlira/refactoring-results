@@ -1,0 +1,110 @@
+Running soot scenario swagger-parser;io.swagger.v3.parser.util.RefUtils;computeRefFormat(String);23dc3430c2fb8874afd0a88ffbaac16b1283dbeb
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/23dc3430c2fb8874afd0a88ffbaac16b1283dbeb/original-without-dependencies/swagger-parser-v3-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,60700
+Time to perform Confluence 1 Inter 0,36100
+Configure Soot Confluence 2 Inter 0,19400
+Time to perform Confluence 2 Inter 0,23800
+Visited methods: 14
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/23dc3430c2fb8874afd0a88ffbaac16b1283dbeb/original-without-dependencies/swagger-parser-v3-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,77900
+Runtime: 0.008s
+Time to perform OA Inter 0,82600
+OA Inter Visited methods: 2
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/23dc3430c2fb8874afd0a88ffbaac16b1283dbeb/original-without-dependencies/swagger-parser-v3-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,42600
+Time to perform DFP Inter 0,45800
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 7
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/23dc3430c2fb8874afd0a88ffbaac16b1283dbeb/original-without-dependencies/swagger-parser-v3-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47200
+Time to perform DFP Inter 0,48000
+Depth limit: 5
+CONFLICTS: DF interference in <io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(refString),71,SourceNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52) => (<io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(refString), 71)) => Node(<io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),71,SourceNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref),52,SourceNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("."),57,SinkNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.'), 57)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack6 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat RELATIVE>,57,SinkNode, path: )), List(Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref),52,SourceNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("."),57,SinkNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.'), 57)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack6 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat RELATIVE>,57,SinkNode, path: ))]
+Visited methods: 7
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/23dc3430c2fb8874afd0a88ffbaac16b1283dbeb/original-without-dependencies/swagger-parser-v3-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,60700
+Time to perform PDG 0,39900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/23dc3430c2fb8874afd0a88ffbaac16b1283dbeb/original-without-dependencies/swagger-parser-v3-2.0.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,44600
+Time to perform PDG 0,42500
+CONFLICTS: [List(Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack3 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("http"),53,SourceNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack3 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('http'), 53)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack3 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat URL>,53,SourceNode, path: ) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack4 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("https"),61,SimpleNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack4 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('https'), 61)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack4 == 0 goto $stack5 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("#/"),61,SimpleNode, path: ) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack5 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("#/"),55,SimpleNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack5 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('#/'), 55)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack5 == 0 goto $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("."),55,SimpleNode, path: ) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("."),57,SinkNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.'), 57)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack6 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat RELATIVE>,57,SinkNode, path: )), List(Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref),52,SourceNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, ref#3 = staticinvoke <io.swagger.v3.parser.util.RefUtils: java.lang.String mungedRef(java.lang.String)>(ref), 52)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack4 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("https"),61,SimpleNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack4 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('https'), 61)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack4 == 0 goto $stack5 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("#/"),61,SimpleNode, path: ) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack5 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("#/"),55,SimpleNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack5 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('#/'), 55)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack5 == 0 goto $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("."),55,SimpleNode, path: ) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,$stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>("."),57,SinkNode, path: (<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>, $stack6 = virtualinvoke ref#3.<java.lang.String: boolean startsWith(java.lang.String)>('.'), 57)) => Node(<io.swagger.v3.parser.util.RefUtils: io.swagger.v3.parser.models.RefFormat computeRefFormat(java.lang.String)>,if $stack6 != 0 goto result = <io.swagger.v3.parser.models.RefFormat: io.swagger.v3.parser.models.RefFormat RELATIVE>,57,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

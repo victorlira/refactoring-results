@@ -14,7 +14,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "result : String"
     },
-    "line": "129"
+    "line": "129",
+    "branchLine": "129"
   },
   {
     "branch": "L",
@@ -31,24 +32,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "142"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Change Variable Type\tresult : Object to result : String in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 141,
-      "endLine": 143,
-      "startColumn": 21,
-      "endColumn": 22,
-      "codeElementType": "IF_STATEMENT",
-      "description": "statement referencing the variable with changed type",
-      "codeElement": null
-    },
-    "line": "142"
+    "line": "142",
+    "branchLine": "142"
   },
   {
     "branch": "L",
@@ -65,7 +50,8 @@
       "description": "extracted variable declaration",
       "codeElement": "element : Object"
     },
-    "line": "138"
+    "line": "138",
+    "branchLine": "138"
   },
   {
     "branch": "L",
@@ -80,178 +66,9 @@
       "endColumn": 56,
       "codeElementType": "EXPRESSION_STATEMENT",
       "description": "statement with the name of the extracted variable",
-      "codeElement": "result=route.render(element);\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
+      "codeElement": "result=route.render(element);\n"
     },
-    "line": "139"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "91"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "203"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "156"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "129"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "81"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "124"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "142"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "117"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "139"
-  },
-  {
-    "branch": "L",
-    "class": "spark.webserver.MatcherFilter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\telement : Object in method public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void from class spark.webserver.MatcherFilter",
-    "description": {
-      "filePath": "src/main/java/spark/webserver/MatcherFilter.java",
-      "startLine": 73,
-      "endLine": 209,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public doFilter(servletRequest ServletRequest, servletResponse ServletResponse, chain FilterChain) : void"
-    },
-    "line": "138"
+    "line": "139",
+    "branchLine": "139"
   }
 ]

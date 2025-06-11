@@ -1,0 +1,340 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>,$stack15 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>,377,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>(receiveBuffer), 91) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>, result = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>(), 112) => (<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>, $stack15 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>, 377)) => Node(<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>,$stack19 = interfaceinvoke $stack15.<com.firefly.net.Session: int getSessionId()>(),377,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>(receiveBuffer), 91) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>, result = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>(), 112) => (<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>, $stack19 = interfaceinvoke $stack15.<com.firefly.net.Session: int getSessionId()>(), 377)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) SINK=>BASE: Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>,401,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>, 401)) => Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack70 = interfaceinvoke $stack66.<com.firefly.net.Session: int getSessionId()>(),401,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack70 = interfaceinvoke $stack66.<com.firefly.net.Session: int getSessionId()>(), 401)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0),832,SinkNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>",
+				"location": {
+					"file": "",
+					"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+					"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+					"line": 401
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 401
+},{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 401
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack15 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>",
+				"location": {
+					"file": "",
+					"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+					"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>",
+					"line": 377
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>",
+	"line": 377
+},{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>",
+	"line": 377
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 832
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 832
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer splitBuffer(int)>,splitBuf = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer newBuffer(int)>(netSize),357,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>(receiveBuffer), 91) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>, result = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>(), 112) => (<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>, buf = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer splitBuffer(int)>(packetBufferSize), 374)) => Node(<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>,buf = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer splitBuffer(int)>(packetBufferSize),374,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>(receiveBuffer), 91) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>, result = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>(), 112) => (<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>, buf = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer splitBuffer(int)>(packetBufferSize), 374)) => Node(<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>,$stack22 = virtualinvoke buf.<java.nio.ByteBuffer: int remaining()>(),377,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>(receiveBuffer), 91) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void doHandshakeReceive(java.nio.ByteBuffer)>, result = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>(), 112) => (<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>, $stack22 = virtualinvoke buf.<java.nio.ByteBuffer: int remaining()>(), 377)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831)) SINK=>BASE: Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>,401,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>, 401)) => Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack70 = interfaceinvoke $stack66.<com.firefly.net.Session: int getSessionId()>(),401,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack70 = interfaceinvoke $stack66.<com.firefly.net.Session: int getSessionId()>(), 401)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,$stack4 = l0 + 128,831,SinkNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, $stack4 = l0 + 128, 831))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>",
+				"location": {
+					"file": "",
+					"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+					"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+					"line": 401
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 401
+},{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 401
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "splitBuf = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer newBuffer(int)>(netSize)",
+				"location": {
+					"file": "",
+					"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+					"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer splitBuffer(int)>",
+					"line": 357
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer splitBuffer(int)>",
+	"line": 357
+},{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>",
+	"line": 374
+},{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: javax.net.ssl.SSLEngineResult unwrap()>",
+	"line": 377
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": 831
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = l0 + 128",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+					"line": 831
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack62 = virtualinvoke $stack60.<java.nio.ByteBuffer: int remaining()>(),417,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack62 = virtualinvoke $stack60.<java.nio.ByteBuffer: int remaining()>(), 417)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850)) SINK=>BASE: Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>,401,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>, 401)) => Node(<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>,$stack70 = interfaceinvoke $stack66.<com.firefly.net.Session: int getSessionId()>(),401,SourceNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack70 = interfaceinvoke $stack66.<com.firefly.net.Session: int getSessionId()>(), 401)) => Node(<java.lang.Integer: java.lang.Integer valueOf(int)>,l0 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171)) => Node(<java.lang.Integer: void <init>(int)>,l1 := @parameter0: int,-1,SimpleNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832)) => Node(<java.lang.Integer: void <init>(int)>,l0.<java.lang.Integer: int value> = l1,850,SinkNode, path: (<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>, $stack4 = virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>(receiveBuffer), 394) => (<com.firefly.net.tcp.secure.AbstractSecureSession: boolean doHandshake(java.nio.ByteBuffer)>, virtualinvoke this.<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>(), 86) => (<com.firefly.net.tcp.secure.AbstractSecureSession: void handshakeFinish()>, $stack5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack4), 171) => (<java.lang.Integer: java.lang.Integer valueOf(int)>, specialinvoke $stack1.<java.lang.Integer: void <init>(int)>(l0), 832) => (<java.lang.Integer: void <init>(int)>, l0.<java.lang.Integer: int value> = l1, 850))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack66 = this.<com.firefly.net.tcp.secure.AbstractSecureSession: com.firefly.net.Session session>",
+				"location": {
+					"file": "",
+					"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+					"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+					"line": 401
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 401
+},{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 401
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack62 = virtualinvoke $stack60.<java.nio.ByteBuffer: int remaining()>()",
+				"location": {
+					"file": "",
+					"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+					"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+					"line": 417
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "<com.firefly.net.tcp.secure.AbstractSecureSession: java.nio.ByteBuffer read(java.nio.ByteBuffer)>",
+	"line": 417
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: java.lang.Integer valueOf(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": -1
+},{
+	"class": "java.lang.Integer",
+	"method": "<java.lang.Integer: void <init>(int)>",
+	"line": 850
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l0.<java.lang.Integer: int value> = l1",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<java.lang.Integer: void <init>(int)>",
+					"line": 850
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "<java.lang.Boolean: java.lang.Boolean TRUE> - <java.lang.Boolean: java.lang.Boolean TRUE>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "<java.lang.Boolean: java.lang.Boolean TRUE> = $stack0",
+				"location": {
+					"file": "",
+					"class": "java.lang.Boolean",
+					"method": "<clinit>",
+					"line": 50
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "read",
+	"line": 402
+},{
+	"class": "java.lang.Boolean",
+	"method": "<clinit>",
+	"line": 50
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "<java.lang.Boolean: java.lang.Boolean TRUE> = $stack0",
+				"location": {
+					"file": "",
+					"class": "java.lang.Boolean",
+					"method": "<clinit>",
+					"line": 50
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "read",
+	"line": 402
+},{
+	"class": "java.lang.Boolean",
+	"method": "<clinit>",
+	"line": 50
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "<java.lang.Integer: int[] sizeTable> - <java.lang.Integer: int[] sizeTable>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "<java.lang.Integer: int[] sizeTable> = $stack4",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<clinit>",
+					"line": 467
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "read",
+	"line": 401
+},{
+	"class": "java.lang.Integer",
+	"method": "<clinit>",
+	"line": 467
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "<java.lang.Integer: int[] sizeTable> = $stack4",
+				"location": {
+					"file": "",
+					"class": "java.lang.Integer",
+					"method": "<clinit>",
+					"line": 467
+				},
+				"stackTrace": [{
+	"class": "com.firefly.net.tcp.secure.AbstractSecureSession",
+	"method": "read",
+	"line": 401
+},{
+	"class": "java.lang.Integer",
+	"method": "<clinit>",
+	"line": 467
+}]
+			}
+		]
+	}
+}
+
+]

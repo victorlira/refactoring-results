@@ -1,0 +1,63 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(),312,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 312)) SINK=>BASE: Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(),312,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 312))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>()",
+				"location": {
+					"file": "",
+					"class": "net.helpscout.api.ApiClient",
+					"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+					"line": 306
+				},
+				"stackTrace": [{
+	"class": "net.helpscout.api.ApiClient",
+	"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+	"line": 306
+},{
+	"class": "net.helpscout.api.ApiClient",
+	"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+	"line": 312
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>()",
+				"location": {
+					"file": "",
+					"class": "net.helpscout.api.ApiClient",
+					"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+					"line": 306
+				},
+				"stackTrace": [{
+	"class": "net.helpscout.api.ApiClient",
+	"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+	"line": 306
+},{
+	"class": "net.helpscout.api.ApiClient",
+	"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+	"line": 312
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()",
+				"location": {
+					"file": "",
+					"class": "net.helpscout.api.ApiClient",
+					"method": "<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>",
+					"line": 312
+				}
+			}
+		]
+	}
+}
+
+]

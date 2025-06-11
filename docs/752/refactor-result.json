@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Method\tprivate unquoteAndUnescape(str String) : String extracted from private lexExpression() : void in class com.mitchellbosecke.pebble.lexer.LexerImpl",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/lexer/LexerImpl.java",
+      "startLine": 487,
+      "endLine": 487,
+      "startColumn": 21,
+      "endColumn": 46,
+      "codeElementType": "METHOD_INVOCATION",
+      "description": "extracted method invocation",
+      "codeElement": "unquoteAndUnescape(token)"
+    },
+    "line": "498",
+    "branchLine": "487"
+  },
+  {
+    "branch": "L",
+    "class": "com.mitchellbosecke.pebble.lexer.LexerImpl",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Replace Generic With Diamond\tPair<String,Integer> with Pair<> in method private lexExpression() : void from class com.mitchellbosecke.pebble.lexer.LexerImpl",
+    "description": {
+      "filePath": "src/main/java/com/mitchellbosecke/pebble/lexer/LexerImpl.java",
+      "startLine": 455,
+      "endLine": 455,
+      "startColumn": 31,
+      "endColumn": 76,
+      "codeElementType": "CLASS_INSTANCE_CREATION",
+      "description": "creation with diamond operator",
+      "codeElement": "new Pair<>(arg0, arg1)"
+    },
+    "line": "466",
+    "branchLine": "455"
+  }
+]

@@ -1,0 +1,96 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = new spark.Service$1",
+"location": {
+  "file": "",
+  "class": "spark.Service",
+  "method": "<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>",
+  "line": "547"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, specialinvoke $stack4.<spark.Service$1: void <init>(spark.Service,java.lang.Class,spark.ExceptionHandler)>(this, exceptionClass, handler), 547)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "wrapper = $stack4",
+"location": {
+  "file": "",
+  "class": "spark.Service",
+  "method": "<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>",
+  "line": "547"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, wrapper = $stack4, 547)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "handler := @parameter1: spark.ExceptionHandlerImpl",
+"location": {
+  "file": "",
+  "class": "spark.ExceptionMapper",
+  "method": "<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, virtualinvoke $stack5.<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>(exceptionClass, wrapper), 554)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(exceptionClass, handler)",
+"location": {
+  "file": "",
+  "class": "spark.ExceptionMapper",
+  "method": "<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>",
+  "line": "60"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, virtualinvoke $stack5.<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>(exceptionClass, wrapper), 554)","(<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>, interfaceinvoke $stack3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(exceptionClass, handler), 60)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = new spark.Service$1",
+"location": {
+  "file": "",
+  "class": "spark.Service",
+  "method": "<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>",
+  "line": "547"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, specialinvoke $stack4.<spark.Service$1: void <init>(spark.Service,java.lang.Class,spark.ExceptionHandler)>(this, exceptionClass, handler), 547)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "wrapper = $stack4",
+"location": {
+  "file": "",
+  "class": "spark.Service",
+  "method": "<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>",
+  "line": "547"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, wrapper = $stack4, 547)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke $stack5.<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>(exceptionClass, wrapper)",
+"location": {
+  "file": "",
+  "class": "spark.Service",
+  "method": "<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>",
+  "line": "554"
+},
+"stackTrace": ["(<spark.Service: void exception(java.lang.Class,spark.ExceptionHandler)>, virtualinvoke $stack5.<spark.ExceptionMapper: void map(java.lang.Class,spark.ExceptionHandlerImpl)>(exceptionClass, wrapper), 554)"]
+}]
+}
+}
+
+]

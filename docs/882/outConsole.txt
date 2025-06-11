@@ -1,0 +1,112 @@
+Running soot scenario github-api;org.kohsuke.github.GitHubBuilder;fromCredentials();225383464a5d2823a28d5eca9d364d9fdc803e73
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/github-api/225383464a5d2823a28d5eca9d364d9fdc803e73/original-without-dependencies/github-api-1.96-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,60700
+Time to perform Confluence 1 Inter 0,79500
+Configure Soot Confluence 2 Inter 0,28700
+Time to perform Confluence 2 Inter 0,38500
+Visited methods: 56
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,57,SourceNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 57)) => Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,66,SinkNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 66)) => Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,if $stack9 != null goto return builder,66,SinkNode, path: )
+SINK=>BASE: Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,57,SourceNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 57)) => Node(<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>,$stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>,66,SinkNode, path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 66))]
+Confluence interference in <org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>
+Confluence flows from execution of lines 57 and 57 to line 66, defined in $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken> and $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken> and used in $stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>
+Caused by line 57 flow: path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 57)
+Caused by line 57 flow: path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack4 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 57)
+Caused by line 66 flow: path: (<org.kohsuke.github.GitHubBuilder: org.kohsuke.github.GitHubBuilder fromCredentials()>, $stack9 = builder.<org.kohsuke.github.GitHubBuilder: java.lang.String oauthToken>, 66)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/github-api/225383464a5d2823a28d5eca9d364d9fdc803e73/original-without-dependencies/github-api-1.96-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,64700
+Runtime: 0.016s
+Time to perform OA Inter 0,72300
+OA Inter Visited methods: 17
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/github-api/225383464a5d2823a28d5eca9d364d9fdc803e73/original-without-dependencies/github-api-1.96-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,67400
+Time to perform DFP Inter 0,59400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 28
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/github-api/225383464a5d2823a28d5eca9d364d9fdc803e73/original-without-dependencies/github-api-1.96-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,64500
+Time to perform DFP Inter 0,61200
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 28
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/github-api/225383464a5d2823a28d5eca9d364d9fdc803e73/original-without-dependencies/github-api-1.96-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,46700
+Time to perform PDG 0,39800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/github-api/225383464a5d2823a28d5eca9d364d9fdc803e73/original-without-dependencies/github-api-1.96-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,48800
+Time to perform PDG 0,36700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

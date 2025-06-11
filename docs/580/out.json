@@ -1,0 +1,522 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "HashMap.<java.util.HashMap: int size> - HashMap.<java.util.HashMap: int size>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "HashMap.<java.util.HashMap: int size> = null",
+				"location": {
+					"file": "",
+					"class": "java.util.HashMap",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.movsim.simulator.Simulator",
+	"method": "initialize",
+	"line": 115
+},{
+	"class": "org.slf4j.impl.Log4jLoggerAdapter",
+	"method": "error",
+	"line": 517
+},{
+	"class": "org.slf4j.helpers.MessageFormatter",
+	"method": "format",
+	"line": 124
+},{
+	"class": "org.slf4j.helpers.MessageFormatter",
+	"method": "arrayFormat",
+	"line": 224
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "HashMap.<java.util.HashMap: int size> = null",
+				"location": {
+					"file": "",
+					"class": "java.util.HashMap",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.movsim.simulator.Simulator",
+	"method": "initialize",
+	"line": 134
+},{
+	"class": "org.movsim.simulator.vehicles.VehicleGenerator",
+	"method": "<init>",
+	"line": 123
+},{
+	"class": "org.movsim.input.InputData",
+	"method": "createVehicleInputDataMap",
+	"line": 74
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.ProjectMetaData: java.lang.String xodrPath>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.ProjectMetaData",
+  "method": "<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>",
+  "line": "121"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "104"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>(), 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName), 115)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.ProjectMetaData: java.lang.String xodrFileName>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.ProjectMetaData",
+  "method": "<org.movsim.input.ProjectMetaData: java.lang.String getXodrFilename()>",
+  "line": "114"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrFileName = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrFilename()>(), 103)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "xodrFileName = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrFilename()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "103"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrFileName = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrFilename()>(), 103)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>(), 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName), 115)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "projectMetaData = virtualinvoke $stack20.<org.movsim.input.InputData: org.movsim.input.ProjectMetaData getProjectMetaData()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "100"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, projectMetaData = virtualinvoke $stack20.<org.movsim.input.InputData: org.movsim.input.ProjectMetaData getProjectMetaData()>(), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.input.ProjectMetaData",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.ProjectMetaData",
+  "method": "<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.ProjectMetaData: java.lang.String xodrPath>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.ProjectMetaData",
+  "method": "<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>",
+  "line": "121"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "104"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>(), 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName), 115)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "104"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>(), 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName), 115)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.InputData: org.movsim.input.ProjectMetaData projectMetaData>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.InputData",
+  "method": "<org.movsim.input.InputData: org.movsim.input.ProjectMetaData getProjectMetaData()>",
+  "line": "91"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, projectMetaData = virtualinvoke $stack20.<org.movsim.input.InputData: org.movsim.input.ProjectMetaData getProjectMetaData()>(), 100)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "projectMetaData = virtualinvoke $stack20.<org.movsim.input.InputData: org.movsim.input.ProjectMetaData getProjectMetaData()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "100"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, projectMetaData = virtualinvoke $stack20.<org.movsim.input.InputData: org.movsim.input.ProjectMetaData getProjectMetaData()>(), 100)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.movsim.input.ProjectMetaData",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.ProjectMetaData",
+  "method": "<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.movsim.input.ProjectMetaData: java.lang.String xodrPath>",
+"location": {
+  "file": "",
+  "class": "org.movsim.input.ProjectMetaData",
+  "method": "<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>",
+  "line": "121"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "104"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrPath = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrPath()>(), 104)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack27 = virtualinvoke $stack26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrPath), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>(), 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName), 115)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "xodrFileName = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrFilename()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "103"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xodrFileName = virtualinvoke projectMetaData.<org.movsim.input.ProjectMetaData: java.lang.String getXodrFilename()>(), 103)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, $stack28 = virtualinvoke $stack27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(xodrFileName), 111)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "111"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, xmlFileName = virtualinvoke $stack28.<java.lang.StringBuilder: java.lang.String toString()>(), 111)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName)",
+"location": {
+  "file": "",
+  "class": "org.movsim.simulator.Simulator",
+  "method": "<org.movsim.simulator.Simulator: void initialize()>",
+  "line": "115"
+},
+"stackTrace": ["(<org.movsim.simulator.Simulator: void initialize()>, interfaceinvoke $stack71.<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)>('failed to load ', xmlFileName), 115)"]
+}]
+}
+}
+
+]

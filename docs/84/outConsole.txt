@@ -1,0 +1,276 @@
+Running soot scenario hdt-java;org.rdfhdt.hdt.hdt.impl.HDTImpl;loadOrCreateIndex(ProgressListener);cd88626a4e665e548f0981fdd26994e4819de68c
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdt-java/cd88626a4e665e548f0981fdd26994e4819de68c/original-without-dependencies/hdt-java-core-2.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,62000
+Time to perform Confluence 1 Inter 0,89300
+Configure Soot Confluence 2 Inter 0,23900
+Time to perform Confluence 2 Inter 0,51100
+Visited methods: 46
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,tmp$973777648 = new java.io.FileOutputStream,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName), 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$973777648,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$973777648, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,virtualinvoke out.<java.io.FileOutputStream: void close()>(),511,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, virtualinvoke out.<java.io.FileOutputStream: void close()>(), 511))
+SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$44870879,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$44870879, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,virtualinvoke out.<java.io.FileOutputStream: void close()>(),511,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, virtualinvoke out.<java.io.FileOutputStream: void close()>(), 511)), SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1191372709,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener),490,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener), 490))
+SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1866267052,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener),490,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener), 490)), SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,tmp$973777648 = new java.io.FileOutputStream,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName), 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$973777648,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$973777648, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener),510,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener), 510))
+SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$44870879,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$44870879, 508)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener),510,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener), 510)), SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1191372709,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$1941639991, ci, listener),488,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$1941639991, ci, listener), 488))
+SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1866267052,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$148612874, ci, listener),488,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$148612874, ci, listener), 488)), SOURCE=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1191372709,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in),486,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in), 486))
+SINK=>BASE: Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$1866267052,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)) => Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in),486,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in), 486))]
+Confluence interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Confluence flows from execution of lines 508 and 508 to line 511, defined in specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName) and out = tmp$44870879 and used in virtualinvoke out.<java.io.FileOutputStream: void close()>()
+Caused by line 508 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName), 508)
+Caused by line 508 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$44870879, 508)
+Caused by line 511 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, virtualinvoke out.<java.io.FileOutputStream: void close()>(), 511)
+Confluence interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Confluence flows from execution of lines 485 and 485 to line 490, defined in in = tmp$1191372709 and in = tmp$1866267052 and used in interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)
+Caused by line 490 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack37.<org.rdfhdt.hdt.triples.TriplesPrivate: void loadIndex(java.io.InputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, ci, listener), 490)
+Confluence interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Confluence flows from execution of lines 508 and 508 to line 510, defined in specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName) and out = tmp$44870879 and used in interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener)
+Caused by line 508 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$973777648.<java.io.FileOutputStream: void <init>(java.lang.String)>(versionName), 508)
+Caused by line 508 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$44870879, 508)
+Caused by line 510 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack69.<org.rdfhdt.hdt.triples.TriplesPrivate: void saveIndex(java.io.OutputStream,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(out, ci, listener), 510)
+Confluence interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Confluence flows from execution of lines 485 and 485 to line 488, defined in in = tmp$1191372709 and in = tmp$1866267052 and used in interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$148612874, ci, listener)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)
+Caused by line 488 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke $stack39.<org.rdfhdt.hdt.triples.TriplesPrivate: void mapIndex(org.rdfhdt.hdt.util.io.CountInputStream,java.io.File,org.rdfhdt.hdt.options.ControlInfo,org.rdfhdt.hdt.listener.ProgressListener)>(in, tmp$148612874, ci, listener), 488)
+Confluence interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Confluence flows from execution of lines 485 and 485 to line 486, defined in in = tmp$1191372709 and in = tmp$1866267052 and used in interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1191372709, 485)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$1866267052, 485)
+Caused by line 486 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, interfaceinvoke ci.<org.rdfhdt.hdt.options.ControlInfo: void load(java.io.InputStream)>(in), 486)
+ Analysis results
+----------------------------
+ Number of conflicts: 5
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdt-java/cd88626a4e665e548f0981fdd26994e4819de68c/original-without-dependencies/hdt-java-core-2.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,59700
+Runtime: 0.035s
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable tmp$39959931, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable tmp$530131514, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable tmp$90628418, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable in, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable CountInputStream.<org.rdfhdt.hdt.util.io.CountInputStream: long total>, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 506 overrides 506, assigning to variable out, 
+Caused by line 506 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:506)
+And line 506 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:506)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 508 overrides 508, assigning to variable tmp$2024314762, 
+Caused by line 508 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:508)
+And line 508 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:508)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 508 overrides 508, assigning to variable out, 
+Caused by line 508 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:508)
+And line 508 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:508)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable <java.io.BufferedInputStream: int DEFAULT_BUFFER_SIZE>, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 508 overrides 508, assigning to variable FileOutputStream.<java.io.FileOutputStream: java.nio.channels.FileChannel channel>, 
+Caused by line 508 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:508)
+And line 508 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:508)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 517 overrides 517, assigning to variable l11, 
+Caused by line 517 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:517)
+And line 517 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:517)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 521 overrides 521, assigning to variable l12, 
+Caused by line 521 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:521)
+And line 521 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:521)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 521 overrides 521, assigning to variable l1, 
+Caused by line 521 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:521)
+at org.rdfhdt.hdt.util.io.IOUtil.closeQuietly(IOUtil.java:375)
+And line 521 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:521)
+at org.rdfhdt.hdt.util.io.IOUtil.closeQuietly(IOUtil.java:375)
+ 
+OA interference in class HDTImpl, method void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener), execution of line 485 overrides 485, assigning to variable FileInputStream.<java.io.FileInputStream: java.nio.channels.FileChannel channel>, 
+Caused by line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+And line 485 flow:
+at org.rdfhdt.hdt.hdt.impl.HDTImpl.loadOrCreateIndex(HDTImpl.java:485)
+ 
+Time to perform OA Inter 0,79400
+OA Inter Visited methods: 79
+ Analysis results
+----------------------------
+ Number of conflicts: 29
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdt-java/cd88626a4e665e548f0981fdd26994e4819de68c/original-without-dependencies/hdt-java-core-2.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,47700
+Time to perform DFP Inter 0,83200
+Depth limit: 5
+CONFLICTS: DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 508 to 521, defined in out = tmp$1941639991 and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 508 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 485 to 521, defined in in = tmp$48063459 and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 517 to 521, defined in out = null and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 517 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 485 to 485, defined in tmp$48063459 = new org.rdfhdt.hdt.util.io.CountInputStream and propagated in specialinvoke this.<java.io.InputStream: void <init>()>()
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485) => (<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>, specialinvoke this.<java.io.InputStream: void <init>()>(), 48)
+[List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$48063459,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: )), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = null,506,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$1941639991,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: )), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$48063459,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$1941639991,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,tmp$48063459 = new org.rdfhdt.hdt.util.io.CountInputStream,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)) => Node(<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>,this := @this: org.rdfhdt.hdt.util.io.CountInputStream,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)) => Node(<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>,specialinvoke this.<java.io.InputStream: void <init>()>(),48,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485) => (<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>, specialinvoke this.<java.io.InputStream: void <init>()>(), 48))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = null,506,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: ))]
+Visited methods: 23
+ Analysis results
+----------------------------
+ Number of conflicts: 7
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdt-java/cd88626a4e665e548f0981fdd26994e4819de68c/original-without-dependencies/hdt-java-core-2.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,63700
+Time to perform DFP Inter 0,71300
+Depth limit: 5
+CONFLICTS: DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 508 to 521, defined in out = tmp$1941639991 and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 508 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 521 to 521, defined in in = null and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 485 to 521, defined in in = tmp$48063459 and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Empty list for reporting data flow! Error: head of empty list
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 517 to 521, defined in out = null and propagated in interfaceinvoke output.<java.io.Closeable: void close()>()
+Caused by line 517 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)
+Caused by line 521 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374)
+DF interference in <org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>
+Data flows from execution of line 485 to 485, defined in tmp$48063459 = new org.rdfhdt.hdt.util.io.CountInputStream and propagated in specialinvoke this.<java.io.InputStream: void <init>()>()
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)
+Caused by line 485 flow: path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485) => (<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>, specialinvoke this.<java.io.InputStream: void <init>()>(), 48)
+[List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$48063459,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: )), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = null,506,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = null,483,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$1941639991,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: )), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = tmp$48063459,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, in = tmp$48063459, 485)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = tmp$1941639991,508,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, out = tmp$1941639991, 508)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,interfaceinvoke output.<java.io.Closeable: void close()>(),374,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521) => (<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>, interfaceinvoke output.<java.io.Closeable: void close()>(), 374))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,tmp$48063459 = new org.rdfhdt.hdt.util.io.CountInputStream,485,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)) => Node(<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>,this := @this: org.rdfhdt.hdt.util.io.CountInputStream,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485)) => Node(<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>,specialinvoke this.<java.io.InputStream: void <init>()>(),48,SinkNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, specialinvoke tmp$48063459.<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>(tmp$1256384385), 485) => (<org.rdfhdt.hdt.util.io.CountInputStream: void <init>(java.io.InputStream)>, specialinvoke this.<java.io.InputStream: void <init>()>(), 48))), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,out = null,506,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(out), 517)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: )), List(Node(<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>,in = null,483,SourceNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,output := @parameter0: java.io.Closeable,-1,SimpleNode, path: (<org.rdfhdt.hdt.hdt.impl.HDTImpl: void loadOrCreateIndex(org.rdfhdt.hdt.listener.ProgressListener)>, staticinvoke <org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>(in), 521)) => Node(<org.rdfhdt.hdt.util.io.IOUtil: void closeQuietly(java.io.Closeable)>,if output != null goto interfaceinvoke output.<java.io.Closeable: void close()>(),370,SinkNode, path: ))]
+Visited methods: 23
+ Analysis results
+----------------------------
+ Number of conflicts: 9
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdt-java/cd88626a4e665e548f0981fdd26994e4819de68c/original-without-dependencies/hdt-java-core-2.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,49600
+Time to perform PDG 0,58500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/hdt-java/cd88626a4e665e548f0981fdd26994e4819de68c/original-without-dependencies/hdt-java-core-2.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,45200
+Time to perform PDG 0,54900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

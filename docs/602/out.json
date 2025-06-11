@@ -1,0 +1,107 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,aesDec = $stack10,175,SourceNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, aesDec = $stack10, 175)) => Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec),176,SinkNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec), 176)) SINK=>BASE: Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,aesDec = $stack10,175,SourceNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, aesDec = $stack10, 175)) => Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec),176,SinkNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec), 176))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "aesDec = $stack10",
+				"location": {
+					"file": "",
+					"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+					"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+					"line": 175
+				},
+				"stackTrace": [{
+	"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+	"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+	"line": 175
+},{
+	"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+	"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+	"line": 176
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "aesDec = $stack10",
+				"location": {
+					"file": "",
+					"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+					"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+					"line": 175
+				},
+				"stackTrace": [{
+	"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+	"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+	"line": 175
+},{
+	"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+	"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+	"line": 176
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec)",
+				"location": {
+					"file": "",
+					"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+					"method": "<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>",
+					"line": 176
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "aesDec - aesDec",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "aesDec = $stack10",
+				"location": {
+					"file": "",
+					"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+					"method": "aesDecrypt",
+					"line": 175
+				},
+				"stackTrace": [{
+	"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+	"method": "aesDecrypt",
+	"line": 175
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "aesDec = $stack10",
+				"location": {
+					"file": "",
+					"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+					"method": "aesDecrypt",
+					"line": 175
+				},
+				"stackTrace": [{
+	"class": "net.java.otr4j.crypto.OtrCryptoEngineImpl",
+	"method": "aesDecrypt",
+	"line": 175
+}]
+			}
+		]
+	}
+}
+
+]

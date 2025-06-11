@@ -1,0 +1,106 @@
+Running soot scenario samskivert;com.samskivert.jdbc.BaseLiaison;lastInsertedId(Connection, Statement, String, String);d870dd2fac79ec07a7e9143cda4efe41fd3e66d4
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/samskivert/d870dd2fac79ec07a7e9143cda4efe41fd3e66d4/original-without-dependencies/samskivert-1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,77300
+Time to perform Confluence 1 Inter 0,46100
+Configure Soot Confluence 2 Inter 0,35900
+Time to perform Confluence 2 Inter 0,04600
+Visited methods: 6
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/samskivert/d870dd2fac79ec07a7e9143cda4efe41fd3e66d4/original-without-dependencies/samskivert-1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,14800
+Runtime: 0.027s
+Time to perform OA Inter 1,26200
+OA Inter Visited methods: 7
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/samskivert/d870dd2fac79ec07a7e9143cda4efe41fd3e66d4/original-without-dependencies/samskivert-1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,90900
+Time to perform DFP Inter 0,42400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 3
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/samskivert/d870dd2fac79ec07a7e9143cda4efe41fd3e66d4/original-without-dependencies/samskivert-1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,07600
+Time to perform DFP Inter 0,41400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 3
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/samskivert/d870dd2fac79ec07a7e9143cda4efe41fd3e66d4/original-without-dependencies/samskivert-1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,71200
+Time to perform PDG 0,51500
+CONFLICTS: [List(Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,if $stack10 == 0 goto return null,52,SourceNode, path: ) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,return null,56,SinkNode, path: )), List(Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,rs = interfaceinvoke istmt.<java.sql.Statement: java.sql.ResultSet getGeneratedKeys()>(),51,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, rs = interfaceinvoke istmt.<java.sql.Statement: java.sql.ResultSet getGeneratedKeys()>(), 51)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack10 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>(),52,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack10 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>(), 52)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,if $stack10 == 0 goto return null,52,SourceNode, path: ) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,return null,56,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/samskivert/d870dd2fac79ec07a7e9143cda4efe41fd3e66d4/original-without-dependencies/samskivert-1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,95300
+Time to perform PDG 0,48900
+CONFLICTS: [List(Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack6 = interfaceinvoke conn.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>(),56,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack6 = interfaceinvoke conn.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>(), 56)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack7 = interfaceinvoke $stack6.<java.sql.DatabaseMetaData: boolean supportsGetGeneratedKeys()>(),56,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack7 = interfaceinvoke $stack6.<java.sql.DatabaseMetaData: boolean supportsGetGeneratedKeys()>(), 56)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,if $stack7 == 0 goto return null,56,SourceNode, path: ) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,rs = interfaceinvoke istmt.<java.sql.Statement: java.sql.ResultSet getGeneratedKeys()>(),51,SinkNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, rs = interfaceinvoke istmt.<java.sql.Statement: java.sql.ResultSet getGeneratedKeys()>(), 51))), List(Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack6 = interfaceinvoke conn.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>(),56,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack6 = interfaceinvoke conn.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>(), 56)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack7 = interfaceinvoke $stack6.<java.sql.DatabaseMetaData: boolean supportsGetGeneratedKeys()>(),56,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack7 = interfaceinvoke $stack6.<java.sql.DatabaseMetaData: boolean supportsGetGeneratedKeys()>(), 56)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,if $stack7 == 0 goto return null,56,SourceNode, path: ) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,rs = interfaceinvoke istmt.<java.sql.Statement: java.sql.ResultSet getGeneratedKeys()>(),51,SinkNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, rs = interfaceinvoke istmt.<java.sql.Statement: java.sql.ResultSet getGeneratedKeys()>(), 51)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack10 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>(),52,SinkNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack10 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>(), 52))), List(Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack6 = interfaceinvoke conn.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>(),56,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack6 = interfaceinvoke conn.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>(), 56)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack7 = interfaceinvoke $stack6.<java.sql.DatabaseMetaData: boolean supportsGetGeneratedKeys()>(),56,SourceNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack7 = interfaceinvoke $stack6.<java.sql.DatabaseMetaData: boolean supportsGetGeneratedKeys()>(), 56)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,if $stack7 == 0 goto return null,56,SourceNode, path: ) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,if $stack10 == 0 goto return null,52,SinkNode, path: ) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack11 = interfaceinvoke rs.<java.sql.ResultSet: int getInt(java.lang.String)>(column),53,SinkNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack11 = interfaceinvoke rs.<java.sql.ResultSet: int getInt(java.lang.String)>(column), 53)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,$stack12 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack11),53,SinkNode, path: (<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>, $stack12 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack11), 53)) => Node(<com.samskivert.jdbc.BaseLiaison: java.lang.Integer lastInsertedId(java.sql.Connection,java.sql.Statement,java.lang.String,java.lang.String)>,return $stack12,53,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

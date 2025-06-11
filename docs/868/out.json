@@ -1,0 +1,750 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "callback - callback",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "callback = lengthof e",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+					"method": "search",
+					"line": 460
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+	"method": "search",
+	"line": 460
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "callback = lengthof e",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+					"method": "search",
+					"line": 460
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+	"method": "search",
+	"line": 460
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "body - body",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "body = 0",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+					"method": "search",
+					"line": 460
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+	"method": "search",
+	"line": 460
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "body = 0",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+					"method": "search",
+					"line": 460
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+	"method": "search",
+	"line": 460
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "body - body",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "body = body + 1",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+					"method": "search",
+					"line": 460
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+	"method": "search",
+	"line": 460
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "body = body + 1",
+				"location": {
+					"file": "",
+					"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+					"method": "search",
+					"line": 460
+				},
+				"stackTrace": [{
+	"class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+	"method": "search",
+	"line": 460
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "parser = $stack3",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, parser = $stack3, 130)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String[] split(java.lang.String)>(',')",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>",
+  "line": "618"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack3",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>",
+  "line": "618"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String[] split(java.lang.String)>(',')",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>",
+  "line": "618"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "460"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "queryString = e[body]",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "603"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, queryString = e[body], 603)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "query := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "460"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "queryString = e[body]",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "603"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, queryString = e[body], 603)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "query := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new com.github.rnewson.couchdb.lucene.CustomQueryParser",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new com.github.rnewson.couchdb.lucene.CustomQueryParser",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.rnewson.couchdb.lucene.CustomQueryParser",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.CustomQueryParser",
+  "method": "<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<org.apache.lucene.queryParser.QueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>(matchVersion, f, a)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.CustomQueryParser",
+  "method": "<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)","(<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>, specialinvoke this.<org.apache.lucene.queryParser.QueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>(matchVersion, f, a), 39)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "parser = $stack3",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, parser = $stack3, 130)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String[] split(java.lang.String)>(',')",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>",
+  "line": "618"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack3",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>",
+  "line": "618"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String[] split(java.lang.String)>(',')",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>",
+  "line": "618"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "460"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "queryString = e[body]",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "603"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, queryString = e[body], 603)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "query := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "460"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, e = specialinvoke this.<com.github.rnewson.couchdb.lucene.DatabaseIndexer: java.lang.String[] getQueryStrings(javax.servlet.http.HttpServletRequest)>(req), 460)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "queryString = e[body]",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>",
+  "line": "603"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, queryString = e[body], 603)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "query := @parameter0: java.lang.String",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new com.github.rnewson.couchdb.lucene.CustomQueryParser",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = new com.github.rnewson.couchdb.lucene.CustomQueryParser",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "130"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.rnewson.couchdb.lucene.CustomQueryParser",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.CustomQueryParser",
+  "method": "<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<org.apache.lucene.queryParser.QueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>(matchVersion, f, a)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.CustomQueryParser",
+  "method": "<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>",
+  "line": "39"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)","(<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>, specialinvoke $stack3.<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>($stack5, 'default', $stack4), 130)","(<com.github.rnewson.couchdb.lucene.CustomQueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>, specialinvoke this.<org.apache.lucene.queryParser.QueryParser: void <init>(org.apache.lucene.util.Version,java.lang.String,org.apache.lucene.analysis.Analyzer)>(matchVersion, f, a), 39)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = virtualinvoke parser.<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)>(query)",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": ["(<com.github.rnewson.couchdb.lucene.DatabaseIndexer: void search(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>, q = virtualinvoke state.<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>(queryString), 461)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack6",
+"location": {
+  "file": "",
+  "class": "com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState",
+  "method": "<com.github.rnewson.couchdb.lucene.DatabaseIndexer$IndexState: org.apache.lucene.search.Query parse(java.lang.String)>",
+  "line": "132"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

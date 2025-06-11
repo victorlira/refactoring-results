@@ -1,0 +1,135 @@
+Running soot scenario xdi2;xdi2.core.io.writers.XDIJSONPARSEWriter;makeGom(XDIArc);eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/xdi2/eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038/original-without-dependencies/xdi2-core-0.7-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,49000
+Time to perform Confluence 1 Inter 0,76400
+Configure Soot Confluence 2 Inter 0,21400
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.nodeToString(ConfluenceConflict.java:126)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.lambda$pathToString$0(ConfluenceConflict.java:118)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.pathToString(ConfluenceConflict.java:120)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.toString(ConfluenceConflict.java:41)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.hashCode(ConfluenceConflict.java:135)
+	at java.util.HashMap.hash(HashMap.java:339)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.intersectPathsByLastNode(DFPConfluenceAnalysis.java:232)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:157)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/xdi2/eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038/original-without-dependencies/xdi2-core-0.7-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,73500
+Runtime: 0.027s
+Time to perform OA Inter 0,81800
+OA Inter Visited methods: 51
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/xdi2/eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038/original-without-dependencies/xdi2-core-0.7-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,69500
+Time to perform DFP Inter 0,59300
+Depth limit: 5
+CONFLICTS: DF interference in <xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>
+Data flows from execution of line 163 to 189, defined in gom = tmp$991806841 and propagated in virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$379056819)
+Caused by line 163 flow: path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$991806841, 163)
+Caused by line 189 flow: path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$379056819), 189)
+[List(Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = tmp$991806841,163,SourceNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$991806841, 163)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,tmp$379056819 = (com.google.gson.JsonElement) gom,-1,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, tmp$379056819 = (com.google.gson.JsonElement) gom, -1)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$379056819),189,SinkNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$379056819), 189)))]
+Visited methods: 28
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/xdi2/eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038/original-without-dependencies/xdi2-core-0.7-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,46300
+Time to perform DFP Inter 0,66400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 28
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/xdi2/eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038/original-without-dependencies/xdi2-core-0.7-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,47200
+Time to perform PDG 0,54800
+CONFLICTS: [List(Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,$stack4 = virtualinvoke XDIarc.<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>(),161,SourceNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, $stack4 = virtualinvoke XDIarc.<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>(), 161)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,if $stack4 == 0 goto $stack5 = virtualinvoke XDIarc.<xdi2.core.syntax.XDIArc: boolean hasCs()>(),161,SourceNode, path: ) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = tmp$998157332,163,SourceNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$998157332, 163)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,if gom == null goto tmp$823405912 = new com.google.gson.JsonPrimitive,168,SimpleNode, path: ) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = tmp$823405912,175,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$823405912, 175)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = gom2,183,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = gom2, 183)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,tmp$878493504 = (com.google.gson.JsonElement) gom,-1,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, tmp$878493504 = (com.google.gson.JsonElement) gom, -1)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$878493504),189,SinkNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$878493504), 189))), List(Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = tmp$998157332,163,SourceNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$998157332, 163)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,if gom == null goto tmp$823405912 = new com.google.gson.JsonPrimitive,168,SimpleNode, path: ) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = tmp$823405912,175,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$823405912, 175)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,gom = gom2,183,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = gom2, 183)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,tmp$878493504 = (com.google.gson.JsonElement) gom,-1,SimpleNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, tmp$878493504 = (com.google.gson.JsonElement) gom, -1)) => Node(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>,virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$878493504),189,SinkNode, path: (<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$878493504), 189)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/xdi2/eb0bebb706227aea2ddd7fbdb01fd0d5d7c77038/original-without-dependencies/xdi2-core-0.7-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,64000
+Time to perform PDG 0,54800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

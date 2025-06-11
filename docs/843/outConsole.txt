@@ -1,0 +1,195 @@
+Running soot scenario jdeb;org.vafer.jdeb.maven.DebMojo;execute();f5a3be7ac1c646b94e9c197d12061cb33d2fa32e
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jdeb/f5a3be7ac1c646b94e9c197d12061cb33d2fa32e/original-without-dependencies/original-jdeb-1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,60200
+Time to perform Confluence 1 Inter 13,65500
+Configure Soot Confluence 2 Inter 0,16800
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.nodeToString(ConfluenceConflict.java:126)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.lambda$pathToString$0(ConfluenceConflict.java:118)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.pathToString(ConfluenceConflict.java:120)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.toString(ConfluenceConflict.java:40)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.hashCode(ConfluenceConflict.java:135)
+	at java.util.HashMap.hash(HashMap.java:339)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.intersectPathsByLastNode(DFPConfluenceAnalysis.java:232)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:157)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jdeb/f5a3be7ac1c646b94e9c197d12061cb33d2fa32e/original-without-dependencies/original-jdeb-1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,61000
+Runtime: 0.14s
+OA interference in class DebMojo, method void execute(), execution of line 461 overrides 472, assigning to variable DebMaker.<org.vafer.jdeb.DebMaker: java.lang.String key>, 
+Caused by line 461 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:461)
+And line 472 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:472)
+at org.vafer.jdeb.DebMaker.setKey(DebMaker.java:171)
+ 
+OA interference in class DebMojo, method void execute(), execution of line 461 overrides 471, assigning to variable DebMaker.<org.vafer.jdeb.DebMaker: java.io.File keyring>, 
+Caused by line 461 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:461)
+And line 471 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:471)
+at org.vafer.jdeb.DebMaker.setKeyring(DebMaker.java:167)
+ 
+OA interference in class DebMojo, method void execute(), execution of line 461 overrides 474, assigning to variable DebMaker.<org.vafer.jdeb.DebMaker: boolean signPackage>, 
+Caused by line 461 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:461)
+And line 474 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:474)
+at org.vafer.jdeb.DebMaker.setSignPackage(DebMaker.java:163)
+ 
+OA interference in class DebMojo, method void execute(), execution of line 461 overrides 473, assigning to variable DebMaker.<org.vafer.jdeb.DebMaker: java.lang.String passphrase>, 
+Caused by line 461 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:461)
+And line 473 flow:
+at org.vafer.jdeb.maven.DebMojo.execute(DebMojo.java:473)
+at org.vafer.jdeb.DebMaker.setPassphrase(DebMaker.java:175)
+ 
+Time to perform OA Inter 1,08300
+OA Inter Visited methods: 387
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jdeb/f5a3be7ac1c646b94e9c197d12061cb33d2fa32e/original-without-dependencies/original-jdeb-1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,43100
+Time to perform DFP Inter 9,68000
+Depth limit: 5
+CONFLICTS: DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 471, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in this.<org.vafer.jdeb.DebMaker: java.io.File keyring> = keyring
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 471 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile), 471) => (<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>, this.<org.vafer.jdeb.DebMaker: java.io.File keyring> = keyring, 167)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 473, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in this.<org.vafer.jdeb.DebMaker: java.lang.String passphrase> = passphrase
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 473 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75), 473) => (<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>, this.<org.vafer.jdeb.DebMaker: java.lang.String passphrase> = passphrase, 175)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 473, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75)
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 473 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75), 473)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 474, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76)
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 474 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76), 474)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 472, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74)
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 472 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74), 472)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 471, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile)
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 471 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile), 471)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 472, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in this.<org.vafer.jdeb.DebMaker: java.lang.String key> = key
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 472 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74), 472) => (<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>, this.<org.vafer.jdeb.DebMaker: java.lang.String key> = key, 171)
+DF interference in <org.vafer.jdeb.maven.DebMojo: void execute()>
+Data flows from execution of line 461 to 474, defined in tmp$380556447 = new org.vafer.jdeb.DebMaker and propagated in this.<org.vafer.jdeb.DebMaker: boolean signPackage> = signPackage
+Caused by line 461 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)
+Caused by line 474 flow: path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76), 474) => (<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>, this.<org.vafer.jdeb.DebMaker: boolean signPackage> = signPackage, 163)
+[List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile),471,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile), 471))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>,this := @this: org.vafer.jdeb.DebMaker,-1,SimpleNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76), 474)) => Node(<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>,this.<org.vafer.jdeb.DebMaker: boolean signPackage> = signPackage,163,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76), 474) => (<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>, this.<org.vafer.jdeb.DebMaker: boolean signPackage> = signPackage, 163))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76),474,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76), 474))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>,this := @this: org.vafer.jdeb.DebMaker,-1,SimpleNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75), 473)) => Node(<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>,this.<org.vafer.jdeb.DebMaker: java.lang.String passphrase> = passphrase,175,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75), 473) => (<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>, this.<org.vafer.jdeb.DebMaker: java.lang.String passphrase> = passphrase, 175))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>,this := @this: org.vafer.jdeb.DebMaker,-1,SimpleNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile), 471)) => Node(<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>,this.<org.vafer.jdeb.DebMaker: java.io.File keyring> = keyring,167,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile), 471) => (<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>, this.<org.vafer.jdeb.DebMaker: java.io.File keyring> = keyring, 167))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>,this := @this: org.vafer.jdeb.DebMaker,-1,SimpleNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74), 472)) => Node(<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>,this.<org.vafer.jdeb.DebMaker: java.lang.String key> = key,171,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74), 472) => (<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>, this.<org.vafer.jdeb.DebMaker: java.lang.String key> = key, 171))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74),472,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74), 472))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$380556447 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$380556447.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$380556447,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$380556447, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75),473,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75), 473)))]
+Visited methods: 137
+ Analysis results
+----------------------------
+ Number of conflicts: 8
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jdeb/f5a3be7ac1c646b94e9c197d12061cb33d2fa32e/original-without-dependencies/original-jdeb-1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41600
+Time to perform DFP Inter 9,39000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 137
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jdeb/f5a3be7ac1c646b94e9c197d12061cb33d2fa32e/original-without-dependencies/original-jdeb-1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,45500
+Time to perform PDG 1,34100
+CONFLICTS: [List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$1595180029 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$1595180029.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$1595180029,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$1595180029, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile),471,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKeyring(java.io.File)>(keyringFile), 471))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$1595180029 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$1595180029.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$1595180029,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$1595180029, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76),474,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setSignPackage(boolean)>($stack76), 474))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$1595180029 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$1595180029.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$1595180029,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$1595180029, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75),473,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setPassphrase(java.lang.String)>($stack75), 473))), List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,tmp$1595180029 = new org.vafer.jdeb.DebMaker,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, specialinvoke tmp$1595180029.<org.vafer.jdeb.DebMaker: void <init>(org.vafer.jdeb.Console,java.util.Collection,java.util.Collection)>($stack66, $stack65, $stack64), 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,packaging#26 = tmp$1595180029,461,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, packaging#26 = tmp$1595180029, 461)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74),472,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, virtualinvoke packaging#26.<org.vafer.jdeb.DebMaker: void setKey(java.lang.String)>($stack74), 472)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jdeb/f5a3be7ac1c646b94e9c197d12061cb33d2fa32e/original-without-dependencies/original-jdeb-1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,61000
+Time to perform PDG 1,34400
+CONFLICTS: [List(Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,$stack17 = this.<org.vafer.jdeb.maven.DebMojo: boolean skip>,374,SourceNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, $stack17 = this.<org.vafer.jdeb.maven.DebMojo: boolean skip>, 374)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,if $stack17 == 0 goto $stack18 = specialinvoke this.<org.vafer.jdeb.maven.DebMojo: boolean isSubmodule()>(),374,SourceNode, path: ) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,$stack18 = specialinvoke this.<org.vafer.jdeb.maven.DebMojo: boolean isSubmodule()>(),379,SimpleNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, $stack18 = specialinvoke this.<org.vafer.jdeb.maven.DebMojo: boolean isSubmodule()>(), 379)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,if $stack18 == 0 goto $stack19 = this.<org.vafer.jdeb.maven.DebMojo: org.vafer.jdeb.maven.Data[] dataSet>,379,SimpleNode, path: ) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,if $stack157 != 0 goto $stack19 = this.<org.vafer.jdeb.maven.DebMojo: org.vafer.jdeb.maven.Data[] dataSet>,401,SimpleNode, path: ) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,if $stack62 == 0 goto tmp$1595180029 = new org.vafer.jdeb.DebMaker,401,SimpleNode, path: ) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,if $stack88 != 0 goto tmp$380556447 = new java.util.HashSet,403,SimpleNode, path: ) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,$stack153 = virtualinvoke $stack152.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(packaging),406,SimpleNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, $stack153 = virtualinvoke $stack152.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(packaging), 406)) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,if $stack153 == 0 goto tmp$789885174 = new org.apache.maven.plugin.MojoExecutionException,406,SimpleNode, path: ) => Node(<org.vafer.jdeb.maven.DebMojo: void execute()>,$stack64 = this.<org.vafer.jdeb.maven.DebMojo: java.util.Collection conffileProducers>,461,SinkNode, path: (<org.vafer.jdeb.maven.DebMojo: void execute()>, $stack64 = this.<org.vafer.jdeb.maven.DebMojo: java.util.Collection conffileProducers>, 461)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

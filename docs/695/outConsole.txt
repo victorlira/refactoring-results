@@ -1,0 +1,122 @@
+Running soot scenario heroku.jar;com.heroku.api.command.HerokuAppCreateCommand;execute(HerokuConnection);13e378a702b57af42d2e08eb1bd2250ffe217b5b
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/heroku.jar/13e378a702b57af42d2e08eb1bd2250ffe217b5b/original-without-dependencies/heroku-api-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,39400
+Time to perform Confluence 1 Inter 0,55600
+Configure Soot Confluence 2 Inter 0,21200
+Time to perform Confluence 2 Inter 0,12200
+Visited methods: 18
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/heroku.jar/13e378a702b57af42d2e08eb1bd2250ffe217b5b/original-without-dependencies/heroku-api-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,53600
+Runtime: 0.015s
+Time to perform OA Inter 0,63600
+OA Inter Visited methods: 10
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/heroku.jar/13e378a702b57af42d2e08eb1bd2250ffe217b5b/original-without-dependencies/heroku-api-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,53700
+Time to perform DFP Inter 0,54900
+Depth limit: 5
+CONFLICTS: DF interference in <com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>
+Data flows from execution of line 47 to 47, defined in $stack40 = 0 and propagated in success = $stack40
+Caused by line 47 flow: path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)
+Caused by line 47 flow: path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)
+[List(Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,$stack40 = 0,49,SourceNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)) => Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,success = $stack40,47,SinkNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)))]
+Visited methods: 9
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/heroku.jar/13e378a702b57af42d2e08eb1bd2250ffe217b5b/original-without-dependencies/heroku-api-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,39100
+Time to perform DFP Inter 0,52900
+Depth limit: 5
+CONFLICTS: DF interference in <com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>
+Data flows from execution of line 47 to 49, defined in success = $stack40 and propagated in specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success)
+Caused by line 47 flow: path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)
+Caused by line 49 flow: path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49)
+DF interference in <com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>
+Data flows from execution of line 47 to 49, defined in success = $stack40 and propagated in this.<com.heroku.api.command.HerokuCommandJsonMapResponse: boolean success> = success
+Caused by line 47 flow: path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)
+Caused by line 49 flow: path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49) => (<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>, this.<com.heroku.api.command.HerokuCommandJsonMapResponse: boolean success> = success, 23)
+[List(Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,success = $stack40,47,SourceNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)) => Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success),49,SinkNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49))), List(Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,success = $stack40,47,SourceNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)) => Node(<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>,success := @parameter1: boolean,-1,SimpleNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49)) => Node(<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>,this.<com.heroku.api.command.HerokuCommandJsonMapResponse: boolean success> = success,23,SinkNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, specialinvoke $stack37.<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>($stack39, success), 49) => (<com.heroku.api.command.HerokuCommandJsonMapResponse: void <init>(byte[],boolean)>, this.<com.heroku.api.command.HerokuCommandJsonMapResponse: boolean success> = success, 23)))]
+Visited methods: 9
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/heroku.jar/13e378a702b57af42d2e08eb1bd2250ffe217b5b/original-without-dependencies/heroku-api-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,51200
+Time to perform PDG 0,51100
+CONFLICTS: [List(Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,$stack40 = 1,49,SourceNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)) => Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,success = $stack40,47,SinkNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/heroku.jar/13e378a702b57af42d2e08eb1bd2250ffe217b5b/original-without-dependencies/heroku-api-0.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40300
+Time to perform PDG 0,52400
+CONFLICTS: [List(Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,$stack35 = interfaceinvoke response.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>(),47,SourceNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, $stack35 = interfaceinvoke response.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>(), 47)) => Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,$stack36 = interfaceinvoke $stack35.<org.apache.http.StatusLine: int getStatusCode()>(),47,SourceNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, $stack36 = interfaceinvoke $stack35.<org.apache.http.StatusLine: int getStatusCode()>(), 47)) => Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,if $stack36 != 202 goto $stack40 = 0,47,SourceNode, path: ) => Node(<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>,$stack40 = 1,49,SinkNode, path: (<com.heroku.api.command.HerokuAppCreateCommand: com.heroku.api.command.HerokuCommandResponse execute(com.heroku.api.connection.HerokuConnection)>, success = $stack40, 47)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

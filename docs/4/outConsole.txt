@@ -1,0 +1,112 @@
+Running soot scenario helpscout-api-java;net.helpscout.api.ApiClient;setFields(String, List<String>);7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/helpscout-api-java/7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3/original-without-dependencies/helpscout-api-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,82000
+Time to perform Confluence 1 Inter 0,39100
+Configure Soot Confluence 2 Inter 0,21100
+Time to perform Confluence 2 Inter 0,07500
+Visited methods: 8
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(),312,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 312))
+SINK=>BASE: Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(),312,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 312))]
+Confluence interference in <net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>
+Confluence flows from execution of lines 306 and 306 to line 312, defined in l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>() and l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>() and used in $stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>()
+Caused by line 306 flow: path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(), 306)
+Caused by line 306 flow: path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, l5 = interfaceinvoke fields.<java.util.List: java.util.Iterator iterator()>(), 306)
+Caused by line 312 flow: path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack17 = interfaceinvoke l5.<java.util.Iterator: java.lang.Object next()>(), 312)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/helpscout-api-java/7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3/original-without-dependencies/helpscout-api-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,74600
+Runtime: 0.009s
+Time to perform OA Inter 0,80100
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/helpscout-api-java/7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3/original-without-dependencies/helpscout-api-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,78300
+Time to perform DFP Inter 0,38000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 4
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/helpscout-api-java/7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3/original-without-dependencies/helpscout-api-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,73300
+Time to perform DFP Inter 0,38100
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 4
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/helpscout-api-java/7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3/original-without-dependencies/helpscout-api-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,63000
+Time to perform PDG 0,57400
+CONFLICTS: [List(Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,if $stack15 == 0 goto url = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(),306,SourceNode, path: ) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sep = ",",308,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack18 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(sep), 307)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sb = $stack9,296,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, sb = $stack9, 296)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("?"),301,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('?'), 301))), List(Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,if $stack15 == 0 goto url = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(),306,SourceNode, path: ) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sep = ",",308,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack18 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(sep), 307)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sb = $stack9,296,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, sb = $stack9, 296)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("fields="),303,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('fields='), 303))), List(Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,if $stack15 == 0 goto url = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(),306,SourceNode, path: ) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sep = ",",308,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack18 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(sep), 307)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sb = $stack9,296,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, sb = $stack9, 296)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("&"),299,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('&'), 299))), List(Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,$stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(),306,SourceNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack15 = interfaceinvoke l5.<java.util.Iterator: boolean hasNext()>(), 306)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,if $stack15 == 0 goto url = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>(),306,SourceNode, path: ) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sep = ",",308,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, $stack18 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(sep), 307)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,sb = $stack9,296,SimpleNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, sb = $stack9, 296)) => Node(<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>,virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(url),297,SinkNode, path: (<net.helpscout.api.ApiClient: java.lang.String setFields(java.lang.String,java.util.List)>, virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(url), 297)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 4
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/helpscout-api-java/7dde5bbe5d07ba446e8d8b7b942d378b40f2b5c3/original-without-dependencies/helpscout-api-1.0.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,67200
+Time to perform PDG 0,36800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

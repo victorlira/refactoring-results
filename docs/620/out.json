@@ -1,0 +1,448 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke parameters#2.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "289"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack16 = virtualinvoke parameters#2.<java.lang.String: int length()>(), 289)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "endIndex = $stack16",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "289"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, endIndex = $stack16, 289)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack21 = endIndex + 1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "308"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack21 = endIndex + 1, 308)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "endIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int,int)>(38, $stack21)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "308"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex), 291)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beginIndex = endIndex + 1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "307"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex), 291)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "291"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex), 291)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)","(<java.lang.String: int indexOf(int)>, $stack2 = virtualinvoke l0.<java.lang.String: int indexOf(int,int)>(l1, 0), 1503)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = specialinvoke l0.<java.lang.String: int indexOfSupplementary(int,int)>(l1, l2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int,int)>",
+  "line": "1565"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)","(<java.lang.String: int indexOf(int)>, $stack2 = virtualinvoke l0.<java.lang.String: int indexOf(int,int)>(l1, 0), 1503)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke l0.<java.lang.String: int indexOf(int,int)>(l1, 0)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int)>",
+  "line": "1503"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "index = virtualinvoke param.<java.lang.String: int indexOf(int)>(61)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "292"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, index = virtualinvoke param.<java.lang.String: int indexOf(int)>(61), 292)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = index",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "309"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack59 = index, 309)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "index = $stack59",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "293"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, index = $stack59, 293)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name = virtualinvoke param.<java.lang.String: java.lang.String substring(int,int)>(0, index)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "294"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, name = virtualinvoke param.<java.lang.String: java.lang.String substring(int,int)>(0, index), 294)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack32 = interfaceinvoke pCount.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "298"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack32 = interfaceinvoke pCount.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 298)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "count = (java.lang.Integer) $stack32",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "298"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, count = (java.lang.Integer) $stack32, 298)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.Integer",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>(), 299)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Integer: int value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "893"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>(), 299)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "299"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>(), 299)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "288"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack16 = ampIndex",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "296"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack16 = ampIndex, 296)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "endIndex = $stack16",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "289"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, endIndex = $stack16, 289)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack21 = endIndex + 1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "308"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack21 = endIndex + 1, 308)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "endIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int,int)>(38, $stack21)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "308"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex), 291)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "beginIndex = endIndex + 1",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "307"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex), 291)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "291"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, param = virtualinvoke parameters#2.<java.lang.String: java.lang.String substring(int,int)>(beginIndex, endIndex), 291)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int,int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)","(<java.lang.String: int indexOf(int)>, $stack2 = virtualinvoke l0.<java.lang.String: int indexOf(int,int)>(l1, 0), 1503)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack7 = specialinvoke l0.<java.lang.String: int indexOfSupplementary(int,int)>(l1, l2)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int,int)>",
+  "line": "1565"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)","(<java.lang.String: int indexOf(int)>, $stack2 = virtualinvoke l0.<java.lang.String: int indexOf(int,int)>(l1, 0), 1503)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke l0.<java.lang.String: int indexOf(int,int)>(l1, 0)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int indexOf(int)>",
+  "line": "1503"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, ampIndex = virtualinvoke parameters#2.<java.lang.String: int indexOf(int)>(38), 288)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "index = virtualinvoke param.<java.lang.String: int indexOf(int)>(61)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "292"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, index = virtualinvoke param.<java.lang.String: int indexOf(int)>(61), 292)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack59 = index",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "309"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack59 = index, 309)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "index = $stack59",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "293"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, index = $stack59, 293)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "name = virtualinvoke param.<java.lang.String: java.lang.String substring(int,int)>(0, index)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "294"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, name = virtualinvoke param.<java.lang.String: java.lang.String substring(int,int)>(0, index), 294)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack32 = interfaceinvoke pCount.<java.util.Map: java.lang.Object get(java.lang.Object)>(name)",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "298"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack32 = interfaceinvoke pCount.<java.util.Map: java.lang.Object get(java.lang.Object)>(name), 298)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "count = (java.lang.Integer) $stack32",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "298"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, count = (java.lang.Integer) $stack32, 298)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.Integer",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>(), 299)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.Integer: int value>",
+"location": {
+  "file": "",
+  "class": "java.lang.Integer",
+  "method": "<java.lang.Integer: int intValue()>",
+  "line": "893"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>(), 299)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>()",
+"location": {
+  "file": "",
+  "class": "org.hdiv.dataComposer.AbstractDataComposer",
+  "method": "<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>",
+  "line": "299"
+},
+"stackTrace": ["(<org.hdiv.dataComposer.AbstractDataComposer: java.lang.String applyConfidentialityToParams(java.lang.String,org.hdiv.util.Method)>, $stack33 = virtualinvoke count.<java.lang.Integer: int intValue()>(), 299)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,112 @@
+Running soot scenario swagger-maven-plugin;com.github.kongchen.swagger.docgen.reader.JaxrsReader;parseMethod(String, Method);34fb37258e823222f6743558724ef66ce56738c4
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/34fb37258e823222f6743558724ef66ce56738c4/original-without-dependencies/swagger-maven-plugin-3.1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,54900
+Time to perform Confluence 1 Inter 2,20200
+Configure Soot Confluence 2 Inter 0,22000
+Time to perform Confluence 2 Inter 1,58900
+Visited methods: 94
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/34fb37258e823222f6743558724ef66ce56738c4/original-without-dependencies/swagger-maven-plugin-3.1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,64300
+Runtime: 0.041s
+Time to perform OA Inter 0,76800
+OA Inter Visited methods: 75
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/34fb37258e823222f6743558724ef66ce56738c4/original-without-dependencies/swagger-maven-plugin-3.1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,51100
+Time to perform DFP Inter 1,46800
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>
+Data flows from execution of line 470 to 471, defined in parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter) and propagated in virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter)
+Caused by line 470 flow: path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter), 470)
+Caused by line 471 flow: path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter), 471)
+[List(Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter),470,SourceNode, path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter), 470)) => Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter),471,SinkNode, path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter), 471)))]
+Visited methods: 47
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/34fb37258e823222f6743558724ef66ce56738c4/original-without-dependencies/swagger-maven-plugin-3.1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,63200
+Time to perform DFP Inter 1,50400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 47
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/34fb37258e823222f6743558724ef66ce56738c4/original-without-dependencies/swagger-maven-plugin-3.1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,54000
+Time to perform PDG 0,88500
+CONFLICTS: [List(Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter),470,SourceNode, path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter), 470)) => Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter),471,SinkNode, path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, virtualinvoke operation.<io.swagger.models.Operation: io.swagger.models.Operation parameter(io.swagger.models.parameters.Parameter)>(parameter), 471)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-maven-plugin/34fb37258e823222f6743558724ef66ce56738c4/original-without-dependencies/swagger-maven-plugin-3.1.8-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,48000
+Time to perform PDG 0,99100
+CONFLICTS: [List(Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,$stack56 = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: boolean hasCommonParameter(io.swagger.models.parameters.Parameter)>(parameter),466,SourceNode, path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, $stack56 = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: boolean hasCommonParameter(io.swagger.models.parameters.Parameter)>(parameter), 466)) => Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,if $stack56 == 0 goto parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter),466,SourceNode, path: ) => Node(<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>,parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter),470,SinkNode, path: (<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.Operation parseMethod(java.lang.String,java.lang.reflect.Method)>, parameter = specialinvoke this.<com.github.kongchen.swagger.docgen.reader.JaxrsReader: io.swagger.models.parameters.Parameter replaceArrayModelForOctetStream(io.swagger.models.Operation,io.swagger.models.parameters.Parameter)>(operation, parameter), 470)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

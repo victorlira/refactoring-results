@@ -1,0 +1,200 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>,$stack3 = new java.lang.String,144,SourceNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, specialinvoke $stack3.<java.lang.String: void <init>(byte[],java.nio.charset.Charset)>($stack5, $stack4), 144)) => Node(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>,body = $stack3,144,SourceNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)) => Node(<java.lang.String: int length()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149)) => Node(<java.lang.String: int length()>,$stack1 = l0.<java.lang.String: char[] value>,623,SinkNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149) => (<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623)) => Node(<java.lang.String: int length()>,$stack2 = lengthof $stack1,623,SinkNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149)) SINK=>BASE: Node(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>,$stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\n", ""),149,SourceNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', ''), 149)) => Node(<java.lang.String: int length()>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149)) => Node(<java.lang.String: int length()>,$stack1 = l0.<java.lang.String: char[] value>,623,SinkNode, path: (<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1) => (<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149) => (<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', '')",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.http.request.DefaultResponse",
+					"method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+					"line": 149
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.http.request.DefaultResponse",
+	"method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+	"line": 149
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": 623
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack3 = new java.lang.String",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.http.request.DefaultResponse",
+					"method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+					"line": 144
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.http.request.DefaultResponse",
+	"method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+	"line": 144
+},{
+	"class": "com.jcabi.http.request.DefaultResponse",
+	"method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+	"line": 144
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": 623
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: int length()>",
+	"line": 623
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack2 = lengthof $stack1",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: int length()>",
+					"line": 623
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "body = $stack3",
+"location": {
+  "file": "",
+  "class": "com.jcabi.http.request.DefaultResponse",
+  "method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+  "line": "144"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', ''), 149)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+  "line": "2239"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', ''), 149)","(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>, $stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2239)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack5.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>($stack7)",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+  "line": "2240"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', ''), 149)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', '')",
+"location": {
+  "file": "",
+  "class": "com.jcabi.http.request.DefaultResponse",
+  "method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+  "line": "149"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack12 = virtualinvoke body.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('\n', ''), 149)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "l0 := @this: java.lang.String",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack1 = l0.<java.lang.String: char[] value>",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149)","(<java.lang.String: int length()>, $stack1 = l0.<java.lang.String: char[] value>, 623)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack2 = lengthof $stack1",
+"location": {
+  "file": "",
+  "class": "java.lang.String",
+  "method": "<java.lang.String: int length()>",
+  "line": "623"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack11 = virtualinvoke body.<java.lang.String: int length()>(), 149)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke $stack12.<java.lang.String: int length()>()",
+"location": {
+  "file": "",
+  "class": "com.jcabi.http.request.DefaultResponse",
+  "method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+  "line": "149"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack13 = virtualinvoke $stack12.<java.lang.String: int length()>(), 149)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack14 = $stack11 - $stack13",
+"location": {
+  "file": "",
+  "class": "com.jcabi.http.request.DefaultResponse",
+  "method": "<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>",
+  "line": "149"
+},
+"stackTrace": ["(<com.jcabi.http.request.DefaultResponse: java.lang.String body()>, $stack8 = staticinvoke <com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>(this, l2), -1)","(<com.jcabi.http.request.DefaultResponse: java.lang.String body_aroundBody8(com.jcabi.http.request.DefaultResponse,org.aspectj.lang.JoinPoint)>, $stack14 = $stack11 - $stack13, 149)"]
+}]
+}
+}
+
+]

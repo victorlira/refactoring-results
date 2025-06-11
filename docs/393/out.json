@@ -1,0 +1,67 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>,s = (java.lang.String) $stack29,241,SourceNode, path: (<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>, s = (java.lang.String) $stack29, 241)) => Node(<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>,$stack32 = new java.lang.StringBuilder,243,SinkNode, path: (<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>, specialinvoke $stack32.<java.lang.StringBuilder: void <init>()>(), 243)) => Node(<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>,specialinvoke $stack32.<java.lang.StringBuilder: void <init>()>(),243,SinkNode, path: (<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>, specialinvoke $stack32.<java.lang.StringBuilder: void <init>()>(), 243)) SINK=>BASE: Node(<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>,cmds = $stack7,221,SourceNode, path: (<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>, cmds = $stack7, 221)) => Node(<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>,interfaceinvoke cmds.<java.util.List: boolean add(java.lang.Object)>($stack35),243,SinkNode, path: (<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>, interfaceinvoke cmds.<java.util.List: boolean add(java.lang.Object)>($stack35), 243))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "cmds = $stack7",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.Main",
+					"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+					"line": 221
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.Main",
+	"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+	"line": 221
+},{
+	"class": "org.tomitribe.crest.Main",
+	"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+	"line": 243
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "s = (java.lang.String) $stack29",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.Main",
+					"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+					"line": 241
+				},
+				"stackTrace": [{
+	"class": "org.tomitribe.crest.Main",
+	"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+	"line": 241
+},{
+	"class": "org.tomitribe.crest.Main",
+	"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+	"line": 243
+},{
+	"class": "org.tomitribe.crest.Main",
+	"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+	"line": 243
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke $stack32.<java.lang.StringBuilder: void <init>()>()",
+				"location": {
+					"file": "",
+					"class": "org.tomitribe.crest.Main",
+					"method": "<org.tomitribe.crest.Main: java.util.Collection complete(java.lang.String,int)>",
+					"line": 243
+				}
+			}
+		]
+	}
+}
+
+]

@@ -1,0 +1,141 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack16[1] = $stack40,75,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16),49,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)) SINK=>BASE: Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>("${WORKSPACE}/dependency-check-report.html"),60,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>('${WORKSPACE}/dependency-check-report.html'), 60)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack15 = virtualinvoke $stack14.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(),61,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack15 = virtualinvoke $stack14.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 61)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16),49,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>('${WORKSPACE}/dependency-check-report.html')",
+				"location": {
+					"file": "",
+					"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+					"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+					"line": 60
+				},
+				"stackTrace": [{
+	"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+	"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+	"line": 60
+},{
+	"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+	"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+	"line": 61
+},{
+	"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+	"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+	"line": 49
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack16[1] = $stack40",
+				"location": {
+					"file": "",
+					"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+					"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+					"line": 75
+				},
+				"stackTrace": [{
+	"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+	"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+	"line": 75
+},{
+	"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+	"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+	"line": 49
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16)",
+				"location": {
+					"file": "",
+					"class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+					"method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+					"line": 49
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+  "method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+  "line": "73"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+  "method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+  "line": "74"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+  "method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+  "line": "73"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38)",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+  "method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+  "line": "74"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>()",
+"location": {
+  "file": "",
+  "class": "org.sonar.dependencycheck.DependencyCheckPlugin",
+  "method": "<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>",
+  "line": "75"
+},
+"stackTrace": ["(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 75)"]
+}]
+}
+}
+
+]

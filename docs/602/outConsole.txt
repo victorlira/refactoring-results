@@ -1,0 +1,118 @@
+Running soot scenario otr4j;net.java.otr4j.crypto.OtrCryptoEngineImpl;aesDecrypt(byte[], byte[], byte[]);445fe2a8ad55d7da4043a22a4adc2c09ee4097f4
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/445fe2a8ad55d7da4043a22a4adc2c09ee4097f4/original-without-dependencies/org.otr4j-0.23-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,49700
+Time to perform Confluence 1 Inter 0,32900
+Configure Soot Confluence 2 Inter 0,15400
+Time to perform Confluence 2 Inter 0,06600
+Visited methods: 10
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,aesDec = $stack10,175,SourceNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, aesDec = $stack10, 175)) => Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec),176,SinkNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec), 176))
+SINK=>BASE: Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,aesDec = $stack10,175,SourceNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, aesDec = $stack10, 175)) => Node(<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>,specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec),176,SinkNode, path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec), 176))]
+Confluence interference in <net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>
+Confluence flows from execution of lines 175 and 175 to line 176, defined in aesDec = $stack10 and aesDec = $stack10 and used in specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec)
+Caused by line 175 flow: path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, aesDec = $stack10, 175)
+Caused by line 175 flow: path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, aesDec = $stack10, 175)
+Caused by line 176 flow: path: (<net.java.otr4j.crypto.OtrCryptoEngineImpl: byte[] aesDecrypt(byte[],byte[],byte[])>, specialinvoke $stack11.<org.bouncycastle.crypto.modes.SICBlockCipher: void <init>(org.bouncycastle.crypto.BlockCipher)>(aesDec), 176)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/445fe2a8ad55d7da4043a22a4adc2c09ee4097f4/original-without-dependencies/org.otr4j-0.23-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,81100
+Runtime: 0.007s
+OA interference in class OtrCryptoEngineImpl, method byte[] aesDecrypt(byte[],byte[],byte[]), execution of line 175 overrides 175, assigning to variable aesDec, 
+Caused by line 175 flow:
+at net.java.otr4j.crypto.OtrCryptoEngineImpl.aesDecrypt(OtrCryptoEngineImpl.java:175)
+And line 175 flow:
+at net.java.otr4j.crypto.OtrCryptoEngineImpl.aesDecrypt(OtrCryptoEngineImpl.java:175)
+ 
+Time to perform OA Inter 0,88600
+OA Inter Visited methods: 2
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/445fe2a8ad55d7da4043a22a4adc2c09ee4097f4/original-without-dependencies/org.otr4j-0.23-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,44700
+Time to perform DFP Inter 0,34300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 5
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/445fe2a8ad55d7da4043a22a4adc2c09ee4097f4/original-without-dependencies/org.otr4j-0.23-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,62600
+Time to perform DFP Inter 0,33500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 5
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/445fe2a8ad55d7da4043a22a4adc2c09ee4097f4/original-without-dependencies/org.otr4j-0.23-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,42900
+Time to perform PDG 0,39100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/otr4j/445fe2a8ad55d7da4043a22a4adc2c09ee4097f4/original-without-dependencies/org.otr4j-0.23-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,43500
+Time to perform PDG 0,35500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

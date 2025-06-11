@@ -1,0 +1,148 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "haveToAdd - haveToAdd",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "haveToAdd = 1",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+					"method": "addPropertyChangeListener",
+					"line": 61
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+	"method": "addPropertyChangeListener",
+	"line": 61
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "haveToAdd = 1",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+					"method": "addPropertyChangeListener",
+					"line": 61
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+	"method": "addPropertyChangeListener",
+	"line": 61
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "haveToAdd - haveToAdd",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "haveToAdd = 0",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+					"method": "addPropertyChangeListener",
+					"line": 66
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+	"method": "addPropertyChangeListener",
+	"line": 66
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "haveToAdd = 0",
+				"location": {
+					"file": "",
+					"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+					"method": "addPropertyChangeListener",
+					"line": 66
+				},
+				"stackTrace": [{
+	"class": "org.asteriskjava.live.internal.AbstractLiveObject",
+	"method": "addPropertyChangeListener",
+	"line": 66
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "haveToAdd = 1",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.live.internal.AbstractLiveObject",
+  "method": "<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>",
+  "line": "61"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if haveToAdd == 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.live.internal.AbstractLiveObject",
+  "method": "<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>",
+  "line": "70"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "haveToAdd = 0",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.live.internal.AbstractLiveObject",
+  "method": "<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>",
+  "line": "66"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if haveToAdd == 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.live.internal.AbstractLiveObject",
+  "method": "<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>",
+  "line": "70"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

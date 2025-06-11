@@ -1,0 +1,112 @@
+Running soot scenario asterisk-java;org.asteriskjava.live.internal.AsteriskServerImpl;initializeIfNeeded();c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 1,02100
+Time to perform Confluence 1 Inter 4,87800
+Configure Soot Confluence 2 Inter 0,37600
+Time to perform Confluence 2 Inter 4,33700
+Visited methods: 326
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,96700
+Runtime: 0.02s
+OA interference in class AsteriskServerImpl, method void initializeIfNeeded(), execution of line 289 overrides 289, assigning to variable this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing>, 
+Caused by line 289 flow:
+at org.asteriskjava.live.internal.AsteriskServerImpl.initializeIfNeeded(AsteriskServerImpl.java:289)
+And line 289 flow:
+at org.asteriskjava.live.internal.AsteriskServerImpl.initializeIfNeeded(AsteriskServerImpl.java:289)
+ 
+Time to perform OA Inter 1,07500
+OA Inter Visited methods: 11
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,65900
+Time to perform DFP Inter 3,38500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 163
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,00000
+Time to perform DFP Inter 3,40000
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 163
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,69800
+Time to perform PDG 0,52600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62700
+Time to perform PDG 0,56700
+CONFLICTS: [List(Node(<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>,$stack2 = this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initialized>,274,SourceNode, path: (<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>, $stack2 = this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initialized>, 274)) => Node(<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>,if $stack2 != 0 goto return,274,SourceNode, path: ) => Node(<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>,$stack3 = this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing>,276,SimpleNode, path: (<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>, $stack3 = this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing>, 276)) => Node(<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>,if $stack3 == 0 goto $stack4 = this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean asyncEventHandling>,276,SimpleNode, path: ) => Node(<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>,this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing> = 0,323,SinkNode, path: (<org.asteriskjava.live.internal.AsteriskServerImpl: void initializeIfNeeded()>, this.<org.asteriskjava.live.internal.AsteriskServerImpl: boolean initializing> = 0, 323)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

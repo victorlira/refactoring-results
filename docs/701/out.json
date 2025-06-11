@@ -1,0 +1,725 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>,$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(),44,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,$stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0),2239,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44) => (<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>, $stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2239)) SINK=>BASE: Node(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>,$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(),44,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,$stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0),2239,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44) => (<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>, $stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2239))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>()",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+					"line": 44
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+	"line": 44
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": 2239
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>()",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+					"line": 44
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+	"line": 44
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": 2239
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0)",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+					"line": 2239
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>,$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(),44,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,$stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0),2239,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44) => (<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>, $stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2239)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,$stack8 = virtualinvoke $stack5.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>($stack7),2240,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44)) SINK=>BASE: Node(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>,$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(),44,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>(), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,$stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0),2239,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44) => (<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>, $stack5 = virtualinvoke $stack4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(l0), 2239)) => Node(<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>,$stack8 = virtualinvoke $stack5.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>($stack7),2240,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack3 = virtualinvoke $stack2.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>('Validator', ''), 44))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>()",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+					"line": 44
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+	"line": 44
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": 2239
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": 2240
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.String getSimpleName()>()",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+					"line": 44
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+	"line": 44
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": 2239
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+	"line": 2240
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack8 = virtualinvoke $stack5.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>($stack7)",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>",
+					"line": 2240
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack6 = new java.lang.StringBuilder,144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack6.<java.lang.StringBuilder: void <init>()>(), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot create instance of "),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of '), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" using default constructor"),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor'), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(), 144)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1),66,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) SINK=>BASE: Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot create instance of "),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of '), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" using default constructor"),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor'), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(), 144)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1),66,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of ')",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+					"line": 144
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack6 = new java.lang.StringBuilder",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+					"line": 144
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Exception",
+					"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+					"line": 66
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack6 = new java.lang.StringBuilder,144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack6.<java.lang.StringBuilder: void <init>()>(), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot create instance of "),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of '), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" using default constructor"),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor'), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(), 144)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1),62,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62)) SINK=>BASE: Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot create instance of "),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of '), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" using default constructor"),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor'), 144)) => Node(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),144,SourceNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(), 144)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1),62,SinkNode, path: (<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49) => (<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44) => (<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of ')",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+					"line": 144
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": 62
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack6 = new java.lang.StringBuilder",
+				"location": {
+					"file": "",
+					"class": "cc.redpen.validator.ValidatorFactory",
+					"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+					"line": 144
+				},
+				"stackTrace": [{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "cc.redpen.validator.ValidatorFactory",
+	"method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+	"line": 144
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": 62
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.RuntimeException",
+					"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+					"line": 62
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4), 44)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of ')",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of '), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor')",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor'), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(), 144)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>()",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>(), 141)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = (cc.redpen.validator.Validator) $stack2",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack3",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>()",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>(), 141)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = (cc.redpen.validator.Validator) $stack2",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4), 44)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4), 44)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of ')",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot create instance of '), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(clazz), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor')",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' using default constructor'), 144)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>()",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(), 144)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "144"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, specialinvoke $stack5.<java.lang.RuntimeException: void <init>(java.lang.String)>($stack10), 144)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>()",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>(), 141)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = (cc.redpen.validator.Validator) $stack2",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack3",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>()",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)","(<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>, $stack2 = virtualinvoke clazz.<java.lang.Class: java.lang.Object newInstance()>(), 141)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = (cc.redpen.validator.Validator) $stack2",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>",
+  "line": "141"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, $stack4 = staticinvoke <cc.redpen.validator.ValidatorFactory: cc.redpen.validator.Validator createValidator(java.lang.Class)>(clazz), 44)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4)",
+"location": {
+  "file": "",
+  "class": "cc.redpen.validator.ValidatorFactory",
+  "method": "<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>",
+  "line": "44"
+},
+"stackTrace": ["(<cc.redpen.validator.ValidatorFactory: void <clinit>()>, staticinvoke <cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>(class 'Lcc/redpen/validator/section/DuplicatedSectionValidator;'), 49)","(<cc.redpen.validator.ValidatorFactory: void registerValidator(java.lang.Class)>, interfaceinvoke $stack1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack3, $stack4), 44)"]
+}]
+}
+}
+
+]

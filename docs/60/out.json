@@ -1,0 +1,439 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.coverity.ws.v9.MergedDefectDataObj: java.util.List getDefectStateAttributeValues()>,$stack2 = this.<com.coverity.ws.v9.MergedDefectDataObj: java.util.List defectStateAttributeValues>,258,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, listOfAttributes = virtualinvoke defect.<com.coverity.ws.v9.MergedDefectDataObj: java.util.List getDefectStateAttributeValues()>(), 182)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,listOfAttributes = virtualinvoke defect.<com.coverity.ws.v9.MergedDefectDataObj: java.util.List getDefectStateAttributeValues()>(),182,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, listOfAttributes = virtualinvoke defect.<com.coverity.ws.v9.MergedDefectDataObj: java.util.List getDefectStateAttributeValues()>(), 182)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,l8 = interfaceinvoke listOfAttributes.<java.util.List: java.util.Iterator iterator()>(),183,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, l8 = interfaceinvoke listOfAttributes.<java.util.List: java.util.Iterator iterator()>(), 183)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack29 = interfaceinvoke l8.<java.util.Iterator: java.lang.Object next()>(),198,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack29 = interfaceinvoke l8.<java.util.Iterator: java.lang.Object next()>(), 198)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,defectAttribute = (com.coverity.ws.v9.DefectStateAttributeValueDataObj) $stack29,198,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, defectAttribute = (com.coverity.ws.v9.DefectStateAttributeValueDataObj) $stack29, 198)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack33 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>(),187,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack33 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>(), 187)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack34 = virtualinvoke $stack33.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(),187,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack34 = virtualinvoke $stack33.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(), 187)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack8 = l0.<java.lang.String: char[] value>,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack8 = l0.<java.lang.String: char[] value>, 982)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l3 = lengthof $stack8,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l3 = lengthof $stack8, 982)) SINK=>BASE: Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,e = interfaceinvoke input.<java.util.List: java.util.Iterator iterator()>(),142,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, e = interfaceinvoke input.<java.util.List: java.util.Iterator iterator()>(), 142)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,$stack8 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),148,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, $stack8 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 148)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,arg = (java.lang.String) $stack8,148,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, arg = (java.lang.String) $stack8, 148)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List expand(java.lang.String,hudson.EnvVars)>,input := @parameter0: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, $stack9 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List expand(java.lang.String,hudson.EnvVars)>(arg, environment), 143)) => Node(<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>,input := @parameter0: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47)) => Node(<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>,interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolate(java.lang.String,hudson.EnvVars)>(input, environment),299,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolate(java.lang.String,hudson.EnvVars)>(input, environment), 299)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack8 = l0.<java.lang.String: char[] value>,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack8 = l0.<java.lang.String: char[] value>, 982)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l3 = lengthof $stack8,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l3 = lengthof $stack8, 982))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "e = interfaceinvoke input.<java.util.List: java.util.Iterator iterator()>()",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.CoverityUtils",
+					"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+					"line": 142
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": 142
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": 148
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": 148
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List expand(java.lang.String,hudson.EnvVars)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.EnvParser",
+	"method": "<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.EnvParser",
+	"method": "<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>",
+	"line": 299
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = this.<com.coverity.ws.v9.MergedDefectDataObj: java.util.List defectStateAttributeValues>",
+				"location": {
+					"file": "",
+					"class": "com.coverity.ws.v9.MergedDefectDataObj",
+					"method": "<com.coverity.ws.v9.MergedDefectDataObj: java.util.List getDefectStateAttributeValues()>",
+					"line": 258
+				},
+				"stackTrace": [{
+	"class": "com.coverity.ws.v9.MergedDefectDataObj",
+	"method": "<com.coverity.ws.v9.MergedDefectDataObj: java.util.List getDefectStateAttributeValues()>",
+	"line": 258
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 182
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 183
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 198
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 198
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 187
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 187
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l3 = lengthof $stack8",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 982
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack34 = virtualinvoke $stack33.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(),187,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack34 = virtualinvoke $stack33.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(), 187)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack8 = l0.<java.lang.String: char[] value>,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack8 = l0.<java.lang.String: char[] value>, 982)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l3 = lengthof $stack8,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l3 = lengthof $stack8, 982)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l3 = l3 + -1,987,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack12 = l3, 987)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack12 = l3,987,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack12 = l3, 987)) SINK=>BASE: Node(<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,$stack343 = "CSHARP",450,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack344 = virtualinvoke $stack343.<java.lang.String: boolean equals(java.lang.Object)>(cmd#61), 450)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack8 = l0.<java.lang.String: char[] value>,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack8 = l0.<java.lang.String: char[] value>, 982)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l3 = lengthof $stack8,982,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l3 = lengthof $stack8, 982)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack12 = l3,987,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack12 = l3, 987))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack343 = 'CSHARP'",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+					"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+					"line": 450
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 450
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 987
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack34 = virtualinvoke $stack33.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>()",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.DefectFilters",
+					"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+					"line": 187
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 187
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 982
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 987
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 987
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack12 = l3",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 987
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack39 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>(),193,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack39 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>(), 193)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack40 = virtualinvoke $stack39.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(),193,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack40 = virtualinvoke $stack39.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(), 193)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack14 = l4[l6],988,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack14 = l4[l6], 988)) SINK=>BASE: Node(<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance getInvocationAssistance()>,$stack1 = this.<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance invocationAssistance>,193,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, invocationAssistance = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance getInvocationAssistance()>(), 47)) => Node(<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,invocationAssistance = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance getInvocationAssistance()>(),47,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, invocationAssistance = virtualinvoke publisher.<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance getInvocationAssistance()>(), 47)) => Node(<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>,this := @this: jenkins.plugins.coverity.InvocationAssistance,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, cmd#50 = virtualinvoke invocationAssistance.<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>(), 140)) => Node(<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>,$stack1 = this.<jenkins.plugins.coverity.InvocationAssistance: java.util.List javaWarFilesNames>,181,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, cmd#50 = virtualinvoke invocationAssistance.<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>(), 140)) => Node(<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,cmd#50 = virtualinvoke invocationAssistance.<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>(),140,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, cmd#50 = virtualinvoke invocationAssistance.<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>(), 140)) => Node(<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,result#51 = interfaceinvoke cmd#50.<java.util.List: java.util.Iterator iterator()>(),142,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result#51 = interfaceinvoke cmd#50.<java.util.List: java.util.Iterator iterator()>(), 142)) => Node(<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,$stack749 = interfaceinvoke result#51.<java.util.Iterator: java.lang.Object next()>(),152,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack749 = interfaceinvoke result#51.<java.util.Iterator: java.lang.Object next()>(), 152)) => Node(<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>,givenJar = (java.lang.String) $stack749,152,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, givenJar = (java.lang.String) $stack749, 152)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>,input := @parameter0: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65)) => Node(<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>,input := @parameter0: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47)) => Node(<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>,interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolate(java.lang.String,hudson.EnvVars)>(input, environment),299,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolate(java.lang.String,hudson.EnvVars)>(input, environment), 299)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,$stack14 = l4[l6],988,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, $stack14 = l4[l6], 988))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance invocationAssistance>",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.CoverityPublisher",
+					"method": "<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance getInvocationAssistance()>",
+					"line": 193
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.CoverityPublisher",
+	"method": "<jenkins.plugins.coverity.CoverityPublisher: jenkins.plugins.coverity.InvocationAssistance getInvocationAssistance()>",
+	"line": 193
+},{
+	"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 47
+},{
+	"class": "jenkins.plugins.coverity.InvocationAssistance",
+	"method": "<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.InvocationAssistance",
+	"method": "<jenkins.plugins.coverity.InvocationAssistance: java.util.List getJavaWarFilesNames()>",
+	"line": 181
+},{
+	"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 140
+},{
+	"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 142
+},{
+	"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 152
+},{
+	"class": "jenkins.plugins.coverity.analysis.JasperToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>",
+	"line": 152
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.EnvParser",
+	"method": "<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.EnvParser",
+	"method": "<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>",
+	"line": 299
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 984
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 988
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack39 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>()",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.DefectFilters",
+					"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+					"line": 193
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 193
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 193
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 984
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 988
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack14 = l4[l6]",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 988
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack39 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>(),193,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack39 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>(), 193)) => Node(<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>,$stack40 = virtualinvoke $stack39.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(),193,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, match#399 = virtualinvoke $stack189.<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>(defect#398, listener), 608) => (<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>, $stack40 = virtualinvoke $stack39.<com.coverity.ws.v9.AttributeDefinitionIdDataObj: java.lang.String getName()>(), 193)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984)) SINK=>BASE: Node(<jenkins.plugins.coverity.analysis.CoverityToolHandler: boolean importMsvsca(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,java.lang.String,jenkins.plugins.coverity.CoverityTempDir,boolean)>,importCmd = $stack21,170,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, givenJar#239 = virtualinvoke this.<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean importMsvsca(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,java.lang.String,jenkins.plugins.coverity.CoverityTempDir,boolean)>(build, launcher, listener, home, temp, result#238), 451) => (<jenkins.plugins.coverity.analysis.CoverityToolHandler: boolean importMsvsca(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,java.lang.String,jenkins.plugins.coverity.CoverityTempDir,boolean)>, importCmd = $stack21, 170)) => Node(<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>,cmd := @parameter0: java.util.List,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>,input := @parameter0: java.util.List,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,input := @parameter0: java.util.List,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,e = interfaceinvoke input.<java.util.List: java.util.Iterator iterator()>(),142,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, e = interfaceinvoke input.<java.util.List: java.util.Iterator iterator()>(), 142)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,$stack8 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(),148,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, $stack8 = interfaceinvoke e.<java.util.Iterator: java.lang.Object next()>(), 148)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>,arg = (java.lang.String) $stack8,148,SourceNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, arg = (java.lang.String) $stack8, 148)) => Node(<jenkins.plugins.coverity.CoverityUtils: java.util.List expand(java.lang.String,hudson.EnvVars)>,input := @parameter0: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, result = staticinvoke <jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>(cmd, build, launcher, listener, envVars, useAdvancedParser), 97) => (<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>, cmd#4 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>(cmd, launcherEnvVars, useAdvancedParser), 292) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>, $stack6 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>(input, envVars), 188) => (<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>, $stack9 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.util.List expand(java.lang.String,hudson.EnvVars)>(arg, environment), 143)) => Node(<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>,input := @parameter0: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47)) => Node(<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>,interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolate(java.lang.String,hudson.EnvVars)>(input, environment),299,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolate(java.lang.String,hudson.EnvVars)>(input, environment), 299)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300)) => Node(<java.lang.String: boolean equals(java.lang.Object)>,l4 = l0.<java.lang.String: char[] value>,984,SinkNode, path: (<jenkins.plugins.coverity.analysis.JasperToolHandler: boolean perform(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,jenkins.plugins.coverity.CoverityPublisher)>, $stack836 = staticinvoke <jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>($stack835, envVars, useAdvancedParser), 65) => (<jenkins.plugins.coverity.CoverityUtils: java.lang.String evaluateEnvVars(java.lang.String,hudson.EnvVars,boolean)>, interpolated = staticinvoke <jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>(input, 1, environment), 47) => (<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>, $stack5 = virtualinvoke interpolated.<java.lang.String: boolean equals(java.lang.Object)>(input), 300) => (<java.lang.String: boolean equals(java.lang.Object)>, l4 = l0.<java.lang.String: char[] value>, 984))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "importCmd = $stack21",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.analysis.CoverityToolHandler",
+					"method": "<jenkins.plugins.coverity.analysis.CoverityToolHandler: boolean importMsvsca(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,java.lang.String,jenkins.plugins.coverity.CoverityTempDir,boolean)>",
+					"line": 170
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.analysis.CoverityToolHandler",
+	"method": "<jenkins.plugins.coverity.analysis.CoverityToolHandler: boolean importMsvsca(hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,java.lang.String,jenkins.plugins.coverity.CoverityTempDir,boolean)>",
+	"line": 170
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: int runCmd(java.util.List,hudson.model.AbstractBuild,hudson.Launcher,hudson.model.BuildListener,hudson.EnvVars,boolean)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List prepareCmds(java.util.List,java.lang.String[],boolean)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": 142
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": 148
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List evaluateEnvVars(java.util.List,hudson.EnvVars)>",
+	"line": 148
+},{
+	"class": "jenkins.plugins.coverity.CoverityUtils",
+	"method": "<jenkins.plugins.coverity.CoverityUtils: java.util.List expand(java.lang.String,hudson.EnvVars)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.EnvParser",
+	"method": "<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>",
+	"line": -1
+},{
+	"class": "jenkins.plugins.coverity.EnvParser",
+	"method": "<jenkins.plugins.coverity.EnvParser: java.lang.String interpolateRecursively(java.lang.String,int,hudson.EnvVars)>",
+	"line": 299
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 984
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack39 = virtualinvoke defectAttribute.<com.coverity.ws.v9.DefectStateAttributeValueDataObj: com.coverity.ws.v9.AttributeDefinitionIdDataObj getAttributeDefinitionId()>()",
+				"location": {
+					"file": "",
+					"class": "jenkins.plugins.coverity.DefectFilters",
+					"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+					"line": 193
+				},
+				"stackTrace": [{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 193
+},{
+	"class": "jenkins.plugins.coverity.DefectFilters",
+	"method": "<jenkins.plugins.coverity.DefectFilters: boolean matches(com.coverity.ws.v9.MergedDefectDataObj,hudson.model.BuildListener)>",
+	"line": 193
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+	"line": 984
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l4 = l0.<java.lang.String: char[] value>",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: boolean equals(java.lang.Object)>",
+					"line": 984
+				}
+			}
+		]
+	}
+}
+
+]

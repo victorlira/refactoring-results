@@ -14,7 +14,8 @@
       "description": "extracted variable declaration",
       "codeElement": "projectMetaData : ProjectMetaData"
     },
-    "line": "104"
+    "line": "100",
+    "branchLine": "106"
   },
   {
     "branch": "L",
@@ -23,15 +24,16 @@
     "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
     "description": {
       "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
+      "startLine": 107,
+      "endLine": 107,
+      "startColumn": 9,
+      "endColumn": 56,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
     },
-    "line": "103"
+    "line": "101",
+    "branchLine": "107"
   },
   {
     "branch": "L",
@@ -40,66 +42,52 @@
     "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
     "description": {
       "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
+      "startLine": 108,
+      "endLine": 108,
+      "startColumn": 9,
+      "endColumn": 71,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
     },
-    "line": "102"
+    "line": "102",
+    "branchLine": "108"
   },
   {
     "branch": "L",
     "class": "org.movsim.simulator.Simulator",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
+    "refactoringInfo": "Replace Attribute With Variable\txodrFileName : String to xodrFileName : String in method public initialize() : void from class org.movsim.simulator.Simulator",
     "description": {
       "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
+      "startLine": 109,
+      "endLine": 109,
+      "startColumn": 22,
+      "endColumn": 70,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
+      "description": "renamed variable declaration",
+      "codeElement": "xodrFileName : String"
     },
-    "line": "101"
+    "line": "103",
+    "branchLine": "109"
   },
   {
     "branch": "L",
     "class": "org.movsim.simulator.Simulator",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
+    "refactoringInfo": "Replace Attribute With Variable\txodrPath : String to xodrPath : String in method public initialize() : void from class org.movsim.simulator.Simulator",
     "description": {
       "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
+      "startLine": 110,
+      "endLine": 110,
+      "startColumn": 22,
+      "endColumn": 62,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
+      "description": "renamed variable declaration",
+      "codeElement": "xodrPath : String"
     },
-    "line": "100"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
-    },
-    "line": "104"
+    "line": "104",
+    "branchLine": "110"
   },
   {
     "branch": "L",
@@ -116,7 +104,8 @@
       "description": "extracted variable declaration",
       "codeElement": "projectMetaData : ProjectMetaData"
     },
-    "line": "103"
+    "line": "100",
+    "branchLine": "106"
   },
   {
     "branch": "L",
@@ -125,201 +114,33 @@
     "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
     "description": {
       "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
+      "startLine": 107,
+      "endLine": 107,
+      "startColumn": 9,
+      "endColumn": 56,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "projectName=projectMetaData.getProjectName();\n"
+    },
+    "line": "101",
+    "branchLine": "107"
+  },
+  {
+    "branch": "L",
+    "class": "org.movsim.simulator.Simulator",
+    "tool": "ReExtractorPlus",
+    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
+    "description": {
+      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
+      "startLine": 108,
+      "endLine": 108,
+      "startColumn": 9,
+      "endColumn": 71,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "final String path=projectMetaData.getPathToProjectXmlFile();\n"
     },
-    "line": "102"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
-    },
-    "line": "101"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 106,
-      "endLine": 106,
-      "startColumn": 31,
-      "endColumn": 79,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "projectMetaData : ProjectMetaData"
-    },
-    "line": "100"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "136"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "134"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "133"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "104"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "103"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "102"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "124"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "101"
-  },
-  {
-    "branch": "L",
-    "class": "org.movsim.simulator.Simulator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tprojectMetaData : ProjectMetaData in method public initialize() : void from class org.movsim.simulator.Simulator",
-    "description": {
-      "filePath": "src/main/java/org/movsim/simulator/Simulator.java",
-      "startLine": 103,
-      "endLine": 171,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public initialize() : void"
-    },
-    "line": "100"
+    "line": "102",
+    "branchLine": "108"
   }
 ]

@@ -1,0 +1,323 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack51 = virtualinvoke e#3.<java.lang.String: java.lang.String toUpperCase()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "119"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack51 = virtualinvoke e#3.<java.lang.String: java.lang.String toUpperCase()>(), 119)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "parserType = staticinvoke <org.unigram.docvalidator.parser.Parser$Type: org.unigram.docvalidator.parser.Parser$Type valueOf(java.lang.String)>($stack51)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "119"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, parserType = staticinvoke <org.unigram.docvalidator.parser.Parser$Type: org.unigram.docvalidator.parser.Parser$Type valueOf(java.lang.String)>($stack51), 119)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "123"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if documentCollection != null goto $stack56 = <java.lang.System: java.io.PrintStream out>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "125"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack60 = virtualinvoke $stack59.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>(distributor)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "134"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack60 = virtualinvoke $stack59.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>(distributor), 134)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "validator = virtualinvoke $stack60.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator build()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "135"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, validator = virtualinvoke $stack60.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator build()>(), 135)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "137"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection), 137)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "123"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if documentCollection != null goto $stack56 = <java.lang.System: java.io.PrintStream out>",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "125"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "123"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "137"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection), 137)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "outputFormat = staticinvoke <org.unigram.docvalidator.util.Formatter$Type: org.unigram.docvalidator.util.Formatter$Type valueOf(java.lang.String)>($stack53)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "120"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, outputFormat = staticinvoke <org.unigram.docvalidator.util.Formatter$Type: org.unigram.docvalidator.util.Formatter$Type valueOf(java.lang.String)>($stack53), 120)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "distributor = staticinvoke <org.unigram.docvalidator.util.ResultDistributorFactory: org.unigram.docvalidator.util.ResultDistributor createDistributor(org.unigram.docvalidator.util.Formatter$Type,java.io.OutputStream)>(outputFormat, $stack56)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "130"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, distributor = staticinvoke <org.unigram.docvalidator.util.ResultDistributorFactory: org.unigram.docvalidator.util.ResultDistributor createDistributor(org.unigram.docvalidator.util.Formatter$Type,java.io.OutputStream)>(outputFormat, $stack56), 130)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack60 = virtualinvoke $stack59.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>(distributor)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "134"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack60 = virtualinvoke $stack59.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>(distributor), 134)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "validator = virtualinvoke $stack60.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator build()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "135"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, validator = virtualinvoke $stack60.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator build()>(), 135)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "137"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection), 137)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack51 = virtualinvoke e#3.<java.lang.String: java.lang.String toUpperCase()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "119"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack51 = virtualinvoke e#3.<java.lang.String: java.lang.String toUpperCase()>(), 119)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "parserType = staticinvoke <org.unigram.docvalidator.parser.Parser$Type: org.unigram.docvalidator.parser.Parser$Type valueOf(java.lang.String)>($stack51)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "119"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, parserType = staticinvoke <org.unigram.docvalidator.parser.Parser$Type: org.unigram.docvalidator.parser.Parser$Type valueOf(java.lang.String)>($stack51), 119)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "123"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, documentCollection = staticinvoke <org.unigram.docvalidator.DocumentGenerator: org.unigram.docvalidator.model.DocumentCollection generate(java.lang.String[],org.unigram.docvalidator.util.DVResource,org.unigram.docvalidator.parser.Parser$Type)>(inputFileNames, conf, parserType), 123)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "137"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection), 137)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "distributor = staticinvoke <org.unigram.docvalidator.util.ResultDistributorFactory: org.unigram.docvalidator.util.ResultDistributor createDistributor(org.unigram.docvalidator.util.Formatter$Type,java.io.OutputStream)>(outputFormat, $stack56)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "130"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, distributor = staticinvoke <org.unigram.docvalidator.util.ResultDistributorFactory: org.unigram.docvalidator.util.ResultDistributor createDistributor(org.unigram.docvalidator.util.Formatter$Type,java.io.OutputStream)>(outputFormat, $stack56), 130)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack60 = virtualinvoke $stack59.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>(distributor)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "134"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, $stack60 = virtualinvoke $stack59.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator$Builder setResultDistributor(org.unigram.docvalidator.util.ResultDistributor)>(distributor), 134)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "validator = virtualinvoke $stack60.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator build()>()",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "135"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, validator = virtualinvoke $stack60.<org.unigram.docvalidator.DocumentValidator$Builder: org.unigram.docvalidator.DocumentValidator build()>(), 135)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection)",
+"location": {
+  "file": "",
+  "class": "org.unigram.docvalidator.Main",
+  "method": "<org.unigram.docvalidator.Main: void main(java.lang.String[])>",
+  "line": "137"
+},
+"stackTrace": ["(<org.unigram.docvalidator.Main: void main(java.lang.String[])>, virtualinvoke validator.<org.unigram.docvalidator.DocumentValidator: java.util.List check(org.unigram.docvalidator.model.DocumentCollection)>(documentCollection), 137)"]
+}]
+}
+}
+
+]

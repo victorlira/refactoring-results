@@ -1,0 +1,131 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,$stack16 := @caughtexception,116,SourceNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) => Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,e = $stack16,126,SinkNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) => Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,interfaceinvoke $stack19.<com.segment.analytics.Log: void print(com.segment.analytics.Log$Level,java.lang.Throwable,java.lang.String,java.lang.Object[])>($stack18, e, "Interrupted while adding message %s.", $stack17),127,SinkNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, interfaceinvoke $stack19.<com.segment.analytics.Log: void print(com.segment.analytics.Log$Level,java.lang.Throwable,java.lang.String,java.lang.Object[])>($stack18, e, 'Interrupted while adding message %s.', $stack17), 127)) SINK=>BASE: Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,$stack16 := @caughtexception,116,SourceNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) => Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,e = $stack16,126,SinkNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) => Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,interfaceinvoke $stack19.<com.segment.analytics.Log: void print(com.segment.analytics.Log$Level,java.lang.Throwable,java.lang.String,java.lang.Object[])>($stack18, e, "Interrupted while adding message %s.", $stack17),127,SinkNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, interfaceinvoke $stack19.<com.segment.analytics.Log: void print(com.segment.analytics.Log$Level,java.lang.Throwable,java.lang.String,java.lang.Object[])>($stack18, e, 'Interrupted while adding message %s.', $stack17), 127))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack16 := @caughtexception",
+				"location": {
+					"file": "",
+					"class": "com.segment.analytics.internal.AnalyticsClient",
+					"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+					"line": 116
+				},
+				"stackTrace": [{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 116
+},{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 126
+},{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 127
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack16 := @caughtexception",
+				"location": {
+					"file": "",
+					"class": "com.segment.analytics.internal.AnalyticsClient",
+					"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+					"line": 116
+				},
+				"stackTrace": [{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 116
+},{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 126
+},{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 127
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "interfaceinvoke $stack19.<com.segment.analytics.Log: void print(com.segment.analytics.Log$Level,java.lang.Throwable,java.lang.String,java.lang.Object[])>($stack18, e, 'Interrupted while adding message %s.', $stack17)",
+				"location": {
+					"file": "",
+					"class": "com.segment.analytics.internal.AnalyticsClient",
+					"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+					"line": 127
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,$stack16 := @caughtexception,116,SourceNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) => Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,e = $stack16,126,SinkNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) SINK=>BASE: Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,$stack16 := @caughtexception,116,SourceNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126)) => Node(<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>,e = $stack16,126,SinkNode, path: (<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>, e = $stack16, 126))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack16 := @caughtexception",
+				"location": {
+					"file": "",
+					"class": "com.segment.analytics.internal.AnalyticsClient",
+					"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+					"line": 116
+				},
+				"stackTrace": [{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 116
+},{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 126
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack16 := @caughtexception",
+				"location": {
+					"file": "",
+					"class": "com.segment.analytics.internal.AnalyticsClient",
+					"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+					"line": 116
+				},
+				"stackTrace": [{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 116
+},{
+	"class": "com.segment.analytics.internal.AnalyticsClient",
+	"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+	"line": 126
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "e = $stack16",
+				"location": {
+					"file": "",
+					"class": "com.segment.analytics.internal.AnalyticsClient",
+					"method": "<com.segment.analytics.internal.AnalyticsClient: void enqueue(com.segment.analytics.messages.Message)>",
+					"line": 126
+				}
+			}
+		]
+	}
+}
+
+]

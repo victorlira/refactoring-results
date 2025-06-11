@@ -1,0 +1,173 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>($stack28)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "448"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, $stack15 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>($stack28), 448)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "cls = $stack15",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "449"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, cls = $stack15, 449)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "apiClass := @parameter1: java.lang.Class",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls), 454)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = staticinvoke <io.swagger.util.ParameterProcessor: io.swagger.models.parameters.Parameter applyAnnotations(io.swagger.models.Swagger,io.swagger.models.parameters.Parameter,java.lang.reflect.Type,java.util.List)>($stack12, tmp$854077600, apiClass, $stack13)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>",
+  "line": "486"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls), 454)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "454"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls), 454)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = e#5 instanceof io.swagger.models.parameters.BodyParameter",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "456"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, $stack19 = e#5 instanceof io.swagger.models.parameters.BodyParameter, 456)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack19 == 0 goto virtualinvoke operation.<io.swagger.models.Operation: void addParameter(io.swagger.models.parameters.Parameter)>(e#5)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "456"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke param.<io.swagger.annotations.ApiImplicitParam: java.lang.Class dataTypeClass()>()",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "449"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, $stack15 = interfaceinvoke param.<io.swagger.annotations.ApiImplicitParam: java.lang.Class dataTypeClass()>(), 449)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "cls = $stack15",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "449"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, cls = $stack15, 449)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "apiClass := @parameter1: java.lang.Class",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls), 454)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack14 = staticinvoke <io.swagger.util.ParameterProcessor: io.swagger.models.parameters.Parameter applyAnnotations(io.swagger.models.Swagger,io.swagger.models.parameters.Parameter,java.lang.reflect.Type,java.util.List)>($stack12, tmp$854077600, apiClass, $stack13)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>",
+  "line": "486"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls), 454)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "454"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, e#5 = virtualinvoke this.<com.github.kongchen.swagger.docgen.reader.AbstractReader: io.swagger.models.parameters.Parameter readImplicitParam(io.swagger.annotations.ApiImplicitParam,java.lang.Class)>(param, cls), 454)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = e#5 instanceof io.swagger.models.parameters.BodyParameter",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "456"
+},
+"stackTrace": ["(<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>, $stack19 = e#5 instanceof io.swagger.models.parameters.BodyParameter, 456)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack19 == 0 goto virtualinvoke operation.<io.swagger.models.Operation: void addParameter(io.swagger.models.parameters.Parameter)>(e#5)",
+"location": {
+  "file": "",
+  "class": "com.github.kongchen.swagger.docgen.reader.AbstractReader",
+  "method": "<com.github.kongchen.swagger.docgen.reader.AbstractReader: void readImplicitParameters(java.lang.reflect.Method,io.swagger.models.Operation)>",
+  "line": "456"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

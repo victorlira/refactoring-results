@@ -1,0 +1,223 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,$stack58 = newarray (java.lang.Object)[1],196,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, bodyContent = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>('<html><body><h2>404 Not found</h2>The requested route [%s] has not been mapped in Spark</body></html>', $stack58), 196)) => Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,bodyContent = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("<html><body><h2>404 Not found</h2>The requested route [%s] has not been mapped in Spark</body></html>", $stack58),196,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, bodyContent = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>('<html><body><h2>404 Not found</h2>The requested route [%s] has not been mapped in Spark</body></html>', $stack58), 196)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack4 = l0.<java.lang.String: char[] value>,918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204) => (<java.lang.String: byte[] getBytes(java.lang.String)>, $stack4 = l0.<java.lang.String: char[] value>, 918)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack5 = staticinvoke <java.lang.StringCoding: byte[] encode(java.lang.String,char[],int,int)>(l1, $stack4, 0, $stack3),918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) => Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,$stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>("utf-8"),204,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) SINK=>BASE: Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,bodyContent = $stack100,124,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, bodyContent = $stack100, 124)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack2 = l0.<java.lang.String: char[] value>,918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204) => (<java.lang.String: byte[] getBytes(java.lang.String)>, $stack2 = l0.<java.lang.String: char[] value>, 918)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack3 = lengthof $stack2,918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204) => (<java.lang.String: byte[] getBytes(java.lang.String)>, $stack3 = lengthof $stack2, 918)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack5 = staticinvoke <java.lang.StringCoding: byte[] encode(java.lang.String,char[],int,int)>(l1, $stack4, 0, $stack3),918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) => Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,$stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>("utf-8"),204,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "bodyContent = $stack100",
+				"location": {
+					"file": "",
+					"class": "spark.webserver.MatcherFilter",
+					"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+					"line": 124
+				},
+				"stackTrace": [{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 124
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 204
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack58 = newarray (java.lang.Object)[1]",
+				"location": {
+					"file": "",
+					"class": "spark.webserver.MatcherFilter",
+					"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+					"line": 196
+				},
+				"stackTrace": [{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 196
+},{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 196
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 204
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8')",
+				"location": {
+					"file": "",
+					"class": "spark.webserver.MatcherFilter",
+					"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+					"line": 204
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,$stack58 = newarray (java.lang.Object)[1],196,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, bodyContent = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>('<html><body><h2>404 Not found</h2>The requested route [%s] has not been mapped in Spark</body></html>', $stack58), 196)) => Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,bodyContent = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("<html><body><h2>404 Not found</h2>The requested route [%s] has not been mapped in Spark</body></html>", $stack58),196,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, bodyContent = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>('<html><body><h2>404 Not found</h2>The requested route [%s] has not been mapped in Spark</body></html>', $stack58), 196)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack4 = l0.<java.lang.String: char[] value>,918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204) => (<java.lang.String: byte[] getBytes(java.lang.String)>, $stack4 = l0.<java.lang.String: char[] value>, 918)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack5 = staticinvoke <java.lang.StringCoding: byte[] encode(java.lang.String,char[],int,int)>(l1, $stack4, 0, $stack3),918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) SINK=>BASE: Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,element = virtualinvoke response#20.<spark.Route: java.lang.Object handle(spark.Request,spark.Response)>(req, res),138,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, element = virtualinvoke response#20.<spark.Route: java.lang.Object handle(spark.Request,spark.Response)>(req, res), 138)) => Node(<spark.Route: java.lang.String render(java.lang.Object)>,element := @parameter0: java.lang.Object,-1,SimpleNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139)) => Node(<java.lang.Object: java.lang.String toString()>,l0 := @this: java.lang.Object,-1,SimpleNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74)) => Node(<java.lang.Object: java.lang.String toString()>,$stack2 = virtualinvoke l0.<java.lang.Object: java.lang.Class getClass()>(),236,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74) => (<java.lang.Object: java.lang.String toString()>, $stack2 = virtualinvoke l0.<java.lang.Object: java.lang.Class getClass()>(), 236)) => Node(<java.lang.Object: java.lang.String toString()>,$stack3 = virtualinvoke $stack2.<java.lang.Class: java.lang.String getName()>(),236,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74) => (<java.lang.Object: java.lang.String toString()>, $stack3 = virtualinvoke $stack2.<java.lang.Class: java.lang.String getName()>(), 236)) => Node(<java.lang.Object: java.lang.String toString()>,$stack4 = virtualinvoke $stack1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack3),236,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74) => (<java.lang.Object: java.lang.String toString()>, $stack4 = virtualinvoke $stack1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack3), 236)) => Node(<java.lang.Object: java.lang.String toString()>,$stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("@"),236,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74) => (<java.lang.Object: java.lang.String toString()>, $stack5 = virtualinvoke $stack4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('@'), 236)) => Node(<java.lang.Object: java.lang.String toString()>,$stack8 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack7),236,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74) => (<java.lang.Object: java.lang.String toString()>, $stack8 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack7), 236)) => Node(<java.lang.Object: java.lang.String toString()>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.String toString()>(),236,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139) => (<spark.Route: java.lang.String render(java.lang.Object)>, $stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(), 74)) => Node(<spark.Route: java.lang.String render(java.lang.Object)>,$stack2 = virtualinvoke element.<java.lang.Object: java.lang.String toString()>(),74,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139)) => Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element),139,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, request#19 = virtualinvoke response#20.<spark.Route: java.lang.String render(java.lang.Object)>(element), 139)) => Node(<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>,bodyContent = request#19,142,SourceNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, bodyContent = request#19, 142)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,l0 := @this: java.lang.String,-1,SimpleNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack2 = l0.<java.lang.String: char[] value>,918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204) => (<java.lang.String: byte[] getBytes(java.lang.String)>, $stack2 = l0.<java.lang.String: char[] value>, 918)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack3 = lengthof $stack2,918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204) => (<java.lang.String: byte[] getBytes(java.lang.String)>, $stack3 = lengthof $stack2, 918)) => Node(<java.lang.String: byte[] getBytes(java.lang.String)>,$stack5 = staticinvoke <java.lang.StringCoding: byte[] encode(java.lang.String,char[],int,int)>(l1, $stack4, 0, $stack3),918,SinkNode, path: (<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>, $stack55 = virtualinvoke bodyContent.<java.lang.String: byte[] getBytes(java.lang.String)>('utf-8'), 204))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "element = virtualinvoke response#20.<spark.Route: java.lang.Object handle(spark.Request,spark.Response)>(req, res)",
+				"location": {
+					"file": "",
+					"class": "spark.webserver.MatcherFilter",
+					"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+					"line": 138
+				},
+				"stackTrace": [{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 138
+},{
+	"class": "spark.Route",
+	"method": "<spark.Route: java.lang.String render(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": -1
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": 236
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": 236
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": 236
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": 236
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": 236
+},{
+	"class": "java.lang.Object",
+	"method": "<java.lang.Object: java.lang.String toString()>",
+	"line": 236
+},{
+	"class": "spark.Route",
+	"method": "<spark.Route: java.lang.String render(java.lang.Object)>",
+	"line": 74
+},{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 139
+},{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 142
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack58 = newarray (java.lang.Object)[1]",
+				"location": {
+					"file": "",
+					"class": "spark.webserver.MatcherFilter",
+					"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+					"line": 196
+				},
+				"stackTrace": [{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 196
+},{
+	"class": "spark.webserver.MatcherFilter",
+	"method": "<spark.webserver.MatcherFilter: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)>",
+	"line": 196
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+},{
+	"class": "java.lang.String",
+	"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+	"line": 918
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack5 = staticinvoke <java.lang.StringCoding: byte[] encode(java.lang.String,char[],int,int)>(l1, $stack4, 0, $stack3)",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<java.lang.String: byte[] getBytes(java.lang.String)>",
+					"line": 918
+				}
+			}
+		]
+	}
+}
+
+]

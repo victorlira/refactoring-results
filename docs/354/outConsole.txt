@@ -1,0 +1,128 @@
+Running soot scenario dependency-check-sonar-plugin;org.sonar.dependencycheck.DependencyCheckPlugin;define(Context);f0032e903f332c22e4beb65b317edcafb7fdf2cf
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/f0032e903f332c22e4beb65b317edcafb7fdf2cf/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,44200
+Time to perform Confluence 1 Inter 0,39100
+Configure Soot Confluence 2 Inter 0,15700
+Time to perform Confluence 2 Inter 0,07600
+Visited methods: 6
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack16[1] = $stack40,75,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16),49,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49))
+SINK=>BASE: Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack8 = virtualinvoke $stack7.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>("${WORKSPACE}/dependency-check-report.xml"),54,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack8 = virtualinvoke $stack7.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>('${WORKSPACE}/dependency-check-report.xml'), 54)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack9 = virtualinvoke $stack8.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(),55,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack9 = virtualinvoke $stack8.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 55)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16),49,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)), SOURCE=>BASE: Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack16[1] = $stack40,75,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16),49,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49))
+SINK=>BASE: Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>("${WORKSPACE}/dependency-check-report.html"),60,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>('${WORKSPACE}/dependency-check-report.html'), 60)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack15 = virtualinvoke $stack14.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(),61,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack15 = virtualinvoke $stack14.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 61)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16),49,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49))]
+Confluence interference in <org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>
+Confluence flows from execution of lines 49 and 54 to line 49, defined in virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16) and $stack8 = virtualinvoke $stack7.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>("${WORKSPACE}/dependency-check-report.xml") and used in virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16)
+Caused by line 49 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)
+Caused by line 54 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack8 = virtualinvoke $stack7.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>('${WORKSPACE}/dependency-check-report.xml'), 54)
+Caused by line 49 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)
+Confluence interference in <org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>
+Confluence flows from execution of lines 49 and 60 to line 49, defined in virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16) and $stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>("${WORKSPACE}/dependency-check-report.html") and used in virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16)
+Caused by line 49 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)
+Caused by line 60 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack14 = virtualinvoke $stack13.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>('${WORKSPACE}/dependency-check-report.html'), 60)
+Caused by line 49 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, virtualinvoke context.<org.sonar.api.Plugin$Context: org.sonar.api.Plugin$Context addExtensions(java.lang.Object,java.lang.Object,java.lang.Object[])>($stack9, $stack15, $stack16), 49)
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/f0032e903f332c22e4beb65b317edcafb7fdf2cf/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,71600
+Runtime: 0.01s
+Time to perform OA Inter 0,77100
+OA Inter Visited methods: 15
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/f0032e903f332c22e4beb65b317edcafb7fdf2cf/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,50300
+Time to perform DFP Inter 0,42400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 3
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/f0032e903f332c22e4beb65b317edcafb7fdf2cf/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,36400
+Time to perform DFP Inter 0,35700
+Depth limit: 5
+CONFLICTS: DF interference in <org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>
+Data flows from execution of line 73 to 75, defined in $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36) and propagated in $stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>()
+Caused by line 73 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)
+Caused by line 75 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 75)
+DF interference in <org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>
+Data flows from execution of line 73 to 74, defined in $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36) and propagated in $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38)
+Caused by line 73 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)
+Caused by line 74 flow: path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74)
+[List(Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36),73,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38),74,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74))), List(Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36),73,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38),74,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(),75,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 75)))]
+Visited methods: 3
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/f0032e903f332c22e4beb65b317edcafb7fdf2cf/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,39700
+Time to perform PDG 0,39400
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/dependency-check-sonar-plugin/f0032e903f332c22e4beb65b317edcafb7fdf2cf/original-without-dependencies/sonar-dependency-check-plugin-1.1.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,39600
+Time to perform PDG 0,49400
+CONFLICTS: [List(Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36),73,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38),74,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74))), List(Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36),73,SourceNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack37 = virtualinvoke $stack33.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder defaultValue(java.lang.String)>($stack36), 73)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38),74,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack39 = virtualinvoke $stack37.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition$Builder type(org.sonar.api.PropertyType)>($stack38), 74)) => Node(<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>,$stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(),75,SinkNode, path: (<org.sonar.dependencycheck.DependencyCheckPlugin: void define(org.sonar.api.Plugin$Context)>, $stack40 = virtualinvoke $stack39.<org.sonar.api.config.PropertyDefinition$Builder: org.sonar.api.config.PropertyDefinition build()>(), 75)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

@@ -14,7 +14,8 @@
       "description": "extracted variable declaration",
       "codeElement": "bitCompressed : int"
     },
-    "line": "133"
+    "line": "134",
+    "branchLine": "133"
   },
   {
     "branch": "L",
@@ -31,7 +32,26 @@
       "description": "extracted variable declaration",
       "codeElement": "bitCompressed : int"
     },
-    "line": "133"
+    "line": "134",
+    "branchLine": "133"
+  },
+  {
+    "branch": "L",
+    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
+    "description": {
+      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
+      "startLine": 146,
+      "endLine": 146,
+      "startColumn": 17,
+      "endColumn": 79,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "151",
+    "branchLine": "146"
   },
   {
     "branch": "L",
@@ -40,66 +60,16 @@
     "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
     "description": {
       "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 91,
-      "endLine": 174,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
+      "startLine": 146,
+      "endLine": 146,
+      "startColumn": 17,
+      "endColumn": 79,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "params[Imgcodecs.DICOM_PARAM_BITS_PER_SAMPLE]=bitCompressed;\n"
     },
-    "line": "133"
-  },
-  {
-    "branch": "L",
-    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "description": {
-      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 91,
-      "endLine": 174,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
-    },
-    "line": "136"
-  },
-  {
-    "branch": "L",
-    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "description": {
-      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 91,
-      "endLine": 174,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
-    },
-    "line": "139"
-  },
-  {
-    "branch": "L",
-    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "description": {
-      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 91,
-      "endLine": 174,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
-    },
-    "line": "151"
+    "line": "151",
+    "branchLine": "146"
   },
   {
     "branch": "R",
@@ -116,7 +86,8 @@
       "description": "extracted variable declaration",
       "codeElement": "bitCompressed : int"
     },
-    "line": "132"
+    "line": "134",
+    "branchLine": "132"
   },
   {
     "branch": "R",
@@ -133,7 +104,26 @@
       "description": "extracted variable declaration",
       "codeElement": "bitCompressed : int"
     },
-    "line": "132"
+    "line": "134",
+    "branchLine": "132"
+  },
+  {
+    "branch": "R",
+    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
+    "description": {
+      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
+      "startLine": 144,
+      "endLine": 144,
+      "startColumn": 17,
+      "endColumn": 79,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "151",
+    "branchLine": "144"
   },
   {
     "branch": "R",
@@ -142,65 +132,15 @@
     "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
     "description": {
       "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 89,
-      "endLine": 172,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
+      "startLine": 144,
+      "endLine": 144,
+      "startColumn": 17,
+      "endColumn": 79,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "params[Imgcodecs.DICOM_PARAM_BITS_PER_SAMPLE]=bitCompressed;\n"
     },
-    "line": "132"
-  },
-  {
-    "branch": "R",
-    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "description": {
-      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 89,
-      "endLine": 172,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
-    },
-    "line": "133"
-  },
-  {
-    "branch": "R",
-    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "description": {
-      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 89,
-      "endLine": 172,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
-    },
-    "line": "137"
-  },
-  {
-    "branch": "R",
-    "class": "org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tbitCompressed : int in method public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void from class org.dcm4che3.opencv.NativeJPEGImageWriter",
-    "description": {
-      "filePath": "dcm4che-imageio-opencv/src/main/java/org/dcm4che3/opencv/NativeJPEGImageWriter.java",
-      "startLine": 89,
-      "endLine": 172,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public write(streamMetadata IIOMetadata, image IIOImage, param ImageWriteParam) : void"
-    },
-    "line": "150"
+    "line": "151",
+    "branchLine": "144"
   }
 ]

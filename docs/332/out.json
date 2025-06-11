@@ -1,0 +1,283 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>,$stack1 = this.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName name>,40,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack73 = virtualinvoke dependencyController#19.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>(), 306)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,$stack81 = virtualinvoke dependencyController#19.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>(),307,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack81 = virtualinvoke dependencyController#19.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>(), 307)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,serviceName := @parameter0: org.jboss.msc.service.ServiceName,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack6 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Service "),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack6 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Service '), 348)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(serviceName),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(serviceName), 348)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" not found"),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' not found'), 348)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.String toString()>(),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.String toString()>(), 348)) => Node(<org.jboss.msc.service.ServiceNotFoundException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, specialinvoke $stack4.<org.jboss.msc.service.ServiceNotFoundException: void <init>(java.lang.String)>($stack9), 348)) => Node(<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 47)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1),66,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 47) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) SINK=>BASE: Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack1 = this.<org.jboss.msc.service.BatchServiceBuilderImpl: java.util.Set aliases>,242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack1 = this.<org.jboss.msc.service.BatchServiceBuilderImpl: java.util.Set aliases>, 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack3 = interfaceinvoke $stack1.<java.util.Set: int size()>(),242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack3 = interfaceinvoke $stack1.<java.util.Set: int size()>(), 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack4 = newarray (org.jboss.msc.service.ServiceName)[$stack3],242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack4 = newarray (org.jboss.msc.service.ServiceName)[$stack3], 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack5 = interfaceinvoke $stack2.<java.util.Set: java.lang.Object[] toArray(java.lang.Object[])>($stack4),242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack5 = interfaceinvoke $stack2.<java.util.Set: java.lang.Object[] toArray(java.lang.Object[])>($stack4), 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack6 = (org.jboss.msc.service.ServiceName[]) $stack5,242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,aliases = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(),268,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, aliases = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 268)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,dependencyEntry#24 = aliases,325,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, dependencyEntry#24 = aliases, 325)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,alias = dependencyEntry#24[l12],342,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, alias = dependencyEntry#24[l12], 342)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,$stack59 = virtualinvoke $stack58.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(alias),327,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack59 = virtualinvoke $stack58.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(alias), 327)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,$stack60 = virtualinvoke $stack59.<java.lang.StringBuilder: java.lang.String toString()>(),327,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack60 = virtualinvoke $stack59.<java.lang.StringBuilder: java.lang.String toString()>(), 327)) => Node(<org.jboss.msc.service.DuplicateServiceException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack63.<org.jboss.msc.service.DuplicateServiceException: void <init>(java.lang.String)>($stack67), 322)) => Node(<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 47)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1),66,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 47) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<org.jboss.msc.service.BatchServiceBuilderImpl: java.util.Set aliases>",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+					"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+					"line": 242
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 268
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 325
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 342
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 327
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 327
+},{
+	"class": "org.jboss.msc.service.DuplicateServiceException",
+	"method": "<org.jboss.msc.service.DuplicateServiceException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceRegistryException",
+	"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName name>",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.NamedInjection",
+					"method": "<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.NamedInjection",
+	"method": "<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>",
+	"line": 40
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 307
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceNotFoundException",
+	"method": "<org.jboss.msc.service.ServiceNotFoundException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceRegistryException",
+	"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Exception",
+					"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+					"line": 66
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>,$stack1 = this.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName name>,40,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack73 = virtualinvoke dependencyController#19.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>(), 306)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,$stack81 = virtualinvoke dependencyController#19.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>(),307,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack81 = virtualinvoke dependencyController#19.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>(), 307)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,serviceName := @parameter0: org.jboss.msc.service.ServiceName,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack6 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Service "),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack6 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Service '), 348)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(serviceName),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(serviceName), 348)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" not found"),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack8 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' not found'), 348)) => Node(<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>,$stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.String toString()>(),348,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, $stack9 = virtualinvoke $stack8.<java.lang.StringBuilder: java.lang.String toString()>(), 348)) => Node(<org.jboss.msc.service.ServiceNotFoundException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack82 = virtualinvoke this.<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>($stack81), 307) => (<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>, specialinvoke $stack4.<org.jboss.msc.service.ServiceNotFoundException: void <init>(java.lang.String)>($stack9), 348)) => Node(<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47)) => Node(<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>,specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg),47,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 47)) SINK=>BASE: Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack1 = this.<org.jboss.msc.service.BatchServiceBuilderImpl: java.util.Set aliases>,242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack1 = this.<org.jboss.msc.service.BatchServiceBuilderImpl: java.util.Set aliases>, 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack3 = interfaceinvoke $stack1.<java.util.Set: int size()>(),242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack3 = interfaceinvoke $stack1.<java.util.Set: int size()>(), 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack4 = newarray (org.jboss.msc.service.ServiceName)[$stack3],242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack4 = newarray (org.jboss.msc.service.ServiceName)[$stack3], 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack5 = interfaceinvoke $stack2.<java.util.Set: java.lang.Object[] toArray(java.lang.Object[])>($stack4),242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265) => (<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>, $stack5 = interfaceinvoke $stack2.<java.util.Set: java.lang.Object[] toArray(java.lang.Object[])>($stack4), 242)) => Node(<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>,$stack6 = (org.jboss.msc.service.ServiceName[]) $stack5,242,SourceNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack17 = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 265)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,aliases = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(),268,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, aliases = virtualinvoke entry.<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>(), 268)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,dependencyEntry#24 = aliases,325,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, dependencyEntry#24 = aliases, 325)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,alias = dependencyEntry#24[l12],342,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, alias = dependencyEntry#24[l12], 342)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,$stack59 = virtualinvoke $stack58.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(alias),327,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack59 = virtualinvoke $stack58.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(alias), 327)) => Node(<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>,$stack60 = virtualinvoke $stack59.<java.lang.StringBuilder: java.lang.String toString()>(),327,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, $stack60 = virtualinvoke $stack59.<java.lang.StringBuilder: java.lang.String toString()>(), 327)) => Node(<org.jboss.msc.service.DuplicateServiceException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack63.<org.jboss.msc.service.DuplicateServiceException: void <init>(java.lang.String)>($stack67), 322)) => Node(<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>,msg := @parameter0: java.lang.String,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47)) => Node(<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>,specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg),47,SinkNode, path: (<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>, specialinvoke $stack111.<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>($stack115), 285) => (<org.jboss.msc.service.CircularDependencyException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ResolutionException: void <init>(java.lang.String)>, specialinvoke this.<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>(msg), 47) => (<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>, specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg), 47))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = this.<org.jboss.msc.service.BatchServiceBuilderImpl: java.util.Set aliases>",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+					"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+					"line": 242
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.BatchServiceBuilderImpl",
+	"method": "<org.jboss.msc.service.BatchServiceBuilderImpl: org.jboss.msc.service.ServiceName[] getAliases()>",
+	"line": 242
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 268
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 325
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 342
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 327
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 327
+},{
+	"class": "org.jboss.msc.service.DuplicateServiceException",
+	"method": "<org.jboss.msc.service.DuplicateServiceException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceRegistryException",
+	"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceRegistryException",
+	"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+	"line": 47
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack1 = this.<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName name>",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.NamedInjection",
+					"method": "<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>",
+					"line": 40
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.NamedInjection",
+	"method": "<org.jboss.msc.service.NamedInjection: org.jboss.msc.service.ServiceName getName()>",
+	"line": 40
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: void doResolve(org.jboss.msc.service.BatchServiceBuilderImpl,java.util.Map)>",
+	"line": 307
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceContainerImpl",
+	"method": "<org.jboss.msc.service.ServiceContainerImpl: org.jboss.msc.service.ServiceController getRequiredService(org.jboss.msc.service.ServiceName)>",
+	"line": 348
+},{
+	"class": "org.jboss.msc.service.ServiceNotFoundException",
+	"method": "<org.jboss.msc.service.ServiceNotFoundException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceRegistryException",
+	"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "org.jboss.msc.service.ServiceRegistryException",
+	"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+	"line": 47
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke this.<java.lang.Exception: void <init>(java.lang.String)>(msg)",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.ServiceRegistryException",
+					"method": "<org.jboss.msc.service.ServiceRegistryException: void <init>(java.lang.String)>",
+					"line": 47
+				}
+			}
+		]
+	}
+}
+
+]

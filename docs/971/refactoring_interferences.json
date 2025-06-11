@@ -2,18 +2,37 @@
   {
     "branch": "L",
     "class": "com.github.jsonldjava.core.Context",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract Variable\tnextRemoteContexts : List<String> in method private parse(localContext Object, remoteContexts List<String>, parsingARemoteContext boolean) : Context from class com.github.jsonldjava.core.Context",
+    "description": {
+      "filePath": "core/src/main/java/com/github/jsonldjava/core/Context.java",
+      "startLine": 197,
+      "endLine": 197,
+      "startColumn": 17,
+      "endColumn": 45,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": null
+    },
+    "line": "202",
+    "branchLine": "197"
+  },
+  {
+    "branch": "L",
+    "class": "com.github.jsonldjava.core.Context",
     "tool": "ReExtractorPlus",
     "refactoringInfo": "Extract Variable\tnextRemoteContexts : List<String> in method private parse(localContext Object, remoteContexts List<String>, parsingARemoteContext boolean) : Context from class com.github.jsonldjava.core.Context",
     "description": {
       "filePath": "core/src/main/java/com/github/jsonldjava/core/Context.java",
-      "startLine": 152,
-      "endLine": 288,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "private parse(localContext Object, remoteContexts List<String>, parsingARemoteContext boolean) : Context"
+      "startLine": 197,
+      "endLine": 197,
+      "startColumn": 17,
+      "endColumn": 45,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "statement with the name of the extracted variable",
+      "codeElement": "nextRemoteContexts.add(uri);\n"
     },
-    "line": "196"
+    "line": "202",
+    "branchLine": "197"
   }
 ]

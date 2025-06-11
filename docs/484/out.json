@@ -1,0 +1,162 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "cis = tmp$1041735841",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "76"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, cis = tmp$1041735841, 76)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "is = cis",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "77"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, is = cis, 77)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$771642661 = (java.io.InputStream) is",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, tmp$771642661 = (java.io.InputStream) is, -1)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: byte[] readStream(java.io.InputStream)>(tmp$771642661)",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, $stack30 = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: byte[] readStream(java.io.InputStream)>(tmp$771642661), 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "uri#9 = staticinvoke <com.itextpdf.text.Image: com.itextpdf.text.Image getInstance(byte[])>($stack30)",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, uri#9 = staticinvoke <com.itextpdf.text.Image: com.itextpdf.text.Image getInstance(byte[])>($stack30), 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "image := @parameter0: com.itextpdf.text.Image",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextFSImage",
+  "method": "<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, resource = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>(uriStr), 68)","(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>, specialinvoke $stack7.<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>(image), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.xhtmlrenderer.pdf.ITextFSImage: com.itextpdf.text.Image _image> = image",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextFSImage",
+  "method": "<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>",
+  "line": "30"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, resource = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>(uriStr), 68)","(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>, specialinvoke $stack7.<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>(image), 122)","(<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>, this.<org.xhtmlrenderer.pdf.ITextFSImage: com.itextpdf.text.Image _image> = image, 30)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "is = cis",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "77"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, is = cis, 77)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$771642661 = (java.io.InputStream) is",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, tmp$771642661 = (java.io.InputStream) is, -1)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack30 = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: byte[] readStream(java.io.InputStream)>(tmp$771642661)",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, $stack30 = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: byte[] readStream(java.io.InputStream)>(tmp$771642661), 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "uri#9 = staticinvoke <com.itextpdf.text.Image: com.itextpdf.text.Image getInstance(byte[])>($stack30)",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextUserAgent",
+  "method": "<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>",
+  "line": "87"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, uri#9 = staticinvoke <com.itextpdf.text.Image: com.itextpdf.text.Image getInstance(byte[])>($stack30), 87)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "image := @parameter0: com.itextpdf.text.Image",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextFSImage",
+  "method": "<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, resource = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>(uriStr), 68)","(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>, specialinvoke $stack7.<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>(image), 122)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "this.<org.xhtmlrenderer.pdf.ITextFSImage: com.itextpdf.text.Image _image> = image",
+"location": {
+  "file": "",
+  "class": "org.xhtmlrenderer.pdf.ITextFSImage",
+  "method": "<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>",
+  "line": "30"
+},
+"stackTrace": ["(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource getImageResource(java.lang.String)>, resource = specialinvoke this.<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>(uriStr), 68)","(<org.xhtmlrenderer.pdf.ITextUserAgent: org.xhtmlrenderer.resource.ImageResource loadEmbeddedBase64ImageResource(java.lang.String)>, specialinvoke $stack7.<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>(image), 122)","(<org.xhtmlrenderer.pdf.ITextFSImage: void <init>(com.itextpdf.text.Image)>, this.<org.xhtmlrenderer.pdf.ITextFSImage: com.itextpdf.text.Image _image> = image, 30)"]
+}]
+}
+}
+
+]

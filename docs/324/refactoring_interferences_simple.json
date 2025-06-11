@@ -3,21 +3,10 @@
     {
       "class": "org.apache.accumulo.tserver.Tablet",
       "refactoringInfo": [
-        "Rename Parameter\tdatafiles : SortedMap<FileRef,DataFileValue> to rawDatafiles : SortedMap<FileRef,DataFileValue> in method private Tablet(tabletServer TabletServer, location Text, extent KeyExtent, trm TabletResourceManager, conf Configuration, fs VolumeManager, rawLogEntries List<LogEntry>, rawDatafiles SortedMap<FileRef,DataFileValue>, time String, lastLocation TServerInstance, scanFiles Set<FileRef>, initFlushID long, initCompactID long) from class org.apache.accumulo.tserver.Tablet",
-        "Rename Parameter\tlogEntries : List<LogEntry> to rawLogEntries : List<LogEntry> in method private Tablet(tabletServer TabletServer, location Text, extent KeyExtent, trm TabletResourceManager, conf Configuration, fs VolumeManager, rawLogEntries List<LogEntry>, rawDatafiles SortedMap<FileRef,DataFileValue>, time String, lastLocation TServerInstance, scanFiles Set<FileRef>, initFlushID long, initCompactID long) from class org.apache.accumulo.tserver.Tablet"
-      ],
-      "line": "1257",
-      "filePath": "server/tserver/src/main/java/org/apache/accumulo/tserver/Tablet.java",
-      "branch": "R"
-    },
-    {
-      "class": "org.apache.accumulo.tserver.Tablet",
-      "refactoringInfo": [
-        "Localize Parameter\tlogEntries : List<LogEntry> to logEntries : List<LogEntry> in method private Tablet(tabletServer TabletServer, location Text, extent KeyExtent, trm TabletResourceManager, conf Configuration, fs VolumeManager, rawLogEntries List<LogEntry>, rawDatafiles SortedMap<FileRef,DataFileValue>, time String, lastLocation TServerInstance, scanFiles Set<FileRef>, initFlushID long, initCompactID long) from class org.apache.accumulo.tserver.Tablet",
-        "Rename Parameter\tdatafiles : SortedMap<FileRef,DataFileValue> to rawDatafiles : SortedMap<FileRef,DataFileValue> in method private Tablet(tabletServer TabletServer, location Text, extent KeyExtent, trm TabletResourceManager, conf Configuration, fs VolumeManager, rawLogEntries List<LogEntry>, rawDatafiles SortedMap<FileRef,DataFileValue>, time String, lastLocation TServerInstance, scanFiles Set<FileRef>, initFlushID long, initCompactID long) from class org.apache.accumulo.tserver.Tablet",
-        "Rename Parameter\tlogEntries : List<LogEntry> to rawLogEntries : List<LogEntry> in method private Tablet(tabletServer TabletServer, location Text, extent KeyExtent, trm TabletResourceManager, conf Configuration, fs VolumeManager, rawLogEntries List<LogEntry>, rawDatafiles SortedMap<FileRef,DataFileValue>, time String, lastLocation TServerInstance, scanFiles Set<FileRef>, initFlushID long, initCompactID long) from class org.apache.accumulo.tserver.Tablet"
+        "Localize Parameter\tlogEntries : List<LogEntry> to logEntries : List<LogEntry> in method private Tablet(tabletServer TabletServer, location Text, extent KeyExtent, trm TabletResourceManager, conf Configuration, fs VolumeManager, rawLogEntries List<LogEntry>, rawDatafiles SortedMap<FileRef,DataFileValue>, time String, lastLocation TServerInstance, scanFiles Set<FileRef>, initFlushID long, initCompactID long) from class org.apache.accumulo.tserver.Tablet"
       ],
       "line": "1268",
+      "branchLine": "1268",
       "filePath": "server/tserver/src/main/java/org/apache/accumulo/tserver/Tablet.java",
       "branch": "R"
     }

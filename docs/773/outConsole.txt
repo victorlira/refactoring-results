@@ -1,0 +1,194 @@
+Running soot scenario overture;org.overture.pog.obligation.POOperationDefinitionContext;makeBinds();f423e657f18ee0f6035dcc2f58f542a1dc745ae5
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/overture/f423e657f18ee0f6035dcc2f58f542a1dc745ae5/original-without-dependencies/Overture-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 1,45000
+Time to perform Confluence 1 Inter 1,19800
+Configure Soot Confluence 2 Inter 0,66000
+Time to perform Confluence 2 Inter 0,66500
+Visited methods: 52
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/overture/f423e657f18ee0f6035dcc2f58f542a1dc745ae5/original-without-dependencies/Overture-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,57900
+Runtime: 0.023s
+OA interference in class POOperationDefinitionContext, method java.util.List makeBinds(), execution of line 120 overrides 120, assigning to variable o, 
+Caused by line 120 flow:
+at org.overture.pog.obligation.POOperationDefinitionContext.makeBinds(POOperationDefinitionContext.java:120)
+at org.overture.ast.patterns.PMultipleBindBase.setPlist(PMultipleBindBase.java:195)
+at org.overture.ast.node.NodeList.clear(NodeList.java:123)
+And line 120 flow:
+at org.overture.pog.obligation.POOperationDefinitionContext.makeBinds(POOperationDefinitionContext.java:120)
+at org.overture.ast.patterns.PMultipleBindBase.setPlist(PMultipleBindBase.java:195)
+at org.overture.ast.node.NodeList.clear(NodeList.java:123)
+ 
+OA interference in class POOperationDefinitionContext, method java.util.List makeBinds(), execution of line 121 overrides 121, assigning to variable this.<org.overture.ast.patterns.ATypeMultipleBind: org.overture.ast.types.PType _type>, 
+Caused by line 121 flow:
+at org.overture.pog.obligation.POOperationDefinitionContext.makeBinds(POOperationDefinitionContext.java:121)
+at org.overture.ast.patterns.ATypeMultipleBind.setType(ATypeMultipleBind.java:209)
+And line 121 flow:
+at org.overture.pog.obligation.POOperationDefinitionContext.makeBinds(POOperationDefinitionContext.java:121)
+at org.overture.ast.patterns.ATypeMultipleBind.setType(ATypeMultipleBind.java:209)
+ 
+Time to perform OA Inter 2,19500
+OA Inter Visited methods: 37
+ Analysis results
+----------------------------
+ Number of conflicts: 8
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/overture/f423e657f18ee0f6035dcc2f58f542a1dc745ae5/original-without-dependencies/Overture-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,27200
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/overture/f423e657f18ee0f6035dcc2f58f542a1dc745ae5/original-without-dependencies/Overture-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,71600
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/overture/f423e657f18ee0f6035dcc2f58f542a1dc745ae5/original-without-dependencies/Overture-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,51400
+Time to perform PDG 1,04000
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/overture/f423e657f18ee0f6035dcc2f58f542a1dc745ae5/original-without-dependencies/Overture-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,47700
+Time to perform PDG 1,10900
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

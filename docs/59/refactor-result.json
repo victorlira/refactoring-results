@@ -14,7 +14,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covBuildCommand : Command"
     },
-    "line": "76"
+    "line": "76",
+    "branchLine": "75"
   },
   {
     "branch": "L",
@@ -31,7 +32,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "77"
+    "line": "77",
+    "branchLine": "76"
   },
   {
     "branch": "L",
@@ -48,7 +50,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covEmitJavaCommand : Command"
     },
-    "line": "108"
+    "line": "108",
+    "branchLine": "107"
   },
   {
     "branch": "L",
@@ -65,7 +68,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "109"
+    "line": "109",
+    "branchLine": "108"
   },
   {
     "branch": "L",
@@ -82,7 +86,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covCaptureCommand : Command"
     },
-    "line": "123"
+    "line": "123",
+    "branchLine": "122"
   },
   {
     "branch": "L",
@@ -99,7 +104,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "124"
+    "line": "124",
+    "branchLine": "123"
   },
   {
     "branch": "L",
@@ -116,7 +122,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covManageHistoryCommand : Command"
     },
-    "line": "141"
+    "line": "141",
+    "branchLine": "140"
   },
   {
     "branch": "L",
@@ -133,7 +140,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "142"
+    "line": "142",
+    "branchLine": "141"
   },
   {
     "branch": "L",
@@ -150,7 +158,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covImportScmCommand : Command"
     },
-    "line": "159"
+    "line": "159",
+    "branchLine": "158"
   },
   {
     "branch": "L",
@@ -167,7 +176,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "160"
+    "line": "160",
+    "branchLine": "159"
   },
   {
     "branch": "L",
@@ -184,7 +194,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covAnalyzeCommand : Command"
     },
-    "line": "175"
+    "line": "175",
+    "branchLine": "174"
   },
   {
     "branch": "L",
@@ -201,7 +212,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "176"
+    "line": "176",
+    "branchLine": "175"
   },
   {
     "branch": "L",
@@ -218,7 +230,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covImportMsvscaCommand : Command"
     },
-    "line": "212"
+    "line": "212",
+    "branchLine": "211"
   },
   {
     "branch": "L",
@@ -235,7 +248,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "213"
+    "line": "213",
+    "branchLine": "212"
   },
   {
     "branch": "L",
@@ -252,7 +266,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covCommitDefectsCommand : Command"
     },
-    "line": "232"
+    "line": "232",
+    "branchLine": "231"
   },
   {
     "branch": "L",
@@ -269,7 +284,8 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "233"
+    "line": "233",
+    "branchLine": "232"
   },
   {
     "branch": "L",
@@ -286,7 +302,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covBuildCommand : Command"
     },
-    "line": "77"
+    "line": "77",
+    "branchLine": "76"
   },
   {
     "branch": "L",
@@ -303,7 +320,8 @@
       "description": "changed-type variable declaration",
       "codeElement": "covEmitJavaCommand : Command"
     },
-    "line": "123"
+    "line": "123",
+    "branchLine": "122"
   },
   {
     "branch": "L",
@@ -320,7 +338,8 @@
       "description": "extracted variable declaration",
       "codeElement": "postCovBuildCommand : Command"
     },
-    "line": "92"
+    "line": "92",
+    "branchLine": "91"
   },
   {
     "branch": "L",
@@ -335,451 +354,10 @@
       "endColumn": 59,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
       "description": "statement with the name of the extracted variable",
-      "codeElement": "int result=postCovBuildCommand.runCommand();\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
+      "codeElement": "int result=postCovBuildCommand.runCommand();\n"
     },
-    "line": "93"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "93"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "233"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "92"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "232"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "91"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "136"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "176"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "175"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "124"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "77"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "123"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "76"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "73"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "213"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "212"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "160"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "159"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "205"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "109"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "108"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "195"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "192"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "191"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "96"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "142"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovBuildCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "141"
+    "line": "93",
+    "branchLine": "92"
   },
   {
     "branch": "L",
@@ -796,7 +374,8 @@
       "description": "extracted variable declaration",
       "codeElement": "postCovAnalyzeCommand : Command"
     },
-    "line": "191"
+    "line": "191",
+    "branchLine": "190"
   },
   {
     "branch": "L",
@@ -811,450 +390,9 @@
       "endColumn": 61,
       "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
       "description": "statement with the name of the extracted variable",
-      "codeElement": "int result=postCovAnalyzeCommand.runCommand();\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n"
+      "codeElement": "int result=postCovAnalyzeCommand.runCommand();\n"
     },
-    "line": "192"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "93"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "233"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "92"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "232"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "91"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "136"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "176"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "175"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "124"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "77"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "123"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "76"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "73"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "213"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "212"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "160"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "159"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "205"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "109"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "108"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "195"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "192"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "191"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "96"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "142"
-  },
-  {
-    "branch": "L",
-    "class": "jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract Variable\tpostCovAnalyzeCommand : Command in method public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean from class jenkins.plugins.coverity.CoverityTool.CoverityToolHandler",
-    "description": {
-      "filePath": "src/main/java/jenkins/plugins/coverity/CoverityTool/CoverityToolHandler.java",
-      "startLine": 39,
-      "endLine": 346,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "method declaration with extracted variable",
-      "codeElement": "public perform(build AbstractBuild<?,?>, launcher Launcher, listener BuildListener, publisher CoverityPublisher) : boolean"
-    },
-    "line": "141"
+    "line": "192",
+    "branchLine": "191"
   }
 ]

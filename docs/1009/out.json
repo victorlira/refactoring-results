@@ -1,0 +1,44 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "gom = tmp$991806841",
+"location": {
+  "file": "",
+  "class": "xdi2.core.io.writers.XDIJSONPARSEWriter",
+  "method": "<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>",
+  "line": "163"
+},
+"stackTrace": ["(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, gom = tmp$991806841, 163)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "tmp$379056819 = (com.google.gson.JsonElement) gom",
+"location": {
+  "file": "",
+  "class": "xdi2.core.io.writers.XDIJSONPARSEWriter",
+  "method": "<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>",
+  "line": "-1"
+},
+"stackTrace": ["(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, tmp$379056819 = (com.google.gson.JsonElement) gom, -1)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$379056819)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.io.writers.XDIJSONPARSEWriter",
+  "method": "<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>",
+  "line": "189"
+},
+"stackTrace": ["(<xdi2.core.io.writers.XDIJSONPARSEWriter: com.google.gson.JsonElement makeGom(xdi2.core.syntax.XDIArc)>, virtualinvoke gom2.<com.google.gson.JsonObject: void add(java.lang.String,com.google.gson.JsonElement)>($stack10, tmp$379056819), 189)"]
+}]
+}
+}
+
+]

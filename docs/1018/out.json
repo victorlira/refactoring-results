@@ -1,0 +1,389 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0), 69)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = (xdi2.core.syntax.XDIArc) $stack4",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.util.XRI2Util",
+  "method": "<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>",
+  "line": "78"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack10 = virtualinvoke $stack9.<xdi2.core.syntax.XDIArc: boolean isCollection()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.util.XRI2Util",
+  "method": "<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>",
+  "line": "78"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack10 = virtualinvoke $stack9.<xdi2.core.syntax.XDIArc: boolean isCollection()>(), 78)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0), 69)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = (xdi2.core.syntax.XDIArc) $stack4",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.util.XRI2Util",
+  "method": "<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>",
+  "line": "78"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: xdi2.core.syntax.XDIArc",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIArc",
+  "method": "<xdi2.core.syntax.XDIArc: boolean isCollection()>",
+  "line": "-1"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack10 = virtualinvoke $stack9.<xdi2.core.syntax.XDIArc: boolean isCollection()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<xdi2.core.syntax.XDIArc: boolean collection>",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIArc",
+  "method": "<xdi2.core.syntax.XDIArc: boolean isCollection()>",
+  "line": "81"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack10 = virtualinvoke $stack9.<xdi2.core.syntax.XDIArc: boolean isCollection()>(), 78)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0), 69)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = (xdi2.core.syntax.XDIArc) $stack4",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack5",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<xdi2.core.syntax.XDIAddress: java.util.List arcs>",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "67"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack1 = this.<xdi2.core.syntax.XDIAddress: java.util.List arcs>, 67)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "67"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack2 = interfaceinvoke $stack1.<java.util.List: int size()>(), 67)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack2 >= 1 goto $stack3 = this.<xdi2.core.syntax.XDIAddress: java.util.List arcs>",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "67"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0), 69)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = (xdi2.core.syntax.XDIArc) $stack4",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.util.XRI2Util",
+  "method": "<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>",
+  "line": "79"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack11 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 79)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: xdi2.core.syntax.XDIArc",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIArc",
+  "method": "<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>",
+  "line": "-1"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack12 = virtualinvoke $stack11.<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>(), 79)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<xdi2.core.syntax.XDIArc: java.lang.String literal>",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIArc",
+  "method": "<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>",
+  "line": "91"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack12 = virtualinvoke $stack11.<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>(), 79)","(<xdi2.core.syntax.XDIArc: boolean hasLiteralNode()>, $stack1 = this.<xdi2.core.syntax.XDIArc: java.lang.String literal>, 91)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0), 69)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = (xdi2.core.syntax.XDIArc) $stack4",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.util.XRI2Util",
+  "method": "<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>",
+  "line": "79"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack11 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 79)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0)",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack4 = interfaceinvoke $stack3.<java.util.List: java.lang.Object get(int)>(0), 69)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = (xdi2.core.syntax.XDIArc) $stack4",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack5",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "69"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<xdi2.core.syntax.XDIAddress: java.util.List arcs>",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "67"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack1 = this.<xdi2.core.syntax.XDIAddress: java.util.List arcs>, 67)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = interfaceinvoke $stack1.<java.util.List: int size()>()",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "67"
+},
+"stackTrace": ["(<xdi2.core.util.XRI2Util: java.lang.String cloudNumberToINumber(xdi2.core.syntax.CloudNumber)>, $stack9 = virtualinvoke XDIaddress.<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>(), 78)","(<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>, $stack2 = interfaceinvoke $stack1.<java.util.List: int size()>(), 67)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack2 >= 1 goto $stack3 = this.<xdi2.core.syntax.XDIAddress: java.util.List arcs>",
+"location": {
+  "file": "",
+  "class": "xdi2.core.syntax.XDIAddress",
+  "method": "<xdi2.core.syntax.XDIAddress: xdi2.core.syntax.XDIArc getFirstXDIArc()>",
+  "line": "67"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

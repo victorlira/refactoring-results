@@ -1,0 +1,112 @@
+Running soot scenario mongowp;com.eightkdata.mongowp.server.api.RequestProcessorAdaptor;executeCommand(C, QueryMessage, MessageReplier);88f77f1ac377baa67eb1b65a2929fee51f541e0c
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongowp/88f77f1ac377baa67eb1b65a2929fee51f541e0c/original-without-dependencies/mongo-server-api-0.50.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,41300
+Time to perform Confluence 1 Inter 0,45100
+Configure Soot Confluence 2 Inter 0,16800
+Time to perform Confluence 2 Inter 0,07700
+Visited methods: 16
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack28 = <com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: com.eightkdata.mongowp.fields.IntField ERR_CODE>,194,SourceNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack31 = virtualinvoke tmp$162667475.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.IntField,int)>($stack28, $stack30), 194)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack31 = virtualinvoke tmp$162667475.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.IntField,int)>($stack28, $stack30),194,SourceNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack31 = virtualinvoke tmp$162667475.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.IntField,int)>($stack28, $stack30), 194)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack34 = virtualinvoke $stack31.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.StringField,java.lang.String)>($stack32, $stack33),195,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack34 = virtualinvoke $stack31.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.StringField,java.lang.String)>($stack32, $stack33), 195)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack38 = virtualinvoke $stack34.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.DoubleField,double)>($stack36, $stack37),196,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack38 = virtualinvoke $stack34.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.DoubleField,double)>($stack36, $stack37), 196)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,bson = virtualinvoke $stack38.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.bson.BsonDocument build()>(),197,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, bson = virtualinvoke $stack38.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.bson.BsonDocument build()>(), 197)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,virtualinvoke messageReplier.<com.eightkdata.mongowp.server.callback.MessageReplier: void replyMessageNoCursor(com.eightkdata.mongowp.bson.BsonDocument)>(bson),200,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, virtualinvoke messageReplier.<com.eightkdata.mongowp.server.callback.MessageReplier: void replyMessageNoCursor(com.eightkdata.mongowp.bson.BsonDocument)>(bson), 200))
+SINK=>BASE: Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,tmp$981307724 = new com.eightkdata.mongowp.utils.BsonDocumentBuilder,183,SourceNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, specialinvoke tmp$981307724.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: void <init>(com.eightkdata.mongowp.bson.BsonDocument)>(bson), 183)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack51 = virtualinvoke tmp$981307724.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.DoubleField,double)>($stack49, $stack50),184,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack51 = virtualinvoke tmp$981307724.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.DoubleField,double)>($stack49, $stack50), 184)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,bson = virtualinvoke $stack51.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.bson.BsonDocument build()>(),185,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, bson = virtualinvoke $stack51.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.bson.BsonDocument build()>(), 185)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,virtualinvoke messageReplier.<com.eightkdata.mongowp.server.callback.MessageReplier: void replyMessageNoCursor(com.eightkdata.mongowp.bson.BsonDocument)>(bson),200,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, virtualinvoke messageReplier.<com.eightkdata.mongowp.server.callback.MessageReplier: void replyMessageNoCursor(com.eightkdata.mongowp.bson.BsonDocument)>(bson), 200))]
+Confluence interference in <com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>
+Confluence flows from execution of lines 194 and 183 to line 200, defined in $stack31 = virtualinvoke tmp$162667475.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.IntField,int)>($stack28, $stack30) and specialinvoke tmp$981307724.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: void <init>(com.eightkdata.mongowp.bson.BsonDocument)>(bson) and used in virtualinvoke messageReplier.<com.eightkdata.mongowp.server.callback.MessageReplier: void replyMessageNoCursor(com.eightkdata.mongowp.bson.BsonDocument)>(bson)
+Caused by line 194 flow: path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack31 = virtualinvoke tmp$162667475.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.IntField,int)>($stack28, $stack30), 194)
+Caused by line 183 flow: path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, specialinvoke tmp$981307724.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: void <init>(com.eightkdata.mongowp.bson.BsonDocument)>(bson), 183)
+Caused by line 200 flow: path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, virtualinvoke messageReplier.<com.eightkdata.mongowp.server.callback.MessageReplier: void replyMessageNoCursor(com.eightkdata.mongowp.bson.BsonDocument)>(bson), 200)
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongowp/88f77f1ac377baa67eb1b65a2929fee51f541e0c/original-without-dependencies/mongo-server-api-0.50.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,61300
+Runtime: 0.01s
+Time to perform OA Inter 0,68800
+OA Inter Visited methods: 6
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongowp/88f77f1ac377baa67eb1b65a2929fee51f541e0c/original-without-dependencies/mongo-server-api-0.50.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,45100
+Time to perform DFP Inter 0,54300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 8
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongowp/88f77f1ac377baa67eb1b65a2929fee51f541e0c/original-without-dependencies/mongo-server-api-0.50.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41800
+Time to perform DFP Inter 0,46500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 8
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongowp/88f77f1ac377baa67eb1b65a2929fee51f541e0c/original-without-dependencies/mongo-server-api-0.50.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,42000
+Time to perform PDG 0,43800
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/mongowp/88f77f1ac377baa67eb1b65a2929fee51f541e0c/original-without-dependencies/mongo-server-api-0.50.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,46800
+Time to perform PDG 0,63300
+CONFLICTS: [List(Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack26 = interfaceinvoke reply.<com.eightkdata.mongowp.Status: boolean isOk()>(),176,SourceNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack26 = interfaceinvoke reply.<com.eightkdata.mongowp.Status: boolean isOk()>(), 176)) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,if $stack26 == 0 goto tmp$162667475 = new com.eightkdata.mongowp.utils.BsonDocumentBuilder,176,SourceNode, path: ) => Node(<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>,$stack28 = <com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: com.eightkdata.mongowp.fields.IntField ERR_CODE>,194,SinkNode, path: (<com.eightkdata.mongowp.server.api.RequestProcessorAdaptor: void executeCommand(com.eightkdata.mongowp.server.api.Connection,com.eightkdata.mongowp.messages.request.QueryMessage,com.eightkdata.mongowp.server.callback.MessageReplier)>, $stack31 = virtualinvoke tmp$162667475.<com.eightkdata.mongowp.utils.BsonDocumentBuilder: com.eightkdata.mongowp.utils.BsonDocumentBuilder append(com.eightkdata.mongowp.fields.IntField,int)>($stack28, $stack30), 194)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

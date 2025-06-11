@@ -1,0 +1,211 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<com.jcabi.github.RtReleases: com.rexsl.test.Request request> - this.<com.jcabi.github.RtReleases: com.rexsl.test.Request request>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<com.jcabi.github.RtReleases: com.rexsl.test.Request request> = $stack24",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.github.RtReleases",
+					"method": "<init>",
+					"line": 85
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.github.RtReleases",
+	"method": "<init>",
+	"line": 85
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<com.jcabi.github.RtReleases: com.rexsl.test.Request request> = $stack24",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.github.RtReleases",
+					"method": "<init>",
+					"line": 85
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.github.RtReleases",
+	"method": "<init>",
+	"line": 85
+}]
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos')",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "81"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18)",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "82"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos')",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "81"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18)",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "82"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21)",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "83"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>()",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "80"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos')",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "81"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18)",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "82"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>()",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "80"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack15 = interfaceinvoke $stack14.<com.rexsl.test.Request: com.rexsl.test.RequestURI uri()>(), 80)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos')",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "81"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack16 = interfaceinvoke $stack15.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>('/repos'), 81)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18)",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "82"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack19 = interfaceinvoke $stack16.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack18), 82)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21)",
+"location": {
+  "file": "",
+  "class": "com.jcabi.github.RtReleases",
+  "method": "<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>",
+  "line": "83"
+},
+"stackTrace": ["(<com.jcabi.github.RtReleases: void <init>(com.rexsl.test.Request,com.jcabi.github.Repo)>, $stack22 = interfaceinvoke $stack19.<com.rexsl.test.RequestURI: com.rexsl.test.RequestURI path(java.lang.String)>($stack21), 83)"]
+}]
+}
+}
+
+]

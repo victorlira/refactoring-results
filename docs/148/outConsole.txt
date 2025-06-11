@@ -1,0 +1,114 @@
+Running soot scenario spark;spark.Service;init();86bef5bbb81339f758b65b80a8488c5a10ef4d41
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/spark/86bef5bbb81339f758b65b80a8488c5a10ef4d41/original-without-dependencies/spark-core-2.5.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,45200
+Time to perform Confluence 1 Inter 0,68300
+Configure Soot Confluence 2 Inter 0,18100
+Time to perform Confluence 2 Inter 0,18800
+Visited methods: 56
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/spark/86bef5bbb81339f758b65b80a8488c5a10ef4d41/original-without-dependencies/spark-core-2.5.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,60300
+Runtime: 0.015s
+Time to perform OA Inter 0,68400
+OA Inter Visited methods: 25
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/spark/86bef5bbb81339f758b65b80a8488c5a10ef4d41/original-without-dependencies/spark-core-2.5.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,46000
+Time to perform DFP Inter 0,57300
+Depth limit: 5
+CONFLICTS: DF interference in <spark.Service: void lambda$init$2()>
+Data flows from execution of line 494 to 494, defined in $stack38 := @caughtexception and propagated in e = $stack38
+Caused by line 494 flow: path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494)
+Caused by line 494 flow: path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494)
+DF interference in <spark.Service: void lambda$init$2()>
+Data flows from execution of line 494 to 495, defined in $stack38 := @caughtexception and propagated in interfaceinvoke $stack39.<java.util.function.Consumer: void accept(java.lang.Object)>(e)
+Caused by line 494 flow: path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494)
+Caused by line 495 flow: path: (<spark.Service: void lambda$init$2()>, interfaceinvoke $stack39.<java.util.function.Consumer: void accept(java.lang.Object)>(e), 495)
+[List(Node(<spark.Service: void lambda$init$2()>,$stack38 := @caughtexception,496,SourceNode, path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494)) => Node(<spark.Service: void lambda$init$2()>,e = $stack38,494,SinkNode, path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494))), List(Node(<spark.Service: void lambda$init$2()>,$stack38 := @caughtexception,496,SourceNode, path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494)) => Node(<spark.Service: void lambda$init$2()>,e = $stack38,494,SinkNode, path: (<spark.Service: void lambda$init$2()>, e = $stack38, 494)) => Node(<spark.Service: void lambda$init$2()>,interfaceinvoke $stack39.<java.util.function.Consumer: void accept(java.lang.Object)>(e),495,SinkNode, path: (<spark.Service: void lambda$init$2()>, interfaceinvoke $stack39.<java.util.function.Consumer: void accept(java.lang.Object)>(e), 495)))]
+Visited methods: 28
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/spark/86bef5bbb81339f758b65b80a8488c5a10ef4d41/original-without-dependencies/spark-core-2.5.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,55400
+Time to perform DFP Inter 0,58500
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 28
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/spark/86bef5bbb81339f758b65b80a8488c5a10ef4d41/original-without-dependencies/spark-core-2.5.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,55000
+Time to perform PDG 0,48600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/spark/86bef5bbb81339f758b65b80a8488c5a10ef4d41/original-without-dependencies/spark-core-2.5.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,57100
+Time to perform PDG 0,48200
+CONFLICTS: [List(Node(<spark.Service: void lambda$init$2()>,$stack38 := @caughtexception,496,SourceNode, path: (<spark.Service: void lambda$init$2()>, e#2 = $stack38, 500)) => Node(<spark.Service: void lambda$init$2()>,e#2 = $stack38,500,SinkNode, path: (<spark.Service: void lambda$init$2()>, e#2 = $stack38, 500))), List(Node(<spark.Service: void lambda$init$2()>,$stack38 := @caughtexception,496,SourceNode, path: (<spark.Service: void lambda$init$2()>, e#2 = $stack38, 500)) => Node(<spark.Service: void lambda$init$2()>,e#2 = $stack38,500,SinkNode, path: (<spark.Service: void lambda$init$2()>, e#2 = $stack38, 500)) => Node(<spark.Service: void lambda$init$2()>,interfaceinvoke $stack39.<org.slf4j.Logger: void error(java.lang.String,java.lang.Throwable)>("server interrupted", e#2),501,SinkNode, path: (<spark.Service: void lambda$init$2()>, interfaceinvoke $stack39.<org.slf4j.Logger: void error(java.lang.String,java.lang.Throwable)>('server interrupted', e#2), 501)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

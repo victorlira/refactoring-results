@@ -1,0 +1,130 @@
+Running soot scenario swagger-parser;io.swagger.v3.parser.util.ResolverFully;aggregateSchemaCombinators(ComposedSchema, Schema, List<Schema>, Set<Object>);8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a/original-without-dependencies/swagger-parser-v3-2.1.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,55300
+Time to perform Confluence 1 Inter 1,76000
+Configure Soot Confluence 2 Inter 0,19200
+Time to perform Confluence 2 Inter 1,59700
+Visited methods: 68
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a/original-without-dependencies/swagger-parser-v3-2.1.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,84800
+Runtime: 0.015s
+OA interference in class ResolverFully, method void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set), execution of line 523 overrides 529, assigning to variable prop#13, 
+Caused by line 523 flow:
+at io.swagger.v3.parser.util.ResolverFully.aggregateSchemaCombinators(ResolverFully.java:523)
+And line 529 flow:
+at io.swagger.v3.parser.util.ResolverFully.aggregateSchemaCombinators(ResolverFully.java:529)
+ 
+Time to perform OA Inter 0,90400
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a/original-without-dependencies/swagger-parser-v3-2.1.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,70000
+Time to perform DFP Inter 1,42700
+Depth limit: 5
+CONFLICTS: DF interference in <io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>
+Data flows from execution of line 525 to 529, defined in $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>() and propagated in prop#13 = (java.lang.String) $stack105
+Caused by line 525 flow: path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(), 525)
+Caused by line 529 flow: path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)
+DF interference in <io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>
+Data flows from execution of line 524 to 529, defined in extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>() and propagated in prop#13 = (java.lang.String) $stack105
+Caused by line 524 flow: path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>(), 524)
+Caused by line 529 flow: path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)
+[List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(),529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529))), List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>(),524,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>(), 524)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(),529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)))]
+Visited methods: 34
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a/original-without-dependencies/swagger-parser-v3-2.1.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,51800
+Time to perform DFP Inter 1,38500
+Depth limit: 5
+CONFLICTS: DF interference in <io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>
+Data flows from execution of line 529 to 526, defined in $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>() and propagated in $stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13)
+Caused by line 529 flow: path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)
+Caused by line 526 flow: path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13), 526)
+[List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(),529,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13),526,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13), 526)))]
+Visited methods: 34
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a/original-without-dependencies/swagger-parser-v3-2.1.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,49100
+Time to perform PDG 0,84700
+CONFLICTS: [List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,if $stack33 == null goto $stack34 = virtualinvoke resolved.<io.swagger.v3.oas.models.media.Schema: java.math.BigDecimal getMaximum()>(),523,SourceNode, path: ) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,if $stack103 == 0 goto $stack34 = virtualinvoke resolved.<io.swagger.v3.oas.models.media.Schema: java.math.BigDecimal getMaximum()>(),525,SourceNode, path: ) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529))), List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(),529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529))), List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>(),524,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, extensions#11 = virtualinvoke sourceSchema.<io.swagger.v3.oas.models.media.ComposedSchema: java.util.Map getExtensions()>(), 524)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack101 = interfaceinvoke extensions#11.<java.util.Map: java.util.Set keySet()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(),525,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, key#12 = interfaceinvoke $stack101.<java.util.Set: java.util.Iterator iterator()>(), 525)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(),529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/swagger-parser/8a75d44b26c37cb4a9e218ed24dbd3f4781edb2a/original-without-dependencies/swagger-parser-v3-2.1.6-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,70000
+Time to perform PDG 0,82800
+CONFLICTS: [List(Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(),529,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack105 = interfaceinvoke key#12.<java.util.Iterator: java.lang.Object next()>(), 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,prop#13 = (java.lang.String) $stack105,529,SourceNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, prop#13 = (java.lang.String) $stack105, 529)) => Node(<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>,$stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13),526,SinkNode, path: (<io.swagger.v3.parser.util.ResolverFully: void aggregateSchemaCombinators(io.swagger.v3.oas.models.media.ComposedSchema,io.swagger.v3.oas.models.media.Schema,java.util.List,java.util.Set)>, $stack107 = interfaceinvoke $stack106.<java.util.Map: java.lang.Object get(java.lang.Object)>(prop#13), 526)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

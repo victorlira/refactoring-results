@@ -1,0 +1,903 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,$stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result),168,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,return $stack22,168,SinkNode, path: ) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,$stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result),168,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 168
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 168
+},{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 168
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "return $stack22",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 168
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String getName()>,l0 := @this: java.lang.Class,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) => Node(<java.lang.Class: java.lang.String getName()>,l1 = l0.<java.lang.Class: java.lang.String name>,640,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String getName()>,l0 := @this: java.lang.Class,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) => Node(<java.lang.Class: java.lang.String getName()>,l1 = l0.<java.lang.Class: java.lang.String name>,640,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 640
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 640
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "l1 = l0.<java.lang.Class: java.lang.String name>",
+				"location": {
+					"file": "",
+					"class": "java.lang.Class",
+					"method": "<java.lang.Class: java.lang.String getName()>",
+					"line": 640
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack2 = virtualinvoke l0.<java.lang.Class: boolean isInstance(java.lang.Object)>(l1),3370,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack2 = virtualinvoke l0.<java.lang.Class: boolean isInstance(java.lang.Object)>(l1), 3370)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack2 = virtualinvoke l0.<java.lang.Class: boolean isInstance(java.lang.Object)>(l1),3370,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack2 = virtualinvoke l0.<java.lang.Class: boolean isInstance(java.lang.Object)>(l1), 3370))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3370
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3370
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack2 = virtualinvoke l0.<java.lang.Class: boolean isInstance(java.lang.Object)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Class",
+					"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+					"line": 3370
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot cast "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot cast '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" to "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' to '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1),58,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1),58,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": 58
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": 58
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.ClassCastException",
+					"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+					"line": 58
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot cast "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot cast '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" to "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' to '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Class",
+					"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+					"line": 3369
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String getName()>,l0 := @this: java.lang.Class,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) => Node(<java.lang.Class: java.lang.String getName()>,$stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>(),642,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160) => (<java.lang.Class: java.lang.String getName()>, $stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>(), 642)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String getName()>,l0 := @this: java.lang.Class,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) => Node(<java.lang.Class: java.lang.String getName()>,$stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>(),642,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160) => (<java.lang.Class: java.lang.String getName()>, $stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>(), 642)) => Node(<java.lang.Class: java.lang.String getName()>,l1 = $stack2,642,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 642
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 642
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 642
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>()",
+				"location": {
+					"file": "",
+					"class": "java.lang.Class",
+					"method": "<java.lang.Class: java.lang.String getName()>",
+					"line": 642
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot cast "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot cast '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" to "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' to '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1),62,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1),62,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": 62
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": 62
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.RuntimeException",
+					"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+					"line": 62
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String getName()>,l0 := @this: java.lang.Class,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) => Node(<java.lang.Class: java.lang.String getName()>,$stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>(),642,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160) => (<java.lang.Class: java.lang.String getName()>, $stack2 = specialinvoke l0.<java.lang.Class: java.lang.String getName0()>(), 642)) => Node(<java.lang.Class: java.lang.String getName()>,l1 = $stack2,642,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack19 = virtualinvoke tpe.<java.lang.Class: java.lang.String getName()>(), 160)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot cast "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot cast '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5), 3374))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 642
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String getName()>",
+	"line": 642
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>()",
+				"location": {
+					"file": "",
+					"class": "java.lang.Class",
+					"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+					"line": 3374
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack4 = virtualinvoke l1.<java.lang.Object: java.lang.Class getClass()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack5 = virtualinvoke $stack4.<java.lang.Class: java.lang.String getName()>(), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Cannot cast "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack3 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('Cannot cast '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack6 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack5), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" to "),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack7 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(' to '), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369) => (<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>, $stack9 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack8), 3374)) => Node(<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>,$stack10 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.String toString()>(),3374,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1),66,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66)) SINK=>BASE: Node(<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>,result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1),157,SourceNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1), 157)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,l1 := @parameter0: java.lang.Object,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168)) => Node(<java.lang.Class: java.lang.Object cast(java.lang.Object)>,$stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1),3369,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, $stack5 = specialinvoke l0.<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>(l1), 3369)) => Node(<java.lang.ClassCastException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369)) => Node(<java.lang.RuntimeException: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,l1 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62)) => Node(<java.lang.Exception: void <init>(java.lang.String)>,specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1),66,SinkNode, path: (<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>, $stack22 = virtualinvoke tpe.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(result), 168) => (<java.lang.Class: java.lang.Object cast(java.lang.Object)>, specialinvoke $stack4.<java.lang.ClassCastException: void <init>(java.lang.String)>($stack5), 3369) => (<java.lang.ClassCastException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.RuntimeException: void <init>(java.lang.String)>(l1), 58) => (<java.lang.RuntimeException: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Exception: void <init>(java.lang.String)>(l1), 62) => (<java.lang.Exception: void <init>(java.lang.String)>, specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1), 66))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "result = interfaceinvoke rset.<java.sql.ResultSet: byte[] getBytes(int)>(1)",
+				"location": {
+					"file": "",
+					"class": "com.jcabi.jdbc.SingleOutcome",
+					"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+					"line": 157
+				},
+				"stackTrace": [{
+	"class": "com.jcabi.jdbc.SingleOutcome",
+	"method": "<com.jcabi.jdbc.SingleOutcome: java.lang.Object fetch(java.sql.ResultSet)>",
+	"line": 157
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.String cannotCastMsg(java.lang.Object)>",
+	"line": 3374
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Object cast(java.lang.Object)>",
+	"line": 3369
+},{
+	"class": "java.lang.ClassCastException",
+	"method": "<java.lang.ClassCastException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.RuntimeException",
+	"method": "<java.lang.RuntimeException: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": -1
+},{
+	"class": "java.lang.Exception",
+	"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+	"line": 66
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Throwable: void <init>(java.lang.String)>(l1)",
+				"location": {
+					"file": "",
+					"class": "java.lang.Exception",
+					"method": "<java.lang.Exception: void <init>(java.lang.String)>",
+					"line": 66
+				}
+			}
+		]
+	}
+}
+
+]

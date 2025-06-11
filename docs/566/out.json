@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "posTheta = interfaceinvoke roadMapping.<org.movsim.roadmappings.RoadMapping: org.movsim.roadmappings.RoadMapping$PosTheta map(double)>(0.0)",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvas",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvas: void drawRoadSectionIds(java.awt.Graphics2D)>",
+  "line": "879"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvas: void drawRoadSectionIds(java.awt.Graphics2D)>, posTheta = interfaceinvoke roadMapping.<org.movsim.roadmappings.RoadMapping: org.movsim.roadmappings.RoadMapping$PosTheta map(double)>(0.0), 879)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = posTheta.<org.movsim.roadmappings.RoadMapping$PosTheta: double x>",
+"location": {
+  "file": "",
+  "class": "org.movsim.viewer.graphics.TrafficCanvas",
+  "method": "<org.movsim.viewer.graphics.TrafficCanvas: void drawRoadSectionIds(java.awt.Graphics2D)>",
+  "line": "886"
+},
+"stackTrace": ["(<org.movsim.viewer.graphics.TrafficCanvas: void drawRoadSectionIds(java.awt.Graphics2D)>, $stack21 = posTheta.<org.movsim.roadmappings.RoadMapping$PosTheta: double x>, 886)"]
+}]
+}
+}
+
+]

@@ -1,0 +1,118 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session session>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>",
+  "line": "804"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, session = specialinvoke this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>(), 678)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "session = specialinvoke this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>",
+  "line": "678"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, session = specialinvoke this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>(), 678)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "sessionID = interfaceinvoke session.<net.java.otr4j.session.Session: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>",
+  "line": "679"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, sessionID = interfaceinvoke session.<net.java.otr4j.session.Session: net.java.otr4j.session.SessionID getSessionID()>(), 679)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke sessionID.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>",
+  "line": "682"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, $stack13 = virtualinvoke sessionID.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(), 682)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session session>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>",
+  "line": "804"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, session = specialinvoke this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>(), 678)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "session = specialinvoke this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>",
+  "line": "678"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, session = specialinvoke this.<net.java.otr4j.session.AuthContextImpl: net.java.otr4j.session.Session getSession()>(), 678)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "sessionID = interfaceinvoke session.<net.java.otr4j.session.Session: net.java.otr4j.session.SessionID getSessionID()>()",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.AuthContextImpl",
+  "method": "<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>",
+  "line": "679"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, sessionID = interfaceinvoke session.<net.java.otr4j.session.Session: net.java.otr4j.session.SessionID getSessionID()>(), 679)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: net.java.otr4j.session.SessionID",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionID",
+  "method": "<net.java.otr4j.session.SessionID: java.lang.String getUserID()>",
+  "line": "-1"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, $stack13 = virtualinvoke sessionID.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(), 682)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack1 = this.<net.java.otr4j.session.SessionID: java.lang.String userID>",
+"location": {
+  "file": "",
+  "class": "net.java.otr4j.session.SessionID",
+  "method": "<net.java.otr4j.session.SessionID: java.lang.String getUserID()>",
+  "line": "33"
+},
+"stackTrace": ["(<net.java.otr4j.session.AuthContextImpl: void handleDHCommitMessage(net.java.otr4j.io.messages.DHCommitMessage)>, $stack13 = virtualinvoke sessionID.<net.java.otr4j.session.SessionID: java.lang.String getUserID()>(), 682)"]
+}]
+}
+}
+
+]

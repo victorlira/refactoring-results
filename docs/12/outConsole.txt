@@ -1,0 +1,122 @@
+Running soot scenario jetty-bootstrap;org.teknux.jettybootstrap.handler.AbstractJettyHandler;getHandler();17deab171882d57f5d02052ea6e631cb11aa0d55
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 3,74400
+Time to perform Confluence 1 Inter 1,64600
+Configure Soot Confluence 2 Inter 2,57600
+Time to perform Confluence 2 Inter 1,14900
+Visited methods: 6
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 3,93800
+Runtime: 0.004s
+OA interference in class AbstractJettyHandler, method org.eclipse.jetty.server.Handler getHandler(), execution of line 37 overrides 37, assigning to variable JettyLifeCycleLogListener.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: org.teknux.jettybootstrap.handler.IJettyHandler iJettyHandler>, 
+Caused by line 37 flow:
+at org.teknux.jettybootstrap.handler.AbstractJettyHandler.getHandler(AbstractJettyHandler.java:37)
+And line 37 flow:
+at org.teknux.jettybootstrap.handler.AbstractJettyHandler.getHandler(AbstractJettyHandler.java:37)
+ 
+Time to perform OA Inter 5,27400
+OA Inter Visited methods: 3
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 4,01300
+Time to perform DFP Inter 1,74600
+Depth limit: 5
+CONFLICTS: DF interference in <org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>
+Data flows from execution of line 37 to 37, defined in $stack3 = new org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 37 flow: path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)
+Caused by line 37 flow: path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37) => (<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>, specialinvoke this.<java.lang.Object: void <init>()>(), 37)
+[List(Node(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>,$stack3 = new org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener,37,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)) => Node(<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>,this := @this: org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener,-1,SimpleNode, path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)) => Node(<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>,specialinvoke this.<java.lang.Object: void <init>()>(),37,SinkNode, path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37) => (<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>, specialinvoke this.<java.lang.Object: void <init>()>(), 37)))]
+Visited methods: 3
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 3,72400
+Time to perform DFP Inter 1,75300
+Depth limit: 5
+CONFLICTS: DF interference in <org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>
+Data flows from execution of line 37 to 37, defined in $stack3 = new org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 37 flow: path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)
+Caused by line 37 flow: path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37) => (<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>, specialinvoke this.<java.lang.Object: void <init>()>(), 37)
+[List(Node(<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>,$stack3 = new org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener,37,SourceNode, path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)) => Node(<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>,this := @this: org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener,-1,SimpleNode, path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37)) => Node(<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>,specialinvoke this.<java.lang.Object: void <init>()>(),37,SinkNode, path: (<org.teknux.jettybootstrap.handler.AbstractJettyHandler: org.eclipse.jetty.server.Handler getHandler()>, specialinvoke $stack3.<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>(this), 37) => (<org.teknux.jettybootstrap.handler.util.JettyLifeCycleLogListener: void <init>(org.teknux.jettybootstrap.handler.IJettyHandler)>, specialinvoke this.<java.lang.Object: void <init>()>(), 37)))]
+Visited methods: 3
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 3,73400
+Time to perform PDG 1,55600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/jetty-bootstrap/17deab171882d57f5d02052ea6e631cb11aa0d55/original-without-dependencies/jetty-bootstrap-standalone-1.0.4-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 4,00700
+Time to perform PDG 1,61700
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

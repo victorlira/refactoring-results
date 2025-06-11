@@ -1,0 +1,1193 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "281"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116), 281)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "object := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if null != object goto $stack1 = 0",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = (java.lang.String) $stack9",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack10 = (java.lang.String) $stack9, 570)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($stack10)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack11 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($stack10), 570)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11), 570)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "qrCodeEvent#116 = $stack74",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "279"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, qrCodeEvent#116 = $stack74, 279)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "reqMsg := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>(reqMap, ticket#106), 242)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6), 568)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = 1",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg handleDefaultMsg(com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>(msg)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>",
+  "line": "427"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116), 281)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "281"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116), 281)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "object := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if null != object goto $stack1 = 0",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = (java.lang.String) $stack5",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack6 = (java.lang.String) $stack5, 568)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6), 568)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "qrCodeEvent#116 = $stack74",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "279"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, qrCodeEvent#116 = $stack74, 279)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "reqMsg := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>(reqMap, ticket#106), 242)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11), 570)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = (java.lang.String) $stack3",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "567"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack4 = (java.lang.String) $stack3, 567)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "567"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4), 567)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "qrCodeEvent#116 = $stack74",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "279"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, qrCodeEvent#116 = $stack74, 279)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "reqMsg := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>(reqMap, ticket#106), 242)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "567"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4), 567)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = (java.lang.String) $stack7",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "569"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack8 = (java.lang.String) $stack7, 569)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "569"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8), 569)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack74 = new com.github.sd4324530.fastweixin.message.req.VideoReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "279"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack74.<com.github.sd4324530.fastweixin.message.req.VideoReqMsg: void <init>(java.lang.String,java.lang.String)>(ticket, eventType), 279)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.sd4324530.fastweixin.message.req.VideoReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.VideoReqMsg",
+  "method": "<com.github.sd4324530.fastweixin.message.req.VideoReqMsg: void <init>(java.lang.String,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack80.<com.github.sd4324530.fastweixin.message.req.VideoReqMsg: void <init>(java.lang.String,java.lang.String)>(ticket, eventType), 270)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.sd4324530.fastweixin.message.req.BaseReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.BaseReqMsg",
+  "method": "<com.github.sd4324530.fastweixin.message.req.BaseReqMsg: void <init>()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack99.<com.github.sd4324530.fastweixin.message.req.TextReqMsg: void <init>(java.lang.String)>(eventType), 241)","(<com.github.sd4324530.fastweixin.message.req.TextReqMsg: void <init>(java.lang.String)>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseReqMsg: void <init>()>(), 8)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.BaseReq",
+  "method": "<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack248.<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>(eventKey, ticket), 136)","(<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>(), 9)","(<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>(), 7)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.BaseReq",
+  "method": "<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>",
+  "line": "3"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack248.<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>(eventKey, ticket), 136)","(<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>(), 9)","(<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>(), 7)","(<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>, specialinvoke this.<java.lang.Object: void <init>()>(), 3)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "qrCodeEvent#116 = $stack74",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "279"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, qrCodeEvent#116 = $stack74, 279)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "msg := @parameter0: com.github.sd4324530.fastweixin.message.req.VideoReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116), 281)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg handleDefaultMsg(com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>(msg)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>",
+  "line": "427"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116), 281)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "281"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg hadnleShortVideoMsg(com.github.sd4324530.fastweixin.message.req.VideoReqMsg)>(qrCodeEvent#116), 281)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "object := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if null != object goto $stack1 = 0",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "qrCodeEvent#116 = $stack74",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "279"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, qrCodeEvent#116 = $stack74, 279)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "reqMsg := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReqMsg",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicReqMsg(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReqMsg)>(reqMap, ticket#106), 242)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "569"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8), 569)"]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = (java.lang.String) $stack9",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack10 = (java.lang.String) $stack9, 570)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($stack10)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack11 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($stack10), 570)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11), 570)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "232"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104), 232)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "object := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if null != object goto $stack1 = 0",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = 1",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack178 = new com.github.sd4324530.fastweixin.message.req.SendMessageEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "230"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack178.<com.github.sd4324530.fastweixin.message.req.SendMessageEvent: void <init>(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)>(eventKey, event#97, longitude#101, scanResult#102, precision#103, errorCount), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.sd4324530.fastweixin.message.req.SendMessageEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.SendMessageEvent",
+  "method": "<com.github.sd4324530.fastweixin.message.req.SendMessageEvent: void <init>(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack178.<com.github.sd4324530.fastweixin.message.req.SendMessageEvent: void <init>(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)>(eventKey, event#97, longitude#101, scanResult#102, precision#103, errorCount), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.sd4324530.fastweixin.message.req.BaseEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.BaseEvent",
+  "method": "<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack248.<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>(eventKey, ticket), 136)","(<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>(), 9)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.BaseReq",
+  "method": "<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack248.<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>(eventKey, ticket), 136)","(<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>(), 9)","(<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>(), 7)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<java.lang.Object: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.message.req.BaseReq",
+  "method": "<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>",
+  "line": "3"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke $stack248.<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>(eventKey, ticket), 136)","(<com.github.sd4324530.fastweixin.message.req.QrCodeEvent: void <init>(java.lang.String,java.lang.String)>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>(), 9)","(<com.github.sd4324530.fastweixin.message.req.BaseEvent: void <init>()>, specialinvoke this.<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>(), 7)","(<com.github.sd4324530.fastweixin.message.req.BaseReq: void <init>()>, specialinvoke this.<java.lang.Object: void <init>()>(), 3)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack4 = (java.lang.String) $stack3",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "567"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack4 = (java.lang.String) $stack3, 567)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "567"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4), 567)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "event#104 = $stack178",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "230"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, event#104 = $stack178, 230)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "232"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104), 232)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "object := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if null != object goto $stack1 = 0",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = interfaceinvoke reqMap.<java.util.Map: java.lang.Object get(java.lang.Object)>('FromUserName')",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack5 = interfaceinvoke reqMap.<java.util.Map: java.lang.Object get(java.lang.Object)>('FromUserName'), 568)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack6 = (java.lang.String) $stack5",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack6 = (java.lang.String) $stack5, 568)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6), 568)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = (java.lang.String) $stack7",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "569"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, $stack8 = (java.lang.String) $stack7, 569)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "569"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8), 569)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "event#104 = $stack178",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "230"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, event#104 = $stack178, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "event := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "567"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setMsgType(java.lang.String)>($stack4), 567)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "event#104 = $stack178",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "230"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, event#104 = $stack178, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "event := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "569"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setToUserName(java.lang.String)>($stack8), 569)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg handleDefaultEvent(com.github.sd4324530.fastweixin.message.req.BaseEvent)>(event)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>",
+  "line": "536"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104), 232)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "232"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, msg = virtualinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: com.github.sd4324530.fastweixin.message.BaseMsg callBackAllMessage(com.github.sd4324530.fastweixin.message.req.SendMessageEvent)>(event#104), 232)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "object := @parameter0: java.lang.Object",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, $stack253 = staticinvoke <com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>(msg), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if null != object goto $stack1 = 0",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.util.BeanUtil",
+  "method": "<com.github.sd4324530.fastweixin.util.BeanUtil: boolean isNull(java.lang.Object)>",
+  "line": "23"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "event#104 = $stack178",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "230"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, event#104 = $stack178, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "event := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "568"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setFromUserName(java.lang.String)>($stack6), 568)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "event#104 = $stack178",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>",
+  "line": "230"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, event#104 = $stack178, 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "event := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseEvent",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "req := @parameter1: com.github.sd4324530.fastweixin.message.req.BaseReq",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "-1"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11)",
+"location": {
+  "file": "",
+  "class": "com.github.sd4324530.fastweixin.servlet.WeixinSupport",
+  "method": "<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>",
+  "line": "570"
+},
+"stackTrace": ["(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: java.lang.String processRequest(javax.servlet.http.HttpServletRequest)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>(reqMap, qrCodeEvent), 137)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void buildBasicEvent(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseEvent)>, specialinvoke this.<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>(reqMap, event), 562)","(<com.github.sd4324530.fastweixin.servlet.WeixinSupport: void addBasicReqParams(java.util.Map,com.github.sd4324530.fastweixin.message.req.BaseReq)>, virtualinvoke req.<com.github.sd4324530.fastweixin.message.req.BaseReq: void setCreateTime(long)>($stack11), 570)"]
+}]
+}
+}
+
+]

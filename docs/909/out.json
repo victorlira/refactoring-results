@@ -1,0 +1,83 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<com.martiansoftware.nailgun.NGSession: void run()>,tmp$1071245351 = new java.lang.String,206,SourceNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, specialinvoke tmp$1071245351.<java.lang.String: void <init>(byte[],java.lang.String)>(b, 'UTF-8'), 206)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,line = tmp$1071245351,206,SourceNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, line = tmp$1071245351, 206)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,command = line,228,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, command = line, 228)) => Node(<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>,l0 := @parameter0: java.lang.String,-1,SimpleNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114), 267)) => Node(<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>,$stack7 = staticinvoke <java.lang.Class: java.lang.Class forName0(java.lang.String,boolean,java.lang.ClassLoader,java.lang.Class)>(l0, l1, l2, l3),348,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114), 267)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114),267,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, key = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>(command, 1, $stack114), 267)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,virtualinvoke $stack88.<com.martiansoftware.nailgun.NGServer: void nailFinished(java.lang.Class)>(key),338,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, virtualinvoke $stack88.<com.martiansoftware.nailgun.NGServer: void nailFinished(java.lang.Class)>(key), 338)) SINK=>BASE: Node(<com.martiansoftware.nailgun.NGSession: void run()>,$stack162 := @caughtexception,353,SourceNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, l20 = $stack162, 338)) => Node(<com.martiansoftware.nailgun.NGSession: void run()>,l20 = $stack162,338,SinkNode, path: (<com.martiansoftware.nailgun.NGSession: void run()>, l20 = $stack162, 338))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack162 := @caughtexception",
+				"location": {
+					"file": "",
+					"class": "com.martiansoftware.nailgun.NGSession",
+					"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+					"line": 353
+				},
+				"stackTrace": [{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 353
+},{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 338
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "tmp$1071245351 = new java.lang.String",
+				"location": {
+					"file": "",
+					"class": "com.martiansoftware.nailgun.NGSession",
+					"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+					"line": 206
+				},
+				"stackTrace": [{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 206
+},{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 206
+},{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 228
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>",
+	"line": -1
+},{
+	"class": "java.lang.Class",
+	"method": "<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>",
+	"line": 348
+},{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 267
+},{
+	"class": "com.martiansoftware.nailgun.NGSession",
+	"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+	"line": 338
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke $stack88.<com.martiansoftware.nailgun.NGServer: void nailFinished(java.lang.Class)>(key)",
+				"location": {
+					"file": "",
+					"class": "com.martiansoftware.nailgun.NGSession",
+					"method": "<com.martiansoftware.nailgun.NGSession: void run()>",
+					"line": 338
+				}
+			}
+		]
+	}
+}
+
+]

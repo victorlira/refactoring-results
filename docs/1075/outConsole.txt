@@ -1,0 +1,114 @@
+Running soot scenario nar-maven-plugin;com.github.maven_nar.cpptasks.CompilerEnum;compilers;f094671078becaaf84107cb3859f4a41a66be2af
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/f094671078becaaf84107cb3859f4a41a66be2af/original-without-dependencies/nar-maven-plugin-3.6.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,46500
+Time to perform Confluence 1 Inter 0,82900
+Configure Soot Confluence 2 Inter 0,22900
+Time to perform Confluence 2 Inter 0,16900
+Visited methods: 110
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/f094671078becaaf84107cb3859f4a41a66be2af/original-without-dependencies/nar-maven-plugin-3.6.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,66600
+Runtime: 0.096s
+Time to perform OA Inter 1,00700
+OA Inter Visited methods: 414
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/f094671078becaaf84107cb3859f4a41a66be2af/original-without-dependencies/nar-maven-plugin-3.6.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,44400
+Time to perform DFP Inter 0,63000
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>
+Data flows from execution of line 232 to 219, defined in $stack49 = new com.github.maven_nar.cpptasks.ProcessorEnumValue and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 232 flow: path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack49.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('msmc', $stack52), 232)
+Caused by line 219 flow: path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack1.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('gcc', $stack4), 219) => (<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>, specialinvoke this.<java.lang.Object: void <init>()>(), 44)
+[List(Node(<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>,$stack49 = new com.github.maven_nar.cpptasks.ProcessorEnumValue,231,SourceNode, path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack49.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('msmc', $stack52), 232)) => Node(<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>,this := @this: com.github.maven_nar.cpptasks.ProcessorEnumValue,-1,SimpleNode, path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack1.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('gcc', $stack4), 219)) => Node(<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>,specialinvoke this.<java.lang.Object: void <init>()>(),44,SinkNode, path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack1.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('gcc', $stack4), 219) => (<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>, specialinvoke this.<java.lang.Object: void <init>()>(), 44)))]
+Visited methods: 55
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/f094671078becaaf84107cb3859f4a41a66be2af/original-without-dependencies/nar-maven-plugin-3.6.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,46600
+Time to perform DFP Inter 0,69700
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>
+Data flows from execution of line 256 to 219, defined in $stack129 = new com.github.maven_nar.cpptasks.ProcessorEnumValue and propagated in specialinvoke this.<java.lang.Object: void <init>()>()
+Caused by line 256 flow: path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack129.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('cl6x', $stack132), 256)
+Caused by line 219 flow: path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack1.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('gcc', $stack4), 219) => (<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>, specialinvoke this.<java.lang.Object: void <init>()>(), 44)
+[List(Node(<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>,$stack129 = new com.github.maven_nar.cpptasks.ProcessorEnumValue,255,SourceNode, path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack129.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('cl6x', $stack132), 256)) => Node(<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>,this := @this: com.github.maven_nar.cpptasks.ProcessorEnumValue,-1,SimpleNode, path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack1.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('gcc', $stack4), 219)) => Node(<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>,specialinvoke this.<java.lang.Object: void <init>()>(),44,SinkNode, path: (<com.github.maven_nar.cpptasks.CompilerEnum: void <clinit>()>, specialinvoke $stack1.<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>('gcc', $stack4), 219) => (<com.github.maven_nar.cpptasks.ProcessorEnumValue: void <init>(java.lang.String,com.github.maven_nar.cpptasks.compiler.Processor)>, specialinvoke this.<java.lang.Object: void <init>()>(), 44)))]
+Visited methods: 55
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/f094671078becaaf84107cb3859f4a41a66be2af/original-without-dependencies/nar-maven-plugin-3.6.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,64200
+Time to perform PDG 0,94100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/f094671078becaaf84107cb3859f4a41a66be2af/original-without-dependencies/nar-maven-plugin-3.6.1-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,58200
+Time to perform PDG 0,97500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

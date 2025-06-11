@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "bytesLeft = staticinvoke <java.lang.Integer: long toUnsignedLong(int)>($stack35)",
+"location": {
+  "file": "",
+  "class": "edu.tufts.eaftan.hprofparser.parser.HprofParser",
+  "method": "<edu.tufts.eaftan.hprofparser.parser.HprofParser: boolean parseRecord(java.io.DataInput,int,boolean)>",
+  "line": "145"
+},
+"stackTrace": ["(<edu.tufts.eaftan.hprofparser.parser.HprofParser: boolean parseRecord(java.io.DataInput,int,boolean)>, bytesLeft = staticinvoke <java.lang.Integer: long toUnsignedLong(int)>($stack35), 145)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "bytesLeft = bytesLeft - $stack60",
+"location": {
+  "file": "",
+  "class": "edu.tufts.eaftan.hprofparser.parser.HprofParser",
+  "method": "<edu.tufts.eaftan.hprofparser.parser.HprofParser: boolean parseRecord(java.io.DataInput,int,boolean)>",
+  "line": "279"
+},
+"stackTrace": ["(<edu.tufts.eaftan.hprofparser.parser.HprofParser: boolean parseRecord(java.io.DataInput,int,boolean)>, $stack57 = bytesLeft cmp 0L, 278)"]
+}]
+}
+}
+
+]

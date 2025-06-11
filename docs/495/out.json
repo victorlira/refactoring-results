@@ -1,0 +1,63 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "format = '%s'",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.tools.HtmlEventTracer",
+  "method": "<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>",
+  "line": "259"
+},
+"stackTrace": ["(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if format == null goto return null",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.tools.HtmlEventTracer",
+  "method": "<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>",
+  "line": "302"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "format = '(%s) %s'",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.tools.HtmlEventTracer",
+  "method": "<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>",
+  "line": "264"
+},
+"stackTrace": ["(<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>, $stack16 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>(format, $stack15), 323)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if format == null goto return null",
+"location": {
+  "file": "",
+  "class": "org.asteriskjava.tools.HtmlEventTracer",
+  "method": "<org.asteriskjava.tools.HtmlEventTracer: java.lang.String getText(java.lang.String,org.asteriskjava.manager.event.ManagerEvent)>",
+  "line": "302"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

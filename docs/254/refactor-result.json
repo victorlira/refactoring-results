@@ -14,24 +14,8 @@
       "description": "extracted variable declaration",
       "codeElement": "createSequences : boolean"
     },
-    "line": "171"
-  },
-  {
-    "branch": "R",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tcreateSequences : boolean in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 170,
-      "endLine": 171,
-      "startColumn": 17,
-      "endColumn": 77,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "extracted variable declaration",
-      "codeElement": "createSequences : boolean"
-    },
-    "line": "170"
+    "line": "170",
+    "branchLine": "170"
   },
   {
     "branch": "R",
@@ -48,24 +32,8 @@
       "description": "statement with the name of the extracted variable",
       "codeElement": null
     },
-    "line": "171"
-  },
-  {
-    "branch": "R",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Extract Variable\tcreateSequences : boolean in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 170,
-      "endLine": 171,
-      "startColumn": 9,
-      "endColumn": 78,
-      "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-      "description": "statement with the name of the extracted variable",
-      "codeElement": null
-    },
-    "line": "170"
+    "line": "170",
+    "branchLine": "170"
   },
   {
     "branch": "R",
@@ -82,7 +50,8 @@
       "description": "renamed variable declaration",
       "codeElement": "primaryTables : Collection<Table>"
     },
-    "line": "190"
+    "line": "190",
+    "branchLine": "190"
   },
   {
     "branch": "R",
@@ -99,7 +68,8 @@
       "description": "statement referencing the renamed variable",
       "codeElement": null
     },
-    "line": "190"
+    "line": "190",
+    "branchLine": "190"
   },
   {
     "branch": "R",
@@ -116,7 +86,8 @@
       "description": "statement referencing the renamed variable",
       "codeElement": null
     },
-    "line": "198"
+    "line": "198",
+    "branchLine": "198"
   },
   {
     "branch": "R",
@@ -133,7 +104,8 @@
       "description": "renamed variable declaration",
       "codeElement": "primaryTables : Collection<Table>"
     },
-    "line": "263"
+    "line": "263",
+    "branchLine": "263"
   },
   {
     "branch": "R",
@@ -150,7 +122,8 @@
       "description": "statement referencing the renamed variable",
       "codeElement": null
     },
-    "line": "263"
+    "line": "263",
+    "branchLine": "263"
   },
   {
     "branch": "R",
@@ -167,7 +140,8 @@
       "description": "statement referencing the renamed variable",
       "codeElement": null
     },
-    "line": "274"
+    "line": "274",
+    "branchLine": "274"
   },
   {
     "branch": "R",
@@ -184,7 +158,8 @@
       "description": "renamed variable declaration",
       "codeElement": "primaryTables : Collection<Table>"
     },
-    "line": "190"
+    "line": "190",
+    "branchLine": "190"
   },
   {
     "branch": "R",
@@ -201,7 +176,8 @@
       "description": "extracted method declaration",
       "codeElement": "public addAttribute(attribute String, value Object) : void"
     },
-    "line": "228"
+    "line": "182",
+    "branchLine": "227"
   },
   {
     "branch": "R",
@@ -218,7 +194,26 @@
       "description": "extracted method declaration",
       "codeElement": "public addAttribute(attribute String, value Object) : void"
     },
-    "line": "227"
+    "line": "228",
+    "branchLine": "228"
+  },
+  {
+    "branch": "R",
+    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract And Move Method\tpublic addAttribute(attribute String, value Object) : void extracted from protected initScriptGeneratorContext(scriptGeneratorManager ScriptGeneratorManager) : void in class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator & moved to class com.nuodb.migrator.jdbc.metadata.generator.ScriptGeneratorManager",
+    "description": {
+      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/ScriptGeneratorManager.java",
+      "startLine": 226,
+      "endLine": 228,
+      "startColumn": 5,
+      "endColumn": 6,
+      "codeElementType": "METHOD_DECLARATION",
+      "description": "extracted method declaration",
+      "codeElement": "public addAttribute(attribute String, value Object) : void"
+    },
+    "line": "227",
+    "branchLine": "227"
   },
   {
     "branch": "R",
@@ -235,7 +230,26 @@
       "description": "extracted code to extracted method declaration",
       "codeElement": null
     },
-    "line": "227"
+    "line": "182",
+    "branchLine": "227"
+  },
+  {
+    "branch": "R",
+    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
+    "tool": "RefactoringMiner",
+    "refactoringInfo": "Extract And Move Method\tpublic addAttribute(attribute String, value Object) : void extracted from protected initScriptGeneratorContext(scriptGeneratorManager ScriptGeneratorManager) : void in class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator & moved to class com.nuodb.migrator.jdbc.metadata.generator.ScriptGeneratorManager",
+    "description": {
+      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/ScriptGeneratorManager.java",
+      "startLine": 227,
+      "endLine": 227,
+      "startColumn": 9,
+      "endColumn": 42,
+      "codeElementType": "EXPRESSION_STATEMENT",
+      "description": "extracted code to extracted method declaration",
+      "codeElement": null
+    },
+    "line": "227",
+    "branchLine": "227"
   },
   {
     "branch": "R",
@@ -252,7 +266,8 @@
       "description": "extracted method declaration",
       "codeElement": "public removeAttribute(attribute String) : void"
     },
-    "line": "232"
+    "line": "232",
+    "branchLine": "232"
   },
   {
     "branch": "R",
@@ -269,40 +284,7 @@
       "description": "extracted method declaration",
       "codeElement": "public removeAttribute(attribute String) : void"
     },
-    "line": "230"
-  },
-  {
-    "branch": "L",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Rename Variable\tindex : Index to sequence : Sequence in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 192,
-      "endLine": 192,
-      "startColumn": 22,
-      "endColumn": 39,
-      "codeElementType": "SINGLE_VARIABLE_DECLARATION",
-      "description": "renamed variable declaration",
-      "codeElement": "sequence : Sequence"
-    },
-    "line": "183"
-  },
-  {
-    "branch": "L",
-    "class": "com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Change Variable Type\tindex : Index to sequence : Sequence in method protected addTablesCreateScripts(tables Collection<Table>, scripts Collection<String>, scriptGeneratorManager ScriptGeneratorManager) : void from class com.nuodb.migrator.jdbc.metadata.generator.HasTablesScriptGenerator",
-    "description": {
-      "filePath": "core/src/main/java/com/nuodb/migrator/jdbc/metadata/generator/HasTablesScriptGenerator.java",
-      "startLine": 235,
-      "endLine": 235,
-      "startColumn": 22,
-      "endColumn": 33,
-      "codeElementType": "SINGLE_VARIABLE_DECLARATION",
-      "description": "changed-type variable declaration",
-      "codeElement": "sequence : Sequence"
-    },
-    "line": "234"
+    "line": "230",
+    "branchLine": "230"
   }
 ]

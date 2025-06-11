@@ -1,0 +1,122 @@
+Running soot scenario asterisk-java;org.asteriskjava.live.internal.AbstractLiveObject;addPropertyChangeListener(String, PropertyChangeListener);c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,67800
+Time to perform Confluence 1 Inter 0,42600
+Configure Soot Confluence 2 Inter 0,54300
+Time to perform Confluence 2 Inter 0,03700
+Visited methods: 2
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,04500
+Runtime: 0.011s
+OA interference in class AbstractLiveObject, method void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener), execution of line 61 overrides 61, assigning to variable haveToAdd, 
+Caused by line 61 flow:
+at org.asteriskjava.live.internal.AbstractLiveObject.addPropertyChangeListener(AbstractLiveObject.java:61)
+And line 61 flow:
+at org.asteriskjava.live.internal.AbstractLiveObject.addPropertyChangeListener(AbstractLiveObject.java:61)
+ 
+OA interference in class AbstractLiveObject, method void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener), execution of line 66 overrides 66, assigning to variable haveToAdd, 
+Caused by line 66 flow:
+at org.asteriskjava.live.internal.AbstractLiveObject.addPropertyChangeListener(AbstractLiveObject.java:66)
+And line 66 flow:
+at org.asteriskjava.live.internal.AbstractLiveObject.addPropertyChangeListener(AbstractLiveObject.java:66)
+ 
+Time to perform OA Inter 1,12300
+OA Inter Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,52600
+Time to perform DFP Inter 0,37500
+Depth limit: 5
+CONFLICTS: Empty list for reporting data flow! Error: head of empty list
+Empty list for reporting data flow! Error: head of empty list
+[List(Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,haveToAdd = 1,61,SourceNode, path: ) => Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,if haveToAdd == 0 goto return,70,SinkNode, path: )), List(Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,haveToAdd = 0,66,SourceNode, path: ) => Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,if haveToAdd == 0 goto return,70,SinkNode, path: ))]
+Visited methods: 1
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,57200
+Time to perform DFP Inter 0,15800
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 1
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,73800
+Time to perform PDG 0,44000
+CONFLICTS: [List(Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,haveToAdd = 1,61,SourceNode, path: ) => Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,if haveToAdd == 0 goto return,70,SinkNode, path: )), List(Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,haveToAdd = 0,66,SourceNode, path: ) => Node(<org.asteriskjava.live.internal.AbstractLiveObject: void addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)>,if haveToAdd == 0 goto return,70,SinkNode, path: ))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/asterisk-java/c2e7dc11a5842730c43dea7f8a0f7b7f9cc1f8ee/original-without-dependencies/asterisk-java.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,62000
+Time to perform PDG 0,37100
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

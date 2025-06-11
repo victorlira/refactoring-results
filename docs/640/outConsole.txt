@@ -1,0 +1,223 @@
+Running soot scenario sdk-java;com.mercadopago.client.customer.CustomerCardClient;listAll(String, MPRequestOptions);addc0f809ffcb32c146c0f1094b4dbc0350fd257
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/sdk-java/addc0f809ffcb32c146c0f1094b4dbc0350fd257/original-without-dependencies/sdk-java-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,58700
+java.lang.RuntimeException: Unresolved type com.google.gson.JsonSerializer
+	at soot.jimple.spark.pag.Node.<init>(Node.java:144)
+	at soot.jimple.spark.pag.ValNode.<init>(ValNode.java:34)
+	at soot.jimple.spark.pag.VarNode.<init>(VarNode.java:133)
+	at soot.jimple.spark.pag.LocalVarNode.<init>(LocalVarNode.java:52)
+	at soot.jimple.spark.pag.PAG.makeLocalVarNode(PAG.java:742)
+	at soot.jimple.spark.builder.MethodNodeFactory.caseRet(MethodNodeFactory.java:292)
+	at soot.jimple.spark.builder.MethodNodeFactory.setCurrentMethod(MethodNodeFactory.java:123)
+	at soot.jimple.spark.builder.MethodNodeFactory.<init>(MethodNodeFactory.java:103)
+	at soot.jimple.spark.pag.MethodPAG.<init>(MethodPAG.java:65)
+	at soot.jimple.spark.pag.MethodPAG.v(MethodPAG.java:169)
+	at soot.jimple.spark.solver.OnFlyCallGraph.processReachables(OnFlyCallGraph.java:92)
+	at soot.jimple.spark.solver.OnFlyCallGraph.build(OnFlyCallGraph.java:84)
+	at soot.jimple.spark.builder.ContextInsensitiveBuilder.build(ContextInsensitiveBuilder.java:100)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:101)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.$anonfun$buildSparseValueFlowGraph$1(JDFP.scala:39)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.$anonfun$buildSparseValueFlowGraph$1$adapted(JDFP.scala:39)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.buildSparseValueFlowGraph(JDFP.scala:39)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.buildDFP(JDFP.scala:27)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:135)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/sdk-java/addc0f809ffcb32c146c0f1094b4dbc0350fd257/original-without-dependencies/sdk-java-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,54900
+java.lang.RuntimeException: Unresolved type com.google.gson.JsonSerializer
+	at soot.jimple.spark.pag.Node.<init>(Node.java:144)
+	at soot.jimple.spark.pag.ValNode.<init>(ValNode.java:34)
+	at soot.jimple.spark.pag.VarNode.<init>(VarNode.java:133)
+	at soot.jimple.spark.pag.LocalVarNode.<init>(LocalVarNode.java:52)
+	at soot.jimple.spark.pag.PAG.makeLocalVarNode(PAG.java:742)
+	at soot.jimple.spark.builder.MethodNodeFactory.caseRet(MethodNodeFactory.java:292)
+	at soot.jimple.spark.builder.MethodNodeFactory.setCurrentMethod(MethodNodeFactory.java:123)
+	at soot.jimple.spark.builder.MethodNodeFactory.<init>(MethodNodeFactory.java:103)
+	at soot.jimple.spark.pag.MethodPAG.<init>(MethodPAG.java:65)
+	at soot.jimple.spark.pag.MethodPAG.v(MethodPAG.java:169)
+	at soot.jimple.spark.solver.OnFlyCallGraph.processReachables(OnFlyCallGraph.java:92)
+	at soot.jimple.spark.solver.OnFlyCallGraph.build(OnFlyCallGraph.java:84)
+	at soot.jimple.spark.builder.ContextInsensitiveBuilder.build(ContextInsensitiveBuilder.java:100)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:101)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at br.unb.cic.analysis.SootWrapper.lambda$applyPackages$0(SootWrapper.java:108)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at br.unb.cic.analysis.SootWrapper.applyPackages(SootWrapper.java:107)
+	at br.unb.cic.analysis.Main.runOverrideAssignmentAnalysis(Main.java:369)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:252)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/sdk-java/addc0f809ffcb32c146c0f1094b4dbc0350fd257/original-without-dependencies/sdk-java-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,41700
+java.lang.RuntimeException: Unresolved type com.google.gson.JsonSerializer
+	at soot.jimple.spark.pag.Node.<init>(Node.java:144)
+	at soot.jimple.spark.pag.ValNode.<init>(ValNode.java:34)
+	at soot.jimple.spark.pag.VarNode.<init>(VarNode.java:133)
+	at soot.jimple.spark.pag.LocalVarNode.<init>(LocalVarNode.java:52)
+	at soot.jimple.spark.pag.PAG.makeLocalVarNode(PAG.java:742)
+	at soot.jimple.spark.builder.MethodNodeFactory.caseRet(MethodNodeFactory.java:292)
+	at soot.jimple.spark.builder.MethodNodeFactory.setCurrentMethod(MethodNodeFactory.java:123)
+	at soot.jimple.spark.builder.MethodNodeFactory.<init>(MethodNodeFactory.java:103)
+	at soot.jimple.spark.pag.MethodPAG.<init>(MethodPAG.java:65)
+	at soot.jimple.spark.pag.MethodPAG.v(MethodPAG.java:169)
+	at soot.jimple.spark.solver.OnFlyCallGraph.processReachables(OnFlyCallGraph.java:92)
+	at soot.jimple.spark.solver.OnFlyCallGraph.build(OnFlyCallGraph.java:84)
+	at soot.jimple.spark.builder.ContextInsensitiveBuilder.build(ContextInsensitiveBuilder.java:100)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:101)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.$anonfun$buildSparseValueFlowGraph$1(JDFP.scala:39)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.$anonfun$buildSparseValueFlowGraph$1$adapted(JDFP.scala:39)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.buildSparseValueFlowGraph(JDFP.scala:39)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.buildDFP(JDFP.scala:27)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:456)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/sdk-java/addc0f809ffcb32c146c0f1094b4dbc0350fd257/original-without-dependencies/sdk-java-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,43800
+java.lang.RuntimeException: Unresolved type com.google.gson.JsonSerializer
+	at soot.jimple.spark.pag.Node.<init>(Node.java:144)
+	at soot.jimple.spark.pag.ValNode.<init>(ValNode.java:34)
+	at soot.jimple.spark.pag.VarNode.<init>(VarNode.java:133)
+	at soot.jimple.spark.pag.LocalVarNode.<init>(LocalVarNode.java:52)
+	at soot.jimple.spark.pag.PAG.makeLocalVarNode(PAG.java:742)
+	at soot.jimple.spark.builder.MethodNodeFactory.caseRet(MethodNodeFactory.java:292)
+	at soot.jimple.spark.builder.MethodNodeFactory.setCurrentMethod(MethodNodeFactory.java:123)
+	at soot.jimple.spark.builder.MethodNodeFactory.<init>(MethodNodeFactory.java:103)
+	at soot.jimple.spark.pag.MethodPAG.<init>(MethodPAG.java:65)
+	at soot.jimple.spark.pag.MethodPAG.v(MethodPAG.java:169)
+	at soot.jimple.spark.solver.OnFlyCallGraph.processReachables(OnFlyCallGraph.java:92)
+	at soot.jimple.spark.solver.OnFlyCallGraph.build(OnFlyCallGraph.java:84)
+	at soot.jimple.spark.builder.ContextInsensitiveBuilder.build(ContextInsensitiveBuilder.java:100)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:101)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.$anonfun$buildSparseValueFlowGraph$1(JDFP.scala:39)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.$anonfun$buildSparseValueFlowGraph$1$adapted(JDFP.scala:39)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.buildSparseValueFlowGraph(JDFP.scala:39)
+	at br.ufpe.cin.soot.analysis.jimple.JDFP.buildDFP(JDFP.scala:27)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:456)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/sdk-java/addc0f809ffcb32c146c0f1094b4dbc0350fd257/original-without-dependencies/sdk-java-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,40800
+java.lang.RuntimeException: Unresolved type com.google.gson.JsonSerializer
+	at soot.jimple.spark.pag.Node.<init>(Node.java:144)
+	at soot.jimple.spark.pag.ValNode.<init>(ValNode.java:34)
+	at soot.jimple.spark.pag.VarNode.<init>(VarNode.java:133)
+	at soot.jimple.spark.pag.LocalVarNode.<init>(LocalVarNode.java:52)
+	at soot.jimple.spark.pag.PAG.makeLocalVarNode(PAG.java:742)
+	at soot.jimple.spark.builder.MethodNodeFactory.caseRet(MethodNodeFactory.java:292)
+	at soot.jimple.spark.builder.MethodNodeFactory.setCurrentMethod(MethodNodeFactory.java:123)
+	at soot.jimple.spark.builder.MethodNodeFactory.<init>(MethodNodeFactory.java:103)
+	at soot.jimple.spark.pag.MethodPAG.<init>(MethodPAG.java:65)
+	at soot.jimple.spark.pag.MethodPAG.v(MethodPAG.java:169)
+	at soot.jimple.spark.solver.OnFlyCallGraph.processReachables(OnFlyCallGraph.java:92)
+	at soot.jimple.spark.solver.OnFlyCallGraph.build(OnFlyCallGraph.java:84)
+	at soot.jimple.spark.builder.ContextInsensitiveBuilder.build(ContextInsensitiveBuilder.java:100)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:101)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at br.ufpe.cin.soot.analysis.jimple.JCD.$anonfun$buildCD$1(JCD.scala:30)
+	at br.ufpe.cin.soot.analysis.jimple.JCD.$anonfun$buildCD$1$adapted(JCD.scala:30)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at br.ufpe.cin.soot.analysis.jimple.JCD.buildCD(JCD.scala:30)
+	at br.ufpe.cin.soot.analysis.jimple.JPDG.buildPDG(JPDG.scala:34)
+	at br.unb.cic.analysis.Main.runPDGAnalysis(Main.java:422)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:264)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/sdk-java/addc0f809ffcb32c146c0f1094b4dbc0350fd257/original-without-dependencies/sdk-java-2.0.0-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,58900
+java.lang.RuntimeException: Unresolved type com.google.gson.JsonSerializer
+	at soot.jimple.spark.pag.Node.<init>(Node.java:144)
+	at soot.jimple.spark.pag.ValNode.<init>(ValNode.java:34)
+	at soot.jimple.spark.pag.VarNode.<init>(VarNode.java:133)
+	at soot.jimple.spark.pag.LocalVarNode.<init>(LocalVarNode.java:52)
+	at soot.jimple.spark.pag.PAG.makeLocalVarNode(PAG.java:742)
+	at soot.jimple.spark.builder.MethodNodeFactory.caseRet(MethodNodeFactory.java:292)
+	at soot.jimple.spark.builder.MethodNodeFactory.setCurrentMethod(MethodNodeFactory.java:123)
+	at soot.jimple.spark.builder.MethodNodeFactory.<init>(MethodNodeFactory.java:103)
+	at soot.jimple.spark.pag.MethodPAG.<init>(MethodPAG.java:65)
+	at soot.jimple.spark.pag.MethodPAG.v(MethodPAG.java:169)
+	at soot.jimple.spark.solver.OnFlyCallGraph.processReachables(OnFlyCallGraph.java:92)
+	at soot.jimple.spark.solver.OnFlyCallGraph.build(OnFlyCallGraph.java:84)
+	at soot.jimple.spark.builder.ContextInsensitiveBuilder.build(ContextInsensitiveBuilder.java:100)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:101)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at br.ufpe.cin.soot.analysis.jimple.JCD.$anonfun$buildCD$1(JCD.scala:30)
+	at br.ufpe.cin.soot.analysis.jimple.JCD.$anonfun$buildCD$1$adapted(JCD.scala:30)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at br.ufpe.cin.soot.analysis.jimple.JCD.buildCD(JCD.scala:30)
+	at br.ufpe.cin.soot.analysis.jimple.JPDG.buildPDG(JPDG.scala:34)
+	at br.unb.cic.analysis.Main.runPDGAnalysis(Main.java:422)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:264)
+	at br.unb.cic.analysis.Main.main(Main.java:80)

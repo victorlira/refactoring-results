@@ -1,0 +1,109 @@
+Running soot scenario nar-maven-plugin;com.github.maven_nar.NarCompileMojo;createLibrary(Project, Library);4b92031b61e8d6dae2184dbf0a5954152933086b
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/4b92031b61e8d6dae2184dbf0a5954152933086b/original-without-dependencies/nar-maven-plugin-3.10.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,60700
+An error occurred in getInvokeExpr with args: specialinvoke $stack1.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$765100777.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform Confluence 1 Inter 233,48400
+Configure Soot Confluence 2 Inter 0,33800
+An error occurred in getInvokeExpr with args: specialinvoke $stack1.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Execution exceeded the timeout of 240 secondsRunning ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/4b92031b61e8d6dae2184dbf0a5954152933086b/original-without-dependencies/nar-maven-plugin-3.10.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,82500
+Runtime: 0.172s
+Time to perform OA Inter 1,82300
+OA Inter Visited methods: 735
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/4b92031b61e8d6dae2184dbf0a5954152933086b/original-without-dependencies/nar-maven-plugin-3.10.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,87700
+An error occurred in getInvokeExpr with args: specialinvoke $stack1.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$627092953.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform DFP Inter 144,34100
+Depth limit: 5
+CONFLICTS: DF interference in <com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>
+Data flows from execution of line 335 to 431, defined in depsIt#193 = tmp$1798239502 and propagated in interfaceinvoke depsIt#193.<java.util.Set: boolean addAll(java.util.Collection)>($stack370)
+Caused by line 335 flow: path: (<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>, depsIt#193 = tmp$1798239502, 335)
+Caused by line 431 flow: path: (<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>, interfaceinvoke depsIt#193.<java.util.Set: boolean addAll(java.util.Collection)>($stack370), 431)
+[List(Node(<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>,depsIt#193 = tmp$1798239502,335,SourceNode, path: (<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>, depsIt#193 = tmp$1798239502, 335)) => Node(<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>,interfaceinvoke depsIt#193.<java.util.Set: boolean addAll(java.util.Collection)>($stack370),431,SinkNode, path: (<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>, interfaceinvoke depsIt#193.<java.util.Set: boolean addAll(java.util.Collection)>($stack370), 431)))]
+Visited methods: 506
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/4b92031b61e8d6dae2184dbf0a5954152933086b/original-without-dependencies/nar-maven-plugin-3.10.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,60700
+An error occurred in getInvokeExpr with args: specialinvoke $stack1.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+An error occurred in getInvokeExpr with args: specialinvoke tmp$479417099.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform DFP Inter 144,62700
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 506
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/4b92031b61e8d6dae2184dbf0a5954152933086b/original-without-dependencies/nar-maven-plugin-3.10.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,68000
+Time to perform PDG 3,82900
+CONFLICTS: [List(Node(<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>,depsIt#193 = tmp$167318637,335,SourceNode, path: (<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>, depsIt#193 = tmp$167318637, 335)) => Node(<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>,interfaceinvoke depsIt#193.<java.util.Set: boolean addAll(java.util.Collection)>($stack370),431,SinkNode, path: (<com.github.maven_nar.NarCompileMojo: void createLibrary(org.apache.tools.ant.Project,com.github.maven_nar.Library)>, interfaceinvoke depsIt#193.<java.util.Set: boolean addAll(java.util.Collection)>($stack370), 431)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/nar-maven-plugin/4b92031b61e8d6dae2184dbf0a5954152933086b/original-without-dependencies/nar-maven-plugin-3.10.2-SNAPSHOT.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 0,49100
+Time to perform PDG 4,03500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

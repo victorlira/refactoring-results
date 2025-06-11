@@ -1,0 +1,110 @@
+Running soot scenario onebusaway-application-modules;org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary;getTripDescriptorAsBlockDescriptor(MonitoredResult, TripDescriptor, long);5c66122666e40d6132746e130691f6e9bd615d30
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/onebusaway-application-modules/5c66122666e40d6132746e130691f6e9bd615d30/original-without-dependencies/onebusaway-phone-2.0.1-SNAPSHOT-withAllDependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 81,94800
+Time to perform Confluence 1 Inter 5,70100
+Configure Soot Confluence 2 Inter 79,60100
+Time to perform Confluence 2 Inter 5,23300
+Visited methods: 120
+Depth limit: 5
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/onebusaway-application-modules/5c66122666e40d6132746e130691f6e9bd615d30/original-without-dependencies/onebusaway-phone-2.0.1-SNAPSHOT-withAllDependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 82,03800
+Runtime: 0.101s
+Time to perform OA Inter 84,32500
+OA Inter Visited methods: 219
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/onebusaway-application-modules/5c66122666e40d6132746e130691f6e9bd615d30/original-without-dependencies/onebusaway-phone-2.0.1-SNAPSHOT-withAllDependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 80,25100
+Time to perform DFP Inter 5,39300
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 60
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/onebusaway-application-modules/5c66122666e40d6132746e130691f6e9bd615d30/original-without-dependencies/onebusaway-phone-2.0.1-SNAPSHOT-withAllDependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 81,48700
+Time to perform DFP Inter 4,83300
+Depth limit: 5
+CONFLICTS: DF interference in <org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>
+Data flows from execution of line 506 to 507, defined in $stack111 := @caughtexception and propagated in interfaceinvoke $stack113.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)>($stack117, ex)
+Caused by line 506 flow: path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, ex = $stack111, 506)
+Caused by line 507 flow: path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, interfaceinvoke $stack113.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)>($stack117, ex), 507)
+[List(Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,$stack111 := @caughtexception,556,SourceNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, ex = $stack111, 506)) => Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,ex = $stack111,506,SimpleNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, ex = $stack111, 506)) => Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,interfaceinvoke $stack113.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)>($stack117, ex),507,SinkNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, interfaceinvoke $stack113.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)>($stack117, ex), 507)))]
+Visited methods: 60
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/onebusaway-application-modules/5c66122666e40d6132746e130691f6e9bd615d30/original-without-dependencies/onebusaway-phone-2.0.1-SNAPSHOT-withAllDependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 82,19100
+Time to perform PDG 4,62600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/onebusaway-application-modules/5c66122666e40d6132746e130691f6e9bd615d30/original-without-dependencies/onebusaway-phone-2.0.1-SNAPSHOT-withAllDependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 82,35700
+Time to perform PDG 4,96300
+CONFLICTS: [List(Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,$stack111 := @caughtexception,556,SourceNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, ex = $stack111, 506)) => Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,ex = $stack111,506,SimpleNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, ex = $stack111, 506)) => Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,interfaceinvoke $stack113.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)>($stack117, ex),507,SinkNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, interfaceinvoke $stack113.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)>($stack117, ex), 507))), List(Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,if timeTo#14 >= 0 goto $stack37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(timeTo#14),560,SourceNode, path: ) => Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,$stack39 = <org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.slf4j.Logger _log>,561,SinkNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, interfaceinvoke $stack39.<org.slf4j.Logger: void debug(java.lang.String)>($stack42), 561)) => Node(<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>,interfaceinvoke $stack39.<org.slf4j.Logger: void debug(java.lang.String)>($stack42),561,SinkNode, path: (<org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.GtfsRealtimeTripLibrary: org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.BlockDescriptor getTripDescriptorAsBlockDescriptor(org.onebusaway.transit_data_federation.impl.realtime.gtfs_realtime.MonitoredResult,com.google.transit.realtime.GtfsRealtime$TripDescriptor,long)>, interfaceinvoke $stack39.<org.slf4j.Logger: void debug(java.lang.String)>($stack42), 561)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

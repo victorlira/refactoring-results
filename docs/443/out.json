@@ -1,0 +1,145 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack74 = new java.io.BufferedReader",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "142"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, specialinvoke $stack74.<java.io.BufferedReader: void <init>(java.io.Reader)>($stack75), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "reader#7 = $stack74",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "143"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, reader#7 = $stack74, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke reader#7.<java.io.BufferedReader: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "207"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, virtualinvoke reader#7.<java.io.BufferedReader: void close()>(), 207)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack74 = new java.io.BufferedReader",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "142"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, specialinvoke $stack74.<java.io.BufferedReader: void <init>(java.io.Reader)>($stack75), 143)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "reader#7 = $stack74",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "143"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, reader#7 = $stack74, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if reader#7 == null goto $stack17 = virtualinvoke this.<org.datasift.streamconsumer.HttpMultiThread: int getConsumerState()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "205"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "reader#7 = $stack74",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "143"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, reader#7 = $stack74, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke reader#7.<java.io.BufferedReader: void close()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "207"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, virtualinvoke reader#7.<java.io.BufferedReader: void close()>(), 207)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "reader#7 = $stack74",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "143"
+},
+"stackTrace": ["(<org.datasift.streamconsumer.HttpMultiThread: void run()>, reader#7 = $stack74, 143)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if reader#7 == null goto $stack17 = virtualinvoke this.<org.datasift.streamconsumer.HttpMultiThread: int getConsumerState()>()",
+"location": {
+  "file": "",
+  "class": "org.datasift.streamconsumer.HttpMultiThread",
+  "method": "<org.datasift.streamconsumer.HttpMultiThread: void run()>",
+  "line": "205"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

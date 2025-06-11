@@ -1,0 +1,275 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>,$stack6 = new spark.route.SimpleRouteMatcher$RouteEntry,238,SourceNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230) => (<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke $stack6.<spark.route.SimpleRouteMatcher$RouteEntry: void <init>(spark.route.SimpleRouteMatcher$1)>(null), 238)) => Node(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>,entry = $stack6,238,SourceNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230) => (<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, entry = $stack6, 238)) => Node(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>,staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url),240,SinkNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230) => (<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url), 240)) SINK=>BASE: Node(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>,$stack14 = virtualinvoke route.<java.lang.String: int length()>(),216,SourceNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack14 = virtualinvoke route.<java.lang.String: int length()>(), 216)) => Node(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>,$stack15 = $stack14 - 1,216,SourceNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack15 = $stack14 - 1, 216)) => Node(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>,$stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15),216,SourceNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15), 216)) => Node(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>,url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>(),216,SourceNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>(), 216)) => Node(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>,url := @parameter1: java.lang.String,-1,SimpleNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)) => Node(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>,staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url),240,SinkNode, path: (<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230) => (<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url), 240))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack14 = virtualinvoke route.<java.lang.String: int length()>()",
+				"location": {
+					"file": "",
+					"class": "spark.route.SimpleRouteMatcher",
+					"method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+					"line": 216
+				},
+				"stackTrace": [{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 216
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 216
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 216
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 216
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": -1
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 240
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack6 = new spark.route.SimpleRouteMatcher$RouteEntry",
+				"location": {
+					"file": "",
+					"class": "spark.route.SimpleRouteMatcher",
+					"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+					"line": 238
+				},
+				"stackTrace": [{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 238
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 238
+},{
+	"class": "spark.route.SimpleRouteMatcher",
+	"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+	"line": 240
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url)",
+				"location": {
+					"file": "",
+					"class": "spark.route.SimpleRouteMatcher",
+					"method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+					"line": 240
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = $stack14 - 1",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack15 = $stack14 - 1, 216)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15)",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15), 216)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>(), 216)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target)",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "230"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = $stack14 - 1",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack15 = $stack14 - 1, 216)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15)",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15), 216)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>(), 216)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "url := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url)",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "240"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)","(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url), 240)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack15 = $stack14 - 1",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack15 = $stack14 - 1, 216)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15)",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, $stack16 = virtualinvoke route.<java.lang.String: java.lang.String substring(int,int)>($stack13, $stack15), 216)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>()",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "216"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, url = virtualinvoke $stack16.<java.lang.String: java.lang.String trim()>(), 216)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "url := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher",
+  "method": "<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x1 := @parameter1: java.lang.String",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher$RouteEntry",
+  "method": "<spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>",
+  "line": "-1"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)","(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url), 240)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "x0.<spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String path> = x1",
+"location": {
+  "file": "",
+  "class": "spark.route.SimpleRouteMatcher$RouteEntry",
+  "method": "<spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>",
+  "line": "39"
+},
+"stackTrace": ["(<spark.route.SimpleRouteMatcher: void parseValidateAddRoute(java.lang.String,java.lang.String,java.lang.Object)>, specialinvoke this.<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>(method, url, acceptType, target), 230)","(<spark.route.SimpleRouteMatcher: void addRoute(spark.route.HttpMethod,java.lang.String,java.lang.String,java.lang.Object)>, staticinvoke <spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>(entry, url), 240)","(<spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String access$202(spark.route.SimpleRouteMatcher$RouteEntry,java.lang.String)>, x0.<spark.route.SimpleRouteMatcher$RouteEntry: java.lang.String path> = x1, 39)"]
+}]
+}
+}
+
+]

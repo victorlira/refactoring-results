@@ -1,0 +1,162 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "jwt = staticinvoke <com.nimbusds.jwt.JWTParser: com.nimbusds.jwt.JWT parse(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, jwt = staticinvoke <com.nimbusds.jwt.JWTParser: com.nimbusds.jwt.JWT parse(java.lang.String)>(token), 124)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jweObject = (com.nimbusds.jose.JWEObject) jwt",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "136"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, jweObject = (com.nimbusds.jose.JWEObject) jwt, 136)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke jweObject.<com.nimbusds.jose.JWEObject: com.nimbusds.jose.Payload getPayload()>()",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "140"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, $stack17 = virtualinvoke jweObject.<com.nimbusds.jose.JWEObject: com.nimbusds.jose.Payload getPayload()>(), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "signedJWT = virtualinvoke $stack17.<com.nimbusds.jose.Payload: com.nimbusds.jwt.SignedJWT toSignedJWT()>()",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "140"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, signedJWT = virtualinvoke $stack17.<com.nimbusds.jose.Payload: com.nimbusds.jwt.SignedJWT toSignedJWT()>(), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke signedJWT.<com.nimbusds.jwt.SignedJWT: com.nimbusds.jose.JWSHeader getHeader()>()",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "146"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, $stack21 = virtualinvoke signedJWT.<com.nimbusds.jwt.SignedJWT: com.nimbusds.jose.JWSHeader getHeader()>(), 146)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "jweObject#6 = interfaceinvoke $stack20.<com.nimbusds.jose.proc.JWSVerifierFactory: com.nimbusds.jose.JWSVerifier createJWSVerifier(com.nimbusds.jose.JWSHeader,java.security.Key)>($stack21, $stack22)",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "146"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, jweObject#6 = interfaceinvoke $stack20.<com.nimbusds.jose.proc.JWSVerifierFactory: com.nimbusds.jose.JWSVerifier createJWSVerifier(com.nimbusds.jose.JWSHeader,java.security.Key)>($stack21, $stack22), 146)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "jwt = staticinvoke <com.nimbusds.jwt.JWTParser: com.nimbusds.jwt.JWT parse(java.lang.String)>(token)",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "124"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, jwt = staticinvoke <com.nimbusds.jwt.JWTParser: com.nimbusds.jwt.JWT parse(java.lang.String)>(token), 124)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "jweObject = (com.nimbusds.jose.JWEObject) jwt",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "136"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, jweObject = (com.nimbusds.jose.JWEObject) jwt, 136)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack17 = virtualinvoke jweObject.<com.nimbusds.jose.JWEObject: com.nimbusds.jose.Payload getPayload()>()",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "140"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, $stack17 = virtualinvoke jweObject.<com.nimbusds.jose.JWEObject: com.nimbusds.jose.Payload getPayload()>(), 140)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "signedJWT = virtualinvoke $stack17.<com.nimbusds.jose.Payload: com.nimbusds.jwt.SignedJWT toSignedJWT()>()",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "140"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, signedJWT = virtualinvoke $stack17.<com.nimbusds.jose.Payload: com.nimbusds.jwt.SignedJWT toSignedJWT()>(), 140)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack21 = virtualinvoke signedJWT.<com.nimbusds.jwt.SignedJWT: com.nimbusds.jose.JWSHeader getHeader()>()",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "146"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, $stack21 = virtualinvoke signedJWT.<com.nimbusds.jwt.SignedJWT: com.nimbusds.jose.JWSHeader getHeader()>(), 146)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "jweObject#6 = interfaceinvoke $stack20.<com.nimbusds.jose.proc.JWSVerifierFactory: com.nimbusds.jose.JWSVerifier createJWSVerifier(com.nimbusds.jose.JWSHeader,java.security.Key)>($stack21, $stack22)",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "146"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, jweObject#6 = interfaceinvoke $stack20.<com.nimbusds.jose.proc.JWSVerifierFactory: com.nimbusds.jose.JWSVerifier createJWSVerifier(com.nimbusds.jose.JWSHeader,java.security.Key)>($stack21, $stack22), 146)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "verified = virtualinvoke signedJWT.<com.nimbusds.jwt.SignedJWT: boolean verify(com.nimbusds.jose.JWSVerifier)>(jweObject#6)",
+"location": {
+  "file": "",
+  "class": "org.pac4j.jwt.credentials.authenticator.JwtAuthenticator",
+  "method": "<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>",
+  "line": "148"
+},
+"stackTrace": ["(<org.pac4j.jwt.credentials.authenticator.JwtAuthenticator: void validate(org.pac4j.core.credentials.TokenCredentials)>, verified = virtualinvoke signedJWT.<com.nimbusds.jwt.SignedJWT: boolean verify(com.nimbusds.jose.JWSVerifier)>(jweObject#6), 148)"]
+}]
+}
+}
+
+]

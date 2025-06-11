@@ -1,0 +1,124 @@
+Running soot scenario consumer-dispatcher;com.thenetcircle.comsumerdispatcher.job.JobExecutor;run();ad52e52884dde01fb2762e25e77fcd8db77ab84f
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/consumer-dispatcher/ad52e52884dde01fb2762e25e77fcd8db77ab84f/original-without-dependencies/consumerdispatcher-0.1.2-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 2,12600
+An error occurred in getInvokeExpr with args: specialinvoke $stack6.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform Confluence 1 Inter 12,03700
+Configure Soot Confluence 2 Inter 1,10400
+An error occurred in getInvokeExpr with args: specialinvoke $stack6.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform Confluence 2 Inter 11,29300
+Visited methods: 304
+Depth limit: 5
+CONFLICTS: [SOURCE=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)) => Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,if conn == null goto throw l19,104,SinkNode, path: )
+SINK=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)) => Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,if conn == null goto throw l19,104,SinkNode, path: ), SOURCE=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110))
+SINK=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)), SOURCE=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)) => Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(),110,SinkNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110))
+SINK=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)) => Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(),110,SinkNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)), SOURCE=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)) => Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(),108,SinkNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 108))
+SINK=>BASE: Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,conn = null,40,SourceNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 110)) => Node(<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>,interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(),108,SinkNode, path: (<com.thenetcircle.comsumerdispatcher.job.JobExecutor: void run()>, interfaceinvoke conn.<com.rabbitmq.client.Connection: void close()>(), 108))]
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at scala.collection.generic.TraversableForwarder.head(TraversableForwarder.scala:59)
+	at scala.collection.generic.TraversableForwarder.head$(TraversableForwarder.scala:59)
+	at scala.collection.mutable.ListBuffer.head(ListBuffer.scala:47)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.reportConflictsConfluence(DFPConfluenceAnalysis.java:181)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:566)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/consumer-dispatcher/ad52e52884dde01fb2762e25e77fcd8db77ab84f/original-without-dependencies/consumerdispatcher-0.1.2-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 1,80900
+Runtime: 0.154s
+OA interference in class JobExecutor, method void run(), execution of line 40 overrides 40, assigning to variable conn, 
+Caused by line 40 flow:
+at com.thenetcircle.comsumerdispatcher.job.JobExecutor.run(JobExecutor.java:40)
+And line 40 flow:
+at com.thenetcircle.comsumerdispatcher.job.JobExecutor.run(JobExecutor.java:40)
+ 
+Time to perform OA Inter 3,25700
+OA Inter Visited methods: 287
+ Analysis results
+----------------------------
+ Number of conflicts: 1
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/consumer-dispatcher/ad52e52884dde01fb2762e25e77fcd8db77ab84f/original-without-dependencies/consumerdispatcher-0.1.2-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,82300
+An error occurred in getInvokeExpr with args: specialinvoke $stack6.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform DFP Inter 8,98400
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 152
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/consumer-dispatcher/ad52e52884dde01fb2762e25e77fcd8db77ab84f/original-without-dependencies/consumerdispatcher-0.1.2-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,67400
+An error occurred in getInvokeExpr with args: specialinvoke $stack6.<java.lang.StringBuffer: void <init>()>() -> java.lang.NullPointerException
+Time to perform DFP Inter 7,74200
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 152
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/consumer-dispatcher/ad52e52884dde01fb2762e25e77fcd8db77ab84f/original-without-dependencies/consumerdispatcher-0.1.2-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 2,00300
+Time to perform PDG 1,90600
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/consumer-dispatcher/ad52e52884dde01fb2762e25e77fcd8db77ab84f/original-without-dependencies/consumerdispatcher-0.1.2-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,56000
+Time to perform PDG 1,88500
+CONFLICTS: []
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------

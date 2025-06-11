@@ -1,0 +1,664 @@
+[
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.eclipse.jetty.server.session.HashSessionManager: org.eclipse.jetty.util.thread.Scheduler$Task _task> - this.<org.eclipse.jetty.server.session.HashSessionManager: org.eclipse.jetty.util.thread.Scheduler$Task _task>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.eclipse.jetty.server.session.HashSessionManager: org.eclipse.jetty.util.thread.Scheduler$Task _task> = $stack19",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.server.session.HashSessionManager",
+					"method": "setScavengePeriod",
+					"line": 320
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 64
+},{
+	"class": "org.eclipse.jetty.server.session.HashSessionManager",
+	"method": "setMaxInactiveInterval",
+	"line": 252
+},{
+	"class": "org.eclipse.jetty.server.session.HashSessionManager",
+	"method": "setScavengePeriod",
+	"line": 320
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.eclipse.jetty.server.session.HashSessionManager: org.eclipse.jetty.util.thread.Scheduler$Task _task> = $stack19",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.server.session.HashSessionManager",
+					"method": "setScavengePeriod",
+					"line": 320
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 64
+},{
+	"class": "org.eclipse.jetty.server.session.HashSessionManager",
+	"method": "setMaxInactiveInterval",
+	"line": 252
+},{
+	"class": "org.eclipse.jetty.server.session.HashSessionManager",
+	"method": "setScavengePeriod",
+	"line": 320
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "role - role",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "role = arr$[i$]",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.security.ConstraintSecurityHandler",
+					"method": "addConstraintMapping",
+					"line": 400
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 68
+},{
+	"class": "org.teknux.jettybootstrap.handler.util.JettyConstraintUtil",
+	"method": "getConstraintSecurityHandlerConfidential",
+	"line": 44
+},{
+	"class": "org.eclipse.jetty.security.ConstraintSecurityHandler",
+	"method": "addConstraintMapping",
+	"line": 400
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "role = arr$[i$]",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.security.ConstraintSecurityHandler",
+					"method": "addConstraintMapping",
+					"line": 400
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 68
+},{
+	"class": "org.teknux.jettybootstrap.handler.util.JettyConstraintUtil",
+	"method": "getConstraintSecurityHandlerConfidential",
+	"line": 44
+},{
+	"class": "org.eclipse.jetty.security.ConstraintSecurityHandler",
+	"method": "addConstraintMapping",
+	"line": 400
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "arr$ - arr$",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "arr$ = args",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.util.log.StdErrLog",
+					"method": "format",
+					"line": 639
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 77
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setTempDirectory",
+	"line": 1205
+},{
+	"class": "org.eclipse.jetty.util.log.StdErrLog",
+	"method": "warn",
+	"line": 423
+},{
+	"class": "org.eclipse.jetty.util.log.StdErrLog",
+	"method": "format",
+	"line": 561
+},{
+	"class": "org.eclipse.jetty.util.log.StdErrLog",
+	"method": "format",
+	"line": 639
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "arr$ = args",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.util.log.StdErrLog",
+					"method": "format",
+					"line": 639
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 77
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setTempDirectory",
+	"line": 1205
+},{
+	"class": "org.eclipse.jetty.util.log.StdErrLog",
+	"method": "warn",
+	"line": 423
+},{
+	"class": "org.eclipse.jetty.util.log.StdErrLog",
+	"method": "format",
+	"line": 561
+},{
+	"class": "org.eclipse.jetty.util.log.StdErrLog",
+	"method": "format",
+	"line": 639
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "appsTempDirectory - appsTempDirectory",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "appsTempDirectory = $stack17",
+				"location": {
+					"file": "",
+					"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+					"method": "createHandler",
+					"line": 72
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 72
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "appsTempDirectory = $stack17",
+				"location": {
+					"file": "",
+					"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+					"method": "createHandler",
+					"line": 72
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 72
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "appTempDirectory - appTempDirectory",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "appTempDirectory = $stack27",
+				"location": {
+					"file": "",
+					"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+					"method": "createHandler",
+					"line": 76
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 76
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "appTempDirectory = $stack27",
+				"location": {
+					"file": "",
+					"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+					"method": "createHandler",
+					"line": 76
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 76
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "File.<java.io.File: java.io.File$PathStatus status> - File.<java.io.File: java.io.File$PathStatus status>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "File.<java.io.File: java.io.File$PathStatus status> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.File",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 72
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "File.<java.io.File: java.io.File$PathStatus status> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.File",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 72
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "File.<java.io.File: java.io.File$PathStatus status> - File.<java.io.File: java.io.File$PathStatus status>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "File.<java.io.File: java.io.File$PathStatus status> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.File",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 76
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "File.<java.io.File: java.io.File$PathStatus status> = null",
+				"location": {
+					"file": "",
+					"class": "java.io.File",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 76
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "SessionHandler.<org.eclipse.jetty.server.session.SessionHandler: org.eclipse.jetty.server.SessionManager _sessionManager> - SessionHandler.<org.eclipse.jetty.server.session.SessionHandler: org.eclipse.jetty.server.SessionManager _sessionManager>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "SessionHandler.<org.eclipse.jetty.server.session.SessionHandler: org.eclipse.jetty.server.SessionManager _sessionManager> = null",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.server.session.SessionHandler",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 64
+},{
+	"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+	"method": "getSessionHandler",
+	"line": 336
+},{
+	"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+	"method": "newSessionHandler",
+	"line": 243
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "SessionHandler.<org.eclipse.jetty.server.session.SessionHandler: org.eclipse.jetty.server.SessionManager _sessionManager> = null",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.server.session.SessionHandler",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 64
+},{
+	"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+	"method": "getSessionHandler",
+	"line": 336
+},{
+	"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+	"method": "newSessionHandler",
+	"line": 243
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.eclipse.jetty.servlet.ServletContextHandler: org.eclipse.jetty.security.SecurityHandler _securityHandler> - this.<org.eclipse.jetty.servlet.ServletContextHandler: org.eclipse.jetty.security.SecurityHandler _securityHandler>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.eclipse.jetty.servlet.ServletContextHandler: org.eclipse.jetty.security.SecurityHandler _securityHandler> = securityHandler",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+					"method": "setSecurityHandler",
+					"line": 489
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 68
+},{
+	"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+	"method": "setSecurityHandler",
+	"line": 489
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.eclipse.jetty.servlet.ServletContextHandler: org.eclipse.jetty.security.SecurityHandler _securityHandler> = securityHandler",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+					"method": "setSecurityHandler",
+					"line": 489
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 68
+},{
+	"class": "org.eclipse.jetty.servlet.ServletContextHandler",
+	"method": "setSecurityHandler",
+	"line": 489
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "String.<java.lang.String: int hash> - String.<java.lang.String: int hash>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "String.<java.lang.String: int hash> = null",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 83
+},{
+	"class": "org.eclipse.jetty.server.handler.ContextHandler",
+	"method": "setContextPath",
+	"line": 1325
+},{
+	"class": "java.lang.String",
+	"method": "substring",
+	"line": 1969
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "String.<java.lang.String: int hash> = null",
+				"location": {
+					"file": "",
+					"class": "java.lang.String",
+					"method": "<init>",
+					"line": -1
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 83
+},{
+	"class": "org.eclipse.jetty.server.handler.ContextHandler",
+	"method": "setContextPath",
+	"line": 1325
+},{
+	"class": "java.lang.String",
+	"method": "substring",
+	"line": 1969
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _throwUnavailableOnStartupException> - this.<org.eclipse.jetty.webapp.WebAppContext: boolean _throwUnavailableOnStartupException>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _throwUnavailableOnStartupException> = throwIfStartupException",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.webapp.WebAppContext",
+					"method": "setThrowUnavailableOnStartupException",
+					"line": 1316
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 63
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setThrowUnavailableOnStartupException",
+	"line": 1316
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _throwUnavailableOnStartupException> = throwIfStartupException",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.webapp.WebAppContext",
+					"method": "setThrowUnavailableOnStartupException",
+					"line": 1316
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 63
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setThrowUnavailableOnStartupException",
+	"line": 1316
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _parentLoaderPriority> - this.<org.eclipse.jetty.webapp.WebAppContext: boolean _parentLoaderPriority>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _parentLoaderPriority> = java2compliant",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.webapp.WebAppContext",
+					"method": "setParentLoaderPriority",
+					"line": 1130
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 61
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setParentLoaderPriority",
+	"line": 1130
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _parentLoaderPriority> = java2compliant",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.webapp.WebAppContext",
+					"method": "setParentLoaderPriority",
+					"line": 1130
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 61
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setParentLoaderPriority",
+	"line": 1130
+}]
+			}
+		]
+	}
+},
+{
+	"type": "OAINTER",
+	"label": "OA conflict",
+	"body": {
+		"description": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _persistTmpDir> - this.<org.eclipse.jetty.webapp.WebAppContext: boolean _persistTmpDir>",
+		"interference": [
+			{
+				"type": "declaration",
+				"branch": "L",
+				"text": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _persistTmpDir> = persist",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.webapp.WebAppContext",
+					"method": "setPersistTempDirectory",
+					"line": 1233
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 62
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setPersistTempDirectory",
+	"line": 1233
+}]
+			},
+			{
+				"type": "override",
+				"branch": "R",
+				"text": "this.<org.eclipse.jetty.webapp.WebAppContext: boolean _persistTmpDir> = persist",
+				"location": {
+					"file": "",
+					"class": "org.eclipse.jetty.webapp.WebAppContext",
+					"method": "setPersistTempDirectory",
+					"line": 1233
+				},
+				"stackTrace": [{
+	"class": "org.teknux.jettybootstrap.handler.AbstractAppJettyHandler",
+	"method": "createHandler",
+	"line": 62
+},{
+	"class": "org.eclipse.jetty.webapp.WebAppContext",
+	"method": "setPersistTempDirectory",
+	"line": 1233
+}]
+			}
+		]
+	}
+}
+
+]

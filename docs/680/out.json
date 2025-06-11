@@ -1,0 +1,33 @@
+[
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "invQ = (com.querydsl.jpa.JPQLQuery) $stack17",
+"location": {
+  "file": "",
+  "class": "com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl",
+  "method": "<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>",
+  "line": "67"
+},
+"stackTrace": ["(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, invQ = (com.querydsl.jpa.JPQLQuery) $stack17, 67)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ)",
+"location": {
+  "file": "",
+  "class": "com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl",
+  "method": "<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>",
+  "line": "72"
+},
+"stackTrace": ["(<com.premiumminds.billy.spain.persistence.dao.jpa.DAOESCreditReceiptImpl: java.util.List findByReferencedDocument(com.premiumminds.billy.core.services.StringID,com.premiumminds.billy.core.services.StringID)>, $stack28 = virtualinvoke $stack27.<com.querydsl.core.types.dsl.StringPath: com.querydsl.core.types.dsl.BooleanExpression in(com.querydsl.core.types.SubQueryExpression)>(invQ), 72)"]
+}]
+}
+}
+
+]

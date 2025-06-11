@@ -1,0 +1,165 @@
+Running soot scenario titokone;fi.helsinki.cs.titokone.Compiler;parseLine(String);b4ac484b6a1a0484bc131e305cb531835efe9aa0
+Running ConflictDetectionAlgorithm{name='Confluence Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/titokone/b4ac484b6a1a0484bc131e305cb531835efe9aa0/original-without-dependencies/titokone-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot Confluence 1 Inter 0,84100
+Time to perform Confluence 1 Inter 4,62900
+Configure Soot Confluence 2 Inter 0,30000
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.nodeToString(ConfluenceConflict.java:126)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.lambda$pathToString$0(ConfluenceConflict.java:118)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.pathToString(ConfluenceConflict.java:120)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.toString(ConfluenceConflict.java:40)
+	at br.unb.cic.analysis.svfa.confluence.ConfluenceConflict.hashCode(ConfluenceConflict.java:135)
+	at java.util.HashMap.hash(HashMap.java:339)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.intersectPathsByLastNode(DFPConfluenceAnalysis.java:232)
+	at br.unb.cic.analysis.svfa.confluence.DFPConfluenceAnalysis.execute(DFPConfluenceAnalysis.java:157)
+	at br.unb.cic.analysis.Main.runDFPConfluenceAnalysis(Main.java:553)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:243)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running ConflictDetectionAlgorithm{name='OA Inter'}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/titokone/b4ac484b6a1a0484bc131e305cb531835efe9aa0/original-without-dependencies/titokone-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Depth limit: 5
+Configure Soot OA Inter 0,85800
+Runtime: 0.586s
+Time to perform OA Inter 1,64300
+OA Inter Visited methods: 1671
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/titokone/b4ac484b6a1a0484bc131e305cb531835efe9aa0/original-without-dependencies/titokone-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 0,75600
+java.lang.NullPointerException
+	at br.unb.cic.soot.graph.VisitedMethods.toString(Graph.scala:61)
+	at br.unb.cic.soot.graph.StatementNode.$anonfun$pathVisitedMethodsToString$2(Graph.scala:80)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:38)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:38)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:47)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at br.unb.cic.soot.graph.StatementNode.pathVisitedMethodsToString(Graph.scala:80)
+	at br.unb.cic.soot.graph.StatementNode.toString(Graph.scala:88)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableLike.toString(TraversableLike.scala:603)
+	at scala.collection.TraversableLike.toString$(TraversableLike.scala:603)
+	at scala.collection.SeqLike.toString(SeqLike.scala:693)
+	at scala.collection.SeqLike.toString$(SeqLike.scala:693)
+	at scala.collection.AbstractSeq.toString(Seq.scala:45)
+	at br.unb.cic.soot.graph.Graph.$anonfun$reportConflicts$1(Graph.scala:498)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.Set$Set1.foreach(Set.scala:97)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
+	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+	at scala.collection.SetLike.map(SetLike.scala:104)
+	at scala.collection.SetLike.map$(SetLike.scala:104)
+	at scala.collection.AbstractSet.map(Set.scala:51)
+	at br.unb.cic.soot.graph.Graph.reportConflicts(Graph.scala:498)
+	at br.unb.cic.soot.svfa.SVFA.reportConflictsSVG(SVFA.scala:28)
+	at br.unb.cic.analysis.Main.runDFPAnalysis(Main.java:458)
+	at br.unb.cic.analysis.Main.runAnalysis(Main.java:261)
+	at br.unb.cic.analysis.Main.main(Main.java:80)
+Running right left NonCommutativeConflictDetectionAlgorithm{name = DFP-Inter}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/titokone/b4ac484b6a1a0484bc131e305cb531835efe9aa0/original-without-dependencies/titokone-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot DFP Inter 1,11400
+Time to perform DFP Inter 2,96700
+Depth limit: 5
+CONFLICTS: []
+Visited methods: 70
+ Analysis results
+----------------------------
+ No conflicts detected
+----------------------------
+Running left right NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/titokone/b4ac484b6a1a0484bc131e305cb531835efe9aa0/original-without-dependencies/titokone-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,15300
+Time to perform PDG 2,46600
+CONFLICTS: [List(Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack276 == 0 goto $stack278 = i#18[lineAsArrayIndex],888,SourceNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = "0",889,SourceNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack39 = virtualinvoke $stack38.<fi.helsinki.cs.titokone.SymbolicInterpreter: int getRegisterId(java.lang.String)>(address), 948)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = virtualinvoke $stack219.<java.lang.String: java.lang.String substring(int)>($stack220),908,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, address = virtualinvoke $stack219.<java.lang.String: java.lang.String substring(int)>($stack220), 908)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack136 = virtualinvoke address.<java.lang.String: char charAt(int)>(i),1020,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack136 = virtualinvoke address.<java.lang.String: char charAt(int)>(i), 1020)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack136 == 45 goto i = i + 1,1020,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack133 = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack132),1022,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack133 = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack132), 1022)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack133 != 0 goto i = i + 1,1022,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,isANumber = 0,1023,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if isANumber == 0 goto $stack43 = virtualinvoke addressingMode.<java.lang.String: boolean equals(java.lang.Object)>("="),1030,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack119 = virtualinvoke address.<java.lang.String: int length()>(),1031,SinkNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack119 = virtualinvoke address.<java.lang.String: int length()>(), 1031))), List(Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = "0",889,SourceNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack39 = virtualinvoke $stack38.<fi.helsinki.cs.titokone.SymbolicInterpreter: int getRegisterId(java.lang.String)>(address), 948)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = virtualinvoke $stack219.<java.lang.String: java.lang.String substring(int)>($stack220),908,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, address = virtualinvoke $stack219.<java.lang.String: java.lang.String substring(int)>($stack220), 908)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack136 = virtualinvoke address.<java.lang.String: char charAt(int)>(i),1020,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack136 = virtualinvoke address.<java.lang.String: char charAt(int)>(i), 1020)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack136 == 45 goto i = i + 1,1020,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack133 = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack132),1022,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack133 = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack132), 1022)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack133 != 0 goto i = i + 1,1022,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,isANumber = 0,1023,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if isANumber == 0 goto $stack43 = virtualinvoke addressingMode.<java.lang.String: boolean equals(java.lang.Object)>("="),1030,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack119 = virtualinvoke address.<java.lang.String: int length()>(),1031,SinkNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack119 = virtualinvoke address.<java.lang.String: int length()>(), 1031))), List(Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack248 = this.<fi.helsinki.cs.titokone.Compiler: fi.helsinki.cs.titokone.SymbolicInterpreter symbolicInterpreter>,936,SourceNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack248 = this.<fi.helsinki.cs.titokone.Compiler: fi.helsinki.cs.titokone.SymbolicInterpreter symbolicInterpreter>, 936)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack249 = virtualinvoke $stack248.<fi.helsinki.cs.titokone.SymbolicInterpreter: int getRegisterId(java.lang.String)>(secondRegister),936,SourceNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack249 = virtualinvoke $stack248.<fi.helsinki.cs.titokone.SymbolicInterpreter: int getRegisterId(java.lang.String)>(secondRegister), 936)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack249 != -1 goto lineAsArrayIndex = lineAsArrayIndex + 1,936,SourceNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack39 == -1 goto $stack40 = lengthof i#18,948,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,secondRegister = address,949,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, secondRegister = address, 949)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack193 = virtualinvoke secondRegister.<java.lang.String: boolean equals(java.lang.Object)>(""),1018,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack193 = virtualinvoke secondRegister.<java.lang.String: boolean equals(java.lang.Object)>(''), 1018)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack193 == 0 goto $stack42 = virtualinvoke address.<java.lang.String: boolean equals(java.lang.Object)>(""),1018,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack42 = virtualinvoke address.<java.lang.String: boolean equals(java.lang.Object)>(""),1018,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack42 = virtualinvoke address.<java.lang.String: boolean equals(java.lang.Object)>(''), 1018)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack42 != 0 goto $stack43 = virtualinvoke addressingMode.<java.lang.String: boolean equals(java.lang.Object)>("="),1018,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,i = 0,1020,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack136 = virtualinvoke address.<java.lang.String: char charAt(int)>(i), 1020)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if i != 0 goto $stack132 = virtualinvoke address.<java.lang.String: char charAt(int)>(i),1021,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack133 = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack132),1022,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack133 = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack132), 1022)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if $stack133 != 0 goto i = i + 1,1022,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,isANumber = 0,1023,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,if isANumber == 0 goto $stack43 = virtualinvoke addressingMode.<java.lang.String: boolean equals(java.lang.Object)>("="),1030,SimpleNode, path: ) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack119 = virtualinvoke address.<java.lang.String: int length()>(),1031,SinkNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack119 = virtualinvoke address.<java.lang.String: int length()>(), 1031)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 3
+ Results exported to out.txt
+Error getting the previous content of the JSON file out.json
+ JSON Results exported to out.json
+----------------------------
+Running right left NonCommutativeConflictDetectionAlgorithm{name = PDG}
+Using jar at /home/victorlira/Documents/experiment/miningframework/output/files/titokone/b4ac484b6a1a0484bc131e305cb531835efe9aa0/original-without-dependencies/titokone-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/victorlira/Documents/experiment/miningframework/dependencies/soot-analysis-0.2.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Configure Soot PDG 1,09100
+Time to perform PDG 2,30200
+CONFLICTS: [List(Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,addressingMode = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack319),852,SourceNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, addressingMode = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack319), 852)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack272 = virtualinvoke addressingMode.<java.lang.String: int length()>(),881,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack272 = virtualinvoke addressingMode.<java.lang.String: int length()>(), 881)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = virtualinvoke $stack271.<java.lang.String: java.lang.String substring(int,int)>($stack272, $stack274),880,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, address = virtualinvoke $stack271.<java.lang.String: java.lang.String substring(int,int)>($stack272, $stack274), 880)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack276 = virtualinvoke address.<java.lang.String: boolean isEmpty()>(),888,SinkNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack276 = virtualinvoke address.<java.lang.String: boolean isEmpty()>(), 888))), List(Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,addressingMode = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack319),852,SourceNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, addressingMode = staticinvoke <java.lang.String: java.lang.String valueOf(char)>($stack319), 852)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,$stack272 = virtualinvoke addressingMode.<java.lang.String: int length()>(),881,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack272 = virtualinvoke addressingMode.<java.lang.String: int length()>(), 881)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = virtualinvoke $stack271.<java.lang.String: java.lang.String substring(int,int)>($stack272, $stack274),880,SimpleNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, address = virtualinvoke $stack271.<java.lang.String: java.lang.String substring(int,int)>($stack272, $stack274), 880)) => Node(<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>,address = "0",889,SinkNode, path: (<fi.helsinki.cs.titokone.Compiler: java.lang.String[] parseLine(java.lang.String)>, $stack39 = virtualinvoke $stack38.<fi.helsinki.cs.titokone.SymbolicInterpreter: int getRegisterId(java.lang.String)>(address), 948)))]
+ Analysis results
+----------------------------
+ Number of conflicts: 2
+ Results exported to out.txt
+ JSON Results exported to out.json
+----------------------------

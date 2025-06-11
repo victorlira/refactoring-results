@@ -1,0 +1,1001 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>,$stack7 = new java.lang.AssertionError,2492,SourceNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, virtualinvoke $stack12.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack13), 1692) => (<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack7.<java.lang.AssertionError: void <init>()>(), 2492)) => Node(<java.lang.AssertionError: void <init>()>,l0 := @this: java.lang.AssertionError,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018)) => Node(<java.lang.AssertionError: void <init>()>,specialinvoke l0.<java.lang.Error: void <init>()>(),49,SinkNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018) => (<java.lang.AssertionError: void <init>()>, specialinvoke l0.<java.lang.Error: void <init>()>(), 49)) SINK=>BASE: Node(<org.jboss.msc.service.ServiceControllerImpl: void updateStabilityState(boolean)>,$stack27 = new java.lang.AssertionError,335,SourceNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, virtualinvoke $stack11.<org.jboss.msc.service.ServiceControllerImpl: void transition(java.util.ArrayList)>(tasks), 1691) => (<org.jboss.msc.service.ServiceControllerImpl: void transition(java.util.ArrayList)>, specialinvoke $stack115.<org.jboss.msc.service.ServiceControllerImpl$DependencyFailedTask: void <init>(org.jboss.msc.service.ServiceControllerImpl,org.jboss.msc.service.Dependent[][],boolean)>(this, $stack116, 1), 601) => (<org.jboss.msc.service.ServiceControllerImpl$DependencyFailedTask: void <init>(org.jboss.msc.service.ServiceControllerImpl,org.jboss.msc.service.Dependent[][],boolean)>, virtualinvoke l1.<org.jboss.msc.service.ServiceControllerImpl: void updateStabilityState(boolean)>(leavingRestState), 2167) => (<org.jboss.msc.service.ServiceControllerImpl: void updateStabilityState(boolean)>, specialinvoke $stack27.<java.lang.AssertionError: void <init>()>(), 335)) => Node(<java.lang.AssertionError: void <init>()>,l0 := @this: java.lang.AssertionError,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018)) => Node(<java.lang.AssertionError: void <init>()>,specialinvoke l0.<java.lang.Error: void <init>()>(),49,SinkNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018) => (<java.lang.AssertionError: void <init>()>, specialinvoke l0.<java.lang.Error: void <init>()>(), 49))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack27 = new java.lang.AssertionError",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.ServiceControllerImpl",
+					"method": "<org.jboss.msc.service.ServiceControllerImpl: void updateStabilityState(boolean)>",
+					"line": 335
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.ServiceControllerImpl",
+	"method": "<org.jboss.msc.service.ServiceControllerImpl: void updateStabilityState(boolean)>",
+	"line": 335
+},{
+	"class": "java.lang.AssertionError",
+	"method": "<java.lang.AssertionError: void <init>()>",
+	"line": -1
+},{
+	"class": "java.lang.AssertionError",
+	"method": "<java.lang.AssertionError: void <init>()>",
+	"line": 49
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack7 = new java.lang.AssertionError",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.ServiceControllerImpl",
+					"method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+					"line": 2492
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.ServiceControllerImpl",
+	"method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+	"line": 2492
+},{
+	"class": "java.lang.AssertionError",
+	"method": "<java.lang.AssertionError: void <init>()>",
+	"line": -1
+},{
+	"class": "java.lang.AssertionError",
+	"method": "<java.lang.AssertionError: void <init>()>",
+	"line": 49
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Error: void <init>()>()",
+				"location": {
+					"file": "",
+					"class": "java.lang.AssertionError",
+					"method": "<java.lang.AssertionError: void <init>()>",
+					"line": 49
+				}
+			}
+		]
+	}
+},
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.jboss.msc.service.ServiceControllerImpl: void decrementAsyncTasks()>,$stack10 = new java.lang.AssertionError,2502,SourceNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, virtualinvoke $stack10.<org.jboss.msc.service.ServiceControllerImpl: void decrementAsyncTasks()>(), 1690) => (<org.jboss.msc.service.ServiceControllerImpl: void decrementAsyncTasks()>, specialinvoke $stack10.<java.lang.AssertionError: void <init>()>(), 2502)) => Node(<java.lang.AssertionError: void <init>()>,l0 := @this: java.lang.AssertionError,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018)) => Node(<java.lang.Error: void <init>()>,l0 := @this: java.lang.Error,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018) => (<java.lang.AssertionError: void <init>()>, specialinvoke l0.<java.lang.Error: void <init>()>(), 49)) => Node(<java.lang.Error: void <init>()>,specialinvoke l0.<java.lang.Throwable: void <init>()>(),58,SinkNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018) => (<java.lang.AssertionError: void <init>()>, specialinvoke l0.<java.lang.Error: void <init>()>(), 49) => (<java.lang.Error: void <init>()>, specialinvoke l0.<java.lang.Throwable: void <init>()>(), 58)) SINK=>BASE: Node(<org.jboss.msc.service.ServiceControllerImpl: boolean isStableRestState()>,$stack8 = new java.lang.AssertionError,330,SourceNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, leavingRestState = virtualinvoke $stack8.<org.jboss.msc.service.ServiceControllerImpl: boolean isStableRestState()>(), 1688) => (<org.jboss.msc.service.ServiceControllerImpl: boolean isStableRestState()>, specialinvoke $stack8.<java.lang.AssertionError: void <init>()>(), 330)) => Node(<java.lang.AssertionError: void <init>()>,l0 := @this: java.lang.AssertionError,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018)) => Node(<java.lang.Error: void <init>()>,l0 := @this: java.lang.Error,-1,SimpleNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018) => (<java.lang.AssertionError: void <init>()>, specialinvoke l0.<java.lang.Error: void <init>()>(), 49)) => Node(<java.lang.Error: void <init>()>,specialinvoke l0.<java.lang.Throwable: void <init>()>(),58,SinkNode, path: (<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685) => (<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52) => (<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, specialinvoke $stack14.<java.lang.AssertionError: void <init>()>(), 1018) => (<java.lang.AssertionError: void <init>()>, specialinvoke l0.<java.lang.Error: void <init>()>(), 49) => (<java.lang.Error: void <init>()>, specialinvoke l0.<java.lang.Throwable: void <init>()>(), 58))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack8 = new java.lang.AssertionError",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.ServiceControllerImpl",
+					"method": "<org.jboss.msc.service.ServiceControllerImpl: boolean isStableRestState()>",
+					"line": 330
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.ServiceControllerImpl",
+	"method": "<org.jboss.msc.service.ServiceControllerImpl: boolean isStableRestState()>",
+	"line": 330
+},{
+	"class": "java.lang.AssertionError",
+	"method": "<java.lang.AssertionError: void <init>()>",
+	"line": -1
+},{
+	"class": "java.lang.Error",
+	"method": "<java.lang.Error: void <init>()>",
+	"line": -1
+},{
+	"class": "java.lang.Error",
+	"method": "<java.lang.Error: void <init>()>",
+	"line": 58
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack10 = new java.lang.AssertionError",
+				"location": {
+					"file": "",
+					"class": "org.jboss.msc.service.ServiceControllerImpl",
+					"method": "<org.jboss.msc.service.ServiceControllerImpl: void decrementAsyncTasks()>",
+					"line": 2502
+				},
+				"stackTrace": [{
+	"class": "org.jboss.msc.service.ServiceControllerImpl",
+	"method": "<org.jboss.msc.service.ServiceControllerImpl: void decrementAsyncTasks()>",
+	"line": 2502
+},{
+	"class": "java.lang.AssertionError",
+	"method": "<java.lang.AssertionError: void <init>()>",
+	"line": -1
+},{
+	"class": "java.lang.Error",
+	"method": "<java.lang.Error: void <init>()>",
+	"line": -1
+},{
+	"class": "java.lang.Error",
+	"method": "<java.lang.Error: void <init>()>",
+	"line": 58
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "specialinvoke l0.<java.lang.Throwable: void <init>()>()",
+				"location": {
+					"file": "",
+					"class": "java.lang.Error",
+					"method": "<java.lang.Error: void <init>()>",
+					"line": 58
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke tasks.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>",
+  "line": "1692"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, $stack13 = virtualinvoke tasks.<java.util.ArrayList: int size()>(), 1692)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685)","(<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52)","(<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, virtualinvoke parent#7.<org.jboss.msc.service.ServiceControllerImpl: void addDemand()>(), 1023)","(<org.jboss.msc.service.ServiceControllerImpl: void addDemand()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addDemands(int)>(1), 1035)","(<org.jboss.msc.service.ServiceControllerImpl: void addDemands(int)>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack17), 1051)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size <= 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke tasks.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>",
+  "line": "1692"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, $stack13 = virtualinvoke tasks.<java.util.ArrayList: int size()>(), 1692)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, staticinvoke <org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>($stack5), 1685)","(<org.jboss.msc.service.ServiceControllerImpl: void access$700(org.jboss.msc.service.ServiceControllerImpl)>, specialinvoke x0.<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>(), 52)","(<org.jboss.msc.service.ServiceControllerImpl: void doDemandDependencies()>, virtualinvoke parent#7.<org.jboss.msc.service.ServiceControllerImpl: void addDemand()>(), 1023)","(<org.jboss.msc.service.ServiceControllerImpl: void addDemand()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addDemands(int)>(1), 1035)","(<org.jboss.msc.service.ServiceControllerImpl: void addDemands(int)>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack17), 1051)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size >= 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2493"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new java.lang.AssertionError",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, virtualinvoke $stack12.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack13), 1692)","(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack7.<java.lang.AssertionError: void <init>()>(), 2492)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack7.<java.lang.AssertionError: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DemandDependenciesTask: void run()>, virtualinvoke $stack12.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack13), 1692)","(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack7.<java.lang.AssertionError: void <init>()>(), 2492)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = <org.jboss.msc.service.ServiceControllerImpl: boolean $assertionsDisabled>",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2490"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack2 != 0 goto $stack3 = <org.jboss.msc.service.ServiceControllerImpl: boolean $assertionsDisabled>",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2490"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = <org.jboss.msc.service.ServiceControllerImpl: boolean $assertionsDisabled>",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2491"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack3 != 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2491"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "991"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, specialinvoke $stack10.<java.util.ArrayList: void <init>()>(), 991)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks = $stack10",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "991"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1734"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size >= 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2493"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "989"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1734"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size <= 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke tasks.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "993"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, $stack11 = virtualinvoke tasks.<java.util.ArrayList: int size()>(), 993)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size >= 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2493"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1734"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size <= 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1739"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, specialinvoke $stack11.<java.util.ArrayList: void <init>()>(), 1739)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = $stack11",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1739"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = $stack11, 1739)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size <= 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = <org.jboss.msc.service.ServiceControllerImpl: boolean $assertionsDisabled>",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2490"
+},
+"stackTrace": [""]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if $stack2 != 0 goto $stack3 = <org.jboss.msc.service.ServiceControllerImpl: boolean $assertionsDisabled>",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2490"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack7 = new java.lang.AssertionError",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)","(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack7.<java.lang.AssertionError: void <init>()>(), 2492)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack7.<java.lang.AssertionError: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)","(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack7.<java.lang.AssertionError: void <init>()>(), 2492)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1739"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, specialinvoke $stack11.<java.util.ArrayList: void <init>()>(), 1739)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = $stack11",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1739"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = $stack11, 1739)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size >= 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2493"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack10 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "991"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, specialinvoke $stack10.<java.util.ArrayList: void <init>()>(), 991)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks = $stack10",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "991"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1734"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size <= 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack13 = new java.util.ArrayList",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "989"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1734"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size >= 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2493"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1734"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "$stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>",
+  "line": "1746"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, $stack18 = virtualinvoke tasks#7.<java.util.ArrayList: int size()>(), 1746)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size >= 0 goto (branch)",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2493"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack9 = new java.lang.AssertionError",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2491"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)","(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack9.<java.lang.AssertionError: void <init>()>(), 2491)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "specialinvoke $stack9.<java.lang.AssertionError: void <init>()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2491"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)","(<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>, specialinvoke $stack9.<java.lang.AssertionError: void <init>()>(), 2491)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack11 = virtualinvoke tasks.<java.util.ArrayList: int size()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>",
+  "line": "993"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, $stack11 = virtualinvoke tasks.<java.util.ArrayList: int size()>(), 993)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "size := @parameter0: int",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.msc.service.ServiceControllerImpl$DependentStoppedTask: void run()>, tasks#7 = virtualinvoke parent#5.<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>(), 1734)","(<org.jboss.msc.service.ServiceControllerImpl: java.util.ArrayList dependentStopped()>, virtualinvoke this.<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>($stack11), 993)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "if size <= 0 goto return",
+"location": {
+  "file": "",
+  "class": "org.jboss.msc.service.ServiceControllerImpl",
+  "method": "<org.jboss.msc.service.ServiceControllerImpl: void addAsyncTasks(int)>",
+  "line": "2492"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]

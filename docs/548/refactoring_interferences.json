@@ -14,91 +14,43 @@
       "description": "statement referencing the variable with changed type",
       "codeElement": null
     },
-    "line": "76"
+    "line": "79",
+    "branchLine": "73"
   },
   {
     "branch": "L",
     "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
     "tool": "RefactoringMiner",
-    "refactoringInfo": "Change Variable Type\titems : List<Long> to items : List<I> in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
+    "refactoringInfo": "Change Variable Type\tuser : Long to user : U in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
     "description": {
       "filePath": "rival-split/src/main/java/net/recommenders/rival/split/splitter/CrossValidationSplitter.java",
-      "startLine": 76,
-      "endLine": 98,
-      "startColumn": 17,
-      "endColumn": 18,
-      "codeElementType": "ENHANCED_FOR_STATEMENT",
-      "description": "statement referencing the variable with changed type",
-      "codeElement": null
-    },
-    "line": "76"
-  },
-  {
-    "branch": "L",
-    "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
-    "tool": "RefactoringMiner",
-    "refactoringInfo": "Change Variable Type\titem : Long to item : I in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
-    "description": {
-      "filePath": "rival-split/src/main/java/net/recommenders/rival/split/splitter/CrossValidationSplitter.java",
-      "startLine": 76,
-      "endLine": 76,
-      "startColumn": 22,
-      "endColumn": 28,
+      "startLine": 73,
+      "endLine": 73,
+      "startColumn": 18,
+      "endColumn": 24,
       "codeElementType": "SINGLE_VARIABLE_DECLARATION",
       "description": "changed-type variable declaration",
-      "codeElement": "item : I"
+      "codeElement": "user : U"
     },
-    "line": "76"
+    "line": "79",
+    "branchLine": "73"
   },
   {
     "branch": "L",
     "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
     "tool": "ReExtractorPlus",
-    "refactoringInfo": "Change Variable Type\titem : Long to item : I in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
+    "refactoringInfo": "Change Variable Type\tuser : Long to user : U in method public split(data DataModel<U,I>) : DataModel<U,I>[] from class net.recommenders.rival.split.splitter.CrossValidationSplitter",
     "description": {
       "filePath": "rival-split/src/main/java/net/recommenders/rival/split/splitter/CrossValidationSplitter.java",
-      "startLine": 76,
-      "endLine": 76,
-      "startColumn": 22,
-      "endColumn": 31,
+      "startLine": 73,
+      "endLine": 73,
+      "startColumn": 18,
+      "endColumn": 27,
       "codeElementType": "SINGLE_VARIABLE_DECLARATION",
       "description": "changed-type variable declaration",
-      "codeElement": "item : I"
+      "codeElement": "user : U"
     },
-    "line": "76"
-  },
-  {
-    "branch": "R",
-    "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract And Move Method\tpublic getDefaultModel() : DataModelIF<U,I> extracted from public split(data DataModel<Long,Long>) : DataModel<Long,Long>[] in class net.recommenders.rival.split.splitter.CrossValidationSplitter & moved to class net.recommenders.rival.core.DataModelFactory",
-    "description": {
-      "filePath": "rival-split/src/main/java/net/recommenders/rival/split/splitter/CrossValidationSplitter.java",
-      "startLine": 66,
-      "endLine": 121,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "source method declaration after extraction",
-      "codeElement": "public split(data DataModelIF<U,I>) : DataModelIF<U,I>[]"
-    },
-    "line": "79"
-  },
-  {
-    "branch": "R",
-    "class": "net.recommenders.rival.split.splitter.CrossValidationSplitter",
-    "tool": "ReExtractorPlus",
-    "refactoringInfo": "Extract And Move Method\tpublic getDefaultModel() : DataModelIF<U,I> extracted from public split(data DataModel<Long,Long>) : DataModel<Long,Long>[] in class net.recommenders.rival.split.splitter.CrossValidationSplitter & moved to class net.recommenders.rival.core.DataModelFactory",
-    "description": {
-      "filePath": "rival-split/src/main/java/net/recommenders/rival/split/splitter/CrossValidationSplitter.java",
-      "startLine": 66,
-      "endLine": 121,
-      "startColumn": 5,
-      "endColumn": 6,
-      "codeElementType": "METHOD_DECLARATION",
-      "description": "source method declaration after extraction",
-      "codeElement": "public split(data DataModelIF<U,I>) : DataModelIF<U,I>[]"
-    },
-    "line": "80"
+    "line": "79",
+    "branchLine": "73"
   }
 ]

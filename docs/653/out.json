@@ -1,0 +1,987 @@
+[
+{
+	"type": "CONFLUENCE",
+	"label": "CF conflict",
+	"body": {
+		"description": "SOURCE=>BASE: Node(<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>,$stack2 = virtualinvoke $stack1.<org.xnio.ByteBufferPool: java.nio.ByteBuffer allocate()>(),80,SourceNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, specialinvoke this.<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>(), 221) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>, staticinvoke <org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>($stack1), 283) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>, pooled = virtualinvoke remoteConnection.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>(), 288) => (<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>, $stack2 = virtualinvoke $stack1.<org.xnio.ByteBufferPool: java.nio.ByteBuffer allocate()>(), 80)) => Node(<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>,$stack3 = staticinvoke <org.xnio.Buffers: org.xnio.Pooled globalPooledWrapper(java.nio.ByteBuffer)>($stack2),80,SourceNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, specialinvoke this.<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>(), 221) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>, staticinvoke <org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>($stack1), 283) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>, pooled = virtualinvoke remoteConnection.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>(), 288)) => Node(<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>,pooledReply = virtualinvoke $stack9.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>(),535,SourceNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, specialinvoke this.<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>(channelId, 'Invalid channel ID'), 164) => (<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>, pooledReply = virtualinvoke $stack9.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>(), 535)) => Node(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>,pooled := @parameter0: org.xnio.Pooled,-1,SimpleNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97) => (<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)) => Node(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>,pooled := @parameter0: org.xnio.Pooled,-1,SimpleNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, specialinvoke this.<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>(), 221) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>, staticinvoke <org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>($stack1), 283) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>, virtualinvoke remoteConnection.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled,boolean)>(pooled, 1), 294) => (<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled,boolean)>, virtualinvoke $stack3.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, close), 131)) => Node(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>,$stack6 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener$lambda_send_0__3: java.lang.Runnable bootstrap$(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener,org.xnio.Pooled,boolean)>(this, pooled, close),357,SourceNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97) => (<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205) => (<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127) => (<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack6 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener$lambda_send_0__3: java.lang.Runnable bootstrap$(org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener,org.xnio.Pooled,boolean)>(this, pooled, close), 357)) => Node(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>,virtualinvoke $stack5.<org.xnio.XnioIoThread: void execute(java.lang.Runnable)>($stack6),357,SinkNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97) => (<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205) => (<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127) => (<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, virtualinvoke $stack5.<org.xnio.XnioIoThread: void execute(java.lang.Runnable)>($stack6), 357)) SINK=>BASE: Node(<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>,$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>,51,SourceNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82) => (<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225) => (<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135) => (<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)) => Node(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>,$stack4 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack3),357,SimpleNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97) => (<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205) => (<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127) => (<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack4 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack3), 357)) => Node(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>,$stack5 = virtualinvoke $stack4.<org.xnio.StreamConnection: org.xnio.XnioIoThread getIoThread()>(),357,SimpleNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97) => (<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205) => (<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127) => (<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack5 = virtualinvoke $stack4.<org.xnio.StreamConnection: org.xnio.XnioIoThread getIoThread()>(), 357)) => Node(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>,virtualinvoke $stack5.<org.xnio.XnioIoThread: void execute(java.lang.Runnable)>($stack6),357,SinkNode, path: (<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97) => (<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205) => (<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127) => (<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, virtualinvoke $stack5.<org.xnio.XnioIoThread: void execute(java.lang.Runnable)>($stack6), 357))",
+		"interference": [
+			{
+				"type": "source1",
+				"branch": "L",
+				"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+				"location": {
+					"file": "",
+					"class": "org.jboss.remoting3.remote.RemoteConnection",
+					"method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+					"line": 51
+				},
+				"stackTrace": [{
+	"class": "org.jboss.remoting3.remote.RemoteConnection",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+	"line": 51
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+	"line": 357
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+	"line": 357
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+	"line": 357
+}]
+			},
+			{
+				"type": "source2",
+				"branch": "R",
+				"text": "$stack2 = virtualinvoke $stack1.<org.xnio.ByteBufferPool: java.nio.ByteBuffer allocate()>()",
+				"location": {
+					"file": "",
+					"class": "org.jboss.remoting3.remote.RemoteConnection",
+					"method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>",
+					"line": 80
+				},
+				"stackTrace": [{
+	"class": "org.jboss.remoting3.remote.RemoteConnection",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>",
+	"line": 80
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.Pooled allocate()>",
+	"line": 80
+},{
+	"class": "org.jboss.remoting3.remote.RemoteReadListener",
+	"method": "<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>",
+	"line": 535
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>",
+	"line": -1
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+	"line": -1
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+	"line": 357
+},{
+	"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+	"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+	"line": 357
+}]
+			},
+			{
+				"type": "confluence",
+				"branch": "B",
+				"text": "virtualinvoke $stack5.<org.xnio.XnioIoThread: void execute(java.lang.Runnable)>($stack6)",
+				"location": {
+					"file": "",
+					"class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+					"method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+					"line": 357
+				}
+			}
+		]
+	}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>(), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: void resumeWrites()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "337"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: void resumeWrites()>(), 337)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+  "line": "357"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack3 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 357)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>(), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: void shutdownWrites()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "340"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: void shutdownWrites()>(), 340)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>",
+  "line": "127"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, $stack2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, specialinvoke this.<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>(), 221)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>, staticinvoke <org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>($stack1), 283)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>, virtualinvoke remoteConnection.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled,boolean)>(pooled, 1), 294)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled,boolean)>, virtualinvoke $stack3.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, close), 131)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+  "line": "357"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack3 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 357)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>(), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: void resumeWrites()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "342"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: void resumeWrites()>(), 342)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack19 = this.<org.jboss.remoting3.remote.RemoteReadListener: org.jboss.remoting3.remote.RemoteConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteReadListener",
+  "method": "<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>",
+  "line": "546"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, specialinvoke this.<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>(channelId, 'Invalid channel ID'), 164)","(<org.jboss.remoting3.remote.RemoteReadListener: void refuseService(int,java.lang.String)>, $stack19 = this.<org.jboss.remoting3.remote.RemoteReadListener: org.jboss.remoting3.remote.RemoteConnection connection>, 546)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>",
+  "line": "127"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, $stack2 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 127)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, specialinvoke this.<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>(), 221)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody()>, staticinvoke <org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>($stack1), 283)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void sendCloseRequestBody(org.jboss.remoting3.remote.RemoteConnection)>, virtualinvoke remoteConnection.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled,boolean)>(pooled, 1), 294)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled,boolean)>, virtualinvoke $stack3.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, close), 131)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack3 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+  "line": "357"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack3 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 357)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, sinkChannel = virtualinvoke $stack9.<org.xnio.StreamConnection: org.xnio.conduits.ConduitStreamSinkChannel getSinkChannel()>(), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack13 = virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: boolean flush()>()",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "341"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack13 = virtualinvoke sinkChannel.<org.xnio.conduits.ConduitStreamSinkChannel: boolean flush()>(), 341)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+,
+
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>",
+  "line": "135"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, $stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 135)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack143 = this.<org.jboss.remoting3.remote.RemoteReadListener: org.jboss.remoting3.remote.RemoteConnectionHandler handler>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteReadListener",
+  "method": "<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>",
+  "line": "422"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, $stack143 = this.<org.jboss.remoting3.remote.RemoteReadListener: org.jboss.remoting3.remote.RemoteConnectionHandler handler>, 422)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnectionHandler",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnectionHandler",
+  "method": "<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke existing.<org.jboss.remoting3.remote.RemoteConnectionChannel: void handleRemoteClose()>(), 232)","(<org.jboss.remoting3.remote.RemoteConnectionChannel: void handleRemoteClose()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnectionChannel: boolean closeReadsAndWrites()>(), 341)","(<org.jboss.remoting3.remote.RemoteConnectionChannel: boolean closeReadsAndWrites()>, specialinvoke this.<org.jboss.remoting3.remote.RemoteConnectionChannel: void unregister()>(), 259)","(<org.jboss.remoting3.remote.RemoteConnectionChannel: void unregister()>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleChannelClosed(org.jboss.remoting3.remote.RemoteConnectionChannel)>(this), 285)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleChannelClosed(org.jboss.remoting3.remote.RemoteConnectionChannel)>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>(), 142)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<org.jboss.remoting3.remote.RemoteConnectionHandler: org.jboss.remoting3.remote.RemoteConnection remoteConnection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnectionHandler",
+  "method": "<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>",
+  "line": "162"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack143.<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>(), 422)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>, $stack5 = this.<org.jboss.remoting3.remote.RemoteConnectionHandler: org.jboss.remoting3.remote.RemoteConnection remoteConnection>, 162)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>",
+  "line": "135"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, $stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 135)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "$stack4 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack3)",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>",
+  "line": "357"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack376.<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>(), 97)","(<org.jboss.remoting3.remote.RemoteConnection: void sendAliveResponse()>, virtualinvoke this.<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>(pooled), 205)","(<org.jboss.remoting3.remote.RemoteConnection: void send(org.xnio.Pooled)>, virtualinvoke $stack2.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>(pooled, 0), 127)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void send(org.xnio.Pooled,boolean)>, $stack4 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack3), 357)"]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack5 = this.<org.jboss.remoting3.remote.RemoteConnectionHandler: org.jboss.remoting3.remote.RemoteConnection remoteConnection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnectionHandler",
+  "method": "<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>",
+  "line": "162"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack143.<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>(), 422)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void handleOutboundChannelClosed()>, $stack5 = this.<org.jboss.remoting3.remote.RemoteConnectionHandler: org.jboss.remoting3.remote.RemoteConnection remoteConnection>, 162)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>",
+  "line": "135"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, $stack1 = this.<org.jboss.remoting3.remote.RemoteConnection: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener writeListener>, 135)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "this := @this: org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>",
+  "line": "334"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack8 = this.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: org.jboss.remoting3.remote.RemoteConnection this$0>, 334)"]
+}, {
+"type": "SimpleNode",
+"branch":"",
+"text": "x0 := @parameter0: org.jboss.remoting3.remote.RemoteConnection",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "-1"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+},
+{
+"type": "CONFLICT",
+"label": "SVFA conflict",
+"body": {
+  "description": "SVFA conflict",
+  "interference": [{
+"type": "SourceNode",
+"branch":"",
+"text": "$stack1 = x0.<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection connection>",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": ["(<org.jboss.remoting3.remote.RemoteReadListener: void handleEvent(org.xnio.conduits.ConduitStreamSourceChannel)>, virtualinvoke $stack383.<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>(), 82)","(<org.jboss.remoting3.remote.RemoteConnectionHandler: void receiveCloseRequest()>, virtualinvoke $stack13.<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>(), 225)","(<org.jboss.remoting3.remote.RemoteConnection: void shutdownWrites()>, virtualinvoke $stack1.<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>(), 135)","(<org.jboss.remoting3.remote.RemoteConnection$RemoteWriteListener: void shutdownWrites()>, $stack9 = staticinvoke <org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>($stack8), 334)"]
+}, {
+"type": "SinkNode",
+"branch":"",
+"text": "return $stack1",
+"location": {
+  "file": "",
+  "class": "org.jboss.remoting3.remote.RemoteConnection",
+  "method": "<org.jboss.remoting3.remote.RemoteConnection: org.xnio.StreamConnection access$400(org.jboss.remoting3.remote.RemoteConnection)>",
+  "line": "51"
+},
+"stackTrace": [""]
+}]
+}
+}
+
+]
